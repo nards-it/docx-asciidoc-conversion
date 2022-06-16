@@ -1,0 +1,22 @@
+// Admonition icons:
+// TG Requirement
+:important-caption: 📕
+// TG Recommendation
+:tip-caption: 📒
+// Conformance class
+:note-caption: 📘
+
+// TOC placement using macro (manual)
+:toc: macro
+
+// Empty TOC title (the title is in the document)
+:toc-title:
+
+// TOC level depth
+:toclevels: 8
+
+// Section numbering level depth
+:sectnumlevels: 8
+
+:appendix-caption: Annex
+
