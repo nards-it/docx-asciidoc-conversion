@@ -13,10 +13,13 @@
 :toc-title:
 
 // TOC level depth
-:toclevels: 8
+:toclevels: 3
 
 // Section numbering level depth
 :sectnumlevels: 8
+
+// Line Break Doc Title
+:hardbreaks-option:
 
 :appendix-caption: Annex
 
