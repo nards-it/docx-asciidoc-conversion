@@ -1,9 +1,9 @@
 # TG Conversion priorities
 
-|Order|TG|Two-letters code for data TG|
-|----|------------------------------------------------|-----|
-|1|Technical Guidance for the implementation of INSPIRE View Services| |
-|2|Soil|SO|
+|Order|TG|Two-letters code for data TG|Status|
+|----|------------------------------------------------|-----|----|
+|1|Technical Guidance for the implementation of INSPIRE View Services| |Done|
+|2|Soil|SO|Done|
 |3|Technical Guidance for the implementation of INSPIRE Download Services| |
 |4|Elevation|EL|
 |5|Coordinate reference systems|RS|
