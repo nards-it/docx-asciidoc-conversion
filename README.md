@@ -14,11 +14,11 @@ Script supports actually three different file format specifications:
 
 In order to release a new adoc conversion you have to:
 
-1. Create a new folder with the name of the document to convert
+1. Create a new folder with the name of the document to convert (according to the order provided in [this table](./docx/README.md))
 
         mkdir my_example_data_specifications_EX
 
-2. Copy the Microsoft Word document into the new folder
+2. Copy the Microsoft Word document into the new folder from the [docx](./docx) folder 
 
 3. Convert the Microsoft Word document into the last .docx format
 
