@@ -185,6 +185,7 @@ http://inspire.jrc.ec.europa.eu/
 This document specifies a harmonised data specification for the spatial data theme _Elevation_ as defined in Annex II of the INSPIRE Directive.
 
 This data specification provides the basis for the drafting of Implementing Rules according to Article 7 (1) of the INSPIRE Directive [Directive 2007/2/EC]. The entire data specification is published as implementation guidelines accompanying these Implementing Rules.
+
 <<<
 == Overview
 
@@ -588,12 +589,14 @@ NOTE The implementation of recommendations is not mandatory. Compliance with thi
 ==== Conformance
 
 Annex A includes the abstract test suite for checking conformance with the requirements included in this Technical Guidance and the corresponding parts of the Implementing Rules (Commission Regulation (EU) No 1089/2010).
+
 <<<
 == Specification scopes
 
 This data specification does not distinguish different specification scopes, but just considers one general scope.
 
 NOTE For more information on specification scopes, see [ISO 19131:2007], clause 8 and Annex D.
+
 <<<
 == Identification information
 
@@ -602,6 +605,7 @@ These Technical Guidelines are identified by the following URI:
 http://inspire.ec.europa.eu/tg/el/3.0
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
+
 <<<
 == Data content and structure
 
@@ -2811,6 +2815,7 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 |Definition: |Enumeration type which determines the elevation surface with regard to its relative adherence to the Earth's bare surface.
 |Description: |EXAMPLE DTM and DSM.
 |===
+
 <<<
 == Reference systems, units of measure and grids
 
@@ -3352,6 +3357,7 @@ Consequently, _on-the-fly_ projection transformations are needed for view servic
 *Recommendation 19*
 Real time re-projection is recommended for the view services serving gridded _Elevation_ data sets aimed at satisfying global purposes and based on any grid compatible with this specification__.__
 ====
+
 <<<
 == Data quality
 
@@ -4137,6 +4143,7 @@ Elevation data provided through INSPIRE should have the best spatial, temporal a
 *Recommendation 32*
 All spatial objects should be provided at the best spatial, temporal and thematic accuracy available, in order to serve relevant use-cases, like modelling of flooding events and emergency response.
 ====
+
 <<<
 == Dataset-level metadata
 
@@ -5100,6 +5107,7 @@ At least the following elements should be used (the multiplicity according to IS
 |Example XML encoding |
 |Comments |
 |===
+
 <<<
 == Delivery
 
@@ -5470,6 +5478,7 @@ Version: 1
 Specification: International Hydrographic Organization (IHO) Bathymetric Attributed Grid Object (BAG)
 
 Character set: UTF-8
+
 <<<
 == Data Capture
 
@@ -5645,6 +5654,7 @@ Bathymetry data capture should follow the recommendations of the IHO standards f
 ====
 
 Additionally, special attention should be paid to the following error sources in bathymetric surveys: vertical datum errors, vertical positioning system errors, tidal measurement errors, instrument errors, sound speed errors, ellipsoidal / vertical datum separation model errors, vessel motion errors, vessel draught, vessel settlement and squat, sea floor slope, time synchronisation / latency.
+
 <<<
 == Portrayal
 
@@ -6884,7 +6894,8 @@ image:media\image34.jpeg[image]
 
 :sectnums!:
 
-[appendix]<<<
+<<<
+[appendix]
 == (normative) - Abstract Test Suite
 
 ====
@@ -7693,7 +7704,8 @@ b) Reference: section 11.2.
 
 c) Test Method: Check whether the styles defined in section 11.2 have been made available for each specified layer.
 
-[appendix]<<<
+<<<
+[appendix]
 == (informative) - Use-Cases
 
 === Documented high-level use cases
@@ -8217,7 +8229,8 @@ As additional information, in the development of this specification the followin
 ** Generation of shaded-relief, hypsometric-areas and slope maps, natural basins, viewsheds and vector elevation features.
 ** Generalization of DEM and spot heights.
 
-[appendix]<<<
+<<<
+[appendix]
 == (normative) - Code list values
 
 INSPIRE Application Schema 'ElevationVectorElements'
@@ -8310,7 +8323,8 @@ NOTE 2 This value is only applicable to spot heights, not to spot depths."
 |Description: |EXAMPLE The top of a hill or a mountain.
 |===
 
-[appendix]<<<
+<<<
+[appendix]
 == (informative) - Pan-European Geographic Grid for gridded _Elevation_ data
 
 This annex explains the need to establish a Pan-European geographic grid for the provision of gridded _Elevation_ spatial information (i.e. raster, coverage-based data) aimed at global purposes within the INSPIRE context and defines the characteristics of this grid.
@@ -8613,7 +8627,8 @@ _Annex II, Section 2.2.2_
 
 NOTE The term continental Europe means the area within the scope of ETRS89/EVRS.
 
-[appendix]<<<
+<<<
+[appendix]
 == {blank}
 *(informative) - Examples on how to use _ChartDatum_ data type*
 
