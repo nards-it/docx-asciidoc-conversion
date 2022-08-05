@@ -13,7 +13,7 @@
 :toc-title:
 
 // TOC level depth
-:toclevels: 3
+:toclevels: 8
 
 // Section numbering level depth
 :sectnumlevels: 8
@@ -23,16 +23,16 @@
 
 :appendix-caption: Annex
 
-image:media\image2.jpeg[image]
+image:media\image2.jpeg[image,width=93,height=93, align=center]
 
-image:media\image3.wmf[image]
+image:media\image3.png[image,width=100,height=100, align=center]
 
+[.text-center]
 INSPIRE 
 Infrastructure for Spatial Information in Europe
 
-====
 D2.8.II.1 Data Specification on _Elevation_ – Technical Guidelines
-====
+
 
 [cols=",",]
 |===
@@ -53,9 +53,10 @@ D2.8.II.1 Data Specification on _Elevation_ – Technical Guidelines
 |*Coverage* |Project duration
 |===
 
-*Foreword*
-
-*How to read the document?*
+[discrete]
+= *Foreword*
+[discrete]
+= *How to read the document?*
 
 This document describes the _"INSPIRE data specification on Elevation – Technical Guidelines"_ version 3.0 as developed by the Thematic Working Group (TWG) _Elevation_ using both natural and a conceptual schema language.
 
@@ -176,397 +177,15 @@ http://ec.europa.eu/dgs/jrc/
 
 http://inspire.jrc.ec.europa.eu/
 
-* 
-Table of contents*
-
-1 Scope 1
-
-2 Overview 1
-
-2.1 Name 1
-
-2.2 Informal description 1
-
-2.3 Normative References 4
-
-2.4 Terms and definitions 5
-
-2.5 Symbols and abbreviations 8
-
-2.6 How the Technical Guidance maps to the Implementing Rules 10
-
-2.6.1 Requirements 10
-
-2.6.2 Recommendations 11
-
-2.6.3 Conformance 11
-
-3 Specification scopes 11
-
-4 Identification information 11
-
-5 Data content and structure 12
-
-5.1 Application schemas – Overview 12
-
-5.1.1 Application schemas included in the IRs 12
-
-5.2 Basic notions 13
-
-5.2.1 Notation 13
-
-5.2.2 Voidable characteristics 14
-
-5.2.3 Enumerations 15
-
-5.2.4 Code lists 16
-
-5.2.5 Consistency between spatial data sets 19
-
-5.2.6 Identifier management 19
-
-5.2.7 Geometry representation 20
-
-5.2.8 Temporality representation 20
-
-5.2.9 Coverages 21
-
-5.3 Application schema Elevation 23
-
-5.3.1 Description 23
-
-5.4 Application schema ElevationBaseTypes 31
-
-5.4.1 Description 31
-
-5.4.2 Feature catalogue 31
-
-5.5 Application schema ElevationGridCoverage 33
-
-5.5.1 Description 33
-
-5.5.2 Feature catalogue 45
-
-5.6 Application schema ElevationVectorElements 49
-
-5.6.1 Description 49
-
-5.6.2 Feature catalogue 52
-
-5.6.3 Externally governed code lists 61
-
-5.7 Application schema ElevationTIN 63
-
-5.7.1 Description 63
-
-5.7.2 Feature catalogue 66
-
-6 Reference systems, units of measure and grids 69
-
-6.1 Default reference systems, units of measure and grid 69
-
-6.1.1 Coordinate reference systems 69
-
-6.1.2 Temporal reference system 72
-
-6.1.3 Units of measure 73
-
-6.1.4 Grids 73
-
-6.2 Theme-specific requirements and recommendations 74
-
-6.2.1 Coordinate reference systems 74
-
-6.2.2 Grids 81
-
-7 Data quality 84
-
-7.1 Data quality elements 84
-
-7.1.1 Completeness – Commission 85
-
-7.1.2 Completeness – Omission 86
-
-7.1.3 Logical consistency – Conceptual consistency 86
-
-7.1.4 Logical consistency – Domain consistency 87
-
-7.1.5 Logical Consistency – Format consistency 87
-
-7.1.6 Logical Consistency – Topological consistency 88
-
-7.1.7 Positional accuracy – Absolute or external accuracy 91
-
-7.1.8 Positional accuracy – Gridded data position accuracy 92
-
-7.2 Minimum data quality requirements 93
-
-7.3 Recommendation on data quality 94
-
-8 Dataset-level metadata 95
-
-8.1 Metadata elements defined in INSPIRE Metadata Regulation 95
-
-8.1.1 Conformity 96
-
-8.1.2 Lineage 99
-
-8.1.3 Temporal reference 99
-
-8.2 Metadata elements for interoperability 100
-
-8.2.1 Coordinate Reference System 101
-
-8.2.2 Temporal Reference System 101
-
-8.2.3 Encoding 102
-
-8.2.4 Character Encoding 103
-
-8.2.5 Spatial representation type 103
-
-8.2.6 Data Quality – Logical Consistency – Topological Consistency 104
-
-8.3 Recommended theme-specific metadata elements 104
-
-8.3.1 Maintenance Information 105
-
-8.3.2 Metadata elements for reporting data quality 105
-
-8.3.3 Spatial representation information 107
-
-8.3.4 Supplemental information 107
-
-8.3.5 Process step 108
-
-8.3.6 Data source 109
-
-8.3.7 Browse graphic information 110
-
-8.3.8 Digital transfer options information 110
-
-9 Delivery 111
-
-9.1 Updates 111
-
-9.2 Delivery medium 111
-
-9.3 Options for delivering coverage data 112
-
-9.4 Encodings 113
-
-9.4.1 Default Encoding(s) 113
-
-9.4.2 Recommended Encoding(s) 117
-
-10 Data Capture 117
-
-10.1 Elevation - Coverages (Grids) 117
-
-10.1.1 Grid spacing 117
-
-10.2 Elevation - Vector elements 118
-
-10.2.1 Generic consistency rules 118
-
-10.2.2 Density of Elevation data 118
-
-10.3 Elevation - TIN 120
-
-10.4 Bathymetry-specific objects 120
-
-11 Portrayal 121
-
-11.1 Layers to be provided by INSPIRE view services 122
-
-11.1.1 Layers organisation 122
-
-11.2 Styles required to be supported by INSPIRE view services 122
-
-11.2.1 Styles for the layer EL.BreakLine 122
-
-11.2.2 Styles for the layer EL.ContourLine 123
-
-11.2.3 Styles for the layer EL.IsolatedArea 124
-
-11.2.4 Styles for the layer EL.SpotElevation 125
-
-11.2.5 Styles for the layer EL.VoidArea 127
-
-11.2.6 Styles for the layer EL.GridCoverage 128
-
-11.2.7 Styles for the layer EL.TIN 129
-
-11.2.8 Examples 130
-
-11.3 Styles recommended to be supported by INSPIRE view services 133
-
-11.3.1 Styles for the layer EL.ContourLine 133
-
-11.3.2 Examples 136
-
-Bibliography 137
-
-Annex A (normative) Abstract Test Suite 139
-
-A.1 Application Schema Conformance Class 142
-
-A.1.1 Schema element denomination test 142
-
-A.1.2 Value type test 142
-
-A.1.3 Value test 142
-
-A.1.4 Attributes/associations completeness test 143
-
-A.1.5 Abstract spatial object test 143
-
-A.1.6 Constraints test 144
-
-A.1.7 Geometry representation test 144
-
-A.2 Reference Systems Conformance Class 144
-
-A.2.1 Datum test 144
-
-A.2.2 Coordinate reference system test 145
-
-A.2.3 Vertical Coordinate Reference System exclusiveness test 145
-
-A.2.4 Grid test 145
-
-A.2.5 View service coordinate reference system test 146
-
-A.2.6 Temporal reference system test 146
-
-A.2.7 Units of measurements test 146
-
-A.3 Data Consistency Conformance Class 146
-
-A.3.1 Unique identifier persistency test 147
-
-A.3.2 Version consistency test 147
-
-A.3.3 Life cycle time sequence test 147
-
-A.3.4 Update frequency test 147
-
-A.3.5 Grid aggregation test 148
-
-A.3.6 Contour line test 148
-
-A.3.7 Break line test 148
-
-A.3.8 Isolated area test 148
-
-A.3.9 Stop line test 149
-
-A.4 Metadata IR Conformance Class 149
-
-A.4.1 Metadata for interoperability test 149
-
-A.4.2 Metadata completeness test 149
-
-A.5 Information Accessibility Conformance Class 150
-
-A.5.1 Code list publication test 150
-
-A.5.2 CRS publication test 150
-
-A.5.3 CRS identification test 150
-
-A.5.4 Grid identification test 150
-
-A.6 Data Delivery Conformance Class 151
-
-A.6.1 Encoding compliance test 151
-
-A.6.2 Minimum data delivery test 151
-
-A.7 Portrayal Conformance Class 151
-
-A.7.1 Layer designation test 151
-
-A.2 Part 2 : Conformity with the technical guideline (TG) Requirements 152
-
-A.8.1 Multiplicity test 152
-
-A.8.2 CRS http URI test 152
-
-A.8.3 Metadata encoding schema validation test 152
-
-A.8.4 Metadata occurrence test 152
-
-A.8.5 Metadata consistency test 153
-
-A.8.6 Encoding schema validation test 153
-
-A.8.7 Coverage multipart representation test 153
-
-A.8.8 Coverage domain consistency test 153
-
-A.8.9 TIFF conformity test 154
-
-A.8.10 TIFF data structure test 154
-
-A.8.11 TIFF range coding test 154
-
-A.8.12 TIFF range compression test 154
-
-A.8.13 TIFF grid coordinate system test 155
-
-A.8.14 Style test 155
-
-Annex B (informative) Use-Cases 156
-
-B.1 Documented high-level use cases 156
-
-B.1.1 Flood mapping 156
-
-B.1.2 Orthoimagery production 159
-
-B.1.3 Elevation mapping 164
-
-B.1.4 Maintenance of fairways 166
-
-B.2 Additional applications 167
-
-Annex C (normative) Code list values 168
-
-Annex D (informative) Pan-European Geographic Grid for gridded Elevation data 170
-
-D.1 Introduction 170
-
-D.2 Zoned Geographic Grid for gridded Elevation data 171
-
-Annex E (informative) Examples on how to use ChartDatum data type 177
-
-E.1 Description of the sea floor 177
-
-E.2 Description of the floor of an inland standing water body 178
-
-E.3 Description of the bed of a navigable river 178
-
-Annex E (normative) Encoding rules for TIFF 179
-
-E.1 Introduction 179
-
-E.2 TIFF format 179
-
-E.2.1 Format overview 179
-
-E.2.2 INSPIRE TIFF profile for grid coverage data 179
-
-E.2.3 Mapping between TIFF and GML data structures 182
-
 :sectnums:
 
+<<<
 == Scope
 
 This document specifies a harmonised data specification for the spatial data theme _Elevation_ as defined in Annex II of the INSPIRE Directive.
 
 This data specification provides the basis for the drafting of Implementing Rules according to Article 7 (1) of the INSPIRE Directive [Directive 2007/2/EC]. The entire data specification is published as implementation guidelines accompanying these Implementing Rules.
-
+<<<
 == Overview
 
 === Name
@@ -891,7 +510,7 @@ Feature (spatial object) with all geometric attributes described piecewise by st
 
 |SWE Sensor Web Enablement
 
-|TG Technical Guidance
+|TG Technical GuidanceFigure
 
 |TIFF Tagged Image File Format
 
@@ -920,7 +539,8 @@ In contrast, the Technical Guidance documents define _how_ Member States might i
 
 image:media\image4.png[image]
 
-Figure 1 - Relationship between INSPIRE Implementing Rules and Technical Guidance
+[.text-center]
+*Figure 1* - Relationship between INSPIRE Implementing Rules and Technical Guidance
 
 ==== Requirements
 
@@ -930,12 +550,11 @@ The purpose of this Technical Guidance (Data specifications on _Elevation_) is t
 ====
 [.text-center]
 *IR Requirement*
-
 _Article / Annex / Section no._
-
 *Title / Heading*
 
 This style is used for requirements contained in the Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010).
+
 ====
 
 For each of these IR requirements, this Technical Guidance contains additional explanations and examples.
@@ -969,13 +588,13 @@ NOTE The implementation of recommendations is not mandatory. Compliance with thi
 ==== Conformance
 
 Annex A includes the abstract test suite for checking conformance with the requirements included in this Technical Guidance and the corresponding parts of the Implementing Rules (Commission Regulation (EU) No 1089/2010).
-
+<<<
 == Specification scopes
 
 This data specification does not distinguish different specification scopes, but just considers one general scope.
 
 NOTE For more information on specification scopes, see [ISO 19131:2007], clause 8 and Annex D.
-
+<<<
 == Identification information
 
 These Technical Guidelines are identified by the following URI:
@@ -983,7 +602,7 @@ These Technical Guidelines are identified by the following URI:
 http://inspire.ec.europa.eu/tg/el/3.0
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
-
+<<<
 == Data content and structure
 
 === Application schemas – Overview 
@@ -996,16 +615,14 @@ Articles 3, 4 and 5 of the Implementing Rules lay down the requirements for the 
 ====
 [.text-center]
 *IR Requirement*
-
 Article 4
-
 *Types for the Exchange and Classification of Spatial Objects*
 
-{empty}1. For the exchange and classification of spatial objects from data sets meeting the conditions laid down in Article 4 of Directive 2007/2/EC, Member States shall use the spatial object types and associated data types, enumerations and code lists that are defined in Annexes II, III and IV for the themes the data sets relate to.
+1. For the exchange and classification of spatial objects from data sets meeting the conditions laid down in Article 4 of Directive 2007/2/EC, Member States shall use the spatial object types and associated data types, enumerations and code lists that are defined in Annexes II, III and IV for the themes the data sets relate to.
 
-{empty}2. Spatial object types and data types shall comply with the definitions and constraints and include the attributes and association roles set out in the Annexes.
+2. Spatial object types and data types shall comply with the definitions and constraints and include the attributes and association roles set out in the Annexes.
 
-{empty}3. The enumerations and code lists used in attributes or association roles of spatial object types or data types shall comply with the definitions and include the values set out in Annex II. The enumeration and code list values are uniquely identified by language-neutral mnemonic codes for computers. The values may also include a language-specific name to be used for human interaction.
+3. The enumerations and code lists used in attributes or association roles of spatial object types or data types shall comply with the definitions and include the values set out in Annex II. The enumeration and code list values are uniquely identified by language-neutral mnemonic codes for computers. The values may also include a language-specific name to be used for human interaction.
 
 ====
 
@@ -1036,9 +653,7 @@ An application schema may include references (e.g. in attributes or inheritance 
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 3_
-
 *Common Types*
 
 Types that are common to several of the themes listed in Annexes I, II and III to Directive 2007/2/EC shall conform to the definitions and constraints and include the attributes and association roles set out in Annex I.
@@ -1069,16 +684,13 @@ The following important rules related to class inheritance and abstract classes 
 ====
 [.text-center]
 *IR Requirement*
-
 Article 5
-
 *Types*
-
 (...)
 
-{empty}2. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
+2. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
 
-{empty}3. Abstract types shall not be instantiated.
+3. Abstract types shall not be instantiated.
 
 ====
 
@@ -1161,7 +773,7 @@ Article 6
 *Code Lists and Enumerations*
 (...)
 
-{empty}5) Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."
+5) Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."
 
 ====
 
@@ -1180,15 +792,15 @@ The IRs distinguish the following types of code lists.
 Article 6
 *Code Lists and Enumerations*
 
-{empty}1) Code lists shall be of one of the following types, as specified in the Annexes::
+1) Code lists shall be of one of the following types, as specified in the Annexes::
 
-{empty} a) code lists whose allowed values comprise only the values specified in this Regulation;
+ a) code lists whose allowed values comprise only the values specified in this Regulation;
 +
-{empty} b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
+ b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
 +
-{empty} c) code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
+ c) code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
 +
-{empty} d) code lists, whose allowed values comprise any values defined by data providers.
+ d) code lists, whose allowed values comprise any values defined by data providers.
 
 For the purposes of points (b), (c) and (d), in addition to the allowed values, data providers may use the values specified in the relevant INSPIRE Technical Guidance document available on the INSPIRE web site of the Joint Research Centre.
 
@@ -1218,14 +830,11 @@ In addition, code lists can be hierarchical, as explained in Article 6(2) of the
 ====
 [.text-center]
 *IR Requirement*
-
 Article 6
-
 *Code Lists and Enumerations*
-
 (...)
 
-{empty}2) Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.
+2) Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.
 
 ====
 
@@ -1237,16 +846,13 @@ The type of code list and whether it is hierarchical or not is also indicated in
 ====
 [.text-center]
 *IR Requirement*
-
 Article 6
-
 *Code Lists and Enumerations*
-
 (....)
 
-{empty}3) Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.
+3) Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.
 
-{empty}4) Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.
+4) Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.
 
 ====
 
@@ -1337,14 +943,12 @@ This is perceived as achievable at least for data at the same level of detail (s
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 9_
-
 *Identifier Management*
 
-{empty}1. The data type Identifier defined in Section 2.1 of Annex I shall be used as a type for the external object identifier of a spatial object.
+1. The data type Identifier defined in Section 2.1 of Annex I shall be used as a type for the external object identifier of a spatial object.
 
-{empty}2. The external object identifier for the unique identification of spatial objects shall not be changed during the life-cycle of a spatial object.
+2. The external object identifier for the unique identification of spatial objects shall not be changed during the life-cycle of a spatial object.
 
 ====
 
@@ -1360,12 +964,10 @@ NOTE 3 Article 9(2) is ensured if the _namespace_ and _localId_ attributes of th
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 12_
-
 *Other Requirements & Rules*
 
-{empty}1. The value domain of spatial properties defined in this Regulation shall be restricted to the Simple Feature spatial schema as defined in Herring, John R. (ed.), OpenGIS® Implementation Standard for Geographic information – Simple feature access – Part 1: Common architecture, version 1.2.1, Open Geospatial Consortium, 2011, unless specified otherwise for a specific spatial data theme or type.
+1. The value domain of spatial properties defined in this Regulation shall be restricted to the Simple Feature spatial schema as defined in Herring, John R. (ed.), OpenGIS® Implementation Standard for Geographic information – Simple feature access – Part 1: Common architecture, version 1.2.1, Open Geospatial Consortium, 2011, unless specified otherwise for a specific spatial data theme or type.
 
 ====
 
@@ -1389,14 +991,11 @@ NOTE 2 Changes to the attribute "endLifespanVersion" does not trigger a change i
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 10_
-
 *Life-cycle of Spatial Objects*
-
 (...)
 
-{empty}3. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
+3. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
 
 ====
 
@@ -1421,12 +1020,10 @@ A new data acquisition process over a given area is considered rather a new obse
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.1_
-
 *External Object Identifiers of Elevation Data*
 
-{empty}(1) If elevation data is updated based on new source data, the updated objects shall receive a new external object identifier.
+(1) If elevation data is updated based on new source data, the updated objects shall receive a new external object identifier.
 
 ====
 
@@ -1449,11 +1046,13 @@ image:media\image5.png[image] image:media\image6.png[image]
 
 (Source: ISO 19136:2007) (Source: GML 3.3.0)
 
-Figure 2 – Examples of a rectified grid (left) and a referenceable grid (right)
+[.text-center]
+*Figure 2* – Examples of a rectified grid (left) and a referenceable grid (right)
 
 image:media\image7.png[image]
 
-Figure 3 – Example of a time series
+[.text-center]
+*Figure 3* – Example of a time series
 
 === Application schema Elevation
 
@@ -1469,9 +1068,10 @@ Both properties are constrained to the physical vertical dimension, measured alo
 
 The orientation of the positive axis is opposite to the Earth's gravity field in the case of the height property (upwards) and coincident to the Earth's gravity field in the case of the depth property (downwards). Hence, heights are positive above the surface taken as origin whereas depths are positive below it, as show in the next figure.
 
-image:media\image8.emf[image]
+image:media\image8.png[image, align=center]
 
-Figure 4 – Measuring of elevation properties.
+[.text-center]
+*Figure 4* – Measuring of elevation properties.
 
 ====== Sub-themes
 
@@ -1490,21 +1090,25 @@ Describing the depth property for the following geographical elements is in the 
 * the bed of navigable rivers – as exemplified in Figure 8 below.
 
 
-image:media\image9.emf[image]
+image:media\image9.png[image, align=center]
 
-Figure 5 – Example: Description of land elevation.
+[.text-center]
+*Figure 5* – Example: Description of land elevation.
 
-image:media\image10.emf[image]
+image:media\image10.png[image]
 
-Figure 6 – Example: Description of the sea floor.
+[.text-center]
+*Figure 6* – Example: Description of the sea floor.
 
-image:media\image11.emf[image]
+image:media\image11.png[image]
 
-Figure 7 – Example: Description of the floor of an inland standing water body.
+[.text-center]
+*Figure 7* – Example: Description of the floor of an inland standing water body.
 
-image:media\image12.emf[image]
+image:media\image12.png[image]
 
-Figure 8 – Example: Description of the bed of a navigable river.
+[.text-center]
+*Figure 8* – Example: Description of the bed of a navigable river.
 
 
 _Integrated land-sea models_
@@ -1513,9 +1117,10 @@ Land-elevation and bathymetry data may be combined in the same data set using di
 
 This specification supports the description of this kind of model in terms of a single elevation property (either height or depth), referenced only to one vertical reference.
 
-image:media\image13.emf[image]
+image:media\image13.png[image, align=center]
 
-Figure 9 – Example: Description of an integrated land-sea model.
+[.text-center]
+*Figure 9* – Example: Description of an integrated land-sea model.
 
 ====== Terrain surfaces
 
@@ -1528,9 +1133,10 @@ NOTE The pure concepts of DTM and DSM are used here. In practice, real data may 
 
 The term Digital Elevation Model (DEM) covers both visions above mentioned.
 
-image:media\image14.emf[image]
+image:media\image14.png[image, align=center]
 
-Figure 10 – Digital elevation models (DEM): Difference between DTM and DSM
+[.text-center]
+*Figure 10* – Digital elevation models (DEM): Difference between DTM and DSM
 
 ====== Dimensionality of modelling
 
@@ -1564,29 +1170,28 @@ The model incorporated in this specification devotes one application schema for 
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.2_
-
 *Provision of Land Elevation Data*
-
 (...)
 
 Spatial data sets describing the morphology of land elevation shall be made available at least using the spatial object types included in the package _Elevation_ – Grid Coverage.
 
 ====
 
-[arabic, start=5]
-. Spatial data sets related to the theme _Elevation_ describing the morphology of land elevation should be also made available using the spatial object types and data types specified in the following application schemas: ElevationVectorElements.
+[NOTE]
+====
+[.text-center]
+*Recommendation 5*
+
+Spatial data sets related to the theme _Elevation_ describing the morphology of land elevation should be also made available using the spatial object types and data types specified in the following application schemas: ElevationVectorElements.
+====
 
 [IMPORTANT]
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.2_
-
 *Provision of Bathymetry Data*
-
 (...)
 
 Spatial data sets describing the morphology of bathymetry shall be made available at least using the spatial object types included in either the package Elevation – Grid Coverage or the package Elevation – Vector Elements.
@@ -1610,9 +1215,10 @@ An exception to this rule are local chart datums aimed at referencing depths whe
 
 This section explains the structure of the _Elevation_ model, which is composed of four application schemas (packages) as illustrated in Figure 11:
 
-image:media\image15.emf[image]
+image:media\image15.png[image, align=center]
 
-Figure 11 – UML class diagram: Overview of the application schemas of Elevation
+[.text-center]
+*Figure 11* – UML class diagram: Overview of the application schemas of Elevation
 
 * _ElevationBaseTypes_
 +
@@ -1627,7 +1233,8 @@ Elevation data using this model is provided as continuous coverages. Each covera
 The coverages defined in this application schema are based on the common model for coverages included in the Generic Conceptual Model [DS-D2.5], which provides the framework for the definition of coverage types. This common model has been established according to the WCS2.0 and ISO 19123 (_Coverage geometry and functions_) standards.
 
 * _ElevationVectorElements_
-+This application schema constitutes the elevation model for the vector spatial representation type.
++
+This application schema constitutes the elevation model for the vector spatial representation type.
 +
 Elevation data using this model is provided as different vector spatial object types, each of them having their inherent properties.
 
@@ -1646,9 +1253,10 @@ _ElevationGridCoverage_, _ElevationVectorElements_ and _ElevationTIN_ applicatio
 
 Figure 12 shows the dependencies between the four _Elevation_ packages and other external packages from where they import classes (Generic Conceptual Model [DS-D2.5], ISO standards, application schemas defined for other INSPIRE themes).
 
-image:media\image16.emf[image]
+image:media\image16.png[image, align=center]
 
-Figure 12 – Package dependencies: Application schemas of Elevation
+[.text-center]
+*Figure 12* – Package dependencies: Application schemas of Elevation
 
 === Application schema _ElevationBaseTypes_
 
@@ -1656,9 +1264,10 @@ Figure 12 – Package dependencies: Application schemas of Elevation
 
 ===== Narrative description and UML overview
 
-image:media\image17.emf[image]
+image:media\image17.png[image, align=center]
 
-Figure 13 – UML class diagram: Overview of the _ElevationBaseTypes_ application schema
+[.text-center]
+*Figure 13* – UML class diagram: Overview of the _ElevationBaseTypes_ application schema
 
 The _ElevationBaseTypes_ application schema provides the basic framework for the _Elevation_ theme. Regardless of the spatial representation type used for the elevation data, it defines enumerations which are common to the other _Elevation_ application schemas: _ElevationGridCoverage_, _ElevationVectorElements_ and _ElevationTIN_.
 
@@ -1688,12 +1297,7 @@ This enumeration is defined in Section 5.4.2.1.2.
 |===
 |Application Schema |INSPIRE Application Schema ElevationBaseTypes
 |Version number |3.0
-|===
-
-*Types defined in the feature catalogue*
-
-[cols=",,",]
-|===
+2+|*Types defined in the feature catalogue*
 |*Type* |*Package* |*Stereotypes*
 |===
 
@@ -1769,9 +1373,10 @@ The attribute values of an elevation grid coverage are arranged using the geomet
 
 A grid coordinate system is defined by means of the origin and the axes of the grid. Grid coordinates are measured along the axis away from the origin.
 
-image:media\image18.emf[image]
+image:media\image18.png[image, align=center]
 
-Figure 14 - Example of rectified quadrilateral grid
+[.text-center]
+*Figure 14* - Example of rectified quadrilateral grid
 
 Furthermore, the grid of an elevation coverage is geo-rectified in the sense of ISO 19123. It is related to the Earth through an affine relationship that makes a simple transformation between the grid coordinates and the coordinates in the associated Earth-based reference system. The transformation parameters are determined by the location of the grid origin, the orientation of the axis and the grid spacing in each direction within the external coordinate reference system.
 
@@ -1785,7 +1390,8 @@ Secondly, high-resolution grid DEMs covering broad territories represent large v
 
 This file-based data structure is artificial and has no real logical meaning on its own even though it is usually based on grid elements. Therefore it is addressed in the encoding part of this data specification (Section 9.3).
 
-Figure 15 - Various configurations of tiling scheme
+[.text-center]
+*Figure 15* - Various configurations of tiling scheme
 
 Third, large grid DEMs can also be divided into subsets that make sense on their own as they describe logical structures (e.g. map sheets, administrative units like regions or districts, etc.). Unlike the previous case, this type of file-independent tiling is fully in the scope of the conceptual model.
 
@@ -1803,7 +1409,8 @@ A first data structure level is provided through the concept of coverage. In add
 
 For applicability, input and aggregated elevation grid coverages shall be part of the same elevation dataset.
 
-Figure 16 - Elevation grid coverage aggregation principle
+[.text-center]
+*Figure 16* - Elevation grid coverage aggregation principle
 
 As shown in Figure 16 overlapping elevation coverages A B and C compose the aggregated elevation coverage D, the bounding box of which is dotted.
 
@@ -1813,7 +1420,8 @@ This mechanism is fully recursive so that an elevation coverage can itself be a 
 
 image:media\image19.jpeg[image]
 
-Figure 17 – UML class diagram: Overview of the _ElevationGridCoverage_ application schema
+[.text-center]
+*Figure 17* – UML class diagram: Overview of the _ElevationGridCoverage_ application schema
 
 The _ElevationGridCoverage_ application schema defines the basis for the provision of elevation data as continuous coverages using a systematic tessellation based on a regular rectified quadrilateral grid to cover its domain.
 
@@ -1825,7 +1433,8 @@ The _ElevationGridCoverage_ spatial object type is the core element of the _Elev
 
 image:media\image20.jpeg[image]
 
-Figure 18 – UML class diagram: GCM - _Coverages (Domain and Range)_
+[.text-center]
+*Figure 18* – UML class diagram: GCM - _Coverages (Domain and Range)_
 
 _RectifiedGridCoverage_ is itself an implementation of continuous quadrilateral grid coverages defined in ISO 19123, which establishes the basic properties of coverage structures. Thereby, the compliance with the standard is assured.
 
@@ -1858,14 +1467,12 @@ NOTE Since real elevation data sets have very often discrepancies to what it is 
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.2_
-
 *Domain Extent and Range Set of Elevation Grid Coverage*
 
-{empty}(2) The _domainExtent_ attribute of every _ElevationGridCoverage_ instance shall be at least populated with a subtype of _the EX_GeographicExtent_ type.
+(2) The _domainExtent_ attribute of every _ElevationGridCoverage_ instance shall be at least populated with a subtype of _the EX_GeographicExtent_ type.
 
-{empty}(3) The elevation property values included within the range set of a single _ElevationGridCoverage_ shall be referenced to one and only one vertical coordinate reference system.
+(3) The elevation property values included within the range set of a single _ElevationGridCoverage_ shall be referenced to one and only one vertical coordinate reference system.
 
 ====
 
@@ -1912,7 +1519,8 @@ The grid origin, which is located at grid coordinates (0, 0), should be the uppe
 
 NOTE These recommendations are based on the most widespread convention in the case of elevation coverages.
 
-Figure 19 – Recommended grid coordinate system
+[.text-center]
+*Figure 19* – Recommended grid coordinate system
 
 ====== Attribute ElevationGridCoverage::rangeSet 
 
@@ -1975,12 +1583,8 @@ As stated in 5.5.1.1.3, an _ElevationGridCoverage_ instance may be an aggregatio
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.2_
-
 *Aggregated Elevation Grid Coverage*
-
-====
 
 [arabic, start=4]
 . All the _ElevationGridCoverage_ instances to which an aggregated _ElevationGridCoverage_ instance refers, shall be consistent. This means that they shall share the same range type, Coordinate Reference System and resolution. They shall also support grid alignment, i.e. the grid points in one _ElevationGridCoverage_ instance line up with grid points of the other _ElevationGridCoverage_ instances, so that grid cells do not partially overlap.
@@ -1990,6 +1594,8 @@ _Annex III, Section 1.7.2_
 
 [arabic, start=6]
 . The union of the contributing footprints of the _ElevationGridCoverage_ instances referred to by the same aggregated _ElevationGridCoverage_ instance shall determine the geographic extent (_domainExtent_) of the aggregated _ElevationGridCoverage_ instance.
+
+====
 
 NOTE 1 The data structure is implemented by the recursive UML aggregation linking the _ElevationGridCoverage_ class to itself. The _ElevationGridCoverageAggregation_ association class indicates through the _contributingFootprint_ attribute which geographic data areas of an input coverage are reused in the composed coverage.
 
@@ -2053,12 +1659,10 @@ NOTE 2 The topological relations of two spatial objects based on their specific 
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III Section 1.7.2_
-
 *Dimension of Elevation Grid Coverage*
 
-{empty}(7) The ElevationGridCoverage package shall be restricted to two-dimensional geometries.
+(7) The ElevationGridCoverage package shall be restricted to two-dimensional geometries.
 
 ====
 
@@ -2088,18 +1692,16 @@ Moreover, in the context of data maintenance, this temporal element provides a s
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III Section 1.7.2_
-
 *Elevation Grid Coverage - Acquisition Date Infromation*
 
-{empty}(8) Information about the acquisition dates of data contained in elevation grid coverages shall be provided at least in one of the following ways:
+(8) Information about the acquisition dates of data contained in elevation grid coverages shall be provided at least in one of the following ways:
 
 ====
 
-{empty}(a) by providing the metadata element Temporal reference for each spatial object through the _metadata_ attribute of the spatial object type _ElevationGridCoverage_.
+(a) by providing the metadata element Temporal reference for each spatial object through the _metadata_ attribute of the spatial object type _ElevationGridCoverage_.
 
-{empty}(b) by providing the metadata element Temporal reference required by Regulation (EC) No 1205/2008 as a temporal extent.
+(b) by providing the metadata element Temporal reference required by Regulation (EC) No 1205/2008 as a temporal extent.
 
 NOTE There is no requirement about the acquisition time of elevation grid coverages.
 
@@ -2111,12 +1713,7 @@ NOTE There is no requirement about the acquisition time of elevation grid covera
 |===
 |Application Schema |INSPIRE Application Schema ElevationGridCoverage
 |Version number |3.0
-|===
-
-*Types defined in the feature catalogue*
-
-[cols=",,",options="header",]
-|===
+2+|*Types defined in the feature catalogue*
 |*Type* |*Package* |*Stereotypes*
 |_ElevationGridCoverage_ |ElevationGridCoverage |«featureType»
 |_ElevationGridCoverageAggregation_ |ElevationGridCoverage |«dataType»
@@ -2128,32 +1725,19 @@ NOTE There is no requirement about the acquisition time of elevation grid covera
 
 [cols=",",options="header",]
 |===
-|*ElevationGridCoverage*
-|
+2+|*ElevationGridCoverage*
 |Name: |elevation grid coverage
 |Subtype of: |RectifiedGridCoverage
 |Definition: |Continuous coverage which uses a systematic tessellation based on a regular rectified quadrilateral grid to cover its domain, where the elevation property value is usually known for each of the grid points forming this domain.
 |Description: |SOURCE Adapted from [ISO 19123:2005].
 |Stereotypes: |«featureType»
-|===
-
-
-*Attribute: beginLifespanVersion*
-
-[cols=",",]
-|===
+2+|*Attribute: beginLifespanVersion*
 |Name: |begin lifespan version
 |Value type: |DateTime
 |Definition: |Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
 |Multiplicity: |1
 |Stereotypes: |«voidable,lifeCycleInfo»
-!===
-
-
-*Attribute: domainExtent*
-
-[cols=",",]
-|===
+2+|*Attribute: domainExtent*
 |Name: |domain extent
 |Value type: |EX_Extent
 |Definition: |Extent of the spatiotemporal domain of the coverage.
@@ -2163,108 +1747,50 @@ NOTE 1 The data type EX_Extent, is defined in ISO 19103. Extents may be specifie
  
 NOTE 2 The domain extent shall be specified at least in space by using EX_BoundingPolygon, EX_GeographicBoundingBox or EX_GeographicDescription. The whole geographic extent of the elevation coverage is affected, including areas where grid points hold nil reason values.
 |Multiplicity: |1..*
-|===
-
-*Attribute: endLifespanVersion*
-[cols=",",]
-|===
+2+|*Attribute: endLifespanVersion*
 |Name: !end lifespan version
 |Value type: |DateTime
 |Definition: |Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
 |Multiplicity: |1
 |Stereotypes: |«voidable,lifeCycleInfo»
-|===
-
-*Attribute: inspireId*
-
-[cols=",",]
-!===
+2+|*Attribute: inspireId*
 |Name: |inspire ID
 |Value type: |Identifier
 |Definition: |External object identifier of the spatial object.
 |Description: |NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.
 |Multiplicity: |1
-|===
-
-
-*Attribute: propertyType*
-
-[cols=",",]
-|===
+2+|*Attribute: propertyType*
 |Name: |property type
 |Value type: |ElevationPropertyTypeValue
 |Definition: |Attribute determining the elevation property represented by the elevation grid coverage.
 |Description: |EXAMPLE Height, depth.
 |Multiplicity: |1
-|===
-
-*Attribute: surfaceType*
-
-[cols=",",]
-|===
+2+|*Attribute: surfaceType*
 |Name: |surface type
 |Value type: |SurfaceTypeValue
 |Definition: |Attribute indicating the type of elevation surface that the coverage describes in relation to the Earth's bare surface.
 |Multiplicity: |1
-|===
-
-*Association role: contributingElevationGridCoverage [the association has additional attributes - see association class ElevationGridCoverageAggregation]*
-
-[cols=",",]
-|===
+2+|*Association role: contributingElevationGridCoverage [the association has additional attributes - see association class ElevationGridCoverageAggregation]*
 |Name: |contributing elevation grid coverage
 |Value type: |ElevationGridCoverage
 |Definition: |Reference to the elevation grid coverages that compose an aggregated elevation grid coverage. The association has additional properties as defined in the association class ElevationGridCoverageAggregation.
 |Multiplicity: |0..*
-|===
-
-
-*Constraint: domainDimensionIs2*
-
-[cols=",",]
-|===
+2+|*Constraint: domainDimensionIs2*
 |Natural language: |The grid dimension shall always be 2 for an elevation grid coverage
 |OCL: |inv: domainSet.dimension=2
-|===
-
-*Constraint: domainExtentContainsGeographicElement*
-
-[cols=",",]
-|===
+2+|*Constraint: domainExtentContainsGeographicElement*
 |Natural language: |The domainExtent shall be at least populated with a subtype of EX_GeographicExtent
 |OCL: |inv: domainExtent.geographicElement->size()>=1
-|===
-
-*Constraint: domainRequiresCRS*
-
-[cols=",",]
-|===
+2+|*Constraint: domainRequiresCRS*
 |Natural language: |The coordinate reference system used to reference the grid shall be provided
 |OCL: |inv: domainSet.origin.coordinateReferenceSystem->notEmpty
-|===
-
-
-*Constraint: identicalOffsetVectorsWithinElevationCoverageAggregation*
-
-[cols=",",]
-|===
+2+|*Constraint: identicalOffsetVectorsWithinElevationCoverageAggregation*
 |Natural language: |All the ElevationGridCoverage instances to which an aggregated ElevationGridCoverage instance refers, shall share the same orientation of grid axes and the same grid spacing in each direction
 |OCL: |Inv: contributingElevationCoverage->forAll(v \| v.domainSet.offsetVectors = self.domainSet.offsetVectors)
-|===
-
-
-*Constraint: originDimensionIs2*
-
-[cols=",",]
-|===
+2+|*Constraint: originDimensionIs2*
 |Natural language: |The origin of the grid shall be described in two dimensions
 |OCL: |inv: domainSet.origin.dimension=2
-|===
-
-*Constraint: rangeSetValuesAreOfTypeFloat*
-
-[cols=",",]
-|===
+2+|*Constraint: rangeSetValuesAreOfTypeFloat*
 |Natural language: |The values in the range set shall be described by the Float type
 |OCL: |inv: rangeSet->forAll(v \| v.oclIsKindOf(Float))
 |===
@@ -2276,13 +1802,11 @@ NOTE 2 The domain extent shall be specified at least in space by using EX_Boundi
 
 [cols=",",options="header",]
 |===
-|*ElevationGridCoverageAggregation (association class)*
-|
+2+|*ElevationGridCoverageAggregation (association class)*
 |Name: |elevation grid coverage aggregation
 |Definition: |Geometrical characteristics of the elevation grid coverage aggregation.
 |Stereotypes: |«dataType»
-|*Attribute: contributingFootprint*
-|
+2+|*Attribute: contributingFootprint*
 |Name: |contributing footprint
 |Value type: |GM_MultiSurface
 |Definition: |Multi polygon delineating the geographic area of the elevation grid coverage that contributes to the aggregated elevation grid coverage.
@@ -2291,24 +1815,17 @@ NOTE 2 The domain extent shall be specified at least in space by using EX_Boundi
 
 ====== ElevationGridCoverageAggregation
 
-[cols="1,2a"]
+[cols=","]
 |===
-|*ElevationGridCoverageAggregation (association class)* |
-[cols="2,2"]
-!===
-!Name: !elevation grid coverage aggregation
-!Definition: !Geometrical characteristics of the elevation grid coverage aggregation.
-!Stereotypes: !«dataType»
-!===
-|*Attribute: contributingFootprint*
-|
-[cols="2,2"]
-!===
-!Name: !contributing footprint
-!Value type: !GM_MultiSurface
-!Definition: !Multi polygon delineating the geographic area of the elevation grid coverage that contributes to the aggregated elevation grid coverage.
-!Multiplicity: !1
-!===
+2+|*ElevationGridCoverageAggregation (association class)* |
+|Name: |elevation grid coverage aggregation
+|Definition: |Geometrical characteristics of the elevation grid coverage aggregation.
+|Stereotypes: |«dataType»
+2+|*Attribute: contributingFootprint*
+|Name: |contributing footprint
+|Value type: |GM_MultiSurface
+|Definition: |Multi polygon delineating the geographic area of the elevation grid coverage that contributes to the aggregated elevation grid coverage.
+|Multiplicity: |1
 |===
 
 ===== Imported types (informative)
@@ -2338,8 +1855,7 @@ This section lists definitions for feature types, data types and enumerations an
 
 [cols=",",options="header",]
 |===
-|*ElevationPropertyTypeValue*
-|
+2+|*ElevationPropertyTypeValue*
 |Package: |ElevationBaseTypes
 |Reference: |INSPIRE Data specification on Elevation [DS-D2.8.II.1]
 |Definition: |Enumeration type which determines the elevation property which has been measured or calculated.
@@ -2355,8 +1871,7 @@ EXAMPLE Height, depth.
 
 [cols=",",options="header",]
 |===
-|*GM_MultiSurface*
-|
+2+|*GM_MultiSurface*
 |Package: |Geometric aggregates
 |Reference: |Geographic information -- Spatial schema [ISO 19107:2003]
 |===
@@ -2365,8 +1880,7 @@ EXAMPLE Height, depth.
 
 [cols=",",options="header",]
 |===
-|*Identifier*
-|
+2+|*Identifier*
 |Package: |Base Types
 |Reference: |INSPIRE Generic Conceptual Model, version 3.4 [DS-D2.5]
 |Definition: |External unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object.
@@ -2381,8 +1895,7 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 
 [cols=",",options="header",]
 |===
-|*RectifiedGridCoverage*
-|
+2+|*RectifiedGridCoverage*
 |Package: |Coverages (Domain and Range)
 |Reference: |INSPIRE Data Specifications – Base Models – Coverage Types, version 1.0 [DS-D2.10.2]
 |Definition: |Coverage whose domain consists of a rectified grid
@@ -2395,8 +1908,7 @@ NOTE This type can be used for both discrete and continuous coverages.
 
 [cols=",",options="header",]
 |===
-|*SurfaceTypeValue*
-|
+2+|*SurfaceTypeValue*
 |Package: |ElevationBaseTypes
 |Reference: |INSPIRE Data specification on Elevation [DS-D2.8.II.1]
 |Definition: |Enumeration type which determines the elevation surface with regard to its relative adherence to the Earth's bare surface.
@@ -2411,7 +1923,8 @@ NOTE This type can be used for both discrete and continuous coverages.
 
 image:media\image21.jpeg[image]
 
-Figure 20 – UML class diagram: Overview of the ElevationVectorElements application schema
+[.text-center]
+*Figure 20* – UML class diagram: Overview of the ElevationVectorElements application schema
 
 This application schema constitutes the elevation model for the vector spatial representation type.
 
@@ -2458,9 +1971,7 @@ As a consequence, linear spatial objects of the type _GM_Curve_ defined in this 
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.3_
-
 *Provision of Elevation Property Values*
 
 ====
@@ -3065,7 +2576,8 @@ _http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/_
 
 image:media\image22.jpeg[image]
 
-Figure 21 – UML class diagram: Overview of the ElevationTIN application schema
+[.text-center]
+*Figure 21* – UML class diagram: Overview of the ElevationTIN application schema
 
 This application schema constitutes the elevation model for the TIN spatial representation type.
 
@@ -3117,9 +2629,7 @@ This specification recommends the use of the bilinear interpolation method to ca
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.4_
-
 *Theme-specific Requirements*
 
 ====
@@ -3301,7 +2811,7 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 |Definition: |Enumeration type which determines the elevation surface with regard to its relative adherence to the Earth's bare surface.
 |Description: |EXAMPLE DTM and DSM.
 |===
-
+<<<
 == Reference systems, units of measure and grids
 
 === Default reference systems, units of measure and grid
@@ -3316,9 +2826,7 @@ The reference systems, units of measure and geographic grid systems included in 
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.2_
-
 *Datum for three-dimensional and two-dimensional coordinate reference systems*
 
 For the three-dimensional and two-dimensional coordinate reference systems and the horizontal component of compound coordinate reference systems used for making spatial data sets available, the datum shall be the datum of the European Terrestrial Reference System 1989 (ETRS89) in areas within its geographical scope, or the datum of the International Terrestrial Reference System (ITRS) or other geodetic coordinate reference systems compliant with ITRS in areas that are outside the geographical scope of ETRS89. Compliant with the ITRS means that the system definition is based on the definition of the ITRS and there is a well documented relationship between both systems, according to EN ISO 19111.
@@ -3331,9 +2839,7 @@ For the three-dimensional and two-dimensional coordinate reference systems and t
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.3_
-
 *Coordinate Reference Systems*
 
 Spatial data sets shall be made available using at least one of the coordinate reference systems specified in sections 1.3.1, 1.3.2 and 1.3.3, unless one of the conditions specified in section 1.3.4 holds.
@@ -3357,9 +2863,9 @@ Spatial data sets shall be made available using at least one of the coordinate r
 
 *1.3.3. Compound Coordinate Reference Systems*
 
-{empty}1. For the horizontal component of the compound coordinate reference system, one of the coordinate reference systems specified in section 1.3.2 shall be used.
+1. For the horizontal component of the compound coordinate reference system, one of the coordinate reference systems specified in section 1.3.2 shall be used.
 
-{empty}2. For the vertical component, one of the following coordinate reference systems shall be used:
+2. For the vertical component, one of the following coordinate reference systems shall be used:
 
 * For the vertical component on land, the European Vertical Reference System (EVRS) shall be used to express gravity-related heights within its geographical scope. Other vertical reference systems related to the Earth gravity field shall be used to express gravity-related heights in areas that are outside the geographical scope of EVRS.
 
@@ -3374,9 +2880,9 @@ Spatial data sets shall be made available using at least one of the coordinate r
 
 Exceptions, where other coordinate reference systems than those listed in 1.3.1, 1.3.2 or 1.3.3 may be used, are:
 
-{empty}1. Other coordinate reference systems may be specified for specific spatial data themes in this Annex.
+1. Other coordinate reference systems may be specified for specific spatial data themes in this Annex.
 
-{empty}2. For regions outside of continental Europe, Member States may define suitable coordinate reference systems.
+2. For regions outside of continental Europe, Member States may define suitable coordinate reference systems.
 
 The geodetic codes and parameters needed to describe these coordinate reference systems and to allow conversion and transformation operations shall be documented and an identifier shall be created, according to EN ISO 19111 and ISO 19127.
 
@@ -3386,9 +2892,7 @@ The geodetic codes and parameters needed to describe these coordinate reference 
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.4_
-
 *Coordinate Reference Systems used in the View Network Service*
 
 For the display of spatial data sets with the view network service as specified in Regulation No 976/2009, at least the coordinate reference systems for two-dimensional geodetic coordinates (latitude, longitude) shall be available.
@@ -3399,14 +2903,12 @@ For the display of spatial data sets with the view network service as specified 
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.4_
-
 *Coordinate Reference Systems used in the View Network Service*
 
-{empty}1. Coordinate reference system parameters and identifiers shall be managed in one or several common registers for coordinate reference systems.
+1. Coordinate reference system parameters and identifiers shall be managed in one or several common registers for coordinate reference systems.
 
-{empty}2. Only identifiers contained in a common register shall be used for referring to the coordinate reference systems listed in this Section.
+2. Only identifiers contained in a common register shall be used for referring to the coordinate reference systems listed in this Section.
 
 ====
 
@@ -3461,12 +2963,10 @@ Table 2. http URIs for the default coordinate reference systems
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 11_
-
 *Temporal Reference Systems*
 
-{empty}1. The default temporal reference system referred to in point 5 of part B of the Annex to Commission Regulation (EC) No 1205/2008 (footnote:[OJ L 326, 4.12.2008, p. 12.]) shall be used, unless other temporal reference systems are specified for a specific spatial data theme in Annex II.
+1. The default temporal reference system referred to in point 5 of part B of the Annex to Commission Regulation (EC) No 1205/2008 (footnote:[OJ L 326, 4.12.2008, p. 12.]) shall be used, unless other temporal reference systems are specified for a specific spatial data theme in Annex II.
 
 ====
 
@@ -3482,14 +2982,11 @@ EXAMPLE 1997 (the year 1997), 1997-07-16 (16^th^ July 1997), 1997-07-16T19:20:30
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 12_
-
 *Other Requirements & Rules*
-
 (...)
 
-{empty}2. All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
+2. All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
 ====
 
 ==== Grids
@@ -3498,16 +2995,14 @@ _Article 12_
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2_
-
 *Grids*
 
 Either of the grids with fixed and unambiguously defined locations defined in Sections 2.2.1 and 2.2.2 shall be used as a geo-referencing framework to make gridded data available in INSPIRE, unless one of the following conditions holds:
 
-{empty}(1) Other grids may be specified for specific spatial data themes in Annexes II-IV. In this case, data exchanged using such a theme-specific grid shall use standards in which the grid definition is either included with the data, or linked by reference.
+(1) Other grids may be specified for specific spatial data themes in Annexes II-IV. In this case, data exchanged using such a theme-specific grid shall use standards in which the grid definition is either included with the data, or linked by reference.
 
-{empty}(2) For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.
+(2) For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.
 
 ====
 
@@ -3601,9 +3096,7 @@ For the vertical component measuring the depth of the sea floor, this specificat
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.5_
-
 *Theme-specific Requirements*
 
 [arabic, start=1]
@@ -3629,9 +3122,7 @@ For the vertical component measuring the depth of inland water bodies floor, thi
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.5_
-
 *Theme-specific Requirements*
 
 [arabic, start=3]
@@ -3658,9 +3149,7 @@ Where an _Elevation_ data set describes an integrated land-sea surface in coasta
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.5_
-
 *Theme-specific Requirements*
 
 [arabic, start=4]
@@ -3699,9 +3188,10 @@ As shown in the next figure, the identification of a vertical CRS is carried out
 
 In any case, the units of measure shall be always expressed using SI units, as stated in Section 6.1.3.
 
-image:media\image23.emf[image]
+image:media\image23.png[image, align=center]
 
-Figure 22 – UML class diagram: Overview of the SC_CRS classes [ISO 19111:2007]
+[.text-center]
+*Figure 22* – UML class diagram: Overview of the SC_CRS classes [ISO 19111:2007]
 
 In light of the previous paragraphs describing the use of the _SC_CRS_ types, it is clear that registering of CRS is highly recommended.
 
@@ -3721,9 +3211,10 @@ For this type of elevation data _SC_CRS_ classes are directly associated to the 
 
 As far as grid coverage data is concerned, _SC_CRS_ classes are directly associated to the _CV_Coverage_ type, from which the _ElevationGridCoverage_ class defined in this specification is indirectly generalized (see UML diagram of the _ElevationGridCoverage_ application schema in Section 5.5.1.2). This is implemented through the _Coordinate Reference System_ association established between the _CV_Coverage_ type and _SC_CRS_, as shown in Figure 23 [ISO 19123:2005]. The multiplicity of the CRS role in the _Coordinate Reference System_ association is one, so only one CRS can be associated to the grid coverage (valid for both domain and range).
 
-image:media\image24.emf[image]
+image:media\image24.png[image, align=center]
 
-Figure 23 – UML class diagram: Overview of the CV_Coverage class [ISO 19123:2005]
+[.text-center]
+*Figure 23* – UML class diagram: Overview of the CV_Coverage class [ISO 19123:2005]
 
 The range of aggregated elevation coverages shall be referenced to the same vertical CRS.
 
@@ -3735,9 +3226,10 @@ As mentioned in Section 6.2.1.4.1, local chart datums for referencing the depth 
 
 This prevents data providers to register depth vertical CRS which are just used at local level and at the same time facilitates an approximate conversion of depths to heights in these cases. Users shall be aware if this approximation may be accepted depending on their final purposes.
 
-image:media\image25.emf[image]
+image:media\image25.png[image, align=center]
 
-Figure 24 – UML class: ChartDatum data type (ElevationVectorElements app. schema)
+[.text-center]
+*Figure 24* – UML class: ChartDatum data type (ElevationVectorElements app. schema)
 
 The _ChartDatum_ data type (Figure 24) is defined in Section 5.6.2.2.1 and includes the following properties:
 
@@ -3792,9 +3284,7 @@ This situation makes necessary to explicit the rules governing geo-referencing o
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II Section 6.2.1.2_
-
 *Constraints of the spatial object type RectifiedGridCoverage*
 
 Grid points of a RectifiedGridCoverage shall coincide with the centres of cells of the geographical grids defined in Section 2.2 of Annex II of the Commission Regulation on Interoperability of Spatial Data Sets and Services at the same resolution level.
@@ -3803,7 +3293,8 @@ Grid points of a RectifiedGridCoverage shall coincide with the centres of cells 
 
 image:media\image26.jpeg[image]
 
-Figure 25 – Example: Detail showing the alignment of Elevation grid coverages to a geographic grid
+[.text-center]
+*Figure 25* – Example: Detail showing the alignment of Elevation grid coverages to a geographic grid
 
 NOTE As for the geographical grid defined in Annex D.2 of this specification (Zoned Geographic Grid), the previous alignment rule implicitly clarifies the _Elevation_ gridded data values (included in grid coverages) that belong to each zone of the geographic grid. In other words, the rule avoids duplicity of values in the borders of the geographic grid zones.
 
@@ -3813,9 +3304,7 @@ NOTE As for the geographical grid defined in Annex D.2 of this specification (Zo
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III Section 1.7.2_
-
 *Geographic Grids to be used for Elevation Data*
 
 [arabic, start=1]
@@ -3863,7 +3352,7 @@ Consequently, _on-the-fly_ projection transformations are needed for view servic
 *Recommendation 19*
 Real time re-projection is recommended for the view services serving gridded _Elevation_ data sets aimed at satisfying global purposes and based on any grid compatible with this specification__.__
 ====
-
+<<<
 == Data quality
 
 This chapter includes a description of the data quality elements and sub-elements as well as the corresponding data quality measures that should be used to evaluate and document data quality for data sets related to the spatial data theme _Elevation_ (section 7.1).
@@ -4198,18 +3687,18 @@ This parameter is specific for each data provider's dataset and must be reported
 
 The tolerance must be specified by the data provider using the following elements of the DQ_TopologicalConsistency metadata element for the current measure:
 
-*{empty}102. measureDescription (type: free text):
+*102. measureDescription (type: free text):
 +
 Defined as "_Description of the measure_".
-* {empty}107. Result (type DQ_Result):
+* 107. Result (type DQ_Result):
 +
 Defined as "_Value (or set of values) obtained from applying a data quality measure or the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level_".
 +
 Specifically, the tolerance must be informed within the two elements, together with the result of the data quality measure:
 
-* {empty}130. specification
+* 130. specification
 
-* {empty}131. explanation
+* 131. explanation
 
 from DQ_Result class.
 
@@ -4265,19 +3754,19 @@ This parameter is specific for each data provider's dataset and must be reported
 
 The tolerance must be specified by the data provider using the following elements of the DQ_TopologicalConsistency metadata element for the current measure:
 
-* {empty}102. measureDescription (type: free text):
+* 102. measureDescription (type: free text):
 +
 Defined as "_Description of the measure_".
 
-* {empty}107. Result (type DQ_Result):
+* 107. Result (type DQ_Result):
 +
 Defined as "_Value (or set of values) obtained from applying a data quality measure or the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level_".
 +
 Specifically, the tolerance must be informed within the two elements, together with the result of the data quality measure:
 
 
-* {empty}130. specification
-* {empty}131. explanation
+* 130. specification
+* 131. explanation
 
 from DQ_Result class.
 
@@ -4408,7 +3897,7 @@ The true values of the observed coordinates _X_ and _Y_ are known as _x~t~_ and 
 
 From this the estimator
 
-image:media\image27.emf[image]
+image:media\image27.png[image, align=center]
 
 yields to the linear root mean square error of planimetry RMSEP = _σ_
 
@@ -4452,7 +3941,7 @@ Absolute or external accuracy of the vertical component of vector objects within
 |Description a|
 The true value of an observable _Z_ is known as __z__~t~ _._ From this, the estimator:
 
-image:media\image28.emf[image]
+image:media\image28.png[image, align=center]
 
 yields to the linear root mean square error RMSE = _σ~z~_.
 
@@ -4648,7 +4137,7 @@ Elevation data provided through INSPIRE should have the best spatial, temporal a
 *Recommendation 32*
 All spatial objects should be provided at the best spatial, temporal and thematic accuracy available, in order to serve relevant use-cases, like modelling of flooding events and emergency response.
 ====
-
+<<<
 == Dataset-level metadata
 
 This section specifies dataset-level metadata elements, which should be used for documenting metadata for a complete dataset or dataset series.
@@ -4925,12 +4414,10 @@ If LI_Source and LI_ProcessStep sub-elements of the lineage are not used (respec
 ====
 [.text-center]
 *IR Requirement*
-
 Annex III Section 1.7.6
-
 *Metadata required for Interoperability*
 
-{empty}(1) If measures other than ISO data quality measures have been used to evaluate an elevation data set, the Lineage metadata element shall include information about those measures and, if possible, a reference to an online resource where more information is available.
+(1) If measures other than ISO data quality measures have been used to evaluate an elevation data set, the Lineage metadata element shall include information about those measures and, if possible, a reference to an online resource where more information is available.
 
 ====
 
@@ -4953,9 +4440,7 @@ At least the date of the last revision of a spatial data set should be reported 
 ====
 [.text-center]
 *IR Requirement*
-
 Article 13
-
 *Metadata required for Interoperability*
 
 The metadata describing a spatial data set shall include the following metadata elements required for interoperability:
@@ -5385,28 +4870,28 @@ NOTE In the level element of DQ_Scope, the value featureType is used to denote s
 |Domain a|
 Lines 7-9 from ISO/DIS 19157
 
-{empty}7. DQ_MeasureReference (C.2.1.3)
+7. DQ_MeasureReference (C.2.1.3)
 
-{empty}8. DQ_EvaluationMethod (C.2.1.4.)
+8. DQ_EvaluationMethod (C.2.1.4.)
 
-{empty}9. DQ_Result (C2.1.5.)
+9. DQ_Result (C2.1.5.)
 
 |Implementing instructions a|
-{empty}39. nameOfMeasure
+39. nameOfMeasure
 
 NOTE This should be the name as defined in Chapter 7.
 
-{empty}42. evaluationMethodType
+42. evaluationMethodType
 
-{empty}43. evaluationMethodDescription
+43. evaluationMethodDescription
 
 NOTE If the reported data quality results are derived or aggregated (i.e. the scope levels for evaluation and reporting are different), the derivation or aggregation should also be specified using this property.
 
-{empty}46. dateTime
+46. dateTime
 
 NOTE This should be data or range of dates on which the data quality measure was applied.
 
-{empty}63. DQ_QuantitativeResult / 64. value
+63. DQ_QuantitativeResult / 64. value
 
 NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represent(s) the application of the data quality measure (39.) using the specified evaluation method (42-43.)
 
@@ -5428,10 +4913,10 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 |Domain a|
 Line 9 from ISO/DIS 19157
 
-{empty}9. DQ_Result (C2.1.5.)
+9. DQ_Result (C2.1.5.)
 
 |Implementing instructions a|
-{empty}67. DQ_DescripitveResult / 68. statement
+67. DQ_DescripitveResult / 68. statement
 
 NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.) the evaluation of the selected DQ sub-element should be expressed in a narrative way.
 
@@ -5615,7 +5100,7 @@ At least the following elements should be used (the multiplicity according to IS
 |Example XML encoding |
 |Comments |
 |===
-
+<<<
 == Delivery
 
 === Updates
@@ -5624,14 +5109,12 @@ At least the following elements should be used (the multiplicity according to IS
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 8_
-
 *Updates*
 
-{empty}1. Member States shall make available updates of data on a regular basis.
+1. Member States shall make available updates of data on a regular basis.
 
-{empty}2. All updates shall be made available at the latest 6 months after the change was applied in the source data set, unless a different period is specified for a specific spatial data theme in Annex II.
+2. All updates shall be made available at the latest 6 months after the change was applied in the source data set, unless a different period is specified for a specific spatial data theme in Annex II.
 
 ====
 
@@ -5698,14 +5181,12 @@ The IRs contain the following two requirements for the encoding to be used to ma
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 7_
-
 *Encoding*
 
-{empty}1. Every encoding rule used to encode spatial data shall conform to EN ISO 19118. In particular, it shall specify schema conversion rules for all spatial object types and all attributes and association roles and the output data structure used.
+1. Every encoding rule used to encode spatial data shall conform to EN ISO 19118. In particular, it shall specify schema conversion rules for all spatial object types and all attributes and association roles and the output data structure used.
 
-{empty}2. Every encoding rule used to encode spatial data shall be made available.
+2. Every encoding rule used to encode spatial data shall be made available.
 
 ====
 
@@ -5989,7 +5470,7 @@ Version: 1
 Specification: International Hydrographic Organization (IHO) Bathymetric Attributed Grid Object (BAG)
 
 Character set: UTF-8
-
+<<<
 == Data Capture
 
 This chapter highlights cases which require specific attention as regards collecting and assembling different data components and information of the _Elevation_ data sets.
@@ -6051,9 +5532,7 @@ Contour line spatial objects should not self-intersect.
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.6_
-
 *Theme-specific Requirements*
 
 
@@ -6143,12 +5622,10 @@ Table 9 .
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex III, Section 1.7.4_
-
 *Theme-specific Requirements*
 
-{empty}(3) The vector spatial objects provided as component of a TIN collection shall fiulfill the generic consistency rules provided for vector objects.
+(3) The vector spatial objects provided as component of a TIN collection shall fiulfill the generic consistency rules provided for vector objects.
 
 ====
 
@@ -6168,7 +5645,7 @@ Bathymetry data capture should follow the recommendations of the IHO standards f
 ====
 
 Additionally, special attention should be paid to the following error sources in bathymetric surveys: vertical datum errors, vertical positioning system errors, tidal measurement errors, instrument errors, sound speed errors, ellipsoidal / vertical datum separation model errors, vessel motion errors, vessel draught, vessel settlement and squat, sea floor slope, time synchronisation / latency.
-
+<<<
 == Portrayal
 
 This clause defines the rules for layers and styles to be used for portrayal of the spatial object types defined for this theme. Portrayal is regulated in Article 14 of the IRs.
@@ -6177,22 +5654,20 @@ This clause defines the rules for layers and styles to be used for portrayal of 
 ====
 [.text-center]
 *IR Requirement*
-
 _Article 14_
-
 *Portrayal*
 
-{empty}1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
+1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
 
-{empty}(a) the layers specified in Annex II for the theme or themes the data set is related to;
+(a) the layers specified in Annex II for the theme or themes the data set is related to;
 
-{empty}(b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
+(b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
 
-{empty}2. For each layer, Annex II defines the following:
+2. For each layer, Annex II defines the following:
 
-{empty}(a) a human readable title of the layer to be used for display in user interface;
+(a) a human readable title of the layer to be used for display in user interface;
 
-{empty}(b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
+(b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
 
 ====
 
@@ -7060,27 +6535,32 @@ NOTE Use of a common style for elevation grid coverages may introduce problems w
 
 image:media\image29.jpeg[image]
 
-Figure 26 – Default Styles for Contour Line, Break Line and Height Spot Elevation (Scale: 1:3 000)
+[.text-center]
+*Figure 26* – Default Styles for Contour Line, Break Line and Height Spot Elevation (Scale: 1:3 000)
 
 image:media\image30.jpeg[image]
 
-Figure 27 – Default Styles for Depth Contour Line, Depth Spot Elevation (Scale: 1:3 000)
+[.text-center]
+*Figure 27* – Default Styles for Depth Contour Line, Depth Spot Elevation (Scale: 1:3 000)
 
 image:media\image31.jpeg[image]
 
-Figure 28 – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
+[.text-center]
+*Figure 28* – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
 
 In the figure above, the Grid Coverage style is used as background and transparency has been used for Isolated Area in order to show the gridded data contained inside its area.
 
 image:media\image32.jpeg[image]
 
-Figure 29 – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
+[.text-center]
+*Figure 29* – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
 
 In the figure above, the Grid Coverage style is not used as background.
 
 image:media\image33.jpeg[image]
 
-Figure 30 – Default Style for Grid Coverage (Scale: 1:2 000 000) - Hungary
+[.text-center]
+*Figure 30* – Default Style for Grid Coverage (Scale: 1:2 000 000) - Hungary
 
 === Styles recommended to be supported by INSPIRE view services 
 
@@ -7341,7 +6821,8 @@ Figure 30 – Default Style for Grid Coverage (Scale: 1:2 000 000) - Hungary
 
 image:media\image34.jpeg[image]
 
-Figure 31 – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)
+[.text-center]
+*Figure 31* – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)
 
 = Bibliography
 
@@ -7403,7 +6884,7 @@ Figure 31 – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 00
 
 :sectnums!:
 
-[appendix]
+[appendix]<<<
 == (normative) - Abstract Test Suite
 
 ====
@@ -7591,21 +7072,21 @@ _http://inspire.ec.europa.eu/conformance-class/ir/el/as/el-vec http://inspire.ec
 
 ==== Schema element denomination test
 
-{empty}a) Purpose: Verification whether each element of the dataset under inspection carries a name specified in the target application schema(s).
+a) Purpose: Verification whether each element of the dataset under inspection carries a name specified in the target application schema(s).
 
-{empty}b) Reference: Art. 3 and Art.4 of Commission Regulation No 1089/2010
+b) Reference: Art. 3 and Art.4 of Commission Regulation No 1089/2010
 
-{empty}c) Test Method: Examine whether the corresponding elements of the source schema (spatial object types, data types, attributes, association roles, code lists, and enumerations) are mapped to the target schema with the correct designation of mnemonic names.
+c) Test Method: Examine whether the corresponding elements of the source schema (spatial object types, data types, attributes, association roles, code lists, and enumerations) are mapped to the target schema with the correct designation of mnemonic names.
 
 NOTE Further technical information is in the Feature catalogue and UML diagram of the application schema(s) in section 5.1.
 
 ==== Value type test
 
-{empty}a) Purpose: Verification whether all attributes or association roles use the corresponding value types specified in the application schema(s).
+a) Purpose: Verification whether all attributes or association roles use the corresponding value types specified in the application schema(s).
 
-{empty}b) Reference: Art. 3, Art.4, Art.6(1), Art.6(4), Art.6(5) and Art.9(1)of Commission Regulation No 1089/2010.
+b) Reference: Art. 3, Art.4, Art.6(1), Art.6(4), Art.6(5) and Art.9(1)of Commission Regulation No 1089/2010.
 
-{empty}c) Test Method: Examine whether the value type of each provided attribute or association role adheres to the corresponding value type specified in the target specification.
+c) Test Method: Examine whether the value type of each provided attribute or association role adheres to the corresponding value type specified in the target specification.
 
 NOTE 1 This test comprises testing the value types of INSPIRE identifiers, the value types of attributes and association roles that should be taken from enumeration and code lists, and the coverage domains.
 
@@ -7613,11 +7094,11 @@ NOTE 2 Further technical information is in the Feature catalogue and UML diagram
 
 ==== Value test
 
-{empty}a) Purpose: Verify whether all attributes or association roles whose value type is a code list or enumeration take the values set out therein.
+a) Purpose: Verify whether all attributes or association roles whose value type is a code list or enumeration take the values set out therein.
 
-{empty}b) Reference: Art.4 (3) of Commission Regulation No 1089/2010.
+b) Reference: Art.4 (3) of Commission Regulation No 1089/2010.
 
-{empty}c) Test Method: When an attributes / association roles has "enumeration" or "codeList" type compare the values of each instance with those provided in the application schema. To pass this tests any instance of an attribute / association role
+c) Test Method: When an attributes / association roles has "enumeration" or "codeList" type compare the values of each instance with those provided in the application schema. To pass this tests any instance of an attribute / association role
 
 * Shall not take any other value than defined in the enumeration table when its type is enumeration.
 * Shall take only values explicitly specified in the code list when its type is codeList with extensibility value is "none".
@@ -7644,11 +7125,11 @@ NOTE 7 This test is applicable to the ElevationGridCoverage schema to verify whe
 
 ==== Attributes/associations completeness test
 
-{empty}a) Purpose: Verification whether each instance of spatial object type and data types include all attributes and association roles as defined in the target application schema.
+a) Purpose: Verification whether each instance of spatial object type and data types include all attributes and association roles as defined in the target application schema.
 
-{empty}b) Reference: Art. 3, Art.4(1), Art.4(2), and Art.5(2) of Commission Regulation No 1089/2010.
+b) Reference: Art. 3, Art.4(1), Art.4(2), and Art.5(2) of Commission Regulation No 1089/2010.
 
-{empty}c) Test Method: Examine whether all attributes and association roles defined for a spatial object type or data type are present for each instance in the dataset.
+c) Test Method: Examine whether all attributes and association roles defined for a spatial object type or data type are present for each instance in the dataset.
 
 NOTE 1 Further technical information is in the Feature catalogue and UML diagram of the application schema(s) in section 5.1.
 
@@ -7658,11 +7139,11 @@ NOTE 3 If the characteristic described by the attribute or association role does
 
 ==== Abstract spatial object test
 
-{empty}a) Purpose: Verification whether the dataset does NOT contain abstract spatial object / data types defined in the target application schema(s).
+a) Purpose: Verification whether the dataset does NOT contain abstract spatial object / data types defined in the target application schema(s).
 
-{empty}b) Reference: Art.5(3) of Commission Regulation No 1089/2010
+b) Reference: Art.5(3) of Commission Regulation No 1089/2010
 
-{empty}c) Test Method: examine that there are NO instances of abstract spatial object / data types in the dataset provided.
+c) Test Method: examine that there are NO instances of abstract spatial object / data types in the dataset provided.
 
 NOTE 1 Further technical information is in the Feature catalogue and UML diagram of the application schema(s) in section 5.1.
 
@@ -7670,11 +7151,11 @@ NOTE 2 This test applies only to ElevationVectorElements schema, where one abstr
 
 ==== Constraints test
 
-{empty}a) Purpose: Verification whether the instances of spatial object and/or data types provided in the dataset adhere to the constraints specified in the target application schema(s).
+a) Purpose: Verification whether the instances of spatial object and/or data types provided in the dataset adhere to the constraints specified in the target application schema(s).
 
-{empty}b) Reference: Art. 3, Art.4(1), and Art.4(2) of Commission Regulation No 1089/2010.
+b) Reference: Art. 3, Art.4(1), and Art.4(2) of Commission Regulation No 1089/2010.
 
-{empty}c) Test Method: Examine all instances of data for the constraints specified for the corresponding spatial object / data type. Each instance shall adhere to all constraints specified in the target application schema(s).
+c) Test Method: Examine all instances of data for the constraints specified for the corresponding spatial object / data type. Each instance shall adhere to all constraints specified in the target application schema(s).
 
 NOTE 1 Further technical information is in the Feature catalogue and UML diagram of the application schema(s) in section 5.1.
 
@@ -7682,9 +7163,9 @@ NOTE 2 This test is not applicable for the ElevationTIN application schema, as i
 
 ==== Geometry representation test
 
-{empty}a) Purpose: Verification whether the value domain of spatial properties is restricted as specified in the Commission Regulation No 1089/2010.
+a) Purpose: Verification whether the value domain of spatial properties is restricted as specified in the Commission Regulation No 1089/2010.
 
-{empty}b) Reference: Art.12(1), Annex III 1.7.2 (7), and 1.7.3 of Commission Regulation No 1089/2010
+b) Reference: Art.12(1), Annex III 1.7.2 (7), and 1.7.3 of Commission Regulation No 1089/2010
 
 c) Test Method: Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.
 
@@ -7702,11 +7183,11 @@ http://inspire.ec.europa.eu/conformanceClass/ir/el/rs
 
 ==== Datum test
 
-{empty}a) Purpose: Verify whether each instance of a spatial object type is given with reference to one of the (geodetic) datums specified in the target specification.
+a) Purpose: Verify whether each instance of a spatial object type is given with reference to one of the (geodetic) datums specified in the target specification.
 
-{empty}c) Reference: Annex II Section 1.2 of Commission Regulation No 1089/2010
+c) Reference: Annex II Section 1.2 of Commission Regulation No 1089/2010
 
-{empty}b) Test Method: Check whether each instance of a spatial object type specified in the application schema(s) in section 5 has been expressed using:
+b) Test Method: Check whether each instance of a spatial object type specified in the application schema(s) in section 5 has been expressed using:
 
 * the European Terrestrial Reference System 1989 (ETRS89) within its geographical scope; or
 * the International Terrestrial Reference System (ITRS) for areas beyond the ETRS89 geographical scope; or
@@ -7716,11 +7197,11 @@ NOTE Further technical information is given in Section 6 of this document.
 
 ==== Coordinate reference system test
 
-{empty}a) Purpose: Verify whether the two- and three-dimensional coordinate reference systems are used as defined in section 6.
+a) Purpose: Verify whether the two- and three-dimensional coordinate reference systems are used as defined in section 6.
 
-{empty}b) Reference: Section 6, of Commission Regulation 1089/2010.
+b) Reference: Section 6, of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Inspect whether the horizontal and vertical components of coordinates one of the corresponding coordinate reference system has been:
+c) Test Method: Inspect whether the horizontal and vertical components of coordinates one of the corresponding coordinate reference system has been:
 
 * Three-dimensional geodetic coordinates (latitude, longitude and ellipsoidal height) based on a datum specified in 1.2 and using the parameters of the GRS80 ellipsoid.
 * Two-dimensional geodetic coordinates (latitude and longitude) based on a datum specified in 1.2 and using the parameters of the GRS80 ellipsoid.
@@ -7734,11 +7215,11 @@ NOTE Further technical information is given in Section 6 of this document.
 
 ==== Vertical Coordinate Reference System exclusiveness test
 
-{empty}a) Purpose: Verify whether one and only one vertical coordinate reference system has been used within a dataset delivered for INSPIRE
+a) Purpose: Verify whether one and only one vertical coordinate reference system has been used within a dataset delivered for INSPIRE
 
-{empty}b) Reference: Annex III Section 1.7.2(3) and 1.7.4(1) of Commission Regulation 1089/2010
+b) Reference: Annex III Section 1.7.2(3) and 1.7.4(1) of Commission Regulation 1089/2010
 
-{empty}c) Test method: Check whether the values of the elevation property are expressed in the same vertical CRS in case of ElevationGridCoverage and ElevationTIN spatial representations.
+c) Test method: Check whether the values of the elevation property are expressed in the same vertical CRS in case of ElevationGridCoverage and ElevationTIN spatial representations.
 
 NOTE 1 This test can be performed entirely on the basis of the information available at the data providers.
 
@@ -7746,11 +7227,11 @@ NOTE 2 This test is not applicable to the ElevationVectorElements application sc
 
 ==== Grid test
 
-{empty}a) Purpose: Verify that gridded data are available using the grid compatible with one of the coordinate reference systems defined in Commission Regulation No 1089/2010
+a) Purpose: Verify that gridded data are available using the grid compatible with one of the coordinate reference systems defined in Commission Regulation No 1089/2010
 
-{empty}b) Reference: Annex II Section 2.1 and 2.2 of Commission Regulation 1089/2010.
+b) Reference: Annex II Section 2.1 and 2.2 of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Check whether the dataset defined as a grid is compatible with one of the coordinate reference.
+c) Test Method: Check whether the dataset defined as a grid is compatible with one of the coordinate reference.
 
 * Grid_ETRS89_GRS80 based on two-dimensional geodetic coordinates using the parameters of the GRS80 ellipsoid
 * Grid_ETRS89_GRS80zn based on two-dimensional geodetic coordinates with zoning,
@@ -7764,21 +7245,21 @@ NOTE 2 This test applies only to ElevetionGridCoverage application schema.
 
 ==== View service coordinate reference system test
 
-{empty}a) Purpose: Verify whether the spatial data set is available in the two dimensional geodetic coordinate system for their display with the INSPIRE View Service.
+a) Purpose: Verify whether the spatial data set is available in the two dimensional geodetic coordinate system for their display with the INSPIRE View Service.
 
-{empty}b) Reference: Annex II Section 1.4 of Commission Regulation 1089/2010
+b) Reference: Annex II Section 1.4 of Commission Regulation 1089/2010
 
-{empty}c) Test Method: Check that each instance of a spatial object types specified in the application schema(s) in section 5 is available in the two-dimensional geodetic coordinate system
+c) Test Method: Check that each instance of a spatial object types specified in the application schema(s) in section 5 is available in the two-dimensional geodetic coordinate system
 
 NOTE Further technical information is given in Section 6 of this document.
 
 ==== Temporal reference system test
 
-{empty}a) Purpose: Verify whether date and time values are given as specified in Commission Regulation No 1089/2010.
+a) Purpose: Verify whether date and time values are given as specified in Commission Regulation No 1089/2010.
 
-{empty}b) Reference: Art.11(1) of Commission Regulation 1089/2010
+b) Reference: Art.11(1) of Commission Regulation 1089/2010
 
-{empty}c) Test Method: Check whether:
+c) Test Method: Check whether:
 
 * the Gregorian calendar is used as a reference system for date values;
 * the Universal Time Coordinated (UTC) or the local time including the time zone as an offset from UTC are used as a reference system for time values.
@@ -7787,11 +7268,11 @@ NOTE Further technical information is given in Section 6 of this document.
 
 ==== Units of measurements test
 
-{empty}a) Purpose: Verify whether all measurements are expressed as specified in Commission Regulation No 1089/2010.
+a) Purpose: Verify whether all measurements are expressed as specified in Commission Regulation No 1089/2010.
 
-{empty}b) Reference: Art.12(2) of Commission Regulation 1089/2010
+b) Reference: Art.12(2) of Commission Regulation 1089/2010
 
-{empty}c) Test Method: Check whether all measurements are expressed in SI units or non-SI units accepted for use with the International System of Units.
+c) Test Method: Check whether all measurements are expressed in SI units or non-SI units accepted for use with the International System of Units.
 
 NOTE 1 Further technical information is given in ISO 80000-1:2009.
 
@@ -7807,11 +7288,11 @@ _http://inspire.ec.europa.eu/conformance-class/ir/el/dc/el-vec http://inspire.ec
 
 ==== Unique identifier persistency test
 
-{empty}a) Purpose: Verify whether the namespace and localId attributes of the external object identifier remain the same for different versions of a spatial object.
+a) Purpose: Verify whether the namespace and localId attributes of the external object identifier remain the same for different versions of a spatial object.
 
-{empty}b) Reference: Art. 9 of Commission Regulation 1089/2010.
+b) Reference: Art. 9 of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Compare the namespace and localId attributes of the external object identifiers in the previous version(s) of the dataset with the namespace and localId attributes of the external object identifiers of current version for the same instances of spatial object / data types; To pass the test, neither the namespace, nor the localId shall be changed during the life-cycle of a spatial object.
+c) Test Method: Compare the namespace and localId attributes of the external object identifiers in the previous version(s) of the dataset with the namespace and localId attributes of the external object identifiers of current version for the same instances of spatial object / data types; To pass the test, neither the namespace, nor the localId shall be changed during the life-cycle of a spatial object.
 
 NOTE 1 The localId test can be performed entirely on the basis of the information available in the database of the data providers.
 
@@ -7821,41 +7302,41 @@ NOTE 3 Further technical information is given in section 14.2 of the INSPIRE Gen
 
 ==== Version consistency test
 
-{empty}a) Purpose: Verify whether different versions of the same spatial object / data type instance belong to the same type.
+a) Purpose: Verify whether different versions of the same spatial object / data type instance belong to the same type.
 
-{empty}b) Reference: Art. 9 of Commission Regulation 1089/2010.
+b) Reference: Art. 9 of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Compare the types of different versions for each instance of spatial object / data type
+c) Test Method: Compare the types of different versions for each instance of spatial object / data type
 
 NOTE 1 This can be performed entirely on the basis of the information available in the database of the data providers.
 
 ==== Life cycle time sequence test
 
-{empty}a) Purpose: Verification whether the value of the attribute beginLifespanVersion refers to an earlier moment of time than the value of the attribute endLifespanVersion for every spatial object / object type where this property is specified.
+a) Purpose: Verification whether the value of the attribute beginLifespanVersion refers to an earlier moment of time than the value of the attribute endLifespanVersion for every spatial object / object type where this property is specified.
 
-{empty}b) Reference: Art.10(3) of Commission Regulation 1089/2010.
+b) Reference: Art.10(3) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Compare the value of the attribute beginLifespanVersion with attribute endLifespanVersion. The test is passed when the beginLifespanVersion value is before endLifespanVersion value for each instance of all spatial object/data types for which this attribute has been defined.
+c) Test Method: Compare the value of the attribute beginLifespanVersion with attribute endLifespanVersion. The test is passed when the beginLifespanVersion value is before endLifespanVersion value for each instance of all spatial object/data types for which this attribute has been defined.
 
 NOTE 1 this test can be performed entirely on the basis of the information available in the database of the data providers.
 
 ==== Update frequency test
 
-{empty}a) Purpose: Verify whether all the updates in the source dataset(s) have been transmitted to the dataset(s) which can be retrieved for the <theme short name> using INSPIRE download services.
+a) Purpose: Verify whether all the updates in the source dataset(s) have been transmitted to the dataset(s) which can be retrieved for the <theme short name> using INSPIRE download services.
 
-{empty}b) Reference: Art.8 (2) of Commission Regulation 1089/2010.
+b) Reference: Art.8 (2) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Compare the values of beginning of life cycle information in the source and the target datasets for each instance of corresponding spatial object / object types. The test is passed when the difference between the corresponding values is less than 6 months.
+c) Test Method: Compare the values of beginning of life cycle information in the source and the target datasets for each instance of corresponding spatial object / object types. The test is passed when the difference between the corresponding values is less than 6 months.
 
 NOTE 1 this test can be performed entirely on the basis of the information available in the database of the data providers.
 
 ==== Grid aggregation test
 
-{empty}a) Purpose: Verify whether the contributing grid coverages are consistent when they are aggregated in one coverage.
+a) Purpose: Verify whether the contributing grid coverages are consistent when they are aggregated in one coverage.
 
-{empty}b) Reference: Annex III Section 1.7.2(3) (4) and (5) of Commission Regulation 1089/2010.
+b) Reference: Annex III Section 1.7.2(3) (4) and (5) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Verify whether the contributing coverage instances
+c) Test Method: Verify whether the contributing coverage instances
 
 * share the same range type, coordinate reference system, and resolution,
 * are aligned,
@@ -7868,11 +7349,11 @@ NOTE 2 This test is only applicable to ElevationGridCoverage application schema.
 
 ==== Contour line test
 
-{empty}a) Purpose: Verify whether contour lines follow the consistency rules specified in Commission Regulation 1089/2010.
+a) Purpose: Verify whether contour lines follow the consistency rules specified in Commission Regulation 1089/2010.
 
-{empty}b) Reference: Annex III Section 1.7.6(2) and 1.7.6(5) of Commission Regulation 1089/2010.
+b) Reference: Annex III Section 1.7.6(2) and 1.7.6(5) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Inspect elevationPropertyTypeValue referenced to the same vertical coordinate reference system for each pair of contour lines. The test is passed when
+c) Test Method: Inspect elevationPropertyTypeValue referenced to the same vertical coordinate reference system for each pair of contour lines. The test is passed when
 
 * each connected contour lines have the same elevation value and
 * contour lines having different elevation values neither intersect nor touch each other.
@@ -7883,11 +7364,11 @@ NOTE 2 This test is only applicable to datasets following the ElevationVectorEle
 
 ==== Break line test
 
-{empty}a) Purpose: Verify whether contour lines follow the consistency rules specified in Commission Regulation 1089/2010.
+a) Purpose: Verify whether contour lines follow the consistency rules specified in Commission Regulation 1089/2010.
 
-{empty}b) Reference: Annex III Section 1.7.6(3) and 1.7.6(4) of Commission Regulation 1089/2010.
+b) Reference: Annex III Section 1.7.6(3) and 1.7.6(4) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: For each brake line that has an intersection point expressed as third coordinate (Z) in the same vertical coordinate reference system inspect the elevation value at the intersection point. The test is passed when the elevationPropertyTypeValue at this point is equal
+c) Test Method: For each brake line that has an intersection point expressed as third coordinate (Z) in the same vertical coordinate reference system inspect the elevation value at the intersection point. The test is passed when the elevationPropertyTypeValue at this point is equal
 
 * for any pair of intersecting break lines and/or
 * for any intersecting brake line and contour line.
@@ -7898,11 +7379,11 @@ NOTE 2 This is only applicable to datasets following the ElevationVectorElements
 
 ==== Isolated area test
 
-{empty}a) Purpose: Verify whether an isolated area does not touch the external boundary of a void area.
+a) Purpose: Verify whether an isolated area does not touch the external boundary of a void area.
 
-{empty}b) Reference: Annex III Section 1.7.6(6) of Commission Regulation 1089/2010.
+b) Reference: Annex III Section 1.7.6(6) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Inspect each instance of IsolatedArea spatial object type. The test is passed when non of them touches the external boundary of VoidArea object type that contains it when they are referenced to the same vertical reference system.
+c) Test Method: Inspect each instance of IsolatedArea spatial object type. The test is passed when non of them touches the external boundary of VoidArea object type that contains it when they are referenced to the same vertical reference system.
 
 NOTE 1 this test can be performed entirely on the basis of the information available in the database of the data providers.
 
@@ -7910,11 +7391,11 @@ NOTE 2 This is only applicable to datasets following the ElevationVectorElements
 
 ==== Stop line test
 
-{empty}a) Purpose: Verify whether triangles intersecting a stopline have been removed.
+a) Purpose: Verify whether triangles intersecting a stopline have been removed.
 
-{empty}b) Reference: Annex III Section 1.7.4(2) of Commission Regulation 1089/2010.
+b) Reference: Annex III Section 1.7.4(2) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Inspect whether any of the stoplines present in the dataset intersect a triangle. The test is passed when the intersected triangles have been removed.
+c) Test Method: Inspect whether any of the stoplines present in the dataset intersect a triangle. The test is passed when the intersected triangles have been removed.
 
 NOTE 1 this test can be performed entirely on the basis of the information available in the database of the data providers.
 
@@ -7928,21 +7409,21 @@ _http://inspire.ec.europa.eu/conformance-class/ir/el/md_
 
 ==== Metadata for interoperability test
 
-{empty}a) Purpose: Verify whether the metadata for interoperability of spatial data sets and services described in 1089/2010 Commission Regulation have been created..
+a) Purpose: Verify whether the metadata for interoperability of spatial data sets and services described in 1089/2010 Commission Regulation have been created..
 
-{empty}b) Reference: Art.13 of Commission Regulation 1089/2010
+b) Reference: Art.13 of Commission Regulation 1089/2010
 
-{empty}c) Test Method: Inspect whether metadata describing the coordinate reference systems, temporal reference system, encoding, character encoding, spatial representation type and when applicable topological consistency have been created and published.
+c) Test Method: Inspect whether metadata describing the coordinate reference systems, temporal reference system, encoding, character encoding, spatial representation type and when applicable topological consistency have been created and published.
 
 NOTE 1 Further technical information is given in section 8 of this document.
 
 ==== Metadata completeness test
 
-{empty}a) Purpose: Verify whether the theme specific metadata required in 1089/2010 Commission Regulation have been created and published for each dataset related to the Elevation data theme.
+a) Purpose: Verify whether the theme specific metadata required in 1089/2010 Commission Regulation have been created and published for each dataset related to the Elevation data theme.
 
-{empty}b) Reference: Annex III Section 1.7.2(8) of Commission Regulation 1089/2010
+b) Reference: Annex III Section 1.7.2(8) of Commission Regulation 1089/2010
 
-{empty}c) Test Method: Inspect the existence of the following information in each dataset:
+c) Test Method: Inspect the existence of the following information in each dataset:
 
 * Metadata about the acquisition dates of data contained in ElevationGridCoverage,
 * Lineage metadata element containing the data quality elements,
@@ -7962,11 +7443,11 @@ NOTE 2 The acquisition dates for each instance of ElevationGridCoverage shall be
 
 _http://inspire.ec.europa.eu/conformance-class/ir/el/ia_
 
-{empty}a) Purpose: Verify whether the values of each code list that allow narrower values or any other value than specified in Commission Regulation 1089/2010 are published in a register.
+a) Purpose: Verify whether the values of each code list that allow narrower values or any other value than specified in Commission Regulation 1089/2010 are published in a register.
 
-{empty}b) Reference: Art.6(3) and Annex III Section 1.5.4.1 and 1.5.4.3
+b) Reference: Art.6(3) and Annex III Section 1.5.4.1 and 1.5.4.3
 
-{empty}c) Test Method: check whether the BrakeLineTypeValue and SpotElevationTypeValue code list are accessible in a register.
+c) Test Method: check whether the BrakeLineTypeValue and SpotElevationTypeValue code list are accessible in a register.
 
 NOTE 1 Further technical information is given in section 5 of this document.
 
@@ -7974,31 +7455,31 @@ NOTE 2 This test only applies to the ElevationVectorElements application schema 
 
 ==== CRS publication test
 
-{empty}a) Purpose: Verify whether the identifiers and the parameters of coordinate reference system are published in common registers.
+a) Purpose: Verify whether the identifiers and the parameters of coordinate reference system are published in common registers.
 
-{empty}b) Reference: Annex II Section 1.5
+b) Reference: Annex II Section 1.5
 
-{empty}c) Test method: Check whether the identifier and the parameters of the CRS used for the dataset are included in a register.
+c) Test method: Check whether the identifier and the parameters of the CRS used for the dataset are included in a register.
 
 NOTE Further technical information is given in section 6 of this document.
 
 ==== CRS identification test
 
-{empty}a) Purpose: Verify whether identifiers for other coordinate reference systems than specified in Commission Regulation 1089/2010 have been created and their parameters have been described according to EN ISO 19111 and ISO 19127.
+a) Purpose: Verify whether identifiers for other coordinate reference systems than specified in Commission Regulation 1089/2010 have been created and their parameters have been described according to EN ISO 19111 and ISO 19127.
 
-{empty}b) Reference: Annex II Section 1.3.4
+b) Reference: Annex II Section 1.3.4
 
-{empty}c) Test method: Check whether the register with the identifiers of the coordinate reference systems is accessible.
+c) Test method: Check whether the register with the identifiers of the coordinate reference systems is accessible.
 
 NOTE Further technical information is given in section 6 of this document.
 
 ==== Grid identification test
 
-{empty}a) Purpose: Verify whether identifiers for other geographic grid systems than specified in Commission Regulation 1089/2010 have been created and their definitions have been either described with the data or referenced.
+a) Purpose: Verify whether identifiers for other geographic grid systems than specified in Commission Regulation 1089/2010 have been created and their definitions have been either described with the data or referenced.
 
-{empty}b) Reference: Annex II Section 2.1 and 2.2
+b) Reference: Annex II Section 2.1 and 2.2
 
-{empty}c) Test Method: Check whether the identifiers for grids have been created. Inspect the dataset and/or the metadata for inclusion of grid definition.
+c) Test Method: Check whether the identifiers for grids have been created. Inspect the dataset and/or the metadata for inclusion of grid definition.
 
 NOTE Further technical information is given in section 6 of this document.
 
@@ -8010,11 +7491,11 @@ _http://inspire.ec.europa.eu/conformance-class/ir/el/de_
 
 ==== Encoding compliance test
 
-{empty}a) Purpose: Verify whether the encoding used to deliver the dataset comply with EN ISO 19118.
+a) Purpose: Verify whether the encoding used to deliver the dataset comply with EN ISO 19118.
 
-{empty}b) Reference: Art.7 (1) of Commission Regulation 1089/2010.
+b) Reference: Art.7 (1) of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Follow the steps of the Abstract Test Suit provided in EN ISO 19118.
+c) Test Method: Follow the steps of the Abstract Test Suit provided in EN ISO 19118.
 
 NOTE 1 Datasets using the default encoding specified in Section 9 fulfil this requirement.
 
@@ -8022,11 +7503,11 @@ NOTE 2 Further technical information is given in Section 9 of this document.
 
 ==== Minimum data delivery test
 
-{empty}a) Purpose: Verify whether each dataset delivered for INSPIRE has been made available according to the application schema specified in Commission Regulation 1089/2010.
+a) Purpose: Verify whether each dataset delivered for INSPIRE has been made available according to the application schema specified in Commission Regulation 1089/2010.
 
-{empty}b) Reference: Annex III Section 1.2 of Commission Regulation 1089/2010.
+b) Reference: Annex III Section 1.2 of Commission Regulation 1089/2010.
 
-{empty}c) Test Method: Verify whether each elevation dataset delivered for INSPIRE follow at least the application schema:
+c) Test Method: Verify whether each elevation dataset delivered for INSPIRE follow at least the application schema:
 
 * ElevationGridCoverage when describing the morphology of land elevation.
 * ElevationGridCoverage or ElevationVectorElements when describing the morphology of bathymetry
@@ -8041,11 +7522,11 @@ _http://inspire.ec.europa.eu/conformance-class/ir/el/po_
 
 ==== Layer designation test
 
-{empty}a) Purpose: verify whether each spatial object type has been assigned to the layer designated according to Commission Regulation 1089/2010.
+a) Purpose: verify whether each spatial object type has been assigned to the layer designated according to Commission Regulation 1089/2010.
 
-{empty}b) Reference: Art. 14(1), Art14(2) and Annex III Section 1.8.
+b) Reference: Art. 14(1), Art14(2) and Annex III Section 1.8.
 
-{empty}c) Test Method: Check whether data is made available for the view network service using the specified layers respectively:
+c) Test Method: Check whether data is made available for the view network service using the specified layers respectively:
 
 NOTE Further technical information is given in section 11 of this document.
 
@@ -8063,19 +7544,19 @@ http://inspire.ec.europa.eu/conformanceClass/tg/el/el-tin
 
 ==== Multiplicity test
 
-{empty}a) Purpose: Verification whether each instance of an attribute or association role specified in the application schema(s) does not include fewer or more occurrences than specified in section 5.
+a) Purpose: Verification whether each instance of an attribute or association role specified in the application schema(s) does not include fewer or more occurrences than specified in section 5.
 
-{empty}c) Reference: Feature catalogue and UML diagram of the application schema(s) in section 5 of this guideline.
+c) Reference: Feature catalogue and UML diagram of the application schema(s) in section 5 of this guideline.
 
-{empty}b) Test Method: Examine that the number of occurrences of each attribute and/or association role for each instance of a spatial object type or data type provided in the dataset corresponds to the number of occurrences of the attribute / association role that is specified in the application schema(s) in section 5.
+b) Test Method: Examine that the number of occurrences of each attribute and/or association role for each instance of a spatial object type or data type provided in the dataset corresponds to the number of occurrences of the attribute / association role that is specified in the application schema(s) in section 5.
 
 ==== CRS http URI test
 
-{empty}a) Purpose: Verify whether the coordinate reference system used to deliver data for INSPIRE network services has been identified by URIs according to the EPSG register.
+a) Purpose: Verify whether the coordinate reference system used to deliver data for INSPIRE network services has been identified by URIs according to the EPSG register.
 
-{empty}c) Reference: Table 2 in Section 6 of this technical guideline
+c) Reference: Table 2 in Section 6 of this technical guideline
 
-{empty}b) Test Method: Compare the URI of the dataset with the URIs in the table.
+b) Test Method: Compare the URI of the dataset with the URIs in the table.
 
 NOTE 1 Passing this test implies the fulfilment of test A6.2
 
@@ -8083,41 +7564,41 @@ NOTE 2 For further reference please see _http://www.epsg.org/geodetic.html_
 
 ==== Metadata encoding schema validation test
 
-{empty}a) Purpose: Verify whether the metadata follows an XML schema specified in ISO/TS 19139.
+a) Purpose: Verify whether the metadata follows an XML schema specified in ISO/TS 19139.
 
-{empty}c) Reference: Section 8 of this technical guideline, ISO/TS 19139
+c) Reference: Section 8 of this technical guideline, ISO/TS 19139
 
-{empty}b) Test Method: Inspect whether provided XML schema is conformant to the encoding specified in ISO 19139 for each metadata instance.
+b) Test Method: Inspect whether provided XML schema is conformant to the encoding specified in ISO 19139 for each metadata instance.
 
 NOTE 1 Section 2.1.2 of the Metadata Technical Guidelines discusses the different ISO 19139 XML schemas that are currently available.
 
 ==== Metadata occurrence test
 
-{empty}a) Purpose: Verify whether the occurrence of each metadata element corresponds to those specified in section 8.
+a) Purpose: Verify whether the occurrence of each metadata element corresponds to those specified in section 8.
 
-{empty}c) Reference: Section 8 of this technical guideline
+c) Reference: Section 8 of this technical guideline
 
-{empty}b) Test Method: Examine the number of occurrences for each metadata element. The number of occurrences shall be compared with its occurrence specified in Section 8:
+b) Test Method: Examine the number of occurrences for each metadata element. The number of occurrences shall be compared with its occurrence specified in Section 8:
 
 NOTE 1 Section 2.1.2 of the Metadata Technical Guidelines discusses the different ISO 19139 XML schema
 
 ==== Metadata consistency test
 
-{empty}a) Purpose: Verify whether the metadata elements follow the path specified in ISO/TS 19139.
+a) Purpose: Verify whether the metadata elements follow the path specified in ISO/TS 19139.
 
-{empty}c) Reference: Section 8 of this technical guideline, ISO/TS 19139
+c) Reference: Section 8 of this technical guideline, ISO/TS 19139
 
-{empty}b) Test Method: Compare the XML schema of each metadata element with the path provide in ISO/TS 19137.
+b) Test Method: Compare the XML schema of each metadata element with the path provide in ISO/TS 19137.
 
 NOTE 1 This test does not apply to the metadata elements that are not included in ISO/TS 19139.
 
 ==== Encoding schema validation test
 
-{empty}a) Purpose: Verify whether the provided dataset follows the rules of default encoding specified in section 9 of this document
+a) Purpose: Verify whether the provided dataset follows the rules of default encoding specified in section 9 of this document
 
-{empty}c) Reference: section 9 of this technical guideline
+c) Reference: section 9 of this technical guideline
 
-{empty}b) Test Method: Inspect whether provided encoding(s) is conformant to the encoding(s) for the relevant application schema(s) as defined in section 9:
+b) Test Method: Inspect whether provided encoding(s) is conformant to the encoding(s) for the relevant application schema(s) as defined in section 9:
 
 NOTE 1 Applying this test to the default encoding schema described in section 9 facilitates testing conformity with the application schema specified in section 5. In such cases running this test with positive result may replace tests from A1.1 to A1.4 provided in this abstract test suite.
 
@@ -8125,11 +7606,11 @@ NOTE 2 Using Schematron or other schema validation tool may significantly improv
 
 ==== Coverage multipart representation test
 
-{empty}a) Purpose: Verify whether coverage data encoded as multipart messages comply with the multipart representation conformance class defined in GML Application Schema for Coverages [OGC 09-146r2].
+a) Purpose: Verify whether coverage data encoded as multipart messages comply with the multipart representation conformance class defined in GML Application Schema for Coverages [OGC 09-146r2].
 
-{empty}b) Reference: OGC standard GML Application Schema for Coverages [OGC 09-146r2].
+b) Reference: OGC standard GML Application Schema for Coverages [OGC 09-146r2].
 
-{empty}c) Test Method: Inspect whether coverage data encoded as multipart messages comply with the multipart representation conformance class defined in GML Application Schema for Coverages [OGC 09-146r2].
+c) Test Method: Inspect whether coverage data encoded as multipart messages comply with the multipart representation conformance class defined in GML Application Schema for Coverages [OGC 09-146r2].
 
 NOTE 1 further information is provided in section 9.4 of this technical guideline.
 
@@ -8137,11 +7618,11 @@ NOTE 2 This test only applies to ElevationGridCoverage application schema.
 
 ==== Coverage domain consistency test
 
-{empty}a) Purpose: Verify whether the encoded coverage domain is consistent with the information provided in the GML application schema.
+a) Purpose: Verify whether the encoded coverage domain is consistent with the information provided in the GML application schema.
 
-{empty}b) Reference: Section 9.4.1.2 of this technical guideline.
+b) Reference: Section 9.4.1.2 of this technical guideline.
 
-{empty}c) Test Method: For multipart coverage messages compare the encoded coverage domain with the description of the coverage component in the GML application schema
+c) Test Method: For multipart coverage messages compare the encoded coverage domain with the description of the coverage component in the GML application schema
 
 NOTE 1 This test applies only to those multipart messages, where the coverage range is encoded together with the coverage domain (some binary formats).
 
@@ -8149,11 +7630,11 @@ NOTE 2 .This test does not apply to multipart messages where the coverage range 
 
 ==== TIFF conformity test
 
-{empty}a) Purpose: Verify whether coverage data encoded in TIFF files comply with the TIFF 6.0 specification and receive the _image/tiff_ MIME type registered in RFC 3302.
+a) Purpose: Verify whether coverage data encoded in TIFF files comply with the TIFF 6.0 specification and receive the _image/tiff_ MIME type registered in RFC 3302.
 
-{empty}b) Reference: TG Requirement 13 and 14
+b) Reference: TG Requirement 13 and 14
 
-{empty}c) Test Method: Inspect whether coverage range encoded in TIFF files comply with Baseline TIFF extended to LZW compression.
+c) Test Method: Inspect whether coverage range encoded in TIFF files comply with Baseline TIFF extended to LZW compression.
 
 NOTE Test A.2.8 does not replace test A.2.7. The Coverage multipart representation test applies to TIFF encoding too.
 
@@ -8167,38 +7648,38 @@ _https://www.dgiwg.org/dgiwg/htm/documents/standards_implementation_profiles.htm
 
 ==== TIFF data structure test
 
-{empty}a) Purpose: Verify whether coverage data encoded in TIFF files does not contain more than two image file directories (IFD) where the first contains the range set of the grid coverage, while the second the transparency mask, it any.
+a) Purpose: Verify whether coverage data encoded in TIFF files does not contain more than two image file directories (IFD) where the first contains the range set of the grid coverage, while the second the transparency mask, it any.
 
-{empty}b) Reference: TG Requirement 15 and 16.
+b) Reference: TG Requirement 15 and 16.
 
-{empty}c) Test Method: Check the number and the designation of each TIFF files delivered for INSPIRE. The test is passed if the condition described in a) fulfils.
+c) Test Method: Check the number and the designation of each TIFF files delivered for INSPIRE. The test is passed if the condition described in a) fulfils.
 
 ====  TIFF range coding test
 
-{empty}a) Purpose: Verify the coding method used for the coverage range in TIFF files.
+a) Purpose: Verify the coding method used for the coverage range in TIFF files.
 
-{empty}b) Reference: TG Requirement 18.
+b) Reference: TG Requirement 18.
 
-{empty}c) Test Method: Check whether the range values are expressed as signed or unsigned integers stored on 32 bits floating point.
+c) Test Method: Check whether the range values are expressed as signed or unsigned integers stored on 32 bits floating point.
 
 ====  TIFF range compression test
 
-{empty}a) Purpose: Verify whether the compression method used for the coverage range in TIFF files follows the specification.
+a) Purpose: Verify whether the compression method used for the coverage range in TIFF files follows the specification.
 
-{empty}b) Reference: TG Requirement 21.
+b) Reference: TG Requirement 21.
 
-{empty}c) Test Method: Check the compression (if any) used to deliver TIFF files for INSPIRE. The test is passed when the file is:
+c) Test Method: Check the compression (if any) used to deliver TIFF files for INSPIRE. The test is passed when the file is:
 
 * uncompressed
 * lossless compressed with packbit or LZW compression schemes.
 
 ==== TIFF grid coordinate system test
 
-{empty}a) Purpose: Verify whether the origin and the orientation of the grid coordinate system follows the specification.
+a) Purpose: Verify whether the origin and the orientation of the grid coordinate system follows the specification.
 
-{empty}b) Reference: TG Requirement 17.
+b) Reference: TG Requirement 17.
 
-{empty}c) Test Method: Check the origin and the orientation of the image coordinate system. The test is passed when:
+c) Test Method: Check the origin and the orientation of the image coordinate system. The test is passed when:
 
 * The origin of the grid coordinate system is fixed at the upper left corner of the grid coverage,
 * Axis 'row' is directed downwards,
@@ -8206,13 +7687,13 @@ _https://www.dgiwg.org/dgiwg/htm/documents/standards_implementation_profiles.htm
 
 ====  Style test
 
-{empty}a) Purpose: Verify whether the styles defined in section 11.2 have been made available for each specified layer.
+a) Purpose: Verify whether the styles defined in section 11.2 have been made available for each specified layer.
 
-{empty}b) Reference: section 11.2.
+b) Reference: section 11.2.
 
-{empty}c) Test Method: Check whether the styles defined in section 11.2 have been made available for each specified layer.
+c) Test Method: Check whether the styles defined in section 11.2 have been made available for each specified layer.
 
-[appendix]
+[appendix]<<<
 == (informative) - Use-Cases
 
 === Documented high-level use cases
@@ -8736,7 +8217,7 @@ As additional information, in the development of this specification the followin
 ** Generation of shaded-relief, hypsometric-areas and slope maps, natural basins, viewsheds and vector elevation features.
 ** Generalization of DEM and spot heights.
 
-[appendix]
+[appendix]<<<
 == (normative) - Code list values
 
 INSPIRE Application Schema 'ElevationVectorElements'
@@ -8829,7 +8310,7 @@ NOTE 2 This value is only applicable to spot heights, not to spot depths."
 |Description: |EXAMPLE The top of a hill or a mountain.
 |===
 
-[appendix]
+[appendix]<<<
 == (informative) - Pan-European Geographic Grid for gridded _Elevation_ data
 
 This annex explains the need to establish a Pan-European geographic grid for the provision of gridded _Elevation_ spatial information (i.e. raster, coverage-based data) aimed at global purposes within the INSPIRE context and defines the characteristics of this grid.
@@ -8879,12 +8360,10 @@ The amendment of this Regulation presented as a result of the INSPIRE Annex II a
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
 
-{empty}(1) When gridded data is delivered using geodetic coordinates the multi-resolution Zoned Geographic Grid defined in this annex may be used as a geo-referencing framework.
+(1) When gridded data is delivered using geodetic coordinates the multi-resolution Zoned Geographic Grid defined in this annex may be used as a geo-referencing framework.
 
 ====
 
@@ -8894,14 +8373,11 @@ As recommended in Section 6.2.2 of this specification, Pan-European gridded _Ele
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
-
 (...)
 
-{empty}(3) The grid shall be based on the ETRS89-GRS80 geodetic coordinate reference system.
+(3) The grid shall be based on the ETRS89-GRS80 geodetic coordinate reference system.
 
 ====
 
@@ -8909,14 +8385,11 @@ _Annex II, Section 2.2.2_
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
-
 (...)
 
-{empty}(4) The origin of the grid shall coincide with the intersection point of the Equator with the Greenwich Meridian (GRS80 latitude φ=0; GRS80 longitude λ=0).
+(4) The origin of the grid shall coincide with the intersection point of the Equator with the Greenwich Meridian (GRS80 latitude φ=0; GRS80 longitude λ=0).
 
 ====
 
@@ -8924,14 +8397,11 @@ _Annex II, Section 2.2.2_
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
-
 (...)
 
-{empty}(5) The grid orientation shall be south-north and west-east according to the net defined by the meridians and parallels of the GRS80 ellipsoid.
+(5) The grid orientation shall be south-north and west-east according to the net defined by the meridians and parallels of the GRS80 ellipsoid.
 
 ====
 
@@ -8962,14 +8432,11 @@ When applying this factor, the cell sizes become approximately square on the gro
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
-
 (...)
 
-{empty}(2) The resolution levels are defined in Table 1.
+(2) The resolution levels are defined in Table 1.
 
 ====
 
@@ -8979,14 +8446,11 @@ NOTE Table 13 in this document
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
-
 (...)
 
-{empty}(7) This grid shall be subdivided in zones. The south-north resolution of the grid shall have equal angular spacing. The west-east resolution of the grid shall be established as the product of angular spacing multiplied by the factor of the zone as defined in Table 1.
+(7) This grid shall be subdivided in zones. The south-north resolution of the grid shall have equal angular spacing. The west-east resolution of the grid shall be established as the product of angular spacing multiplied by the factor of the zone as defined in Table 1.
 
 ====
 
@@ -9000,14 +8464,12 @@ EXAMPLE The zoned geographical grid at a resolution level of 300 milliseconds in
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
-
 (...)
 
-{empty}(8) The grid shall be designated Grid_ETRS89-GRS80z__n_res__, where _n_ represents the number of the zone and _res_ the cell size in angular units, as specified in Table 1.
+(8) The grid shall be designated Grid_ETRS89-GRS80z__n_res__, where _n_ represents the number of the zone and _res_ the cell size in angular units, as specified in Table 1.
+
 ====
 
 
@@ -9141,20 +8603,17 @@ Such MS defined grids will be based on the International Terrestrial Reference S
 ====
 [.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2.2_
-
 *Zoned Geographic Grid*
-
 (...)
 
-{empty}(6) For grid referencing in regions outside of continental Europe data providers may define their own grid based on a geodetic coordinate reference system compliant with ITRS, following the same principles as laid down for the Pan-European Grid_ETRS89-GRS80zn. In this case, an identifier for the CRS and the corresponding identifier for the grid shall be created.
+(6) For grid referencing in regions outside of continental Europe data providers may define their own grid based on a geodetic coordinate reference system compliant with ITRS, following the same principles as laid down for the Pan-European Grid_ETRS89-GRS80zn. In this case, an identifier for the CRS and the corresponding identifier for the grid shall be created.
 
 ====
 
 NOTE The term continental Europe means the area within the scope of ETRS89/EVRS.
 
-[appendix]
+[appendix]<<<
 == {blank}
 *(informative) - Examples on how to use _ChartDatum_ data type*
 
@@ -9162,21 +8621,24 @@ This annex includes example figures which help in understanding the use of the _
 
 === Description of the sea floor
 
-image:media\image35.emf[image]
+image:media\image35.png[image, align=center]
 
-Figure 32 – Example: Description of the sea floor.
+[.text-center]
+*Figure 32* – Example: Description of the sea floor.
 
 === Description of the floor of an inland standing water body
 
-image:media\image36.emf[image]
+image:media\image36.png[image, align=center]
 
-Figure 33 – Example: Description of the floor of an inland standing water body.
+[.text-center]
+*Figure 33* – Example: Description of the floor of an inland standing water body.
 
 === Description of the bed of a navigable river
 
-image:media\image37.emf[image]
+image:media\image37.png[image, align=center]
 
-Figure 34 – Example: Description of the bed of a navigable river.
+[.text-center]
+*Figure 34* – Example: Description of the bed of a navigable river.
 
 *(normative) - Encoding rules for TIFF*
 
@@ -9270,7 +8732,8 @@ The origin of the grid coordinate system shall be the upper left corner of the g
 
 image:media\image38.png[image]
 
-Figure 35. referenced grid as defined by Baseline TIFF
+[.text-center]
+*Figure 35*. referenced grid as defined by Baseline TIFF
 
 ===== Range values
 
