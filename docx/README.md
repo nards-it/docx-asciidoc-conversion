@@ -2,10 +2,10 @@
 
 |Order|TG|Two-letters code for data TG|Status|Note|
 |----|------------------------------------------------|-----|----|-------------|
-|1|Technical Guidance for the implementation of INSPIRE View Services| |Done|
-|2|Soil|SO|Done|adoc under revision|
+|1|Technical Guidance for the implementation of INSPIRE View Services| |Done|Published|
+|2|Soil|SO|Done|Published|
 |3|Technical Guidance for the implementation of INSPIRE Download Services| |
-|4|Elevation|EL|
+|4|Elevation|EL|Draft|
 |5|Coordinate reference systems|RS|
 |6|Geographical grid systems|GG|
 |7|Land use|LU|
