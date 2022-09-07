@@ -13,7 +13,7 @@
 :toc-title:
 
 // TOC level depth
-:toclevels: 8
+:toclevels: 3
 
 // Section numbering level depth
 :sectnumlevels: 8
@@ -25,13 +25,11 @@
 
 image:media\image2.jpeg[image,width=93,height=93, align=center]
 
-image:media\image3.png[image,width=100,height=100, align=center]
+image:media\image3.png[image,width=100,height=100, align=center] INSPIRE Infrastructure for Spatial Information in Europe
 
-[.text-center]
-INSPIRE 
-Infrastructure for Spatial Information in Europe
 
-D2.8.II.1 Data Specification on _Elevation_ – Technical Guidelines
+[discrete]
+= D2.8.II.1 Data Specification on _Elevation_ – Technical Guidelines
 
 
 [cols=",",]
@@ -52,6 +50,7 @@ D2.8.II.1 Data Specification on _Elevation_ – Technical Guidelines
 |*Relation* |Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)
 |*Coverage* |Project duration
 |===
+
 
 [discrete]
 = *Foreword*
@@ -152,30 +151,212 @@ Other contributors to the INSPIRE data specifications are the Drafting Team Data
 *Contact information*
 
 Vanda Nunes de Lima
-
 European Commission Joint Research Centre
-
 Institute for Environment and Sustainability
-
 Unit H06: Digital Earth and Reference Data
-
 TP262, Via Fermi 2749
-
 I-21027 Ispra (VA)
-
 ITALY
-
 E-mail: vanda.lima@jrc.ec.europa.eu
-
 Tel.: 39-0332-7865052
-
 Fax: 39-0332-7866325
-
 http://ies.jrc.ec.europa.eu/
-
 http://ec.europa.eu/dgs/jrc/
-
 http://inspire.jrc.ec.europa.eu/
+
+*Table of contents*
+
+1	Scope	1
+2	Overview	1
+2.1	Name	1
+2.2	Informal description	1
+2.3	Normative References	4
+2.4	Terms and definitions	5
+2.5	Symbols and abbreviations	8
+2.6	How the Technical Guidance maps to the Implementing Rules	10
+2.6.1	Requirements	10
+2.6.2	Recommendations	11
+2.6.3	Conformance	11
+3	Specification scopes	11
+4	Identification information	11
+5	Data content and structure	12
+5.1	Application schemas – Overview	12
+5.1.1	Application schemas included in the IRs	12
+5.2	Basic notions	13
+5.2.1	Notation	13
+5.2.2	Voidable characteristics	14
+5.2.3	Enumerations	15
+5.2.4	Code lists	16
+5.2.5	Consistency between spatial data sets	19
+5.2.6	Identifier management	19
+5.2.7	Geometry representation	20
+5.2.8	Temporality representation	20
+5.2.9	Coverages	21
+5.3	Application schema Elevation	23
+5.3.1	Description	23
+5.4	Application schema ElevationBaseTypes	31
+5.4.1	Description	31
+5.4.2	Feature catalogue	31
+5.5	Application schema ElevationGridCoverage	33
+5.5.1	Description	33
+5.5.2	Feature catalogue	45
+5.6	Application schema ElevationVectorElements	49
+5.6.1	Description	49
+5.6.2	Feature catalogue	52
+5.6.3	Externally governed code lists	61
+5.7	Application schema ElevationTIN	63
+5.7.1	Description	63
+5.7.2	Feature catalogue	66
+6	Reference systems, units of measure and grids	69
+6.1	Default reference systems, units of measure and grid	69
+6.1.1	Coordinate reference systems	69
+6.1.2	Temporal reference system	72
+6.1.3	Units of measure	73
+6.1.4	Grids	73
+6.2	Theme-specific requirements and recommendations	74
+6.2.1	Coordinate reference systems	74
+6.2.2	Grids	81
+7	Data quality	84
+7.1	Data quality elements	84
+7.1.1	Completeness – Commission	85
+7.1.2	Completeness – Omission	86
+7.1.3	Logical consistency – Conceptual consistency	86
+7.1.4	Logical consistency – Domain consistency	87
+7.1.5	Logical Consistency – Format consistency	87
+7.1.6	Logical Consistency – Topological consistency	88
+7.1.7	Positional accuracy – Absolute or external accuracy	91
+7.1.8	Positional accuracy – Gridded data position accuracy	92
+7.2	Minimum data quality requirements	93
+7.3	Recommendation on data quality	94
+8	Dataset-level metadata	95
+8.1	Metadata elements defined in INSPIRE Metadata Regulation	95
+8.1.1	Conformity	96
+8.1.2	Lineage	99
+8.1.3	Temporal reference	99
+8.2	Metadata elements for interoperability	100
+8.2.1	Coordinate Reference System	101
+8.2.2	Temporal Reference System	101
+8.2.3	Encoding	102
+8.2.4	Character Encoding	103
+8.2.5	Spatial representation type	103
+8.2.6	Data Quality – Logical Consistency – Topological Consistency	104
+8.3	Recommended theme-specific metadata elements	104
+8.3.1	Maintenance Information	105
+8.3.2	Metadata elements for reporting data quality	105
+8.3.3	Spatial representation information	107
+8.3.4	Supplemental information	107
+8.3.5	Process step	108
+8.3.6	Data source	109
+8.3.7	Browse graphic information	110
+8.3.8	Digital transfer options information	110
+9	Delivery	111
+9.1	Updates	111
+9.2	Delivery medium	111
+9.3	Options for delivering coverage data	112
+9.4	Encodings	113
+9.4.1	Default Encoding(s)	113
+9.4.2	Recommended Encoding(s)	117
+10	Data Capture	117
+10.1	Elevation - Coverages (Grids)	117
+10.1.1	Grid spacing	117
+10.2	Elevation - Vector elements	118
+10.2.1	Generic consistency rules	118
+10.2.2	Density of Elevation data	118
+10.3	Elevation - TIN	120
+10.4	Bathymetry-specific objects	120
+11	Portrayal	121
+11.1	Layers to be provided by INSPIRE view services	122
+11.1.1	Layers organisation	122
+11.2	Styles required to be supported by INSPIRE view services	122
+11.2.1	Styles for the layer EL.BreakLine	122
+11.2.2	Styles for the layer EL.ContourLine	123
+11.2.3	Styles for the layer EL.IsolatedArea	124
+11.2.4	Styles for the layer EL.SpotElevation	125
+11.2.5	Styles for the layer EL.VoidArea	127
+11.2.6	Styles for the layer EL.GridCoverage	128
+11.2.7	Styles for the layer EL.TIN	129
+11.2.8	Examples	130
+11.3	Styles recommended to be supported by INSPIRE view services	133
+11.3.1	Styles for the layer EL.ContourLine	133
+11.3.2	Examples	136
+Bibliography	137
+Annex A (normative) Abstract Test Suite	139
+A.1	Application Schema Conformance Class	142
+A.1.1	Schema element denomination test	142
+A.1.2	Value type test	142
+A.1.3	Value test	142
+A.1.4	Attributes/associations completeness test	143
+A.1.5	Abstract spatial object test	143
+A.1.6	Constraints test	144
+A.1.7	Geometry representation test	144
+A.2	Reference Systems Conformance Class	144
+A.2.1	Datum test	144
+A.2.2	Coordinate reference system test	145
+A.2.3	Vertical Coordinate Reference System exclusiveness test	145
+A.2.4	Grid test	145
+A.2.5	View service coordinate reference system test	146
+A.2.6	Temporal reference system test	146
+A.2.7	Units of measurements test	146
+A.3	Data Consistency Conformance Class	146
+A.3.1	Unique identifier persistency test	147
+A.3.2	Version consistency test	147
+A.3.3	Life cycle time sequence test	147
+A.3.4	Update frequency test	147
+A.3.5	Grid aggregation test	148
+A.3.6	Contour line test	148
+A.3.7	Break line test	148
+A.3.8	Isolated area test	148
+A.3.9	Stop line test	149
+A.4	Metadata IR Conformance Class	149
+A.4.1	Metadata for interoperability test	149
+A.4.2	Metadata completeness test	149
+A.5	Information Accessibility Conformance Class	150
+A.5.1	Code list publication test	150
+A.5.2	CRS publication test	150
+A.5.3	CRS identification test	150
+A.5.4	Grid identification test	150
+A.6	Data Delivery Conformance Class	151
+A.6.1	Encoding compliance test	151
+A.6.2	Minimum data delivery test	151
+A.7	Portrayal Conformance Class	151
+A.7.1	Layer designation test	151
+A.2	Part 2 : Conformity with the technical guideline (TG) Requirements	152
+A.8.1	Multiplicity test	152
+A.8.2	CRS http URI test	152
+A.8.3	Metadata encoding schema validation test	152
+A.8.4	Metadata occurrence test	152
+A.8.5	Metadata consistency test	153
+A.8.6	Encoding schema validation test	153
+A.8.7	Coverage multipart representation test	153
+A.8.8	Coverage domain consistency test	153
+A.8.9	TIFF conformity test	154
+A.8.10	TIFF data structure test	154
+A.8.11	TIFF range coding test	154
+A.8.12	TIFF range compression test	154
+A.8.13	TIFF grid coordinate system test	155
+A.8.14	Style test	155
+Annex B (informative) Use-Cases	156
+B.1	Documented high-level use cases	156
+B.1.1	Flood mapping	156
+B.1.2	Orthoimagery production	159
+B.1.3	Elevation mapping	164
+B.1.4	Maintenance of fairways	166
+B.2	Additional applications	167
+Annex C (normative) Code list values	168
+Annex D (informative) Pan-European Geographic Grid for gridded Elevation data	170
+D.1	Introduction	170
+D.2	Zoned Geographic Grid for gridded Elevation data	171
+Annex E (informative) Examples on how to use ChartDatum data type	177
+E.1	Description of the sea floor	177
+E.2	Description of the floor of an inland standing water body	178
+E.3	Description of the bed of a navigable river	178
+Annex E (normative) Encoding rules for TIFF	179
+E.1	Introduction	179
+E.2	TIFF format	179
+E.2.1	Format overview	179
+E.2.2	INSPIRE TIFF profile for grid coverage data	179
+E.2.3	Mapping between TIFF and GML data structures	182
+
 
 :sectnums:
 
@@ -1978,13 +2159,15 @@ As a consequence, linear spatial objects of the type _GM_Curve_ defined in this 
 _Annex III, Section 1.7.3_
 *Provision of Elevation Property Values*
 
-====
 
 [arabic, start=1]
 . Where elevation vector data sets are provided using 2-D geometries, the vertical component (third dimension) shall be provided as elevation property values within the _propertyValue_ attribute.
 
 [arabic, start=2]
 . Where elevation vector data sets are provided using 2.5-D geometries, the elevation property values shall be only included within the third coordinate (Z) of these geometries.
+
+====
+
 
 The model described in this specification allows providing 2-D or 2.5-D vector data:
 
@@ -1999,8 +2182,11 @@ EXAMPLE The _X_ and _Y_ coordinates of the geometry define the horizontal compon
 
 If break line spatial objects are provided using 2-D geometries, it is not possible to represent the elevation information along such lines. In this case, their usefulness as input data is very limited for users.
 
-[arabic, start=10]
-. Break line spatial objects should be always provided using 2.5-D geometries, in order to properly describe the singularities of the surface being represented.
+[TIP]
+====
+[.text-center]
+*TG Requirement 10* Break line spatial objects should be always provided using 2.5-D geometries, in order to properly describe the singularities of the surface being represented
+====
 
 ===== Temporality representation
 
@@ -4275,9 +4461,7 @@ EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-eleme
 *<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />*
 
 <gmd:explanation> (...) </gmd:explanation>
-
 <gmd:pass> (...) </gmd:pass>
-
 </gmd:DQ_ConformanceResult>
 
 or (using a citation):
@@ -4295,13 +4479,11 @@ or (using a citation):
 *</gmd:title>*
 
 <gmd:date>
-
 <gmd:date>
 
 *<gco:Date>2013-01-21</gco:Date>*
 
 </gmd:date>
-
 <gmd:dateType>
 
 *<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou*
@@ -4309,17 +4491,13 @@ or (using a citation):
 *rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>*
 
 </gmd:dateType>
-
 </gmd:date>
-
 </gmd:CI_Citation>
 
 *</gmd:specification>*
 
 <gmd:explanation> (...) </gmd:explanation>
-
 <gmd:pass> (...) </gmd:pass>
-
 </gmd:DQ_ConformanceResult>
 ----
 
@@ -4332,9 +4510,7 @@ EXAMPLE 2: The XML snippets below show how to fill the _Specification_ sub-eleme
 *<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/crs" />*
 
 <gmd:explanation> (...) </gmd:explanation>
-
 <gmd:pass> (...) </gmd:pass>
-
 </gmd:DQ_ConformanceResult>
 
 or (using a citation):
@@ -4352,13 +4528,11 @@ or (using a citation):
 *</gmd:title>*
 
 <gmd:date>
-
 <gmd:date>
 
 *<gco:Date>2013-01-21</gco:Date>*
 
 </gmd:date>
-
 <gmd:dateType>
 
 *<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou*
@@ -4366,17 +4540,13 @@ or (using a citation):
 *rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>*
 
 </gmd:dateType>
-
 </gmd:date>
-
 </gmd:CI_Citation>
 
 *</gmd:specification>*
 
 <gmd:explanation> (...) </gmd:explanation>
-
 <gmd:pass> (...) </gmd:pass>
-
 </gmd:DQ_ConformanceResult>
 ----
 
@@ -4539,31 +4709,18 @@ codeSpace: INSPIRE RS registry
 [source, xml]
 ----
 <gmd:referenceSystemInfo>
-
 <gmd:MD_ReferenceSystem>
-
 <gmd:referenceSystemIdentifier>
-
 <gmd:RS_Identifier>
-
 <gmd:code>
-
 <gco:CharacterString>ETRS89 </gco:CharacterString>
-
 </gmd:code>
-
 <gmd:codeSpace>
-
 <gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
-
 </gmd:codeSpace>
-
 </gmd:RS_Identifier>
-
 </gmd:referenceSystemIdentifier>
-
 </gmd:MD_ReferenceSystem>
-
 </gmd:referenceSystemInfo>
 ----
 
@@ -4598,31 +4755,18 @@ codeSpace: INSPIRE RS registry
 [source, xml]
 ----
 <gmd:referenceSystemInfo>
-
 <gmd:MD_ReferenceSystem>
-
 <gmd:referenceSystemIdentifier>
-
 <gmd:RS_Identifier>
-
 <gmd:code>
-
 <gco:CharacterString>GregorianCalendar</gco:CharacterString>
-
 </gmd:code>
-
 <gmd:codeSpace>
-
 <gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
-
 </gmd:codeSpace>
-
 </gmd:RS_Identifier>
-
 </gmd:referenceSystemIdentifier>
-
 </gmd:MD_ReferenceSystem>
-
 </gmd:referenceSystemInfo>
 ----
 
@@ -4655,27 +4799,17 @@ Technical Guidelines
 [source, xml]
 ----
 <gmd:MD_Format>
-
 <gmd:name>
-
 <gco:CharacterString> Elevation GML application schema </gco:CharacterString>
-
 </gmd:name>
-
 <gmd:version>
-
 <gco:CharacterString>3.0(.3), GML, version 3.2.1</gco:CharacterString>
-
 </gmd:version>
-
 <gmd:specification>
-
 <gco:CharacterString>D2.8.II.II Data Specification on Elevation –
 
 Technical Guidelines</gco:CharacterString>
-
 </gmd:specification>
-
 </gmd:MD_Format>
 ----
 
@@ -4700,9 +4834,7 @@ Technical Guidelines</gco:CharacterString>
 [source, xml]
 ----
 <gmd:characterSet>
-
 <gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode>
-
 </gmd:characterSet>
 ----
 
@@ -5308,7 +5440,6 @@ uomLabels="deg deg" srsDimension="*2*">
 <gml:upperCorner>3 3</gml:upperCorner> 
 </gml:Envelope> 
 </gml:boundedBy>
-
 <gml:domainSet> 
 <gml:RectifiedGrid gml:id="RG001_C001" 
 srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" 
@@ -5330,7 +5461,6 @@ uomLabels="deg deg" dimension="2">
 </gml:RectifiedGrid> 
 </gml:domainSet> 
 <rangeType>
-
 <swe:DataRecord> 
 <swe:field name="white"> 
 <swe:Quantity definition="http://opengis.net/def/property/OGC/0/Radiance"> 
@@ -5353,7 +5483,6 @@ uomLabels="deg deg" dimension="2">
 </swe:constraint> 
 </swe:Quantity> 
 </swe:field>
-
 </swe:DataRecord> 
 </rangeType> 
 <gml:coverageFunction> 
@@ -5752,57 +5881,31 @@ None.
 [source,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.BreakLine</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.BreakLine.Default</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Break Line Default Style</se:Title>
-
 <se:Abstract> Break Line is a light brown (#CF7916) 2 pixel width line.</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>BreakLine</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#CF7916</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -5833,101 +5936,53 @@ Depth Contour line is a blue (#0A93FC) 1 pixel width line.
 [source ,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.ContourLine</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.ContourLine.Default</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Contour Line Default Style</se:Title>
-
 <se:Abstract> ContourLine is rendered depending on the type of elevation property represented: a ContourLine representing the 'height' property (a Land Contour Line) is a brown(#A47916) 1 pixel circle of size 10; a ContourLine representing the 'depth' property (a Bathymetric Contour Line) is a blue(#0A93FC) 1 pixel circle of size 10;</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>ContourLine</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
-
 <ogc:Filter>
-
 <!-Land Contour Lines ->
-
 <se:PropertyIsEqualTo>
-
 <ogc:PropertyName>propertyType</ogc:PropertyName>
-
 <ogc:Literal>height</ogc:Literal>
-
 </se:PropertyIsEqualTo>
-
 </ogc:Filter>
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#A47916</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 </se:Rule>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
-
 <ogc:ElseFilter/>
-
 <!-Bathymetric Contour Lines ->
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#0A93FC</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -5946,59 +6001,32 @@ Depth Contour line is a blue (#0A93FC) 1 pixel width line.
 [source, xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.IsolatedArea</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.IsolatedArea.Default</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Isolated Area Default Style</se:Title>
-
 <se:Abstract> Isolated Area is a light pink (#FFE6FF) filled polygon with 1 pixel width outline.</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>IsolatedArea</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
-
 <se:PolygonSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 <se:SvgParameter name="fill">#FFE6FF</se:SvgParameter>
-
 </se:Stroke>
-
 </se:PolygonSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6033,181 +6061,93 @@ Depth values are labels in Arial 10 blue (#0000FF).
 [source, xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.SpotElevation</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.SpotElevation.Default</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Spot Elevation Default Style</se:Title>
-
 <se:Abstract> SpotElevation is rendered depending on the type of elevation property represented: a SpotElevation representing the 'height' property (a Spot Height) is a black(#000000) 1 pixel circle of size 10 and its Height Values are labels in Arial 10 black (#000000); a SpotElevation representing the 'depth' property (a Depth Spot) is a blue(#0000FF) 1 pixel circle of size 10 and its Depth Values are labels in Arial 10 blue (#0000FF);</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>SpotElevation</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-
 <ogc:Filter>
-
 <!-Spot Heights->
-
 <se:PropertyIsEqualTo>
-
 <ogc:PropertyName>propertyType</ogc:PropertyName>
-
 <ogc:Literal>height</ogc:Literal>
-
 </se:PropertyIsEqualTo>
-
 </ogc:Filter>
-
 <se:PointSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Graphic>
-
 <se:Mark>
-
 <se:WellKnownName>circle</se:WellKnownName>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 </se:Stroke>
-
 </se:Mark>
-
 <se:Size>
-
 <se:SvgParameter name="size">10</se:SvgParameter>
-
 </se:Size>
-
 </se:Graphic>
-
 </se:PointSymbolizer>
-
 <se:TextSymbolizer>
-
 <se:Label>
-
 <ogc:PropertyName>propertyValue</ogc:PropertyName>
-
 </se:Label>
-
 <se:Font>
-
 <se:SvgParameter name="font-family">Arial</se:SvgParameter>
-
 <se:SvgParameter name="font-size">10</se:SvgParameter>
-
 </se:Font>
-
 <se:Fill>
-
 <se:SvgParameter name="fill">#000000</se:SvgParameter>
-
 </se:Fill>
-
 </se:TextSymbolizer>
-
 </se:Rule>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-
 <ogc:ElseFilter/>
-
 <!-Depth Spots ->
-
 <se:PointSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Graphic>
-
 <se:Mark>
-
 <se:WellKnownName>circle</se:WellKnownName>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 </se:Stroke>
-
 </se:Mark>
-
 <se:Size>
-
 <se:SvgParameter name="size">10</se:SvgParameter>
-
 </se:Size>
-
 </se:Graphic>
-
 </se:PointSymbolizer>
-
 <se:TextSymbolizer>
-
 <se:Label>
-
 <ogc:PropertyName>propertyValue</ogc:PropertyName>
-
 </se:Label>
-
 <se:Font>
-
 <se:SvgParameter name="font-family">Arial</se:SvgParameter>
-
 <se:SvgParameter name="font-size">10</se:SvgParameter>
-
 </se:Font>
-
 <se:Fill>
-
 <se:SvgParameter name="fill">#0000FF</se:SvgParameter>
-
 </se:Fill>
-
 </se:TextSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6227,57 +6167,31 @@ Depth values are labels in Arial 10 blue (#0000FF).
 [source ,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.VoidArea</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.VoidArea.Default</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Void Area Default Style</se:Title>
-
 <se:Abstract>Void Area is a black (#000000) non-filled polygon with 1 pixel width outline.</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>VoidArea</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
-
 <se:PolygonSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 </se:Stroke>
-
 </se:PolygonSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6296,121 +6210,63 @@ Depth values are labels in Arial 10 blue (#0000FF).
 [source ,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.GridCoverage</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.GridCoverage.Default</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:RasterSymbolizer version="1.1.0">
-
 <se:Description>
-
 <se:Title>GridCoverage Default Style</se:Title>
-
 <se:Abstract> Grid Coverage is symbolized by a coloured raster symbolizer (values in meters).</se:Abstract>
-
 </se:Description>
-
 <se:Opacity>1.0</se:Opacity>
-
 <se:OverlapBehavior>AVERAGE</se:OverlapBehavior>
-
 <se:ColorMap>
-
 <se:Categorize fallbackValue="#78c818">
-
 <se:LookupValue>Rasterdata</se:LookupValue>
-
 <se:Value>#005CE6</se:Value>
-
 <se:Threshold>-100</se:Threshold>
-
 <se:Value>#28EDD6</se:Value>
-
 <se:Threshold>0</se:Threshold>
-
 <se:Value>#54F76D</se:Value>
-
 <se:Threshold>50</se:Threshold>
-
 <se:Value>#9AFA66</se:Value>
-
 <se:Threshold>100</se:Threshold>
-
 <se:Value>#7BF23A</se:Value>
-
 <se:Threshold>150</se:Threshold>
-
 <se:Value>#5DE813</se:Value>
-
 <se:Threshold>200</se:Threshold>
-
 <se:Value>#70E02B</se:Value>
-
 <se:Threshold>250</se:Threshold>
-
 <se:Value>#A4D453</se:Value>
-
 <se:Threshold>300</se:Threshold>
-
 <se:Value>#D4C574</se:Value>
-
 <se:Threshold>400</se:Threshold>
-
 <se:Value>#BFA15C</se:Value>
-
 <se:Threshold>500</se:Threshold>
-
 <se:Value>#A17C3D</se:Value>
-
 <se:Threshold>600</se:Threshold>
-
 <se:Value>#8A622B</se:Value>
-
 <se:Threshold>700</se:Threshold>
-
 <se:Value>#94765C</se:Value>
-
 <se:Threshold>800</se:Threshold>
-
 <se:Value>#968992</se:Value>
-
 <se:Threshold>900</se:Threshold>
-
 <se:Value>#9B96B5</se:Value>
-
 <se:Threshold>1000</se:Threshold>
-
 <se:Value>#A696B5</se:Value>
-
 <se:Threshold>1500</se:Threshold>
-
 <se:Value>#B196B5</se:Value>
-
 <se:Threshold>2000</se:Threshold>
-
 <se:Value>#C7AFC7</se:Value>
-
 <se:Threshold>3000</se:Threshold>
-
 <se:Value>#E3D5E3</se:Value>
-
 <se:Threshold>5000</se:Threshold>
-
 <se:Value>#FFFFFF</se:Value>
-
 </se:Categorize>
-
 </se:ColorMap>
-
 </se:RasterSymbolizer>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6432,109 +6288,57 @@ NOTE Use of a common style for elevation grid coverages may introduce problems w
 [source ,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.TIN</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.TIN.Default</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Elevation TIN Default Style</se:Title>
-
 <se:Abstract>Geometries composing an ElevationTIN are rendered according their type: stopLines are (#7F8850) 2 pixel width lines; breakLines are (#CF7916) 2 pixel width lines; controlPoints are black(#000000) 1 pixel circles of size 10;</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>ElevationTIN</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometries:stopLines</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#7F8850</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometries:breakLines</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#CF7916</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 <se:PointSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometries:controlPoint</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Graphic>
-
 <se:Mark>
-
 <se:WellKnownName>circle</se:WellKnownName>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 </se:Stroke>
-
 </se:Mark>
-
 <se:Size>
-
 <se:SvgParameter name="size">10</se:SvgParameter>
-
 </se:Size>
-
 </se:Graphic>
-
 </se:PointSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6587,71 +6391,38 @@ image:media\image33.jpeg[image]
 [source ,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.ContourLine</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.ContourLine.Master</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Master Contour Line Style</se:Title>
-
 <se:Abstract>Master Contour Line is a brown (#A47916) 2 pixels width line.</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>ContourLine</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
-
 <ogc:Filter>
-
 <!-Master Contour Lines ->
-
 <se:PropertyIsEqualTo>
-
 <ogc:PropertyName>contourLineType</ogc:PropertyName>
-
 <ogc:Literal>master</ogc:Literal>
-
 </se:PropertyIsEqualTo>
-
 </ogc:Filter>
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#A47916</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6669,73 +6440,40 @@ image:media\image33.jpeg[image]
 [source ,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.ContourLine</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.ContourLine.Ordinary</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Ordinary Contour Line Style</se:Title>
-
 <se:Abstract>Ordinary Contour Line is a brown (#734C00) 2 pixels width line.
 
 </se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>ContourLine</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
-
 <ogc:Filter>
-
 <!-Ordinary Contour Lines ->
-
 <se:PropertyIsEqualTo>
-
 <ogc:PropertyName>contourLineType</ogc:PropertyName>
-
 <ogc:Literal>ordinary</ogc:Literal>
-
 </se:PropertyIsEqualTo>
-
 </ogc:Filter>
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#734C00</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6754,73 +6492,39 @@ image:media\image33.jpeg[image]
 [source ,xml]
 ----
 <sld:NamedLayer>
-
 <se:Name>EL.ContourLine</se:Name>
-
 <sld:UserStyle>
-
 <se:Name>EL.ContourLine.Auxiliary</se:Name>
-
 <sld:IsDefault>1</sld:IsDefault>
-
 <se:FeatureTypeStyle version="1.1.0">
-
 <se:Description>
-
 <se:Title>Auxiliary Contour Line Style</se:Title>
-
 <se:Abstract> Auxiliary Contour Line is a brown (#734C00) dashed 1 pixel width line.</se:Abstract>
-
 </se:Description>
-
 <se:FeatureTypeName>ContourLine</se:FeatureTypeName>
-
 <se:Rule>
-
 <se:MinScaleDenominator>1</se:MinScaleDenominator>
-
 <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
-
 <ogc:Filter>
-
 <!-Auxiliary Contour Lines ->
-
 <se:PropertyIsEqualTo>
-
 <ogc:PropertyName>contourLineType</ogc:PropertyName>
-
 <ogc:Literal>auxiliary</ogc:Literal>
-
 </se:PropertyIsEqualTo>
-
 </ogc:Filter>
-
 <se:LineSymbolizer>
-
 <se:Geometry>
-
 <ogc:PropertyName>geometry</ogc:PropertyName>
-
 </se:Geometry>
-
 <se:Stroke>
-
 <se:SvgParameter name="stroke">#734C00</se:SvgParameter>
-
 <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-
 <se:SvgParameter name="stroke-dasharray">6 2</se:SvgParameter>
-
 </se:Stroke>
-
 </se:LineSymbolizer>
-
 </se:Rule>
-
 </se:FeatureTypeStyle>
-
 </sld:UserStyle>
-
 </sld:NamedLayer>
 ----
 
@@ -6934,111 +6638,58 @@ An overview of the conformance classes and the associated tests is given in the 
 Table 11. Overview of the tests within this Abstract Test Suite.
 
 A.1 Application Schema Conformance Class 142
-
 A.1.1 Schema element denomination test 142
-
 A.1.2 Value type test 142
-
 A.1.3 Value test 142
-
 A.1.4 Attributes/associations completeness test 143
-
 A.1.5 Abstract spatial object test 143
-
 A.1.6 Constraints test 144
-
 A.1.7 Geometry representation test 144
-
 A.2 Reference Systems Conformance Class 144
-
 A.2.1 Datum test 144
-
 A.2.2 Coordinate reference system test 145
-
 A.2.3 Vertical Coordinate Reference System exclusiveness test 145
-
 A.2.4 Grid test 145
-
 A.2.5 View service coordinate reference system test 146
-
 A.2.6 Temporal reference system test 146
-
 A.2.7 Units of measurements test 146
-
 A.3 Data Consistency Conformance Class 146
-
 A.3.1 Unique identifier persistency test 147
-
 A.3.2 Version consistency test 147
-
 A.3.3 Life cycle time sequence test 147
-
 A.3.4 Update frequency test 147
-
 A.3.5 Grid aggregation test 148
-
 A.3.6 Contour line test 148
-
 A.3.7 Break line test 148
-
 A.3.8 Isolated area test 148
-
 A.3.9 Stop line test 149
-
 A.4 Metadata IR Conformance Class 149
-
 A.4.1 Metadata for interoperability test 149
-
 A.4.2 Metadata completeness test 149
-
 A.5 Information Accessibility Conformance Class 150
-
 A.5.1 Code list publication test 150
-
 A.5.2 CRS publication test 150
-
 A.5.3 CRS identification test 150
-
 A.5.4 Grid identification test 150
-
 A.6 Data Delivery Conformance Class 151
-
 A.6.1 Encoding compliance test 151
-
 A.6.2 Minimum data delivery test 151
-
 A.7 Portrayal Conformance Class 151
-
 A.7.1 Layer designation test 151
-
 A.2 Part 2 : Conformity with the technical guideline (TG) Requirements 152
-
 A.8.1 Multiplicity test 152
-
 A.8.2 CRS http URI test 152
-
 A.8.3 Metadata encoding schema validation test 152
-
 A.8.4 Metadata occurrence test 152
-
 A.8.5 Metadata consistency test 153
-
 A.8.6 Encoding schema validation test 153
-
 A.8.7 Coverage multipart representation test 153
-
 A.8.8 Coverage domain consistency test 153
-
 A.8.9 TIFF conformity test 154
-
 A.8.10 TIFF data structure test 154
-
 A.8.11 TIFF range coding test 154
-
 A.8.12 TIFF range compression test 154
-
 A.8.13 TIFF grid coordinate system test 155
-
 A.8.14 Style test 155
 
 In order to be conformant to a conformance class, a data set has to pass *all* tests defined for that conformance class.
