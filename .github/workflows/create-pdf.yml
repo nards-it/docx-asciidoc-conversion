@@ -48,5 +48,5 @@ jobs:
           find_params: -maxdepth 5 -not -path "./docx-asciidoc-conversion/*"
           asciidoctor_params: --attribute=nofooter
           # adoc_file_ext: .ascii # default is .adoc
-          # pre_build:
+          pre_build: find . $INPUT_FIND_PARAMS -name "*$INPUT_ADOC_FILE_EXT"
           # post_build:
