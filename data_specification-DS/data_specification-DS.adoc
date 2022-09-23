@@ -23,7 +23,7 @@
 
 :appendix-caption: Annex
 
-image:media\image1.png[image,width=107,height=107] **INSPIRE** *Infrastructure for Spatial Information in Europe*
+image::./media/image1.png[image,width=107,height=107] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = Technical Guidance for the implementation of INSPIRE Download Services
@@ -110,7 +110,7 @@ In particular with respect the Network Services, Implementing Rules are required
 
 In addition to the Implementing Rules, non-binding Technical Guidance documents describe detailed implementation aspects and relations with existing standards, technologies, and practices. They may need to be revised during the course of implementing the infrastructure to take into account the evolution of technology, new requirements, and cost benefit considerations. Figure 1. illustrates the relationship between the INSPIRE Regulations containing Implementing Rules and their corresponding Technical Guidance documents.
 
-image::.media\image2.png[image,width=605,height=367, align=center]
+image::./media/image2.png[image,width=605,height=367, align=center]
 
 [.text-center]
 *Figure 1*: Relationship between INSPIRE Implementing Rules and Technical Guidance
@@ -452,14 +452,14 @@ _NOTE For readability purposes, the short phrase "pre-defined dataset" is often 
 
 Figure 2 shows a typical sequence of operations used when downloading data from a pre-defined dataset download service.
 
-image::.media\image3.png[image,width=605,height=379, align=center]
+image::./media/image3.png[image,width=605,height=379, align=center]
 
 [.text-center]
 *Figure 2*: Simple sequence diagram showing download of datasets via a pre-defined download service
 
 Figure 3 shows a typical sequence of operations used when downloading data from a direct access dataset download service.
 
-image::.media\image4.png[image,width=605,height=377, align=center]
+image::./media/image4.png[image,width=605,height=377, align=center]
 
 [.text-center]
 *Figure 3*: Simple sequence diagram showing a typical sequence of operations to download spatial data objects from a direct access dataset download service.
@@ -944,7 +944,7 @@ The milestones in Table 16 (below) can be interpreted to mean that datasets shou
 
 The roadmap described above in sections 4.4.1 and 4.4.2 is further illustrated in Figure 4:
 
-image::.media\image5.png[image,width=605,height=419, align=center]
+image::./media/image5.png[image,width=605,height=419, align=center]
 
 [.text-center]
 *Figure 4*: Illustration of Implementation Roadmap*
@@ -1059,7 +1059,7 @@ In addition the Atom feeds are supplemented with OpenSearch information to as a 
 
 It is also possible to enrich the Atom feeds with XML content from other schemes although discussion of this is beyond the scope of the Technical Guidance.
 
-image::.media\image6.png[image,width=605,height=402, align=center]
+image::./media/image6.png[image,width=605,height=402, align=center]
 
 [.text-center]
 *Figure 5* Overview of Atom feed structures
@@ -1290,12 +1290,12 @@ For example, in Internet Explorer the link to dataset feeds are not clickable.
 
 The two screenshots shown in Figure 6 and Figure 7 illustrate that, when using the HTML representations, feed visualization is consistent between browsers, and download links (boxed in red) are accessible from the top feed.
 
-image::.media\image7.png[image,width=605,height=367, align=center]
+image::./media/image7.png[image,width=605,height=367, align=center]
 
 [.text-center]
 *Figure 6*. Atom feed viewed in Firefox
 
-image::.media\image8.png[image,width=605,height=381, align=center]
+image::./media/image8.png[image,width=605,height=381, align=center]
 
 [.text-center]
 *Figure 7*. Atom feed viewed in Internet Explorer
@@ -2037,7 +2037,7 @@ A generic search template shall be supplied for browser integration.
 
 It enables search clients like Internet Explorer or Firefox to integrate the download service as an additional search engine.
 
-image::.media\image9.png[image,width=605,height=265, align=center]
+image::./media/image9.png[image,width=605,height=265, align=center]
 
 [.text-center]
 *Figure 8*. Download service integrated as a search engine in Internet Explorer
@@ -2963,7 +2963,7 @@ For feasibility reasons the testing procedure is based on the following simplifi
 ** In case of option 2, a member state should initiate a comparison between sample measures from the central node to sample measures at the service side, to find a realistic value of x for the specific national setting.
 * It is assumed that the network transport rate is not slower than the rate of the service response output stream to avoid any data jam at the production stream.
 
-image::.media\image10.png[image,width=461,height=321, align=center]
+image::./media/image10.png[image,width=461,height=321, align=center]
 
 [.text-center]
 *Figure 9*: Detailed Sequence Diagram Download Service
@@ -3276,4 +3276,4 @@ echo 'Not found';
 [appendix]
 == Annex B: UML Atom/OpenSearch Deployment Diagram
 
-image::.media\image11.png[image,width=517,height=820, align=center]
+image::./media/image11.png[image,width=517,height=820, align=center]
