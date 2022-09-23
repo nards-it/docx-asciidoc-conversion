@@ -339,7 +339,6 @@ Conformance Classes are identified in the document as follows:
 
 [NOTE]
 ====
-[.text-center]
 *TG Conformance Class #: [TITLE]* conformance classes are shown using this style
 ====
 
@@ -347,13 +346,15 @@ Conformance Classes are identified in the document as follows:
 
 Requirements and the recommendations for INSPIRE Download Services within this technical guidance are highlighted and numbered as shown below:
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement #* requirements are shown using this style
 ====
 
-TG Recommendation # recommendations are shown using this style.
+[TIP]
+====
+*TG Recommendation #* recommendations are shown using this style.
+====
 
 It is important to note that, implementation requirements and implementation recommendations may refer to either service or client implementations. Requirements and recommendations belong to the conformance class in which they are found in this document.
 
