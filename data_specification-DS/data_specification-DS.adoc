@@ -23,7 +23,7 @@
 
 :appendix-caption: Annex
 
-image:./media/image1.png[image,width=107,height=107] **INSPIRE** *Infrastructure for Spatial Information in Europe*
+image:media/image1.png[image,width=107,height=107] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = Technical Guidance for the implementation of INSPIRE Download Services
@@ -110,7 +110,7 @@ In particular with respect the Network Services, Implementing Rules are required
 
 In addition to the Implementing Rules, non-binding Technical Guidance documents describe detailed implementation aspects and relations with existing standards, technologies, and practices. They may need to be revised during the course of implementing the infrastructure to take into account the evolution of technology, new requirements, and cost benefit considerations. Figure 1. illustrates the relationship between the INSPIRE Regulations containing Implementing Rules and their corresponding Technical Guidance documents.
 
-image::./media/image2.png[image,width=605,height=367, align=center]
+image::.media/image2.png[image,width=605,height=367, align=center]
 
 [.text-center]
 *Figure 1*: Relationship between INSPIRE Implementing Rules and Technical Guidance
@@ -351,10 +351,7 @@ Requirements and the recommendations for INSPIRE Download Services within this t
 *TG Requirement #* requirements are shown using this style
 ====
 
-[TIP]
-====
-*TG Recommendation #* recommendations are shown using this style.
-====
+TG Recommendation # recommendations are shown using this style.
 
 It is important to note that, implementation requirements and implementation recommendations may refer to either service or client implementations. Requirements and recommendations belong to the conformance class in which they are found in this document.
 
@@ -453,14 +450,14 @@ _NOTE For readability purposes, the short phrase "pre-defined dataset" is often 
 
 Figure 2 shows a typical sequence of operations used when downloading data from a pre-defined dataset download service.
 
-image::./media/image3.png[image,width=605,height=379, align=center]
+image::.media/image3.png[image,width=605,height=379, align=center]
 
 [.text-center]
 *Figure 2*: Simple sequence diagram showing download of datasets via a pre-defined download service
 
 Figure 3 shows a typical sequence of operations used when downloading data from a direct access dataset download service.
 
-image::./media/image4.png[image,width=605,height=377, align=center]
+image::.media/image4.png[image,width=605,height=377, align=center]
 
 [.text-center]
 *Figure 3*: Simple sequence diagram showing a typical sequence of operations to download spatial data objects from a direct access dataset download service.
@@ -945,7 +942,7 @@ The milestones in Table 16 (below) can be interpreted to mean that datasets shou
 
 The roadmap described above in sections 4.4.1 and 4.4.2 is further illustrated in Figure 4:
 
-image::./media/image5.png[image,width=605,height=419, align=center]
+image::.media/image5.png[image,width=605,height=419, align=center]
 
 [.text-center]
 *Figure 4*: Illustration of Implementation Roadmap*
@@ -957,15 +954,15 @@ _*Dates in this figure are accurate at the time of publication. For definitive d
 
 [NOTE]
 ====
-[.text-center]
 *TG Conformance Class 1: Pre-defined Atom:* Implement Pre-Defined Dataset Download Service ("Part A") using Atom
-====
+
 
 _This conformance class is inclusive of:_
 
 _TG Requirement 1 to_ _TG Requirement 45_
 
 _TG Recommendation 1 to_ _TG Recommendation 12_
+====
 
 An operational implementation of an INSPIRE Atom based Download Service implementation is available on the INSPIRE Geoportal:
 
@@ -1030,37 +1027,33 @@ This Technical Guidance recommends using Atom feeds to make available pre-define
 
 This pattern is illustrated further in Figure 5.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 1* Pre-defined Dataset Download Service implementations shall publish separate datasets as individual entries within an Atom feed.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 2* All Atom feeds (and entries in feeds) shall conform to all the requirements in the Atom specification, RFC 4287.
 ====
 
 In addition the Atom feeds are supplemented with GeoRSS information to enable integration in tools that support this format (e.g. Google Earth).
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 3* All GeoRSS information in Atom feeds shall conform to the GeoRSS-Simple specification.
 ====
 
 In addition the Atom feeds are supplemented with OpenSearch information to as a way to specify operations for the Download Service.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 4* All OpenSearch information in Atom feeds shall conform to the OpenSearch specification.
 ====
 
 It is also possible to enrich the Atom feeds with XML content from other schemes although discussion of this is beyond the scope of the Technical Guidance.
 
-image::./media/image6.png[image,width=605,height=402, align=center]
+image::.media/image6.png[image,width=605,height=402, align=center]
 
 [.text-center]
 *Figure 5* Overview of Atom feed structures
@@ -1203,9 +1196,8 @@ _Example 3: Sample feed title_
 <!-- feed title -->
 <title>XYZ Example INSPIRE Download Service</title>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 5* The 'title' element of an Atom feed shall be populated with a human readable title for the feed.
 ====
 
@@ -1218,9 +1210,8 @@ _Example 4: Sample feed subtitle_
 <!-- feed subtitle -->
 <subtitle>INSPIRE Download Service of organisation XYZ providing Hydrography data</subtitle>
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 1*: The 'subtitle' element of an Atom feed may be populated with a human readable subtitle for the feed.
 ====
 
@@ -1236,9 +1227,8 @@ _Example 5: Example service metadata link_
 <!-- link to service ISO 19139 metadata -->
 <link href="http://xyz.org/metadata/iso19139_document.xml" rel="describedby" type="application/xml"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 6* The "Download Service Feed" shall contain an Atom 'link' element that links to the metadata record for this Download Service. The value of the 'rel' attribute of this element shall be "describedby" and the value of the 'type' attribute shall be either "application/xml".
 ====
 
@@ -1254,9 +1244,8 @@ _Example 6: Example reference to feed_
 <!-- self-referencing link to this feed -->
 <link href="http://xyz.org/download/en.xml" rel="self" type="application/atomxml" hreflang="en" title="This document"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 7* The "Download Service Feed" shall contain an Atom 'link' element that contains an HTTP URI for the "Download Service Feed" document. The value of the 'rel' attribute of this element shall be "self", the 'hreflang' attribute shall use the appropriate language code and the value of the 'type' attribute shall be "application/atomxml".
 ====
 
@@ -1264,9 +1253,8 @@ _Example 6: Example reference to feed_
 
 A link element shall be provided that links to an OpenSearch description document for the Download Service. The value of the 'rel' attribute of this link shall be "search". The structure of the OpenSearch description document is described separately in Section 5.4.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 8* The "Download Service Feed" shall contain an Atom 'link' element that contains a link to an OpenSearch description document for the Download Service. The value of the 'rel' attribute of this element shall be "search", the 'hreflang' attribute shall use the appropriate language code and the value of the 'type' attribute shall be "application/opensearchdescriptionxml".
 ====
 
@@ -1291,19 +1279,18 @@ For example, in Internet Explorer the link to dataset feeds are not clickable.
 
 The two screenshots shown in Figure 6 and Figure 7 illustrate that, when using the HTML representations, feed visualization is consistent between browsers, and download links (boxed in red) are accessible from the top feed.
 
-image::./media/image7.png[image,width=605,height=367, align=center]
+image::.media/image7.png[image,width=605,height=367, align=center]
 
 [.text-center]
 *Figure 6*. Atom feed viewed in Firefox
 
-image::./media/image8.png[image,width=605,height=381, align=center]
+image::.media/image8.png[image,width=605,height=381, align=center]
 
 [.text-center]
 *Figure 7*. Atom feed viewed in Internet Explorer
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 2* Alternative representations (for example HTML) should be provided as links. Where this is done the 'rel' attribute should have the value "alternate".
 ====
 
@@ -1321,9 +1308,8 @@ _Example 8: Example feed id element_
 <!-- identifier -->
 <id>http://xyz.org/download/en.xml</id>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 9* The 'id' element of a feed shall contain an HTTP URI which dereferences to the feed
 ====
 
@@ -1336,9 +1322,8 @@ _Example 9: Example feed rights element_
 <!-- rights, access restrictions -->
 <rights>Copyright (c) 2012, XYZ; all rights reserved</rights>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 10* The 'rights' element of a feed shall contain information about rights or restrictions for that feed.
 ====
 
@@ -1351,9 +1336,8 @@ _Example 10: Example updated element_
 <!-- date/time this feed was last updated -->
 <updated>2012-03-31T13:45:03Z</updated>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 11* The 'updated' element of a feed shall contain the date, time and timezone at which the feed was last updated.
 ====
 
@@ -1369,9 +1353,8 @@ _Example 11: Example feed author element_
 <email>doe@xyz.org</email>
 </author>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 12* The 'author' element of a feed shall contain current contact information for an individual or organisation responsible for the feed. At the minimum, a name and email address shall be provided as contact information.
 ====
 
@@ -1415,9 +1398,8 @@ _Example 14: Example Spatial Dataset URI_
 <!—Spatial Dataset Unique Resourse Identifier for this dataset-->
 <inspire_dls:spatial_dataset_identifier_code>wn_id1</inspire_dls:spatial_dataset_identifier_code> <inspire_dls:spatial_dataset_identifier_namespace>http://xyz.org/data</inspire_dls:spatial_dataset_identifier_namespace>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 13* Each feed 'entry' in a "Download Service Feed" shall contain _spatial_dataset_identifier_code_ and _spatial_dataset_identifier_namespace_ elements which together contain the Spatial Dataset Unique Resource Identifier for the dataset described by the feed. These elements are defined in the _inspire_dls_ schema which shall be included in the namespace declarations of the feed.
 ====
 
@@ -1431,9 +1413,8 @@ _Example 15: Example link to a dataset metadata record_
 <!-- link to dataset metadata record -->
 <link href="http://xyz.org/metadata/abcISO19139.xml" rel="describedby" type="application/xml"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 14* Each feed 'entry' in a "Download Service Feed" shall contain a link to a Dataset metadata record. This link shall have a 'rel' attribute with a value of "describedby" and a 'type' attribute with a value "application/xml"
 ====
 
@@ -1446,9 +1427,8 @@ _Example 16: Example link to a single "Dataset Feed"_
 <!-- link to "Dataset Feed" for pre-defined dataset -->
 <link rel="alternate" href="http://xyz.org/data/waternetwork_feed.xml" type="application/atomxml" hreflang="en" title="Feed containing the pre-defined waternetwork dataset (in one or more downloadable formats)"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 15* Each feed 'entry' in a "Download Service Feed" shall contain a single link to a "Dataset Feed". This link shall have a 'rel' attribute with a value of "alternate" and a 'type' attribute with a value "application/atomxml"
 ====
 
@@ -1456,9 +1436,8 @@ _Example 16: Example link to a single "Dataset Feed"_
 
 If the Atom implementation is complemented by one or several WFS for the Direct Access operations Get Spatial Object and Describe Spatial Object Type ("hybrid implementation", see section 4), a link needs to be established to the service offering these additional operations.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 16* In case of a "hybrid implementation" based on Atom for Part A of [*INS NS*, Annex IV] and WFS for Parts B and C of [*INS NS*, Annex IV], a link shall be provided to the WFS Capabilities document. Where this is done the '_rel'_ attribute shall have the value "related" and the _'type'_ attribute shall have the value "application/xml"
 ====
 
@@ -1471,29 +1450,25 @@ _Example 17: Example link to a WFS implementation for the Direct Access operatio
 
 The guidance for id, title and updated elements for each entry is equivalent to the guidance for the same elements in the enclosing feed and can be summarised by the following requirements and recommendations:
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 17* The 'id' element of a feed entry in a Download Service Feed shall contain an identifier for that feed entry.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 18* The 'title' element of a feed entry in a Download Service Feed shall be populated with a human readable title for the feed entry.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 19* The 'updated' element of a feed entry in a Download Service Feed shall contain the date, time and timezone at which the feed entry was last updated.
 ====
 
 Since the 'rights' information may often be the same for all entries in a feed this element may be omitted for each individual entry if it is present in the enclosing feed. The rights in this case refer to the pre-defined dataset the feed entry describes.
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 3* The 'rights' element of a feed entry may contain information about rights or restrictions specific to that feed entry.
 ====
 
@@ -1501,9 +1476,8 @@ In the case where 'rights' information is not given for individual entries, the 
 
 Similarly, the 'author' information may often be the same for all entries in a feed so this element may also be omitted for each individual entry.
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 4* The 'author' element of a feed entry may contain information about the author specific to that feed entry.
 ====
 
@@ -1518,9 +1492,8 @@ _Example 18: Example summary element_
 <!-- summary -->
 <summary>This is the entry for water network ABC Dataset</summary>
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 5* The 'summary' element of a feed entry should contain a summary description of the feed entry.
 ====
 
@@ -1528,17 +1501,15 @@ _Example 18: Example summary element_
 
 To enable GeoRSS [*GeoRSS*] tools to display INSPIRE Atom feeds we recommend augmenting the Atom feed entries with GeoRSS elements to show the geographic extent of the datasets.
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 6* GeoRSS-Simple should be used in feed entries to indicate the geographic extent of the dataset.
 ====
 
 Since georss:box is not well supported in common tools it is recommended to use georss:polygon to define bounding boxes, and georss:point when a dataset's geometric extent is represented by a single point location. It is not recommended to use georss:box.
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 7* The bounding box of the dataset described by a feed entry should be provided using a georss:polygon, unless the geographic extent is a single point in which case georss:point should be used.
 ====
 
@@ -1566,9 +1537,8 @@ _Example 21: Example CRS descriptions_
 <category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="ETRS89 / UTM zone 32N"/>
 <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 20* Each feed entry shall contain an Atom 'category' element for each CRS in which the pre-defined dataset is available. This category element shall refer to a well-known definition of a coordinate reference system.
 ====
 
@@ -1643,55 +1613,47 @@ _Example 22: Example "Dataset Feed" containing links to a pre-defined dataset_
 
 The guidance for the _title_, _subtitle_, _id_, _rights_, _updated_ and _author_ elements is the same as for the Dataset Download Feed and the corresponding sections should be referred to. The requirements are summarised as follows:
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 21* The 'title' element of a "Dataset Feed" shall be populated with a human readable title for the feed.
 ====
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 8* The 'subtitle' element of a "Dataset Feed" may be populated with a human readable subtitle for the feed.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 22* The 'id' element of a "Dataset Feed" shall contain an HTTP URI which dereferences to the feed
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 23* The 'rights' element of a "Dataset Feed" shall contain information about rights or restrictions for that feed.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 24* The 'updated' element of a "Dataset Feed" shall contain the date, time and timezone at which the feed was last updated.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 25* The 'author' element of a "Dataset Feed" shall contain current contact information for an individual or organisation responsible for the feed. At the minimum, a name and email address shall be provided as contact information.
 ====
 
 The pre-defined datasets (e.g. as GML files) are made available for download within a feed 'entry' of the Dataset Feed.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 26* Each "Dataset Feed" shall contain at least one feed entry containing links to download the pre-defined dataset (e.g. as a GML file).
 ====
 
 If the pre-defined dataset is available to download in different formats or different Coordinate Reference Systems then a separate entry must be provided for each available format/CRS combination.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 27* Each "Dataset Feed" shall contain separate entries for each format/CRS combination in which the pre-defined dataset is available to download.
 ====
 
@@ -1707,9 +1669,8 @@ _Example 23: Links to the INSPIRE registry (for Watercourse and Standing Water)_
 <!— Example of a non-conformant spatial object type "riversegment" -->
 <link href="http://mydomain.com/glossary/riversegment" rel="describedby" type="text/html"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 28* Each feed shall contain an Atom 'link' element for each INSPIRE Spatial Object Type in the dataset. The link shall refer to the INSPIRE Registry unless the data does not conform to any Data Specification in which case a link to a local definition of the Spatial Object Type shall be used instead. The value of the 'rel' attribute of this element shall be "describedby". For definitions in the INSPIRE registry the value of the 'type' attribute shall be "text/html".
 ====
 
@@ -1722,9 +1683,8 @@ _Example 24: Optional upward link to download service feed_
 <!—'upward' link to the corresponding download service feed -->
 <link href="http://xyz.org/download/en.xml" rel="up" type="application/atomxml" hreflang="en" title="The parent service feed document"/>
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 9* A link element should be included that links to the 'parent' Dataset feed. This link should have a 'rel' attribute with a value of "up" and a 'type' attribute with a value of "application/atomxml".
 ====
 
@@ -1751,9 +1711,8 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 
 Note that if a dataset spans more than one physical file (e.g. if it is stored in tiles or some other sub-division for practical purposes) then additional link elements may be provided within the entry for that dataset, one link per physical file according to the additional guidance in Section 5.2.4.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 29* Each feed entry shall contain an Atom 'link' element that links to the pre-defined dataset file described by the entry. The value of the 'rel' attribute of this element shall be "alternate" and a "length" attribute (providing the length of the linked resource in octets*) shall be provided if possible. Where a dataset is provided in multiple physical files, additional 'link' elements shall be provided in the feed entry, one link for each physical file.
 
 *1 octet = 8 bits (usually synonymous with 1 byte)
@@ -1761,17 +1720,15 @@ Note that if a dataset spans more than one physical file (e.g. if it is stored i
 
 The 'type' attribute of the link element shall be used to indicate the media type of the resource that will be returned if the link is resolved. For example, 'application/gmlxml' (see also Section 5.2.4 below).
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 30* The 'type' attribute of the link element shall be used to indicate the media type of resource that will be returned if the link is resolved. A valid media type must be used for the value of this attribute; if the media type is not registered with IANA it should still follow the conventions for unregistered media types.
 ====
 
 In the case where pre-defined datasets are provided in multiple languages, a different link element shall be used for each language and the 'hreflang' attribute shall be used with the appropriate language code.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 31* Where alternative language representations of datasets are linked to, the 'hreflang' attribute of the link element shall be used to indicate the language of the target dataset as described in the Atom specification.
 ====
 
@@ -1779,17 +1736,15 @@ In the case where pre-defined datasets are provided in multiple languages, a dif
 
 Where a dataset is provided in multiple physical files and it is not desirable or practical to deliver them within a single download (e.g. as a zip), then it is also possible to deliver the individual files separately by adding multiple 'link' elements to the feed entry. This may be useful, for example, if there are a large number of files. There should be a separate 'link' element for each file. These links shall have a 'rel' value equal to "section".
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 32* Where a dataset is provided in multiple physical files: each file shall be linked to via a separate 'link' element. Each of these 'link' elements shall have a 'rel' value equal to "section".
 ====
 
 Additionally there is a need to provide a description of the structure of the collection of files. This description shall either be provided as free text within a 'content' element, or as another link, with a 'rel' value of "alternate". This link shall point to a descriptive document that describes how the parts of the dataset fit together. This Technical Guidance places no restrictions on the type or contents of this descriptive document. However when such a link is added an appropriate media type shall be used for the 'type' attribute.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 33* Where a dataset is provided in multiple physical files: a description of the dataset structure shall be provided EITHER in an atom 'content' element as free text, OR in an external document which is the target of another 'link' element. Where a 'link' element is used this element shall have a 'rel' value equal to "alternate" and a suitable media type shall be used for the 'type' value.
 ====
 
@@ -1800,15 +1755,13 @@ _Example 26: Use of bbox and time attributes_
 <!—example use of bbox and time attributes -->
 <link rel="section" href="http://xyz.org/data/file.tif" bbox="50.0 5.0 50.9 5.9" time="2012-06-01T13:00:00Z" type="image/tiff" hreflang="en" title="example file"/>
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 10* Where a dataset is provided in multiple physical files: a 'bbox' attribute may be used to describe the geospatial extent of a particular file. If this is used, then the value of this attribute should be structured according to the georss:box structure.
 ====
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 10* Where a dataset is provided in multiple physical files: a 'time' attribute may be used to describe the temporal extent of a particular file. If this is used, then the value of this attribute should be structured according to the ISO 8601 standard.
 ====
 
@@ -1852,9 +1805,8 @@ To facilitate interoperability in INSPIRE, only media types listed in the INSPIR
 
 http://inspire.ec.europa.eu/media-types
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 34* Only media types listed in the INSPIRE media-types register shall be used.
 ====
 
@@ -1874,9 +1826,8 @@ application/x-filegdb
 
 If transfer of compressed data is desirable for particular uncompressed files then compression as supported by HTTP 1.1 may be used. It is recommended that clients wishing to benefit from HTTP compression shall set their HTTP Accept-Encoding header to "gzip, deflate".
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 12* For files that are made available uncompressed, compression is offered by HTTP 1.1 server and clients. As spatial data sets may be large, clients should set their HTTP Accept-Encoding header to include "gzip, deflate" in each request for uncompressed files.
 ====
 
@@ -1896,9 +1847,8 @@ _Example 31: Using the category element to refer to an EPSG code (registered at 
 </category>
 ----
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 35* Each CRS representation shall have a 'category' element which refers to the CRS definition and code.
 ====
 
@@ -1906,15 +1856,13 @@ _Example 31: Using the category element to refer to an EPSG code (registered at 
 
 The following two requirements are mandatory for all Download Services. In the case of the Atom implementation they are automatically met if the remaining requirements in this Section (5.3) are followed.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 36* A Download Service metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 37* A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. If the requested language is not supported by the service, then this parameter shall be ignored.
 ====
 
@@ -1929,9 +1877,8 @@ _Example 32: Alternative representation is available in German (hreflang="de")_
 <link href="http://xyz.org/download/de.xml" hreflang="de" rel="alternate" title="The download service information in German" type="application/atomxml"/>
 ----
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 38* Where a feed is made available in alternative languages, links shall be provided to these alternative representations. These links shall each use the 'hreflang' attribute to indicate the language of the alternative representation. The value of the 'rel' attribute for these link elements this element shall be "alternate".
 ====
 
@@ -1962,9 +1909,8 @@ This Technical Guidance does not place any requirements on the technology used t
 
 The example given in Annex A uses content negotiation to identify which operation to perform. This means that even though the operation endpoint is only one, i.e. http://xyz.org/search.php, the client has to set the HTTP "Accept" Header to the correct value in order to receive the expected result.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 39* A simple service to perform the Describe Spatial Dataset and Get Spatial Data Set operations shall be provided and described by an OpenSearch description document.
 ====
 
@@ -2026,9 +1972,8 @@ _Example 36: Example reference to self_
 <!--URL of this document-->
 <Url type="application/opensearchdescriptionxml" rel="self" template="http://xyz.org/opensearchdescription.xml"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 40* The OpenSearch description shall contain a 'Url' element that describes an HTTP URI for the OpenSearch Description document. The value of the 'rel' attribute of this element shall be "self", the value of the 'type' attribute shall be "application/opensearchdescriptionxml" and the value of the 'template' attribute shall be the HTTP URI of the document.
 ====
 
@@ -2038,7 +1983,7 @@ A generic search template shall be supplied for browser integration.
 
 It enables search clients like Internet Explorer or Firefox to integrate the download service as an additional search engine.
 
-image::./media/image9.png[image,width=605,height=265, align=center]
+image::.media/image9.png[image,width=605,height=265, align=center]
 
 [.text-center]
 *Figure 8*. Download service integrated as a search engine in Internet Explorer
@@ -2066,9 +2011,8 @@ _Example 37: Example generic URL search template_
 <!--Generic URL template for browser integration-->
 <Url type="text/html" rel="results" template="http://xyz.org/search.php?q=\{searchTerms}"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 41* The OpenSearch description shall contain a 'Url' element that describes a template URL for generic search queries. The value of the 'rel' attribute of this element shall be "results", the value of the 'type' attribute shall be "text/html".
 ====
 
@@ -2081,9 +2025,8 @@ _Example 38: Example Describe Spatial Data Set template_
 <!--Describe Spatial Data Set Operation request URL template to be used in order to retrieve the description of Spatial Object Types in a Spatial Dataset-->
 <Url type="application/atomxml" rel="describedby" template="http://xyz.org/search.php?spatial_dataset_identifier_code=\{inspire_dls:spatial_dataset_identifier_code?}&amp;spatial_dataset_identifier_namespace=\{inspire_dls:spatial_dataset_identifier_namespace?}&amp;language=\{language?}&amp;q=\{searchTerms?}"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 42* The OpenSearch description shall contain a 'Url' element that describes a template URL for the Describe Spatial Data Set operation. This template shall accept the INSPIRE parameters "spatial_dataset_identifier_code", "spatial_dataset_identifier_namespace" and the OpenSearch "language" parameter. The 'Url' element shall have an attribute 'type' with a value of "application/atomxml" and an attribute 'rel' with the value "describedby".
 ====
 
@@ -2112,9 +2055,8 @@ _Example 40: Example Get Spatial Data Set template_
 <!--Get Spatial Data Set Operation request URL template to be used in order to retrieve a Spatial Data Set-->
 <Url type="application/x-filegdb" rel="results" template="http://xyz.org/search.php?spatial_dataset_identifier_code=\{inspire_dls:spatial_dataset_identifier_code?}&amp;spatial_dataset_identifier_namespace=\{inspire_dls:spatial_dataset_identifier_namespace?}&amp;crs=\{inspire_dls:crs?}&amp;language=\{language?}&amp;q=\{searchTerms?}"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 43* The OpenSearch description shall contain a 'Url' element that describes a template URL for the Get Spatial Data Set operation. This template shall accept the INSPIRE parameters "crs", "spatial_dataset_identifier_code", "spatial_dataset_identifier_namespace" and the OpenSearch "language" parameter. The 'Url' element shall have an attribute 'type' with a value corresponding to the media type of the result and an attribute 'rel' with the value "results".
 ====
 
@@ -2135,9 +2077,8 @@ _Example 42: Example Get Spatial Data Set template_
 <!--List of available Spatial Dataset Identifiers -->
 <Query role="example" inspire_dls:spatial_dataset_identifier_namespace="http://xyz.org/" inspire_dls:spatial_dataset_identifier_code="waternetwork" inspire_dls:crs="http://www.opengis.net/def/crs/EPSG/0/4326" language="en" title="Waternetwork_abc" count="1"/>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 44* For each dataset available the OpenSearch description shall contain a 'Query' element that has a 'role' attribute with the value "example" and 'spatial_dataset_identifier_code' and 'spatial_dataset_identifier_namespace' attributes together containing unique spatial dataset identifier. The value of the 'crs' and 'language' attributes shall be set to the values considered as the default ones by the service provider.
 ====
 
@@ -2154,9 +2095,8 @@ _Example 43 Example Language support_
 <Language>en</Language>
 <Language>de</Language>
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 45* For each language supported by the download service, the OpenSearch description shall contain a 'Language element that contains the language code. The first 'Language' element shall contain the Default Language.
 ====
 
@@ -2165,15 +2105,15 @@ _Example 43 Example Language support_
 
 [NOTE]
 ====
-[.text-center]
 *TG Conformance Class 2: Pre-defined WFS:* Implement Pre-Defined Dataset Download Service ("Part A") using ISO 19142 Web Feature Service and 19143 Filter Encoding.
-====
+
 
 _This conformance class is inclusive of:_
 
 _TG Requirement 46 to_ _TG Requirement 60_
 
 _TG Recommendation 14 to_ _TG Recommendation 15_
+====
 
 An alternative way to implement pre-defined dataset download services is by deploying an ISO 19142 Web Feature Service [*ISO 19142*] supporting ISO 19143 Filter Encoding [*ISO 19143*] in line with the Technical Guidance contained in this chapter. Rather than repeat large parts of the WFS and FE specifications in this document, references are made to conformance classes from the WFS and FE specifications which shall be implemented. Where additional functionality is required, as is the case with multi-lingual requirements then this is described below.
 
@@ -2183,9 +2123,8 @@ _Note that ISO 19142 is also known as OGC Web Feature Service 2.0 and ISO 19143 
 
 In order to implement pre-defined access using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'Simple WFS' conformance classes as described in the 19142 standard [*ISO 19142*].
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 46* Implementations shall conform to ISO 19142 Conformance Class 'Simple WFS'
 ====
 
@@ -2193,9 +2132,8 @@ In order to implement pre-defined access using ISO 19142 WFS and ISO 19143 FE it
 
 In order to implement pre-defined download services using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'Query' conformance classes as described in the 19143 standard [*ISO 19143*].
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 47* Implementations shall conform to ISO 19143 Conformance Class 'Query'
 ====
 
@@ -2203,9 +2141,8 @@ In order to implement pre-defined download services using ISO 19142 WFS and ISO 
 
 In order to implement pre-defined download services using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'HTTP GET' conformance classes as described in the 19142 standard [*ISO 19142*].
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 48* Implementations shall conform to ISO 19142 Conformance Class 'HTTP Get'
 ====
 
@@ -2215,33 +2152,29 @@ ISO 19142 describes the use of pre-defined stored queries in WFS to access featu
 
 ISO 19142 describes the operations ListStoredQueries and DescribeStoredQueries. The former is used to retrieve a list of stored queries that are available and the latter is used to request more information about a particular stored query (or queries) such as the parameter arguments that are required to make a GetFeature request using the stored query.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 49* Pre-defined Stored Queries shall be provided to make pre-defined datasets available.
 ====
 
 Any implementation shall ensure that all possible (i.e. available) combinations of CRS/DataSetIdCode/ DataSetIdNamespace/language should be available through a pre-defined stored query.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 50* Any possible (i.e. available) combinations of CRS/DataSetIdCode/ DataSetIdNamespace/language shall be made available through pre-defined stored queries.
 ====
 
 Every instance of a WFS-based pre-defined dataset download service should define only one Stored Query for serving pre-defined Spatial Data Sets in order to make it easier for clients who already know the identifier of the Stored Query.
 
-[NOTE]
+[TIP]
 ====
-[.text-center]
 *TG Recommendation 13* The following identifier should be used to identify the Stored Query for serving pre-defined Spatial Data Sets: http://inspire.ec.europa.eu/operation/download/GetSpatialDataSet
 ====
 
 The parameter names for the arguments of the Stored Query shall be consistent as proposed in the following requirement:
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 51* Pre-defined Stored Queries shall use the parameter names "CRS", "DataSetIdCode", "DataSetIdNamespace" and "Language" to identify the CRS, dataset ID code, dataset ID namespace and language components of a query.
 ====
 
@@ -2266,9 +2199,8 @@ The endpoint in this context would be:
 
 http://my-wfs.com/mydata
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 52* A separate WFS endpoint shall be provided for each INSPIRE dataset thus providing one dataset per GetCapabilities response.
 ====
 
@@ -2367,9 +2299,8 @@ inspire_dls:SpatialDataSetIdentifier/inspire_common:Namespace
 
 *Table 19*: Mapping INSPIRE Metadata elements to ISO 19142 WFS
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 53* INSPIRE Metadata for the Download Service shall EITHER be linked to via an <inspire_common:MetadataURL> in an extended capabilities section, OR the extended capabilities section shall contain all the INSPIRE Metadata for the Download Service in accordance with Table 4 and the inspire_dls:ExtendedCapabilities schema.
 ====
 
@@ -2423,15 +2354,13 @@ title</inspire_common:Title>
 
 Language requirements for Network Services were introduced in Section 4.3 and are expanded upon here as TG Requirements for the Pre-defined WFS Conformance Class:
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 54* A network service [Download Service] metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 55* A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. It the requested language is not supported by the service, then this parameter shall be ignored.
 ====
 
@@ -2443,9 +2372,8 @@ To meet these requirements using 19142 WFS it is necessary to extend some operat
 
 The HTTP/GET binding of the GetCapabilities-Operation is extended by an additional parameter that indicates the client's preferred language.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 56* The name of this parameter shall be "LANGUAGE". The parameter values are based on ISO 639-2/B alpha 3 codes as used in [*INS MDTG*].
 ====
 
@@ -2514,9 +2442,8 @@ If a client request specifies a supported language the following fields of the G
 * Titles
 * Abstracts
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 57* If a client request specifies an unsupported language, or the parameter is absent in the request, the above fields [Title, Abstract] shall be provided in the service default language.
 ====
 
@@ -2552,15 +2479,13 @@ _Example 46: Extended Capabilities structure_
 </ows:OperationsMetadata>
 ...
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 58* The Extended Capabilities shall indicate the response language used for the GetCapabilities-Response: Depending on the requested language the value of the <inspire_common:ResponseLanguage> corresponds to the current used language. If a supported language was requested, <inspire_common:ResponseLanguage> shall correspond to that requested language. If an unsupported language was requested or if no specific language was requested <inspire_common:ResponseLanguage> shall correspond to the service default language <inspire_common:DefaultLanguage>
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 59* The Extended Capabilities shall contain the *list of supported languages* indicated in <inspire_common:SupportedLanguages>. 
  
 This *list of supported languages* shall consist of 
@@ -2570,9 +2495,8 @@ This *list of supported languages* shall consist of
 Regardless of the response language, the *list of supported languages* is invariant for each GetCapabilities-Response.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 60* The Extended Capabilities shall use the XML Schema as defined in the INSPIRE online schema repository.
 ====
 
@@ -2669,7 +2593,6 @@ The recommended INSPIRE Extension described before already provides language spe
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 14* For further language support for other operations it is recommended to replace the operation-online-resources in each language specific GetCapabilities-Response by a specific operation-online-resource for that language. To support the additional operation-online-resources the service shall listen at the language specific operation end-points to distinguish for the requested languages.
 ====
 
@@ -2775,7 +2698,6 @@ IETF RFC 4646 is supported by OGC standards relying upon OWS 1.1.0.
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 15* The support of IETF RFC 4646 is recommended wherever the support of ISO/639 B alpha3 for languages infringes the conformity with the standard used for implementing the [INS NS].
 ====
 
@@ -2818,13 +2740,12 @@ Table 21: Mapping between ISO 639/B alpha 3 and the two forms of IETF RFC 4646 s
 
 [NOTE]
 ====
-[.text-center]
 *TG Conformance Class 3: Direct WFS:* Implement Direct Access Download Service ("Parts B & C") using ISO 19142 Web Feature Service and ISO 19143 Filter Encoding.
-====
 
 _This conformance class is inclusive of:_
 
 _TG Requirement 61 to_ _TG Requirement 68_
+====
 
 Direct Access download services (that satisfy Parts B and C of the IR) should be implemented where practicable. This may be done using ISO 19142 WFS [*ISO 19142*] and ISO 19143 Filter Encoding [*ISO 19143*] as described here. In order to be fully conformant with [*INS NS*], it is necessary to also provide an implementation satisfying Part A, either based on Atom/OpenSearch (Chapter 5) or WFS (Chapter 6).
 
@@ -2832,9 +2753,8 @@ Direct Access download services (that satisfy Parts B and C of the IR) should be
 
 Direct access Download Services provide additional functionality beyond what is provided by Pre-defined Download Services. Because both Pre-defined dataset and Direct Access Download services are both based on [*ISO 19142*] there is an overlap of requirements for both types of solutions ensuring the ability to exist independent of each other.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 61* Implementations shall meet TG Requirement 48 (conformance to [*ISO 19142*] 'HTTP GET' conformance class) and TG Requirement 52 (one endpoint for each INSPIRE dataset).
 ====
 
@@ -2842,9 +2762,8 @@ Direct access Download Services provide additional functionality beyond what is 
 
 In order to implement direct access download services using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'Basic WFS' conformance classes as described in the 19142 standard [*ISO 19142*].
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 62* Implementations shall conform to ISO 19142 Conformance Class 'Basic WFS'
 ====
 
@@ -2852,9 +2771,8 @@ In order to implement direct access download services using ISO 19142 WFS and IS
 
 Ad hoc query support shall be implemented to enable user-defined requests for spatial objects in a WFS.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 63* A Direct Access Download Service shall conform to ISO 19143 'Ad hoc Query' Conformance Class.
 ====
 
@@ -2862,9 +2780,8 @@ Ad hoc query support shall be implemented to enable user-defined requests for sp
 
 The referencing of resources by identifier shall be supported as described in ISO 19143
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 64* A Direct Access Download Service shall conform to ISO 19143 'Resource Identification' Conformance Class.
 ====
 
@@ -2872,9 +2789,8 @@ The referencing of resources by identifier shall be supported as described in IS
 
 Querying with Comparison and logical operators shall be supported by the Direct Access Download Services as described in ISO 19143.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 65* A Direct Access Download Service shall conform to ISO 19143 'Minimum Standard Filter' Conformance Class.
 ====
 
@@ -2882,9 +2798,8 @@ Querying with Comparison and logical operators shall be supported by the Direct 
 
 Spatial querying of the Download Service shall be supported by the Direct Access Download Services as described in ISO 19143.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 66* A Direct Access Download Service shall conform to ISO 19143 'Minimum Spatial Filter' Conformance Class.
 ====
 
@@ -2892,9 +2807,8 @@ Spatial querying of the Download Service shall be supported by the Direct Access
 
 Temporal querying of the Download Service shall be supported by the Direct Access Download Services as described in ISO 19143.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 67* A Direct Access Download Service shall conform to ISO 19143 'Minimum Temporal Filter' Conformance Class.
 ====
 
@@ -2902,9 +2816,8 @@ Temporal querying of the Download Service shall be supported by the Direct Acces
 
 Querying of the Download Service using XPath shall be supported by the Direct Access Download Services as described in ISO 19143.
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 68* A Direct Access Download Service shall conform to ISO 19143 'Minimum XPath' Conformance Class.
 ====
 
@@ -2930,7 +2843,6 @@ In case of a "hybrid implementation" based on Atom and WFS for Parts B and C, in
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 16* In addition, a textual reference to the Atom service implementing part A should be included in the 'abstract' metadata element of the WFS.
 ====
 
@@ -2939,7 +2851,6 @@ In case of a "hybrid implementation" based on Atom and WFS for Parts B and C, in
 
 [NOTE]
 ====
-[.text-center]
 *TG Conformance Class 4: Quality of Service:* Meet Quality of Service requirements.
 ====
 
@@ -2964,7 +2875,7 @@ For feasibility reasons the testing procedure is based on the following simplifi
 ** In case of option 2, a member state should initiate a comparison between sample measures from the central node to sample measures at the service side, to find a realistic value of x for the specific national setting.
 * It is assumed that the network transport rate is not slower than the rate of the service response output stream to avoid any data jam at the production stream.
 
-image::./media/image10.png[image,width=461,height=321, align=center]
+image::.media/image10.png[image,width=461,height=321, align=center]
 
 [.text-center]
 *Figure 9*: Detailed Sequence Diagram Download Service
@@ -2985,9 +2896,8 @@ _The normal situation represents periods out of peak load. It is set at 90 % of 
 
 ==== Normalized testing procedure
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 69* Performance shall be measured consistently based on sample reference requests to a given service. Minimum 10 reference requests per hour shall be issued to the service continuously during its lifetime during the period of testing. 
 ====
  
@@ -3001,39 +2911,33 @@ NOTE The result of performance measurements in a production system may be ambigu
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 17* The frequency of the performance tests is recommended to be monthly, e.g., during systems maintenance.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 70* Performance shall be measured using the Get Download Service Metadata, Get Spatial Data Set, Get Spatial Object, Describe Spatial Data Set and Describe Spatial Object Type operations.
 ====
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 18* The structure of the sample reference request packages is recommended to be composed of: 10% Get Download Service Metadata requests, 10% Describe Spatial Data Set or Describe Spatial Object Type and 80% Get Spatial Data Set or Get Spatial Object. At least 2% of the requests should be Get Spatial Data Set.
 ====
 
 NOTE This composition is assumed to represent a "normal situation".
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 71* For Get Spatial Object operations, the sample reference request shall Contain a BBOX parameter.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 72* If a download service serves more than one feature type, only one feature type shall be requested by a Get Spatial Object operation.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 73* If a download service serves more than one (pre-defined) spatial data set, only one spatial data set shall be requested by a Get Spatial Data Set operation.
 ====
 
@@ -3043,7 +2947,6 @@ NOTE 2: For both the Get Spatial Data Set and Get Spatial Object operations, the
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 19* For Get Spatial Object operations, the sample reference request is recommended to return at least 1 MB.
 ====
 
@@ -3078,9 +2981,8 @@ _t~last~_ is the measured duration of time between initiating the request and re
 
 *z* is the size of data in count of objects or object descriptions,
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 74* Evaluation and assessment criteria:
 
 The "response time for sending the initial response" is
@@ -3121,9 +3023,8 @@ _"The minimum number of simultaneous requests to a download service to be served
 
 ==== Normalized testing procedure
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 75* Capacity shall be measured consistently based on sample reference request packages to a given service.
 ====
 
@@ -3134,21 +3035,18 @@ NOTE The result of capacity measurements in a production system may be ambiguous
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 20* The frequency of the capacity is recommended to be monthly, e.g., during systems maintenance.
 ====
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 21* The structure of the sample reference request packages is recommended to be composed of 10% Get Download Service Metadata requests, 10% Describe Spatial Data Set or Describe Spatial Object Type and 80% Get Spatial Data Set or Get Spatial Object. At least 2% of the requests should be Get Spatial Data Set.
 ====
 
 NOTE This composition is assumed to represent a "normal situation".
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 76* The measured capacity shall fulfil the requirements of the regulation (both capacity and performance) for all operations that are provided by the service.
 ====
 
@@ -3160,9 +3058,8 @@ _"The probability of a Network Service to be available shall be 99% of the time.
 
 ==== Normalized testing procedure
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 77* Availability shall be measured consistently based on sample reference requests to a given service. Minimum 10 reference requests per hour shall be issued to the service continuously during its lifetime.
 
 To respect long running operations, the number of requests may be reduced. In such cases, a new request can be issued maximum 6 minutes after the previous request has finished.
@@ -3174,13 +3071,11 @@ _If a previous Get Spatial Data Set operation requesting a 1 GB data set was iss
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 22* The sample request issued to the service to measure performance can be used to measure availability as well, thus also fulfilling the same evaluation and assessment criteria.
 ====
 
-[TIP]
+[IMPORTANT]
 ====
-[.text-center]
 *TG Requirement 78* The availability shall be based on a time frame of one year meaning a maximum unplanned downtime of 3.63 days per year. Periods of planned downtime e.g. because of system maintenance, shall not be included in the measure. Downtime is considered planned when notified to the community well in advance (minimum 1 week), e.g. via notifications to registered users or on portals.
 ====
 
@@ -3194,7 +3089,6 @@ etc.
 
 [TIP]
 ====
-[.text-center]
 *TG Recommendation 23* Planned downtime is recommended to be less than 10 hours per month (i.e., less than 120 hours per year).
 ====
 
@@ -3277,4 +3171,4 @@ echo 'Not found';
 [appendix]
 == Annex B: UML Atom/OpenSearch Deployment Diagram
 
-image::./media/image11.png[image,width=517,height=820, align=center]
+image::.media/image11.png[image,width=517,height=820, align=center]
