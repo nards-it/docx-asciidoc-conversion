@@ -441,7 +441,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="paragraph">
-<p><span class="image"><img src="./media/image1.png" alt="image" width="107" height="107"></span> <strong>INSPIRE</strong> <strong>Infrastructure for Spatial Information in Europe</strong></p>
+<p><span class="image"><img src="media/image1.png" alt="image" width="107" height="107"></span> <strong>INSPIRE</strong> <strong>Infrastructure for Spatial Information in Europe</strong></p>
 </div>
 <h1 id="_technical_guidance_for_the_implementation_of_inspire_download_services" class="discrete">Technical Guidance for the implementation of INSPIRE Download Services</h1>
 <table class="tableblock frame-all grid-all stretch">
@@ -611,7 +611,7 @@ Tel.: 39-0332-786759<br>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image2.png" alt="image" width="605" height="367">
+<img src=".media/image2.png" alt="image" width="605" height="367">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -1219,19 +1219,8 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<div class="title">📒</div>
-</td>
-<td class="content">
 <div class="paragraph">
-<p><strong>TG Recommendation #</strong> recommendations are shown using this style.</p>
-</div>
-</td>
-</tr>
-</table>
+<p>TG Recommendation # recommendations are shown using this style.</p>
 </div>
 <div class="paragraph">
 <p>It is important to note that, implementation requirements and implementation recommendations may refer to either service or client implementations. Requirements and recommendations belong to the conformance class in which they are found in this document.</p>
@@ -1420,7 +1409,7 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image3.png" alt="image" width="605" height="379">
+<img src=".media/image3.png" alt="image" width="605" height="379">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -1431,7 +1420,7 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image4.png" alt="image" width="605" height="377">
+<img src=".media/image4.png" alt="image" width="605" height="377">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2580,7 +2569,7 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image5.png" alt="image" width="605" height="419">
+<img src=".media/image5.png" alt="image" width="605" height="419">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2604,12 +2593,8 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 <div class="title">📘</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Conformance Class 1: Pre-defined Atom:</strong> Implement Pre-Defined Dataset Download Service ("Part A") using Atom</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p><em>This conformance class is inclusive of:</em></p>
@@ -2619,6 +2604,10 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 </div>
 <div class="paragraph">
 <p><em>TG Recommendation 1 to</em> <em>TG Recommendation 12</em></p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>An operational implementation of an INSPIRE Atom based Download Service implementation is available on the INSPIRE Geoportal:</p>
@@ -2716,28 +2705,28 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 <div class="paragraph">
 <p>This pattern is illustrated further in Figure 5.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 1</strong> Pre-defined Dataset Download Service implementations shall publish separate datasets as individual entries within an Atom feed.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 2</strong> All Atom feeds (and entries in feeds) shall conform to all the requirements in the Atom specification, RFC 4287.</p>
 </div>
 </td>
@@ -2747,14 +2736,14 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 <div class="paragraph">
 <p>In addition the Atom feeds are supplemented with GeoRSS information to enable integration in tools that support this format (e.g. Google Earth).</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 3</strong> All GeoRSS information in Atom feeds shall conform to the GeoRSS-Simple specification.</p>
 </div>
 </td>
@@ -2764,14 +2753,14 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 <div class="paragraph">
 <p>In addition the Atom feeds are supplemented with OpenSearch information to as a way to specify operations for the Download Service.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 4</strong> All OpenSearch information in Atom feeds shall conform to the OpenSearch specification.</p>
 </div>
 </td>
@@ -2783,7 +2772,7 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image6.png" alt="image" width="605" height="402">
+<img src=".media/image6.png" alt="image" width="605" height="402">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -3002,14 +2991,14 @@ hreflang="en" title="This document"/&gt;
 &lt;title&gt;XYZ Example INSPIRE Download Service&lt;/title&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 5</strong> The 'title' element of an Atom feed shall be populated with a human readable title for the feed.</p>
 </div>
 </td>
@@ -3031,14 +3020,14 @@ hreflang="en" title="This document"/&gt;
 &lt;subtitle&gt;INSPIRE Download Service of organisation XYZ providing Hydrography data&lt;/subtitle&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 1</strong>: The 'subtitle' element of an Atom feed may be populated with a human readable subtitle for the feed.</p>
 </div>
 </td>
@@ -3063,14 +3052,14 @@ hreflang="en" title="This document"/&gt;
 &lt;link href="http://xyz.org/metadata/iso19139_document.xml" rel="describedby" type="application/xml"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 6</strong> The "Download Service Feed" shall contain an Atom 'link' element that links to the metadata record for this Download Service. The value of the 'rel' attribute of this element shall be "describedby" and the value of the 'type' attribute shall be either "application/xml".</p>
 </div>
 </td>
@@ -3095,14 +3084,14 @@ hreflang="en" title="This document"/&gt;
 &lt;link href="http://xyz.org/download/en.xml" rel="self" type="application/atomxml" hreflang="en" title="This document"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 7</strong> The "Download Service Feed" shall contain an Atom 'link' element that contains an HTTP URI for the "Download Service Feed" document. The value of the 'rel' attribute of this element shall be "self", the 'hreflang' attribute shall use the appropriate language code and the value of the 'type' attribute shall be "application/atomxml".</p>
 </div>
 </td>
@@ -3115,14 +3104,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>A link element shall be provided that links to an OpenSearch description document for the Download Service. The value of the 'rel' attribute of this link shall be "search". The structure of the OpenSearch description document is described separately in Section 5.4.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 8</strong> The "Download Service Feed" shall contain an Atom 'link' element that contains a link to an OpenSearch description document for the Download Service. The value of the 'rel' attribute of this element shall be "search", the 'hreflang' attribute shall use the appropriate language code and the value of the 'type' attribute shall be "application/opensearchdescriptionxml".</p>
 </div>
 </td>
@@ -3163,7 +3152,7 @@ hreflang="en" title="This document"/&gt;
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image7.png" alt="image" width="605" height="367">
+<img src=".media/image7.png" alt="image" width="605" height="367">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -3171,20 +3160,20 @@ hreflang="en" title="This document"/&gt;
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image8.png" alt="image" width="605" height="381">
+<img src=".media/image8.png" alt="image" width="605" height="381">
 </div>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 7</strong>. Atom feed viewed in Internet Explorer</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 2</strong> Alternative representations (for example HTML) should be provided as links. Where this is done the 'rel' attribute should have the value "alternate".</p>
 </div>
 </td>
@@ -3212,14 +3201,14 @@ hreflang="en" title="This document"/&gt;
 &lt;id&gt;http://xyz.org/download/en.xml&lt;/id&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 9</strong> The 'id' element of a feed shall contain an HTTP URI which dereferences to the feed</p>
 </div>
 </td>
@@ -3241,14 +3230,14 @@ hreflang="en" title="This document"/&gt;
 &lt;rights&gt;Copyright (c) 2012, XYZ; all rights reserved&lt;/rights&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 10</strong> The 'rights' element of a feed shall contain information about rights or restrictions for that feed.</p>
 </div>
 </td>
@@ -3270,14 +3259,14 @@ hreflang="en" title="This document"/&gt;
 &lt;updated&gt;2012-03-31T13:45:03Z&lt;/updated&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 11</strong> The 'updated' element of a feed shall contain the date, time and timezone at which the feed was last updated.</p>
 </div>
 </td>
@@ -3302,14 +3291,14 @@ hreflang="en" title="This document"/&gt;
 &lt;/author&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 12</strong> The 'author' element of a feed shall contain current contact information for an individual or organisation responsible for the feed. At the minimum, a name and email address shall be provided as contact information.</p>
 </div>
 </td>
@@ -3373,14 +3362,14 @@ hreflang="en" title="This document"/&gt;
 &lt;inspire_dls:spatial_dataset_identifier_code&gt;wn_id1&lt;/inspire_dls:spatial_dataset_identifier_code&gt; &lt;inspire_dls:spatial_dataset_identifier_namespace&gt;http://xyz.org/data&lt;/inspire_dls:spatial_dataset_identifier_namespace&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 13</strong> Each feed 'entry' in a "Download Service Feed" shall contain <em>spatial_dataset_identifier_code</em> and <em>spatial_dataset_identifier_namespace</em> elements which together contain the Spatial Dataset Unique Resource Identifier for the dataset described by the feed. These elements are defined in the <em>inspire_dls</em> schema which shall be included in the namespace declarations of the feed.</p>
 </div>
 </td>
@@ -3402,14 +3391,14 @@ hreflang="en" title="This document"/&gt;
 &lt;link href="http://xyz.org/metadata/abcISO19139.xml" rel="describedby" type="application/xml"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 14</strong> Each feed 'entry' in a "Download Service Feed" shall contain a link to a Dataset metadata record. This link shall have a 'rel' attribute with a value of "describedby" and a 'type' attribute with a value "application/xml"</p>
 </div>
 </td>
@@ -3431,14 +3420,14 @@ hreflang="en" title="This document"/&gt;
 &lt;link rel="alternate" href="http://xyz.org/data/waternetwork_feed.xml" type="application/atomxml" hreflang="en" title="Feed containing the pre-defined waternetwork dataset (in one or more downloadable formats)"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 15</strong> Each feed 'entry' in a "Download Service Feed" shall contain a single link to a "Dataset Feed". This link shall have a 'rel' attribute with a value of "alternate" and a 'type' attribute with a value "application/atomxml"</p>
 </div>
 </td>
@@ -3451,14 +3440,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>If the Atom implementation is complemented by one or several WFS for the Direct Access operations Get Spatial Object and Describe Spatial Object Type ("hybrid implementation", see section 4), a link needs to be established to the service offering these additional operations.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 16</strong> In case of a "hybrid implementation" based on Atom for Part A of [<strong>INS NS</strong>, Annex IV] and WFS for Parts B and C of [<strong>INS NS</strong>, Annex IV], a link shall be provided to the WFS Capabilities document. Where this is done the '<em>rel'</em> attribute shall have the value "related" and the <em>'type'</em> attribute shall have the value "application/xml"</p>
 </div>
 </td>
@@ -3480,42 +3469,42 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>The guidance for id, title and updated elements for each entry is equivalent to the guidance for the same elements in the enclosing feed and can be summarised by the following requirements and recommendations:</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 17</strong> The 'id' element of a feed entry in a Download Service Feed shall contain an identifier for that feed entry.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 18</strong> The 'title' element of a feed entry in a Download Service Feed shall be populated with a human readable title for the feed entry.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 19</strong> The 'updated' element of a feed entry in a Download Service Feed shall contain the date, time and timezone at which the feed entry was last updated.</p>
 </div>
 </td>
@@ -3525,14 +3514,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>Since the 'rights' information may often be the same for all entries in a feed this element may be omitted for each individual entry if it is present in the enclosing feed. The rights in this case refer to the pre-defined dataset the feed entry describes.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 3</strong> The 'rights' element of a feed entry may contain information about rights or restrictions specific to that feed entry.</p>
 </div>
 </td>
@@ -3545,14 +3534,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>Similarly, the 'author' information may often be the same for all entries in a feed so this element may also be omitted for each individual entry.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 4</strong> The 'author' element of a feed entry may contain information about the author specific to that feed entry.</p>
 </div>
 </td>
@@ -3577,14 +3566,14 @@ hreflang="en" title="This document"/&gt;
 &lt;summary&gt;This is the entry for water network ABC Dataset&lt;/summary&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 5</strong> The 'summary' element of a feed entry should contain a summary description of the feed entry.</p>
 </div>
 </td>
@@ -3597,14 +3586,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>To enable GeoRSS [<strong>GeoRSS</strong>] tools to display INSPIRE Atom feeds we recommend augmenting the Atom feed entries with GeoRSS elements to show the geographic extent of the datasets.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 6</strong> GeoRSS-Simple should be used in feed entries to indicate the geographic extent of the dataset.</p>
 </div>
 </td>
@@ -3614,14 +3603,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>Since georss:box is not well supported in common tools it is recommended to use georss:polygon to define bounding boxes, and georss:point when a dataset&#8217;s geometric extent is represented by a single point location. It is not recommended to use georss:box.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 7</strong> The bounding box of the dataset described by a feed entry should be provided using a georss:polygon, unless the geographic extent is a single point in which case georss:point should be used.</p>
 </div>
 </td>
@@ -3668,14 +3657,14 @@ hreflang="en" title="This document"/&gt;
 &lt;category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 20</strong> Each feed entry shall contain an Atom 'category' element for each CRS in which the pre-defined dataset is available. This category element shall refer to a well-known definition of a coordinate reference system.</p>
 </div>
 </td>
@@ -3762,84 +3751,84 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>The guidance for the <em>title</em>, <em>subtitle</em>, <em>id</em>, <em>rights</em>, <em>updated</em> and <em>author</em> elements is the same as for the Dataset Download Feed and the corresponding sections should be referred to. The requirements are summarised as follows:</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 21</strong> The 'title' element of a "Dataset Feed" shall be populated with a human readable title for the feed.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 8</strong> The 'subtitle' element of a "Dataset Feed" may be populated with a human readable subtitle for the feed.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 22</strong> The 'id' element of a "Dataset Feed" shall contain an HTTP URI which dereferences to the feed</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 23</strong> The 'rights' element of a "Dataset Feed" shall contain information about rights or restrictions for that feed.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 24</strong> The 'updated' element of a "Dataset Feed" shall contain the date, time and timezone at which the feed was last updated.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 25</strong> The 'author' element of a "Dataset Feed" shall contain current contact information for an individual or organisation responsible for the feed. At the minimum, a name and email address shall be provided as contact information.</p>
 </div>
 </td>
@@ -3849,14 +3838,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>The pre-defined datasets (e.g. as GML files) are made available for download within a feed 'entry' of the Dataset Feed.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 26</strong> Each "Dataset Feed" shall contain at least one feed entry containing links to download the pre-defined dataset (e.g. as a GML file).</p>
 </div>
 </td>
@@ -3866,14 +3855,14 @@ hreflang="en" title="This document"/&gt;
 <div class="paragraph">
 <p>If the pre-defined dataset is available to download in different formats or different Coordinate Reference Systems then a separate entry must be provided for each available format/CRS combination.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 27</strong> Each "Dataset Feed" shall contain separate entries for each format/CRS combination in which the pre-defined dataset is available to download.</p>
 </div>
 </td>
@@ -3897,14 +3886,14 @@ hreflang="en" title="This document"/&gt;
 &lt;link href="http://mydomain.com/glossary/riversegment" rel="describedby" type="text/html"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 28</strong> Each feed shall contain an Atom 'link' element for each INSPIRE Spatial Object Type in the dataset. The link shall refer to the INSPIRE Registry unless the data does not conform to any Data Specification in which case a link to a local definition of the Spatial Object Type shall be used instead. The value of the 'rel' attribute of this element shall be "describedby". For definitions in the INSPIRE registry the value of the 'type' attribute shall be "text/html".</p>
 </div>
 </td>
@@ -3926,14 +3915,14 @@ hreflang="en" title="This document"/&gt;
 &lt;link href="http://xyz.org/download/en.xml" rel="up" type="application/atomxml" hreflang="en" title="The parent service feed document"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 9</strong> A link element should be included that links to the 'parent' Dataset feed. This link should have a 'rel' attribute with a value of "up" and a 'type' attribute with a value of "application/atomxml".</p>
 </div>
 </td>
@@ -3970,14 +3959,14 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 <div class="paragraph">
 <p>Note that if a dataset spans more than one physical file (e.g. if it is stored in tiles or some other sub-division for practical purposes) then additional link elements may be provided within the entry for that dataset, one link per physical file according to the additional guidance in Section 5.2.4.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 29</strong> Each feed entry shall contain an Atom 'link' element that links to the pre-defined dataset file described by the entry. The value of the 'rel' attribute of this element shall be "alternate" and a "length" attribute (providing the length of the linked resource in octets*) shall be provided if possible. Where a dataset is provided in multiple physical files, additional 'link' elements shall be provided in the feed entry, one link for each physical file.</p>
 </div>
 <div class="paragraph">
@@ -3990,14 +3979,14 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 <div class="paragraph">
 <p>The 'type' attribute of the link element shall be used to indicate the media type of the resource that will be returned if the link is resolved. For example, 'application/gmlxml' (see also Section 5.2.4 below).</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 30</strong> The 'type' attribute of the link element shall be used to indicate the media type of resource that will be returned if the link is resolved. A valid media type must be used for the value of this attribute; if the media type is not registered with IANA it should still follow the conventions for unregistered media types.</p>
 </div>
 </td>
@@ -4007,14 +3996,14 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 <div class="paragraph">
 <p>In the case where pre-defined datasets are provided in multiple languages, a different link element shall be used for each language and the 'hreflang' attribute shall be used with the appropriate language code.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 31</strong> Where alternative language representations of datasets are linked to, the 'hreflang' attribute of the link element shall be used to indicate the language of the target dataset as described in the Atom specification.</p>
 </div>
 </td>
@@ -4027,14 +4016,14 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 <div class="paragraph">
 <p>Where a dataset is provided in multiple physical files and it is not desirable or practical to deliver them within a single download (e.g. as a zip), then it is also possible to deliver the individual files separately by adding multiple 'link' elements to the feed entry. This may be useful, for example, if there are a large number of files. There should be a separate 'link' element for each file. These links shall have a 'rel' value equal to "section".</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 32</strong> Where a dataset is provided in multiple physical files: each file shall be linked to via a separate 'link' element. Each of these 'link' elements shall have a 'rel' value equal to "section".</p>
 </div>
 </td>
@@ -4044,14 +4033,14 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 <div class="paragraph">
 <p>Additionally there is a need to provide a description of the structure of the collection of files. This description shall either be provided as free text within a 'content' element, or as another link, with a 'rel' value of "alternate". This link shall point to a descriptive document that describes how the parts of the dataset fit together. This Technical Guidance places no restrictions on the type or contents of this descriptive document. However when such a link is added an appropriate media type shall be used for the 'type' attribute.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 33</strong> Where a dataset is provided in multiple physical files: a description of the dataset structure shall be provided EITHER in an atom 'content' element as free text, OR in an external document which is the target of another 'link' element. Where a 'link' element is used this element shall have a 'rel' value equal to "alternate" and a suitable media type shall be used for the 'type' value.</p>
 </div>
 </td>
@@ -4070,28 +4059,28 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 &lt;link rel="section" href="http://xyz.org/data/file.tif" bbox="50.0 5.0 50.9 5.9" time="2012-06-01T13:00:00Z" type="image/tiff" hreflang="en" title="example file"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 10</strong> Where a dataset is provided in multiple physical files: a 'bbox' attribute may be used to describe the geospatial extent of a particular file. If this is used, then the value of this attribute should be structured according to the georss:box structure.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 10</strong> Where a dataset is provided in multiple physical files: a 'time' attribute may be used to describe the temporal extent of a particular file. If this is used, then the value of this attribute should be structured according to the ISO 8601 standard.</p>
 </div>
 </td>
@@ -4152,14 +4141,14 @@ type="application/gmlxml;version=3.2" hreflang="en" length="34987" title="The da
 <div class="paragraph">
 <p><a href="http://inspire.ec.europa.eu/media-types" class="bare">http://inspire.ec.europa.eu/media-types</a></p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 34</strong> Only media types listed in the INSPIRE media-types register shall be used.</p>
 </div>
 </td>
@@ -4190,14 +4179,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>If transfer of compressed data is desirable for particular uncompressed files then compression as supported by HTTP 1.1 may be used. It is recommended that clients wishing to benefit from HTTP compression shall set their HTTP Accept-Encoding header to "gzip, deflate".</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 12</strong> For files that are made available uncompressed, compression is offered by HTTP 1.1 server and clients. As spatial data sets may be large, clients should set their HTTP Accept-Encoding header to include "gzip, deflate" in each request for uncompressed files.</p>
 </div>
 </td>
@@ -4225,14 +4214,14 @@ application/x-filegdb</code></pre>
 &lt;/category&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 35</strong> Each CRS representation shall have a 'category' element which refers to the CRS definition and code.</p>
 </div>
 </td>
@@ -4246,28 +4235,28 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>The following two requirements are mandatory for all Download Services. In the case of the Atom implementation they are automatically met if the remaining requirements in this Section (5.3) are followed.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 36</strong> A Download Service metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 37</strong> A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. If the requested language is not supported by the service, then this parameter shall be ignored.</p>
 </div>
 </td>
@@ -4288,14 +4277,14 @@ application/x-filegdb</code></pre>
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;link href="http://xyz.org/download/de.xml" hreflang="de" rel="alternate" title="The download service information in German" type="application/atomxml"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 38</strong> Where a feed is made available in alternative languages, links shall be provided to these alternative representations. These links shall each use the 'hreflang' attribute to indicate the language of the alternative representation. The value of the 'rel' attribute for these link elements this element shall be "alternate".</p>
 </div>
 </td>
@@ -4346,14 +4335,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>The example given in Annex A uses content negotiation to identify which operation to perform. This means that even though the operation endpoint is only one, i.e. <a href="http://xyz.org/search.php" class="bare">http://xyz.org/search.php</a>, the client has to set the HTTP "Accept" Header to the correct value in order to receive the expected result.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 39</strong> A simple service to perform the Describe Spatial Dataset and Get Spatial Data Set operations shall be provided and described by an OpenSearch description document.</p>
 </div>
 </td>
@@ -4425,14 +4414,14 @@ application/x-filegdb</code></pre>
 &lt;Url type="application/opensearchdescriptionxml" rel="self" template="http://xyz.org/opensearchdescription.xml"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 40</strong> The OpenSearch description shall contain a 'Url' element that describes an HTTP URI for the OpenSearch Description document. The value of the 'rel' attribute of this element shall be "self", the value of the 'type' attribute shall be "application/opensearchdescriptionxml" and the value of the 'template' attribute shall be the HTTP URI of the document.</p>
 </div>
 </td>
@@ -4450,7 +4439,7 @@ application/x-filegdb</code></pre>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image9.png" alt="image" width="605" height="265">
+<img src=".media/image9.png" alt="image" width="605" height="265">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -4527,14 +4516,14 @@ application/x-filegdb</code></pre>
 &lt;Url type="text/html" rel="results" template="http://xyz.org/search.php?q=\{searchTerms}"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 41</strong> The OpenSearch description shall contain a 'Url' element that describes a template URL for generic search queries. The value of the 'rel' attribute of this element shall be "results", the value of the 'type' attribute shall be "text/html".</p>
 </div>
 </td>
@@ -4556,14 +4545,14 @@ application/x-filegdb</code></pre>
 &lt;Url type="application/atomxml" rel="describedby" template="http://xyz.org/search.php?spatial_dataset_identifier_code=\{inspire_dls:spatial_dataset_identifier_code?}&amp;amp;spatial_dataset_identifier_namespace=\{inspire_dls:spatial_dataset_identifier_namespace?}&amp;amp;language=\{language?}&amp;amp;q=\{searchTerms?}"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 42</strong> The OpenSearch description shall contain a 'Url' element that describes a template URL for the Describe Spatial Data Set operation. This template shall accept the INSPIRE parameters "spatial_dataset_identifier_code", "spatial_dataset_identifier_namespace" and the OpenSearch "language" parameter. The 'Url' element shall have an attribute 'type' with a value of "application/atomxml" and an attribute 'rel' with the value "describedby".</p>
 </div>
 </td>
@@ -4609,14 +4598,14 @@ application/x-filegdb</code></pre>
 &lt;Url type="application/x-filegdb" rel="results" template="http://xyz.org/search.php?spatial_dataset_identifier_code=\{inspire_dls:spatial_dataset_identifier_code?}&amp;amp;spatial_dataset_identifier_namespace=\{inspire_dls:spatial_dataset_identifier_namespace?}&amp;amp;crs=\{inspire_dls:crs?}&amp;amp;language=\{language?}&amp;amp;q=\{searchTerms?}"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 43</strong> The OpenSearch description shall contain a 'Url' element that describes a template URL for the Get Spatial Data Set operation. This template shall accept the INSPIRE parameters "crs", "spatial_dataset_identifier_code", "spatial_dataset_identifier_namespace" and the OpenSearch "language" parameter. The 'Url' element shall have an attribute 'type' with a value corresponding to the media type of the result and an attribute 'rel' with the value "results".</p>
 </div>
 </td>
@@ -4652,14 +4641,14 @@ application/x-filegdb</code></pre>
 &lt;Query role="example" inspire_dls:spatial_dataset_identifier_namespace="http://xyz.org/" inspire_dls:spatial_dataset_identifier_code="waternetwork" inspire_dls:crs="http://www.opengis.net/def/crs/EPSG/0/4326" language="en" title="Waternetwork_abc" count="1"/&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 44</strong> For each dataset available the OpenSearch description shall contain a 'Query' element that has a 'role' attribute with the value "example" and 'spatial_dataset_identifier_code' and 'spatial_dataset_identifier_namespace' attributes together containing unique spatial dataset identifier. The value of the 'crs' and 'language' attributes shall be set to the values considered as the default ones by the service provider.</p>
 </div>
 </td>
@@ -4686,14 +4675,14 @@ application/x-filegdb</code></pre>
 &lt;Language&gt;de&lt;/Language&gt;</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 45</strong> For each language supported by the download service, the OpenSearch description shall contain a 'Language element that contains the language code. The first 'Language' element shall contain the Default Language.</p>
 </div>
 </td>
@@ -4715,12 +4704,8 @@ application/x-filegdb</code></pre>
 <div class="title">📘</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Conformance Class 2: Pre-defined WFS:</strong> Implement Pre-Defined Dataset Download Service ("Part A") using ISO 19142 Web Feature Service and 19143 Filter Encoding.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p><em>This conformance class is inclusive of:</em></p>
@@ -4730,6 +4715,10 @@ application/x-filegdb</code></pre>
 </div>
 <div class="paragraph">
 <p><em>TG Recommendation 14 to</em> <em>TG Recommendation 15</em></p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>An alternative way to implement pre-defined dataset download services is by deploying an ISO 19142 Web Feature Service [<strong>ISO 19142</strong>] supporting ISO 19143 Filter Encoding [<strong>ISO 19143</strong>] in line with the Technical Guidance contained in this chapter. Rather than repeat large parts of the WFS and FE specifications in this document, references are made to conformance classes from the WFS and FE specifications which shall be implemented. Where additional functionality is required, as is the case with multi-lingual requirements then this is described below.</p>
@@ -4742,14 +4731,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>In order to implement pre-defined access using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'Simple WFS' conformance classes as described in the 19142 standard [<strong>ISO 19142</strong>].</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 46</strong> Implementations shall conform to ISO 19142 Conformance Class 'Simple WFS'</p>
 </div>
 </td>
@@ -4762,14 +4751,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>In order to implement pre-defined download services using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'Query' conformance classes as described in the 19143 standard [<strong>ISO 19143</strong>].</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 47</strong> Implementations shall conform to ISO 19143 Conformance Class 'Query'</p>
 </div>
 </td>
@@ -4782,14 +4771,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>In order to implement pre-defined download services using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'HTTP GET' conformance classes as described in the 19142 standard [<strong>ISO 19142</strong>].</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 48</strong> Implementations shall conform to ISO 19142 Conformance Class 'HTTP Get'</p>
 </div>
 </td>
@@ -4805,14 +4794,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>ISO 19142 describes the operations ListStoredQueries and DescribeStoredQueries. The former is used to retrieve a list of stored queries that are available and the latter is used to request more information about a particular stored query (or queries) such as the parameter arguments that are required to make a GetFeature request using the stored query.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 49</strong> Pre-defined Stored Queries shall be provided to make pre-defined datasets available.</p>
 </div>
 </td>
@@ -4822,14 +4811,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>Any implementation shall ensure that all possible (i.e. available) combinations of CRS/DataSetIdCode/ DataSetIdNamespace/language should be available through a pre-defined stored query.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 50</strong> Any possible (i.e. available) combinations of CRS/DataSetIdCode/ DataSetIdNamespace/language shall be made available through pre-defined stored queries.</p>
 </div>
 </td>
@@ -4839,14 +4828,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>Every instance of a WFS-based pre-defined dataset download service should define only one Stored Query for serving pre-defined Spatial Data Sets in order to make it easier for clients who already know the identifier of the Stored Query.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📘</div>
+<div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 13</strong> The following identifier should be used to identify the Stored Query for serving pre-defined Spatial Data Sets: <a href="http://inspire.ec.europa.eu/operation/download/GetSpatialDataSet" class="bare">http://inspire.ec.europa.eu/operation/download/GetSpatialDataSet</a></p>
 </div>
 </td>
@@ -4856,14 +4845,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p>The parameter names for the arguments of the Stored Query shall be consistent as proposed in the following requirement:</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 51</strong> Pre-defined Stored Queries shall use the parameter names "CRS", "DataSetIdCode", "DataSetIdNamespace" and "Language" to identify the CRS, dataset ID code, dataset ID namespace and language components of a query.</p>
 </div>
 </td>
@@ -4900,14 +4889,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p><a href="http://my-wfs.com/mydata" class="bare">http://my-wfs.com/mydata</a></p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 52</strong> A separate WFS endpoint shall be provided for each INSPIRE dataset thus providing one dataset per GetCapabilities response.</p>
 </div>
 </td>
@@ -5090,14 +5079,14 @@ application/x-filegdb</code></pre>
 <div class="paragraph">
 <p><strong>Table 19</strong>: Mapping INSPIRE Metadata elements to ISO 19142 WFS</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 53</strong> INSPIRE Metadata for the Download Service shall EITHER be linked to via an &lt;inspire_common:MetadataURL&gt; in an extended capabilities section, OR the extended capabilities section shall contain all the INSPIRE Metadata for the Download Service in accordance with Table 4 and the inspire_dls:ExtendedCapabilities schema.</p>
 </div>
 </td>
@@ -5161,28 +5150,28 @@ title&lt;/inspire_common:Title&gt;
 <div class="paragraph">
 <p>Language requirements for Network Services were introduced in Section 4.3 and are expanded upon here as TG Requirements for the Pre-defined WFS Conformance Class:</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 54</strong> A network service [Download Service] metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 55</strong> A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. It the requested language is not supported by the service, then this parameter shall be ignored.</p>
 </div>
 </td>
@@ -5200,14 +5189,14 @@ title&lt;/inspire_common:Title&gt;
 <div class="paragraph">
 <p>The HTTP/GET binding of the GetCapabilities-Operation is extended by an additional parameter that indicates the client&#8217;s preferred language.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 56</strong> The name of this parameter shall be "LANGUAGE". The parameter values are based on ISO 639-2/B alpha 3 codes as used in [<strong>INS MDTG</strong>].</p>
 </div>
 </td>
@@ -5336,14 +5325,14 @@ title&lt;/inspire_common:Title&gt;
 </li>
 </ul>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 57</strong> If a client request specifies an unsupported language, or the parameter is absent in the request, the above fields [Title, Abstract] shall be provided in the service default language.</p>
 </div>
 </td>
@@ -5389,28 +5378,28 @@ title&lt;/inspire_common:Title&gt;
 ...</code></pre>
 </div>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 58</strong> The Extended Capabilities shall indicate the response language used for the GetCapabilities-Response: Depending on the requested language the value of the &lt;inspire_common:ResponseLanguage&gt; corresponds to the current used language. If a supported language was requested, &lt;inspire_common:ResponseLanguage&gt; shall correspond to that requested language. If an unsupported language was requested or if no specific language was requested &lt;inspire_common:ResponseLanguage&gt; shall correspond to the service default language &lt;inspire_common:DefaultLanguage&gt;</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 59</strong> The Extended Capabilities shall contain the <strong>list of supported languages</strong> indicated in &lt;inspire_common:SupportedLanguages&gt;.</p>
 </div>
 <div class="paragraph">
@@ -5425,14 +5414,14 @@ title&lt;/inspire_common:Title&gt;
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 60</strong> The Extended Capabilities shall use the XML Schema as defined in the INSPIRE online schema repository.</p>
 </div>
 </td>
@@ -5554,7 +5543,7 @@ title&lt;/inspire_common:Title&gt;
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 14</strong> For further language support for other operations it is recommended to replace the operation-online-resources in each language specific GetCapabilities-Response by a specific operation-online-resource for that language. To support the additional operation-online-resources the service shall listen at the language specific operation end-points to distinguish for the requested languages.</p>
 </div>
 </td>
@@ -5706,7 +5695,7 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 15</strong> The support of IETF RFC 4646 is recommended wherever the support of ISO/639 B alpha3 for languages infringes the conformity with the standard used for implementing the [INS NS].</p>
 </div>
 </td>
@@ -5880,18 +5869,18 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="title">📘</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Conformance Class 3: Direct WFS:</strong> Implement Direct Access Download Service ("Parts B &amp; C") using ISO 19142 Web Feature Service and ISO 19143 Filter Encoding.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p><em>This conformance class is inclusive of:</em></p>
 </div>
 <div class="paragraph">
 <p><em>TG Requirement 61 to</em> <em>TG Requirement 68</em></p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>Direct Access download services (that satisfy Parts B and C of the IR) should be implemented where practicable. This may be done using ISO 19142 WFS [<strong>ISO 19142</strong>] and ISO 19143 Filter Encoding [<strong>ISO 19143</strong>] as described here. In order to be fully conformant with [<strong>INS NS</strong>], it is necessary to also provide an implementation satisfying Part A, either based on Atom/OpenSearch (Chapter 5) or WFS (Chapter 6).</p>
@@ -5901,14 +5890,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>Direct access Download Services provide additional functionality beyond what is provided by Pre-defined Download Services. Because both Pre-defined dataset and Direct Access Download services are both based on [<strong>ISO 19142</strong>] there is an overlap of requirements for both types of solutions ensuring the ability to exist independent of each other.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 61</strong> Implementations shall meet TG Requirement 48 (conformance to [<strong>ISO 19142</strong>] 'HTTP GET' conformance class) and TG Requirement 52 (one endpoint for each INSPIRE dataset).</p>
 </div>
 </td>
@@ -5921,14 +5910,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>In order to implement direct access download services using ISO 19142 WFS and ISO 19143 FE it is necessary to conform to the 'Basic WFS' conformance classes as described in the 19142 standard [<strong>ISO 19142</strong>].</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 62</strong> Implementations shall conform to ISO 19142 Conformance Class 'Basic WFS'</p>
 </div>
 </td>
@@ -5941,14 +5930,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>Ad hoc query support shall be implemented to enable user-defined requests for spatial objects in a WFS.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 63</strong> A Direct Access Download Service shall conform to ISO 19143 'Ad hoc Query' Conformance Class.</p>
 </div>
 </td>
@@ -5961,14 +5950,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>The referencing of resources by identifier shall be supported as described in ISO 19143</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 64</strong> A Direct Access Download Service shall conform to ISO 19143 'Resource Identification' Conformance Class.</p>
 </div>
 </td>
@@ -5981,14 +5970,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>Querying with Comparison and logical operators shall be supported by the Direct Access Download Services as described in ISO 19143.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 65</strong> A Direct Access Download Service shall conform to ISO 19143 'Minimum Standard Filter' Conformance Class.</p>
 </div>
 </td>
@@ -6001,14 +5990,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>Spatial querying of the Download Service shall be supported by the Direct Access Download Services as described in ISO 19143.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 66</strong> A Direct Access Download Service shall conform to ISO 19143 'Minimum Spatial Filter' Conformance Class.</p>
 </div>
 </td>
@@ -6021,14 +6010,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>Temporal querying of the Download Service shall be supported by the Direct Access Download Services as described in ISO 19143.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 67</strong> A Direct Access Download Service shall conform to ISO 19143 'Minimum Temporal Filter' Conformance Class.</p>
 </div>
 </td>
@@ -6041,14 +6030,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>Querying of the Download Service using XPath shall be supported by the Direct Access Download Services as described in ISO 19143.</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 68</strong> A Direct Access Download Service shall conform to ISO 19143 'Minimum XPath' Conformance Class.</p>
 </div>
 </td>
@@ -6092,7 +6081,7 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 16</strong> In addition, a textual reference to the Atom service implementing part A should be included in the 'abstract' metadata element of the WFS.</p>
 </div>
 </td>
@@ -6113,7 +6102,7 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="title">📘</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Conformance Class 4: Quality of Service:</strong> Meet Quality of Service requirements.</p>
 </div>
 </td>
@@ -6169,7 +6158,7 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image10.png" alt="image" width="461" height="321">
+<img src=".media/image10.png" alt="image" width="461" height="321">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -6198,14 +6187,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 </div>
 <div class="sect3">
 <h4 id="_normalized_testing_procedure">8.2.2. Normalized testing procedure</h4>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 69</strong> Performance shall be measured consistently based on sample reference requests to a given service. Minimum 10 reference requests per hour shall be issued to the service continuously during its lifetime during the period of testing.</p>
 </div>
 </td>
@@ -6231,21 +6220,21 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 17</strong> The frequency of the performance tests is recommended to be monthly, e.g., during systems maintenance.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 70</strong> Performance shall be measured using the Get Download Service Metadata, Get Spatial Data Set, Get Spatial Object, Describe Spatial Data Set and Describe Spatial Object Type operations.</p>
 </div>
 </td>
@@ -6259,7 +6248,7 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 18</strong> The structure of the sample reference request packages is recommended to be composed of: 10% Get Download Service Metadata requests, 10% Describe Spatial Data Set or Describe Spatial Object Type and 80% Get Spatial Data Set or Get Spatial Object. At least 2% of the requests should be Get Spatial Data Set.</p>
 </div>
 </td>
@@ -6269,42 +6258,42 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p>NOTE This composition is assumed to represent a "normal situation".</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 71</strong> For Get Spatial Object operations, the sample reference request shall Contain a BBOX parameter.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 72</strong> If a download service serves more than one feature type, only one feature type shall be requested by a Get Spatial Object operation.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 73</strong> If a download service serves more than one (pre-defined) spatial data set, only one spatial data set shall be requested by a Get Spatial Data Set operation.</p>
 </div>
 </td>
@@ -6324,7 +6313,7 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 19</strong> For Get Spatial Object operations, the sample reference request is recommended to return at least 1 MB.</p>
 </div>
 </td>
@@ -6390,14 +6379,14 @@ Request: <a href="http://someHOST.example/" class="bare">http://someHOST.example
 <div class="paragraph">
 <p><strong>z</strong> is the size of data in count of objects or object descriptions,</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 74</strong> Evaluation and assessment criteria:</p>
 </div>
 <div class="paragraph">
@@ -6498,14 +6487,14 @@ till complete download finished</th>
 </div>
 <div class="sect3">
 <h4 id="_normalized_testing_procedure_2">8.3.2. Normalized testing procedure</h4>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 75</strong> Capacity shall be measured consistently based on sample reference request packages to a given service.</p>
 </div>
 </td>
@@ -6525,7 +6514,7 @@ till complete download finished</th>
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 20</strong> The frequency of the capacity is recommended to be monthly, e.g., during systems maintenance.</p>
 </div>
 </td>
@@ -6539,7 +6528,7 @@ till complete download finished</th>
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 21</strong> The structure of the sample reference request packages is recommended to be composed of 10% Get Download Service Metadata requests, 10% Describe Spatial Data Set or Describe Spatial Object Type and 80% Get Spatial Data Set or Get Spatial Object. At least 2% of the requests should be Get Spatial Data Set.</p>
 </div>
 </td>
@@ -6549,14 +6538,14 @@ till complete download finished</th>
 <div class="paragraph">
 <p>NOTE This composition is assumed to represent a "normal situation".</p>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 76</strong> The measured capacity shall fulfil the requirements of the regulation (both capacity and performance) for all operations that are provided by the service.</p>
 </div>
 </td>
@@ -6575,14 +6564,14 @@ till complete download finished</th>
 </div>
 <div class="sect3">
 <h4 id="_normalized_testing_procedure_3">8.4.2. Normalized testing procedure</h4>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 77</strong> Availability shall be measured consistently based on sample reference requests to a given service. Minimum 10 reference requests per hour shall be issued to the service continuously during its lifetime.</p>
 </div>
 <div class="paragraph">
@@ -6605,21 +6594,21 @@ till complete download finished</th>
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 22</strong> The sample request issued to the service to measure performance can be used to measure availability as well, thus also fulfilling the same evaluation and assessment criteria.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="admonitionblock tip">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">📒</div>
+<div class="title">📕</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Requirement 78</strong> The availability shall be based on a time frame of one year meaning a maximum unplanned downtime of 3.63 days per year. Periods of planned downtime e.g. because of system maintenance, shall not be included in the measure. Downtime is considered planned when notified to the community well in advance (minimum 1 week), e.g. via notifications to registered users or on portals.</p>
 </div>
 </td>
@@ -6645,7 +6634,7 @@ till complete download finished</th>
 <div class="title">📒</div>
 </td>
 <td class="content">
-<div class="paragraph text-center">
+<div class="paragraph">
 <p><strong>TG Recommendation 23</strong> Planned downtime is recommended to be less than 10 hours per month (i.e., less than 120 hours per year).</p>
 </div>
 </td>
@@ -6740,7 +6729,7 @@ echo 'Not found';
 <div class="sectionbody">
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image11.png" alt="image" width="517" height="820">
+<img src=".media/image11.png" alt="image" width="517" height="820">
 </div>
 </div>
 </div>
