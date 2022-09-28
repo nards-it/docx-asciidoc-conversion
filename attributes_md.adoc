@@ -1,9 +1,9 @@
 // Admonition icons:
-// IR Requirement
-:important-caption: 📕
 // TG Requirement
+:important-caption: 📕
+// TG Recommendation
 :tip-caption: 📒
-// Recommendation
+// Conformance class
 :note-caption: 📘
 
 // TOC placement using macro (manual)
