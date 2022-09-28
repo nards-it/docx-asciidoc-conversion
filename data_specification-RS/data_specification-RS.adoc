@@ -1,9 +1,9 @@
 // Admonition icons:
-// TG Requirement
+// IR Requirement
 :important-caption: 📕
-// TG Recommendation
+// TG Requirement
 :tip-caption: 📒
-// Conformance class
+// Recommendation
 :note-caption: 📘
 
 // TOC placement using macro (manual)
@@ -30,7 +30,7 @@ image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** *In
 [discrete]
 = D2.8.I.1 Data Specification on Coordinate Reference Systems – Technical Guidelines
 
-[cols=",",]
+[width="100%",cols="17%,83%"]
 |===
 |*Title* |D2.8.I.1 Data Specification on _Coordinate Reference Systems_ – Technical Guidelines
 |*Creator* |INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems
@@ -81,8 +81,8 @@ In order to distinguish the INSPIRE spatial data themes from the spatial object 
 
 Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.
 
-*Interoperability of Spatial Data Sets and Services – 
-General Executive Summary*
+[discrete]
+== Interoperability of Spatial Data Sets and Services – General Executive Summary
 
 The challenges regarding the lack of availability, quality, organisation, accessibility, and sharing of spatial information are common to a large number of policies and activities and are experienced across the various levels of public authority in Europe. In order to solve these problems it is necessary to take measures of coordination between the users and providers of spatial information. The Directive 2007/2/EC of the European Parliament and of the Council adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment.
 
@@ -115,7 +115,8 @@ By listing a number of requirements and making the necessary recommendations, th
 
 In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.
 
-*Coordinate Reference Systems – Executive Summary*
+[discrete]
+== Coordinate Reference Systems – Executive Summary
 
 _Coordinate reference systems_ are included in Annex I, which means that they are considered as reference data, i.e. data that constitute the spatial frame for linking and/or pointing to other information that belong to specific thematic fields as defined in the INSPIRE Annexes II and III.
 
@@ -153,28 +154,26 @@ For the rendering of spatial information for INSPIRE View Services, and in case 
 
 This document contains also the identifiers for the different types of coordinate reference systems that shall be used.
 
-*Acknowledgements*
+[discrete]
+== Acknowledgements
 
 Many individuals and organisations have contributed to the development of these Guidelines.
 
 The Thematic Working Group Coordinate Reference Systems (TWG-RS) included:
-
 João Torres (TWG Facilitator), Vida Bitenc (TWG Editor), Alessandro Caporali, Paul Crudace, Lars Engberg, Bruno Garayt, Heinz Habrich (regular members), Gil Ross Leendert Dorst, Jordi Escriu (external experts). Freddy Fierens (European Commission contact point).
 
 Other contributors to the INSPIRE data specifications are the Drafting Team Data Specifications, the JRC Data Specifications Team and the INSPIRE stakeholders - Spatial Data Interested Communities (SDICs) and Legally Mandated Organisations (LMOs).
 
 *Contact information*
-
 Maria Vanda Nunes de Lima & Michael Lutz
 European Commission Joint Research Centre (JRC)
 Institute for Environment and Sustainability
 Unit H06: Digital Earth and Reference Data
-
 _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
 <<<
 [discrete]
-= Table of Contents
+== Table of Contents
 toc::[]
 
 <<<
@@ -208,7 +207,7 @@ This specification establishes:
 [loweralpha]
 . The geodetic datums and coordinate reference systems to be used when making spatial data sets available for INSPIRE, unless otherwise required for data of a specific theme.
 
-
++
 Particularly, the following ones are adopted:
 
 
@@ -226,7 +225,7 @@ Particularly, the following ones are adopted:
 [loweralpha, start=2]
 . Plane coordinates reference systems (map projections) adopted and recommended for different purposes, covering the requirements of the INSPIRE transformation services and view services as well.
 
-
++
 Particularly, at least the coordinate reference systems for two-dimensional geodetic coordinates (latitude, longitude) shall be available for the display of spatial data sets with the view network service (Regulation No 976/2009footnote:[OJ L 274, 20.10.2009, p. 9–18.]).
 
 
@@ -312,58 +311,35 @@ Change of coordinates, based on a one-to-one relationship, from a geodetic coord
 
 === Symbols and abbreviations
 
-CRS Coordinate Reference System
-
-EC European Commission
-
-ETRS89 European Terrestrial Reference System 1989
-
-ETRS89-EVRS Compound Coordinate Reference System ETRS89-EVRS
-
-ETRS89-LAEA Projection Lambert Azimuthal Equal Area
-
-ETRS89-LCC Projection Lambert Conformal Conic
-
-ETRS89-TMzn Projection Transverse Mercator
-
-EUREF Reference Frame Sub-commission for Europe of the IAG
-
-EVRS European Vertical Reference System
-
-GCM Generic Conceptual Model
-
-GRS80 Geodetic Reference System 1980
-
-IAG International Association of Geodesy
-
-ICAO International Civil Aviation Organisation
-
-IERS International Earth Rotation and Reference Systems Service
-
-IHO International Hydrographic Organisation
-
-ISA International Standard Atmosphere
-
-ITRF International Terrestrial Reference Frame
-
-ITRS International Terrestrial Reference System
-
-IUGG International Union of Geodesy and Geophysics
-
-JRC Joint Research Centre
-
-LAT Lowest Astronomical Tide
-
-MS Member States
-
-MSL Mean Sea Level
-
-TRS Terrestrial Reference System
-
-TWG Thematic Working Group
-
-VRF Visual Flying Rules
-
+[width="100%",cols="14%,86%"]
+|===
+|CRS |Coordinate Reference System
+|EC |European Commission
+|ETRS89 |European Terrestrial Reference System 1989
+|ETRS89-EVRS |Compound Coordinate Reference System ETRS89-EVRS
+|ETRS89-LAEA |Projection Lambert Azimuthal Equal Area
+|ETRS89-LCC |Projection Lambert Conformal Conic
+|ETRS89-TMzn |Projection Transverse Mercator
+|EUREF |Reference Frame Sub-commission for Europe of the IAG
+|EVRS |European Vertical Reference System
+|GCM |Generic Conceptual Model
+|GRS80 |Geodetic Reference System 1980
+|IAG |International Association of Geodesy
+|ICAO |International Civil Aviation Organisation
+|IERS |International Earth Rotation and Reference Systems Service
+|IHO |International Hydrographic Organisation
+|ISA |International Standard Atmosphere
+|ITRF |International Terrestrial Reference Frame
+|ITRS |International Terrestrial Reference System
+|IUGG |International Union of Geodesy and Geophysics
+|JRC |Joint Research Centre
+|LAT |Lowest Astronomical Tide
+|MS |Member States
+|MSL |Mean Sea Level
+|TRS |Terrestrial Reference System
+|TWG |Thematic Working Group
+|VRF |Visual Flying Rules
+|===
 
 === How the Technical Guidelines map to the Implementing Rules
 
@@ -374,7 +350,7 @@ In contrast, the Technical Guidelines define _how_ Member States might implement
 image::./media/image4.png[image,width=603,height=375, align=center]
 
 [.text-center]
-*Figure 1* - Relationship between INSPIRE Implementing Rules and Technical Guidelines
+*Figure 1 - Relationship between INSPIRE Implementing Rules and Technical Guidelines*
 
 
 ==== Requirements
@@ -411,7 +387,7 @@ NOTE 2 In addition to the requirements included in the Implementing Rules on int
 
 In addition to IR and TG requirements, these Technical Guidelines may also include a number of recommendations for facilitating implementation or for further and coherent development of an interoperable infrastructure.
 
-[TIP]
+[NOTE]
 ====
 *Recommendation X* Recommendations are shown using this style.
 ====
@@ -434,7 +410,6 @@ NOTE For more information on specification scopes, see [ISO 19131:2007], clause 
 == Identification information
 
 These Technical Guidelines are identified by the following URI:
-
 http://inspire.ec.europa.eu/tg/rs/3.2
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
@@ -597,22 +572,27 @@ The Transverse Mercator (ETRS89-TMzn) is identical to the Universal Transverse M
 
 [NOTE]
 ====
-*Recommendation 1* For pan-European spatial analysis and reporting, where true area representation is required, the ETRS89-LAEA is recommended
+*Recommendation 1*
+For pan-European spatial analysis and reporting, where true area representation is required, the ETRS89-LAEA is recommended
 ====
 
 [NOTE]
 ====
-*Recommendation 2* For conformal pan-European mapping at scales smaller than or equal to 1:500,000, the ETRS89-LCC is recommended
+*Recommendation 2*
+For conformal pan-European mapping at scales smaller than or equal to 1:500,000, the ETRS89-LCC is recommended
 ====
 
 [NOTE]
 ====
-*Recommendation 3* For conformal pan-European mapping at scales larger than 1:500,000, the Transverse Mercator ETRS89-TMzn is recommended
+*Recommendation 3*
+For conformal pan-European mapping at scales larger than 1:500,000, the Transverse Mercator ETRS89-TMzn is recommended
+====
 
 [NOTE]
 ====
-*Recommendation 4* It is recommended that the projections referred in section 1.3.2 of Annex II of Commission Regulation (EU) No 1089/2010) are available in INSPIRE transformation services.
-
+*Recommendation 4*
+It is recommended that the projections referred in section 1.3.2 of Annex II of Commission Regulation (EU) No 1089/2010) are available in INSPIRE transformation services.
+====
 
 Users may benefit of INSPIRE download and transformation services to get and re-project datasets according their aims. Moreover, different INSPIRE themes or applications where INSPIRE compliant data is integrated should use appropriate map projections. This is especially important when analysis is being done in large scales.
 
@@ -769,15 +749,14 @@ These Technical Guidelines propose to use the http URIs provided by the Open Geo
 
 [TIP]
 ====
-*TG Requirement 1* The identifiers listed in Table 1 shall be used for referring to the coordinate reference systems used in a data set.
+*TG Requirement 1*
+The identifiers listed in Table 1 shall be used for referring to the coordinate reference systems used in a data set.
 ====
 
 NOTE CRS identifiers may be used e.g. in:
 
 * data encoding,
-
 * data set and service metadata, and
-
 * requests to INSPIRE network services.
 
 [.text-center]
@@ -788,81 +767,67 @@ NOTE CRS identifiers may be used e.g. in:
 |*Coordinate reference system* |*Short name* |*http URI identifier*
 a|
 3D Cartesian in ETRS89
-
 (X,Y,Z)
 
 |ETRS89-XYZ |_http://www.opengis.net/def/crs/EPSG/0/4936_
 a|
 3D geodetic in ETRS89 on GRS80
-
 (Latitude, Longitude, Ellipsoidal height)
 
 |ETRS89-GRS80h |_http://www.opengis.net/def/crs/EPSG/0/4937_
 a|
 2D geodetic in ETRS89 on GRS80
-
 (Latitude, Longitude)
 
 |ETRS89-GRS80 |_http://www.opengis.net/def/crs/EPSG/0/4258_
 a|
 2D LAEA projection in ETRS89
-
 on GRS80
-
 (Y,X)
 
 |ETRS89-LAEA |_http://www.opengis.net/def/crs/EPSG/0/3035_
 a|
 2D LCC projection in ETRS89 on GRS80
-
 (N,E)
 
 |ETRS89-LCC |_http://www.opengis.net/def/crs/EPSG/0/3034_
 a|
 2D TM projection in ETRS89 on GRS80, zone 26N (30°W to 24°W)
-
 (N,E)
 
 |ETRS89-TM26N |_http://www.opengis.net/def/crs/EPSG/0/3038_
 a|
 2D TM projection in ETRS89 on GRS80, zone 27N (24°W to 18°W)
-
 (N,E)
 
 |ETRS89-TM27N |_http://www.opengis.net/def/crs/EPSG/0/3039_
 a|
 2D TM projection in ETRS89 on GRS80, zone 28N (18°W to 12°W)
-
 (N,E)
 
 |ETRS89-TM28N |_http://www.opengis.net/def/crs/EPSG/0/3040_
 a|
 2D TM projection in ETRS89 on GRS80, zone 29N (12°W to 6°W)
-
 (N,E)
 
 |ETRS89-TM29N |_http://www.opengis.net/def/crs/EPSG/0/3041_
 a|
 2D TM projection in ETRS89 on GRS80, zone 30N (6°W to 0°)
-
 (N,E)
 
 |ETRS89-TM30N |_http://www.opengis.net/def/crs/EPSG/0/3042_
 a|
 2D TM projection in ETRS89 on GRS80, zone 31N (0° to 6°E)
-
 (N,E)
 
 |ETRS89-TM31N |_http://www.opengis.net/def/crs/EPSG/0/3043_
 a|
 2D TM projection in ETRS89 on GRS80, zone 32N (6°E to 12°E)
-
 (N,E)
 
 |ETRS89-TM32N |_http://www.opengis.net/def/crs/EPSG/0/3044_
 a|
 2D TM projection in ETRS89 on GRS80, zone 33N (12°E to 18°E)
-
 (N,E)
 
 |ETRS89-TM33N |_http://www.opengis.net/def/crs/EPSG/0/3045_
@@ -874,56 +839,47 @@ a|
 |ETRS89-TM34N |_http://www.opengis.net/def/crs/EPSG/0/3046_
 a|
 2D TM projection in ETRS89 on GRS80, zone 35N (24°E to 30°E)
-
 (N,E)
 
 |ETRS89-TM35N |_http://www.opengis.net/def/crs/EPSG/0/3047_
 a|
 2D TM projection in ETRS89 on GRS80, zone 36N (30°E to 36°E)
-
 (N,E)
 
 |ETRS89-TM36N |_http://www.opengis.net/def/crs/EPSG/0/3048_
 |2D TM projection in ETRS89 on GRS80, zone 37N (36°E to 42°E) |ETRS89-TM37N |_http://www.opengis.net/def/crs/EPSG/0/3049_
 a|
 2D TM projection in ETRS89 on GRS80, zone 38N (42°E to 48°E)
-
 (N,E)
 
 |ETRS89-TM38N |_http://www.opengis.net/def/crs/EPSG/0/3050_
 a|
 2D TM projection in ETRS89 on GRS80, zone 39N (48°E to 54°E)
-
 (N,E)
 
 |ETRS89-TM39N |_http://www.opengis.net/def/crs/EPSG/0/3051_
 a|
 Height in EVRS
-
 (H)
 
 |EVRS |_http://www.opengis.net/def/crs/EPSG/0/5730_
 a|
 Depth referred to LAT
-
 (D)
 
 |LAT |_http://www.opengis.net/def/crs/EPSG/0/5861_
 a|
 Depth referred to MSL
-
 (D)
 
 |MSL |_http://www.opengis.net/def/crs/EPSG/0/5715_
 a|
 Pressure coordinate in the free atmosphere
-
 (P)
 
 |ISA |_<http URI Identifier>_
 a|
 3D compound: 2D geodetic in ETRS89 on GRS80, and EVRS height
-
 (Latitude, Longitude, H)
 
 |ETRS89-GRS80-EVRS |_http://www.opengis.net/def/crs/EPSG/0/7409_
@@ -954,16 +910,10 @@ EXAMPLE When both ETRS89-GRS80 and EVRS the CRS used the identifier shall be ETR
 [EUR 19575 EN] Spatial Reference Systems in Europe – EUR Report 19575 EN. Proceedings of the "Spatial Reference Systems in Europe" workshop, Marne-La Vallee, 29-30 November 1999
 
 [EUR 20120 EN] Map Projections for Europe – EUR Report 20120 EN. Proceedings of the "Map Projections for Europe" workshop, Marne-La Vallee, 14-15 December 2000
-
-
 _http://www.ec-gis.org/sdi/publist/pdfs/annoni-etal2003eur.pdf_
 
-
 [EUR 21494 EN] European Reference Grids – EUR Report 21494 EN. Proceedings of the "European Reference Grids" workshop, Ispra, 27-29 October 2003
-
-
 _http://www.ec-gis.org/sdi/publist/pdfs/annoni2005eurgrids.pdf_
-
 
 [EUREF] _www.euref.eu_ or _www.euref-iag.net_ – EUREF website for information on the ETRS89 and the EVRS
 
@@ -984,16 +934,10 @@ _http://www.ec-gis.org/sdi/publist/pdfs/annoni2005eurgrids.pdf_
 [ISO 19135] EN ISO 19135:2007 Geographic information – Procedures for item registration (ISO 19135:2005)
 
 [GRIB] (GRIdded Binary) – WMO operational open data standard for multiple-dimensioned array data, exchanged daily by WMO, ICAO and IOC,
-
-
 _http://www.wmo.ch/pages/prog/www/WMOCodes/OperationalCodes.html_
 
-
 [NetCDF] (Network Common Data Form) - Data Exchange Standard of the Climate and Forecasting community,
-
-
 _http://www.unidata.ucar.edu/software/netcdf/_
-
 
 [Snyder, 1987] Map Projections – A Working Manual – Snyder, John P., Professional Paper 1395, U.S. Geological Survey, 1987
 
@@ -1001,6 +945,7 @@ _http://www.unidata.ucar.edu/software/netcdf/_
 
 [WMO] _www.wmo.int_ – World Meteorological Organization
 
+<<<
 [appendix]
 == Abstract Test Suite - (normative) 
  
@@ -1064,7 +1009,8 @@ c) [underline]#Test Method#: Check that each instance of a spatial object type i
 
 NOTE See Section 5.4.1 of this document.
 
-*A.6 Information Accessibility Conformance Class*
+[discrete]
+=== *A.6 Information Accessibility Conformance Class*
 
 *A.6.2 CRS publication test*
 
@@ -1084,7 +1030,8 @@ c) [underline]#Test method#: Check whether the register with the identifiers of 
 
 NOTE Further technical information is given in section 6 of this document.
 
-*A.9 Technical Guideline Conformance Class*
+[discrete]
+=== *A.9 Technical Guideline Conformance Class*
 
 *A.9.2 CRS http URI test*
 
