@@ -2978,7 +2978,7 @@ Performance shall be measured consistently based on sample reference requests to
  
 To respect long running operations, the number of requests may be reduced. In such cases, a new request can be issued maximum 6 minutes after the previous request has finished.
 
-_Example 53: Performance tests for long-running operations_
+*_Example 53: Performance tests for long-running operations_*
 
 _If a previous Get Spatial Data Set operation requesting a 1 GB data set was issued at 8:00 and lasts until 8:30, the next reference request shall be issued at the latest at 8:36._
 
@@ -3046,7 +3046,7 @@ According to Figure 6, the performance requirements are described by the followi
 
 * _t~last~ ≤ x/2  d  max (y/0.5, z/500)  x/2 = x  d  max( y/0.5 , z/500)_
 * _t~last~ – x – d ≤ max( y/0.5 , z/500)_
-* latexmath:[\frac{y}{t_{\text{last}} - x - d} \geq 0.5\ \left\lbrack MB/s \right\rbrack\text{ or }\frac{z}{t_{\text{last}} - x - d} \geq 500\ \lbrack(objects|descriptions)\ /s\rbrack]
+* image::./media/image12.png[image, align=left]
 
 where,
 
@@ -3075,9 +3075,9 @@ _t~first~ – x_ and shall be maximum d (10 seconds or 30 seconds depending on o
 
 The throughput of the "maintained sustained response" is
 
-latexmath:[\frac{y}{t_{\text{last}} - x - d}] and shall be greater than *0.5 MB/s or*
+image::.media/image13.png[image, align=left] and shall be greater than *0.5 MB/s or*
 
-latexmath:[$\frac{z}{t_{\text{last}} - x - d}] and shall be greater than *500 spatial objects / descriptions per second.*
+image::./media/image14.png[image, align=left] and shall be greater than *500 spatial objects / descriptions per second.*
 
 All in normal situation, which shall be identified by the 90% best performing sample reference requests.
 ====
