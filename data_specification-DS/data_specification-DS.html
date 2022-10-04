@@ -6384,7 +6384,7 @@ Performance shall be measured consistently based on sample reference requests to
 <p>To respect long running operations, the number of requests may be reduced. In such cases, a new request can be issued maximum 6 minutes after the previous request has finished.</p>
 </div>
 <div class="paragraph">
-<p><em>Example 53: Performance tests for long-running operations</em></p>
+<p><strong><em>Example 53: Performance tests for long-running operations</em></strong></p>
 </div>
 <div class="paragraph">
 <p><em>If a previous Get Spatial Data Set operation requesting a 1 GB data set was issued at 8:00 and lasts until 8:30, the next reference request shall be issued at the latest at 8:36.</em></p>
@@ -6537,7 +6537,7 @@ For Get Spatial Object operations, the sample reference request is recommended t
 <p><em>t<sub>last</sub> – x – d ≤ max( y/0.5 , z/500)</em></p>
 </li>
 <li>
-<p>\(\frac{y}{t_{\text{last}} - x - d} \geq 0.5\ \left\lbrack MB/s \right\rbrack\text{ or }\frac{z}{t_{\text{last}} - x - d} \geq 500\ \lbrack(objects|descriptions)\ /s\rbrack\)</p>
+<p>image::./media/image12.png[image, align=left]</p>
 </li>
 </ul>
 </div>
@@ -6586,10 +6586,10 @@ Evaluation and assessment criteria:</p>
 <p>The throughput of the "maintained sustained response" is</p>
 </div>
 <div class="paragraph">
-<p>\(\frac{y}{t_{\text{last}} - x - d}\) and shall be greater than <strong>0.5 MB/s or</strong></p>
+<p>image::.media/image13.png[image, align=left] and shall be greater than <strong>0.5 MB/s or</strong></p>
 </div>
 <div class="paragraph">
-<p>\($\frac{z}{t_{\text{last}} - x - d}\) and shall be greater than <strong>500 spatial objects / descriptions per second.</strong></p>
+<p>image::./media/image14.png[image, align=left] and shall be greater than <strong>500 spatial objects / descriptions per second.</strong></p>
 </div>
 <div class="paragraph">
 <p>All in normal situation, which shall be identified by the 90% best performing sample reference requests.</p>
