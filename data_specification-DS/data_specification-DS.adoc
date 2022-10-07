@@ -3046,23 +3046,24 @@ According to Figure 6, the performance requirements are described by the followi
 
 * _t~last~ ≤ x/2  d  max (y/0.5, z/500)  x/2 = x  d  max( y/0.5 , z/500)_
 * _t~last~ – x – d ≤ max( y/0.5 , z/500)_
-* image::./media/image12.png[image, align=left]
+* y/(t~last~ -x -d) ≥ 0.5[MB/s]
 
 where,
 
-_t~first~_ is the measured duration of time between initiating the request and receiving the initial byte of the response in seconds,
+[cols=","]
+|===
+|_t~first~_ |is the measured duration of time between initiating the request and receiving the initial byte of the response in seconds,
+|_t~last~_ |is the measured duration of time between initiating the request and receiving the last byte of the response in seconds,
 
-_t~last~_ is the measured duration of time between initiating the request and receiving the last byte of the response in seconds,
-
-*d* is the time required to send the initial response at service side and shall be set to
-
+|*d* |is the time required to send the initial response at service side and shall be set to
 10 seconds (operations: Get Download Service Metadata, Describe Spatial Data Set, Describe Spatial Object Type) or 30 seconds (operations: Get Spatial Data Set, Get Spatial Object),
 
-*x* is the time estimated for the network latency (x=0s if measured at the service side).
+|*x* |is the time estimated for the network latency (x=0s if measured at the service side).
 
-*y* is the size of data in MB,
+|*y* |is the size of data in MB,
 
-*z* is the size of data in count of objects or object descriptions,
+|*z* |is the size of data in count of objects or object descriptions,
+|===
 
 [IMPORTANT]
 ====
@@ -3075,9 +3076,9 @@ _t~first~ – x_ and shall be maximum d (10 seconds or 30 seconds depending on o
 
 The throughput of the "maintained sustained response" is
 
-image::.media/image13.png[image, align=left] and shall be greater than *0.5 MB/s or*
+y/t~last~ -x -d and shall be greater than *0.5 MB/s* or
 
-image::./media/image14.png[image, align=left] and shall be greater than *500 spatial objects / descriptions per second.*
+z/t~last~ -x -d and shall be greater than *500 spatial objects / descriptions per second.*
 
 All in normal situation, which shall be identified by the 90% best performing sample reference requests.
 ====
