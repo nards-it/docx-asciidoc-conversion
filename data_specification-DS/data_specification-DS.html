@@ -6537,34 +6537,46 @@ For Get Spatial Object operations, the sample reference request is recommended t
 <p><em>t<sub>last</sub> – x – d ≤ max( y/0.5 , z/500)</em></p>
 </li>
 <li>
-<p>image::./media/image12.png[image, align=left]</p>
+<p>y/(t<sub>last</sub> -x -d) ≥ 0.5[MB/s]</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p>where,</p>
 </div>
-<div class="paragraph">
-<p><em>t<sub>first</sub></em> is the measured duration of time between initiating the request and receiving the initial byte of the response in seconds,</p>
-</div>
-<div class="paragraph">
-<p><em>t<sub>last</sub></em> is the measured duration of time between initiating the request and receiving the last byte of the response in seconds,</p>
-</div>
-<div class="paragraph">
-<p><strong>d</strong> is the time required to send the initial response at service side and shall be set to</p>
-</div>
-<div class="paragraph">
-<p>10 seconds (operations: Get Download Service Metadata, Describe Spatial Data Set, Describe Spatial Object Type) or 30 seconds (operations: Get Spatial Data Set, Get Spatial Object),</p>
-</div>
-<div class="paragraph">
-<p><strong>x</strong> is the time estimated for the network latency (x=0s if measured at the service side).</p>
-</div>
-<div class="paragraph">
-<p><strong>y</strong> is the size of data in MB,</p>
-</div>
-<div class="paragraph">
-<p><strong>z</strong> is the size of data in count of objects or object descriptions,</p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>t<sub>first</sub></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is the measured duration of time between initiating the request and receiving the initial byte of the response in seconds,</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>t<sub>last</sub></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is the measured duration of time between initiating the request and receiving the last byte of the response in seconds,</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>d</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is the time required to send the initial response at service side and shall be set to<br>
+10 seconds (operations: Get Download Service Metadata, Describe Spatial Data Set, Describe Spatial Object Type) or 30 seconds (operations: Get Spatial Data Set, Get Spatial Object),</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>x</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is the time estimated for the network latency (x=0s if measured at the service side).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>y</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is the size of data in MB,</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>z</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is the size of data in count of objects or object descriptions</p></td>
+</tr>
+</tbody>
+</table>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -6586,10 +6598,10 @@ Evaluation and assessment criteria:</p>
 <p>The throughput of the "maintained sustained response" is</p>
 </div>
 <div class="paragraph">
-<p>image::.media/image13.png[image, align=left] and shall be greater than <strong>0.5 MB/s or</strong></p>
+<p>y/t<sub>last</sub> -x -d and shall be greater than <strong>0.5 MB/s</strong> or</p>
 </div>
 <div class="paragraph">
-<p>image::./media/image14.png[image, align=left] and shall be greater than <strong>500 spatial objects / descriptions per second.</strong></p>
+<p>z/t<sub>last</sub> -x -d and shall be greater than <strong>500 spatial objects / descriptions per second.</strong></p>
 </div>
 <div class="paragraph">
 <p>All in normal situation, which shall be identified by the 90% best performing sample reference requests.</p>
