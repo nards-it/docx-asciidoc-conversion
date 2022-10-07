@@ -3062,7 +3062,7 @@ where,
 
 |*y* |is the size of data in MB,
 
-|*z* |is the size of data in count of objects or object descriptions,
+|*z* |is the size of data in count of objects or object descriptions
 |===
 
 [IMPORTANT]
