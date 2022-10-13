@@ -562,10 +562,9 @@ _Annex II, Section 2.2.2_
 (...)
 
 (3) The grid shall be based on the ETRS89-GRS80 geodetic coordinate reference system.
-+
-The origin of the grid shall coincide with the intersection point of the Equator with the Greenwich Meridian (GRS80 latitude φ=0; GRS80 longitude λ=0).
-+
-The grid orientation shall be south-north and west-east according to the net defined by the meridians and parallels of the GRS80 ellipsoid.
+	
+	The origin of the grid shall coincide with the intersection point of the Equator with the Greenwich Meridian (GRS80 latitude φ=0; GRS80 longitude λ=0).
+	The grid orientation shall be south-north and west-east according to the net defined by the meridians and parallels of the GRS80 ellipsoid.
 (...)
 ====
 
