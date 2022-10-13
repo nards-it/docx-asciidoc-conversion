@@ -449,8 +449,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1 id="_d2_8_i_2_data_specification_on_geographical_grid_systems_technical_guidelines" class="discrete">D2.8.I.2 Data Specification on Geographical Grid Systems – Technical Guidelines</h1>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 17%;">
+<col style="width: 83%;">
 </colgroup>
 <tbody>
 <tr>
@@ -614,6 +614,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.</p>
 </div>
+<div style="page-break-after: always;"></div>
 <h2 id="_geographical_grid_systems_executive_summary" class="discrete">Geographical Grid Systems – Executive Summary</h2>
 <div class="paragraph">
 <p><em>Geographical grid systems</em> are included in Annex I, which means that they are considered as reference data, i.e. data that constitute the spatial frame for linking and/or pointing to other information that belong to specific thematic fields as defined in the INSPIRE Annexes II and III.</p>
@@ -642,6 +643,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>This document provided the basis for a number of requirements that have been included in the Implementing Rule on interoperability of spatial data sets and services. These elements are clearly indicated in the document as "IR Requirements". The other parts of the documents give clarification, background information and examples and are intended as part of the technical guidance documents accompanying the Implementing Rules.</p>
 </div>
+<div style="page-break-after: always;"></div>
 <h2 id="_acknowledgements" class="discrete">Acknowledgements</h2>
 <div class="paragraph">
 <p>Many individuals and organisations have contributed to the development of these Guidelines.</p>
@@ -932,6 +934,7 @@ Unit H06: Digital Earth and Reference Data<br>
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="_how_the_technical_guidelines_map_to_the_implementing_rules">2.6. How the Technical Guidelines map to the Implementing Rules</h3>
@@ -1047,7 +1050,6 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>NOTE For more information on specification scopes, see [ISO 19131:2007], clause 8 and Annex D.</p>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1389,19 +1391,11 @@ For the unambiguous referencing and identification of a grid cell, the cell code
 <p>(1) When gridded data is delivered using geodetic coordinates the multi-resolution grid defined in this Section may be used as a geo-referencing framework.<br>
 (&#8230;&#8203;)</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic" start="3">
-<li>
-<p>The grid shall be based on the ETRS89-GRS80 geodetic coordinate reference system.</p>
 <div class="paragraph">
-<p>The origin of the grid shall coincide with the intersection point of the Equator with the Greenwich Meridian (GRS80 latitude φ=0; GRS80 longitude λ=0).</p>
-</div>
-<div class="paragraph">
-<p>The grid orientation shall be south-north and west-east according to the net defined by the meridians and parallels of the GRS80 ellipsoid.<br>
+<p>(3) The grid shall be based on the ETRS89-GRS80 geodetic coordinate reference system.<br>
+	The origin of the grid shall coincide with the intersection point of the Equator with the Greenwich Meridian (GRS80 latitude φ=0; GRS80 longitude λ=0).<br>
+	The grid orientation shall be south-north and west-east according to the net defined by the meridians and parallels of the GRS80 ellipsoid.<br>
 (&#8230;&#8203;)</p>
-</div>
-</li>
-</ol>
 </div>
 </td>
 </tr>
@@ -1486,19 +1480,11 @@ For the unambiguous referencing and identification of a grid cell, the cell code
 <strong>Zoned Geographic Grid</strong></p>
 </div>
 <div class="paragraph">
-<p>(&#8230;&#8203;)</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic" start="2">
-<li>
-<p>The resolution levels are defined in Table 1.<br>
+<p>(&#8230;&#8203;)<br>
+(2) The resolution levels are defined in Table 1.<br>
+(&#8230;&#8203;)<br>
+(7) This grid shall be subdivided in zones. The south-north resolution of the grid shall have equal angular spacing. The west-east resolution of the grid shall be established as the product of angular spacing multiplied by the factor of the zone as defined in Table 1.<br>
 (&#8230;&#8203;)</p>
-</li>
-<li>
-<p>This grid shall be subdivided in zones. The south-north resolution of the grid shall have equal angular spacing. The west-east resolution of the grid shall be established as the product of angular spacing multiplied by the factor of the zone as defined in Table 1.<br>
-(&#8230;&#8203;)</p>
-</li>
-</ol>
 </div>
 </td>
 </tr>
