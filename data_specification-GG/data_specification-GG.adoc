@@ -30,7 +30,7 @@ image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** *In
 [discrete]
 = D2.8.I.2 Data Specification on Geographical Grid Systems – Technical Guidelines
 
-[cols=",",]
+[width="100%",cols="17%,83%",]
 |===
 |*Title* |D2.8.I.2 Data Specification on _Geographical Grid Systems_ – Technical Guidelines
 |*Creator* |INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems
@@ -113,6 +113,7 @@ By listing a number of requirements and making the necessary recommendations, th
 
 In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.
 
+<<<
 [discrete]
 == Geographical Grid Systems – Executive Summary
 
@@ -134,6 +135,7 @@ Both grids are multi-resolution grids, associated with predefined resolution lev
 
 This document provided the basis for a number of requirements that have been included in the Implementing Rule on interoperability of spatial data sets and services. These elements are clearly indicated in the document as "IR Requirements". The other parts of the documents give clarification, background information and examples and are intended as part of the technical guidance documents accompanying the Implementing Rules.
 
+<<<
 [discrete]
 == Acknowledgements
 
@@ -278,6 +280,7 @@ NOTE Gridded data are often also referred to as "raster data". A raster is defin
 |WMTS|Web Map Tile Service
 |===
 
+<<<
 === How the Technical Guidelines map to the Implementing Rules
 
 The schematic diagram in Figure 1 gives an overview of the relationships between the INSPIRE legal acts (the INSPIRE Directive and Implementing Rules) and the INSPIRE Technical Guidelines. The INSPIRE Directive and Implementing Rules include legally binding requirements that describe, usually on an abstract level, _what_ Member States must implement.
@@ -345,7 +348,7 @@ This data specification does not distinguish different specification scopes, but
 
 NOTE For more information on specification scopes, see [ISO 19131:2007], clause 8 and Annex D.
 
-<<<
+
 == Identification information
 
 These Technical Guidelines are identified by the following URI:
@@ -557,8 +560,8 @@ _Annex II, Section 2.2.2_
 
 (1) When gridded data is delivered using geodetic coordinates the multi-resolution grid defined in this Section may be used as a geo-referencing framework.
 (...)
-[arabic, start=3]
-. The grid shall be based on the ETRS89-GRS80 geodetic coordinate reference system.
+
+(3) The grid shall be based on the ETRS89-GRS80 geodetic coordinate reference system.
 +
 The origin of the grid shall coincide with the intersection point of the Equator with the Greenwich Meridian (GRS80 latitude φ=0; GRS80 longitude λ=0).
 +
@@ -599,11 +602,9 @@ _Annex II, Section 2.2.2_
 *Zoned Geographic Grid*
 
 (...)
-[arabic, start=2]
-. The resolution levels are defined in Table 1.
+(2) The resolution levels are defined in Table 1.
 (...)
-[arabic, start=7]
-. This grid shall be subdivided in zones. The south-north resolution of the grid shall have equal angular spacing. The west-east resolution of the grid shall be established as the product of angular spacing multiplied by the factor of the zone as defined in Table 1.
+(7) This grid shall be subdivided in zones. The south-north resolution of the grid shall have equal angular spacing. The west-east resolution of the grid shall be established as the product of angular spacing multiplied by the factor of the zone as defined in Table 1.
 (...)
 
 ====
