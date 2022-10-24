@@ -7,9 +7,9 @@
 |3|Technical Guidance for the implementation of INSPIRE Download Services| |Final revision|
 |4|Elevation|EL|Done|Published|
 |5|Coordinate reference systems|RS|Done|Published|
-|6|Geographical grid systems|GG|
-|7|Land use|LU|
-|8|Hydrography|HY|
+|6|Geographical grid systems|GG|Done|Published|
+|7|Land use|LU|Final revision
+|8|Hydrography|HY|Final revision
 |9|Environmental monitoring facilities|EF|
 |10|Protected sites|PS|
 |11|Technical Guidance for the implementation of INSPIRE Discovery Services| |
