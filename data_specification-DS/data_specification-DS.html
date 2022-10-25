@@ -6560,7 +6560,7 @@ For Get Spatial Object operations, the sample reference request is recommended t
 <p><em>t<sub>last</sub> – x – d ≤ max (y/0.5, z/500)</em></p>
 </li>
 <li>
-<p>y/(t<sub>last</sub> -x -d) ≥ 0.5 [MB/s] or z/(t<sub>last</sub> -x -d) ≥ 500 [(objects|descriptions)/s]</p>
+<p><em>y/(t<sub>last</sub> -x -d) ≥ 0.5</em> [MB/s] or <em>z/(t<sub>last</sub> -x -d) ≥ 500</em> [(objects|descriptions)/s]</p>
 </li>
 </ul>
 </div>
@@ -6621,10 +6621,10 @@ Evaluation and assessment criteria:</p>
 <p>The throughput of the "maintained sustained response" is</p>
 </div>
 <div class="paragraph">
-<p>y/t<sub>last</sub> -x -d and shall be greater than <strong>0.5 MB/s</strong> or</p>
+<p><em>y/t<sub>last</sub> -x -d</em> and shall be greater than <strong>0.5 MB/s</strong> or</p>
 </div>
 <div class="paragraph">
-<p>z/t<sub>last</sub> -x -d and shall be greater than <strong>500 spatial objects / descriptions per second.</strong></p>
+<p><em>z/t<sub>last</sub> -x -d</em> and shall be greater than <strong>500 spatial objects / descriptions per second.</strong></p>
 </div>
 <div class="paragraph">
 <p>All in normal situation, which shall be identified by the 90% best performing sample reference requests.</p>
@@ -6720,12 +6720,12 @@ till complete download finished</th>
 <p><strong>TG Requirement 75</strong><br>
 Capacity shall be measured consistently based on sample reference request packages to a given service.</p>
 </div>
+<div class="paragraph">
+<p>Requests shall be made to the service at the rate of 10 new requests per second, using different types of requests according to the profile of the sample reference request packages. This rate shall be sustained throughout a measurement timeframe of 1 minute. In order to provide consistent and comparable measures, the capacity test shall restrict the number of requests being processed at any one time to a maximum of 50. A measurement shall take place at least once before launching the service in a production environment and monitored at regular intervals thereof to ensure that the compliance with the capacity requirement is still ensured.</p>
+</div>
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>Requests shall be made to the service at the rate of 10 new requests per second, using different types of requests according to the profile of the sample reference request packages. This rate shall be sustained throughout a measurement timeframe of 1 minute. In order to provide consistent and comparable measures, the capacity test shall restrict the number of requests being processed at any one time to a maximum of 50. A measurement shall take place at least once before launching the service in a production environment and monitored at regular intervals thereof to ensure that the compliance with the capacity requirement is still ensured.</p>
 </div>
 <div class="paragraph">
 <p>NOTE The result of capacity measurements in a production system may be ambiguous due to the amount of user load that the service processes at the same time and therefore it is recommended capacity tests to be processed during maintenance time frames only.</p>
