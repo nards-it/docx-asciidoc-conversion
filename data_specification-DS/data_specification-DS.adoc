@@ -3047,7 +3047,7 @@ According to Figure 6, the performance requirements are described by the followi
 
 * _t~last~ ≤ x/2 + d + max (y/0.5, z/500) + x/2 = x + d + max (y/0.5, z/500)_
 * _t~last~ – x – d ≤ max (y/0.5, z/500)_
-* y/(t~last~ -x -d) ≥ 0.5 [MB/s] or z/(t~last~ -x -d) ≥ 500 [(objects|descriptions)/s]
+* _y/(t~last~ -x -d) ≥ 0.5_ [MB/s] or _z/(t~last~ -x -d) ≥ 500_ [(objects|descriptions)/s]
 
 where,
 
@@ -3077,9 +3077,9 @@ _t~first~ – x_ and shall be maximum d (10 seconds or 30 seconds depending on o
 
 The throughput of the "maintained sustained response" is
 
-y/t~last~ -x -d and shall be greater than *0.5 MB/s* or
+_y/t~last~ -x -d_ and shall be greater than *0.5 MB/s* or
 
-z/t~last~ -x -d and shall be greater than *500 spatial objects / descriptions per second.*
+_z/t~last~ -x -d_ and shall be greater than *500 spatial objects / descriptions per second.*
 
 All in normal situation, which shall be identified by the 90% best performing sample reference requests.
 ====
@@ -3113,10 +3113,9 @@ _"The minimum number of simultaneous requests to a download service to be served
 ====
 *TG Requirement 75*
 Capacity shall be measured consistently based on sample reference request packages to a given service.
-====
-
  
 Requests shall be made to the service at the rate of 10 new requests per second, using different types of requests according to the profile of the sample reference request packages. This rate shall be sustained throughout a measurement timeframe of 1 minute. In order to provide consistent and comparable measures, the capacity test shall restrict the number of requests being processed at any one time to a maximum of 50. A measurement shall take place at least once before launching the service in a production environment and monitored at regular intervals thereof to ensure that the compliance with the capacity requirement is still ensured.
+====
 
 NOTE The result of capacity measurements in a production system may be ambiguous due to the amount of user load that the service processes at the same time and therefore it is recommended capacity tests to be processed during maintenance time frames only.
 
