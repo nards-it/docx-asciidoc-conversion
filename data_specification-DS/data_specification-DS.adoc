@@ -3040,14 +3040,14 @@ According to Figure 6, the performance requirements are described by the followi
 
 *Initial byte:*
 
-* _t~first~ ≤ x/2  d  x/2 = x  d_
+* _t~first~ ≤ x/2 + d + x/2 = x + d_
 * _t~first~ – x ≤ d_
 
 *Last byte:*
 
-* _t~last~ ≤ x/2  d  max (y/0.5, z/500)  x/2 = x  d  max( y/0.5 , z/500)_
-* _t~last~ – x – d ≤ max( y/0.5 , z/500)_
-* y/(t~last~ -x -d) ≥ 0.5[MB/s]
+* _t~last~ ≤ x/2 + d + max (y/0.5, z/500) + x/2 = x + d + max (y/0.5, z/500)_
+* _t~last~ – x – d ≤ max (y/0.5, z/500)_
+* y/(t~last~ -x -d) ≥ 0.5 [MB/s] or z/(t~last~ -x -d) ≥ 500 [(objects|descriptions)/s]
 
 where,
 
