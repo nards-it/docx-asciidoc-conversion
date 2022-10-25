@@ -28,7 +28,7 @@ image:media/image1.png[image,width=107,height=107] **INSPIRE** *Infrastructure f
 [discrete]
 = Technical Guidance for the implementation of INSPIRE Download Services
 
-[cols=",",]
+[width="100%",cols="17%,83%"]
 |===
 |*Title* |Technical Guidance for the implementation of INSPIRE Download Services
 |*Creator* |Initial Operating Capability Task Force for Network Services
@@ -46,6 +46,12 @@ image:media/image1.png[image,width=107,height=107] **INSPIRE** *Infrastructure f
 |*Relation* |COMMISSION REGULATION (EU) No 1088/2010 of 23 November 2010 amending Regulation (EC) No 976/2009 as regards download services and transformation services
 |*Coverage* |Project duration
 |===
+
+<<<
+[discrete]
+== Table of Contents
+toc::[]
+
 
 :sectnums:
 
@@ -121,7 +127,10 @@ This Technical Guidance concerns the INSPIRE Download Services. The Technical Gu
 
 _Note that while the guidance in this document meets all the download service requirements for Annex I themes it may not be so suitable for some of the data in Annex II and III themes. If later data specifications relating to Annex II or Annex III themes should require additional functionality, like those covered by the OGC Web Coverage Service (WCS) or the OGC Sensor Observation Service (SOS), this Technical Guidance document will be extended accordingly. Likewise, other implementations (e.g. Linked Data) may be considered in future extensions of this Technical Guidance._
 
+[cols="",]
+|===
 This document will be publicly available as a 'non-paper', as it does not represent an official position of the Commission, and as such cannot be invoked in the context of legal procedures.
+|===
 
 *Legal Notice*
 
@@ -210,10 +219,6 @@ Added new sub-section 7.10 for WFS metadata in case of hybrid Atom/WFS implement
 
 |===
 
-<<<
-[discrete]
-= Table of Contents
-toc::[]
 
 <<<
 == Introduction
