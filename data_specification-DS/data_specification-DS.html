@@ -1129,7 +1129,7 @@ data with a direct or indirect reference to a specific location or geographic ar
 identifiable collection of spatial data [INSPIRE Directive]</p>
 </li>
 <li>
-<p>*dataset *<br>
+<p><strong>dataset</strong><br>
 short term sometimes used instead of 'spatial dataset', same meaning as 'spatial dataset'.</p>
 </li>
 </ol>
@@ -1201,6 +1201,7 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="_verbal_forms_for_the_expression_of_provisions">3.3. Verbal forms for the expression of provisions</h3>
@@ -2532,12 +2533,12 @@ Allows the declaration, by a Public Authority or a Third Party, of the availabil
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>_A network service [Download Service] metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported_.</pre>
+<pre>A network service [Download Service] metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported.</pre>
 </div>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>_A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. If the requested language is not supported by the service, then this parameter shall be ignored._</pre>
+<pre>A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. If the requested language is not supported by the service, then this parameter shall be ignored.</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2550,10 +2551,7 @@ Allows the declaration, by a Public Authority or a Third Party, of the availabil
 <p><em>Note: This section is entirely informative and is here simply to assist with practical implementations. It has no legal basis and is not any way intended to supplement, modify or replace any legally binding statements made elsewhere.</em></p>
 </div>
 <div class="paragraph">
-<p>The milestones (including dates) for implementation of all INSPIRE Services are outlined in the INSPIRE Implementation Roadmap which can be found at:</p>
-</div>
-<div class="paragraph">
-<p><a href="http://inspire.jrc.ec.europa.eu/index.cfm/pageid/44" class="bare">http://inspire.jrc.ec.europa.eu/index.cfm/pageid/44</a></p>
+<p>The milestones (including dates) for implementation of all INSPIRE Services are outlined in the INSPIRE Implementation Roadmap which can be found at: <a href="http://inspire.jrc.ec.europa.eu/index.cfm/pageid/44" class="bare">http://inspire.jrc.ec.europa.eu/index.cfm/pageid/44</a></p>
 </div>
 <div class="paragraph">
 <p>In order to provide clear Technical Guidance for implementation it is useful to expand upon the meaning and practical implications of the roadmap milestones that relate to Download Services.</p>
@@ -3810,8 +3808,8 @@ The bounding box of the dataset described by a feed entry should be provided usi
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;!-- CRSs in which the pre-defined Dataset is available --&gt;
-&lt;category term="http://www.opengis.net/def/crs/EPSG/0/25832"  label="ETRS89 / UTM zone 32N"/&gt;
-&lt;category term="http://www.opengis.net/def/crs/EPSG/0/4258"      label="ETRS89"/&gt;</code></pre>
+&lt;category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="ETRS89 / UTM zone 32N"/&gt;
+&lt;category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/&gt;</code></pre>
 </div>
 </div>
 <div class="admonitionblock important">
@@ -5503,13 +5501,15 @@ The name of this parameter shall be "LANGUAGE". The parameter values are based o
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>Schema:</p>
+<p><em>Schema</em>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>[OCG-GetCapabilities-Request]&amp;LANGUAGE=&lt;ISO 639-2/B alpha 3 code&gt;</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>[OCG-GetCapabilities-Request]&amp;LANGUAGE=&lt;ISO 639-2/B alpha 3 code&gt;</p>
-</div>
-<div class="paragraph">
-<p>Example:</p>
+<p><em>Example</em>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
