@@ -848,7 +848,7 @@ The Spatial Data Set Identifier parameter is defined in the Network Service regu
 
 The following table demonstrates how the Spatial Data Set Identifier is mapped between the Atom and WFS based Technical Guidance and the corresponding ISO metadata of the spatial data set. The Spatial Data Set Identifier parameter maps to either the RS_Identifier or the MD_Identifier depending on what type of Spatial Data Set Identifier is used in the corresponding ISO metadata.
 
-[cols=",,,",options="header",]
+[width="100%", cols="10%,30%,30%,30%",options="header",]
 |===
 | |*INSPIRE Download Service* |*RS_Identifier* |*MD_Identifier*
 |*WFS* |inspire_dls:SpatialDataSetIdentifier/inspire_common:Code |gmd:RS_Identifier/code |gmd:MD_Identifier/code
@@ -920,7 +920,7 @@ The milestones in Table 15 (below) can be interpreted to mean that datasets shou
 
 For the latest dates of these milestones please refer to the INSPIRE Implementation Roadmap.
 
-[cols=",,,",options="header",]
+[width="100%", cols="10%,30%,30%,30%",options="header",]
 |===
 | |*_Milestone_* |*_Article*_* |*_Technical Guidance_*
 |*MS1* |*Member States shall provide the Download Services with initial operating capability* |16 |For _Annex I and II_ datasets, Download Services shall be provided, although these services need not fully comply with the Network Services implementing rules at this point. The _data_ delivered by these services do not need to comply with the thematic Data Specifications.
@@ -936,7 +936,7 @@ For the latest dates of these milestones please refer to the INSPIRE Implementat
 
 The milestones in Table 16 (below) can be interpreted to mean that datasets should be made available for download via Download Services in a way that is _compliant_ with the requirements of the Data Specifications as well as the Network Services requirements.
 
-[cols=",,,",options="header",]
+[width="100%", cols="10%,30%,30%,30%",options="header",]
 |===
 | |*_Milestone_* |*_Article*_* |*_Technical Guidance_*
 |*MS4* |*Implementation of Commission Regulation (EU) No 102/2011 of 4 February 2011 amending Regulation (EU) No 1089/2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial datasets and services for newly collected and extensively restructured Annex I spatial datasets available* |7§3, 9(a) |Newly collected or extensively restructured Annex I datasets shall be made available via Download Services in a way that is compliant with both Data Specifications and Network Services requirements.
@@ -978,7 +978,7 @@ _TG Recommendation 1 to_ _TG Recommendation 12_
 
 An operational implementation of an INSPIRE Atom based Download Service implementation is available on the INSPIRE Geoportal:
 
-[cols=",",]
+[cols="20%,80%"]
 |===
 |Demo |http://inspire-geoportal.ec.europa.eu/demos/ccm/
 |Top feed |http://inspire-geoportal.ec.europa.eu/demos/ccm/democcmdownloadservice.atom.en.xml
@@ -2469,7 +2469,7 @@ The HTTP/GET binding of the GetCapabilities-Operation is extended by an addition
 The name of this parameter shall be "LANGUAGE". The parameter values are based on ISO 639-2/B alpha 3 codes as used in [*INS MDTG*].
 ====
 
-[cols=",,,",options="header",]
+[cols="15%,40%,15%,30%",options="header"]
 |===
 |*Parameter Name* |*Parameter Value* |*Mandatory for a Client Request?* |*Mandatory support by the Service?*
 |LANGUAGE a|
@@ -3051,7 +3051,7 @@ According to Figure 6, the performance requirements are described by the followi
 
 where,
 
-[cols=","]
+[cols="15%,85%"]
 |===
 |_t~first~_ |is the measured duration of time between initiating the request and receiving the initial byte of the response in seconds,
 |_t~last~_ |is the measured duration of time between initiating the request and receiving the last byte of the response in seconds,
@@ -3088,7 +3088,7 @@ All in normal situation, which shall be identified by the 90% best performing s
 
 With a network latency set to _x_ = 5s, the duration _t~first~_ from issuing the request at client side till the first byte returned to the client side shall be _t~first~_ ≤ 35 seconds and the duration _t~last~_ from issuing a request at client side till the complete download (last byte returned) to the client side depends on the size of the data set and shall be according to one of the tables below:
 
-[cols=",,,,",options="header",]
+[cols="20%,29%,2%,20%,29&",options="header",]
 |===
 |size of data set |Maximum duration 
 till complete download finished | |size of 
