@@ -53,10 +53,7 @@ image:media/image1.png[image,width=107,height=107] **INSPIRE** *Infrastructure f
 toc::[]
 
 
-:sectnums:
-
 <<<
-[discrete]
 == Acknowledgements
 
 Many individuals and organisations have contributed to the development of these Guidelines.
@@ -88,7 +85,6 @@ http://ec.europa.eu/dgs/jrc/
 http://inspire.jrc.ec.europa.eu/
 
 <<<
-[discrete]
 == Foreword
 
 Directive 2007/2/EC of the European Parliament and of the Council [*Directive 2007/2/EC*], adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment. INSPIRE will make available relevant, harmonised and quality geographic information to support the formulation, implementation, monitoring and evaluation of policies and activities, which have a direct or indirect impact on the environment.
@@ -137,7 +133,6 @@ This document will be publicly available as a 'non-paper', as it does not repres
 Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.
 
 <<<
-[discrete]
 == Revision History
 
 [cols=",,,",options="header",]
@@ -219,7 +214,7 @@ Added new sub-section 7.10 for WFS metadata in case of hybrid Atom/WFS implement
 
 |===
 
-
+:sectnums:
 <<<
 == Introduction
 
