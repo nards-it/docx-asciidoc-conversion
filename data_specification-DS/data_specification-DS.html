@@ -6541,7 +6541,7 @@ For Get Spatial Object operations, the sample reference request is recommended t
 <div class="ulist">
 <ul>
 <li>
-<p><em>t<sub>first</sub> ≤ x/2  d  x/2 = x  d</em></p>
+<p><em>t<sub>first</sub> ≤ x/2 + d + x/2 = x + d</em></p>
 </li>
 <li>
 <p><em>t<sub>first</sub> – x ≤ d</em></p>
@@ -6554,13 +6554,13 @@ For Get Spatial Object operations, the sample reference request is recommended t
 <div class="ulist">
 <ul>
 <li>
-<p><em>t<sub>last</sub> ≤ x/2  d  max (y/0.5, z/500)  x/2 = x  d  max( y/0.5 , z/500)</em></p>
+<p><em>t<sub>last</sub> ≤ x/2 + d + max (y/0.5, z/500) + x/2 = x + d + max (y/0.5, z/500)</em></p>
 </li>
 <li>
-<p><em>t<sub>last</sub> – x – d ≤ max( y/0.5 , z/500)</em></p>
+<p><em>t<sub>last</sub> – x – d ≤ max (y/0.5, z/500)</em></p>
 </li>
 <li>
-<p>y/(t<sub>last</sub> -x -d) ≥ 0.5[MB/s]</p>
+<p>y/(t<sub>last</sub> -x -d) ≥ 0.5 [MB/s] or z/(t<sub>last</sub> -x -d) ≥ 500 [(objects|descriptions)/s]</p>
 </li>
 </ul>
 </div>
