@@ -290,7 +290,7 @@ network services should make it possible to discover, transform, view and downlo
 data with a direct or indirect reference to a specific location or geographic area [INSPIRE Directive]
 . *spatial dataset*
 identifiable collection of spatial data [INSPIRE Directive]
-. *dataset *
+. *dataset*
 short term sometimes used instead of 'spatial dataset', same meaning as 'spatial dataset'.
 
 === Abbreviations
@@ -313,6 +313,7 @@ short term sometimes used instead of 'spatial dataset', same meaning as 'spatial
 |WFS|Web Feature Service, referring to ISO 19142
 |===
 
+<<<
 === Verbal forms for the expression of provisions
 
 In accordance with the ISO rules for drafting, the following verbal forms shall be interpreted in the given way:
@@ -886,9 +887,9 @@ If a WFS service does not conform to Part A of [*INS NS,* Annex IV], it cannot o
 The Network Services Regulation requires that multilingual aspects for network services are supported [*INS NS*]. As there is no standard way to deal with multilingualism within the current ISO or OGC specifications, the following basic principles shall be used for INSPIRE Network Services (including Download Services):
 
 
-    _A network service [Download Service] metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported_.
+    A network service [Download Service] metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported.
 
-    _A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. If the requested language is not supported by the service, then this parameter shall be ignored._
+    A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. If the requested language is not supported by the service, then this parameter shall be ignored.
 
 
 For each relevant Conformance Class in this document these statements are defined as requirements and additional implementation guidance is given.
@@ -897,9 +898,7 @@ For each relevant Conformance Class in this document these statements are define
 
 _Note: This section is entirely informative and is here simply to assist with practical implementations. It has no legal basis and is not any way intended to supplement, modify or replace any legally binding statements made elsewhere._
 
-The milestones (including dates) for implementation of all INSPIRE Services are outlined in the INSPIRE Implementation Roadmap which can be found at:
-
-http://inspire.jrc.ec.europa.eu/index.cfm/pageid/44
+The milestones (including dates) for implementation of all INSPIRE Services are outlined in the INSPIRE Implementation Roadmap which can be found at: http://inspire.jrc.ec.europa.eu/index.cfm/pageid/44
 
 In order to provide clear Technical Guidance for implementation it is useful to expand upon the meaning and practical implications of the roadmap milestones that relate to Download Services.
 
@@ -1590,8 +1589,8 @@ The category element shall be used within the feed entry to indicate the CRSs in
 *_Example 21: Example CRS descriptions_*
 [source, xml]
 <!-- CRSs in which the pre-defined Dataset is available -->
-<category term="http://www.opengis.net/def/crs/EPSG/0/25832"  label="ETRS89 / UTM zone 32N"/>
-<category term="http://www.opengis.net/def/crs/EPSG/0/4258"      label="ETRS89"/>	
+<category term="http://www.opengis.net/def/crs/EPSG/0/25832" label="ETRS89 / UTM zone 32N"/>
+<category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>	
 
 [IMPORTANT]
 ====
@@ -2510,11 +2509,11 @@ Regional languages are also included in this list.
 *Table 20: Language parameter*
 
 ====
-Schema:
-
+_Schema_:
+[source]
 [OCG-GetCapabilities-Request]&LANGUAGE=<ISO 639-2/B alpha 3 code>
 
-Example:
+_Example_:
 
 [source]
 http://inspire.network.service.example/service?SERVICE=[...]&VERSION=[...]&LANGUAGE=eng
