@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.18">
-<title>Introduction</title>
+<title>Acknowledgements</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -446,8 +446,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1 id="_technical_guidance_for_the_implementation_of_inspire_download_services" class="discrete">Technical Guidance for the implementation of INSPIRE Download Services</h1>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 17%;">
+<col style="width: 83%;">
 </colgroup>
 <tbody>
 <tr>
@@ -513,7 +513,161 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 <div style="page-break-after: always;"></div>
-<h2 id="_acknowledgements" class="discrete">Acknowledgements</h2>
+<h2 id="_table_of_contents" class="discrete">Table of Contents</h2>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_acknowledgements">Acknowledgements</a></li>
+<li><a href="#_foreword">Foreword</a></li>
+<li><a href="#_revision_history">Revision History</a></li>
+<li><a href="#_introduction">1. Introduction</a></li>
+<li><a href="#_normative_references">2. Normative references</a></li>
+<li><a href="#_terms_and_abbreviations">3. Terms and abbreviations</a>
+<ul class="sectlevel2">
+<li><a href="#_terms">3.1. Terms</a></li>
+<li><a href="#_abbreviations">3.2. Abbreviations</a></li>
+<li><a href="#_verbal_forms_for_the_expression_of_provisions">3.3. Verbal forms for the expression of provisions</a></li>
+<li><a href="#_references">3.4. References</a></li>
+<li><a href="#_future_updates_of_this_document">3.5. Future updates of this document</a></li>
+</ul>
+</li>
+<li><a href="#_inspire_download_services">4. INSPIRE Download Services</a>
+<ul class="sectlevel2">
+<li><a href="#_how_the_technical_guidance_maps_to_the_implementing_rules">4.1. How the Technical Guidance maps to the Implementing Rules</a>
+<ul class="sectlevel3">
+<li><a href="#_mapping_the_atom_based_technical_guidance_to_the_implementing_rules">4.1.1. Mapping the Atom-based Technical Guidance to the Implementing Rules</a></li>
+<li><a href="#_mapping_the_wfs_based_technical_guidance_to_the_implementing_rules">4.1.2. Mapping the WFS-based Technical Guidance to the Implementing Rules</a></li>
+<li><a href="#_mapping_of_spatial_data_set_identifier_parameter">4.1.3. Mapping of Spatial Data Set Identifier parameter</a></li>
+</ul>
+</li>
+<li><a href="#_conformance_classes_for_download_services_technical_guidance">4.2. Conformance Classes for Download Services Technical Guidance</a></li>
+<li><a href="#_language_requirements">4.3. Language Requirements</a></li>
+<li><a href="#_implementation_roadmap_for_download_services">4.4. Implementation Roadmap for Download Services</a>
+<ul class="sectlevel3">
+<li><a href="#_roadmap_for_non_interoperable_download_services">4.4.1. Roadmap for "non-interoperable" Download Services</a></li>
+<li><a href="#_roadmap_for_interoperable_download_services">4.4.2. Roadmap for "interoperable" Download Services</a></li>
+<li><a href="#_illustrative_roadmap_for_all_download_services">4.4.3. Illustrative Roadmap for all Download Services</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_atom_implementation_of_pre_defined_dataset_download_service">5. Atom Implementation of Pre-defined Dataset Download Service</a>
+<ul class="sectlevel2">
+<li><a href="#_atom_download_service_feed_containing_an_entry_for_a_pre_defined_dataset">5.1. Atom "Download Service Feed" containing an entry for a Pre-defined dataset</a>
+<ul class="sectlevel3">
+<li><a href="#_download_service_feed_feed_title_element">5.1.1. Download Service Feed: feed 'title' element</a></li>
+<li><a href="#_download_service_feed_feed_subtitle_element">5.1.2. Download Service Feed: feed 'subtitle' element</a></li>
+<li><a href="#_download_service_feed_feed_link_element_service_metadata">5.1.3. Download Service Feed: feed 'link' element – service metadata</a></li>
+<li><a href="#_download_service_feed_feed_link_element_self_reference">5.1.4. Download Service Feed: feed 'link' element – self-reference</a></li>
+<li><a href="#_download_service_feed_feed_link_element_opensearch_description_document">5.1.5. Download Service Feed: feed 'link' element – OpenSearch Description Document</a></li>
+<li><a href="#_download_service_feed_feed_link_element_alternative_languages">5.1.6. Download Service Feed: feed 'link' element – alternative languages</a></li>
+<li><a href="#_download_service_feed_feed_link_element_alternative_representation_formats">5.1.7. Download Service Feed: feed 'link' element – alternative representation formats</a></li>
+<li><a href="#_download_service_feed_feed_id_element">5.1.8. Download Service Feed: feed 'id' element</a></li>
+<li><a href="#_download_service_feed_feed_rights_element">5.1.9. Download Service Feed: feed 'rights' element</a></li>
+<li><a href="#_download_service_feed_feed_updated_element">5.1.10. Download Service Feed: feed 'updated' element</a></li>
+<li><a href="#_download_service_feed_feed_author_element">5.1.11. Download Service Feed: feed 'author' element</a></li>
+<li><a href="#_download_service_feed_feed_entry_element">5.1.12. Download Service Feed: feed 'entry' element</a></li>
+<li><a href="#_download_service_feed_entry_inspire_identifier_elements">5.1.13. Download Service Feed: entry INSPIRE identifier elements</a></li>
+<li><a href="#_download_service_feed_entry_link_to_dataset_metadata_record">5.1.14. Download Service Feed: entry 'link' to dataset metadata record</a></li>
+<li><a href="#_download_service_feed_entry_link_to_dataset_feed">5.1.15. Download Service Feed: entry 'link' to dataset feed</a></li>
+<li><a href="#_download_service_feed_entry_link_to_wfs_implementation_only_for_hybrid_implementations">5.1.16. Download Service Feed: entry 'link' to WFS implementation (only for "hybrid implementations")</a></li>
+<li><a href="#_download_service_feed_entry_additional_elements">5.1.17. Download Service Feed: entry, additional elements</a></li>
+<li><a href="#_download_service_feed_entry_summary_element">5.1.18. Download Service Feed: entry 'summary' element</a></li>
+<li><a href="#_download_service_feed_entry_georss_element">5.1.19. Download Service Feed: entry 'georss' element</a></li>
+<li><a href="#_download_service_feed_entry_category_element_crss">5.1.20. Download Service Feed: entry 'category' element – CRSs</a></li>
+</ul>
+</li>
+<li><a href="#_atom_dataset_feed_containing_download_links_to_a_pre_defined_dataset">5.2. Atom "Dataset feed" containing download links to a pre-defined dataset</a>
+<ul class="sectlevel3">
+<li><a href="#_dataset_feed_link_element_link_to_spatial_object_descriptions">5.2.1. Dataset Feed: 'link' element: link to Spatial Object descriptions</a></li>
+<li><a href="#_dataset_feed_optional_link_element_link_to_download_feed">5.2.2. Dataset Feed: optional 'link' element: link to Download feed</a></li>
+<li><a href="#_dataset_feed_entry_link_element_link_to_pre_defined_dataset">5.2.3. Dataset Feed: Entry 'link' element: link to pre-defined dataset</a></li>
+<li><a href="#_dataset_feed_guidance_for_datasets_which_contain_multiple_files">5.2.4. Dataset Feed: guidance for datasets which contain multiple files.</a></li>
+<li><a href="#_dataset_feed_guidance_on_media_types">5.2.5. Dataset Feed: guidance on media types</a></li>
+<li><a href="#_dataset_feed_entry_georss_element">5.2.6. Dataset Feed: entry 'georss' element</a></li>
+<li><a href="#_dataset_feed_entry_category_element">5.2.7. Dataset Feed: entry 'category' element</a></li>
+</ul>
+</li>
+<li><a href="#_language_requirements_for_atom_implementation">5.3. Language Requirements for Atom Implementation</a></li>
+<li><a href="#_opensearch_document_structure">5.4. OpenSearch Document structure.</a>
+<ul class="sectlevel3">
+<li><a href="#_opensearch_description_url_element_link_to_self">5.4.1. OpenSearch Description: 'Url' element: link to self</a></li>
+<li><a href="#_opensearch_description_generic_search_template">5.4.2. OpenSearch Description: Generic search template</a></li>
+<li><a href="#_opensearch_description_describe_spatial_data_set_operation_template">5.4.3. OpenSearch Description: Describe Spatial Data Set Operation template</a></li>
+<li><a href="#_opensearch_description_get_spatial_data_set_operation_template">5.4.4. OpenSearch Description: Get Spatial Data Set Operation template</a></li>
+<li><a href="#_opensearch_description_spatial_dataset_identifiers">5.4.5. OpenSearch Description: Spatial Dataset Identifiers</a></li>
+<li><a href="#_opensearch_description_available_languages">5.4.6. OpenSearch Description: Available Languages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_web_feature_service_and_filter_encoding_implementation_of_pre_defined_dataset_download_service">6. Web Feature Service and Filter Encoding Implementation of Pre-defined Dataset Download Service</a>
+<ul class="sectlevel2">
+<li><a href="#_conformance_to_iso_19142_simple_wfs_conformance_class">6.1. Conformance to ISO 19142 'Simple WFS' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19143_query_conformance_class">6.2. Conformance to ISO 19143 'Query' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19142_http_get_conformance_class">6.3. Conformance to ISO 19142 'HTTP GET' Conformance Class</a></li>
+<li><a href="#_stored_query_support">6.4. Stored Query Support</a></li>
+<li><a href="#_inspire_datasets_and_wfs_features">6.5. INSPIRE Datasets and WFS Features</a></li>
+<li><a href="#_publishing_inspire_metadata_using_owsextendedcapabilities">6.6. Publishing INSPIRE metadata using ows:ExtendedCapabilities</a></li>
+<li><a href="#_language_requirements_for_wfsfe_implementation_of_pre_defined_download">6.7. Language Requirements for WFS/FE Implementation of Pre-defined Download.</a>
+<ul class="sectlevel3">
+<li><a href="#_getcapabilities_operation_language_requirements">6.7.1. GetCapabilities-Operation (language requirements)</a></li>
+<li><a href="#_common_concept_for_other_operations_optional">6.7.2. Common concept for other operations (optional)</a></li>
+<li><a href="#_language_support_in_ows">6.7.3. Language support in OWS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_web_feature_service_and_filter_encoding_implementation_of_direct_access_download_service">7. Web Feature Service and Filter Encoding implementation of Direct Access Download Service.</a>
+<ul class="sectlevel2">
+<li><a href="#_necessary_elements_from_wfs_based_pre_defined_dataset_download_service">7.1. Necessary elements from WFS-based Pre-defined dataset download service</a></li>
+<li><a href="#_conformance_to_iso_19142_basic_wfs_conformance_class">7.2. Conformance to ISO 19142 'Basic WFS' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19143_ad_hoc_query_conformance_class">7.3. Conformance to ISO 19143 'Ad hoc Query' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19143_resource_identification_conformance_class">7.4. Conformance to ISO 19143 'Resource Identification' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19143_minimum_standard_filter_conformance_class">7.5. Conformance to ISO 19143 'Minimum Standard Filter' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19143_minimum_spatial_filter_conformance_class">7.6. Conformance to ISO 19143 'Minimum Spatial Filter' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19143_minimum_temporal_filter_conformance_class">7.7. Conformance to ISO 19143 'Minimum Temporal Filter' Conformance Class</a></li>
+<li><a href="#_conformance_to_iso_19143_minimum_xpath_conformance_class">7.8. Conformance to ISO 19143 'Minimum XPath' Conformance Class</a></li>
+<li><a href="#_language_requirements_for_direct_access_download_services">7.9. Language requirements for Direct Access Download Services</a>
+<ul class="sectlevel3">
+<li><a href="#_describefeaturetype_operation_language_requirements">7.9.1. DescribeFeatureType Operation (language requirements)</a></li>
+<li><a href="#_getfeature_operation_language_requirements">7.9.2. GetFeature Operation (language requirements)</a></li>
+</ul>
+</li>
+<li><a href="#_wfs_metadata_for_hybrid_implementations">7.10. WFS metadata for "hybrid implementations"</a></li>
+</ul>
+</li>
+<li><a href="#_quality_of_service">8. Quality of Service</a>
+<ul class="sectlevel2">
+<li><a href="#_general_requirements">8.1. General requirements</a></li>
+<li><a href="#_performance">8.2. Performance</a>
+<ul class="sectlevel3">
+<li><a href="#_implementation_requirements_mandated_by_the_implementing_rule">8.2.1. Implementation requirements mandated by the Implementing Rule</a></li>
+<li><a href="#_normalized_testing_procedure">8.2.2. Normalized testing procedure</a></li>
+</ul>
+</li>
+<li><a href="#_capacity">8.3. Capacity</a>
+<ul class="sectlevel3">
+<li><a href="#_implementation_requirements_mandated_by_the_implementing_rule_2">8.3.1. Implementation requirements mandated by the Implementing Rule</a></li>
+<li><a href="#_normalized_testing_procedure_2">8.3.2. Normalized testing procedure</a></li>
+</ul>
+</li>
+<li><a href="#_availability">8.4. Availability</a>
+<ul class="sectlevel3">
+<li><a href="#_implementation_requirements_mandated_by_the_implementing_rule_3">8.4.1. Implementation requirements mandated by the Implementing Rule</a></li>
+<li><a href="#_normalized_testing_procedure_3">8.4.2. Normalized testing procedure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_example_opensearch_script">Annex A: Example OpenSearch script</a></li>
+<li><a href="#_uml_atomopensearch_deployment_diagram">Annex B: UML Atom/OpenSearch Deployment Diagram</a></li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="sect1">
+<h2 id="_acknowledgements">Acknowledgements</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Many individuals and organisations have contributed to the development of these Guidelines.</p>
 </div>
@@ -552,7 +706,11 @@ Tel.: 39-0332-786759<br>
 <a href="http://inspire.jrc.ec.europa.eu/" class="bare">http://inspire.jrc.ec.europa.eu/</a></p>
 </div>
 <div style="page-break-after: always;"></div>
-<h2 id="_foreword" class="discrete">Foreword</h2>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_foreword">Foreword</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Directive 2007/2/EC of the European Parliament and of the Council [<strong>Directive 2007/2/EC</strong>], adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment. INSPIRE will make available relevant, harmonised and quality geographic information to support the formulation, implementation, monitoring and evaluation of policies and activities, which have a direct or indirect impact on the environment.</p>
 </div>
@@ -626,9 +784,16 @@ Tel.: 39-0332-786759<br>
 <div class="paragraph">
 <p><em>Note that while the guidance in this document meets all the download service requirements for Annex I themes it may not be so suitable for some of the data in Annex II and III themes. If later data specifications relating to Annex II or Annex III themes should require additional functionality, like those covered by the OGC Web Coverage Service (WCS) or the OGC Sensor Observation Service (SOS), this Technical Guidance document will be extended accordingly. Likewise, other implementations (e.g. Linked Data) may be considered in future extensions of this Technical Guidance.</em></p>
 </div>
-<div class="paragraph">
-<p>This document will be publicly available as a 'non-paper', as it does not represent an official position of the Commission, and as such cannot be invoked in the context of legal procedures.</p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This document will be publicly available as a 'non-paper', as it does not represent an official position of the Commission, and as such cannot be invoked in the context of legal procedures.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p><strong>Legal Notice</strong></p>
 </div>
@@ -636,7 +801,11 @@ Tel.: 39-0332-786759<br>
 <p>Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.</p>
 </div>
 <div style="page-break-after: always;"></div>
-<h2 id="_revision_history" class="discrete">Revision History</h2>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_revision_history">Revision History</h2>
+<div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -835,155 +1004,8 @@ Tel.: 39-0332-786759<br>
 </tbody>
 </table>
 <div style="page-break-after: always;"></div>
-<h1 id="_table_of_contents" class="discrete">Table of Contents</h1>
-<div id="toc" class="toc">
-<div id="toctitle" class="title"></div>
-<ul class="sectlevel1">
-<li><a href="#_introduction">1. Introduction</a></li>
-<li><a href="#_normative_references">2. Normative references</a></li>
-<li><a href="#_terms_and_abbreviations">3. Terms and abbreviations</a>
-<ul class="sectlevel2">
-<li><a href="#_terms">3.1. Terms</a></li>
-<li><a href="#_abbreviations">3.2. Abbreviations</a></li>
-<li><a href="#_verbal_forms_for_the_expression_of_provisions">3.3. Verbal forms for the expression of provisions</a></li>
-<li><a href="#_references">3.4. References</a></li>
-<li><a href="#_future_updates_of_this_document">3.5. Future updates of this document</a></li>
-</ul>
-</li>
-<li><a href="#_inspire_download_services">4. INSPIRE Download Services</a>
-<ul class="sectlevel2">
-<li><a href="#_how_the_technical_guidance_maps_to_the_implementing_rules">4.1. How the Technical Guidance maps to the Implementing Rules</a>
-<ul class="sectlevel3">
-<li><a href="#_mapping_the_atom_based_technical_guidance_to_the_implementing_rules">4.1.1. Mapping the Atom-based Technical Guidance to the Implementing Rules</a></li>
-<li><a href="#_mapping_the_wfs_based_technical_guidance_to_the_implementing_rules">4.1.2. Mapping the WFS-based Technical Guidance to the Implementing Rules</a></li>
-<li><a href="#_mapping_of_spatial_data_set_identifier_parameter">4.1.3. Mapping of Spatial Data Set Identifier parameter</a></li>
-</ul>
-</li>
-<li><a href="#_conformance_classes_for_download_services_technical_guidance">4.2. Conformance Classes for Download Services Technical Guidance</a></li>
-<li><a href="#_language_requirements">4.3. Language Requirements</a></li>
-<li><a href="#_implementation_roadmap_for_download_services">4.4. Implementation Roadmap for Download Services</a>
-<ul class="sectlevel3">
-<li><a href="#_roadmap_for_non_interoperable_download_services">4.4.1. Roadmap for "non-interoperable" Download Services</a></li>
-<li><a href="#_roadmap_for_interoperable_download_services">4.4.2. Roadmap for "interoperable" Download Services</a></li>
-<li><a href="#_illustrative_roadmap_for_all_download_services">4.4.3. Illustrative Roadmap for all Download Services</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_atom_implementation_of_pre_defined_dataset_download_service">5. Atom Implementation of Pre-defined Dataset Download Service</a>
-<ul class="sectlevel2">
-<li><a href="#_atom_download_service_feed_containing_an_entry_for_a_pre_defined_dataset">5.1. Atom "Download Service Feed" containing an entry for a Pre-defined dataset</a>
-<ul class="sectlevel3">
-<li><a href="#_download_service_feed_feed_title_element">5.1.1. Download Service Feed: feed 'title' element</a></li>
-<li><a href="#_download_service_feed_feed_subtitle_element">5.1.2. Download Service Feed: feed 'subtitle' element</a></li>
-<li><a href="#_download_service_feed_feed_link_element_service_metadata">5.1.3. Download Service Feed: feed 'link' element – service metadata</a></li>
-<li><a href="#_download_service_feed_feed_link_element_self_reference">5.1.4. Download Service Feed: feed 'link' element – self-reference</a></li>
-<li><a href="#_download_service_feed_feed_link_element_opensearch_description_document">5.1.5. Download Service Feed: feed 'link' element – OpenSearch Description Document</a></li>
-<li><a href="#_download_service_feed_feed_link_element_alternative_languages">5.1.6. Download Service Feed: feed 'link' element – alternative languages</a></li>
-<li><a href="#_download_service_feed_feed_link_element_alternative_representation_formats">5.1.7. Download Service Feed: feed 'link' element – alternative representation formats</a></li>
-<li><a href="#_download_service_feed_feed_id_element">5.1.8. Download Service Feed: feed 'id' element</a></li>
-<li><a href="#_download_service_feed_feed_rights_element">5.1.9. Download Service Feed: feed 'rights' element</a></li>
-<li><a href="#_download_service_feed_feed_updated_element">5.1.10. Download Service Feed: feed 'updated' element</a></li>
-<li><a href="#_download_service_feed_feed_author_element">5.1.11. Download Service Feed: feed 'author' element</a></li>
-<li><a href="#_download_service_feed_feed_entry_element">5.1.12. Download Service Feed: feed 'entry' element</a></li>
-<li><a href="#_download_service_feed_entry_inspire_identifier_elements">5.1.13. Download Service Feed: entry INSPIRE identifier elements</a></li>
-<li><a href="#_download_service_feed_entry_link_to_dataset_metadata_record">5.1.14. Download Service Feed: entry 'link' to dataset metadata record</a></li>
-<li><a href="#_download_service_feed_entry_link_to_dataset_feed">5.1.15. Download Service Feed: entry 'link' to dataset feed</a></li>
-<li><a href="#_download_service_feed_entry_link_to_wfs_implementation_only_for_hybrid_implementations">5.1.16. Download Service Feed: entry 'link' to WFS implementation (only for "hybrid implementations")</a></li>
-<li><a href="#_download_service_feed_entry_additional_elements">5.1.17. Download Service Feed: entry, additional elements</a></li>
-<li><a href="#_download_service_feed_entry_summary_element">5.1.18. Download Service Feed: entry 'summary' element</a></li>
-<li><a href="#_download_service_feed_entry_georss_element">5.1.19. Download Service Feed: entry 'georss' element</a></li>
-<li><a href="#_download_service_feed_entry_category_element_crss">5.1.20. Download Service Feed: entry 'category' element – CRSs</a></li>
-</ul>
-</li>
-<li><a href="#_atom_dataset_feed_containing_download_links_to_a_pre_defined_dataset">5.2. Atom "Dataset feed" containing download links to a pre-defined dataset</a>
-<ul class="sectlevel3">
-<li><a href="#_dataset_feed_link_element_link_to_spatial_object_descriptions">5.2.1. Dataset Feed: 'link' element: link to Spatial Object descriptions</a></li>
-<li><a href="#_dataset_feed_optional_link_element_link_to_download_feed">5.2.2. Dataset Feed: optional 'link' element: link to Download feed</a></li>
-<li><a href="#_dataset_feed_entry_link_element_link_to_pre_defined_dataset">5.2.3. Dataset Feed: Entry 'link' element: link to pre-defined dataset</a></li>
-<li><a href="#_dataset_feed_guidance_for_datasets_which_contain_multiple_files">5.2.4. Dataset Feed: guidance for datasets which contain multiple files.</a></li>
-<li><a href="#_dataset_feed_guidance_on_media_types">5.2.5. Dataset Feed: guidance on media types</a></li>
-<li><a href="#_dataset_feed_entry_georss_element">5.2.6. Dataset Feed: entry 'georss' element</a></li>
-<li><a href="#_dataset_feed_entry_category_element">5.2.7. Dataset Feed: entry 'category' element</a></li>
-</ul>
-</li>
-<li><a href="#_language_requirements_for_atom_implementation">5.3. Language Requirements for Atom Implementation</a></li>
-<li><a href="#_opensearch_document_structure">5.4. OpenSearch Document structure.</a>
-<ul class="sectlevel3">
-<li><a href="#_opensearch_description_url_element_link_to_self">5.4.1. OpenSearch Description: 'Url' element: link to self</a></li>
-<li><a href="#_opensearch_description_generic_search_template">5.4.2. OpenSearch Description: Generic search template</a></li>
-<li><a href="#_opensearch_description_describe_spatial_data_set_operation_template">5.4.3. OpenSearch Description: Describe Spatial Data Set Operation template</a></li>
-<li><a href="#_opensearch_description_get_spatial_data_set_operation_template">5.4.4. OpenSearch Description: Get Spatial Data Set Operation template</a></li>
-<li><a href="#_opensearch_description_spatial_dataset_identifiers">5.4.5. OpenSearch Description: Spatial Dataset Identifiers</a></li>
-<li><a href="#_opensearch_description_available_languages">5.4.6. OpenSearch Description: Available Languages</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_web_feature_service_and_filter_encoding_implementation_of_pre_defined_dataset_download_service">6. Web Feature Service and Filter Encoding Implementation of Pre-defined Dataset Download Service</a>
-<ul class="sectlevel2">
-<li><a href="#_conformance_to_iso_19142_simple_wfs_conformance_class">6.1. Conformance to ISO 19142 'Simple WFS' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19143_query_conformance_class">6.2. Conformance to ISO 19143 'Query' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19142_http_get_conformance_class">6.3. Conformance to ISO 19142 'HTTP GET' Conformance Class</a></li>
-<li><a href="#_stored_query_support">6.4. Stored Query Support</a></li>
-<li><a href="#_inspire_datasets_and_wfs_features">6.5. INSPIRE Datasets and WFS Features</a></li>
-<li><a href="#_publishing_inspire_metadata_using_owsextendedcapabilities">6.6. Publishing INSPIRE metadata using ows:ExtendedCapabilities</a></li>
-<li><a href="#_language_requirements_for_wfsfe_implementation_of_pre_defined_download">6.7. Language Requirements for WFS/FE Implementation of Pre-defined Download.</a>
-<ul class="sectlevel3">
-<li><a href="#_getcapabilities_operation_language_requirements">6.7.1. GetCapabilities-Operation (language requirements)</a></li>
-<li><a href="#_common_concept_for_other_operations_optional">6.7.2. Common concept for other operations (optional)</a></li>
-<li><a href="#_language_support_in_ows">6.7.3. Language support in OWS</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_web_feature_service_and_filter_encoding_implementation_of_direct_access_download_service">7. Web Feature Service and Filter Encoding implementation of Direct Access Download Service.</a>
-<ul class="sectlevel2">
-<li><a href="#_necessary_elements_from_wfs_based_pre_defined_dataset_download_service">7.1. Necessary elements from WFS-based Pre-defined dataset download service</a></li>
-<li><a href="#_conformance_to_iso_19142_basic_wfs_conformance_class">7.2. Conformance to ISO 19142 'Basic WFS' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19143_ad_hoc_query_conformance_class">7.3. Conformance to ISO 19143 'Ad hoc Query' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19143_resource_identification_conformance_class">7.4. Conformance to ISO 19143 'Resource Identification' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19143_minimum_standard_filter_conformance_class">7.5. Conformance to ISO 19143 'Minimum Standard Filter' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19143_minimum_spatial_filter_conformance_class">7.6. Conformance to ISO 19143 'Minimum Spatial Filter' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19143_minimum_temporal_filter_conformance_class">7.7. Conformance to ISO 19143 'Minimum Temporal Filter' Conformance Class</a></li>
-<li><a href="#_conformance_to_iso_19143_minimum_xpath_conformance_class">7.8. Conformance to ISO 19143 'Minimum XPath' Conformance Class</a></li>
-<li><a href="#_language_requirements_for_direct_access_download_services">7.9. Language requirements for Direct Access Download Services</a>
-<ul class="sectlevel3">
-<li><a href="#_describefeaturetype_operation_language_requirements">7.9.1. DescribeFeatureType Operation (language requirements)</a></li>
-<li><a href="#_getfeature_operation_language_requirements">7.9.2. GetFeature Operation (language requirements)</a></li>
-</ul>
-</li>
-<li><a href="#_wfs_metadata_for_hybrid_implementations">7.10. WFS metadata for "hybrid implementations"</a></li>
-</ul>
-</li>
-<li><a href="#_quality_of_service">8. Quality of Service</a>
-<ul class="sectlevel2">
-<li><a href="#_general_requirements">8.1. General requirements</a></li>
-<li><a href="#_performance">8.2. Performance</a>
-<ul class="sectlevel3">
-<li><a href="#_implementation_requirements_mandated_by_the_implementing_rule">8.2.1. Implementation requirements mandated by the Implementing Rule</a></li>
-<li><a href="#_normalized_testing_procedure">8.2.2. Normalized testing procedure</a></li>
-</ul>
-</li>
-<li><a href="#_capacity">8.3. Capacity</a>
-<ul class="sectlevel3">
-<li><a href="#_implementation_requirements_mandated_by_the_implementing_rule_2">8.3.1. Implementation requirements mandated by the Implementing Rule</a></li>
-<li><a href="#_normalized_testing_procedure_2">8.3.2. Normalized testing procedure</a></li>
-</ul>
-</li>
-<li><a href="#_availability">8.4. Availability</a>
-<ul class="sectlevel3">
-<li><a href="#_implementation_requirements_mandated_by_the_implementing_rule_3">8.4.1. Implementation requirements mandated by the Implementing Rule</a></li>
-<li><a href="#_normalized_testing_procedure_3">8.4.2. Normalized testing procedure</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_example_opensearch_script">Annex A: Example OpenSearch script</a></li>
-<li><a href="#_uml_atomopensearch_deployment_diagram">Annex B: UML Atom/OpenSearch Deployment Diagram</a></li>
-</ul>
 </div>
-<div style="page-break-after: always;"></div>
+</div>
 <div class="sect1">
 <h2 id="_introduction">1. Introduction</h2>
 <div class="sectionbody">
