@@ -4,7 +4,7 @@
 |----|------------------------------------------------|-----|----|-------------|
 |1|Technical Guidance for the implementation of INSPIRE View Services| |Done|Published|
 |2|Soil|SO|Done|Published|
-|3|Technical Guidance for the implementation of INSPIRE Download Services| |Final revision|
+|3|Technical Guidance for the implementation of INSPIRE Download Services| |Done|Published|
 |4|Elevation|EL|Done|Published|
 |5|Coordinate reference systems|RS|Done|Published|
 |6|Geographical grid systems|GG|Done|Published|
