@@ -468,9 +468,9 @@ _Article 5_
 
 (...)
 
-2. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
+2) Types that are a sub-type of another type shall also include all this type's attributes and association roles.
 
-3. Abstract types shall not be instantiated.
+3) Abstract types shall not be instantiated.
 
 ====
 
@@ -760,7 +760,7 @@ _Article 10_
 
 (...)
 
-3. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
+3) Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
 
 ====
 
@@ -791,7 +791,7 @@ _Article 12_
 
 (...)
 
-3. Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
+3) Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
 
 ====
 
@@ -2252,7 +2252,7 @@ _Article 12_
 
 (...)
 
-2. All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
+2) All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
 
 ====
 
@@ -2516,7 +2516,6 @@ EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-eleme
 
 [source, xml]
 <gmd:DQ_ConformanceResult>
-
 <gmd:DQ_ConformanceResult>
 	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />
 	<gmd:explanation> (...) </gmd:explanation>
@@ -2525,6 +2524,7 @@ EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-eleme
 
 or (using a citation):
 
+[source, xml]
 <gmd:DQ_ConformanceResult>
 	<gmd:specification>
 		<gmd:CI_Citation>
@@ -2796,16 +2796,16 @@ Technical Guidelines
 |Example XML encoding a|
 [source, xml]
 <gmd:MD_Format>
-					<gmd:name>
-						<gco:CharacterString> <Theme Name> GML application schema </gco:CharacterString>
-					</gmd:name>
-					<gmd:version>
-						<gco:CharacterString>x.y(.z), GML, version 3.2.1</gco:CharacterString>
-					</gmd:version>
-					<gmd:specification>
-						<gco:CharacterString>D2.8.II/III.x Data Specification on <Theme Name> –
+	<gmd:name>
+	    <gco:CharacterString> <Theme Name> GML application schema </gco:CharacterString>
+	</gmd:name>
+	<gmd:version>
+	    <gco:CharacterString>x.y(.z), GML, version 3.2.1</gco:CharacterString>
+	</gmd:version>
+	<gmd:specification>
+		<gco:CharacterString>D2.8.II/III.x Data Specification on <Theme Name> –
 Technical Guidelines</gco:CharacterString>
-					</gmd:specification>
+	</gmd:specification>
 </gmd:MD_Format>
 
 |Comments |
@@ -2828,7 +2828,7 @@ Technical Guidelines</gco:CharacterString>
 |Example XML encoding a|
 [source, xml]
 <gmd:characterSet>
-				<gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode>
+	<gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode>
 </gmd:characterSet>
 
 
@@ -3545,7 +3545,7 @@ The geometry is rendered for points or representativePoints as a square with a s
  
 *Style with geometry being a surface*
 
-[source, xml] 
+[source, xml]
   <sld:NamedLayer>
     <se:Name>EF.EnvironmentalMonitoringNetworks</se:Name>
     <sld:UserStyle>
@@ -3560,7 +3560,7 @@ The geometry is rendered for points or representativePoints as a square with a s
         <se:Rule>
           <se:PolygonSymbolizer>
             <se:Geometry>
-              <ogc:PropertyName>geometry</ogc:PropertyName>
+                <ogc:PropertyName>geometry</ogc:PropertyName>
             </se:Geometry>
             <se:Fill/>
             <se:Stroke/>
@@ -5176,7 +5176,7 @@ a|
 
 The table below includes recommended values that may be used by data providers.
 
-[cols="",options="header",]
+[cols=""]
 |===
 a|
 *air*
@@ -5455,24 +5455,26 @@ a|image::./media/image59.jpeg[image,width=72,height=267, align=center]
 
 ==== _Mapping to EF theme terminology_
 
-* *Environmental Monitoring Facilities*
+[cols=","]
+|===
+2+a|* *Environmental Monitoring Facilities*
 
 image::./media/image27.png[image,width=623,height=629, align=center]
 
-* *ObservingCapability and Observation*
+a|* *ObservingCapability and Observation*
 
 image::./media/image28.png[image,width=548,height=528]
 
-For the ease of the example we have simplified the initial Sandre's hydrometric data model.
+a|For the ease of the example we have simplified the initial Sandre's hydrometric data model.
 
 For example, the featureOfInterest here is a simple location whereas in the initial model, it's a domain feature with its own attributes and associations.
 
 
-* *Water Monitoring Network*
+2+a|* *Water Monitoring Network*
 
 
 image::./media/image29.png[image,width=604,height=448, align=center]
-
+|===
 
 This network pertains to several national Monitoring Programmes
 
@@ -5584,9 +5586,9 @@ _http://www.slu.se/en/collaborative-centres-and-projects/nils/data-collection/fi
 ==== _Mapping to EF theme terminology_
 
 * *Environmental Monitoring Facilities*
-
++
 image::./media/image31.png[image,width=605,height=569, align=center]
-
++
 ** *Landscape square (5x5km)*
 +
 A Landscape square is an Environmental Monitoring Facility with an ObservingCapability defining the general aerial photo interpretation protocol
@@ -5648,23 +5650,30 @@ FOR EACH RADIUS DIFFERENT KINDS OF DATA ARE COLLECTED:
 
 Here we show how Observing Capabilities are attached to a specific _Environmental Monitoring Facilities_ instance. In this example, the _Environmental Monitoring Facilities_ instance describes a field inventory square. The Phenomenon being observed is the canopy cover of pine; the Process Used is aerial photo interpretation. The Feature of Interest is the 1x1km Field inventory square.
 
+[cols=","]
+|===
+2+a|
 image::./media/image33.png[image,width=754,height=473, align=center]
 
-image::./media/image34.png[image,width=643,height=552] 
+a|image::./media/image34.png[image,width=643,height=552] 
 
-In this diagram, the example above has been extended through the addition of an observation. This refers to the same Phenomenon, Process Used and Feature of Interest as the Observing Capability described above. In addition, it provides a result on the Range association, which contains the actual canopy cover of pine on the field inventory square.
-
+a|In this diagram, the example above has been extended through the addition of an observation. This refers to the same Phenomenon, Process Used and Feature of Interest as the Observing Capability described above. In addition, it provides a result on the Range association, which contains the actual canopy cover of pine on the field inventory square.
+|===
 
 * *Environmental Monitoring Facility with Observing Capabilities and Observations: Sample Plot*
 
 In the next example we show how Observing Capabilities are attached to a specific _Environmental Monitoring Facilities_ instance. In this example, the _Environmental Monitoring Facilities_ instance describes a Sample Plot, so a lower hierarchy level than shown in the previous example. The Phenomenon being observed is the occurrence of individual species from a checklist; the Process Used describes the field inventory methodology. The Feature of Interest is the Sample Plot.
 
+[cols=","]
+|===
+2+a|
 image::./media/image35.png[image,width=867,height=446, align=center]
 
+a|
 image::./media/image36.png[image,width=608,height=524] 
 
-In this diagram, the example above has been extended through the addition of an observation. This refers to the same Phenomenon and Process Used as the Observing Capability described above, but provides a different Feature of Interest representing the actual location of the individual species being reported. In addition, it provides a result on the Range association, which identifies which species (_Juncus anceps)_ was identified.
-
+a|In this diagram, the example above has been extended through the addition of an observation. This refers to the same Phenomenon and Process Used as the Observing Capability described above, but provides a different Feature of Interest representing the actual location of the individual species being reported. In addition, it provides a result on the Range association, which identifies which species (_Juncus anceps)_ was identified.
+|===
 
 * *Environmental Monitoring Facilities*
 
@@ -5734,11 +5743,12 @@ a|
 Each of the nine federal provinces, as well as Umweltbundesamt (background AQ monitoring network) operates an air quality database. Measurement data are transmitted every 30 minutes to the databases from the monitoring stations. The data-bases are equipped with tools for QA/QC of measurement data (visualisation, data correction, documentation of validation), for generating reports and other statistics, and for data exchange with other data-bases (national, EEA).
 a|
 image::./media/image42.png[NetworkStations,width=488,height=245]
-2+|
+2+a|
+
 * National air quality database
 +
 All Austrian air quality monitoring databases are connected by the AQ data network ("Immissionsdatenverbund", IDV), which enables NRT data transmission from the regional AQ data-bases to the national AQ data-base operated by Umweltbundesamt. Each monitoring network operator can retrieve data from each other by the AQ data network.
-
++
 Umweltbundesamt uses the data from all networks for national and international reporting.
 |===
 
