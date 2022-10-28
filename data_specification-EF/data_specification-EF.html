@@ -1601,15 +1601,11 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Types that are a sub-type of another type shall also include all this type&#8217;s attributes and association roles.</p>
-</li>
-<li>
-<p>Abstract types shall not be instantiated.</p>
-</li>
-</ol>
+<div class="paragraph">
+<p>2) Types that are a sub-type of another type shall also include all this type&#8217;s attributes and association roles.</p>
+</div>
+<div class="paragraph">
+<p>3) Abstract types shall not be instantiated.</p>
 </div>
 </td>
 </tr>
@@ -2173,12 +2169,8 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.</p>
-</li>
-</ol>
+<div class="paragraph">
+<p>3) Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.</p>
 </div>
 </td>
 </tr>
@@ -2230,12 +2222,8 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.</p>
-</li>
-</ol>
+<div class="paragraph">
+<p>3) Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.</p>
 </div>
 </td>
 </tr>
@@ -5807,12 +5795,8 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.</p>
-</li>
-</ol>
+<div class="paragraph">
+<p>2) All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.</p>
 </div>
 </td>
 </tr>
@@ -6465,40 +6449,40 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;gmd:DQ_ConformanceResult&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;gmd:DQ_ConformanceResult&gt;
+&lt;gmd:DQ_ConformanceResult&gt;
+	&lt;gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" /&gt;
+	&lt;gmd:explanation&gt; (...) &lt;/gmd:explanation&gt;
+	&lt;gmd:pass&gt; (...) &lt;/gmd:pass&gt;
+&lt;/gmd:DQ_ConformanceResult&gt;</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>&lt;gmd:DQ_ConformanceResult&gt;<br>
-	&lt;gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" /&gt;<br>
-	&lt;gmd:explanation&gt; (&#8230;&#8203;) &lt;/gmd:explanation&gt;<br>
-	&lt;gmd:pass&gt; (&#8230;&#8203;) &lt;/gmd:pass&gt;<br>
-&lt;/gmd:DQ_ConformanceResult&gt;</p>
 </div>
 <div class="paragraph">
 <p>or (using a citation):</p>
 </div>
-<div class="paragraph">
-<p>&lt;gmd:DQ_ConformanceResult&gt;<br>
-	&lt;gmd:specification&gt;<br>
-		&lt;gmd:CI_Citation&gt;<br>
-			&lt;gmd:title&gt;<br>
-				&lt;gco:CharacterString&gt;INSPIRE Data Specification on Environmental Monitoring Facilities – Technical Guidelines&lt;/gco:CharacterString&gt;<br>
-			&lt;/gmd:title&gt;<br>
-			&lt;gmd:date&gt;<br>
-				&lt;gmd:date&gt;<br>
-					&lt;gco:Date&gt;2013-01-23&lt;/gco:Date&gt;<br>
-				&lt;/gmd:date&gt;<br>
-				&lt;gmd:dateType&gt;<br>
-					&lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou<br>
-rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;<br>
-				&lt;/gmd:dateType&gt;<br>
-			&lt;/gmd:date&gt;<br>
-		&lt;/gmd:CI_Citation&gt;<br>
-	&lt;/gmd:specification&gt;<br>
-	&lt;gmd:explanation&gt; (&#8230;&#8203;) &lt;/gmd:explanation&gt;<br>
-	&lt;gmd:pass&gt; (&#8230;&#8203;) &lt;/gmd:pass&gt;<br>
-&lt;/gmd:DQ_ConformanceResult&gt;</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;gmd:DQ_ConformanceResult&gt;
+	&lt;gmd:specification&gt;
+		&lt;gmd:CI_Citation&gt;
+			&lt;gmd:title&gt;
+				&lt;gco:CharacterString&gt;INSPIRE Data Specification on Environmental Monitoring Facilities – Technical Guidelines&lt;/gco:CharacterString&gt;
+			&lt;/gmd:title&gt;
+			&lt;gmd:date&gt;
+				&lt;gmd:date&gt;
+					&lt;gco:Date&gt;2013-01-23&lt;/gco:Date&gt;
+				&lt;/gmd:date&gt;
+				&lt;gmd:dateType&gt;
+					&lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
+rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;
+				&lt;/gmd:dateType&gt;
+			&lt;/gmd:date&gt;
+		&lt;/gmd:CI_Citation&gt;
+	&lt;/gmd:specification&gt;
+	&lt;gmd:explanation&gt; (...) &lt;/gmd:explanation&gt;
+	&lt;gmd:pass&gt; (...) &lt;/gmd:pass&gt;
+&lt;/gmd:DQ_ConformanceResult&gt;</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>EXAMPLE 2: The XML snippets below show how to fill the <em>Specification</em> sub-element for documenting conformance with the CRS conformance class of the data specification on Addresses v3.0.1.</p>
@@ -7000,16 +6984,16 @@ Technical Guidelines</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;gmd:MD_Format&gt;
-					&lt;gmd:name&gt;
-						&lt;gco:CharacterString&gt; &lt;Theme Name&gt; GML application schema &lt;/gco:CharacterString&gt;
-					&lt;/gmd:name&gt;
-					&lt;gmd:version&gt;
-						&lt;gco:CharacterString&gt;x.y(.z), GML, version 3.2.1&lt;/gco:CharacterString&gt;
-					&lt;/gmd:version&gt;
-					&lt;gmd:specification&gt;
-						&lt;gco:CharacterString&gt;D2.8.II/III.x Data Specification on &lt;Theme Name&gt; –
+	&lt;gmd:name&gt;
+	    &lt;gco:CharacterString&gt; &lt;Theme Name&gt; GML application schema &lt;/gco:CharacterString&gt;
+	&lt;/gmd:name&gt;
+	&lt;gmd:version&gt;
+	    &lt;gco:CharacterString&gt;x.y(.z), GML, version 3.2.1&lt;/gco:CharacterString&gt;
+	&lt;/gmd:version&gt;
+	&lt;gmd:specification&gt;
+		&lt;gco:CharacterString&gt;D2.8.II/III.x Data Specification on &lt;Theme Name&gt; –
 Technical Guidelines&lt;/gco:CharacterString&gt;
-					&lt;/gmd:specification&gt;
+	&lt;/gmd:specification&gt;
 &lt;/gmd:MD_Format&gt;</code></pre>
 </div>
 </div></div></td>
@@ -7076,7 +7060,7 @@ Technical Guidelines&lt;/gco:CharacterString&gt;
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;gmd:characterSet&gt;
-				&lt;gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode"&gt;8859-2&lt;/gmd:MD_CharacterSetCode&gt;
+	&lt;gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode"&gt;8859-2&lt;/gmd:MD_CharacterSetCode&gt;
 &lt;/gmd:characterSet&gt;</code></pre>
 </div>
 </div></div></td>
@@ -8487,31 +8471,32 @@ Monitoring Networks</p>
 <div class="paragraph">
 <p><strong>Style with geometry being a surface</strong></p>
 </div>
-<div class="paragraph">
-<p>[source, xml] <br>
-  &lt;sld:NamedLayer&gt;<br>
-    &lt;se:Name&gt;EF.EnvironmentalMonitoringNetworks&lt;/se:Name&gt;<br>
-    &lt;sld:UserStyle&gt;<br>
-      &lt;se:Name&gt;EF.EnvironmentalMonitoringNetworks.Default.Surface&lt;/se:Name&gt;<br>
-      &lt;sld:IsDefault&gt;1&lt;/sld:IsDefault&gt;<br>
-      &lt;se:FeatureTypeStyle version="1.1.0"&gt;<br>
-        &lt;se:Description&gt;<br>
-          &lt;se:Title&gt;Environmental Monitoring Networks Default Style Surface&lt;/se:Title&gt;<br>
-          &lt;se:Abstract&gt;Style with geometry being a surface. The geometry is rendered using a 50% grey (#808080) fill and a solid black (#000000) outline with a stroke width of 1 pixel.&lt;/se:Abstract&gt;<br>
-        &lt;/se:Description&gt;<br>
-        &lt;se:FeatureTypeName&gt;EnvironmentalMonitoringNetwork&lt;/se:FeatureTypeName&gt;<br>
-        &lt;se:Rule&gt;<br>
-          &lt;se:PolygonSymbolizer&gt;<br>
-            &lt;se:Geometry&gt;<br>
-              &lt;ogc:PropertyName&gt;geometry&lt;/ogc:PropertyName&gt;<br>
-            &lt;/se:Geometry&gt;<br>
-            &lt;se:Fill/&gt;<br>
-            &lt;se:Stroke/&gt;<br>
-          &lt;/se:PolygonSymbolizer&gt;<br>
-        &lt;/se:Rule&gt;<br>
-      &lt;/se:FeatureTypeStyle&gt;<br>
-    &lt;/sld:UserStyle&gt;<br>
-  &lt;/sld:NamedLayer&gt;</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:NamedLayer&gt;
+    &lt;se:Name&gt;EF.EnvironmentalMonitoringNetworks&lt;/se:Name&gt;
+    &lt;sld:UserStyle&gt;
+      &lt;se:Name&gt;EF.EnvironmentalMonitoringNetworks.Default.Surface&lt;/se:Name&gt;
+      &lt;sld:IsDefault&gt;1&lt;/sld:IsDefault&gt;
+      &lt;se:FeatureTypeStyle version="1.1.0"&gt;
+        &lt;se:Description&gt;
+          &lt;se:Title&gt;Environmental Monitoring Networks Default Style Surface&lt;/se:Title&gt;
+          &lt;se:Abstract&gt;Style with geometry being a surface. The geometry is rendered using a 50% grey (#808080) fill and a solid black (#000000) outline with a stroke width of 1 pixel.&lt;/se:Abstract&gt;
+        &lt;/se:Description&gt;
+        &lt;se:FeatureTypeName&gt;EnvironmentalMonitoringNetwork&lt;/se:FeatureTypeName&gt;
+        &lt;se:Rule&gt;
+          &lt;se:PolygonSymbolizer&gt;
+            &lt;se:Geometry&gt;
+                &lt;ogc:PropertyName&gt;geometry&lt;/ogc:PropertyName&gt;
+            &lt;/se:Geometry&gt;
+            &lt;se:Fill/&gt;
+            &lt;se:Stroke/&gt;
+          &lt;/se:PolygonSymbolizer&gt;
+        &lt;/se:Rule&gt;
+      &lt;/se:FeatureTypeStyle&gt;
+    &lt;/sld:UserStyle&gt;
+  &lt;/sld:NamedLayer&gt;</code></pre>
+</div>
 </div></div></td>
 </tr>
 <tr>
@@ -11449,17 +11434,24 @@ This use case is not taking into account the generation of a reporting sheet com
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"><strong>air</strong><br>
-<br>
-[cols=","]<br>
-!===<br>
-!Name: !air<br>
-!===</th>
-</tr>
-</thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>air</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">air</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><strong>biota</strong></p>
@@ -12033,7 +12025,14 @@ This use case is not taking into account the generation of a reporting sheet com
 </div>
 <div class="sect3">
 <h4 id="_mapping_to_ef_theme_terminology">D.1.3. <em>Mapping to EF theme terminology</em></h4>
-<div class="ulist">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p><strong>Environmental Monitoring Facilities</strong></p>
@@ -12044,8 +12043,10 @@ This use case is not taking into account the generation of a reporting sheet com
 <div class="content">
 <img src="./media/image27.png" alt="image" width="623" height="629">
 </div>
-</div>
-<div class="ulist">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p><strong>ObservingCapability and Observation</strong></p>
@@ -12056,14 +12057,16 @@ This use case is not taking into account the generation of a reporting sheet com
 <div class="content">
 <img src="./media/image28.png" alt="image" width="548" height="528">
 </div>
-</div>
-<div class="paragraph">
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>For the ease of the example we have simplified the initial Sandre&#8217;s hydrometric data model.</p>
 </div>
 <div class="paragraph">
 <p>For example, the featureOfInterest here is a simple location whereas in the initial model, it&#8217;s a domain feature with its own attributes and associations.</p>
-</div>
-<div class="ulist">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><div class="content"><div class="ulist">
 <ul>
 <li>
 <p><strong>Water Monitoring Network</strong></p>
@@ -12074,7 +12077,10 @@ This use case is not taking into account the generation of a reporting sheet com
 <div class="content">
 <img src="./media/image29.png" alt="image" width="604" height="448">
 </div>
-</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>This network pertains to several national Monitoring Programmes</p>
 </div>
@@ -12280,9 +12286,6 @@ This use case is not taking into account the generation of a reporting sheet com
 <ul>
 <li>
 <p><strong>Environmental Monitoring Facilities</strong></p>
-</li>
-</ul>
-</div>
 <div class="imageblock text-center">
 <div class="content">
 <img src="./media/image31.png" alt="image" width="605" height="569">
@@ -12318,6 +12321,9 @@ This use case is not taking into account the generation of a reporting sheet com
 </div>
 <div class="paragraph">
 <p>Each observing capability results in Observations corresponding to the protocol applied.</p>
+</div>
+</li>
+</ul>
 </div>
 </li>
 </ul>
@@ -12421,19 +12427,31 @@ This use case is not taking into account the generation of a reporting sheet com
 <div class="paragraph">
 <p>Here we show how Observing Capabilities are attached to a specific <em>Environmental Monitoring Facilities</em> instance. In this example, the <em>Environmental Monitoring Facilities</em> instance describes a field inventory square. The Phenomenon being observed is the canopy cover of pine; the Process Used is aerial photo interpretation. The Feature of Interest is the 1x1km Field inventory square.</p>
 </div>
-<div class="imageblock text-center">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image33.png" alt="image" width="754" height="473">
 </div>
-</div>
-<div class="imageblock">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image34.png" alt="image" width="643" height="552">
 </div>
-</div>
-<div class="paragraph">
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>In this diagram, the example above has been extended through the addition of an observation. This refers to the same Phenomenon, Process Used and Feature of Interest as the Observing Capability described above. In addition, it provides a result on the Range association, which contains the actual canopy cover of pine on the field inventory square.</p>
-</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="ulist">
 <ul>
 <li>
@@ -12444,19 +12462,31 @@ This use case is not taking into account the generation of a reporting sheet com
 <div class="paragraph">
 <p>In the next example we show how Observing Capabilities are attached to a specific <em>Environmental Monitoring Facilities</em> instance. In this example, the <em>Environmental Monitoring Facilities</em> instance describes a Sample Plot, so a lower hierarchy level than shown in the previous example. The Phenomenon being observed is the occurrence of individual species from a checklist; the Process Used describes the field inventory methodology. The Feature of Interest is the Sample Plot.</p>
 </div>
-<div class="imageblock text-center">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image35.png" alt="image" width="867" height="446">
 </div>
-</div>
-<div class="imageblock">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image36.png" alt="image" width="608" height="524">
 </div>
-</div>
-<div class="paragraph">
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>In this diagram, the example above has been extended through the addition of an observation. This refers to the same Phenomenon and Process Used as the Observing Capability described above, but provides a different Feature of Interest representing the actual location of the individual species being reported. In addition, it provides a result on the Range association, which identifies which species (<em>Juncus anceps)</em> was identified.</p>
-</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="ulist">
 <ul>
 <li>
@@ -12593,11 +12623,19 @@ This use case is not taking into account the generation of a reporting sheet com
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">* National air quality database<br>
-+<br>
-All Austrian air quality monitoring databases are connected by the AQ data network ("Immissionsdatenverbund", IDV), which enables NRT data transmission from the regional AQ data-bases to the national AQ data-base operated by Umweltbundesamt. Each monitoring network operator can retrieve data from each other by the AQ data network.<br>
-<br>
-Umweltbundesamt uses the data from all networks for national and international reporting.</p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>National air quality database</p>
+<div class="paragraph">
+<p>All Austrian air quality monitoring databases are connected by the AQ data network ("Immissionsdatenverbund", IDV), which enables NRT data transmission from the regional AQ data-bases to the national AQ data-base operated by Umweltbundesamt. Each monitoring network operator can retrieve data from each other by the AQ data network.</p>
+</div>
+<div class="paragraph">
+<p>Umweltbundesamt uses the data from all networks for national and international reporting.</p>
+</div>
+</li>
+</ul>
+</div></div></td>
 </tr>
 </tbody>
 </table>
