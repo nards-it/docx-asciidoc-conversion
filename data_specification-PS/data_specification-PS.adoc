@@ -49,6 +49,7 @@ image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** *In
 |*Coverage* |Project duration
 |===
 
+<<<
 [discrete]
 == Foreword
 [discrete]
@@ -111,6 +112,7 @@ By listing a number of requirements and making the necessary recommendations, th
 
 In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.
 
+<<<
 [discrete]
 == Protected Sites – Executive Summary
 
