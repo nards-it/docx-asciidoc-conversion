@@ -3152,9 +3152,9 @@ http://inspire.ec.europa.eu/conformance-class/ir/ps/rs
 
 a) [.underline]#Purpose#: Verify whether each instance of a spatial object type is given with reference to one of the (geodetic) datums specified in the target specification.
 
-c) Reference: Annex II Section 1.2 of Commission Regulation No 1089/2010
+b) Reference: Annex II Section 1.2 of Commission Regulation No 1089/2010
 
-b) Test Method: Check whether each instance of a spatial object type specified in the application schema(s) in section 5 has been expressed using:
+c) Test Method: Check whether each instance of a spatial object type specified in the application schema(s) in section 5 has been expressed using:
 
 * the European Terrestrial Reference System 1989 (ETRS89) within its geographical scope; or
 * the International Terrestrial Reference System (ITRS) for areas beyond the ETRS89 geographical scope; or
@@ -3475,7 +3475,7 @@ The scenario for the Generate European Protected Sites Spatial Data Report is th
 
 [cols=",",]
 |===
-|Use Case Description |
+2+|*Use Case Description*
 |Name |Generate European Protected Sites Spatial Data Report
 |Priority |high
 |Description |The user analyzes cross-border datasets on protected sites (for example, those created in Use Case 5 up to a European extent by means of a GIS-application to create overview-maps and/or tabulations on protected sites data. The results will be part of special reports of different kinds such as progress in area coverage of protected sites per category in ther EU (indicators) and composite assessments of the implementation of the EU Directives at the European or biogeographical level
@@ -3525,7 +3525,7 @@ The scenario for the Naively Query and View Protected Sites use case is that a u
 
 [cols=",",]
 |===
-|Use Case Description |
+2+|*Use Case Description*
 |Name |Naively Query and View Protected Sites
 |Priority |High
 |Description |The user uses a publicly accessible (probably web based) GIS to zoom/pan to or find, by gazetteer search, the location of interest and display the data on screen.
@@ -3574,7 +3574,7 @@ The scenario for the Expertly Query, View, Visualise and Analyse Protected Sites
 
 [cols=",",]
 |===
-|Use Case Description |
+2+|*Use Case Description*
 |Name |Expertly Query, View, Visualise and Analyse Protected Sites
 |Priority |High
 |Description |The user creates a view of protected sites within the planning proposal area and assesses potential impacts.
@@ -3638,7 +3638,7 @@ The scenario for the Download Protected Sites Data use case is that a user would
 
 [cols=",",]
 |===
-|Use Case Description |
+2+|*Use Case Description*
 |Name |Download Protected Sites Data
 |Priority |Medium
 |Description |The user downloads protected sites data and associated metadata in a selected area and with selected feature types included.
@@ -3695,7 +3695,7 @@ This use case describes a generic process that is envisaged after INSPIRE is imp
 
 [cols=",",]
 |===
-|Use Case Description |
+2+|*Use Case Description*
 |Name |Provide protected sites data using INSPIRE data model
 |Priority |High
 |Description |The user is an EU member state, and prepares and provides its data using the INSPIRE specifications, in the form of a static data set,
@@ -3765,7 +3765,7 @@ The cumulative data layer contains GI boundaries for all designated SACs and SPA
 
 [cols=",",]
 |===
-|Use Case Description |
+2+|*Use Case Description*
 |Name |Provide UK Protected Sites Data to EEA (Current Workflow)
 |Priority |High
 |Description |The user (collating body) receives Protected Sites data and associated metadata from each country (region) within the Member State and creates a single contribution to the European reporting process.
@@ -3822,7 +3822,7 @@ Documentation
 
 [cols=",",]
 |===
-|Use Case Description |
+2+|*Use Case Description*
 |Name |Provide EEA Protected Sites Data for External Use (Current Workflow)
 |Priority |High
 |Description a|
