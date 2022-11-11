@@ -820,11 +820,11 @@ identificationInfo[1]/*/pointOfContact/*/role
 ===== Request Parameters
 
 [IMPORTANT]
-|===
+====
 *Implementation Requirement* *9*
 
 According to [*INS NS*, Annex II, Section 3.1] two parameters shall be supported by the service: Language, and Query.
-|===
+====
 
 [IMPORTANT]
 ====
@@ -1511,7 +1511,7 @@ The list of codes for the 23 official EU languages and EFTA Countries is:
 !Greek – *gre* !Slovenian – *slv*
 !Hungarian – *hun* !Spanish – *spa*
 !Irish – *gle* !Swedish – *swe*
-!Icelandic – *ice*
+!Icelandic – *ice* !
 !===
 The list of all the codes is defined at
 
