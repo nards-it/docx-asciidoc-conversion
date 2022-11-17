@@ -379,7 +379,7 @@ _Land Use_ theme is defined as the use and functions of a territory and it is de
 Two types of classification systems are supported by _Land Use_ theme, the (obligatory) Hierarchical INSPIRE Land Use Classification System which is a multi-level, classification system that will apply to the existing and planned land use; the (optional) specific classification system in use in a member state.
 |===
 
-[align-left]
+[align-right]
 Entry in the INSPIRE registry: _http://inspire.ec.europa.eu/theme/lu/_
 
 === Normative References
@@ -662,11 +662,10 @@ Article 5
 *Types*
 
 (...)
+[arabic,start=2]
+. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
 
-2. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
-
-3. Abstract types shall not be instantiated.
-
+. Abstract types shall not be instantiated.
 ====
 
 The use of UML conforms to ISO 19109 8.3 and ISO/TS 19103 with the exception that UML 2.1 instead of ISO/IEC 19501 is being used. The use of UML also conforms to ISO 19136 E.2.1.1.1-E.2.1.1.4.
@@ -765,18 +764,15 @@ The IRs distinguish the following types of code lists.
 Article 6
 *Code Lists and Enumerations*
 
-1) Code lists shall be of one of the following types, as specified in the Annexes:
-
-a) code lists whose allowed values comprise only the values specified in this Regulation;
-
-b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
-
-c) code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
-
-d) code lists, whose allowed values comprise any values defined by data providers.
+[arabic,start=1]
+. Code lists shall be of one of the following types, as specified in the Annexes:
+[loweralpha]
+.. code lists whose allowed values comprise only the values specified in this Regulation;
+.. code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
+.. code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
+.. code lists, whose allowed values comprise any values defined by data providers.
 
 For the purposes of points (b), (c) and (d), in addition to the allowed values, data providers may use the values specified in the relevant INSPIRE Technical Guidance document available on the INSPIRE web site of the Joint Research Centre.
-
 ====
 
 The type of code list is represented in the UML model through the tagged value _extensibility_, which can take the following values:
