@@ -6298,8 +6298,7 @@ Sections B2 to B5 identify the use cases considered relevant and express the req
 
 Users' information collection was sometimes heterogeneous, for these reason these four use cases have been fully documented using the INSPIRE template to reach a harmonization with other themes. Figure 31 provides an overview of the use cases regarding the type of land use that is required, the temporality of the required land use data, (either past, present of future land use) and the type of activities that requires land use data.
 
-image::./media/image49.png[image,width=215,height=151]image::./media/image50.png[image,width=258,height=151]
-image::./media/image51.png[image,width=226,height=151, align=center]
+image::./media/image49.png[image,width=215,height=151,align=center]
 
 [.text-center]
 *Figure 31 – Graphs of use cases study about lands involved, temporal dimension and context of use (framework).*
