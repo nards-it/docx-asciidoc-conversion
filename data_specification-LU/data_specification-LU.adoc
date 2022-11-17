@@ -949,7 +949,8 @@ _Article 10_
 
 (...)
 
-3. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
+[arabic.start=3]
+. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
 
 ====
 
@@ -978,8 +979,8 @@ _Article 12_
 *Other Requirements & Rules*
 
 (...)
-
-3. Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
+[arabic.start=3]
+. Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
 
 ====
 
@@ -1039,7 +1040,7 @@ The _Land Use_ theme is itself split up into four application schemas according 
 ** The Gridded _Land Use_ or GLU which correspond to a geo-referenced gridded version of an existing land use dataset.
 * The Planned _Land Use_ or PLU (Future Planned _Land Use_ in the INSPIRE definition), which is composed of spatial plans, defined by spatial planning authorities, depicting the possible utilization of the land in the future. This information could be modelled either as polygons,lines and points or as raster data.
 
-image::./media/image68.png[image,width=390,height=280, align=center]
+image::./media/image68.png[image, align=center]
 
 *Table 3 – Classification of the _Land Use_ application schemas according to their temporal reference and geometry definition*
 
