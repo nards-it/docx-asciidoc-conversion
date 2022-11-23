@@ -1203,7 +1203,7 @@ When the spatial reference of an administrative and social governmental service 
 |===
 |*GovernmentalService*
 a|
-1175[cols=","]
+[cols=","]
 !===
 !Name: !governmental service
 !Definition: !Administrative and social governmental services such as public administrations, civil protection sites, schools and hospitals provided by Public Administrative Bodies or by private institutions as far as they are covered by the scope of the INSPIRE directive. This scope is mapped to the values of the corresponding code list serviceType Value.
@@ -2047,7 +2047,7 @@ Sample entries (out of a total number of 28 entries):
 ...
 ** D11 - Incineration at sea
 ** D12 - Permanent storage (e.g. emplacement of containers in a mine, etc.)
-* D13 - Blending or mixing prior to submission to any of the operations numbered D 1 to D 12
+** D13 - Blending or mixing prior to submission to any of the operations numbered D 1 to D 12
 ** D14 - Repackaging prior to submission to any of the operations numbered D 1 to D 13
 ** D15 - Storage pending any of the operations numbered D 1 to D 14 (excluding temporary storage, pending collection, on the site where the waste is produced)
 
@@ -2064,7 +2064,7 @@ Sample entries (out of a total number of 839 entries):
 ...
 ** 20 03 06 - Waste from sewage cleaning
 ** 20 03 07 - Bulky waste
-* *20 03 99 - Municipal wastes not otherwise specified
+** 20 03 99 - Municipal wastes not otherwise specified
 
 * Eurostat Statistical Classification of Products by Activity in the European Economic Community
 +
@@ -5066,11 +5066,11 @@ Point Pair Combinations = _m_ = _n_(_n_-1)/2
 
 . Calculate the relative standard deviations in each axis:
 
-image::./media/image24b.png[image,width=175,height=88]
+image::./media/image24b.png[image]
 
 . Calculate the relative horizontal standard deviation:
 
-image::./media/image24c.png[image,width=257,height=52]
+image::./media/image24c.png[image]
 
 . Calculate the Relative CE by converting the sigma to a 90 % significance level:
 
@@ -6519,7 +6519,7 @@ An overview of the conformance classes and the associated tests is given in the 
 [cols=""]
 |===
 |A.1 Application Schema Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.1.1 Schema element denomination test
 !A.1.2 Value type test
@@ -6530,7 +6530,7 @@ An overview of the conformance classes and the associated tests is given in the 
 !A.1.7 Geometry representation test
 !===
 |A.2 Reference Systems Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.2.1 Datum test
 !A.2.2 Coordinate reference system test
@@ -6539,7 +6539,7 @@ An overview of the conformance classes and the associated tests is given in the 
 !A.2.5 Units of measurements test
 !===
 |A.3 Data Consistency Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.3.1 Unique identifier persistency test
 !A.3.2 Version consistency test
@@ -6549,29 +6549,29 @@ An overview of the conformance classes and the associated tests is given in the 
 !===
 |A.4 Data Quality Conformance Class
 |A.5 Metadata IR Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.5.1 Metadata for interoperability test
 !===
 |A.6 Information Accessibility Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.6.1 Code list publication test
 !A.6.2 CRS publication test
 !A.6.3 CRS identification test
 !===
 |A.7 Data Delivery Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.7.1 Encoding compliance test
 !===
 |A.8 Portrayal Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.8.1 Layer designation test
 !===
 |A.9 Technical Guideline Conformance Class
-[cols=""]
+a|[cols=""]
 !===
 !A.9.1 Multiplicity test
 !A.9.2 CRS http URI test
@@ -7103,7 +7103,7 @@ Rough pipeline and utility service databases exist at European level, e.g. GISCO
 
 *Part 1: UML use case diagram*
 
-image::./media/image26.png[image,width=504,height=181]
+image::./media/image26.png[image]
 
 
 *Part 2: Narrative explanation of the use case*
