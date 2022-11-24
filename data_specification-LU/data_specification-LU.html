@@ -440,10 +440,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 </div>
 <div id="content">
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image2.jpeg" alt="image" width="131" height="90">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/image2.jpeg" alt="image" width="131" height="90"></span></p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/image3.png" alt="image" width="93" height="93"></span> <strong>INSPIRE</strong> <strong>Infrastructure for Spatial Information in Europe</strong></p>
@@ -451,8 +449,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1 id="_d2_8_iii_4_data_specification_on_land_use_technical_guidelines" class="discrete">D2.8.III.4 Data Specification on <em>Land Use</em> – Technical Guidelines</h1>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 17%;">
-<col style="width: 83%;">
+<col style="width: 50%;">
+<col style="width: 50%;">
 </colgroup>
 <tbody>
 <tr>
@@ -702,7 +700,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>The main value of the INSPIRE <em>Land Use</em> model is its simplicity, a yet flexible structure that allows data providers to publish their existing data in the most convenient way. It is expected that the effective use of the model will help explaining how to implement this data specification including how to use it for structure plans and construction plans.</p>
 </div>
-<div style="page-break-after: always;"></div>
 <h2 id="_acknowledgements" class="discrete">Acknowledgements</h2>
 <div class="paragraph">
 <p>Many individuals and organisations have contributed to the development of these Guidelines.</p>
@@ -726,7 +723,6 @@ Institute for Environment and Sustainability<br>
 Unit H06: Digital Earth and Reference Data<br>
 <em><a href="http://inspire.ec.europa.eu/index.cfm/pageid/2" class="bare">http://inspire.ec.europa.eu/index.cfm/pageid/2</a></em></p>
 </div>
-<div style="page-break-after: always;"></div>
 <h1 id="_table_of_contents" class="discrete">Table of Contents</h1>
 <div id="toc" class="toc">
 <div id="toctitle" class="title"></div>
@@ -1371,28 +1367,31 @@ Unit H06: Digital Earth and Reference Data<br>
 <div class="paragraph">
 <p><em>Land Use</em> features are often defined based on the extent of another related spatial object such as cadastral parcels (planned land use) or land cover polygons (existing land use). These shared geometry has not been considered in the data model. Regarding cadastral parcels, the share of geometry is not stable with time as a spatial plan often refers to a cadastral map as it existed when the plan was adopted.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Definition:</strong><br>
-<br>
-Territory characterised according to its current and future planned functional dimension or socio–economic purpose (e.g. residential, industrial, commercial, agricultural, forestry, recreational).<br>
-<br>
-<strong>Description</strong><br>
-<br>
-<em>Land Use</em> theme is defined as the use and functions of a territory and it is description of land in terms of its socio-economic and ecological purpose. <em>Land use</em> theme is itself split in two different types:<br>
-<br>
-- The Existing Land Use which objectively depicts the use and functions of a territory as it has been and effectively still is in real life<br>
-<br>
-- The Planned Land Use which corresponds to spatial plans, defined by spatial planning authorities, depicting the possible utilization of the land in the future.<br>
-<br>
-Two types of classification systems are supported by <em>Land Use</em> theme, the (obligatory) Hierarchical INSPIRE Land Use Classification System which is a multi-level, classification system that will apply to the existing and planned land use; the (optional) specific classification system in use in a member state.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p><strong>Definition:</strong></p>
+</div>
+<div class="paragraph">
+<p>Territory characterised according to its current and future planned functional dimension or socio–economic purpose (e.g. residential, industrial, commercial, agricultural, forestry, recreational).</p>
+</div>
+<div class="paragraph">
+<p><strong>Description</strong></p>
+</div>
+<div class="paragraph">
+<p><em>Land Use</em> theme is defined as the use and functions of a territory and it is description of land in terms of its socio-economic and ecological purpose. <em>Land use</em> theme is itself split in two different types:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The Existing Land Use which objectively depicts the use and functions of a territory as it has been and effectively still is in real life</p>
+</li>
+<li>
+<p>The Planned Land Use which corresponds to spatial plans, defined by spatial planning authorities, depicting the possible utilization of the land in the future.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Two types of classification systems are supported by <em>Land Use</em> theme, the (obligatory) Hierarchical INSPIRE Land Use Classification System which is a multi-level, classification system that will apply to the existing and planned land use; the (optional) specific classification system in use in a member state.</p>
+</div>
 <div class="paragraph">
 <p>Entry in the INSPIRE registry: <em><a href="http://inspire.ec.europa.eu/theme/lu/" class="bare">http://inspire.ec.europa.eu/theme/lu/</a></em></p>
 </div>
@@ -1960,7 +1959,7 @@ Article 5<br>
 <p>(&#8230;&#8203;)</p>
 </div>
 <div class="olist arabic">
-<ol class="arabic" start="2">
+<ol class="arabic">
 <li>
 <p>Types that are a sub-type of another type shall also include all this type&#8217;s attributes and association roles.</p>
 </li>
@@ -2162,8 +2161,12 @@ Article 6<br>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>5) Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."</p>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p>Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -2192,28 +2195,20 @@ Article 6<br>
 Article 6<br>
 <strong>Code Lists and Enumerations</strong></p>
 </div>
-<div class="olist arabic">
-<ol class="arabic" start="1">
-<li>
-<p>Code lists shall be of one of the following types, as specified in the Annexes:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>code lists whose allowed values comprise only the values specified in this Regulation;</p>
-</li>
-<li>
-<p>code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;</p>
-</li>
-<li>
-<p>code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;</p>
-</li>
-<li>
-<p>code lists, whose allowed values comprise any values defined by data providers.</p>
-</li>
-</ol>
+<div class="paragraph">
+<p>1) Code lists shall be of one of the following types, as specified in the Annexes:</p>
 </div>
-</li>
-</ol>
+<div class="paragraph">
+<p>a) code lists whose allowed values comprise only the values specified in this Regulation;</p>
+</div>
+<div class="paragraph">
+<p>b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;</p>
+</div>
+<div class="paragraph">
+<p>c) code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;</p>
+</div>
+<div class="paragraph">
+<p>d) code lists, whose allowed values comprise any values defined by data providers.</p>
 </div>
 <div class="paragraph">
 <p>For the purposes of points (b), (c) and (d), in addition to the allowed values, data providers may use the values specified in the relevant INSPIRE Technical Guidance document available on the INSPIRE web site of the Joint Research Centre.</p>
@@ -2277,8 +2272,12 @@ Article 6<br>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>2) Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.</p>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -2305,11 +2304,15 @@ Article 6<br>
 <div class="paragraph">
 <p>(&#8230;&#8203;.)</p>
 </div>
-<div class="paragraph">
-<p>3) Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.</p>
-</div>
-<div class="paragraph">
-<p>4) Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.</p>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.</p>
+</li>
+<li>
+<p>Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -2630,7 +2633,7 @@ If life-cycle information is not maintained as part of the spatial data set, all
 <img src="./media/image19-20.png" alt="image">
 </div>
 </div>
-<div class="paragraph">
+<div class="paragraph text-center">
 <p><strong>Figure 9 – Examples of a rectified grid (left) and a referenceable grid (right)</strong></p>
 </div>
 <div class="imageblock text-center">
@@ -2638,7 +2641,7 @@ If life-cycle information is not maintained as part of the spatial data set, all
 <img src="./media/image67.png" alt="image">
 </div>
 </div>
-<div class="paragraph">
+<div class="paragraph text-center">
 <p><strong>Figure 10 – Example of a time series</strong></p>
 </div>
 <div class="paragraph">
@@ -2707,7 +2710,7 @@ The use of coverage for <em>Land Use</em> dataset will be recommended once the t
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image68.png" alt="image">
+<img src="./media/image68.png" alt="image" width="390" height="280">
 </div>
 </div>
 <div class="paragraph">
@@ -10434,11 +10437,15 @@ requests to INSPIRE network services.</p>
 <div class="paragraph">
 <p>Either of the grids with fixed and unambiguously defined locations defined in Sections 2.2.1 and 2.2.2 shall be used as a geo-referencing framework to make gridded data available in INSPIRE, unless one of the following conditions holds:</p>
 </div>
-<div class="paragraph">
-<p>(1) Other grids may be specified for specific spatial data themes in Annexes II-IV. In this case, data exchanged using such a theme-specific grid shall use standards in which the grid definition is either included with the data, or linked by reference.</p>
-</div>
-<div class="paragraph">
-<p>(2) For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.</p>
+<div class="olist arabic">
+<ol class="arabic" start="1">
+<li>
+<p>Other grids may be specified for specific spatial data themes in Annexes II-IV. In this case, data exchanged using such a theme-specific grid shall use standards in which the grid definition is either included with the data, or linked by reference.</p>
+</li>
+<li>
+<p>For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p><strong>2.2 Equal Area Grid</strong></p>
@@ -11886,11 +11893,15 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 <div class="paragraph">
 <p>Data providers shall include the following keywords in addition to the mandatory keywords defined in Regulation (EC) No 1205/2008/EC:</p>
 </div>
-<div class="paragraph">
-<p>(a) One of the following language-neutral keywords to describe the type of land use data set: ExistingLandUse, SampledExistingLandUse, GriddedExistingLandUse, PlannedLandUse.</p>
-</div>
-<div class="paragraph">
-<p>(b) If the data set contains SpatialPlan objects, one keyword describing the level of the administrative units covered by the plan, as defined in the LevelOfSpatialPlan code list.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>One of the following language-neutral keywords to describe the type of land use data set: ExistingLandUse, SampledExistingLandUse, GriddedExistingLandUse, PlannedLandUse.</p>
+</li>
+<li>
+<p>If the data set contains SpatialPlan objects, one keyword describing the level of the administrative units covered by the plan, as defined in the LevelOfSpatialPlan code list.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -11956,37 +11967,25 @@ Article 13<br>
 </li>
 <li>
 <p>Temporal Reference System: Description of the temporal reference system(s) used in the data set.</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Encoding: Description of the computer language construct(s) specifying the representation of data objects in a record, file, message, storage device or transmission channel.</p>
 </li>
 <li>
 <p>Topological Consistency: Correctness of the explicitly encoded topological characteristics of the data set as described by the scope.</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>This element is mandatory only if the data set includes types from the Generic Network Model and does not assure centreline topology (connectivity of centrelines) for the network.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Character Encoding: The character encoding used in the data set.</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>This element is mandatory only if an encoding is used that is not based on UTF-8.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Spatial Representation Type: The method used to spatially represent geographic information.</p>
 </li>
@@ -12257,7 +12256,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top"><strong>Metadata element name</strong></th>
 <th class="tableblock halign-left valign-top"><strong>Encoding</strong></th>
 </tr>
 </thead>
@@ -12340,7 +12339,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top"><strong>Metadata element name</strong></th>
 <th class="tableblock halign-left valign-top"><strong>Character Encoding</strong></th>
 </tr>
 </thead>
@@ -12407,7 +12406,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top"><strong>Metadata element name</strong></th>
 <th class="tableblock halign-left valign-top"><strong>Spatial representation type</strong></th>
 </tr>
 </thead>
@@ -12569,7 +12568,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top"><strong>Metadata element name</strong></th>
 <th class="tableblock halign-left valign-top"><strong>Maintenance information</strong></th>
 </tr>
 </thead>
@@ -12580,7 +12579,13 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30. resourceMaintenance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="30">
+<li>
+<p>resourceMaintenance</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -12596,7 +12601,13 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type(and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">142. MD_MaintenanceInformation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="142">
+<li>
+<p>MD_MaintenanceInformation</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -12739,7 +12750,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top"><strong>Metadata element name</strong></th>
 <th class="tableblock halign-left valign-top"><strong>See chapter 7</strong></th>
 </tr>
 </thead>
@@ -12774,7 +12785,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 <p>Lines 7-9 from ISO/DIS 19157</p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="7">
 <li>
 <p>DQ_MeasureReference (C.2.1.3)</p>
 </li>
@@ -12790,7 +12801,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Implementing instructions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="39">
 <li>
 <p>nameOfMeasure</p>
 </li>
@@ -12800,7 +12811,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 <p>NOTE This should be the name as defined in Chapter 7.</p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="42">
 <li>
 <p>evaluationMethodType</p>
 </li>
@@ -12813,7 +12824,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 <p>NOTE If the reported data quality results are derived or aggregated (i.e. the scope levels for evaluation and reporting are different), the derivation or aggregation should also be specified using this property.</p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="46">
 <li>
 <p>dateTime</p>
 </li>
@@ -12823,7 +12834,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 <p>NOTE This should be data or range of dates on which the data quality measure was applied.</p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="63">
 <li>
 <p>DQ_QuantitativeResult / 64. value</p>
 </li>
@@ -12853,7 +12864,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Metadata element name</th>
+<th class="tableblock halign-left valign-top"><strong>Metadata element name</strong></th>
 <th class="tableblock halign-left valign-top"><strong>See chapter 7</strong></th>
 </tr>
 </thead>
@@ -12888,7 +12899,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 <p>Line 9 from ISO/DIS 19157</p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="9">
 <li>
 <p>DQ_Result (C2.1.5.)</p>
 </li>
@@ -12898,7 +12909,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Implementing instructions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="67">
 <li>
 <p>DQ_DescripitveResult / 68. statement</p>
 </li>
@@ -13266,23 +13277,35 @@ The encoding of coverage components in GMLJP2 within a JPEG 2000 file should con
 <strong>Portrayal</strong></p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="1">
 <li>
 <p>For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (<sup class="footnote">[<a id="_footnoteref_19" class="footnote" href="#_footnotedef_19" title="View footnote.">19</a>]</sup>), the following shall be available:</p>
-<div class="paragraph">
-<p>(a) the layers specified in Annex II for the theme or themes the data set is related to;</p>
-</div>
-<div class="paragraph">
-<p>(b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.</p>
-</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>the layers specified in Annex II for the theme or themes the data set is related to;</p>
 </li>
 <li>
-<p>For each layer, Annex II defines the following:</p>
-<div class="paragraph">
-<p>(a) a human readable title of the layer to be used for display in user interface;</p>
+<p>for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.</p>
+</li>
+</ol>
 </div>
-<div class="paragraph">
-<p>(b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>For each layer, Annex II defines the following:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>a human readable title of the layer to be used for display in user interface;</p>
+</li>
+<li>
+<p>the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.</p>
+</li>
+</ol>
 </div>
 </li>
 </ol>
@@ -13433,17 +13456,21 @@ In addition, it is recommended that, where applicable, INSPIRE view services als
 <ol class="arabic" start="3">
 <li>
 <p>For spatial object types whose objects can be further classified using a code list-valued attribute, several layers may be defined. Each of these layers shall include the spatial objects corresponding to one specific code list value. In the definition of such sets of layers in Annexes II-IV,</p>
-<div class="paragraph">
-<p>(a) the placeholder &lt;CodeListValue&gt; shall represent the values of the relevant code list, with the first letter in upper case,</p>
-</div>
-<div class="paragraph">
-<p>(b) the placeholder &lt;human-readable name&gt; shall represent the human-readable name of the code list values;</p>
-</div>
-<div class="paragraph">
-<p>(c) the spatial object type shall include the relevant attribute and code list, in parentheses;</p>
-</div>
-<div class="paragraph">
-<p>(d) one example of a layer shall be given.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>the placeholder &lt;CodeListValue&gt; shall represent the values of the relevant code list, with the first letter in upper case,</p>
+</li>
+<li>
+<p>the placeholder &lt;human-readable name&gt; shall represent the human-readable name of the code list values;</p>
+</li>
+<li>
+<p>the spatial object type shall include the relevant attribute and code list, in parentheses;</p>
+</li>
+<li>
+<p>one example of a layer shall be given.</p>
+</li>
+</ol>
 </div>
 </li>
 </ol>
@@ -14843,9 +14870,14 @@ In addition, it is recommended that, where applicable, INSPIRE view services als
 <div class="paragraph">
 <p>Users' information collection was sometimes heterogeneous, for these reason these four use cases have been fully documented using the INSPIRE template to reach a harmonization with other themes. Figure 31 provides an overview of the use cases regarding the type of land use that is required, the temporality of the required land use data, (either past, present of future land use) and the type of activities that requires land use data.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="./media/image49.png" alt="image" width="258" height="151">
+</div>
+</div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image49.png" alt="image">
+<img src="./media/image51.png" alt="image" width="226" height="151">
 </div>
 </div>
 <div class="paragraph text-center">
