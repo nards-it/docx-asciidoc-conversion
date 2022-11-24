@@ -1739,82 +1739,56 @@ identifiable collection of spatial data [INSPIRE Directive]</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;xs:complextype name="ExtendedCapabilitiesType"&gt;
-  &lt;xs:annotation&gt;
-    &lt;xs:documentation&gt;
-      Extended capabilities for ISO 19128 , OGC CSW, OGC OWS services
-    &lt;/xs:documentation&gt;
-  &lt;/xs:annotation&gt;
-  &lt;xs:choice&gt;
-    &lt;xs:sequence&gt;
-      &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;
-          Scenario 1: Mandatory MetadataUrl element pointing to an INSPIRE Compliant ISO metadata document plus language parameters
-        &lt;/xs:documentation&gt;
-      &lt;/xs:annotation&gt;
-      &lt;xs:element name="MetadataUrl" type="resourceLocatorType"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="SupportedLanguages" type="supportedLanguagesType"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="ResponseLanguage" type="languageElementISO6392B"&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:sequence&gt;
-    &lt;xs:sequence&gt;
-      &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;
-          Scenario 2: Mandatory (where appropriate) metadata elements not mapped to standard capabilities, plus mandatory language parameters, plus OPTIONAL MetadataUrl pointing to an INSPIRE Compliant ISO metadata document
-        &lt;/xs:documentation&gt;
-      &lt;/xs:annotation&gt;
-      &lt;xs:element maxoccurs="unbounded" name="ResourceLocator" type="resourceLocatorType"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation xml:lang="en"&gt;
-            Mandatory linkage to the network service
-          &lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="ResourceType" type="serviceSpatialDataResourceType"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element maxoccurs="unbounded" name="TemporalReference" type="temporalReference"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element maxoccurs="unbounded" name="Conformity" type="conformity"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element maxoccurs="unbounded" name="MetadataPointOfContact" type="metadataPointOfContact"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="MetadataDate" type="iso8601Date"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="SpatialDataServiceType" type="spatialDataServiceType"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element maxoccurs="unbounded" name="MandatoryKeyword" type="classificationOfSpatialDataService"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element maxoccurs="unbounded" minoccurs="0" name="Keyword" type="keyword"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation xml:lang="en"&gt;
-            If the resource is a spatial data service, at least one keyword from Part D.4 shall be provided.
-          &lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="SupportedLanguages" type="supportedLanguagesType"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element name="ResponseLanguage" type="languageElementISO6392B"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element minoccurs="0" name="MetadataUrl" type="resourceLocatorType"&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:sequence&gt;
-  &lt;/xs:choice&gt;
-&lt;/xs:complextype&gt;
-&lt;xs:complextype name="supportedLanguagesType"&gt;
-  &lt;xs:sequence&gt;
-    &lt;xs:element name="DefaultLanguage" type="languageElementISO6392B"&gt;
-    &lt;/xs:element&gt;
-    &lt;xs:element maxoccurs="unbounded" minoccurs="0" name="SupportedLanguage" type="languageElementISO6392B"&gt;
-      &lt;xs:annotation&gt;
-        &lt;xs:documentation&gt;
-          It is not necessary to repeat the default language
-        &lt;/xs:documentation&gt;
-      &lt;/xs:annotation&gt;
-    &lt;/xs:element&gt;
-  &lt;/xs:sequence&gt;
-&lt;/xs:complextype&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;xs:complexType name="ExtendedCapabilitiesType"&gt;
+		&lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Extended capabilities for ISO 19128 , OGC CSW, OGC OWS services&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+		&lt;xs:choice&gt;
+			&lt;xs:sequence&gt;
+				&lt;xs:annotation&gt;
+					&lt;xs:documentation&gt;Scenario 1: Mandatory MetadataUrl element pointing to an INSPIRE Compliant ISO metadata document plus language parameters &lt;/xs:documentation&gt;
+				&lt;/xs:annotation&gt;
+				&lt;xs:element name="MetadataUrl" type="resourceLocatorType"/&gt;
+				&lt;xs:element name="SupportedLanguages" type="supportedLanguagesType"/&gt;
+				&lt;xs:element name="ResponseLanguage" type="languageElementISO6392B"/&gt;
+			&lt;/xs:sequence&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:annotation&gt;
+				&lt;xs:documentation&gt;Scenario 2: Mandatory (where appropriate) metadata elements not mapped to standard capabilities, plus mandatory language parameters, plus OPTIONAL MetadataUrl pointing to an INSPIRE Compliant ISO metadata document&lt;/xs:documentation&gt;
+			&lt;/xs:annotation&gt;
+			&lt;xs:element name="ResourceLocator" type="resourceLocatorType" maxOccurs="unbounded"&gt;
+				&lt;xs:annotation&gt;
+					&lt;xs:documentation xml:lang="en"&gt;Mandatory linkage to the network service&lt;/xs:documentation&gt;
+				&lt;/xs:annotation&gt;
+			&lt;/xs:element&gt;
+			&lt;xs:element name="ResourceType" type="serviceSpatialDataResourceType"/&gt;
+			&lt;xs:element name="TemporalReference" type="temporalReference" maxOccurs="unbounded"/&gt;
+			&lt;xs:element name="Conformity" type="conformity" maxOccurs="unbounded"/&gt;
+			&lt;xs:element name="MetadataPointOfContact" type="metadataPointOfContact" maxOccurs="unbounded"/&gt;
+			&lt;xs:element name="MetadataDate" type="iso8601Date"/&gt;
+			&lt;xs:element name="SpatialDataServiceType" type="spatialDataServiceType"/&gt;
+			&lt;xs:element name="MandatoryKeyword" type="classificationOfSpatialDataService" maxOccurs="unbounded"/&gt;
+			&lt;xs:element name="Keyword" type="keyword" minOccurs="0" maxOccurs="unbounded"&gt;
+				&lt;xs:annotation&gt;
+					&lt;xs:documentation xml:lang="en"&gt;If the resource is a spatial data service, at least one keyword from Part D.4 shall be provided.&lt;/xs:documentation&gt;
+				&lt;/xs:annotation&gt;
+			&lt;/xs:element&gt;
+			&lt;xs:element name="SupportedLanguages" type="supportedLanguagesType"/&gt;
+			&lt;xs:element name="ResponseLanguage" type="languageElementISO6392B"/&gt;
+			&lt;xs:element name="MetadataUrl" type="resourceLocatorType" minOccurs="0"/&gt;
+			&lt;/xs:sequence&gt;
+		&lt;/xs:choice&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name="supportedLanguagesType"&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name="DefaultLanguage" type="languageElementISO6392B"/&gt;
+			&lt;xs:element name="SupportedLanguage" type="languageElementISO6392B" minOccurs="0" maxOccurs="unbounded"&gt;
+				&lt;xs:annotation&gt;
+					&lt;xs:documentation&gt;It is not necessary to repeat the default language&lt;/xs:documentation&gt;
+				&lt;/xs:annotation&gt;
+			&lt;/xs:element&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;</code></pre>
 </div>
 </div>
 </div>
@@ -3267,81 +3241,37 @@ REQUEST=GetCapabilities&amp;SERVICE=CSW
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;ows:operationsmetadata&gt;
-  &lt;ows:operation name="GetRecords"&gt;
-    <em>[...] (List of DCPs, parameters here)</em>
-    &lt;ows:constraint name="SupportedISOQueryables"&gt;
-      &lt;ows:value&gt;
-        Language
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        CreationDate
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        PublicationDate
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        OrganisationName
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        ResourceIdentifier
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        TopicCategory
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        DistanceValue
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        DistanceUOM
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        TempExtent_begin
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        TempExtent_end
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        ServiceType
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        Denominator
-      &lt;/ows:value&gt;
-    &lt;/ows:constraint&gt;
-    &lt;ows:constraint name="AdditionalQueryables"&gt;
-      &lt;ows:value&gt;
-        Degree
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        AccessConstraints
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        OtherConstraints
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        Classification
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        ConditionApplyingToAccessAndUse
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        Lineage
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        ResponsiblePartyRole
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        SpecificationTitle
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        SpecificationDate
-      &lt;/ows:value&gt;
-      &lt;ows:value&gt;
-        SpecificationDateType
-      &lt;/ows:value&gt;
-    &lt;/ows:constraint&gt;
-  &lt;/ows:operation&gt;
-&lt;/ows:operationsmetadata&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;ows:OperationsMetadata&gt;
+&lt;ows:Operation name="GetRecords"&gt;
+	 […] (List of DCPs, parameters here)
+	&lt;ows:Constraint name="SupportedISOQueryables"&gt;
+		&lt;ows:Value&gt;Language&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;CreationDate&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;PublicationDate&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;OrganisationName&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;ResourceIdentifier&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;TopicCategory&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;DistanceValue&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;DistanceUOM&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;TempExtent_begin&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;TempExtent_end&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;ServiceType&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;Denominator&lt;/ows:Value&gt;
+	&lt;/ows:Constraint&gt;
+	&lt;ows:Constraint name="AdditionalQueryables"&gt;
+		&lt;ows:Value&gt;Degree&lt;/ows:Value&gt;
+&lt;ows:Value&gt;AccessConstraints&lt;/ows:Value&gt;
+&lt;ows:Value&gt;OtherConstraints&lt;/ows:Value&gt;
+&lt;ows:Value&gt;Classification&lt;/ows:Value&gt;
+&lt;ows:Value&gt;ConditionApplyingToAccessAndUse&lt;/ows:Value&gt;
+&lt;ows:Value&gt;Lineage&lt;/ows:Value&gt;
+&lt;ows:Value&gt;ResponsiblePartyRole&lt;/ows:Value&gt;
+&lt;ows:Value&gt;SpecificationTitle&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;SpecificationDate&lt;/ows:Value&gt;
+		&lt;ows:Value&gt;SpecificationDateType&lt;/ows:Value&gt;
+	&lt;/ows:Constraint&gt;
+&lt;/ows:Operation&gt;
+&lt;/ows:OperationsMetadata&gt;</code></pre>
 </div>
 </div>
 </div>
@@ -3648,23 +3578,17 @@ Example:<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:supportedlanguages&gt;
-  &lt;inspire_common:defaultlanguage&gt;
-    &lt;inspire_common:language&gt;
-      fre
-    &lt;/inspire_common:language&gt;
-  &lt;/inspire_common:defaultlanguage&gt;
-  &lt;inspire_common:supportedlanguage&gt;
-    &lt;inspire_common:language&gt;
-      eng
-    &lt;/inspire_common:language&gt;
-  &lt;/inspire_common:supportedlanguage&gt;
-&lt;/inspire_common:supportedlanguages&gt;
-&lt;inspire_common:responselanguage&gt;
-  &lt;inspire_common:language&gt;
-    eng
-  &lt;/inspire_common:language&gt;
-&lt;/inspire_common:responselanguage&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:SupportedLanguages&gt;
+	&lt;inspire_common:DefaultLanguage&gt;
+		&lt;inspire_common:Language&gt;fre&lt;/inspire_common:Language&gt;
+	&lt;/inspire_common:DefaultLanguage&gt;
+	&lt;inspire_common:SupportedLanguage&gt;
+		&lt;inspire_common:Language&gt;eng&lt;/inspire_common:Language&gt;
+	&lt;/inspire_common:SupportedLanguage&gt;
+&lt;/inspire_common:SupportedLanguages&gt;
+&lt;inspire_common:ResponseLanguage&gt;
+	&lt;inspire_common:Language&gt;eng&lt;/inspire_common:Language&gt;
+&lt;/inspire_common:ResponseLanguage&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph text-center">
@@ -3673,23 +3597,17 @@ Example:<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:supportedlanguages&gt;
-  &lt;inspire_common:defaultlanguage&gt;
-    &lt;inspire_common:language&gt;
-      fre
-    &lt;/inspire_common:language&gt;
-  &lt;/inspire_common:defaultlanguage&gt;
-  &lt;inspire_common:supportedlanguage&gt;
-    &lt;inspire_common:language&gt;
-      eng
-    &lt;/inspire_common:language&gt;
-  &lt;/inspire_common:supportedlanguage&gt;
-&lt;/inspire_common:supportedlanguages&gt;
-&lt;inspire_common:responselanguage&gt;
-  &lt;inspire_common:language&gt;
-    fre
-  &lt;/inspire_common:language&gt;
-&lt;/inspire_common:responselanguage&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:SupportedLanguages&gt;
+	&lt;inspire_common:DefaultLanguage&gt;
+		&lt;inspire_common:Language&gt;fre&lt;/inspire_common:Language&gt;
+	&lt;/inspire_common:DefaultLanguage&gt;
+&lt;inspire_common:SupportedLanguage&gt;
+	&lt;inspire_common:Language&gt;eng&lt;/inspire_common:Language&gt;
+&lt;/inspire_common:SupportedLanguage&gt;
+&lt;/inspire_common:SupportedLanguages&gt;
+&lt;inspire_common:ResponseLanguage&gt;
+	&lt;inspire_common:Language&gt;fre&lt;/inspire_common:Language&gt;
+&lt;/inspire_common:ResponseLanguage&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3700,18 +3618,14 @@ Example:<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:supportedlanguages&gt;
-  &lt;inspire_common:defaultlanguage&gt;
-    &lt;inspire_common:language&gt;
-      ger
-    &lt;/inspire_common:language&gt;
-  &lt;/inspire_common:defaultlanguage&gt;
-&lt;/inspire_common:supportedlanguages&gt;
-&lt;inspire_common:responselanguage&gt;
-  &lt;inspire_common:language&gt;
-    ger
-  &lt;/inspire_common:language&gt;
-&lt;/inspire_common:responselanguage&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:SupportedLanguages&gt;
+	&lt;inspire_common:DefaultLanguage&gt;
+	&lt;inspire_common:Language&gt;ger&lt;/inspire_common:Language&gt;
+		&lt;/inspire_common:DefaultLanguage&gt;
+&lt;/inspire_common:SupportedLanguages&gt;
+&lt;inspire_common:ResponseLanguage&gt;
+	&lt;inspire_common:Language&gt;ger&lt;/inspire_common:Language&gt;
+&lt;/inspire_common:ResponseLanguage&gt;</code></pre>
 </div>
 </div>
 </div>
@@ -3841,23 +3755,17 @@ Example:<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:supportedlanguages&gt;
-  &lt;inspire_common:defaultlanguage&gt;
-    &lt;inspire_common:language&gt;
-      eng
-    &lt;/inspire_common:language&gt;
-  &lt;/inspire_common:defaultlanguage&gt;
-  &lt;inspire_common:supportedlanguage&gt;
-    &lt;inspire_common:language&gt;
-      ger
-    &lt;/inspire_common:language&gt;
-  &lt;/inspire_common:supportedlanguage&gt;
-&lt;/inspire_common:supportedlanguages&gt;
-&lt;inspire_common:responselanguage&gt;
-  &lt;inspire_common:language&gt;
-    eng
-  &lt;/inspire_common:language&gt;
-&lt;/inspire_common:responselanguage&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;inspire_common:SupportedLanguages&gt;
+	&lt;inspire_common:DefaultLanguage&gt;
+		&lt;inspire_common:Language&gt;eng&lt;/inspire_common:Language&gt;
+	&lt;/inspire_common:DefaultLanguage&gt;
+	&lt;inspire_common:SupportedLanguage&gt;
+		&lt;inspire_common:Language&gt;ger&lt;/inspire_common:Language&gt;
+	&lt;/inspire_common:SupportedLanguage&gt;
+&lt;/inspire_common:SupportedLanguages&gt;
+&lt;inspire_common:ResponseLanguage&gt;
+	&lt;inspire_common:Language&gt;eng&lt;/inspire_common:Language&gt;
+&lt;/inspire_common:ResponseLanguage&gt;</code></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -3886,23 +3794,21 @@ Example:<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;csw:capabilities[...] &lt;ows:operation="" name="GetRecords"&gt;
-  &lt;ows:dcp&gt;
-    &lt;ows:http&gt;
-      &lt;ows:post xlink:href="http://someHOST.example/eng/SOAPservices/GetRecords"&gt;
-        &lt;ows:constraint name="PostEncoding"&gt;
-          &lt;ows:value&gt;
-            XML
-          &lt;/ows:value&gt;
-          &lt;ows:value&gt;
-            SOAP
-          &lt;/ows:value&gt;
-        &lt;/ows:constraint&gt;
-      &lt;/ows:post&gt;
-    &lt;/ows:http&gt;
-  &lt;/ows:dcp&gt;
-  [...]
-&lt;/csw:capabilities[...]&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;csw:Capabilities[…]
+	&lt;ows:Operation name="GetRecords"&gt;
+		&lt;ows:DCP&gt;
+			&lt;ows:HTTP&gt;
+				&lt;ows:Post
+   xlink:href="http://someHOST.example/eng/SOAPservices/GetRecords"&gt;
+					&lt;ows:Constraint name="PostEncoding"&gt;
+						&lt;ows:Value&gt;XML&lt;/ows:Value&gt;
+						&lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+					&lt;/ows:Constraint&gt;
+				&lt;/ows:Post&gt;
+			&lt;/ows:HTTP&gt;
+		&lt;/ows:DCP&gt;[…]
+	&lt;/ows:Operation[…]
+&lt;/csw:Capabilities&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph text-center">
@@ -3910,23 +3816,21 @@ Example:<br>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;csw:capabilities[...] &lt;ows:operation="" name="GetRecords"&gt;
-  &lt;ows:dcp&gt;
-    &lt;ows:http&gt;
-      &lt;ows:post xlink:href="http://someHOST.example/ger/SOAPservices/GetRecords"&gt;
-        &lt;ows:constraint name="PostEncoding"&gt;
-          &lt;ows:value&gt;
-            XML
-          &lt;/ows:value&gt;
-          &lt;ows:value&gt;
-            SOAP
-          &lt;/ows:value&gt;
-        &lt;/ows:constraint&gt;
-      &lt;/ows:post&gt;
-    &lt;/ows:http&gt;
-  &lt;/ows:dcp&gt;
-  [...]
-&lt;/csw:capabilities[...]&gt;</code></pre>
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;csw:Capabilities[…]
+	&lt;ows:Operation name="GetRecords"&gt;
+		&lt;ows:DCP&gt;
+			&lt;ows:HTTP&gt;
+				&lt;ows:Post
+   xlink:href="http://someHOST.example/ger/SOAPservices/GetRecords"&gt;
+					&lt;ows:Constraint name="PostEncoding"&gt;
+						&lt;ows:Value&gt;XML&lt;/ows:Value&gt;
+						&lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+					&lt;/ows:Constraint&gt;
+				&lt;/ows:Post&gt;
+			&lt;/ows:HTTP&gt;
+		&lt;/ows:DCP&gt;[…]
+	&lt;/ows:Operation[…]
+&lt;/csw:Capabilities&gt;</code></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -4422,6 +4326,7 @@ The service responses with an exception including a German exception message: e.
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
@@ -4444,43 +4349,39 @@ The service responses with an exception including a German exception message: e.
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xs:schema ...="" &lt;xs:complextype="" abstract="true" attributeformdefault="unqualified" elementformdefault="qualified" name="languageElement" targetnamespace="http://inspire.ec.europa.eu/schemas/common/1.0" version="1.0.0" xmlns="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;xs:sequence&gt;
-    &lt;xs:element name="Language" type="xs:string"&gt;
-    &lt;/xs:element&gt;
-  &lt;/xs:sequence&gt;
-  &lt;xs:complextype name="languageElementISO6392B"&gt;
-    &lt;xs:complexcontent&gt;
-      &lt;xs:restriction base="languageElement"&gt;
-        &lt;xs:sequence&gt;
-          &lt;xs:element name="Language" type="euLanguageISO6392B"&gt;
-          &lt;/xs:element&gt;
-        &lt;/xs:sequence&gt;
-      &lt;/xs:restriction&gt;
-    &lt;/xs:complexcontent&gt;
-  &lt;/xs:complextype&gt;
-  &lt;xs:complextype name="supportedLanguagesType"&gt;
-    &lt;xs:sequence&gt;
-      &lt;xs:element name="DefaultLanguage" type="languageElementISO6392B"&gt;
-      &lt;/xs:element&gt;
-      &lt;xs:element maxoccurs="unbounded" minoccurs="0" name="SupportedLanguage" type="languageElementISO6392B"&gt;
-        &lt;xs:annotation&gt;
-          &lt;xs:documentation&gt;
-            It is not necessary to repeat the default language
-          &lt;/xs:documentation&gt;
-        &lt;/xs:annotation&gt;
-      &lt;/xs:element&gt;
-    &lt;/xs:sequence&gt;
-  &lt;/xs:complextype&gt;
-  ...
-  &lt;xs:element name="SupportedLanguages" type="supportedLanguagesType"&gt;
-  &lt;/xs:element&gt;
-  &lt;xs:element name="ResponseLanguage" type="languageElementISO6392B"&gt;
-  &lt;/xs:element&gt;
-  ...
-&lt;/xs:schema&gt;</code></pre>
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://inspire.ec.europa.eu/schemas/common/1.0" targetNamespace="http://inspire.ec.europa.eu/schemas/common/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0"
+…
+	&lt;xs:complexType name="languageElement" abstract="true"&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name="Language" type="xs:string"/&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;
+		&lt;xs:complexType name="languageElementISO6392B"&gt;
+		&lt;xs:complexContent&gt;
+			&lt;xs:restriction base="languageElement"&gt;
+				&lt;xs:sequence&gt;
+					&lt;xs:element name="Language" type="euLanguageISO6392B"/&gt;
+				&lt;/xs:sequence&gt;
+		&lt;/xs:restriction&gt;
+		&lt;/xs:complexContent&gt;
+	&lt;/xs:complexType&gt;
+	&lt;xs:complexType name="supportedLanguagesType"&gt;
+		&lt;xs:sequence&gt;
+			&lt;xs:element name="DefaultLanguage" type="languageElementISO6392B"/&gt;
+			&lt;xs:element name="SupportedLanguage" type="languageElementISO6392B" minOccurs="0" maxOccurs="unbounded"&gt;
+		&lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;It is not necessary to repeat the default language&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+			&lt;/xs:element&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;
+…
+	&lt;xs:element name="SupportedLanguages" type="supportedLanguagesType"/&gt;
+	&lt;xs:element name="ResponseLanguage" type="languageElementISO6392B"/&gt;
+…</code></pre>
 </div>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
