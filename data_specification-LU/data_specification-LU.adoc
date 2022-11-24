@@ -5668,6 +5668,7 @@ None.
 [ISO 19139] ISO/TS 19139:2007, Geographic information – Metadata – XML schema implementation
 
 :sectnums:
+<<<
 [appendix]
 == Abstract Test Suite- (normative) 
 
@@ -6297,6 +6298,7 @@ b) [underline]#Reference#: section 11.2.
 
 c) [underline]#Test Method#: Check whether the styles defined in section 11.2 have been made available for each specified layer.
 
+<<<
 [appendix]
 == Use cases - (informative) 
 
@@ -6959,6 +6961,7 @@ In case expropriation of owners of certain parcels, the exact parcel number and 
 
 Other rules and regulations that apply to that zone need to be considered with the zoning plan (Area management/restriction/regulation zones and reporting units).
 
+<<<
 [appendix]
 == Code list values - (normative) 
 
@@ -9816,6 +9819,7 @@ a|
 
 |===
 
+<<<
 [appendix]
 == Towards the Hierarchical INSPIRE _Land Use_ nomenclature - (informative) 
 
@@ -11538,6 +11542,7 @@ Casco urbano / Town centre |5_1_PureResidentialUse
 |Zonas de extracción o vertido / Extraction and dumping |6_6_NotKnownUse
 |===
 
+<<<
 [appendix]
 == Hierarchical Supplementary Regulation Code List - (informative) 
 
@@ -12284,6 +12289,7 @@ a|
 |Landesentwicklungsachse |7_1_2_2_SupralocalAxes
 |===
 
+<<<
 [appendix]
 == _Land Use_ and Land Cover Relations - (informative) 
 
@@ -12364,6 +12370,7 @@ image::./media/image62.png[image,width=402,height=191, align=center]
 
 With the previous definition of the Land Unit it is clear that different geometries for LU and LC exist. The relation between these geometries depends on the complexity of the land information system. The simplest relationship between the LC and LU is the superposition of both geometries that will not fit 1:1 in most cases.
 
+<<<
 [appendix]
 == Proposed changes to D2.3 V3.0 - (informative) 
 
@@ -12475,6 +12482,7 @@ http://ro-standaarden.geonovum.nl/2012/IMRO/1.2/IMRO2012-v1.2.pdf
 
 United Nations, International Standard Industrial Classification (ISIC), Rev. 3, at: _http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=2_
 
+<<<
 [appendix]
 == Ecological function of land - (informative) 
 
@@ -12492,6 +12500,7 @@ Nature areas also influence the space next to it. Green environments have a prov
 
 If you take the definition of the FAO: _Land Use_ is "the total of arrangements, activities, and inputs that people undertake in a certain land cover type", Nature or preserving nature, as argued above is definitely a form of land use.
 
+<<<
 [appendix]
 == Use of PLU model for strategic planning in Germany - (informative) 
 
