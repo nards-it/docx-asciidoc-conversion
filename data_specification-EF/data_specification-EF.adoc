@@ -468,9 +468,10 @@ _Article 5_
 
 (...)
 
-2) Types that are a sub-type of another type shall also include all this type's attributes and association roles.
+[arabic, start=2]
+. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
 
-3) Abstract types shall not be instantiated.
+. Abstract types shall not be instantiated.
 
 ====
 
@@ -552,7 +553,8 @@ _Article 6_
 
 (...)
 
-5) Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."
+[arabic, start=5]
+. Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."
 
 ====
 
@@ -615,7 +617,8 @@ _Article 6_
 
 (...)
 
-2) Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.
+[arabic, start=2]
+. Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.
 
 ====
 
@@ -632,9 +635,10 @@ _Article 6_
 
 (....)
 
-3) Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.
+[arabic, start=3]
+. Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.
 
-4) Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.
+. Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.
 
 ====
 
@@ -760,7 +764,8 @@ _Article 10_
 
 (...)
 
-3) Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
+[arabic, start=3]
+. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
 
 ====
 
@@ -791,7 +796,8 @@ _Article 12_
 
 (...)
 
-3) Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
+[arabic, start=3]
+. Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
 
 ====
 
@@ -814,10 +820,12 @@ Where possible, only these coverage types (or a subtype thereof) are used in INS
 
 image::./media/image5-6.png[image, align=center]
 
+[.text-center]
 *Figure 2 – Examples of a rectified grid (left) and a referenceable grid (right)*
 
 image::./media/image57.png[image, align=center]
 
+[.text-center]
 *Figure 3 – Example of a time series*
 
 === Application schema Environmental Monitoring Facilities
@@ -2252,7 +2260,8 @@ _Article 12_
 
 (...)
 
-2) All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
+[arabic, start=2]
+. All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
 
 ====
 
@@ -2634,17 +2643,17 @@ The metadata describing a spatial data set shall include the following metadata 
 1. Coordinate Reference System: Description of the coordinate reference system(s) used in the data set.
 
 2. Temporal Reference System: Description of the temporal reference system(s) used in the data set.
-
++
 This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.
 
 3. Encoding: Description of the computer language construct(s) specifying the representation of data objects in a record, file, message, storage device or transmission channel.
 
 4. Topological Consistency: Correctness of the explicitly encoded topological characteristics of the data set as described by the scope.
-
++
 This element is mandatory only if the data set includes types from the Generic Network Model and does not assure centreline topology (connectivity of centrelines) for the network.
 
 5. Character Encoding: The character encoding used in the data set.
-
++
 This element is mandatory only if an encoding is used that is not based on UTF-8.
 
 6. Spatial Representation Type: The method used to spatially represent geographic information.
@@ -3033,7 +3042,8 @@ Line 9 from ISO/DIS 19157
 . DQ_Result (C2.1.5.)
 
 |Implementing instructions a|
-67. DQ_DescripitveResult / 68. statement
+[arabic, start=67]
+. DQ_DescripitveResult / 68. statement
 
 NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.) the evaluation of the selected DQ sub-element should be expressed in a narrative way.
 
@@ -3270,17 +3280,19 @@ This clause defines the rules for layers and styles to be used for portrayal of 
 _Article 14_
 *Portrayal*
 
-1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
-+
-(a) the layers specified in Annex II for the theme or themes the data set is related to;
-+
-(b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
+[arabic, start=1]
+. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
 
-2. For each layer, Annex II defines the following:
-+
-(a) a human readable title of the layer to be used for display in user interface;
-+
-(b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
+[loweralpha]
+.. the layers specified in Annex II for the theme or themes the data set is related to;
+.. for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
+
+[arabic, start=2]
+. For each layer, Annex II defines the following:
+
+[loweralpha]
+.. a human readable title of the layer to be used for display in user interface;
+.. the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
 
 ====
 
@@ -5655,7 +5667,7 @@ Here we show how Observing Capabilities are attached to a specific _Environmenta
 2+a|
 image::./media/image33.png[image,width=754,height=473, align=center]
 
-a|image::./media/image34.png[image,width=643,height=552] 
+a|image::./media/image34.png[image] 
 
 a|In this diagram, the example above has been extended through the addition of an observation. This refers to the same Phenomenon, Process Used and Feature of Interest as the Observing Capability described above. In addition, it provides a result on the Range association, which contains the actual canopy cover of pine on the field inventory square.
 |===
