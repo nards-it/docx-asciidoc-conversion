@@ -1601,11 +1601,15 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>2) Types that are a sub-type of another type shall also include all this type&#8217;s attributes and association roles.</p>
-</div>
-<div class="paragraph">
-<p>3) Abstract types shall not be instantiated.</p>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Types that are a sub-type of another type shall also include all this type&#8217;s attributes and association roles.</p>
+</li>
+<li>
+<p>Abstract types shall not be instantiated.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -1802,8 +1806,12 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>5) Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."</p>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p>Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -1919,8 +1927,12 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>2) Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.</p>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -1947,11 +1959,15 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;.)</p>
 </div>
-<div class="paragraph">
-<p>3) Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.</p>
-</div>
-<div class="paragraph">
-<p>4) Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.</p>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.</p>
+</li>
+<li>
+<p>Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -2169,8 +2185,12 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>3) Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.</p>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -2222,8 +2242,12 @@ Recommendations are shown using this style.</p>
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>3) Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.</p>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -2266,7 +2290,7 @@ Recommendations are shown using this style.</p>
 <img src="./media/image5-6.png" alt="image">
 </div>
 </div>
-<div class="paragraph">
+<div class="paragraph text-center">
 <p><strong>Figure 2 – Examples of a rectified grid (left) and a referenceable grid (right)</strong></p>
 </div>
 <div class="imageblock text-center">
@@ -2274,7 +2298,7 @@ Recommendations are shown using this style.</p>
 <img src="./media/image57.png" alt="image">
 </div>
 </div>
-<div class="paragraph">
+<div class="paragraph text-center">
 <p><strong>Figure 3 – Example of a time series</strong></p>
 </div>
 </div>
@@ -5795,8 +5819,12 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 <div class="paragraph">
 <p>(&#8230;&#8203;)</p>
 </div>
-<div class="paragraph">
-<p>2) All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.</p>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -6628,37 +6656,25 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </li>
 <li>
 <p>Temporal Reference System: Description of the temporal reference system(s) used in the data set.</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Encoding: Description of the computer language construct(s) specifying the representation of data objects in a record, file, message, storage device or transmission channel.</p>
 </li>
 <li>
 <p>Topological Consistency: Correctness of the explicitly encoded topological characteristics of the data set as described by the scope.</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>This element is mandatory only if the data set includes types from the Generic Network Model and does not assure centreline topology (connectivity of centrelines) for the network.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Character Encoding: The character encoding used in the data set.</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>This element is mandatory only if an encoding is used that is not based on UTF-8.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Spatial Representation Type: The method used to spatially represent geographic information.</p>
 </li>
@@ -7567,7 +7583,7 @@ Technical Guidelines&lt;/gco:CharacterString&gt;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Implementing instructions</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="67">
 <li>
 <p>DQ_DescripitveResult / 68. statement</p>
 </li>
@@ -8039,24 +8055,36 @@ Character set: UTF-8</p>
 <strong>Portrayal</strong></p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="1">
 <li>
 <p>For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup>), the following shall be available:</p>
-<div class="paragraph">
-<p>(a) the layers specified in Annex II for the theme or themes the data set is related to;</p>
+</li>
+</ol>
 </div>
-<div class="paragraph">
-<p>(b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.</p>
-</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>the layers specified in Annex II for the theme or themes the data set is related to;</p>
 </li>
 <li>
+<p>for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
 <p>For each layer, Annex II defines the following:</p>
-<div class="paragraph">
-<p>(a) a human readable title of the layer to be used for display in user interface;</p>
+</li>
+</ol>
 </div>
-<div class="paragraph">
-<p>(b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.</p>
-</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>a human readable title of the layer to be used for display in user interface;</p>
+</li>
+<li>
+<p>the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.</p>
 </li>
 </ol>
 </div>
@@ -12443,7 +12471,7 @@ This use case is not taking into account the generation of a reporting sheet com
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
-<img src="./media/image34.png" alt="image" width="643" height="552">
+<img src="./media/image34.png" alt="image">
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
