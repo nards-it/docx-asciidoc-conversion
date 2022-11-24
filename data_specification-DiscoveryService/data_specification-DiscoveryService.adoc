@@ -576,82 +576,56 @@ Table 2 shows the parameters that are part of a GetCapabilities response of [*CS
 
 [source,xml,subs="+quotes",align=center]
 ----
-<xs:complextype name="ExtendedCapabilitiesType">
-  <xs:annotation>
-    <xs:documentation>
-      Extended capabilities for ISO 19128 , OGC CSW, OGC OWS services
-    </xs:documentation>
-  </xs:annotation>
-  <xs:choice>
-    <xs:sequence>
-      <xs:annotation>
-        <xs:documentation>
-          Scenario 1: Mandatory MetadataUrl element pointing to an INSPIRE Compliant ISO metadata document plus language parameters
-        </xs:documentation>
-      </xs:annotation>
-      <xs:element name="MetadataUrl" type="resourceLocatorType">
-      </xs:element>
-      <xs:element name="SupportedLanguages" type="supportedLanguagesType">
-      </xs:element>
-      <xs:element name="ResponseLanguage" type="languageElementISO6392B">
-      </xs:element>
-    </xs:sequence>
-    <xs:sequence>
-      <xs:annotation>
-        <xs:documentation>
-          Scenario 2: Mandatory (where appropriate) metadata elements not mapped to standard capabilities, plus mandatory language parameters, plus OPTIONAL MetadataUrl pointing to an INSPIRE Compliant ISO metadata document
-        </xs:documentation>
-      </xs:annotation>
-      <xs:element maxoccurs="unbounded" name="ResourceLocator" type="resourceLocatorType">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">
-            Mandatory linkage to the network service
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="ResourceType" type="serviceSpatialDataResourceType">
-      </xs:element>
-      <xs:element maxoccurs="unbounded" name="TemporalReference" type="temporalReference">
-      </xs:element>
-      <xs:element maxoccurs="unbounded" name="Conformity" type="conformity">
-      </xs:element>
-      <xs:element maxoccurs="unbounded" name="MetadataPointOfContact" type="metadataPointOfContact">
-      </xs:element>
-      <xs:element name="MetadataDate" type="iso8601Date">
-      </xs:element>
-      <xs:element name="SpatialDataServiceType" type="spatialDataServiceType">
-      </xs:element>
-      <xs:element maxoccurs="unbounded" name="MandatoryKeyword" type="classificationOfSpatialDataService">
-      </xs:element>
-      <xs:element maxoccurs="unbounded" minoccurs="0" name="Keyword" type="keyword">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">
-            If the resource is a spatial data service, at least one keyword from Part D.4 shall be provided.
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="SupportedLanguages" type="supportedLanguagesType">
-      </xs:element>
-      <xs:element name="ResponseLanguage" type="languageElementISO6392B">
-      </xs:element>
-      <xs:element minoccurs="0" name="MetadataUrl" type="resourceLocatorType">
-      </xs:element>
-    </xs:sequence>
-  </xs:choice>
-</xs:complextype>
-<xs:complextype name="supportedLanguagesType">
-  <xs:sequence>
-    <xs:element name="DefaultLanguage" type="languageElementISO6392B">
-    </xs:element>
-    <xs:element maxoccurs="unbounded" minoccurs="0" name="SupportedLanguage" type="languageElementISO6392B">
-      <xs:annotation>
-        <xs:documentation>
-          It is not necessary to repeat the default language
-        </xs:documentation>
-      </xs:annotation>
-    </xs:element>
-  </xs:sequence>
-</xs:complextype>
+<xs:complexType name="ExtendedCapabilitiesType">
+		<xs:annotation>
+			<xs:documentation>Extended capabilities for ISO 19128 , OGC CSW, OGC OWS services</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:sequence>
+				<xs:annotation>
+					<xs:documentation>Scenario 1: Mandatory MetadataUrl element pointing to an INSPIRE Compliant ISO metadata document plus language parameters </xs:documentation>
+				</xs:annotation>
+				<xs:element name="MetadataUrl" type="resourceLocatorType"/>
+				<xs:element name="SupportedLanguages" type="supportedLanguagesType"/>
+				<xs:element name="ResponseLanguage" type="languageElementISO6392B"/>
+			</xs:sequence>
+		<xs:sequence>
+			<xs:annotation>
+				<xs:documentation>Scenario 2: Mandatory (where appropriate) metadata elements not mapped to standard capabilities, plus mandatory language parameters, plus OPTIONAL MetadataUrl pointing to an INSPIRE Compliant ISO metadata document</xs:documentation>
+			</xs:annotation>
+			<xs:element name="ResourceLocator" type="resourceLocatorType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Mandatory linkage to the network service</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ResourceType" type="serviceSpatialDataResourceType"/>
+			<xs:element name="TemporalReference" type="temporalReference" maxOccurs="unbounded"/>
+			<xs:element name="Conformity" type="conformity" maxOccurs="unbounded"/>
+			<xs:element name="MetadataPointOfContact" type="metadataPointOfContact" maxOccurs="unbounded"/>
+			<xs:element name="MetadataDate" type="iso8601Date"/>
+			<xs:element name="SpatialDataServiceType" type="spatialDataServiceType"/>
+			<xs:element name="MandatoryKeyword" type="classificationOfSpatialDataService" maxOccurs="unbounded"/>
+			<xs:element name="Keyword" type="keyword" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">If the resource is a spatial data service, at least one keyword from Part D.4 shall be provided.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SupportedLanguages" type="supportedLanguagesType"/>
+			<xs:element name="ResponseLanguage" type="languageElementISO6392B"/>
+			<xs:element name="MetadataUrl" type="resourceLocatorType" minOccurs="0"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="supportedLanguagesType">
+		<xs:sequence>
+			<xs:element name="DefaultLanguage" type="languageElementISO6392B"/>
+			<xs:element name="SupportedLanguage" type="languageElementISO6392B" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>It is not necessary to repeat the default language</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 ----
 
 ===== Discovery Service Metadata
@@ -1373,81 +1347,37 @@ All supported ISO queryables shall be advertised to be supported by an INSPIRE D
 
 [source,xml,subs="+quotes",align=center]
 ----
-<ows:operationsmetadata>
-  <ows:operation name="GetRecords">
-    _[...] (List of DCPs, parameters here)_
-    <ows:constraint name="SupportedISOQueryables">
-      <ows:value>
-        Language
-      </ows:value>
-      <ows:value>
-        CreationDate
-      </ows:value>
-      <ows:value>
-        PublicationDate
-      </ows:value>
-      <ows:value>
-        OrganisationName
-      </ows:value>
-      <ows:value>
-        ResourceIdentifier
-      </ows:value>
-      <ows:value>
-        TopicCategory
-      </ows:value>
-      <ows:value>
-        DistanceValue
-      </ows:value>
-      <ows:value>
-        DistanceUOM
-      </ows:value>
-      <ows:value>
-        TempExtent_begin
-      </ows:value>
-      <ows:value>
-        TempExtent_end
-      </ows:value>
-      <ows:value>
-        ServiceType
-      </ows:value>
-      <ows:value>
-        Denominator
-      </ows:value>
-    </ows:constraint>
-    <ows:constraint name="AdditionalQueryables">
-      <ows:value>
-        Degree
-      </ows:value>
-      <ows:value>
-        AccessConstraints
-      </ows:value>
-      <ows:value>
-        OtherConstraints
-      </ows:value>
-      <ows:value>
-        Classification
-      </ows:value>
-      <ows:value>
-        ConditionApplyingToAccessAndUse
-      </ows:value>
-      <ows:value>
-        Lineage
-      </ows:value>
-      <ows:value>
-        ResponsiblePartyRole
-      </ows:value>
-      <ows:value>
-        SpecificationTitle
-      </ows:value>
-      <ows:value>
-        SpecificationDate
-      </ows:value>
-      <ows:value>
-        SpecificationDateType
-      </ows:value>
-    </ows:constraint>
-  </ows:operation>
-</ows:operationsmetadata>
+<ows:OperationsMetadata>
+<ows:Operation name="GetRecords">
+	 […] (List of DCPs, parameters here)	
+	<ows:Constraint name="SupportedISOQueryables">
+		<ows:Value>Language</ows:Value>
+		<ows:Value>CreationDate</ows:Value>
+		<ows:Value>PublicationDate</ows:Value>
+		<ows:Value>OrganisationName</ows:Value>
+		<ows:Value>ResourceIdentifier</ows:Value>
+		<ows:Value>TopicCategory</ows:Value>
+		<ows:Value>DistanceValue</ows:Value>
+		<ows:Value>DistanceUOM</ows:Value>
+		<ows:Value>TempExtent_begin</ows:Value>
+		<ows:Value>TempExtent_end</ows:Value>
+		<ows:Value>ServiceType</ows:Value>
+		<ows:Value>Denominator</ows:Value>
+	</ows:Constraint>
+	<ows:Constraint name="AdditionalQueryables">
+		<ows:Value>Degree</ows:Value>
+<ows:Value>AccessConstraints</ows:Value>
+<ows:Value>OtherConstraints</ows:Value>
+<ows:Value>Classification</ows:Value>
+<ows:Value>ConditionApplyingToAccessAndUse</ows:Value>
+<ows:Value>Lineage</ows:Value>
+<ows:Value>ResponsiblePartyRole</ows:Value>
+<ows:Value>SpecificationTitle</ows:Value>
+		<ows:Value>SpecificationDate</ows:Value>
+		<ows:Value>SpecificationDateType</ows:Value>		
+	</ows:Constraint>
+</ows:Operation>
+</ows:OperationsMetadata>
 ----
 
 === Language Requirements
@@ -1593,23 +1523,17 @@ Service supports French and English while the service default language is French
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_common:supportedlanguages>
-  <inspire_common:defaultlanguage>
-    <inspire_common:language>
-      fre
-    </inspire_common:language>
-  </inspire_common:defaultlanguage>
-  <inspire_common:supportedlanguage>
-    <inspire_common:language>
-      eng
-    </inspire_common:language>
-  </inspire_common:supportedlanguage>
-</inspire_common:supportedlanguages>
-<inspire_common:responselanguage>
-  <inspire_common:language>
-    eng
-  </inspire_common:language>
-</inspire_common:responselanguage>
+<inspire_common:SupportedLanguages>
+	<inspire_common:DefaultLanguage>
+		<inspire_common:Language>fre</inspire_common:Language>
+	</inspire_common:DefaultLanguage>
+	<inspire_common:SupportedLanguage>
+		<inspire_common:Language>eng</inspire_common:Language>
+	</inspire_common:SupportedLanguage>
+</inspire_common:SupportedLanguages>
+<inspire_common:ResponseLanguage>
+	<inspire_common:Language>eng</inspire_common:Language>
+</inspire_common:ResponseLanguage>
 ----
 
 [.text-center]
@@ -1618,23 +1542,17 @@ Service supports French and English while the service default language is French
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_common:supportedlanguages>
-  <inspire_common:defaultlanguage>
-    <inspire_common:language>
-      fre
-    </inspire_common:language>
-  </inspire_common:defaultlanguage>
-  <inspire_common:supportedlanguage>
-    <inspire_common:language>
-      eng
-    </inspire_common:language>
-  </inspire_common:supportedlanguage>
-</inspire_common:supportedlanguages>
-<inspire_common:responselanguage>
-  <inspire_common:language>
-    fre
-  </inspire_common:language>
-</inspire_common:responselanguage>
+<inspire_common:SupportedLanguages>
+	<inspire_common:DefaultLanguage>
+		<inspire_common:Language>fre</inspire_common:Language>
+	</inspire_common:DefaultLanguage>
+<inspire_common:SupportedLanguage>
+	<inspire_common:Language>eng</inspire_common:Language>
+</inspire_common:SupportedLanguage>
+</inspire_common:SupportedLanguages>
+<inspire_common:ResponseLanguage>
+	<inspire_common:Language>fre</inspire_common:Language>
+</inspire_common:ResponseLanguage>
 ----
 
 Service supports only German:
@@ -1644,18 +1562,14 @@ Service supports only German:
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_common:supportedlanguages>
-  <inspire_common:defaultlanguage>
-    <inspire_common:language>
-      ger
-    </inspire_common:language>
-  </inspire_common:defaultlanguage>
-</inspire_common:supportedlanguages>
-<inspire_common:responselanguage>
-  <inspire_common:language>
-    ger
-  </inspire_common:language>
-</inspire_common:responselanguage>
+<inspire_common:SupportedLanguages>
+	<inspire_common:DefaultLanguage>
+	<inspire_common:Language>ger</inspire_common:Language>
+		</inspire_common:DefaultLanguage>
+</inspire_common:SupportedLanguages>
+<inspire_common:ResponseLanguage>
+	<inspire_common:Language>ger</inspire_common:Language>
+</inspire_common:ResponseLanguage>
 ----
 
 ==== GetRecords-Operation
@@ -1725,23 +1639,17 @@ An example of this behaviour is given below, showing how to extend the CSW.GetRe
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_common:supportedlanguages>
-  <inspire_common:defaultlanguage>
-    <inspire_common:language>
-      eng
-    </inspire_common:language>
-  </inspire_common:defaultlanguage>
-  <inspire_common:supportedlanguage>
-    <inspire_common:language>
-      ger
-    </inspire_common:language>
-  </inspire_common:supportedlanguage>
-</inspire_common:supportedlanguages>
-<inspire_common:responselanguage>
-  <inspire_common:language>
-    eng
-  </inspire_common:language>
-</inspire_common:responselanguage>
+<inspire_common:SupportedLanguages>
+	<inspire_common:DefaultLanguage>
+		<inspire_common:Language>eng</inspire_common:Language>
+	</inspire_common:DefaultLanguage>
+	<inspire_common:SupportedLanguage>
+		<inspire_common:Language>ger</inspire_common:Language>
+	</inspire_common:SupportedLanguage>
+</inspire_common:SupportedLanguages>
+<inspire_common:ResponseLanguage>
+	<inspire_common:Language>eng</inspire_common:Language>
+</inspire_common:ResponseLanguage>
 ----
 
 [arabic, start=1]
@@ -1757,23 +1665,21 @@ An example of this behaviour is given below, showing how to extend the CSW.GetRe
 
 [source,xml,subs="+quotes",align=center]
 ----
-<csw:capabilities[...] <ows:operation="" name="GetRecords">
-  <ows:dcp>
-    <ows:http>
-      <ows:post xlink:href="http://someHOST.example/eng/SOAPservices/GetRecords">
-        <ows:constraint name="PostEncoding">
-          <ows:value>
-            XML
-          </ows:value>
-          <ows:value>
-            SOAP
-          </ows:value>
-        </ows:constraint>
-      </ows:post>
-    </ows:http>
-  </ows:dcp>
-  [...]
-</csw:capabilities[...]>
+<csw:Capabilities[…]
+	<ows:Operation name="GetRecords">
+		<ows:DCP>
+			<ows:HTTP>
+				<ows:Post
+   xlink:href="http://someHOST.example/eng/SOAPservices/GetRecords">
+					<ows:Constraint name="PostEncoding">
+						<ows:Value>XML</ows:Value>
+						<ows:Value>SOAP</ows:Value>
+					</ows:Constraint>
+				</ows:Post>
+			</ows:HTTP>
+		</ows:DCP>[…]
+	</ows:Operation[…]
+</csw:Capabilities>
 ----
 
 [.text-center]
@@ -1781,23 +1687,21 @@ An example of this behaviour is given below, showing how to extend the CSW.GetRe
 
 [source,xml,subs="+quotes",align=center]
 ----
-<csw:capabilities[...] <ows:operation="" name="GetRecords">
-  <ows:dcp>
-    <ows:http>
-      <ows:post xlink:href="http://someHOST.example/ger/SOAPservices/GetRecords">
-        <ows:constraint name="PostEncoding">
-          <ows:value>
-            XML
-          </ows:value>
-          <ows:value>
-            SOAP
-          </ows:value>
-        </ows:constraint>
-      </ows:post>
-    </ows:http>
-  </ows:dcp>
-  [...]
-</csw:capabilities[...]>
+<csw:Capabilities[…]
+	<ows:Operation name="GetRecords">
+		<ows:DCP>
+			<ows:HTTP>
+				<ows:Post
+   xlink:href="http://someHOST.example/ger/SOAPservices/GetRecords">
+					<ows:Constraint name="PostEncoding">
+						<ows:Value>XML</ows:Value>
+						<ows:Value>SOAP</ows:Value>
+					</ows:Constraint>
+				</ows:Post>
+			</ows:HTTP>
+		</ows:DCP>[…]
+	</ows:Operation[…]
+</csw:Capabilities>
 ----
 
 [arabic, start=3]
@@ -2007,7 +1911,7 @@ The following table shows the maximum downtime according to the implementing rul
 |99.999% |6 seconds |26 seconds |5 minutes
 |===
 
-
+<<<
 [appendix]
 == Extended capabilities
 
@@ -2023,43 +1927,39 @@ The XML Elements that comply with the following shall be applied in the <Extende
 [source,xml,subs="+quotes",align=center]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema ...="" <xs:complextype="" abstract="true" attributeformdefault="unqualified" elementformdefault="qualified" name="languageElement" targetnamespace="http://inspire.ec.europa.eu/schemas/common/1.0" version="1.0.0" xmlns="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:sequence>
-    <xs:element name="Language" type="xs:string">
-    </xs:element>
-  </xs:sequence>
-  <xs:complextype name="languageElementISO6392B">
-    <xs:complexcontent>
-      <xs:restriction base="languageElement">
-        <xs:sequence>
-          <xs:element name="Language" type="euLanguageISO6392B">
-          </xs:element>
-        </xs:sequence>
-      </xs:restriction>
-    </xs:complexcontent>
-  </xs:complextype>
-  <xs:complextype name="supportedLanguagesType">
-    <xs:sequence>
-      <xs:element name="DefaultLanguage" type="languageElementISO6392B">
-      </xs:element>
-      <xs:element maxoccurs="unbounded" minoccurs="0" name="SupportedLanguage" type="languageElementISO6392B">
-        <xs:annotation>
-          <xs:documentation>
-            It is not necessary to repeat the default language
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complextype>
-  ...
-  <xs:element name="SupportedLanguages" type="supportedLanguagesType">
-  </xs:element>
-  <xs:element name="ResponseLanguage" type="languageElementISO6392B">
-  </xs:element>
-  ...
-</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://inspire.ec.europa.eu/schemas/common/1.0" targetNamespace="http://inspire.ec.europa.eu/schemas/common/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0"
+…
+	<xs:complexType name="languageElement" abstract="true">
+		<xs:sequence>
+			<xs:element name="Language" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+		<xs:complexType name="languageElementISO6392B">
+		<xs:complexContent>
+			<xs:restriction base="languageElement">
+				<xs:sequence>
+					<xs:element name="Language" type="euLanguageISO6392B"/>
+				</xs:sequence>
+		</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="supportedLanguagesType">
+		<xs:sequence>
+			<xs:element name="DefaultLanguage" type="languageElementISO6392B"/>
+			<xs:element name="SupportedLanguage" type="languageElementISO6392B" minOccurs="0" maxOccurs="unbounded">
+		<xs:annotation>
+			<xs:documentation>It is not necessary to repeat the default language</xs:documentation>
+		</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+…
+	<xs:element name="SupportedLanguages" type="supportedLanguagesType"/>
+	<xs:element name="ResponseLanguage" type="languageElementISO6392B"/>
+…
 ----
 
+<<<
 [appendix]
 == INSPIRE Network Services Regulation Compliance
 
