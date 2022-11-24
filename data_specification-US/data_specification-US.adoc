@@ -10250,6 +10250,7 @@ _Several tables, based on Annex F of the ""Data Specifications" Methodology for 
 
 _Anyway, interested persons can contact the TWG members to get it if wanted._
 
+<<<
 [appendix]
 == Portrayal analysis - (informative) 
 
