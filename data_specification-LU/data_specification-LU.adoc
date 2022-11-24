@@ -23,14 +23,14 @@
 
 :appendix-caption: Annex
 
-image::./media/image2.jpeg[image,width=131,height=90,align=center]
+image:./media/image2.jpeg[image,width=131,height=90, align=center]
 
 image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = D2.8.III.4 Data Specification on _Land Use_ – Technical Guidelines
 
-[width="100%",cols="17%,83%"]
+[cols=",",]
 |===
 |*Title* |D2.8.III.4 INSPIRE Data Specification on _Land Use_ – Technical Guidelines
 |*Creator* |INSPIRE Thematic Working Group _Land Use_
@@ -163,7 +163,6 @@ For visualisation purposes, simple rules for default portrayal are given by spec
 
 The main value of the INSPIRE _Land Use_ model is its simplicity, a yet flexible structure that allows data providers to publish their existing data in the most convenient way. It is expected that the effective use of the model will help explaining how to implement this data specification including how to use it for structure plans and construction plans.
 
-<<<
 [discrete]
 == Acknowledgements
 
@@ -183,7 +182,6 @@ Institute for Environment and Sustainability
 Unit H06: Digital Earth and Reference Data
 _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
-<<<
 [discrete]
 = Table of Contents
 toc::[]
@@ -362,8 +360,6 @@ No associations have been defined between spatial object types of other themes t
 
 _Land Use_ features are often defined based on the extent of another related spatial object such as cadastral parcels (planned land use) or land cover polygons (existing land use). These shared geometry has not been considered in the data model. Regarding cadastral parcels, the share of geometry is not stable with time as a spatial plan often refers to a cadastral map as it existed when the plan was adopted.
 
-[cols="",]
-|===
 *Definition:*
 
 Territory characterised according to its current and future planned functional dimension or socio–economic purpose (e.g. residential, industrial, commercial, agricultural, forestry, recreational).
@@ -377,9 +373,7 @@ _Land Use_ theme is defined as the use and functions of a territory and it is de
 - The Planned Land Use which corresponds to spatial plans, defined by spatial planning authorities, depicting the possible utilization of the land in the future.
 
 Two types of classification systems are supported by _Land Use_ theme, the (obligatory) Hierarchical INSPIRE Land Use Classification System which is a multi-level, classification system that will apply to the existing and planned land use; the (optional) specific classification system in use in a member state.
-|===
 
-[align-right]
 Entry in the INSPIRE registry: _http://inspire.ec.europa.eu/theme/lu/_
 
 === Normative References
@@ -662,10 +656,11 @@ Article 5
 *Types*
 
 (...)
-[arabic,start=2]
-. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
 
-. Abstract types shall not be instantiated.
+2. Types that are a sub-type of another type shall also include all this type's attributes and association roles.
+
+3. Abstract types shall not be instantiated.
+
 ====
 
 The use of UML conforms to ISO 19109 8.3 and ISO/TS 19103 with the exception that UML 2.1 instead of ISO/IEC 19501 is being used. The use of UML also conforms to ISO 19136 E.2.1.1.1-E.2.1.1.4.
@@ -745,7 +740,8 @@ Article 6
 
 (...)
 
-5) Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."
+[arabic, start=5]
+. Attributes or association roles of spatial object types or data types that have an enumeration type may only take values from the lists specified for the enumeration type."
 
 ====
 
@@ -764,15 +760,18 @@ The IRs distinguish the following types of code lists.
 Article 6
 *Code Lists and Enumerations*
 
-[arabic,start=1]
-. Code lists shall be of one of the following types, as specified in the Annexes:
-[loweralpha]
-.. code lists whose allowed values comprise only the values specified in this Regulation;
-.. code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
-.. code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
-.. code lists, whose allowed values comprise any values defined by data providers.
+1) Code lists shall be of one of the following types, as specified in the Annexes:
+
+a) code lists whose allowed values comprise only the values specified in this Regulation;
+
+b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
+
+c) code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
+
+d) code lists, whose allowed values comprise any values defined by data providers.
 
 For the purposes of points (b), (c) and (d), in addition to the allowed values, data providers may use the values specified in the relevant INSPIRE Technical Guidance document available on the INSPIRE web site of the Joint Research Centre.
+
 ====
 
 The type of code list is represented in the UML model through the tagged value _extensibility_, which can take the following values:
@@ -802,7 +801,8 @@ Article 6
 
 (...)
 
-2) Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.
+[arabic, start=2]
+. Code lists may be hierarchical. Values of hierarchical code lists may have a more generic parent value. Where the valid values of a hierarchical code list are specified in a table in this Regulation, the parent values are listed in the last column.
 
 ====
 
@@ -819,9 +819,10 @@ Article 6
 
 (....)
 
-3) Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.
+[arabic, start=3]
+. Where, for an attribute whose type is a code list as referred to in points (b), (c) or (d) of paragraph 1, a data provider provides a value that is not specified in this Regulation, that value and its definition shall be made available in a register.
 
-4) Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.
+. Attributes or association roles of spatial object types or data types whose type is a code list may only take values that are allowed according to the specification of the code list.
 
 ====
 
@@ -949,8 +950,7 @@ _Article 10_
 
 (...)
 
-[arabic.start=3]
-. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
+3. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
 
 ====
 
@@ -979,8 +979,8 @@ _Article 12_
 *Other Requirements & Rules*
 
 (...)
-[arabic.start=3]
-. Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
+
+3. Where the attributes validFrom and validTo are used, the value of validTo shall not be before the value of validFrom.
 
 ====
 
@@ -1003,10 +1003,12 @@ Where possible, only these coverage types (or a subtype thereof) are used in INS
 
 image::./media/image19-20.png[image]
 
+[.text-center]
 *Figure 9 – Examples of a rectified grid (left) and a referenceable grid (right)*
 
 image::./media/image67.png[image, align=center]
 
+[.text-center]
 *Figure 10 – Example of a time series*
 
 Conceptually the _Land Use_ theme has a coverage component expressing the partition of a given area but technology is not yet fully operational and user communities not yet prepared to use coverages. Therefore it is recommended when the coverage technology will be widely implemented in operational tools to provide _Land Use_ data according to coverages. In the meanwhile it is recommended to use a set of polygons with the constraint that these polygons do not overlap.
@@ -1040,7 +1042,7 @@ The _Land Use_ theme is itself split up into four application schemas according 
 ** The Gridded _Land Use_ or GLU which correspond to a geo-referenced gridded version of an existing land use dataset.
 * The Planned _Land Use_ or PLU (Future Planned _Land Use_ in the INSPIRE definition), which is composed of spatial plans, defined by spatial planning authorities, depicting the possible utilization of the land in the future. This information could be modelled either as polygons,lines and points or as raster data.
 
-image::./media/image68.png[image, align=center]
+image::./media/image68.png[image,width=390,height=280, align=center]
 
 *Table 3 – Classification of the _Land Use_ application schemas according to their temporal reference and geometry definition*
 
@@ -4221,9 +4223,10 @@ _Annex II, Section 2.2_
 
 Either of the grids with fixed and unambiguously defined locations defined in Sections 2.2.1 and 2.2.2 shall be used as a geo-referencing framework to make gridded data available in INSPIRE, unless one of the following conditions holds:
 
-(1) Other grids may be specified for specific spatial data themes in Annexes II-IV. In this case, data exchanged using such a theme-specific grid shall use standards in which the grid definition is either included with the data, or linked by reference.
+[arabic, start=1]
+. Other grids may be specified for specific spatial data themes in Annexes II-IV. In this case, data exchanged using such a theme-specific grid shall use standards in which the grid definition is either included with the data, or linked by reference.
 
-(2) For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.
+. For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.
 
 *2.2 Equal Area Grid*
 
@@ -4814,9 +4817,10 @@ _Annex IV Section 4.8_
 
 Data providers shall include the following keywords in addition to the mandatory keywords defined in Regulation (EC) No 1205/2008/EC:
 
-(a) One of the following language-neutral keywords to describe the type of land use data set: ExistingLandUse, SampledExistingLandUse, GriddedExistingLandUse, PlannedLandUse.
+[loweralpha]
+. One of the following language-neutral keywords to describe the type of land use data set: ExistingLandUse, SampledExistingLandUse, GriddedExistingLandUse, PlannedLandUse.
 
-(b) If the data set contains SpatialPlan objects, one keyword describing the level of the administrative units covered by the plan, as defined in the LevelOfSpatialPlan code list.
+. If the data set contains SpatialPlan objects, one keyword describing the level of the administrative units covered by the plan, as defined in the LevelOfSpatialPlan code list.
 ====
 
 ==== Spatial Resolution
@@ -4851,23 +4855,23 @@ Article 13
 
 The metadata describing a spatial data set shall include the following metadata elements required for interoperability:
 
-1. Coordinate Reference System: Description of the coordinate reference system(s) used in the data set.
+. Coordinate Reference System: Description of the coordinate reference system(s) used in the data set.
 
-2. Temporal Reference System: Description of the temporal reference system(s) used in the data set.
-
+. Temporal Reference System: Description of the temporal reference system(s) used in the data set.
++
 This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.
 
-3. Encoding: Description of the computer language construct(s) specifying the representation of data objects in a record, file, message, storage device or transmission channel.
+. Encoding: Description of the computer language construct(s) specifying the representation of data objects in a record, file, message, storage device or transmission channel.
 
-4. Topological Consistency: Correctness of the explicitly encoded topological characteristics of the data set as described by the scope.
-
+. Topological Consistency: Correctness of the explicitly encoded topological characteristics of the data set as described by the scope.
++
 This element is mandatory only if the data set includes types from the Generic Network Model and does not assure centreline topology (connectivity of centrelines) for the network.
 
-5. Character Encoding: The character encoding used in the data set.
-
+. Character Encoding: The character encoding used in the data set.
++
 This element is mandatory only if an encoding is used that is not based on UTF-8.
 
-6. Spatial Representation Type: The method used to spatially represent geographic information.
+. Spatial Representation Type: The method used to spatially represent geographic information.
 
 ====
 
@@ -4998,7 +5002,7 @@ referenceSystemIdentifier:
 
 [cols=",",options="header",]
 |===
-|Metadata element name |*Encoding*
+|*Metadata element name* |*Encoding*
 |Definition |Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel
 |ISO 19115 number and name |271. distributionFormat
 |ISO/TS 19139 path |distributionInfo/MD_Distribution/distributionFormat
@@ -5035,7 +5039,7 @@ specification: D2.8.III.4 Data Specification on _Land Use_ – Technical Guideli
 
 [cols=",",options="header",]
 |===
-|Metadata element name |*Character Encoding*
+|*Metadata element name* |*Character Encoding*
 |Definition |The character encoding used in the data set.
 |ISO 19115 number and name |
 |ISO/TS 19139 path |
@@ -5058,7 +5062,7 @@ specification: D2.8.III.4 Data Specification on _Land Use_ – Technical Guideli
 
 [cols=",",options="header",]
 |===
-|Metadata element name |*Spatial representation type*
+|*Metadata element name* |*Spatial representation type*
 |Definition |The method used to spatially represent geographic information.
 |ISO 19115 number and name |37. spatialRepresentationType
 |ISO/TS 19139 path |
@@ -5119,13 +5123,17 @@ For implementing the metadata elements included in this section using ISO 19115,
 
 [cols=",",options="header",]
 |===
-|Metadata element name |*Maintenance information*
+|*Metadata element name* |*Maintenance information*
 |Definition |Information about the scope and frequency of updating
-|ISO 19115 number and name |30. resourceMaintenance
+|ISO 19115 number and name 
+a|[arabic, start=30]
+. resourceMaintenance
 |ISO/TS 19139 path |identificationInfo/MD_Identification/resourceMaintenance
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..1
-|Data type(and ISO 19115 no.) |142. MD_MaintenanceInformation
+|Data type(and ISO 19115 no.) 
+a|[arabic, start=142]
+. MD_MaintenanceInformation
 |Domain a|
 This is a complex type (lines 143-148 from ISO 19115).
 
@@ -5196,7 +5204,7 @@ NOTE In the level element of DQ_Scope, the value featureType is used to denote s
 
 [cols=",",options="header",]
 |===
-|Metadata element name |*See chapter 7*
+|*Metadata element name* |*See chapter 7*
 |Definition |See chapter 7
 |ISO/DIS 19157 number and name |3. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
@@ -5206,28 +5214,33 @@ NOTE In the level element of DQ_Scope, the value featureType is used to denote s
 |Domain a|
 Lines 7-9 from ISO/DIS 19157
 
-7. DQ_MeasureReference (C.2.1.3)
+[arabic, start=7]
+. DQ_MeasureReference (C.2.1.3)
 
-8. DQ_EvaluationMethod (C.2.1.4.)
+. DQ_EvaluationMethod (C.2.1.4.)
 
-9. DQ_Result (C2.1.5.)
+. DQ_Result (C2.1.5.)
 
 |Implementing instructions a|
-39. nameOfMeasure
+[arabic, start=39]
+. nameOfMeasure
 
 NOTE This should be the name as defined in Chapter 7.
 
-42. evaluationMethodType
+[arabic, start=42]
+. evaluationMethodType
 
-43. evaluationMethodDescription
+. evaluationMethodDescription
 
 NOTE If the reported data quality results are derived or aggregated (i.e. the scope levels for evaluation and reporting are different), the derivation or aggregation should also be specified using this property.
 
-46. dateTime
+[arabic, start=46]
+. dateTime
 
 NOTE This should be data or range of dates on which the data quality measure was applied.
 
-63. DQ_QuantitativeResult / 64. value
+[arabic, start=63]
+. DQ_QuantitativeResult / 64. value
 
 NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represent(s) the application of the data quality measure (39.) using the specified evaluation method (42-43.)
 
@@ -5239,7 +5252,7 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 
 [cols=",",options="header",]
 |===
-|Metadata element name |*See chapter 7*
+|*Metadata element name* |*See chapter 7*
 |Definition |See chapter 7
 |ISO/DIS 19157 number and name |3. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
@@ -5249,10 +5262,12 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 |Domain a|
 Line 9 from ISO/DIS 19157
 
-9. DQ_Result (C2.1.5.)
+[arabic, start=9]
+. DQ_Result (C2.1.5.)
 
 |Implementing instructions a|
-67. DQ_DescripitveResult / 68. statement
+[arabic, start=67]
+. DQ_DescripitveResult / 68. statement
 
 NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.) the evaluation of the selected DQ sub-element should be expressed in a narrative way.
 
@@ -5272,9 +5287,9 @@ NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.
 _Article 8_
 *Updates*
 
-1. Member States shall make available updates of data on a regular basis.
+. Member States shall make available updates of data on a regular basis.
 
-2. All updates shall be made available at the latest 6 months after the change was applied in the source data set, unless a different period is specified for a specific spatial data theme in Annex II.
+. All updates shall be made available at the latest 6 months after the change was applied in the source data set, unless a different period is specified for a specific spatial data theme in Annex II.
 
 ====
 
@@ -5448,17 +5463,19 @@ This clause defines the rules for layers and styles to be used for portrayal of 
 _Article 14_
 *Portrayal*
 
-1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
+[arabic, start=1]
+. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
 +
-(a) the layers specified in Annex II for the theme or themes the data set is related to;
-+
-(b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
+[loweralpha]
+.. the layers specified in Annex II for the theme or themes the data set is related to;
+.. for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
 
-2. For each layer, Annex II defines the following:
+[arabic, start=2]
+. For each layer, Annex II defines the following:
 +
-(a) a human readable title of the layer to be used for display in user interface;
-+
-(b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
+[loweralpha]
+.. a human readable title of the layer to be used for display in user interface;
+.. the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
 
 ====
 
@@ -5524,13 +5541,11 @@ _Article 14_
 [arabic, start=3]
 . For spatial object types whose objects can be further classified using a code list-valued attribute, several layers may be defined. Each of these layers shall include the spatial objects corresponding to one specific code list value. In the definition of such sets of layers in Annexes II-IV,
 +
-(a) the placeholder <CodeListValue> shall represent the values of the relevant code list, with the first letter in upper case,
-+
-(b) the placeholder <human-readable name> shall represent the human-readable name of the code list values;
-+
-(c) the spatial object type shall include the relevant attribute and code list, in parentheses;
-+
-(d) one example of a layer shall be given.
+[loweralpha]
+.. the placeholder <CodeListValue> shall represent the values of the relevant code list, with the first letter in upper case,
+.. the placeholder <human-readable name> shall represent the human-readable name of the code list values;
+.. the spatial object type shall include the relevant attribute and code list, in parentheses;
+.. one example of a layer shall be given.
 
 ====
 
@@ -6298,7 +6313,8 @@ Sections B2 to B5 identify the use cases considered relevant and express the req
 
 Users' information collection was sometimes heterogeneous, for these reason these four use cases have been fully documented using the INSPIRE template to reach a harmonization with other themes. Figure 31 provides an overview of the use cases regarding the type of land use that is required, the temporality of the required land use data, (either past, present of future land use) and the type of activities that requires land use data.
 
-image::./media/image49.png[image,align=center]
+image::./media/image49.png[image,width=215,height=151]image::./media/image50.png[image,width=258,height=151]
+image::./media/image51.png[image,width=226,height=151, align=center]
 
 [.text-center]
 *Figure 31 – Graphs of use cases study about lands involved, temporal dimension and context of use (framework).*
