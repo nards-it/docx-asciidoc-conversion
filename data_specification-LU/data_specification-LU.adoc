@@ -10111,7 +10111,7 @@ Mapping from NACE (level 2) to HILUCS
 
 [cols=",,",options="header",]
 |===
-|*TemplateCode Value* |*HILUCS code* |
+2+|*TemplateCode Value* |*HILUCS code*
 |A |Agriculture, forestry and fishing |
 |A1 |Crop and animal production, hunting and related service activities a|
 1_1
@@ -10236,25 +10236,25 @@ Mapping from SEEA to HILUCS
 
 [cols=",,",]
 |===
-|*SEEA code and definition* |*HILUCS code* |
+2+|*SEEA code and definition* |*HILUCS code* 
 |LAND | |
-|Agriculture |1_1 |
+2+|Agriculture |1_1 
 | |Land under temporary crops |1_1
 | |Land under temporary meadows and pastures |1_1
 | |Land with temporary fallow |1_1
 | |Land under permanent crops |1_1
 | |Land under permanent meadows and pastures |1_1
 | |Land under protective cover |1_1
-|Forestry |1_2 |
+2+|Forestry |1_2
 | |Forest land |1_2
 | |_Primary regenerated forest_ |1_2_3
 | |_Other naturally regenerated forest_ |1_2_2
 | |_Planted forest_ |1_2_1
 | |Other wooded land |1_2
-|__Land Use__d for aquaculture |1_4 |
+2+|__Land Use__d for aquaculture |1_4
 | |__Land Use__d for hatcheries |1_4
 | |Managed grow-out sites on land |1_4
-|Use of built-up and related areas | |
+2+|Use of built-up and related areas |
 | |Mining and quarrying |1_3
 | |Construction |Tbd (6_1?)
 | |Manufacturing a|
@@ -10272,18 +10272,18 @@ Mapping from SEEA to HILUCS
 | |Residential |5.
 | |__Land Use__d for maintenance and restoration of environmental functions |Supplementary regulation
 | |Other uses of land n.e.c. |6_6
-|Land not in use |6_3_1 |
-|INLAND WATER | |
+2+|Land not in use |6_3_1 
+3+|INLAND WATER
 | |Inland waters used for aquaculture or holding facilities |1_4
 | |Inland water used for maintenance and restoration of environmental functions |Supplementary regulation
 | |Other uses of inland water n.e.c. |6_6
 | |Inland water not in use |6_3_2
-|INTERNAL WATERS | |
+3+|INTERNAL WATERS 
 | |Internal waters used for aquaculture or holding facilities |1_4
 | |Internal waters used for maintenance and restoration of environmental functions |Supplementary regulation
 | |Other uses of internal waters n.e.c. |6_6
 | |Internal waters not in use |6_3_2
-|EXCLUSIVE ECONOMIC ZONE | |
+3+|EXCLUSIVE ECONOMIC ZONE
 | |EEZ areas used for aquaculture or holding facilities |1_4
 | |EEZ areas used for maintenance and restoration of environmental functions |Supplementary regulation
 | |Other uses of EEZ areas n.e.c. |6_6
@@ -10294,7 +10294,7 @@ Mapping from Urban Atlas to HILUCS
 
 [cols=",,",options="header",]
 |===
-|*Urban Atlas code and definition* |*HILUCS code* |
+2+|*Urban Atlas code and definition* |*HILUCS code*
 |1.1.1 |Continuous Urban fabric (soil sealing >80%) |5
 |1.1.2.1 |Discontinuous dense urban fabric (soil sealing 50% - 80%) |5
 |1.1.2.2 |Discontinuous medium urban fabric (soil sealing 30% - 50%) |5
