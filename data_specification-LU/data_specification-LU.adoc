@@ -10059,7 +10059,7 @@ Mapping from LUCAS to HILUCS
 
 [cols=",,",options="header",]
 |===
-|*LUCAS code and Definition* |*HILUCS code* |
+2+|*LUCAS code and Definition* |*HILUCS code*
 |U111 |Agriculture (excluding fallow land, kitchen garden and personal consumption areas) |1_1
 |U112 |Fallow land and abonded land in agriculture |1_1
 |U113 |Kitchen garden |1_1
