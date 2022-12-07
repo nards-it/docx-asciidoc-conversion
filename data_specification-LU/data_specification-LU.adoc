@@ -1300,7 +1300,7 @@ image::./media/image35.png[image,width=590,height=563, align=center]
 [.text-center]
 *Figure 23 – UML Overview of the Planned _Land Use_ application schema*
 
-======= Supplementary regulation
+_Supplementary regulation_
 
 Supplementary information is often present in spatial planning document and delimits locations where a specific regulation applies and supplements the regulations of the zoning. These supplementary regulations may be seen as a buffer around an object of the real world. A point or a line can bear the regulation. This supplementary information is implemented in the «featureType» SupplementaryRegulation.
 
@@ -1340,7 +1340,7 @@ image::./media/image36.png[image,width=432,height=324, align=center]
 [.text-center]
 *Figure 24 – graphical representation of Supplementary Regulations overlaid on a topographic map*
 
-======= Other aspects
+_Other aspects_
 
 Planned land use datasets are specific as they correspond to legal documents containing the regulations. The application schema implements the requirement to include inside the dataset the digital facsimile of the regulation («dataType» DocumentCitation). But the regulation itself may be attached to the spatial plan as well as to any Zoning Element or to any Supplementary Regulations. The «featureType» OfficialDocumentation implements that requirement. OffcialDocumentation can either be the text itself, the reference to the official journal that contains it or the URL of the document that contains it.
 
@@ -5670,7 +5670,7 @@ None.
 :sectnums:
 <<<
 [appendix]
-== Abstract Test Suite- (normative) 
+== Abstract Test Suite - (normative) 
 
 
 *Disclaimer*
@@ -6315,8 +6315,7 @@ Sections B2 to B5 identify the use cases considered relevant and express the req
 
 Users' information collection was sometimes heterogeneous, for these reason these four use cases have been fully documented using the INSPIRE template to reach a harmonization with other themes. Figure 31 provides an overview of the use cases regarding the type of land use that is required, the temporality of the required land use data, (either past, present of future land use) and the type of activities that requires land use data.
 
-image::./media/image49.png[image,width=215,height=151]image::./media/image50.png[image,width=258,height=151]
-image::./media/image51.png[image,width=226,height=151, align=center]
+image::./media/image49.png[image,width=215,height=151]
 
 [.text-center]
 *Figure 31 – Graphs of use cases study about lands involved, temporal dimension and context of use (framework).*
