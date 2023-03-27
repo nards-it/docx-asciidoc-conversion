@@ -209,7 +209,7 @@ Different countries or communities use different methods both for collecting the
 
 Similarly the methods used to derive the distribution can involve a variety of techniques and physically change through time. It is therefore important that the details of the methodology used to derive the distributions are clearly and adequately described in the associated metadata. In addition a single species distribution may represent the amalgamation of a range of separate sources and given that the quality of these may vary it is important that the sources are adequately described and that it is possible to identify what each source contributed to the overall distribution. The sources for the raw material and the provider of the aggregated/amalgamated dataset are key attributes to give the end user the option to interpret a specific species distribution.
 
-image::./media/image4.png[image,width=604,height=349]
+image::./media/image4.png[image]
 
 [text-center]
 *Figure 1 – Examples of different types of distribution representation. Raw observations summarised to a 10km square grid and coloured according to year last recorded, a polygon summary of the data for a particular time period and a predictive probability plot for the species derived using Maxent model. Source: Joint Nature Conservation Committee, England and Wales.*
@@ -903,10 +903,7 @@ _Annex IV, Section 18.5_
 
 Figure below depicts the three different scenarios.
 
-[cols=",",]
-|===
-|image::./media/image12.jpeg[map_grid_observations,width=279,height=281] |image::./media/image13.jpeg[Presence_absence,width=286,height=282]
-|===
+image::./media/image23.png[image]
 
 [text-center]
 *Figure 7 – Example of presence/absence in 1x1 km grid cells aggregated from observations.*
@@ -2440,7 +2437,7 @@ http://bd.eionet.europa.eu/article17/reference_portal
 |===
 |*Code list* |*Identifiers* |*Examples*
 |Article17SourceMethodValue |Append the codes in the field '1.1.2 Method used-map' from page 4 of the Reporting Formats for Article17, the codes to be used are 
-3,2,1,0. Refer to the document for more detailed description. For the reporting under Article 12 of the Birds Directive the codes are the same. |http://inspire.ec.europa.eu/codeList/ Article17SourceMethodValue/3
+3,2,1,0. Refer to the document for more detailed description. For the reporting under Article 12 of the Birds Directive the codes are the same. |http://inspire.ec.europa.eu/codeList/Article17SourceMethodValue/3
 |===
 
 [cols=",,",options="header",]
@@ -4479,7 +4476,7 @@ consideration |Web Processing Service
 |Description |The user analyzes cross-border datasets on Species Distribution (for example, those created in Use Case 5 up to a European extent by means of a GIS-application to create overview-maps and/or tabulations on Species Distribution data. The results will be part of special reports of different kinds such as progress in area coverage of Species Distribution per category in the EU/EEA (indicators) and composite assessments of the implementation of the EU Directives at the European or biogeographical level.
 |Pre-condition |Quality controlled Species Distribution data sets from the Member States are available to the user in line with INSPIRE specifications and the INSPIRE registry provides all necessary information for standardised access to data. The user has access to the INSPIRE Generate Report Web Processing Service.
 |Post-condition |The report may be for later comparison of versions. GIS-analyses and resulting data have to be described and stored for later use.
-|*Flow of Events – Basic Path* |
+2+|*Flow of Events – Basic Path*
 a|
 Step 1.
 
@@ -4490,7 +4487,7 @@ Step 2.
 a|
 Step 3.
 |The user receives the report and uses it to determine the status of Species Distribution across Europe.
-|*Data set:* INSPIRE-Conformant Species Distribution Data Set Provided by Member State |
+2+|*Data set:* INSPIRE-Conformant Species Distribution Data Set Provided by Member State
 a|
 Description
 |Report data generated for Species Distribution to provide summary details across Europe.
@@ -4533,7 +4530,7 @@ consideration |Portable devices supporting webapplications/systems
 |Description |The user uses a publicly accessible (probably web based) GIS to zoom/pan to or find, by gazetteer search, the location of interest and display the data on screen.
 |Pre-condition |Species Distribution are available in line with INSPIRE specifications to the user by relevant Web Map Services and Web Feature Services. The user has access to a publicly accessible (probably web based) GIS that displays data using the INSPIRE rules.
 |Post-condition |User is able to easy and properly interpret received information.
-|*Flow of Events – Basic Path* |
+2+|*Flow of Events – Basic Path*
 a|
 Step 1.
 |The user uses the GIS to zoom and/or pan to the area of interest, or selects a particular place or administrative area name from a list (this list comes from the INSPIRE Geographic Names data set).
@@ -4546,7 +4543,7 @@ Step 3.
 a|
 Step 4.
 |The GIS queries the relevant Web Feature Service and presents the attribute data for the selected Species Distribution feature in the client application. In addition to the attributes, this service may also provide links to related information about habitat, protected areas and feature condition information..
-|*Data set:* Member State Web Map Service and Web Feature Service on Species Distribution |
+2+|*Data set:* Member State Web Map Service and Web Feature Service on Species Distribution
 a|
 Description
 |This use case uses Web Map Services and Web Feature Services from each of the EU/EEA member states that serve their Species Distribution data in the INSPIRE GML map projection parameters (for web map service) and application schema format (for web feature service).
@@ -4589,7 +4586,7 @@ consideration |Environmental impact assessment
 |Description |The user creates a view of Species Distribution within the planning proposal area and assesses potential impacts.
 |Pre-condition |Species Distribution are available in line with INSPIRE specifications to the user and INSPIRE registry provides all necessary information for standardised access to data. The user has access to a client GIS with basic selection tools.
 |Post-condition |The user has an audit trail of the impact assessment for use in contested inquiries to resolve any conflicts.
-|*Flow of Events – Basic Path* |
+2+|*Flow of Events – Basic Path*
 a|
 
 Step 1.
@@ -4644,7 +4641,7 @@ Step 9.
 
 
 |*Impact assessment:* The user identifies conflicts between development and existing Species Distribution and the influenced species features.
-|*Data set:* INSPIRE Species Distribution for each member state |
+2+|*Data set:* INSPIRE Species Distribution for each member state
 a|
 
 Description
@@ -4711,7 +4708,7 @@ consideration |Desktop GIS
 |Description |The user downloads Species Distribution data and associated metadata in a selected area and with selected feature types included.
 |Pre-condition |Species Distribution are available in line with INSPIRE specifications to the user and INSPIRE registry provides all necessary information for standardised access to data. The user has access to a client GIS with basic selection tools.
 |Post-condition |The user has a copy of the Species Distribution data according to his or her geographical and feature type selection saved in the format of the GML application schema generated from the Species Distribution package of the INSPIRE data model.
-|*Flow of Events – Basic Path* |
+2+|*Flow of Events – Basic Path*
 a|
 
 Step 1.
@@ -4748,7 +4745,7 @@ Step 6.
 
 
 |The user handles the response in his or her chosen manner (for example, by saving the GML data returned by the web service/s to the local computer).
-|*Data set:* Member State Species Distribution Web Feature Service for each member state |
+2+|*Data set:* Member State Species Distribution Web Feature Service for each member state
 a|
 
 Description
@@ -4817,7 +4814,7 @@ consideration |National spatial data infrastructures.
 |Description |The user is an EU member state, and prepares and provides its data using the INSPIRE specifications, in the form of a static or dynamic data set.
 |Pre-condition |Agreement to reporting data specifications and formats at the European level such the species national redlist status, species names status, and on data collection cycle and reporting deadlines.
 |Post-condition |The member state's data set is available in line with INSPIRE standards.
-|*Flow of Events – Basic Path* |
+2+|*Flow of Events – Basic Path*
 a|
 Step 1.
 |Before expiration of a reporting deadline, the user prepares the national data for submission including mapping from the national data to the INSPIRE Species Distribution Data Product Specification.
@@ -4845,7 +4842,7 @@ Step 8.
 a|
 Step 9.
 |The user publishes the data and metadata according to INSPIRE regulations in multiple, appropriate forms. Such forms are likely to at least include OGC web services for the data served by the member state (most importantly Web Map Service and Web Feature Service), registered with the INSPIRE registry.
-|*Data set:* Member State Data Set |
+2+|*Data set:* Member State Data Set
 a|
 Description
 |This use case uses data sets from each member state and submits them to an INSPIRE compatible infrastructure.
@@ -4894,7 +4891,7 @@ consideration |
 |Description |The user (collating body=NBIC) receives Species Distribution data and associated metadata from the species data providers within the Member State and though the national focal point NMA creates a single contribution to the European reporting process.
 |Pre-condition |The national focal point (NMA) has access to a client GIS with basic selection tools and NBIC provide data to known standards and quality from the species data providers. There are previous versions of the cumulative data layer held by the INSPIRE on behalf of Europe.
 |Post-condition |The NMA has a copy of the current cumulative species objects and database and INSPIRE further process this to create the combined European layer.
-|*Flow of Events – Basic Path* |
+2+|*Flow of Events – Basic Path*
 a|
 Step 1.
 |The user (collator=NBIC) requests data on new and amended species data from national or international institutions/providers as part of a coordinated exercise to provide a batched update to INSPIRE.
@@ -4910,7 +4907,7 @@ Step 4.
 a|
 Step 5.
 |The cumulative layer and the supporting database are then submitted or opened by WFS to INSPIRE for incorporation into the European layer.
-|*Data set:* Internal systems of each member state |
+2+|*Data set:* Internal systems of each member state
 a|
 Description
 |This use case uses country derived data created according to nationally agreed standards. This data is used in GIS within each user agency and also made available through web-mapping systems[multiblock footnote omitted] and websites.
@@ -5026,7 +5023,7 @@ a|
 
 The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
 
-[cols="",options="header",]
+[cols=""]
 |===
 a|
 *colonies*
@@ -5119,7 +5116,7 @@ a|
 
 |===
 
-[cols="",options="header",]
+[cols=""]
 |===
 a|
 *common*
@@ -5184,7 +5181,7 @@ a|
 
 |===
 
-[cols="",options="header",]
+[cols=""]
 |===
 a|
 *congruent*
@@ -5250,7 +5247,7 @@ a|
 
 |===
 
-[cols="",options="header",]
+[cols=""]
 |===
 a|
 *eunomen*
@@ -5302,7 +5299,7 @@ NOTE One or more categories of population may be listed in the dataset, giving p
 
 The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
 
-[cols="",options="header",]
+[cols=""]
 |===
 a|
 *cultivated*
@@ -5405,7 +5402,7 @@ a|
 
 The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
 
-[cols="",options="header",]
+[cols=""]
 |===
 a|
 *collectionExamination*
@@ -5504,128 +5501,68 @@ This metadata element will also allow data producers to report that a specific d
 [source, xml]
 ----
 <gmd:report>
+				<gmd:DQ_DomainConsistency>
+					<gmd:result>
+						<gmd:DQ_ConformanceResult>
+							<gmd:specification>
+								<gmd:CI_Citation>
+									<gmd:title>
+										<gco:CharacterString>COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+									</gmd:title>
+									<gmd:date>
+										<gmd:CI_Date>
+											<gmd:date>
+												<gco:Date>2010-12-08</gco:Date>
+											</gmd:date>
+											<gmd:dateType>
+												<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+											</gmd:dateType>
+										</gmd:CI_Date>
+									</gmd:date>
+								</gmd:CI_Citation>
+							</gmd:specification>
+							<gmd:explanation>
+								<gco:CharacterString>See the referenced specification</gco:CharacterString>
+							</gmd:explanation>
+							<gmd:pass>
+								<gco:Boolean>false</gco:Boolean>
+							</gmd:pass>
+						</gmd:DQ_ConformanceResult>
+					</gmd:result>
+				</gmd:DQ_DomainConsistency>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_DomainConsistency>
+					<gmd:result>
+						<gmd:DQ_ConformanceResult>
+							<gmd:specification>
+								<gmd:CI_Citation>
+									<gmd:title>
+										<gco:CharacterString>Council Directive 92/43/EEC of 21 May 1992 on the conservation of natural habitats and of wild fauna and flora</gco:CharacterString>
+									</gmd:title>
+									<gmd:date>
+										<gmd:CI_Date>
+											<gmd:date>
+												<gco:Date>1992-05-02</gco:Date>
+											</gmd:date>
+											<gmd:dateType>
+												<gmd:CI_DateTypeCode codeListValue="creation" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode">publication</gmd:CI_DateTypeCode>
+											</gmd:dateType>
+										</gmd:CI_Date>
+									</gmd:date>
+								</gmd:CI_Citation>
+							</gmd:specification>
+							<gmd:explanation>
+								<gco:CharacterString>See the referenced specification</gco:CharacterString>
+							</gmd:explanation>
+							<gmd:pass>
+								<gco:Boolean>false</gco:Boolean>
+							</gmd:pass>
+						</gmd:DQ_ConformanceResult>
+					</gmd:result>
+				</gmd:DQ_DomainConsistency>
+			</gmd:report>
 
-<gmd:DQ_DomainConsistency>
-
-<gmd:result>
-
-<gmd:DQ_ConformanceResult>
-
-<gmd:specification>
-
-<gmd:CI_Citation>
-
-<gmd:title>
-
-<gco:CharacterString>COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
-
-</gmd:title>
-
-<gmd:date>
-
-<gmd:CI_Date>
-
-<gmd:date>
-
-<gco:Date>2010-12-08</gco:Date>
-
-</gmd:date>
-
-<gmd:dateType>
-
-<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
-
-</gmd:dateType>
-
-</gmd:CI_Date>
-
-</gmd:date>
-
-</gmd:CI_Citation>
-
-</gmd:specification>
-
-<gmd:explanation>
-
-<gco:CharacterString>See the referenced specification</gco:CharacterString>
-
-</gmd:explanation>
-
-<gmd:pass>
-
-<gco:Boolean>false</gco:Boolean>
-
-</gmd:pass>
-
-</gmd:DQ_ConformanceResult>
-
-</gmd:result>
-
-</gmd:DQ_DomainConsistency>
-
-</gmd:report>
-
-<gmd:report>
-
-<gmd:DQ_DomainConsistency>
-
-<gmd:result>
-
-<gmd:DQ_ConformanceResult>
-
-<gmd:specification>
-
-<gmd:CI_Citation>
-
-<gmd:title>
-
-<gco:CharacterString>Council Directive 92/43/EEC of 21 May 1992 on the conservation of natural habitats and of wild fauna and flora</gco:CharacterString>
-
-</gmd:title>
-
-<gmd:date>
-
-<gmd:CI_Date>
-
-<gmd:date>
-
-<gco:Date>1992-05-02</gco:Date>
-
-</gmd:date>
-
-<gmd:dateType>
-
-<gmd:CI_DateTypeCode codeListValue="creation" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode">publication</gmd:CI_DateTypeCode>
-
-</gmd:dateType>
-
-</gmd:CI_Date>
-
-</gmd:date>
-
-</gmd:CI_Citation>
-
-</gmd:specification>
-
-<gmd:explanation>
-
-<gco:CharacterString>See the referenced specification</gco:CharacterString>
-
-</gmd:explanation>
-
-<gmd:pass>
-
-<gco:Boolean>false</gco:Boolean>
-
-</gmd:pass>
-
-</gmd:DQ_ConformanceResult>
-
-</gmd:result>
-
-</gmd:DQ_DomainConsistency>
-
-</gmd:report>
 ----
 
 ==== Lineage 
@@ -5636,25 +5573,26 @@ Example for Lineage element is available in Annex C
 
 [source, xml]
 ----
-<gmd:lineage> 
-<gmd:LI_Lineage> 
-<gmd:statement> 
-<gco:CharacterString>Source observation data has been aggregated to distribution data using spatial operators buffer and intersect.</gco:CharacterString> 
-</gmd:statement> 
-<gmd:processStep> 
-<gmd:LI_ProcessStep> 
-<gmd:description>
-<gco:CharacterString>For the data transformation from local to the INSPIRE model, the following methodology has been used: 1. Harmonization between the source and target (INSPIRE) data model. 2. Semantic mapping of individual featuers and their attributes. 3. Additional rules for data conversion, as data type conversions, data grouping, data concatenate, constants definition. 4. Implementation of the transformation means completely automated crosswalk by means of the application of some type of tool (Geoserver - Application schema extension and XML MapForce)</gco:CharacterString> 
-</gmd:description> 
-</gmd:LI_ProcessStep>
-</gmd:processStep> 
-<gmd:source> 
-<gmd:LI_Source> 
-<gmd:description>
-<gco:CharacterString>Each sample within the source dataset was collected at the point of maximum depth of the lake, incorporating identical aliquot of water taken between 0-2 m, 3 m, 4 m and between 5-6 m deep. The sampling frequency was every month. Tear Bottle, year of production 1999, Model number:SJ900AXCD has been used for sampling.</gco:CharacterString> 
-</gmd:description> 
-</gmd:LI_Source> 
-</gmd:source> 
-</gmd:LI_Lineage> 
-</gmd:lineage>
+<gmd:lineage>
+                <gmd:LI_Lineage>
+                    <gmd:statement>
+                        <gco:CharacterString>Source observation data has been aggregated to distribution data using spatial operators buffer and intersect.</gco:CharacterString>
+                    </gmd:statement>
+                    <gmd:processStep>
+                        <gmd:LI_ProcessStep>
+                            <gmd:description>
+                                <gco:CharacterString>For the data transformation from local to the INSPIRE model, the following methodology has been used: 1. Harmonization between the source and target (INSPIRE) data model. 2. Semantic mapping of individual featuers and their attributes. 3. Additional rules for data conversion, as data type conversions, data grouping, data concatenate, constants definition. 4. Implementation of the transformation means completely automated crosswalk by means of the application of some type of tool (Geoserver - Application schema extension and XML MapForce)</gco:CharacterString>
+                            </gmd:description>
+                        </gmd:LI_ProcessStep>
+                    </gmd:processStep>
+                    <gmd:source>
+                        <gmd:LI_Source>
+                            <gmd:description>
+                                <gco:CharacterString>Each sample within the source dataset was collected at the point of maximum depth of the lake, incorporating identical aliquot of water taken between 0-2 m, 3 m, 4 m and between 5-6 m deep. The sampling frequency was every month. Tear Bottle, year of production 1999, Model number:SJ900AXCD has been used for sampling.</gco:CharacterString>
+                            </gmd:description>
+                        </gmd:LI_Source>
+                    </gmd:source>
+                </gmd:LI_Lineage>
+            </gmd:lineage>
+
 ----
