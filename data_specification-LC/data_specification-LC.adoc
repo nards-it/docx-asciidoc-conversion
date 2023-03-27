@@ -1584,7 +1584,8 @@ One important aspect on Land Cover information is its changing quality over time
 
 Having in mind the two above-mentioned issues, there are several date types to be considered in describing the landscape from the _Land Cover_ point of view. Some of these date types are important when it comes to the comparison of two or more different situations of land cover. On the basis of diverse available date types, the data user is able to extract and assess land cover change information from imagery or other data sources. The following shows a list of date types along the process of land cover data capture and delivery.
 
-======= *event date:*
+[loweralpha]
+. *event date:*
 
 The point of time or short period, when a certain type of land cover occurs in reality, is seen as the event date, e.g. storm damage or clear cut in forest areas, beginning of a construction site, finishing of a construction site, creation of a new coastline by enclosing former salt marshes with a dike. The event date would be the most exact information about the point of time when a certain land cover change appears in reality. The monitoring of land cover aims more at different timelines. Also it is rather unlikely to have such information on the event date available for the majority of land cover objects. The storage of the event date for every single case may appear as not feasible and therefore is considered as not mandatory but voidable.
 
@@ -1594,26 +1595,32 @@ If nevertheless required, the event date can be modelled as voidable attribute
 
 * validTo: The point of time from when on the phenomenon no longer exists in the real world.
 
-======= *observation date:*
+
+[loweralpha, start=2]
+. *observation date:*
 
 The observation date is considered as the point of time or situation when the land cover information source, which is used for land cover data capture, is recorded. Usually the observation date is equal to the acquisition date of the aerial or satellite image (remote sensing data) used for mapping a particular spatial unit (polygon). Because many images are used in each survey, the actual date can vary from one polygon to another within the same data set. The acquisition date of the recorded imagery would then be attached to every single spatial unit (point/polygon) e.g. according to the geographic extend of the imagery scenes ("footprints"). The observation date can also be the point of time when the land cover information is captured on the ground by a field surveyor. The land cover object in a particular data set can have different observation dates if several information sources were combined to capture the land cover information (e.g. multi-temporal satellite imagery). The observation date is usually different from the event date. This information is recorded by the observationDate attribute (on classes LandCoverClass, LandCoverMosaic and ParameterType).
 
-======= *reference date:* 
+[loweralpha, start=3]
+. *reference date:* 
 
 A reference year or reference date is a (more or less exact) moment, a period of time or a certain time window when the information in a complete data set is assumed to be valid. The time window for the acquisition of a number of satellite scenes or aerial images within a reference period can range between a few days to several months or even years. For example, CLC2006 has the reference year 2006. However, the satellite imagery collection "IMAGE2006", which was used as the information source, was recorded in the time interval between the years 2005 - 2007. Reference dates come into play, when data sets of greater dimension (regional, country or pan-european level) on land cover shall be compared to derive the land cover changes, which occurred during a certain time interval, e.g. between the two reference years of CLC2006 and CLC2012.
 
-======= *edit date:*
+[loweralpha, start=4]
+. *edit date:*
 
 The point of time when a spatial unit is edited in the data set can be modelled as
 
 * _beginLifespanVersion_: Date and time at which the version of the spatial object was inserted or changed in the spatial data set.
 * _endLifespanVersion_: Date and time at which the version of the spatial object was superseded or retired in the spatial data set.
 
-======= *release date/date of last revision*:
+[loweralpha, start=5]
+. *release date/date of last revision*:
 
 Point of time, when data set (collection of obtained land cover information) is completed and finished. The release date can be considered as the closure of the last data set editing or revision before making the data available to the customers or to the public through online services such as a web map service (WMS).It can also follow after a publishing date and represent the updating or correction of a data set, which then again is published afterwards.
 
-======= *publishing date*:
+[loweralpha, start=6]
+. *publishing date*:
 
 The Point of time when a data set is made available to the public through a data provider and/or declared as valid and put into force for the first time. After a publishing date several release dates may follow, which can represent an updated version of the beforehand published data set.
 
@@ -2394,7 +2401,8 @@ a|
 [cols=",]
 !===
 !Natural language: !The values in the range set are restricted to Integer
-!OCL: !inv: rangeSet->forAll(v | v.oclIsKindOf(LandCoverNomenclature::LandCoverClassValue))
+!OCL: !inv: rangeSet->forAll(v \| v.oclIsKindOf(LandCoverNomenclature::LandCoverClassValue))
+
 !===
 
 |===
@@ -3610,7 +3618,7 @@ _http://sia.eionet.europa.eu/EAGLE/EAGLE_5rdMeeting_g2_MONINA_FFM/EL__
 
 Validation_of_HR_layers_finaldraft.pdf
 
-|Example |image::./media/image29.jpeg[crossplot,width=378,height=245]
+|Example a|image::./media/image29.jpeg[crossplot,width=378,height=245]
 |Measure identifier |-
 |===
 
@@ -5567,7 +5575,7 @@ Delineating (masking) eligible (=agricultural) land (arable/permanent crops/perm
 Minimum mapping unit 0.1 ha.
 
 |Pre-condition |n/a
-|*Flow of Events – Basic Path*|
+2+|*Flow of Events – Basic Path*
 |1 |Acquire suitable imagery and/or topographic documents
 |2 |Make a national inventory of agricultural land
 |3 |Quantify the maximum eligible hectares inside by delineation at 1/5000
@@ -5583,11 +5591,11 @@ Update your LPIS in time for the next year, using:
 * Newly available imagery
 * Any available third party land cover / land use changes
 
-|*Flow of Events – Alternative Paths*|
+2+|*Flow of Events – Alternative Paths*
 |Step m. |n/a
 |Step m1. |
 |Post-condition |Annual monitoring required
-|*Data source: LPIS*|
+2+|*Data source: LPIS*
 a|
 Description
 |LPIS – eligible layer: for quality reporting coded under LCCS
@@ -5860,9 +5868,9 @@ or use land-use information attributed to certain land-cover classes (e.g. arabl
 
 ==== UML use case diagram
 
-[cols="",options="header",]
+[cols=""]
 |===
-|image::./media/image39.jpeg[leac_methodological_guidebook-2_22_0001,width=604,height=504]
+a|image::./media/image39.jpeg[leac_methodological_guidebook-2_22_0001,width=604,height=504]
 |Extended LEAC data modelfootnote:[Environmental Accounting - Methodological guidebook. 2005. ETC-LUSI report. http://www.eea.europa.eu/themes/landuse/interactive/land-and-ecosystem-accounting-leac] - potential development of the method for LEAC Core module
 |===
 
@@ -7608,15 +7616,17 @@ Standard, another standard, or a profile of another standard, to which the file 
 | |ihdr |'ihdr' |Image Header box |1 | |N/A |
 | | |HEIGHT | |Image area height |1 |Ysiz – Y0siz |domainSet.RectifiedGrid.limits.GridEnvelope.high[1]- domainSet.RectifiedGrid.limits.GridEnvelope.low[1]
 | | |WIDTH | |Image area width |1 |Xsiz – X0siz |domainSet.RectifiedGrid.limits.GridEnvelope.high[0]- domainSet.RectifiedGrid.limits.GridEnvelope.low[0]
-| | |NC | |Number of components |1 |= Csiz a|
-= rangeType.field.size() if no use of palette-colour data.
+| | |NC | |Number of components |1 a|
 
+image::./media/image73.png[image] a|
+image::./media/image74.png[image]
 If use of a colour palette NC=1, rangeType.field.size()=3.
 
-| | |BPC | |Bits per component |1 a|
+| | |BPC | |Bits per component |1 
+a|
 If the bit depth of all components in the codesteam is the same (sign an precision)
 
-= Ssiz^i^
+image::./media/image72.png[image]
 
 a|
 For each band i, rangeType.field[i].constraint.interval = "0 2^[Ssiz^i^1]-1" if no use of palette-colour data.
