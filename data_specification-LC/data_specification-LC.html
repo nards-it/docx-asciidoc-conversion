@@ -4078,8 +4078,12 @@ The spatial representation of a LandCoverData set shall be a set of non-overlapp
 <div class="paragraph">
 <p>Having in mind the two above-mentioned issues, there are several date types to be considered in describing the landscape from the <em>Land Cover</em> point of view. Some of these date types are important when it comes to the comparison of two or more different situations of land cover. On the basis of diverse available date types, the data user is able to extract and assess land cover change information from imagery or other data sources. The following shows a list of date types along the process of land cover data capture and delivery.</p>
 </div>
-<div class="paragraph">
-<p>======= <strong>event date:</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>event date:</strong></p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>The point of time or short period, when a certain type of land cover occurs in reality, is seen as the event date, e.g. storm damage or clear cut in forest areas, beginning of a construction site, finishing of a construction site, creation of a new coastline by enclosing former salt marshes with a dike. The event date would be the most exact information about the point of time when a certain land cover change appears in reality. The monitoring of land cover aims more at different timelines. Also it is rather unlikely to have such information on the event date available for the majority of land cover objects. The storage of the event date for every single case may appear as not feasible and therefore is considered as not mandatory but voidable.</p>
@@ -4097,20 +4101,32 @@ The spatial representation of a LandCoverData set shall be a set of non-overlapp
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>======= <strong>observation date:</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="2">
+<li>
+<p><strong>observation date:</strong></p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>The observation date is considered as the point of time or situation when the land cover information source, which is used for land cover data capture, is recorded. Usually the observation date is equal to the acquisition date of the aerial or satellite image (remote sensing data) used for mapping a particular spatial unit (polygon). Because many images are used in each survey, the actual date can vary from one polygon to another within the same data set. The acquisition date of the recorded imagery would then be attached to every single spatial unit (point/polygon) e.g. according to the geographic extend of the imagery scenes ("footprints"). The observation date can also be the point of time when the land cover information is captured on the ground by a field surveyor. The land cover object in a particular data set can have different observation dates if several information sources were combined to capture the land cover information (e.g. multi-temporal satellite imagery). The observation date is usually different from the event date. This information is recorded by the observationDate attribute (on classes LandCoverClass, LandCoverMosaic and ParameterType).</p>
 </div>
-<div class="paragraph">
-<p>======= <strong>reference date:</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="3">
+<li>
+<p><strong>reference date:</strong></p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>A reference year or reference date is a (more or less exact) moment, a period of time or a certain time window when the information in a complete data set is assumed to be valid. The time window for the acquisition of a number of satellite scenes or aerial images within a reference period can range between a few days to several months or even years. For example, CLC2006 has the reference year 2006. However, the satellite imagery collection "IMAGE2006", which was used as the information source, was recorded in the time interval between the years 2005 - 2007. Reference dates come into play, when data sets of greater dimension (regional, country or pan-european level) on land cover shall be compared to derive the land cover changes, which occurred during a certain time interval, e.g. between the two reference years of CLC2006 and CLC2012.</p>
 </div>
-<div class="paragraph">
-<p>======= <strong>edit date:</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="4">
+<li>
+<p><strong>edit date:</strong></p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>The point of time when a spatial unit is edited in the data set can be modelled as</p>
@@ -4125,14 +4141,22 @@ The spatial representation of a LandCoverData set shall be a set of non-overlapp
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>======= <strong>release date/date of last revision</strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="5">
+<li>
+<p><strong>release date/date of last revision</strong>:</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>Point of time, when data set (collection of obtained land cover information) is completed and finished. The release date can be considered as the closure of the last data set editing or revision before making the data available to the customers or to the public through online services such as a web map service (WMS).It can also follow after a publishing date and represent the updating or correction of a data set, which then again is published afterwards.</p>
 </div>
-<div class="paragraph">
-<p>======= <strong>publishing date</strong>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="6">
+<li>
+<p><strong>publishing date</strong>:</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>The Point of time when a data set is made available to the public through a data provider and/or declared as valid and put into force for the first time. After a publishing date several release dates may follow, which can represent an updated version of the beforehand published data set.</p>
@@ -6071,14 +6095,10 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OCL:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">inv: rangeSet&#8594;forAll(v</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inv: rangeSet&#8594;forAll(v | v.oclIsKindOf(LandCoverNomenclature::LandCoverClassValue))</p></td>
 </tr>
 </tbody>
 </table></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">v.oclIsKindOf(LandCoverNomenclature::LandCoverClassValue))<br>
-!===</p></td>
 </tr>
 </tbody>
 </table>
@@ -9205,7 +9225,11 @@ NOTE This type can be used for both discrete and continuous coverages.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">image::./media/image29.jpeg[crossplot,width=378,height=245]</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="./media/image29.jpeg" alt="crossplot" width="378" height="245">
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Measure identifier</p></td>
@@ -13015,8 +13039,7 @@ time of which is the latest is placed on top. &lt;/se:Abstract&gt;
 <td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Flow of Events – Basic Path</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><strong>Flow of Events – Basic Path</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
@@ -13070,8 +13093,7 @@ time of which is the latest is placed on top. &lt;/se:Abstract&gt;
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Flow of Events – Alternative Paths</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><strong>Flow of Events – Alternative Paths</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Step m.</p></td>
@@ -13086,8 +13108,7 @@ time of which is the latest is placed on top. &lt;/se:Abstract&gt;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annual monitoring required</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Data source: LPIS</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><strong>Data source: LPIS</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -13708,12 +13729,14 @@ LPIS core model (LCM).<br>
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">image::./media/image39.jpeg[leac_methodological_guidebook-2_22_0001,width=604,height=504]</th>
-</tr>
-</thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="./media/image39.jpeg" alt="leac_methodological_guidebook-2_22_0001" width="604" height="504">
+</div>
+</div></div></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Extended LEAC data model<sup class="footnote">[<a id="_footnoteref_18" class="footnote" href="#_footnotedef_18" title="View footnote.">18</a>]</sup> - potential development of the method for LEAC Core module</p></td>
 </tr>
@@ -18390,8 +18413,17 @@ Standard, another standard, or a profile of another standard, to which the file 
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">= Csiz</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="./media/image73.png" alt="image">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="./media/image74.png" alt="image">
+</div>
+</div>
+<div class="paragraph">
 <p>If use of a colour palette NC=1, rangeType.field.size()=3.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -18405,8 +18437,11 @@ Standard, another standard, or a profile of another standard, to which the file 
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>If the bit depth of all components in the codesteam is the same (sign an precision)</p>
 </div>
-<h1 id="_ssizi" class="sect0">Ssiz<sup>i</sup></h1>
-</div></td>
+<div class="imageblock">
+<div class="content">
+<img src="./media/image72.png" alt="image">
+</div>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>For each band i, rangeType.field[i].constraint.interval = "0 2<sup>[Ssiz</sup>i^1]-1" if no use of palette-colour data.</p>
 </div>
