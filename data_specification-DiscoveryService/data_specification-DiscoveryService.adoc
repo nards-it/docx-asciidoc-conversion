@@ -1413,9 +1413,9 @@ The HTTP/GET binding of the GetCapabilities-Operation is extended by an addition
 The name of this parameter shall be "LANGUAGE". The parameter values are based on ISO 639-2/B alpha 3 codes as used in [*INS MDTG*].
 ====
 
-<<<
+[.text-center]
 *Table 8: Language parameter and list of codes*
-
+<<<
 [cols=",,,",options="header",]
 |===
 |*Parameter Name* |*Parameter Value* |*Is mandatory for a Client Request?* |*Is mandatory to support for the Service?*
