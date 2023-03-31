@@ -1413,11 +1413,9 @@ The HTTP/GET binding of the GetCapabilities-Operation is extended by an addition
 The name of this parameter shall be "LANGUAGE". The parameter values are based on ISO 639-2/B alpha 3 codes as used in [*INS MDTG*].
 ====
 
-[%always]
-<<<
 [.text-center]
 *Table 8: Language parameter and list of codes*
-[cols=",,,",options="header",]
+[align=center,width="100%",cols="17%,43%,17%,23%",options="header",]
 |===
 |*Parameter Name* |*Parameter Value* |*Is mandatory for a Client Request?* |*Is mandatory to support for the Service?*
 |LANGUAGE a|
@@ -1426,8 +1424,6 @@ Codelist (See ISO/TS 19139) based on alpha-3 codes of ISO 639-2.
 Use only three-letter codes from in ISO 639-2/B (bibliographic codes),
 
 The list of codes for the 23 official EU languages and EFTA Countries is:
-
-[cols=","]
 !===
 !Bulgarian – *bul* !Italian – *ita*
 !Czech – *cze* !Latvian – *lav*
@@ -1445,21 +1441,17 @@ The list of codes for the 23 official EU languages and EFTA Countries is:
 !Icelandic – *ice* !
 !===
 The list of all the codes is defined at
-
 http://www.loc.gov/standards/iso639-2/
-
 Regional languages also are included in this list.
 
 |No, it is optional. |Yes, it is mandatory to be supported and shall be processed if the parameter is present in a client's request with a supported language code. If the parameter is absent in a clients request or it requested an unsupported language the service shall response in the service default language.
 |===
 
 |===
-Schema:
-
+Schema: +
 [OCG-GetCapabilities-Request]&LANGUAGE=<ISO 639-2/B alpha 3 code>
 
-Example:
-
+Example: +
 http://inspire.network.service.example/service?SERVICE=[...]&VERSION=[...]&LANGUAGE=eng
 |===
 
