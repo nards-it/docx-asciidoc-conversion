@@ -3339,16 +3339,15 @@ REQUEST=GetCapabilities&amp;SERVICE=CSW
 </tr>
 </table>
 </div>
-<div style="page-break-after: always;"></div>
 <div class="paragraph text-center">
 <p><strong>Table 8: Language parameter and list of codes</strong></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
+<col style="width: 17%;">
+<col style="width: 43%;">
+<col style="width: 17%;">
+<col style="width: 23%;">
 </colgroup>
 <thead>
 <tr>
@@ -3435,13 +3434,9 @@ REQUEST=GetCapabilities&amp;SERVICE=CSW
 </tbody>
 </table>
 <div class="paragraph">
-<p>The list of all the codes is defined at</p>
-</div>
-<div class="paragraph">
-<p><a href="http://www.loc.gov/standards/iso639-2/" class="bare">http://www.loc.gov/standards/iso639-2/</a></p>
-</div>
-<div class="paragraph">
-<p>Regional languages also are included in this list.</p>
+<p>The list of all the codes is defined at<br>
+<a href="http://www.loc.gov/standards/iso639-2/" class="bare">http://www.loc.gov/standards/iso639-2/</a><br>
+Regional languages also are included in this list.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No, it is optional.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Yes, it is mandatory to be supported and shall be processed if the parameter is present in a client&#8217;s request with a supported language code. If the parameter is absent in a clients request or it requested an unsupported language the service shall response in the service default language.</p></td>
@@ -3455,12 +3450,10 @@ REQUEST=GetCapabilities&amp;SERVICE=CSW
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Schema:<br>
-<br>
 [OCG-GetCapabilities-Request]&amp;LANGUAGE=&lt;ISO 639-2/B alpha 3 code&gt;<br>
 <br>
 Example:<br>
-<br>
-<a href="http://inspire.network.service.example/service?SERVICE=">&#8230;&#8203;</a>&amp;VERSION=[&#8230;&#8203;]&amp;LANGUAGE=eng</p></td>
+http://inspire.network.service.example/service?SERVICE=&#8230;&#8203;&amp;VERSION=[&#8230;&#8203;]&amp;LANGUAGE=eng</p></td>
 </tr>
 </tbody>
 </table>
