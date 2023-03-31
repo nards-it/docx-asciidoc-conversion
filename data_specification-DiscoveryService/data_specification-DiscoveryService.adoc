@@ -1277,7 +1277,7 @@ Table 5 identifies the additional queryables that are not supported by [*CSW ISO
 
 [cols=",,,",options="header",]
 |===
-|*Name* |Definition |*Data type* |*Property Mapping to Information Model*
+|*Name* |*Definition* |*Data type* |*Property Mapping to Information Model*
 |Degree |This is the degree of conformity of the resource to the related specification. |Boolean |dataQualityInfo/*/report/*/result/*/pass
 |Specification |This is a citation of the specification to which the resource is expected to conform. |Specification, see Table 6 |
 |LimitationsOnPublicAccess |This metadata element shall provide information on the limitations (if they exist) and the reasons for such limitations (Article 5-2(e)) |LimitationsOnPublicAccess, see Table 7 |
@@ -1413,7 +1413,7 @@ The HTTP/GET binding of the GetCapabilities-Operation is extended by an addition
 The name of this parameter shall be "LANGUAGE". The parameter values are based on ISO 639-2/B alpha 3 codes as used in [*INS MDTG*].
 ====
 
-
+<<<
 *Table 8: Language parameter and list of codes*
 
 [cols=",,,",options="header",]
