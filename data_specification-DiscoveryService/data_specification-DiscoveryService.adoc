@@ -1452,7 +1452,7 @@ Schema: +
 [OCG-GetCapabilities-Request]&LANGUAGE=<ISO 639-2/B alpha 3 code>
 
 Example: +
-http://inspire.network.service.example/service?SERVICE=[...]&VERSION=[...]&LANGUAGE=eng
+\http://inspire.network.service.example/service?SERVICE=[...]&VERSION=[...]&LANGUAGE=eng
 |===
 
 ===== GetCapabilities-Response:
