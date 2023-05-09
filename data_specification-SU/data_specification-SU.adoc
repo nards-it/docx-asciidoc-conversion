@@ -1023,7 +1023,7 @@ image::./media/image8.png[image,width=405,height=187, align=center]
 
 EXAMPLE 2 Figure 6 shows an example of multi-resolution grid. Bigger cells (1 km resolution) are aggregations of 4*4 smaller cells (250m resolution).
 
-image::./media/image9.png[ex_sweden,width=304,height=143]
+image::./media/image9.png[ex_sweden,align=center]
 
 [.text-center]
 *Figure 6 - Example of multi resolution grid: Display from the Swedish geoportal*
@@ -1906,7 +1906,7 @@ NOTE Spatial features of any INSPIRE application schema can be considered as a s
 
 *Types defined in the feature catalogue*
 
-[cols=","]
+[cols=",,"]
 |===
 |*Type* |*Package* |*Stereotypes*
 |AreaStatisticalUnit |Statistical Units Vector |«featureType»
