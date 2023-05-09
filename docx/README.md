@@ -8,15 +8,15 @@
 |4|Elevation|EL|Done|Published|
 |5|Coordinate reference systems|RS|Done|Published|
 |6|Geographical grid systems|GG|Done|Published|
-|7|Land use|LU|Final revision
+|7|Land use|LU||Published
 |8|Hydrography|HY||Published|
 |9|Environmental monitoring facilities|EF||Published|
 |10|Protected sites|PS||Published|
-|11|Technical Guidance for the implementation of INSPIRE Discovery Services| |
-|12|Utility and governmental services|US|
-|13|Species distribution|SD|
-|14|Land cover|LC|
-|15|Administrative units|AU|
+|11|Technical Guidance for the implementation of INSPIRE Discovery Services|||Published in draft|
+|12|Utility and governmental services|US||Published in draft|
+|13|Species distribution|SD|Final revision
+|14|Land cover|LC|Final revision
+|15|Administrative units|AU|Final revision
 |16|Statistical units|SU|
 |17|Orthoimagery|OI|
 |18|Geology|GE|
