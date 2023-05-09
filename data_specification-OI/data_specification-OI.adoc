@@ -23,9 +23,9 @@
 
 :appendix-caption: Annex
 
-image:media\image2.jpeg[image,width=131,height=90, align=center]
+image::./media\image2.jpeg[image,width=131,height=90, align=center]
 
-image:media\image3.png[image,width=93,height=93, align=center] **INSPIRE** *Infrastructure for Spatial Information in Europe*
+image:./media\image3.png[image,width=93,height=93, align=center] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = D2.8.II.3 Data Specification on _Orthoimagery_ – Technical Guidelines
@@ -388,7 +388,7 @@ The schematic diagram in Figure 1 gives an overview of the relationships between
 
 In contrast, the Technical Guidance documents define _how_ Member States might implement the requirements included in the INSPIRE Implementing Rules. As such, they may include non-binding technical requirements that must be satisfied if a Member State data provider chooses to conform to the Technical Guidance. Implementing this technical guidance will maximise the interoperability of INSPIRE spatial data sets.
 
-image:media\image4.png[image,width=603,height=375, align=center]
+image::./media\image4.png[image,width=603,height=375, align=center]
 
 [.text-center]
 *Figure 1 - Relationship between INSPIRE Implementing Rules and Technical Guidance*
@@ -860,18 +860,18 @@ In addition, some themes make reference to the types TimeValuePair and Timeserie
 
 Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.
 
-image:media\image5.png[image,width=222,height=207]
+image::./media\image5.png[image,width=222,height=207]
 [.text-center]
 (Source: ISO 19136:2007)
 
-image:media\image6.png[image,width=309,height=209, align=center]
+image::./media\image6.png[image,width=309,height=209, align=center]
 [.text-center]
 (Source: GML 3.3.0)
 
 [.text-center]
 *Figure 2 – Examples of a rectified grid (left) and a referenceable grid (right)*
 
-image:media\image53.png[image]
+image::./media\image53.png[image]
 
 [.text-center]
 *Figure 3 – Example of a time series*
@@ -889,7 +889,7 @@ The attribute values of an orthoimage are arranged using the geometry of a regul
 
 A grid coordinate system is defined by means of the origin and the axes of the grid. Grid coordinates are measured along the axis away from the origin.
 
-image:media\image54.png[image]
+image::./media\image54.png[image]
 
 [.text-center]
 *Figure 4 – example of rectified quadrilateral grid*
@@ -902,7 +902,7 @@ Since it depicts continuously-varying phenomena, an orthoimage is inherently a c
 
 In this specification, mosaicking is defined as the production process that allows the creation of a single orthoimage from several original orthorectified images. It usually involves thorough radiometric processing to give a homogeneous seamless polish to the resulting mosaicked orthoimage.
 
-image:media\image7.jpeg[image,width=332,height=208, align=center]
+image::./media\image7.jpeg[image,width=332,height=208, align=center]
 
 [.text-center]
 *Figure 5 – mosaicked orthoimage with seamlines*
@@ -919,7 +919,7 @@ Secondly, high-resolution orthoimages covering broad territories represent large
 
 This file-based data structure is artificial and has no real logical meaning on its own even though it is usually based on grid elements. Therefore it is addressed in the encoding part of this data specification (see section 9.3).
 
-image:media\image37.png[image]
+image::./media\image37.png[image]
 
 [.text/center]
 *Figure 6 – various configurations of tiling scheme*
@@ -939,7 +939,7 @@ A first data structure level is provided through the concept of coverage. In add
 
 For applicability, input and aggregated orthoimage coverages shall be part of the same orthoimagery dataset.
 
-image:media\image38.png[image]
+image::./media\image38.png[image]
 
 [.text-center]
 *Figure 7 – Orthoimage aggregation principle: overlapping orthoimage coverages A B and C compose the aggregated orthoimage coverage D, the bounding box of which is dotted.*
@@ -950,7 +950,7 @@ Note here that although their concepts are close, orthoimage aggregation and mos
 
 ===== UML Overview
 
-image:media\image8.png[image,width=604,height=703, align=center]
+image::./media\image8.png[image,width=604,height=703, align=center]
 
 [.text-center]
 *Figure 8 – UML class diagram: Overview of the <application schema name> application schema*
@@ -977,7 +977,7 @@ The attributes _domainExtent_ and _interpolationType_ stemming from ISO 19123 co
 
 Other attributes provide additional information about identification (_inspireId, name_), temporal aspects (_phenomenonTime, beginLifespanVersion,endLifespanVersion)_ and refined extent _(footprint_). The property _footprint_ of type GM_MultiSurface precisely delineates the geographic areas where the coverage range is of interest (e.g. no nil values).
 
-image:media\image9.jpeg[image,width=240,height=163, align=center]
+image::./media\image9.jpeg[image,width=240,height=163, align=center]
 
 [.text-center]
 *Figure 9 – footprint and bounding box of an orthoimage (respectively in blue and red)*
@@ -1028,7 +1028,7 @@ The grid axes should be called "x" and "y", considering that x axis extends to t
 
 NOTE These recommendations are based on the most widespread convention in orthoimagery.
 
-image:media\image39.png[image]
+image::./media\image39.png[image]
 
 [.text-center]
 *Figure 10 – recommended grid coordinate system*
@@ -1178,7 +1178,7 @@ _Annex III, Section 3.5.2_
 
 NOTE In other words, contributing footprints shall contain valid data areas.
 
-image:media\image9.jpeg[image,width=237,height=160, align=center]
+image::./media\image9.jpeg[image,width=237,height=160, align=center]
 
 [.text-center]
 *Figure 11 – footprint and contributing footprint of an orthoimage referred by an aggregated orthoimage (respectively in blue and orange)*
@@ -1215,7 +1215,7 @@ _Annex III, Section 3.5.2_
 
 The range set of an aggregated orthoimage coverage is directly determined by the range sets of the orthoimage coverages it refers to. Each grid point of the aggregated orthoimage coverage receives the range value of the orthoimage coverage the contributing footprint of which contains the given position. If the grid point is not located within the contributing footprint of any orthoimage coverage, it receives a nil value specified in the range type of the aggregated orthoimage coverage.
 
-image:media\image41.png[image]
+image::./media\image41.png[image]
 
 [.text-center]
 *Figure 12 – construction of the aggregated orthoimage coverage (footprint in blue) from subsets of the contributing orthoimage coverages (contributing footprints in orange)*
@@ -1243,7 +1243,7 @@ _Annex III, Section 3.5.3_
 
 NOTE An _AggregatedMosaicElement_ instance may refer to only one input image if at least one other _AggregatedMosaicElement_ instance associated to the same mosaic affects several input images.
 
-image:media\image42.png[image]
+image::./media\image42.png[image]
 
 [.text-center]
 *Figure 13 – two different representations of the temporal aspects of a same orthoimage mosaic. The footprint and the spatial extent of the orthoimage coverage are respectively drawn in blue and dashed red.*
@@ -2213,7 +2213,7 @@ Grid points of a RectifiedGridCoverage shall coincide with the centres of cells 
 
 ====
 
-image:media\image17.jpeg[GridCoverage_GeoGrid_Alignment_example,width=623,height=444]
+image::./media\image17.jpeg[GridCoverage_GeoGrid_Alignment_example,width=623,height=444]
 
 [.text-center]
 *Figure 14 – Example: Detail showing the alignment of Orthoimagery grid coverages to a geographic grid*
@@ -2367,7 +2367,7 @@ Gridded data position accuracy should be documented using root mean square error
 |Description a|
 The true values of the observed coordinates _X_ and _Y_ are known as _xt_ and _yt._ From this the estimator
 
-image:media\image18.png[image,width=240,height=51, align=center]
+image::./media\image18.png[image,width=240,height=51, align=center]
 
 yields the linear root mean square error of planimetry RMSEP = σ
 
@@ -2422,11 +2422,11 @@ data set series
 |Description a|
 The true value of an observed coordinate _X_ or _Y_ are known as _xt_ or _yt._ From this the estimator
 
-image:media\image19.png[image,width=152,height=51, align=center]
+image::./media\image19.png[image,width=152,height=51, align=center]
 
 yields the linear root mean square error RMSE-x = σ__x__
 
-image:media\image20.png[image,width=155,height=51, align=center]
+image::./media\image20.png[image,width=155,height=51, align=center]
 
 yields the linear root mean square error RMSE-y = σ__y__
 
@@ -3569,7 +3569,7 @@ Data providers should particularly pay attention to this issue when using an enc
 
 Consider the example of an orthoimage represented as a grid coverage. The origin O has the geographic coordinates (4°20'00'', 50°50'00''), while the row and column spacing are both 20''. GeoTiff defines two raster coordinates systems which differ in the choice of the origin. The "PixelIsPoint" raster grid space sets its origin at the centre of the first pixel (the point O in the figure below), whereas the "PixelIsArea" raster grid space, has its origin at the upper left corner of the image (the point C in the figure below). In the former case, the origin will hold the coordinates (0, 0) in the grid reference system and (4°20'00'', 50°50'00'') in the coordinate reference system. In the latter case, the origin will have the coordinates (0, 0) in the grid reference system and (4°19'50'', 50°49'50'') in the coordinate reference system.
 
-image:media\image44.png[image]
+image::./media\image44.png[image]
 
 [.text-center]
 *Figure 15 : Pixel representation as grid points or as areas*
@@ -5345,7 +5345,7 @@ Please be aware that the term "tiling" used below refers to the file-based cut o
 
 In this first example, the orthoimagery data set contains four orthoimages derived from single images (e.g. non-rectified satellite scenes). The orthoimages have no direct connections between them, while three of them overlap. The range set of each orthoimage is embedded in a single image file (e.g. tiff or jpeg2000 file).
 
-image:media\image45.png[image]
+image::./media\image45.png[image]
 
 [.text-center]
 *Figure 16 – orthoimages derived from single input images*
@@ -5364,7 +5364,7 @@ Each orthoimage should be modelled as an instance of the feature type _Orthoimag
 
 This case is similar to the previous, except that every orthoimage is divided into two tiles, so that the range set of each tile is stored in only one image file.
 
-image:media\image46.png[image]
+image::./media\image46.png[image]
 
 [.text-center]
 *Figure 17 – orthoimages derived from single input images with tiling (tile extents in green)*
@@ -5383,7 +5383,7 @@ Tiling does not affect the structure of the data set. As above, each orthoimage 
 
 The orthoimagery data set contains a seamless orthoimage resulting from the mosaicking of several input images. However, the data producer was not in position to provide the delineation of the mosaic elements at lower cost. The range set of the full mosaic is embedded in a single image file.
 
-image:media\image47.png[image]
+image::./media\image47.png[image]
 
 [.text-center]
 *Figure 18 – mosaic without mosaic elements*
@@ -5402,7 +5402,7 @@ The mosaic should be represented as a single _OrthoimageCoverage_ instance, with
 
 This case is similar to the previous, except that the mosaic of several input images is divided into six tiles, so that the range set of each tile is stored in only one image file.
 
-image:media\image48.png[image]
+image::./media\image48.png[image]
 
 [.text-center]
 *Figure 19 – mosaic without mosaic elements but with tiling (tile extents in green)*
@@ -5421,7 +5421,7 @@ Tiling does not affect the structure of the data set. Indeed, the mosaic should 
 
 The orthoimagery data set consists in a seamless orthoimage resulting from the mosaicking of several input images. The delineation of the mosaic elements with the acquisition dates of the input images are available. The range set of the full mosaic is embedded in a single image file.
 
-image:media\image49.png[image]
+image::./media\image49.png[image]
 
 [.text-center]
 *Figure 20 – mosaic with mosaic elements*
@@ -5440,7 +5440,7 @@ The mosaic should be modelled as an _OrthoimageCoverage_ instance linked to seve
 
 This case is similar to the previous, except that the mosaic of several input images is divided into six tiles, so that the range set of each tile is stored in only one image file.
 
-image:media\image50.png[image]
+image::./media\image50.png[image]
 
 [.text-center]
 *Figure 21 – mosaic with mosaic elements and tiling (tile extents in green)*
@@ -5461,7 +5461,7 @@ The orthoimagery data set is composed of five orthoimages. Four of them are deri
 
 This data organization allows users to access data either through the single orthoimages or through the aggregated orthoimage.
 
-image:media\image51.png[image]
+image::./media\image51.png[image]
 
 [.text-center]
 *Figure 22 – aggregated orthoimage referring to orthoimages derived from single input images*
@@ -5570,7 +5570,7 @@ Baseline TIFF supports only one type of orientation for grid coverages, that is,
 The origin of the grid coordinate system shall be the upper left corner of the grid coverage. The axis 'row' and 'column' shall be oriented downward and to the right.
 ====
 
-image:media\image52.png[image]
+image::./media\image52.png[image]
 
 [.text-center]
 *Figure 9. referenced grid as defined by Baseline TIFF*
@@ -5652,7 +5652,8 @@ The following table indicates how to fill the content of TIFF tags for grid cove
 
 The columns _Tag name_, _Code_, _Type_, _Card._ and _Description_ remind respectively the name, the code, the type, the maximum number of occurrences and the description of each Baseline TIFF tag within the meaning of the TIFF specification. The column _Obligation_ informs if the tag is considered to be mandatory (M), conditional (C), optional (O) or inadequate (I). The column _Restricted values_ specifies the values allowed for the tag in the context of INSPIRE. The column _Mapping to GML elements_ establishes a correspondence between the tag values and the corresponding GML elements of the coverage whose type is one of those specified in the Generic Conceptual Model (e.g. RectifiedGridCoverage). N/A means not applicable.
 
-Table 10. Baseline TIFF implementation profile and Mapping between TIFF tags and the associated object elements from the Orthoimagery GML Application Schema
+[.text-center]
+*Table 10. Baseline TIFF implementation profile and Mapping between TIFF tags and the associated object elements from the Orthoimagery GML Application Schema*
 
 [cols=",,,,,,,",]
 |===
@@ -5815,7 +5816,7 @@ JPEG 2000 is complex
 
 The figure below shows the JP2 file structure. n is the number of Colour Specification Boxes (n=1 for INSPIRE). m is the number of JPEG 2000 codestreams (in our case as there is only one codestream m=1). :
 
-image:media\image35.png[image,width=418,height=604, align=center]
+image::./media\image35.png[image,width=418,height=604, align=center]
 
 [.text-center]
 *Figure 23 : JP2 file structure*
@@ -5865,7 +5866,7 @@ NOTE As a consequence, the different components of a same image can not be split
 
 JPEG 2000 Standard defines the origin of the grid coordinate system as being the upper left corner of the grid coverage. The axis 'X' and 'Y are oriented to the right and downward.
 
-image:media\image36.png[image,width=623,height=348, align=center]
+image::./media\image36.png[image,width=623,height=348, align=center]
 
 [.text-center]
 *Figure 24 : referenced grid as defined by JPEG 2000*
@@ -6084,7 +6085,7 @@ At least 'jp2\040'
 | | |HEIGHT | |Image area height |1 |Ysiz – Y0siz |domainSet.limits.high[1]- domainSet.limits.low[1]
 | | |WIDTH | |Image area width |1 |Xsiz – X0siz |domainSet.limits.high[0]- domainSet.limits.low[0]
 | | |NC | |Number of components |1 |= Csiz a|
-= rangeType.field.size() if no use of palette-colour data.
+rangeType.field.size() if no use of palette-colour data.
 
 If use of a colour palette NC=1, rangeType.field.size()=3.
 
