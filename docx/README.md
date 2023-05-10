@@ -14,7 +14,7 @@
 |10|Protected sites|PS||Published|
 |11|Technical Guidance for the implementation of INSPIRE Discovery Services|||Published in draft|
 |12|Utility and governmental services|US||Published in draft|
-|13|Species distribution|SD|Final revision
+|13|Species distribution|SD||Published in draft|
 |14|Land cover|LC|Final revision
 |15|Administrative units|AU|Final revision
 |16|Statistical units|SU|
