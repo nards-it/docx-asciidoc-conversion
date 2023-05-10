@@ -11283,7 +11283,7 @@ image::./media\image248.png[image,width=630,height=325, align=center]
 
 [cols=",",options="header"]
 |===
-2+|Use Case Description |
+2+|Use Case Description
 |Name |Spatial monitoring
 |Priority |high
 |Description |The purpose is to check if spatial planning decisions (registered in a planned land use map) and other urbanism regulations are respected.
