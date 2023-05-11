@@ -7025,7 +7025,7 @@ _Soil_ cartographic units are reclassified according to the parameters above men
 
 The "Land irrigation suitability map" is made at a scale of 1:25.000, therefore, and depending on the case, for further and more detailed information, additional works should be carried out.
 
-image:./media/image16.emf[image,width=660,height=729]image:./media/image17.emf[image,width=660,height=729]image:./media/image18.png[image,width=660,height=729, align=center]
+image:./media/image16.png[image,width=660,height=729]
 
 [.text-center]
 Figure 1: Reclassification of Soil Cartographic Units according to soil parameters, topography and drainage.
