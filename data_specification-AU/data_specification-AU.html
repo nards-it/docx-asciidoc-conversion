@@ -2542,24 +2542,24 @@ Fax: 39-0332-7866325<br>
 </li>
 <li>
 <p>national level 2: AU2 and AU3 polygons represent regions;</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>AU2  AU3 topologically equal to AU1</p>
+</div>
+</li>
+</ol>
 </div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a" start="3">
 <li>
 <p>national level 3: AU4 and AU5 represent lowest level units;</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>AU4  AU5 topologically equal to AU2</p>
 </div>
 <div class="paragraph">
 <p>For AU3 there is no further subdivision.</p>
+</div>
+</li>
+</ol>
 </div></div></td>
 </tr>
 </tbody>
@@ -2751,21 +2751,21 @@ Fax: 39-0332-7866325<br>
 </li>
 <li>
 <p>national level 2: AU2 and AU3 polygons represent regions;</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>AU2  AU3 topologically equal to AU1</p>
+</div>
+</li>
+</ol>
 </div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a" start="3">
 <li>
 <p>national level 3: AU4 and AU5 represent lowest level units;</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>AU4  AU5 topologically equal to AU2</p>
+</div>
+</li>
+</ol>
 </div></div></td>
 </tr>
 </tbody>
@@ -2811,12 +2811,11 @@ Fax: 39-0332-7866325<br>
 </ul>
 </div></div></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begin and end nodes of international boundaries do not necessarily meet begin/end node of some regional boundary.</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Begin and end nodes of international boundaries do not necessarily meet begin/end node of some regional boundary. |</p>
+</div>
 <div class="paragraph">
 <p>Based on the identified nodes the following boundaries at three levels of administrative structure can be determined:</p>
 </div>
@@ -4984,18 +4983,13 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 <p><strong>Recommendation 7</strong></p>
 </div>
 <div class="paragraph">
-<p>The following geometric and topological constraints are recommendations for this data specification:<br>
-* </p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>the internal waters of a coastal State should be adjacent to the AdministrativeUnit spatial object representing the State (i.e. where the attribute nationalLevel is equal to '1stOrder').</p>
+<p>The following geometric and topological constraints are recommendations for this data specification:</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>the internal waters of a coastal State should be adjacent to the AdministrativeUnit spatial object representing the State (i.e. where the attribute nationalLevel is equal to '1stOrder').</p>
+</li>
 <li>
 <p>the territorial sea of a coastal State and its internal waters should be adjacent on the Baseline.</p>
 </li>
@@ -5009,6 +5003,10 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 <p>the exclusive economic zone should include the contiguous zone.</p>
 </li>
 </ul>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>NOTE The relationships mentioned above are not explicitly expressed in the UML model for simplicity, nevertheless they should be reflected in the data.</p>
