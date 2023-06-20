@@ -4181,7 +4181,6 @@ image::./media/image20.png[image,width=190,height=103, align=center]
     <se:Abstract></se:Abstract>
    </se:Description>
    <se:FeatureTypeName>SU.VectorStatisticalUnits</se:FeatureTypeName>
-
    <Rule>
     <se:Filter>
      <se:And>
@@ -4218,7 +4217,6 @@ geometries.geometryDescriptor.geometryType</se:ValueReference>
      </se:Stroke>
     </se:PolygonSymbolizer>
    </Rule>
-
    <Rule>
     <se:Filter>
      <se:And>
@@ -4250,7 +4248,6 @@ geometries.geometryDescriptor.geometryType</se:ValueReference>
      </se:Stroke>
     </se:LineSymbolizer>
    </Rule>
-
    <Rule>
     <se:Filter>
      <se:And>
@@ -4288,7 +4285,6 @@ geometries.geometryDescriptor.geometryType</se:ValueReference>
      </se:Graphic>
     </se:PointSymbolizer>
    </Rule>
-
   </se:FeatureTypeStyle>
  </sld:UserStyle>
 </sld:NamedLayer>
@@ -4387,23 +4383,18 @@ Norwegian feature catalogue including a UML application schema for administrativ
 Regulation (EC) No 1059/2003 of the European Parliament and of the Council of 16 May 2003 on the establishment of a common classification system of territorial units for statistics (NUTS), OJ L 154, 21.06.2003, p.1
 
 SDMX (Statistical Data and Metadata Exchange)
-
 http://sdmx.org/
 
 SIGMA-TER project (Italy): DBTI (DataBase Territoriale Integrato): modello dati.
-
 http://www.sigmater.it/
 
 Tandem project
-
 _http://www.tandemproject.com/_
 
 Eurostat regional yearbook 2009
-
 _http://epp.eurostat.ec.europa.eu/portal/page/portal/publications/regional_yearbook_
 
 Urban Audit
-
 _http://www.urbanaudit.org_
 
 _Toward an approach of time series data issue: from empirical methods to applications_. Technical report of ESPON project, 31 pages. _http://www.espon.eu/_
