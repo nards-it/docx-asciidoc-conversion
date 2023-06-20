@@ -225,17 +225,14 @@ Units of administration, dividing areas where Member States have and/or exercise
 
 Each national territory is divided into administrative units at different administrative levels as defined by the national administrative hierarchy. Administrative units are separated by administrative boundaries. Under United Nations Convention on the Law of the Sea the coastal States can define maritime zones, wherein they exercise jurisdictional rights on sea area. The zones are separated by maritime boundaries.
 
- 
 
 The administrative / maritime division forms an indirect spatial reference system. The reference to an administrative unit or maritime zone provides a spatial dimension to data without using coordinates (INSPIRE IMS, 2003).
 
- 
 
 Administrative units may correspond to the items identified in frame of other territory division systems. The examples of such relationships include, among others, the cadastral parcels, census districts, postal regions, sea regions, statistical units, or sector-specific regions. These items are not considered to constitute a part of the definition of administrative units; they are within the scope of other INSPIRE themes.
 
 Administrative and maritime boundaries are the key to horizontal interoperability between the products of national data custodians. Neighbours should agree on international boundaries with shared geometry at the best possible resolution (INSPIRE RDM, 2002).
 
- 
 
 The reference date of the administrative units has to be considered for purpose of linkage to statistical information as for instance population figures. Therefore, the aspect of temporal reference and update has to be considered carefully for administrative units.
 
@@ -527,7 +524,7 @@ For all properties defined for a spatial object, a value has to be provided – 
 
 [NOTE]
 ====
-*Recomendation 1*
+*Recommendation 1*
 
 The reason for a _void_ value should be provided where possible using a listed value from the VoidReasonValue code list to indicate the reason for the missing value.
 
@@ -588,6 +585,7 @@ _Article 6_
 
 . Code lists shall be of one of the following types, as specified in the Annexes:
 [loweralpha]
+
 .. code lists whose allowed values comprise only the values specified in this Regulation;
 
 .. code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
@@ -609,7 +607,7 @@ The type of code list is represented in the UML model through the tagged value _
 
 [NOTE]
 ====
-*Recomendation 2*
+*Recommendation 2*
 
 Additional values defined by data providers should not replace or redefine any value already specified in the IRs.
 
@@ -665,7 +663,7 @@ For code lists of type (b), (c) and (d), this data specification may propose add
 
 [NOTE]
 ====
-*Recomendation 3*
+*Recommendation 3*
 
 Where these Technical Guidelines recommend values for a code list in addition to those specified in the IRs, these values should be used.
 
@@ -705,7 +703,7 @@ Code list values are encoded using http URIs and labels. Rules for generating th
 
 [NOTE]
 ====
-*Recomendation 4*
+*Recommendation 4*
 
 The http URIs and labels used for encoding code list values should be taken from the INSPIRE code list registry for INSPIRE-governed code lists and generated according to the relevant rules specified for externally governed code lists.
 
@@ -797,7 +795,7 @@ NOTE The requirement expressed in the IR Requirement above will be included as c
 
 [NOTE]
 ====
-*Recomendation 5*
+*Recommendation 5*
 
 If life-cycle information is not maintained as part of the spatial data set, all spatial objects belonging to this data set should provide a void value with a reason of "unpopulated".
 
@@ -907,7 +905,7 @@ For the same purpose, the names of the levels (attribute nationalLevelName) are 
 
 [NOTE]
 ====
-*Recomendation 1*
+*Recommendation 1*
 
 The value of 'language' attribute for AdministrativeUnit.name (GeographicalName DataType) should be provided, except for the situation that the data producer does not have such information.
 
@@ -956,7 +954,7 @@ _Annex II, Section 4.4_
 
 [NOTE]
 ====
-*Recomendation 2*
+*Recommendation 2*
 
 The following geometric and topological constraints are recommendations for this data specification:
 
@@ -2103,7 +2101,7 @@ image::./media/image12.jpeg[MaritimeZone,width=429,height=231]
 
 [NOTE]
 ====
-*Recomendation 6*
+*Recommendation 6*
 
 According to the UNCLOS, each coastal State is allowed to determine its territorial sea and internal waters. For this reason the representation of the territorial sea and the internal waters should always be present in a dataset providing data according to this application schema.
 
@@ -2128,7 +2126,7 @@ By definition there are well known topological relationships between the various
 
 [NOTE]
 ====
-*Recomendation 7*
+*Recommendation 7*
 
 The following geometric and topological constraints are recommendations for this data specification:
 * {blank}
@@ -2983,7 +2981,7 @@ The measures to be used for each of the listed data quality sub-elements are def
 
 [NOTE]
 ====
-*Recomendation 8*
+*Recommendation 8*
 
 Where it is impossible to express the evaluation of a data quality element in a quantitative way, the evaluation of the element should be expressed with a textual statement as a data quality descriptive result.
 
@@ -2993,7 +2991,7 @@ Where it is impossible to express the evaluation of a data quality element in a 
 
 [NOTE]
 ====
-*Recomendation 9*
+*Recommendation 9*
 
 Commission should be evaluated and documented using Rate of excess items, as specified in the table below.
 
@@ -3022,7 +3020,7 @@ Commission should be evaluated and documented using Rate of excess items, as spe
 
 [NOTE]
 ====
-*Recomendation 10*
+*Recommendation 10*
 
 Omission should be evaluated and documented using Rate of missing items, as specified in the table below.
 
@@ -3053,7 +3051,7 @@ The Application Schema conformance class of the Abstract Test Suite in Annex I d
 
 [NOTE]
 ====
-*Recomendation 11*
+*Recommendation 11*
 
 For the tests on conceptual consistency, it is recommended to use the _Logical consistency – Conceptual consistency_ data quality sub-element and the measure _Number of items not compliant with the rules of the conceptual schema_ as specified in the table below.
 
@@ -3084,7 +3082,7 @@ The Application Schema conformance class of the Abstract Test Suite in Annex I d
 
 [NOTE]
 ====
-*Recomendation 12*
+*Recommendation 12*
 
 For the tests on domain consistency, it is recommended to use the _Logical consistency – Domain consistency_ data quality sub-element and the measure _Number of items not in conformance with their value domain_ as specified in the table below.
 
@@ -3113,7 +3111,7 @@ For the tests on domain consistency, it is recommended to use the _Logical consi
 
 [NOTE]
 ====
-*Recomendation 13*
+*Recommendation 13*
 
 Topological consistency should be evaluated and documented using Number of faulty point-curve connections and Number of missing connections due to undershoots, as specified in the tables below.
 
@@ -3161,7 +3159,7 @@ Topological consistency should be evaluated and documented using Number of fault
 
 [NOTE]
 ====
-*Recomendation 14*
+*Recommendation 14*
 
 Absolute or external accuracy should be evaluated and documented using Mean value of positional uncertainties, as specified in the tables below.
 
@@ -3206,7 +3204,7 @@ No minimum data quality requirements are defined for the spatial data theme Admi
 
 [NOTE]
 ====
-*Recomendation 15*
+*Recommendation 15*
 
 All spatial objects of the _Administrative Units_ theme should be provided at the source accuracy where possible.
 
@@ -3214,7 +3212,7 @@ All spatial objects of the _Administrative Units_ theme should be provided at th
 
 [NOTE]
 ====
-*Recomendation 16*
+*Recommendation 16*
 
 All spatial objects of the _Administrative Units_ theme should have a positional accuracy of 50 meters or better.
 
@@ -3277,7 +3275,7 @@ The _Conformity_ metadata element defined in Regulation 1205/2008/EC requires to
 
 [NOTE]
 ====
-*Recomendation 17*
+*Recommendation 17*
 
 Dataset metadata should include a statement on the overall conformance of the dataset with this data specification (i.e. conformance with all requirements).
 
@@ -3285,7 +3283,7 @@ Dataset metadata should include a statement on the overall conformance of the da
 
 [NOTE]
 ====
-*Recomendation 18*
+*Recommendation 18*
 
 The _Conformity_ metadata element should be used to document conformance with this data specification (as a whole), with a specific conformance class defined in the Abstract Test Suite in Annex A and/or with another specification.
 
@@ -3295,7 +3293,7 @@ The _Conformity_ element includes two sub-elements, the _Specification_ (a citat
 
 [NOTE]
 ====
-*Recomendation 19*
+*Recommendation 19*
 
 If a dataset is not yet conformant with all requirements of this data specification, it is recommended to include information on the conformance with the individual conformance classes specified in the Abstract Test Suite in Annex A.
 
@@ -3303,7 +3301,7 @@ If a dataset is not yet conformant with all requirements of this data specificat
 
 [NOTE]
 ====
-*Recomendation 20*
+*Recommendation 20*
 
 If a dataset is produced or transformed according to an external specification that includes specific quality assurance procedures, the conformity with this specification should be documented using the _Conformity_ metadata element.
 
@@ -3311,7 +3309,7 @@ If a dataset is produced or transformed according to an external specification t
 
 [NOTE]
 ====
-*Recomendation 21*
+*Recommendation 21*
 
 If minimum data quality recommendations are defined then the statement on the conformity with these requirements should be included using the _Conformity_ metadata element and referring to the relevant data quality conformance class in the Abstract Test Suite.
 
@@ -3321,7 +3319,7 @@ NOTE Currently no minimum data quality requirements are included in the IRs. The
 
 [NOTE]
 ====
-*Recomendation 22*
+*Recommendation 22*
 
 When documenting conformance with this data specification or one of the conformance classes defined in the Abstract Test Suite, the _Specification_ sub-element should be given using the http URI identifier of the conformance class or using a citation including the following elements:
 
@@ -3403,7 +3401,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication">p
 
 [NOTE]
 ====
-*Recomendation 23*
+*Recommendation 23*
 
 Following the ISO/DIS 19157 Quality principles, if a data provider has a procedure for the quality management of their spatial data sets then the appropriate data quality elements and measures defined in ISO/DIS 19157 should be used to evaluate and report (in the metadata) the results. If not, the _Lineage_ metadata element (defined in Regulation 1205/2008/EC) should be used to describe the overall quality of a spatial data set.
 
@@ -3415,7 +3413,7 @@ The Metadata Technical Guidelines based on EN ISO 19115 and EN ISO 19119 specifi
 
 [NOTE]
 ====
-*Recomendation 24*
+*Recommendation 24*
 
 To describe the transformation steps and related source data, it is recommended to use the following sub-elements of LI_Lineage:
 
@@ -3433,7 +3431,7 @@ According to Regulation 1205/2008/EC, at least one of the following temporal ref
 
 [NOTE]
 ====
-*Recomendation 25*
+*Recommendation 25*
 
 It is recommended that at least the date of the last revision of a spatial data set should be reported using the _Date of last revision_ metadata sub-element.
 
@@ -3502,7 +3500,7 @@ The elements specified below shall be available in the specified ISO/TS 19139 pa
 
 [NOTE]
 ====
-*Recomendation 26*
+*Recommendation 26*
 
 The metadata elements for interoperability should be made available together with the metadata elements defined in the Metadata Regulation through an INSPIRE discovery service.
 
@@ -3691,7 +3689,7 @@ See section 8.3.2 for instructions on how to implement metadata elements for rep
 
 [NOTE]
 ====
-*Recomendation 27*
+*Recommendation 27*
 
 The metadata describing a spatial data set or a spatial data set series related to the theme _Administrative Units_ should comprise the theme-specific metadata elements specified in Table 5.
 
@@ -3719,7 +3717,7 @@ Table 5 – Optional theme-specific metadata elements for the theme _Administrat
 
 [NOTE]
 ====
-*Recomendation 28*
+*Recommendation 28*
 
 For implementing the metadata elements included in this section using ISO 19115, ISO/DIS 19157 and ISO/TS 19139, the instructions included in the relevant sub-sections should be followed.
 
@@ -3758,7 +3756,7 @@ At least the following elements should be used (the multiplicity according to IS
 
 [NOTE]
 ====
-*Recomendation 29*
+*Recommendation 29*
 
 For reporting the results of the data quality evaluation, the data quality elements, sub-elements and (for quantitative evaluation) measures defined in chapter 7 should be used.
 
@@ -3766,7 +3764,7 @@ For reporting the results of the data quality evaluation, the data quality eleme
 
 [NOTE]
 ====
-*Recomendation 30*
+*Recommendation 30*
 
 The metadata elements specified in the following sections should be used to report the results of the data quality evaluation. At least the information included in the row "Implementation instructions" should be provided.
 
@@ -3776,7 +3774,7 @@ The first section applies to reporting quantitative results (using the element D
 
 [NOTE]
 ====
-*Recomendation 31*
+*Recommendation 31*
 
 If a dataset does not pass the tests of the Application schema conformance class (defined in Annex A), the results of each test should be reported using one of the options described in sections 8.3.2.1 and 8.3.2.2.
 
@@ -3790,7 +3788,7 @@ The scope for reporting may be different from the scope for evaluating data qual
 
 [NOTE]
 ====
-*Recomendation 32*
+*Recommendation 32*
 
 The scope element (of type DQ_Scope) of the DQ_DataQuality subtype should be used to encode the reporting scope.
 
@@ -4064,7 +4062,7 @@ NOTE The layer specification in the IRs only contains the name, a human readable
 
 [NOTE]
 ====
-*Recomendation 33*
+*Recommendation 33*
 
 It is recommended to use the keywords specified in section 11.1 in the _Layers Metadata parameters_ of the INSPIRE View service (see Annex III, Part A, section 2.2.4 in Commission Regulation (EC) No 976/2009).
 
@@ -4086,7 +4084,7 @@ In section 11.3, further styles can be specified that represent examples of styl
 
 [NOTE]
 ====
-*Recomendation 34*
+*Recommendation 34*
 
 In addition, it is recommended that, where applicable, INSPIRE view services also support the styles defined in section 11.3.
 
