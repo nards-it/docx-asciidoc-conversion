@@ -1053,16 +1053,14 @@ The polygons represent Administrative units at three levels:
 [loweralpha]
 . national level 1: AU1 polygon represents a country;
 . national level 2: AU2 and AU3 polygons represent regions;
-
-
++
 AU2  AU3 topologically equal to AU1
-
 
 [loweralpha, start=3]
 . national level 3: AU4 and AU5 represent lowest level units;
-
++
 AU4  AU5 topologically equal to AU2
-
++
 For AU3 there is no further subdivision.
 
 |===
@@ -1189,15 +1187,12 @@ The polygons represent Administrative Units at three levels:
 [loweralpha]
 . national level 1: AU1 polygon represents a country;
 . national level 2: AU2 and AU3 polygons represent regions;
-
-
++
 AU2  AU3 topologically equal to AU1
-
 
 [loweralpha, start=3]
 . national level 3: AU4 and AU5 represent lowest level units;
-
-
++
 AU4  AU5 topologically equal to AU2
 
 
@@ -1223,10 +1218,10 @@ a|
 * P7 and P3 nodes are begin/end nodes of regional boundary between AU2 and AU3
 
 * P5 and P8 nodes are begin/end nodes of lowest level boundary between AU4 and AU5
-
-
-|Begin and end nodes of international boundaries do not necessarily meet begin/end node of some regional boundary. |
 |===
+
+Begin and end nodes of international boundaries do not necessarily meet begin/end node of some regional boundary. |
+
 
 Based on the identified nodes the following boundaries at three levels of administrative structure can be determined:
 
@@ -2125,12 +2120,8 @@ By definition there are well known topological relationships between the various
 *Recommendation 7*
 
 The following geometric and topological constraints are recommendations for this data specification:
-* {blank}
-====
 
-
-
-the internal waters of a coastal State should be adjacent to the AdministrativeUnit spatial object representing the State (i.e. where the attribute nationalLevel is equal to '1stOrder').
+* the internal waters of a coastal State should be adjacent to the AdministrativeUnit spatial object representing the State (i.e. where the attribute nationalLevel is equal to '1stOrder').
 
 * the territorial sea of a coastal State and its internal waters should be adjacent on the Baseline.
 
@@ -2139,7 +2130,7 @@ the internal waters of a coastal State should be adjacent to the AdministrativeU
 * the continental shelf should include the exclusive economic zone.
 
 * the exclusive economic zone should include the contiguous zone.
-
+====
 
 NOTE The relationships mentioned above are not explicitly expressed in the UML model for simplicity, nevertheless they should be reflected in the data.
 
