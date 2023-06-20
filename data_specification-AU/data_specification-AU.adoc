@@ -1,9 +1,9 @@
 // Admonition icons:
-// TG Requirement
+// IR Requirement
 :important-caption: 📕
-// TG Recommendation
+// TG Requirement
 :tip-caption: 📒
-// Conformance class
+// Recommendation
 :note-caption: 📘
 
 // TOC placement using macro (manual)
@@ -13,10 +13,13 @@
 :toc-title:
 
 // TOC level depth
-:toclevels: 5
+:toclevels: 3
 
 // Section numbering level depth
 :sectnumlevels: 8
+
+// Line Break Doc Title
+:hardbreaks-option:
 
 :appendix-caption: Annex
 
@@ -136,18 +139,16 @@ In addition administrative units may provide the frame for a boundary-based anal
 The administrative units data theme model is divided in two application schemas:
 
 * The core element of the *AdministrativeUnits application schema* is the administrative unit represented by a surface geometry. In accordance with the Directive, each administrative unit carries a unique identifier. Administrative units are further described by their geographical name, the country of location, the national administrative code, and the hierarchical level within the administrative structure of the country. This information is completed, if available, with the life cycle information (when the administrative unit has been inserted or changed in the dataset, and when it has been (if ever) superseded or retired in the spatial data set), the name of the corresponding national level and the residence of the administrative authority.
-
-
++
 The administrative division of the Members States follows a hierarchical structure where the lowest level units (often communes) are united in higher level units (like provinces, counties, etc) that compose other units at a higher level. It must be ensured that an administrative unit of an upper level is composed of one or more administrative units of a lower level. Lowest level administrative units are further characterised by their geometry and, where available, by the corresponding local administrative unit code. A special spatial object type called condominium has been introduced for describing independent administrative areas that are administered by two or more countries.
-
++
 Administrative units are separated by administrative boundaries that are specified as lines. As mandatory properties they carry a unique identifier, information on the country, the administrative hierarchic level and their own geometry. These are complemented, when available, with the legal and technical status of the boundary and the life cycle information.
 
 
 * The *MaritimeUnits application schema* models the existing maritime zones. These are stripes or belts of sea defined according international treaties and conventions, where the coastal States execute their jurisdictional rights. Depending on the zone type property, they may concern an area of seabed, ocean floor, subsoil, resources, or even the air space over the sea, for cadastral, administrative, economic, security or safety purposes. These rights are established by the United Nations Convention on the Law of the Sea (UNCLOS). The baseline, the line from which the outer limits of the territorial sea is measured, serves as reference to calculate the breath of territorial sea, while determines the outer limits of other maritime zones by establishing respectively different distances measured from it.
-
-
++
 In contrast to the AdministrativeUnits model, no hierarchical structure is established between different maritime zones. However, they share common properties with administrative units, like the unique identifier and the country the maritime zone belongs to. All this information is again complemented, if available, with the life cycle information and the geographical name.
-
++
 Following a common modelling approach with administrative units, maritime zones are separated by maritime boundaries that are specified as lines. As mandatory properties they carry a unique identifier, information on the country, and their own geometry. These are complemented, when available, with the legal and technical status of the boundary and the life cycle information.
 
 
