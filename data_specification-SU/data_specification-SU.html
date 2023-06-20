@@ -680,25 +680,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Alina Kmiecik (TWG Facilitator until 15/12/2010) and Udo Maack (TWG Facilitator from 15/12/2010), Pieter Bresters, Ian Coady, Marie Haldorson, Jean-Luc Lipatz, Miroslaw Migacz, Susanne Schnorr-Baecker, Julien Gaffuri (TWG Editor and European Commission contact point).</p>
 </div>
 <div class="paragraph">
-<p>Contributors:</p>
+<p>Contributors:<br>
+From Eurostat: Beatrice Eiselt, Ekkehard Petri and Daniele Rizzi<br>
+From CBS (NL): Niek van Leeuwen, Olav ten Bosch</p>
 </div>
 <div class="paragraph">
-<p>From Eurostat: Beatrice Eiselt, Ekkehard Petri and Daniele Rizzi</p>
-</div>
-<div class="paragraph">
-<p>From CBS (NL): Niek van Leeuwen, Olav ten Bosch</p>
-</div>
-<div class="paragraph">
-<p>Participants on GISCO / Geostat meetings:</p>
-</div>
-<div class="paragraph">
-<p>Hugo Poelmann (DG Regio) – Requirements for Change Information</p>
-</div>
-<div class="paragraph">
-<p>Ingrid Kaminger (Statistic Austria) – User Survey according Grids</p>
-</div>
-<div class="paragraph">
-<p>Marjan van Herwijnen (ESPON-Coordination Unit) - Requirements for Change Information</p>
+<p>Participants on GISCO / Geostat meetings:<br>
+Hugo Poelmann (DG Regio) – Requirements for Change Information<br>
+Ingrid Kaminger (Statistic Austria) – User Survey according Grids<br>
+Marjan van Herwijnen (ESPON-Coordination Unit) - Requirements for Change Information</p>
 </div>
 <div class="paragraph">
 <p>Other contributors to the INSPIRE data specifications are the Drafting Team Data Specifications, the JRC Data Specifications Team and the INSPIRE stakeholders - Spatial Data Interested Communities (SDICs) and Legally Mandated Organisations (LMOs).</p>
@@ -754,129 +744,21 @@ Fax: 39-0332-7866325<br>
 </li>
 <li><a href="#_basic_notions">5.2. Basic notions</a>
 <ul class="sectlevel3">
-<li><a href="#_notation">5.2.1. Notation</a>
-<ul class="sectlevel4">
-<li><a href="#_unified_modeling_language_uml">5.2.1.1. Unified Modeling Language (UML)</a></li>
-<li><a href="#_stereotypes">5.2.1.2. Stereotypes</a></li>
-</ul>
-</li>
+<li><a href="#_notation">5.2.1. Notation</a></li>
 <li><a href="#_voidable_characteristics">5.2.2. Voidable characteristics</a></li>
 <li><a href="#_enumerations">5.2.3. Enumerations</a></li>
-<li><a href="#_code_lists">5.2.4. Code lists</a>
-<ul class="sectlevel4">
-<li><a href="#_code_list_types">5.2.4.1. Code list types</a></li>
-<li><a href="#_obligations_on_data_providers">5.2.4.2. Obligations on data providers</a></li>
-<li><a href="#_recommended_code_list_values">5.2.4.3. Recommended code list values</a></li>
-<li><a href="#_governance">5.2.4.4. Governance</a></li>
-<li><a href="#_vocabulary">5.2.4.5. Vocabulary</a></li>
-</ul>
-</li>
+<li><a href="#_code_lists">5.2.4. Code lists</a></li>
 <li><a href="#_identifier_management">5.2.5. Identifier management</a></li>
 <li><a href="#_geometry_representation">5.2.6. Geometry representation</a></li>
-<li><a href="#_temporality_representation">5.2.7. Temporality representation</a>
-<ul class="sectlevel4">
-<li><a href="#_validity_of_the_real_world_phenomena">5.2.7.1. Validity of the real-world phenomena</a></li>
-</ul>
-</li>
+<li><a href="#_temporality_representation">5.2.7. Temporality representation</a></li>
 </ul>
 </li>
 <li><a href="#_application_schema_statistical_units">5.3. Application schema Statistical Units</a>
 <ul class="sectlevel3">
-<li><a href="#_description">5.3.1. Description</a>
-<ul class="sectlevel4">
-<li><a href="#_narrative_description">5.3.1.1. Narrative description</a></li>
-<li><a href="#_uml_overview">5.3.1.2. UML Overview</a>
-<ul class="sectlevel5">
-<li><a href="#_base_package">5.3.1.2.1. <em>Base package</em></a></li>
-<li><a href="#_grid_package">5.3.1.2.2. <em>Grid package</em></a></li>
-<li><a href="#_vector_package">5.3.1.2.3. <em>Vector package</em></a></li>
-</ul>
-</li>
-<li><a href="#_consistency_between_spatial_data_sets">5.3.1.3. Consistency between spatial data sets</a></li>
-<li><a href="#_identifier_management_2">5.3.1.4. Identifier management</a></li>
-<li><a href="#_modelling_of_object_references">5.3.1.5. Modelling of object references</a></li>
-<li><a href="#_geometry_representation_2">5.3.1.6. Geometry representation</a></li>
-<li><a href="#_temporality_representation_2">5.3.1.7. Temporality representation</a></li>
-</ul>
-</li>
-<li><a href="#_base_package_feature_catalogue">5.3.2. Base package Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types">5.3.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_statisticalunit">5.3.2.1.1. <em>StatisticalUnit</em></a></li>
-<li><a href="#_aggregatedenergy">5.3.2.1.2. <em>AggregatedEnergy</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_grid_package_feature_catalogue">5.3.3. Grid package Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_2">5.3.3.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_statisticalgrid">5.3.3.1.1. <em>StatisticalGrid</em></a></li>
-<li><a href="#_statisticalgridcell">5.3.3.1.2. <em>StatisticalGridCell</em></a></li>
-</ul>
-</li>
-<li><a href="#_data_types">5.3.3.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_gridposition">5.3.3.2.1. <em>GridPosition</em></a></li>
-<li><a href="#_statisticalgridresolution">5.3.3.2.2. <em>StatisticalGridResolution</em></a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative">5.3.3.3. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_angle">5.3.3.3.1. <em>Angle</em></a></li>
-<li><a href="#_characterstring">5.3.3.3.2. <em>CharacterString</em></a></li>
-<li><a href="#_directposition">5.3.3.3.3. <em>DirectPosition</em></a></li>
-<li><a href="#_gm_polygon">5.3.3.3.4. <em>GM_Polygon</em></a></li>
-<li><a href="#_identifier">5.3.3.3.5. <em>Identifier</em></a></li>
-<li><a href="#_integer">5.3.3.3.6. <em>Integer</em></a></li>
-<li><a href="#_length">5.3.3.3.7. <em>Length</em></a></li>
-<li><a href="#_statisticalunit_2">5.3.3.3.8. <em>StatisticalUnit</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_vector_package_feature_catalogue">5.3.4. Vector package Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_3">5.3.4.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_areastatisticalunit">5.3.4.1.1. <em>AreaStatisticalUnit</em></a></li>
-<li><a href="#_evolution">5.3.4.1.2. <em>Evolution</em></a></li>
-<li><a href="#_statisticaltessellation">5.3.4.1.3. <em>StatisticalTessellation</em></a></li>
-<li><a href="#_vectorstatisticalunit">5.3.4.1.4. <em>VectorStatisticalUnit</em></a></li>
-</ul>
-</li>
-<li><a href="#_data_types_2">5.3.4.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_geometrydescriptor">5.3.4.2.1. <em>GeometryDescriptor</em></a></li>
-<li><a href="#_vectorstatisticalunitgeometry">5.3.4.2.2. <em>VectorStatisticalUnitGeometry</em></a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_2">5.3.4.3. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_evolutiontypevalue">5.3.4.3.1. <em>EvolutionTypeValue</em></a></li>
-<li><a href="#_geometrytypevalue">5.3.4.3.2. <em>GeometryTypeValue</em></a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_2">5.3.4.4. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_administrativeunit">5.3.4.4.1. <em>AdministrativeUnit</em></a></li>
-<li><a href="#_aggregatedenergy_2">5.3.4.4.2. <em>AggregatedEnergy</em></a></li>
-<li><a href="#_area">5.3.4.4.3. <em>Area</em></a></li>
-<li><a href="#_countrycode">5.3.4.4.4. <em>CountryCode</em></a></li>
-<li><a href="#_datetime">5.3.4.4.5. <em>DateTime</em></a></li>
-<li><a href="#_gm_object">5.3.4.4.6. <em>GM_Object</em></a></li>
-<li><a href="#_geographicalname">5.3.4.4.7. <em>GeographicalName</em></a></li>
-<li><a href="#_identifier_2">5.3.4.4.8. <em>Identifier</em></a></li>
-<li><a href="#_integer_2">5.3.4.4.9. <em>Integer</em></a></li>
-<li><a href="#_statisticalunit_3">5.3.4.4.10. <em>StatisticalUnit</em></a></li>
-<li><a href="#_tm_period">5.3.4.4.11. <em>TM_Period</em></a></li>
-<li><a href="#_thematicidentifier">5.3.4.4.12. <em>ThematicIdentifier</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_description">5.3.1. Description</a></li>
+<li><a href="#_base_package_feature_catalogue">5.3.2. Base package Feature catalogue</a></li>
+<li><a href="#_grid_package_feature_catalogue">5.3.3. Grid package Feature catalogue</a></li>
+<li><a href="#_vector_package_feature_catalogue">5.3.4. Vector package Feature catalogue</a></li>
 </ul>
 </li>
 </ul>
@@ -885,14 +767,7 @@ Fax: 39-0332-7866325<br>
 <ul class="sectlevel2">
 <li><a href="#_default_reference_systems_units_of_measure_and_grid">6.1. Default reference systems, units of measure and grid</a>
 <ul class="sectlevel3">
-<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a>
-<ul class="sectlevel4">
-<li><a href="#_datum">6.1.1.1. Datum</a></li>
-<li><a href="#_coordinate_reference_systems_2">6.1.1.2. Coordinate reference systems</a></li>
-<li><a href="#_display">6.1.1.3. Display</a></li>
-<li><a href="#_identifiers_for_coordinate_reference_systems">6.1.1.4. Identifiers for coordinate reference systems</a></li>
-</ul>
-</li>
+<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a></li>
 <li><a href="#_temporal_reference_system">6.1.2. Temporal reference system</a></li>
 <li><a href="#_units_of_measure">6.1.3. Units of measure</a></li>
 <li><a href="#_grids">6.1.4. Grids</a></li>
@@ -939,12 +814,7 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_recommended_theme_specific_metadata_elements">8.3. Recommended theme-specific metadata elements</a>
 <ul class="sectlevel3">
 <li><a href="#_maintenance_information">8.3.1. Maintenance Information</a></li>
-<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a>
-<ul class="sectlevel4">
-<li><a href="#_guidelines_for_reporting_quantitative_results_of_the_data_quality_evaluation">8.3.2.1. Guidelines for reporting quantitative results of the data quality evaluation</a></li>
-<li><a href="#_guidelines_for_reporting_descriptive_results_of_the_data_quality_evaluation">8.3.2.2. Guidelines for reporting descriptive results of the Data Quality evaluation</a></li>
-</ul>
-</li>
+<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a></li>
 </ul>
 </li>
 </ul>
@@ -955,17 +825,8 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_delivery_medium">9.2. Delivery medium</a></li>
 <li><a href="#_encodings">9.3. Encodings</a>
 <ul class="sectlevel3">
-<li><a href="#_default_encodings">9.3.1. Default Encoding(s)</a>
-<ul class="sectlevel4">
-<li><a href="#_specific_requirements_for_gml_encoding">9.3.1.1. Specific requirements for GML encoding</a></li>
-<li><a href="#_default_encodings_for_application_schema_statisticalunits">9.3.1.2. Default encoding(s) for application schema StatisticalUnits</a></li>
-</ul>
-</li>
-<li><a href="#_recommended_encodings">9.3.2. Recommended Encoding(s)</a>
-<ul class="sectlevel4">
-<li><a href="#_alternative_encoding_for_application_schema_statisticalunits">9.3.2.1. Alternative encoding for application schema StatisticalUnits</a></li>
-</ul>
-</li>
+<li><a href="#_default_encodings">9.3.1. Default Encoding(s)</a></li>
+<li><a href="#_recommended_encodings">9.3.2. Recommended Encoding(s)</a></li>
 </ul>
 </li>
 </ul>
@@ -1084,74 +945,16 @@ Fax: 39-0332-7866325<br>
 <ul class="sectlevel3">
 <li><a href="#_package_diagram">E.1.1. Package diagram</a></li>
 <li><a href="#_class_diagram">E.1.2. Class diagram</a></li>
-<li><a href="#_inspire_governed_code_lists">E.1.3. INSPIRE-governed code lists</a>
-<ul class="sectlevel4">
-<li><a href="#_values_of_code_list_nutslevelvalue">E.1.3.1. Values of code list NUTSLevelValue</a></li>
-</ul>
-</li>
-<li><a href="#_feature_catalogue">E.1.4. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_4">E.1.4.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_nutsregion">E.1.4.1.1. <em>NUTSRegion</em></a></li>
-<li><a href="#_nutstessellation">E.1.4.1.2. <em>NUTSTessellation</em></a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_3">E.1.4.2. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_nutslevelvalue">E.1.4.2.1. <em>NUTSLevelValue</em></a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_3">E.1.4.3. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_areastatisticalunit_2">E.1.4.3.1. <em>AreaStatisticalUnit</em></a></li>
-<li><a href="#_statisticaltessellation_2">E.1.4.3.2. <em>StatisticalTessellation</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_inspire_governed_code_lists">E.1.3. INSPIRE-governed code lists</a></li>
+<li><a href="#_feature_catalogue">E.1.4. Feature catalogue</a></li>
 </ul>
 </li>
 <li><a href="#_the_urban_audit_dataset">E.2. The Urban Audit dataset</a>
 <ul class="sectlevel3">
 <li><a href="#_urban_audit_2009_version">E.2.1. Urban Audit 2009 version</a></li>
-<li><a href="#_feature_catalogue_2">E.2.2. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_5">E.2.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_city">E.2.2.1.1. <em>City</em></a></li>
-<li><a href="#_citydistrict">E.2.2.1.2. <em>CityDistrict</em></a></li>
-<li><a href="#_kernel">E.2.2.1.3. <em>Kernel</em></a></li>
-<li><a href="#_largerurbanzone">E.2.2.1.4. <em>LargerUrbanZone</em></a></li>
-<li><a href="#_subdistrict">E.2.2.1.5. <em>SubDistrict</em></a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_4">E.2.2.2. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_areastatisticalunit_3">E.2.2.2.1. <em>AreaStatisticalUnit</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_feature_catalogue_2">E.2.2. Feature catalogue</a></li>
 <li><a href="#_urban_audit_2011_version">E.2.3. Urban Audit 2011 version</a></li>
-<li><a href="#_feature_catalogue_3">E.2.4. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_6">E.2.4.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_city_2">E.2.4.1.1. <em>City</em></a></li>
-<li><a href="#_citydistrict_2">E.2.4.1.2. <em>CityDistrict</em></a></li>
-<li><a href="#_greatercity">E.2.4.1.3. <em>GreaterCity</em></a></li>
-<li><a href="#_largerurbanzone_2">E.2.4.1.4. <em>LargerUrbanZone</em></a></li>
-<li><a href="#_subdistrict_2">E.2.4.1.5. <em>SubDistrict</em></a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_5">E.2.4.2. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_vectorstatisticalunit_2">E.2.4.2.1. <em>VectorStatisticalUnit</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_feature_catalogue_3">E.2.4. Feature catalogue</a></li>
 </ul>
 </li>
 </ul>
@@ -1872,7 +1675,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 1</strong></p>
+<p><strong>Recommendation 1</strong></p>
 </div>
 <div class="paragraph">
 <p>The reason for a <em>void</em> value should be provided where possible using a listed value from the VoidReasonValue code list to indicate the reason for the missing value.</p>
@@ -2041,7 +1844,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 2</strong></p>
+<p><strong>Recommendation 2</strong></p>
 </div>
 <div class="paragraph">
 <p>Additional values defined by data providers should not replace or redefine any value already specified in the IRs.</p>
@@ -2140,7 +1943,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 3</strong></p>
+<p><strong>Recommendation 3</strong></p>
 </div>
 <div class="paragraph">
 <p>Where these Technical Guidelines recommend values for a code list in addition to those specified in the IRs, these values should be used.</p>
@@ -2208,7 +2011,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 4</strong></p>
+<p><strong>Recommendation 4</strong></p>
 </div>
 <div class="paragraph">
 <p>The http URIs and labels used for encoding code list values should be taken from the INSPIRE code list registry for INSPIRE-governed code lists and generated according to the relevant rules specified for externally governed code lists.</p>
@@ -2355,7 +2158,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 5</strong></p>
+<p><strong>Recommendation 5</strong></p>
 </div>
 <div class="paragraph">
 <p>If life-cycle information is not maintained as part of the spatial data set, all spatial objects belonging to this data set should provide a void value with a reason of "unpopulated".</p>
@@ -2558,7 +2361,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 1</strong></p>
+<p><strong>Recommendation 1</strong></p>
 </div>
 <div class="paragraph">
 <p>Because an important requirement of statistical grids is to be composed of equal area cells, grids based on non-projected coordinate reference systems should be used only on small spaces for which the cells keep comparable sizes.</p>
@@ -2587,7 +2390,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 2</strong></p>
+<p><strong>Recommendation 2</strong></p>
 </div>
 <div class="paragraph">
 <p>The reference point of a grid cell should be the lower left corner of the grid cell.</p>
@@ -2681,7 +2484,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 4</strong></p>
+<p><strong>Recommendation 4</strong></p>
 </div>
 <div class="paragraph">
 <p>For a grid cell, the attribute values <em>code, geographicalPosition, gridPosition</em> and <em>geometry</em> should be consistent together, and also with the attributes of the grid.</p>
@@ -2721,7 +2524,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 5</strong></p>
+<p><strong>Recommendation 5</strong></p>
 </div>
 <div class="paragraph">
 <p>When required, multi resolution grids are represented through the <em>hierarchical composition</em> and <em>hierarchical relation</em> associations.</p>
@@ -2763,7 +2566,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 6</strong></p>
+<p><strong>Recommendation 6</strong></p>
 </div>
 <div class="paragraph">
 <p>To represent statistical grids coverages, the GCM model for RectifiedGridCoverage should be used.</p>
@@ -2840,7 +2643,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 7</strong></p>
+<p><strong>Recommendation 7</strong></p>
 </div>
 <div class="paragraph">
 <p>When available, several geometrical representations of vector statistical units may be published.</p>
@@ -2873,7 +2676,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 8</strong></p>
+<p><strong>Recommendation 8</strong></p>
 </div>
 <div class="paragraph">
 <p>For each vector statistical unit, exactly one reference geometry has to be defined. This reference geometry is the "official" geometry of the statistical unit.</p>
@@ -2890,7 +2693,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 9</strong></p>
+<p><strong>Recommendation 9</strong></p>
 </div>
 <div class="paragraph">
 <p>There is no obligation to publish the reference geometry: A data provider can publish only a generalised version. In this case, the source of the geometry should be specified in the metadata (as lineage element).</p>
@@ -2918,7 +2721,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 10</strong></p>
+<p><strong>Recommendation 10</strong></p>
 </div>
 <div class="paragraph">
 <p>When available, the composition relations between statistical units should be given.</p>
@@ -2955,7 +2758,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 11</strong></p>
+<p><strong>Recommendation 11</strong></p>
 </div>
 <div class="paragraph">
 <p>For area statistical units composing a tessellation, an explicit object representing this tessellation should be provided. Existing hierarchical relations between these tessellations may be given.</p>
@@ -3042,7 +2845,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 14</strong></p>
+<p><strong>Recommendation 14</strong></p>
 </div>
 <div class="paragraph">
 <p>Edge-matching between vector statistical units in adjacent datasets should be performed.</p>
@@ -3059,7 +2862,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 15</strong></p>
+<p><strong>Recommendation 15</strong></p>
 </div>
 <div class="paragraph">
 <p>The level of generalisation of adjacent datasets should be consistent.</p>
@@ -3128,7 +2931,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 18</strong></p>
+<p><strong>Recommendation 18</strong></p>
 </div>
 <div class="paragraph">
 <p>When a vector statistical unit share topological relations with other objects, their geometrical representations should be consistent with these topological relations as much as possible.</p>
@@ -3145,7 +2948,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 19</strong></p>
+<p><strong>Recommendation 19</strong></p>
 </div>
 <div class="paragraph">
 <p>When a vector statistical unit is defined from another named spatial object (like an administrative unit), their geographical names should be consistent.</p>
@@ -3208,7 +3011,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 20</strong></p>
+<p><strong>Recommendation 20</strong></p>
 </div>
 <div class="paragraph">
 <p>Creation, changes and deletions should be represented using the attributes <em>validityPeriod</em>, <em>beginLifespanVersion</em> and <em>endLifespanVersion</em>.</p>
@@ -3228,7 +3031,7 @@ Statistical unit informs on the location of statistical data and information. Th
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 21</strong></p>
+<p><strong>Recommendation 21</strong></p>
 </div>
 <div class="paragraph">
 <p>In case only one version is published, it should be the most updated one.</p>
@@ -7292,7 +7095,7 @@ These may have been established to meet data exchange requirements of different 
 <p>(&#8230;&#8203;)</p>
 </div>
 <div class="olist arabic">
-<ol class="arabic">
+<ol class="arabic" start="2">
 <li>
 <p>All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.</p>
 </li>
@@ -7373,7 +7176,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 24</strong></p>
+<p><strong>Recommendation 24</strong></p>
 </div>
 <div class="paragraph">
 <p>For the visualisation of statistical grids, equal-area projections should be used.</p>
@@ -7458,7 +7261,7 @@ These may have been established to meet data exchange requirements of different 
 <td class="tableblock halign-left valign-top"><p class="tableblock">dataset</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.1.3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Logical consistency</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Topological consistency</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">correctness of the explicitly encoded topological characteristics of the dataset, as described by the scope</p></td>
@@ -7495,7 +7298,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 6</strong></p>
+<p><strong>Recommendation 6</strong></p>
 </div>
 <div class="paragraph">
 <p>Where it is impossible to express the evaluation of a data quality element in a quantitative way, the evaluation of the element should be expressed with a textual statement as a data quality descriptive result.</p>
@@ -7514,7 +7317,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 25</strong></p>
+<p><strong>Recommendation 25</strong></p>
 </div>
 <div class="paragraph">
 <p>Commission should be evaluated and documented using <strong>Rate of excess items</strong> as specified in the tables below.</p>
@@ -7602,7 +7405,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 26</strong></p>
+<p><strong>Recommendation 26</strong></p>
 </div>
 <div class="paragraph">
 <p>Omission should be evaluated and documented using <strong>Rate of missing items</strong> as specified in the tables below.</p>
@@ -7690,7 +7493,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 27</strong></p>
+<p><strong>Recommendation 27</strong></p>
 </div>
 <div class="paragraph">
 <p>Topological consistency should be evaluated and documented using <strong>Slivers</strong> as specified in the tables below.</p>
@@ -7788,7 +7591,11 @@ These may have been established to meet data exchange requirements of different 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">image::./media/image17.png[image,width=400,height=485, align=center]</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<div class="content">
+<img src="./media/image17.png" alt="image">
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Measure identifier</p></td>
@@ -7807,7 +7614,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 28</strong></p>
+<p><strong>Recommendation 28</strong></p>
 </div>
 <div class="paragraph">
 <p>Absolute or external accuracy should be evaluated and documented using <strong>Positional accuracy</strong> as specified in the tables below.</p>
@@ -7916,7 +7723,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 29</strong></p>
+<p><strong>Recommendation 29</strong></p>
 </div>
 <div class="paragraph">
 <p>Classification correctness should be evaluated and documented using <strong>Thematic accuracy</strong> as specified in the tables below.</p>
@@ -8009,7 +7816,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 30</strong></p>
+<p><strong>Recommendation 30</strong></p>
 </div>
 <div class="paragraph">
 <p>Temporal validity should be evaluated and documented using <strong>Temporal accuracy</strong> as specified in the tables below.</p>
@@ -8288,7 +8095,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 7</strong></p>
+<p><strong>Recommendation 7</strong></p>
 </div>
 <div class="paragraph">
 <p>Dataset metadata should include a statement on the overall conformance of the dataset with this data specification (i.e. conformance with all requirements).</p>
@@ -8305,7 +8112,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 8</strong></p>
+<p><strong>Recommendation 8</strong></p>
 </div>
 <div class="paragraph">
 <p>The <em>Conformity</em> metadata element should be used to document conformance with this data specification (as a whole), with a specific conformance class defined in the Abstract Test Suite in Annex A and/or with another specification.</p>
@@ -8325,7 +8132,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 9</strong></p>
+<p><strong>Recommendation 9</strong></p>
 </div>
 <div class="paragraph">
 <p>If a dataset is not yet conformant with all requirements of this data specification, it is recommended to include information on the conformance with the individual conformance classes specified in the Abstract Test Suite in Annex A.</p>
@@ -8342,7 +8149,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 10</strong></p>
+<p><strong>Recommendation 10</strong></p>
 </div>
 <div class="paragraph">
 <p>If a dataset is produced or transformed according to an external specification that includes specific quality assurance procedures, the conformity with this specification should be documented using the <em>Conformity</em> metadata element.</p>
@@ -8359,7 +8166,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 11</strong></p>
+<p><strong>Recommendation 11</strong></p>
 </div>
 <div class="paragraph">
 <p>If minimum data quality recommendations are defined then the statement on the conformity with these requirements should be included using the <em>Conformity</em> metadata element and referring to the relevant data quality conformance class in the Abstract Test Suite.</p>
@@ -8379,7 +8186,7 @@ These may have been established to meet data exchange requirements of different 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 12</strong></p>
+<p><strong>Recommendation 12</strong></p>
 </div>
 <div class="paragraph">
 <p>When documenting conformance with this data specification or one of the conformance classes defined in the Abstract Test Suite, the <em>Specification</em> sub-element should be given using the http URI identifier of the conformance class or using a citation including the following elements:</p>
@@ -8497,7 +8304,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 13</strong></p>
+<p><strong>Recommendation 13</strong></p>
 </div>
 <div class="paragraph">
 <p>Following the ISO/DIS 19157 Quality principles, if a data provider has a procedure for the quality management of their spatial data sets then the appropriate data quality elements and measures defined in ISO/DIS 19157 should be used to evaluate and report (in the metadata) the results. If not, the <em>Lineage</em> metadata element (defined in Regulation 1205/2008/EC) should be used to describe the overall quality of a spatial data set.</p>
@@ -8520,7 +8327,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 14</strong></p>
+<p><strong>Recommendation 14</strong></p>
 </div>
 <div class="paragraph">
 <p>To describe the transformation steps and related source data, it is recommended to use the following sub-elements of LI_Lineage:</p>
@@ -8556,7 +8363,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 15</strong></p>
+<p><strong>Recommendation 15</strong></p>
 </div>
 <div class="paragraph">
 <p>It is recommended that at least the date of the last revision of a spatial data set should be reported using the <em>Date of last revision</em> metadata sub-element.</p>
@@ -8687,7 +8494,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 16</strong></p>
+<p><strong>Recommendation 16</strong></p>
 </div>
 <div class="paragraph">
 <p>The metadata elements for interoperability should be made available together with the metadata elements defined in the Metadata Regulation through an INSPIRE discovery service.</p>
@@ -9114,7 +8921,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 17</strong></p>
+<p><strong>Recommendation 17</strong></p>
 </div>
 <div class="paragraph">
 <p>The metadata describing a spatial data set or a spatial data set series related to the theme <em>Statistical Units</em> should comprise the theme-specific metadata elements specified in Table 5.</p>
@@ -9209,7 +9016,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 18</strong></p>
+<p><strong>Recommendation 18</strong></p>
 </div>
 <div class="paragraph">
 <p>For implementing the metadata elements included in this section using ISO 19115, ISO/DIS 19157 and ISO/TS 19139, the instructions included in the relevant sub-sections should be followed.</p>
@@ -9307,7 +9114,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 19</strong></p>
+<p><strong>Recommendation 19</strong></p>
 </div>
 <div class="paragraph">
 <p>For reporting the results of the data quality evaluation, the data quality elements, sub-elements and (for quantitative evaluation) measures defined in chapter 7 should be used.</p>
@@ -9324,7 +9131,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 20</strong></p>
+<p><strong>Recommendation 20</strong></p>
 </div>
 <div class="paragraph">
 <p>The metadata elements specified in the following sections should be used to report the results of the data quality evaluation. At least the information included in the row "Implementation instructions" should be provided.</p>
@@ -9344,7 +9151,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 21</strong></p>
+<p><strong>Recommendation 21</strong></p>
 </div>
 <div class="paragraph">
 <p>If a dataset does not pass the tests of the Application schema conformance class (defined in Annex A), the results of each test should be reported using one of the options described in sections 8.3.2.1 and 8.3.2.2.</p>
@@ -9370,7 +9177,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 22</strong></p>
+<p><strong>Recommendation 22</strong></p>
 </div>
 <div class="paragraph">
 <p>The scope element (of type DQ_Scope) of the DQ_DataQuality subtype should be used to encode the reporting scope.</p>
@@ -9804,7 +9611,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 23</strong></p>
+<p><strong>Recommendation 23</strong></p>
 </div>
 <div class="paragraph">
 <p>It is recommended that also the encodings specified in this section be provided for the relevant application schemas.</p>
@@ -9829,7 +9636,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 31</strong></p>
+<p><strong>Recommendation 31</strong></p>
 </div>
 <div class="paragraph">
 <p>The recommended encodings for statistical data disseminated on grids are: GeoTIFF, netCDF, GRIB, BUFR and JPEG2000.</p>
@@ -9855,7 +9662,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 32</strong></p>
+<p><strong>Recommendation 32</strong></p>
 </div>
 <div class="paragraph">
 <p>Associations and references toward a statistical unit should be encoded using either its INSPIRE identifier or a thematic identifier.</p>
@@ -9953,7 +9760,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 24</strong></p>
+<p><strong>Recommendation 24</strong></p>
 </div>
 <div class="paragraph">
 <p>It is recommended to use the keywords specified in section 11.1 in the <em>Layers Metadata parameters</em> of the INSPIRE View service (see Annex III, Part A, section 2.2.4 in Commission Regulation (EC) No 976/2009).</p>
@@ -9996,7 +9803,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 25</strong></p>
+<p><strong>Recommendation 25</strong></p>
 </div>
 <div class="paragraph">
 <p>In addition, it is recommended that, where applicable, INSPIRE view services also support the styles defined in section 11.2.1.</p>
@@ -10190,12 +9997,8 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
     &lt;se:Title&gt;Vector statistical units default Style&lt;/se:Title&gt;
     &lt;se:Abstract&gt;&lt;/se:Abstract&gt;
    &lt;/se:Description&gt;
-   &lt;se:FeatureTypeName&gt;SU.VectorStatisticalUnits&lt;/se:FeatureTypeName&gt;</code></pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>   &lt;Rule&gt;
+   &lt;se:FeatureTypeName&gt;SU.VectorStatisticalUnits&lt;/se:FeatureTypeName&gt;
+   &lt;Rule&gt;
     &lt;se:Filter&gt;
      &lt;se:And&gt;
       &lt;se:PropertyIsEqualsTo&gt;
@@ -10230,12 +10033,8 @@ geometries.geometryDescriptor.geometryType&lt;/se:ValueReference&gt;
       &lt;se:SvgParameter name="stroke-width"&gt;3&lt;/se:SvgParameter&gt;
      &lt;/se:Stroke&gt;
     &lt;/se:PolygonSymbolizer&gt;
-   &lt;/Rule&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>   &lt;Rule&gt;
+   &lt;/Rule&gt;
+   &lt;Rule&gt;
     &lt;se:Filter&gt;
      &lt;se:And&gt;
       &lt;se:PropertyIsEqualsTo&gt;
@@ -10265,12 +10064,8 @@ geometries.geometryDescriptor.geometryType&lt;/se:ValueReference&gt;
       &lt;se:SvgParameter name="stroke-width"&gt;3.0&lt;/se:SvgParameter&gt;
      &lt;/se:Stroke&gt;
     &lt;/se:LineSymbolizer&gt;
-   &lt;/Rule&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>   &lt;Rule&gt;
+   &lt;/Rule&gt;
+   &lt;Rule&gt;
     &lt;se:Filter&gt;
      &lt;se:And&gt;
       &lt;se:PropertyIsEqualsTo&gt;
@@ -10306,14 +10101,10 @@ geometries.geometryDescriptor.geometryType&lt;/se:ValueReference&gt;
       &lt;/se:Size&gt;
      &lt;/se:Graphic&gt;
     &lt;/se:PointSymbolizer&gt;
-   &lt;/Rule&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>  &lt;/se:FeatureTypeStyle&gt;
+   &lt;/Rule&gt;
+  &lt;/se:FeatureTypeStyle&gt;
  &lt;/sld:UserStyle&gt;
-&lt;/sld:NamedLayer&gt;</pre>
+&lt;/sld:NamedLayer&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10502,34 +10293,24 @@ geometries.geometryDescriptor.geometryType&lt;/se:ValueReference&gt;
 <p>Regulation (EC) No 1059/2003 of the European Parliament and of the Council of 16 May 2003 on the establishment of a common classification system of territorial units for statistics (NUTS), OJ L 154, 21.06.2003, p.1</p>
 </div>
 <div class="paragraph">
-<p>SDMX (Statistical Data and Metadata Exchange)</p>
+<p>SDMX (Statistical Data and Metadata Exchange)<br>
+<a href="http://sdmx.org/" class="bare">http://sdmx.org/</a></p>
 </div>
 <div class="paragraph">
-<p><a href="http://sdmx.org/" class="bare">http://sdmx.org/</a></p>
+<p>SIGMA-TER project (Italy): DBTI (DataBase Territoriale Integrato): modello dati.<br>
+<a href="http://www.sigmater.it/" class="bare">http://www.sigmater.it/</a></p>
 </div>
 <div class="paragraph">
-<p>SIGMA-TER project (Italy): DBTI (DataBase Territoriale Integrato): modello dati.</p>
+<p>Tandem project<br>
+<em><a href="http://www.tandemproject.com/" class="bare">http://www.tandemproject.com/</a></em></p>
 </div>
 <div class="paragraph">
-<p><a href="http://www.sigmater.it/" class="bare">http://www.sigmater.it/</a></p>
+<p>Eurostat regional yearbook 2009<br>
+<em><a href="http://epp.eurostat.ec.europa.eu/portal/page/portal/publications/regional_yearbook" class="bare">http://epp.eurostat.ec.europa.eu/portal/page/portal/publications/regional_yearbook</a></em></p>
 </div>
 <div class="paragraph">
-<p>Tandem project</p>
-</div>
-<div class="paragraph">
-<p><em><a href="http://www.tandemproject.com/" class="bare">http://www.tandemproject.com/</a></em></p>
-</div>
-<div class="paragraph">
-<p>Eurostat regional yearbook 2009</p>
-</div>
-<div class="paragraph">
-<p><em><a href="http://epp.eurostat.ec.europa.eu/portal/page/portal/publications/regional_yearbook" class="bare">http://epp.eurostat.ec.europa.eu/portal/page/portal/publications/regional_yearbook</a></em></p>
-</div>
-<div class="paragraph">
-<p>Urban Audit</p>
-</div>
-<div class="paragraph">
-<p><em><a href="http://www.urbanaudit.org" class="bare">http://www.urbanaudit.org</a></em></p>
+<p>Urban Audit<br>
+<em><a href="http://www.urbanaudit.org" class="bare">http://www.urbanaudit.org</a></em></p>
 </div>
 <div class="paragraph">
 <p><em>Toward an approach of time series data issue: from empirical methods to applications</em>. Technical report of ESPON project, 31 pages. <em><a href="http://www.espon.eu/" class="bare">http://www.espon.eu/</a></em></p>
@@ -12078,7 +11859,7 @@ geometries.geometryDescriptor.geometryType&lt;/se:ValueReference&gt;
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 33</strong></p>
+<p><strong>Recommendation 33</strong></p>
 </div>
 <div class="paragraph">
 <p>If encoding formats and infrastructures exist for statistical data, INSPIRE should only focus on the spatial units, and actions to develop interfaces between these infrastructures and INSPIRE should be undertaken based on the previous recommendation. For example, existing formats for statistical data should be extended to allow the linkage to statistical units published under INSPIRE.</p>
@@ -12107,7 +11888,7 @@ geometries.geometryDescriptor.geometryType&lt;/se:ValueReference&gt;
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 34</strong></p>
+<p><strong>Recommendation 34</strong></p>
 </div>
 <div class="paragraph">
 <p>TJS service and GDAS format defined in: "Georeferenced Table Joining Service Implementation Standard, OpenGIS standard 10-070r2" should be used to publish statistical data to be linked to INSPIRE statistical units.</p>
@@ -12124,7 +11905,7 @@ geometries.geometryDescriptor.geometryType&lt;/se:ValueReference&gt;
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Recomendation 35</strong></p>
+<p><strong>Recommendation 35</strong></p>
 </div>
 <div class="paragraph">
 <p>If statistical data are reported on statistical units (such as Population Distribution data), one should consider publishing through the same service.</p>
