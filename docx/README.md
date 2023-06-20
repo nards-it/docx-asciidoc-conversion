@@ -16,7 +16,7 @@
 |12|Utility and governmental services|US||Published in draft|
 |13|Species distribution|SD||Published in draft|
 |14|Land cover|LC||Published in draft|
-|15|Administrative units|AU|Final revision
+|15|Administrative units|AU||Published in draft|
 |16|Statistical units|SU|Final revision
 |17|Orthoimagery|OI|Final revision
 |18|Geology|GE|Final revision
