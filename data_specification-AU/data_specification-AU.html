@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.20">
 <title>Scope</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -208,13 +208,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -393,7 +390,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -658,27 +655,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul>
 <li>
 <p>The core element of the <strong>AdministrativeUnits application schema</strong> is the administrative unit represented by a surface geometry. In accordance with the Directive, each administrative unit carries a unique identifier. Administrative units are further described by their geographical name, the country of location, the national administrative code, and the hierarchical level within the administrative structure of the country. This information is completed, if available, with the life cycle information (when the administrative unit has been inserted or changed in the dataset, and when it has been (if ever) superseded or retired in the spatial data set), the name of the corresponding national level and the residence of the administrative authority.</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>The administrative division of the Members States follows a hierarchical structure where the lowest level units (often communes) are united in higher level units (like provinces, counties, etc) that compose other units at a higher level. It must be ensured that an administrative unit of an upper level is composed of one or more administrative units of a lower level. Lowest level administrative units are further characterised by their geometry and, where available, by the corresponding local administrative unit code. A special spatial object type called condominium has been introduced for describing independent administrative areas that are administered by two or more countries.</p>
 </div>
 <div class="paragraph">
 <p>Administrative units are separated by administrative boundaries that are specified as lines. As mandatory properties they carry a unique identifier, information on the country, the administrative hierarchic level and their own geometry. These are complemented, when available, with the legal and technical status of the boundary and the life cycle information.</p>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>The <strong>MaritimeUnits application schema</strong> models the existing maritime zones. These are stripes or belts of sea defined according international treaties and conventions, where the coastal States execute their jurisdictional rights. Depending on the zone type property, they may concern an area of seabed, ocean floor, subsoil, resources, or even the air space over the sea, for cadastral, administrative, economic, security or safety purposes. These rights are established by the United Nations Convention on the Law of the Sea (UNCLOS). The baseline, the line from which the outer limits of the territorial sea is measured, serves as reference to calculate the breath of territorial sea, while determines the outer limits of other maritime zones by establishing respectively different distances measured from it.</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>In contrast to the AdministrativeUnits model, no hierarchical structure is established between different maritime zones. However, they share common properties with administrative units, like the unique identifier and the country the maritime zone belongs to. All this information is again complemented, if available, with the life cycle information and the geographical name.</p>
 </div>
 <div class="paragraph">
 <p>Following a common modelling approach with administrative units, maritime zones are separated by maritime boundaries that are specified as lines. As mandatory properties they carry a unique identifier, information on the country, and their own geometry. These are complemented, when available, with the legal and technical status of the boundary and the life cycle information.</p>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>In the INSPIRE administrative unit data specification, there are no mandatory quality requirements. However it is recommended that Member States provide the data at the source accuracy where possible targeting a minimal positional accuracy of 50 meters. The actual values of data quality sub-elements (completeness - commission and omission; logical consistency - conceptual, domain and topological consistency; positional accuracy – absolute ore external accuracy) should be published as metadata, when they are available. Metadata information have to be complemented with the necessary elements to comply with the Metadata Regulation 1205/2008/EC, the ones identified as needed for the interoperability of the Administrative Units theme and, if possible, those recommended in this specification.</p>
@@ -719,18 +712,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>Contact information</strong></p>
 </div>
 <div class="paragraph">
-<p>Maria Vanda Nunes de Lima
-European Commission Joint Research Centre
-Institute for Environment and Sustainability
-Unit H06: Digital Earth and Reference Data
-TP262, Via Fermi 2749
-I-21027 Ispra (VA)
-ITALY
-E-mail: <a href="mailto:vanda.lima@jrc.ec.europa.eu">vanda.lima@jrc.ec.europa.eu</a>
-Tel.: 39-0332-7865052
-Fax: 39-0332-7866325
-<a href="http://ies.jrc.ec.europa.eu/" class="bare">http://ies.jrc.ec.europa.eu/</a>
-<a href="http://ec.europa.eu/dgs/jrc/" class="bare">http://ec.europa.eu/dgs/jrc/</a>
+<p>Maria Vanda Nunes de Lima<br>
+European Commission Joint Research Centre<br>
+Institute for Environment and Sustainability<br>
+Unit H06: Digital Earth and Reference Data<br>
+TP262, Via Fermi 2749<br>
+I-21027 Ispra (VA)<br>
+ITALY<br>
+E-mail: <a href="mailto:vanda.lima@jrc.ec.europa.eu">vanda.lima@jrc.ec.europa.eu</a><br>
+Tel.: 39-0332-7865052<br>
+Fax: 39-0332-7866325<br>
+<a href="http://ies.jrc.ec.europa.eu/" class="bare">http://ies.jrc.ec.europa.eu/</a><br>
+<a href="http://ec.europa.eu/dgs/jrc/" class="bare">http://ec.europa.eu/dgs/jrc/</a><br>
 <a href="http://inspire.jrc.ec.europa.eu/" class="bare">http://inspire.jrc.ec.europa.eu/</a></p>
 </div>
 <div style="page-break-after: always;"></div>
@@ -766,23 +759,10 @@ Fax: 39-0332-7866325
 </li>
 <li><a href="#_basic_notions">5.2. Basic notions</a>
 <ul class="sectlevel3">
-<li><a href="#_notation">5.2.1. Notation</a>
-<ul class="sectlevel4">
-<li><a href="#_unified_modeling_language_uml">5.2.1.1. Unified Modeling Language (UML)</a></li>
-<li><a href="#_stereotypes">5.2.1.2. Stereotypes</a></li>
-</ul>
-</li>
+<li><a href="#_notation">5.2.1. Notation</a></li>
 <li><a href="#_voidable_characteristics">5.2.2. Voidable characteristics</a></li>
 <li><a href="#_enumerations">5.2.3. Enumerations</a></li>
-<li><a href="#_code_lists">5.2.4. Code lists</a>
-<ul class="sectlevel4">
-<li><a href="#_code_list_types">5.2.4.1. Code list types</a></li>
-<li><a href="#_obligations_on_data_providers">5.2.4.2. Obligations on data providers</a></li>
-<li><a href="#_recommended_code_list_values">5.2.4.3. Recommended code list values</a></li>
-<li><a href="#_governance">5.2.4.4. Governance</a></li>
-<li><a href="#_vocabulary">5.2.4.5. Vocabulary</a></li>
-</ul>
-</li>
+<li><a href="#_code_lists">5.2.4. Code lists</a></li>
 <li><a href="#_consistency_between_spatial_data_sets">5.2.5. Consistency between spatial data sets</a></li>
 <li><a href="#_identifier_management">5.2.6. Identifier management</a></li>
 <li><a href="#_geometry_representation">5.2.7. Geometry representation</a></li>
@@ -791,121 +771,19 @@ Fax: 39-0332-7866325
 </li>
 <li><a href="#_administrative_units_application_schemas">5.3. Administrative Units – Application schemas</a>
 <ul class="sectlevel3">
-<li><a href="#_description">5.3.1. Description</a>
-<ul class="sectlevel4">
-<li><a href="#_narrative_description">5.3.1.1. Narrative description</a></li>
-</ul>
-</li>
+<li><a href="#_description">5.3.1. Description</a></li>
 </ul>
 </li>
 <li><a href="#_application_schema_administrativeunits">5.4. Application schema AdministrativeUnits</a>
 <ul class="sectlevel3">
-<li><a href="#_description_2">5.4.1. Description</a>
-<ul class="sectlevel4">
-<li><a href="#_narrative_description_2">5.4.1.1. Narrative description</a></li>
-<li><a href="#_uml_overview">5.4.1.2. UML Overview</a></li>
-<li><a href="#_identifier_management_2">5.4.1.3. Identifier management</a></li>
-<li><a href="#_modelling_of_object_references">5.4.1.4. Modelling of object references</a>
-<ul class="sectlevel5">
-<li><a href="#_internal_references">5.4.1.4.1. Internal references</a></li>
-<li><a href="#_external_references">5.4.1.4.2. External references</a></li>
-</ul>
-</li>
-<li><a href="#_geometry_representation_2">5.4.1.5. Geometry representation</a>
-<ul class="sectlevel5">
-<li><a href="#_flat_model_of_boundary_feature_geometry">5.4.1.5.1. Flat model of boundary feature geometry</a></li>
-<li><a href="#_multi_layer_model_of_boundary_features_geometry">5.4.1.5.2. Multi-layer model of boundary features geometry</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_feature_catalogue">5.4.2. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types">5.4.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_administrativeboundary">5.4.2.1.1. <em>AdministrativeBoundary</em></a></li>
-<li><a href="#_administrativeunit">5.4.2.1.2. <em>AdministrativeUnit</em></a></li>
-<li><a href="#_condominium">5.4.2.1.3. <em>Condominium</em></a></li>
-</ul>
-</li>
-<li><a href="#_data_types">5.4.2.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_residenceofauthority">5.4.2.2.1. <em>ResidenceOfAuthority</em></a></li>
-</ul>
-</li>
-<li><a href="#_enumerations_2">5.4.2.3. Enumerations</a>
-<ul class="sectlevel5">
-<li><a href="#_legalstatusvalue">5.4.2.3.1. <em>LegalStatusValue</em></a></li>
-<li><a href="#_technicalstatusvalue">5.4.2.3.2. <em>TechnicalStatusValue</em></a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_2">5.4.2.4. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_administrativehierarchylevel">5.4.2.4.1. <em>AdministrativeHierarchyLevel</em></a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative">5.4.2.5. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_characterstring">5.4.2.5.1. <em>CharacterString</em></a></li>
-<li><a href="#_countrycode">5.4.2.5.2. <em>CountryCode</em></a></li>
-<li><a href="#_datetime">5.4.2.5.3. <em>DateTime</em></a></li>
-<li><a href="#_gm_curve">5.4.2.5.4. <em>GM_Curve</em></a></li>
-<li><a href="#_gm_multisurface">5.4.2.5.5. <em>GM_MultiSurface</em></a></li>
-<li><a href="#_gm_point">5.4.2.5.6. <em>GM_Point</em></a></li>
-<li><a href="#_geographicalname">5.4.2.5.7. <em>GeographicalName</em></a></li>
-<li><a href="#_identifier">5.4.2.5.8. <em>Identifier</em></a></li>
-<li><a href="#_localisedcharacterstring">5.4.2.5.9. <em>LocalisedCharacterString</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_description_2">5.4.1. Description</a></li>
+<li><a href="#_feature_catalogue">5.4.2. Feature catalogue</a></li>
 </ul>
 </li>
 <li><a href="#_application_schema_maritimeunits">5.5. Application schema MaritimeUnits</a>
 <ul class="sectlevel3">
-<li><a href="#_description_3">5.5.1. Description</a>
-<ul class="sectlevel4">
-<li><a href="#_narrative_description_3">5.5.1.1. Narrative description</a></li>
-<li><a href="#_uml_overview_2">5.5.1.2. UML Overview</a></li>
-<li><a href="#_modelling_of_object_references_2">5.5.1.3. Modelling of object references</a></li>
-</ul>
-</li>
-<li><a href="#_feature_catalogue_2">5.5.2. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_2">5.5.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_baseline">5.5.2.1.1. <em>Baseline</em></a></li>
-<li><a href="#_maritimeboundary">5.5.2.1.2. <em>MaritimeBoundary</em></a></li>
-<li><a href="#_maritimezone">5.5.2.1.3. <em>MaritimeZone</em></a></li>
-</ul>
-</li>
-<li><a href="#_data_types_2">5.5.2.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_baselinesegment">5.5.2.2.1. <em>BaselineSegment</em></a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_3">5.5.2.3. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_baselinesegmenttypevalue">5.5.2.3.1. <em>BaselineSegmentTypeValue</em></a></li>
-<li><a href="#_maritimezonetypevalue">5.5.2.3.2. <em>MaritimeZoneTypeValue</em></a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_2">5.5.2.4. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_countrycode_2">5.5.2.4.1. <em>CountryCode</em></a></li>
-<li><a href="#_datetime_2">5.5.2.4.2. <em>DateTime</em></a></li>
-<li><a href="#_gm_curve_2">5.5.2.4.3. <em>GM_Curve</em></a></li>
-<li><a href="#_gm_multisurface_2">5.5.2.4.4. <em>GM_MultiSurface</em></a></li>
-<li><a href="#_geographicalname_2">5.5.2.4.5. <em>GeographicalName</em></a></li>
-<li><a href="#_identifier_2">5.5.2.4.6. <em>Identifier</em></a></li>
-<li><a href="#_legalstatusvalue_2">5.5.2.4.7. <em>LegalStatusValue</em></a></li>
-<li><a href="#_seaarea">5.5.2.4.8. <em>SeaArea</em></a></li>
-<li><a href="#_shoreline">5.5.2.4.9. <em>Shoreline</em></a></li>
-<li><a href="#_technicalstatusvalue_2">5.5.2.4.10. <em>TechnicalStatusValue</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_description_3">5.5.1. Description</a></li>
+<li><a href="#_feature_catalogue_2">5.5.2. Feature catalogue</a></li>
 </ul>
 </li>
 </ul>
@@ -914,14 +792,7 @@ Fax: 39-0332-7866325
 <ul class="sectlevel2">
 <li><a href="#_default_reference_systems_units_of_measure_and_grid">6.1. Default reference systems, units of measure and grid</a>
 <ul class="sectlevel3">
-<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a>
-<ul class="sectlevel4">
-<li><a href="#_datum">6.1.1.1. Datum</a></li>
-<li><a href="#_coordinate_reference_systems_2">6.1.1.2. Coordinate reference systems</a></li>
-<li><a href="#_display">6.1.1.3. Display</a></li>
-<li><a href="#_identifiers_for_coordinate_reference_systems">6.1.1.4. Identifiers for coordinate reference systems</a></li>
-</ul>
-</li>
+<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a></li>
 <li><a href="#_temporal_reference_system">6.1.2. Temporal reference system</a></li>
 <li><a href="#_units_of_measure">6.1.3. Units of measure</a></li>
 </ul>
@@ -966,12 +837,7 @@ Fax: 39-0332-7866325
 <li><a href="#_recommended_theme_specific_metadata_elements">8.3. Recommended theme-specific metadata elements</a>
 <ul class="sectlevel3">
 <li><a href="#_maintenance_information">8.3.1. Maintenance Information</a></li>
-<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a>
-<ul class="sectlevel4">
-<li><a href="#_guidelines_for_reporting_quantitative_results_of_the_data_quality_evaluation">8.3.2.1. Guidelines for reporting quantitative results of the data quality evaluation</a></li>
-<li><a href="#_guidelines_for_reporting_descriptive_results_of_the_data_quality_evaluation">8.3.2.2. Guidelines for reporting descriptive results of the Data Quality evaluation</a></li>
-</ul>
-</li>
+<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a></li>
 </ul>
 </li>
 </ul>
@@ -982,21 +848,7 @@ Fax: 39-0332-7866325
 <li><a href="#_delivery_medium">9.2. Delivery medium</a></li>
 <li><a href="#_encodings">9.3. Encodings</a>
 <ul class="sectlevel3">
-<li><a href="#_default_encodings">9.3.1. Default Encoding(s)</a>
-<ul class="sectlevel4">
-<li><a href="#_specific_requirements_for_gml_encoding">9.3.1.1. Specific requirements for GML encoding</a></li>
-<li><a href="#_default_encoding_for_application_schema_administrativeunits">9.3.1.2. Default encoding for application schema AdministrativeUnits</a>
-<ul class="sectlevel5">
-<li><a href="#_encoding_rules_used">9.3.1.2.1. Encoding rules used</a></li>
-</ul>
-</li>
-<li><a href="#_default_encoding_for_application_schema_maritimeunits">9.3.1.3. Default encoding for application schema MaritimeUnits</a>
-<ul class="sectlevel5">
-<li><a href="#_encoding_rules_used_2">9.3.1.3.1. Encoding rules used</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_default_encodings">9.3.1. Default Encoding(s)</a></li>
 </ul>
 </li>
 </ul>
@@ -1367,8 +1219,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article / Annex / Section no.</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article / Annex / Section no.</em><br>
 <strong>Title / Heading</strong></p>
 </div>
 <div class="paragraph">
@@ -1492,8 +1344,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 4</em><br>
 <strong>Types for the Exchange and Classification of Spatial Objects</strong></p>
 </div>
 <div class="olist arabic">
@@ -1560,8 +1412,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 3</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 3</em><br>
 <strong>Common Types</strong></p>
 </div>
 <div class="paragraph">
@@ -1608,8 +1460,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 5</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 5</em><br>
 <strong>Types</strong></p>
 </div>
 <div class="paragraph">
@@ -1813,8 +1665,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 6</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 6</em><br>
 <strong>Code Lists and Enumerations</strong></p>
 </div>
 <div class="paragraph">
@@ -1850,8 +1702,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 6</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 6</em><br>
 <strong>Code Lists and Enumerations</strong></p>
 </div>
 <div class="olist arabic">
@@ -1934,8 +1786,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 6</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 6</em><br>
 <strong>Code Lists and Enumerations</strong></p>
 </div>
 <div class="paragraph">
@@ -1966,8 +1818,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 6</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 6</em><br>
 <strong>Code Lists and Enumerations</strong></p>
 </div>
 <div class="paragraph">
@@ -2123,8 +1975,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 9</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 9</em><br>
 <strong>Identifier Management</strong></p>
 </div>
 <div class="olist arabic">
@@ -2167,8 +2019,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 12</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 12</em><br>
 <strong>Other Requirements &amp; Rules</strong></p>
 </div>
 <div class="olist arabic">
@@ -2211,8 +2063,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 10</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 10</em><br>
 <strong>Life-cycle of Spatial Objects</strong></p>
 </div>
 <div class="paragraph">
@@ -2349,8 +2201,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 4.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 4.4</em><br>
 <strong>Theme-specific Requirements</strong></p>
 </div>
 <div class="olist arabic">
@@ -2372,8 +2224,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 4.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 4.4</em><br>
 <strong>Theme-specific Requirements</strong></p>
 </div>
 <div class="olist arabic">
@@ -2395,8 +2247,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 4.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 4.4</em><br>
 <strong>Theme-specific Requirements</strong></p>
 </div>
 <div class="olist arabic">
@@ -2450,8 +2302,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 4.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 4.4</em><br>
 <strong>Theme-specific Requirements</strong></p>
 </div>
 <div class="olist arabic">
@@ -2493,8 +2345,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 4.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 4.4</em><br>
 <strong>Theme-specific Requirements</strong></p>
 </div>
 <div class="olist arabci">
@@ -2566,8 +2418,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 4.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 4.4</em><br>
 <strong>Theme-specific Requirements</strong></p>
 </div>
 <div class="olist arabic">
@@ -2589,8 +2441,8 @@ Fax: 39-0332-7866325
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 4.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 4.4</em><br>
 <strong>Theme-specific Requirements</strong></p>
 </div>
 <div class="olist arabic">
@@ -3939,8 +3791,9 @@ Fax: 39-0332-7866325
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE For administrative units at the lowest level of the national hierarchy no lower level unit exists.</p>
-<p class="tableblock">CONSTRAINT Each administrative unit except for the lowest level units shall refer to its lower level units</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE For administrative units at the lowest level of the national hierarchy no lower level unit exists.<br>
+<br>
+CONSTRAINT Each administrative unit except for the lowest level units shall refer to its lower level units</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplicity:</p></td>
@@ -4010,8 +3863,9 @@ Fax: 39-0332-7866325
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE Administrative units at the highest level of national hierarchy (i.e. the country) do not have upper level units.</p>
-<p class="tableblock">CONSTRAINT Each administrative unit at the level other than '1st order' (i.e. nationalLevel &lt;&gt; '1st order') shall refer their upper level unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE Administrative units at the highest level of national hierarchy (i.e. the country) do not have upper level units.<br>
+<br>
+CONSTRAINT Each administrative unit at the level other than '1st order' (i.e. nationalLevel &lt;&gt; '1st order') shall refer their upper level unit.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplicity:</p></td>
@@ -4956,9 +4810,11 @@ Fax: 39-0332-7866325
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE1 External object identifiers are distinct from thematic object identifiers.</p>
-<p class="tableblock">NOTE 2 The voidable version identifier attribute is not part of the unique identifier of a spatial object and may be used to distinguish two versions of the same spatial object.</p>
-<p class="tableblock">NOTE 3 The unique identifier will not change during the life-time of a spatial object.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE1 External object identifiers are distinct from thematic object identifiers.<br>
+<br>
+NOTE 2 The voidable version identifier attribute is not part of the unique identifier of a spatial object and may be used to distinguish two versions of the same spatial object.<br>
+<br>
+NOTE 3 The unique identifier will not change during the life-time of a spatial object.</p></td>
 </tr>
 </tbody>
 </table></div></td>
@@ -5137,7 +4993,7 @@ Fax: 39-0332-7866325
 <p><strong>Recomendation 7</strong></p>
 </div>
 <div class="paragraph">
-<p>The following geometric and topological constraints are recommendations for this data specification:
+<p>The following geometric and topological constraints are recommendations for this data specification:<br>
 * </p>
 </div>
 </td>
@@ -5325,10 +5181,12 @@ Fax: 39-0332-7866325
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SOURCE IHO Dictionary, S-32, Fifth Edition.</p>
-<p class="tableblock">NOTE The baseline comprises of one or more baseline segments.
-According to United Nations Convention on the Law of the Sea (UNCLOS), the baseline segment can be normal, straight or archipelagic depending on the method used to determine the baseline segment.</p>
-<p class="tableblock">COMMENT: For this moment there is no clearly identified use-case that would require Baseline spatial object types, therefore it is not strictly necessary to include these objects in the dataset.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOURCE IHO Dictionary, S-32, Fifth Edition.<br>
+<br>
+NOTE The baseline comprises of one or more baseline segments.<br>
+According to United Nations Convention on the Law of the Sea (UNCLOS), the baseline segment can be normal, straight or archipelagic depending on the method used to determine the baseline segment.<br>
+<br>
+COMMENT: For this moment there is no clearly identified use-case that would require Baseline spatial object types, therefore it is not strictly necessary to include these objects in the dataset.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Stereotypes:</p></td>
@@ -5497,11 +5355,13 @@ According to United Nations Convention on the Law of the Sea (UNCLOS), the basel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SOURCE IHO Dictionary, S-32, Fifth Edition.</p>
-<p class="tableblock">NOTE 1 Maritime boundary represents either:
-1) the seaward outer limits of the maritime zones of a coastal State, such as territorial sea, contiguous zone, exclusive economic zone and continental shelf;
-2) the limits of the maritime zones of States with opposite or adjacent coasts.</p>
-<p class="tableblock">Maritime boundaries are a politically sensitive subject, because it affects coastal State&#8217;s jurisdiction concerning fishery, petroleum and other resources of the sea as well as other uses of the sea. [Source: "Maritime Boundary", S.P. Jagota]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOURCE IHO Dictionary, S-32, Fifth Edition.<br>
+<br>
+NOTE 1 Maritime boundary represents either:<br>
+1) the seaward outer limits of the maritime zones of a coastal State, such as territorial sea, contiguous zone, exclusive economic zone and continental shelf;<br>
+2) the limits of the maritime zones of States with opposite or adjacent coasts.<br>
+<br>
+Maritime boundaries are a politically sensitive subject, because it affects coastal State&#8217;s jurisdiction concerning fishery, petroleum and other resources of the sea as well as other uses of the sea. [Source: "Maritime Boundary", S.P. Jagota]</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Stereotypes:</p></td>
@@ -5777,8 +5637,9 @@ According to United Nations Convention on the Law of the Sea (UNCLOS), the basel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE 1 The zone is established for e.g. cadastral, administrative, economic, security or safety purposes. It is not established for environmental management or regulation, which is covered by the theme Area management/restriction/regulation zones and reporting areas, or for environmental protection, which is covered by the theme Protected sites.</p>
-<p class="tableblock">NOTE 2 The maritime zone can be either internal waters, territorial sea, contiguous zone, exclusive economic zone or continental shelf.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE 1 The zone is established for e.g. cadastral, administrative, economic, security or safety purposes. It is not established for environmental management or regulation, which is covered by the theme Area management/restriction/regulation zones and reporting areas, or for environmental protection, which is covered by the theme Protected sites.<br>
+<br>
+NOTE 2 The maritime zone can be either internal waters, territorial sea, contiguous zone, exclusive economic zone or continental shelf.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Stereotypes:</p></td>
@@ -6520,9 +6381,11 @@ According to United Nations Convention on the Law of the Sea (UNCLOS), the basel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE1 External object identifiers are distinct from thematic object identifiers.</p>
-<p class="tableblock">NOTE 2 The voidable version identifier attribute is not part of the unique identifier of a spatial object and may be used to distinguish two versions of the same spatial object.</p>
-<p class="tableblock">NOTE 3 The unique identifier will not change during the life-time of a spatial object.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE1 External object identifiers are distinct from thematic object identifiers.<br>
+<br>
+NOTE 2 The voidable version identifier attribute is not part of the unique identifier of a spatial object and may be used to distinguish two versions of the same spatial object.<br>
+<br>
+NOTE 3 The unique identifier will not change during the life-time of a spatial object.</p></td>
 </tr>
 </tbody>
 </table></div></td>
@@ -6600,7 +6463,7 @@ According to United Nations Convention on the Law of the Sea (UNCLOS), the basel
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A SeaArea is a type of HydroObject as described in the Annex1 theme Hydrography. It has geometry described by one or more GM_MultiSurfaces. Multiple geometries are allowed to enable a SeaArea to be described according to different tidal states.
+<td class="tableblock halign-left valign-top"><p class="tableblock">A SeaArea is a type of HydroObject as described in the Annex1 theme Hydrography. It has geometry described by one or more GM_MultiSurfaces. Multiple geometries are allowed to enable a SeaArea to be described according to different tidal states.<br>
 Typically however, specialisations of SeaArea will restrict the geometry to a particular tidal state or set of tidal states. SeaAreas include named seas such as 'Baltic Sea' and also un-named areas of sea that have particular chemical and physical characteristics. SeaAreas are 2D objects and carry no explicit information about the depth of the sea, this is specified in the INSPIRE Elevation Theme.</p></td>
 </tr>
 </tbody>
@@ -6709,8 +6572,8 @@ Typically however, specialisations of SeaArea will restrict the geometry to a pa
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 1.2</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 1.2</em><br>
 <strong>Datum for three-dimensional and two-dimensional coordinate reference systems</strong></p>
 </div>
 <div class="paragraph">
@@ -6731,8 +6594,8 @@ Typically however, specialisations of SeaArea will restrict the geometry to a pa
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 1.3</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 1.3</em><br>
 <strong>Coordinate Reference Systems</strong></p>
 </div>
 <div class="paragraph">
@@ -6837,8 +6700,8 @@ Typically however, specialisations of SeaArea will restrict the geometry to a pa
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 1.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 1.4</em><br>
 <strong>Coordinate Reference Systems used in the View Network Service</strong></p>
 </div>
 <div class="paragraph">
@@ -6859,8 +6722,8 @@ Typically however, specialisations of SeaArea will restrict the geometry to a pa
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Annex II, Section 1.4</em>
+<p><strong>IR Requirement</strong><br>
+<em>Annex II, Section 1.4</em><br>
 <strong>Coordinate Reference Systems used in the View Network Service</strong></p>
 </div>
 <div class="olist arabic">
@@ -7049,8 +6912,8 @@ Typically however, specialisations of SeaArea will restrict the geometry to a pa
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 11</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 11</em><br>
 <strong>Temporal Reference Systems</strong></p>
 </div>
 <div class="olist arabic">
@@ -7084,8 +6947,8 @@ Typically however, specialisations of SeaArea will restrict the geometry to a pa
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 12</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 12</em><br>
 <strong>Other Requirements &amp; Rules</strong></p>
 </div>
 <div class="paragraph">
@@ -8370,8 +8233,8 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 13</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 13</em><br>
 <strong>Metadata required for Interoperability</strong></p>
 </div>
 <div class="paragraph">
@@ -9375,8 +9238,8 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 8</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 8</em><br>
 <strong>Updates</strong></p>
 </div>
 <div class="olist arabic">
@@ -9459,8 +9322,8 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 7</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 7</em><br>
 <strong>Encoding</strong></p>
 </div>
 <div class="olist arabic">
@@ -9654,8 +9517,8 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 14</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 14</em><br>
 <strong>Portrayal</strong></p>
 </div>
 <div class="olist arabic">
@@ -9861,8 +9724,8 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 </td>
 <td class="content">
 <div class="paragraph text-center">
-<p><strong>IR Requirement</strong>
-<em>Article 14</em>
+<p><strong>IR Requirement</strong><br>
+<em>Article 14</em><br>
 <strong>Portrayal</strong></p>
 </div>
 <div class="paragraph">
@@ -10283,32 +10146,32 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Symbology</strong></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&lt;sld:NamedLayer&gt;
-    &lt;se:Name&gt;AU.MaritimeBoundary&lt;/se:Name&gt;
-    &lt;sld:UserStyle&gt;
-      &lt;se:Name&gt;AU.MaritimeBoundary.Default &lt;/se:Name&gt;
-      &lt;sld:IsDefault&gt;1&lt;/sld:IsDefault&gt;
-      &lt;se:FeatureTypeStyle version="1.1.0"&gt;
-        &lt;se:Description&gt;
-          &lt;se:Title&gt;Maritime Boundary Default Style
-&lt;/se:Title&gt;
-          &lt;se:Abstract&gt; The Maritime boundary is rendered using a red (#DC143C) line.
-.&lt;/se:Abstract&gt;
-        &lt;/se:Description&gt;
-        &lt;se:FeatureTypeName&gt;MaritimeBoundary&lt;/se:FeatureTypeName&gt;
-        &lt;se:Rule&gt;
-          &lt;se:LineSymbolizer&gt;
-            &lt;se:Geometry&gt;
-             &lt;ogc:PropertyName&gt;geometry&lt;/ogc:PropertyName&gt;
-            &lt;/se:Geometry&gt;
-            &lt;se:Stroke&gt;
-				   &lt;se:SvgParameter name="stroke"&gt;#DC143C&lt;/se:SvgParameter&gt;
-				   &lt;se:SvgParameter name="stroke-width"&gt;4&lt;/se:SvgParameter&gt;
-				&lt;/se:Stroke&gt;
-          &lt;/se:LineSymbolizer&gt;
-        &lt;/se:Rule&gt;
-      &lt;/se:FeatureTypeStyle&gt;
-    &lt;/sld:UserStyle&gt;
+<p>&lt;sld:NamedLayer&gt;<br>
+    &lt;se:Name&gt;AU.MaritimeBoundary&lt;/se:Name&gt;<br>
+    &lt;sld:UserStyle&gt;<br>
+      &lt;se:Name&gt;AU.MaritimeBoundary.Default &lt;/se:Name&gt;<br>
+      &lt;sld:IsDefault&gt;1&lt;/sld:IsDefault&gt;<br>
+      &lt;se:FeatureTypeStyle version="1.1.0"&gt;<br>
+        &lt;se:Description&gt;<br>
+          &lt;se:Title&gt;Maritime Boundary Default Style<br>
+&lt;/se:Title&gt;<br>
+          &lt;se:Abstract&gt; The Maritime boundary is rendered using a red (#DC143C) line.<br>
+.&lt;/se:Abstract&gt;<br>
+        &lt;/se:Description&gt;<br>
+        &lt;se:FeatureTypeName&gt;MaritimeBoundary&lt;/se:FeatureTypeName&gt;<br>
+        &lt;se:Rule&gt;<br>
+          &lt;se:LineSymbolizer&gt;<br>
+            &lt;se:Geometry&gt;<br>
+             &lt;ogc:PropertyName&gt;geometry&lt;/ogc:PropertyName&gt;<br>
+            &lt;/se:Geometry&gt;<br>
+            &lt;se:Stroke&gt;<br>
+				   &lt;se:SvgParameter name="stroke"&gt;#DC143C&lt;/se:SvgParameter&gt;<br>
+				   &lt;se:SvgParameter name="stroke-width"&gt;4&lt;/se:SvgParameter&gt;<br>
+				&lt;/se:Stroke&gt;<br>
+          &lt;/se:LineSymbolizer&gt;<br>
+        &lt;/se:Rule&gt;<br>
+      &lt;/se:FeatureTypeStyle&gt;<br>
+    &lt;/sld:UserStyle&gt;<br>
   &lt;/sld:NamedLayer&gt;</p>
 </div></div></td>
 </tr>
@@ -10356,37 +10219,37 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Symbology</strong></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&lt;sld:NamedLayer&gt;
-    &lt;se:Name&gt;AU.ContiguousZone&lt;/se:Name&gt;
-    &lt;sld:UserStyle&gt;
-      &lt;se:Name&gt;AU.ContiguousZone.Default&lt;/se:Name&gt;
-      &lt;sld:IsDefault&gt;1&lt;/sld:IsDefault&gt;
-      &lt;se:FeatureTypeStyle version="1.1.0"&gt;
-        &lt;se:Description&gt;
-          &lt;se:Title&gt;Contiguous Zone Default Style &lt;/se:Title&gt;
-          &lt;se:Abstract&gt;The contiguous zone is rendered using a light red (#F0C6BA) fill&lt;/se:Abstract&gt;
-        &lt;/se:Description&gt;
-        &lt;se:FeatureTypeName&gt;MaritimeZone&lt;/se:FeatureTypeName&gt;
-        &lt;se:Rule&gt;
-           &lt;ogc:Filter&gt;
-              &lt;se:PropertyIsEqualTo&gt;
-                 &lt;ogc:PropertyName&gt;zoneType&lt;/ogc:PropertyName&gt;
-                 &lt;ogc:Literal&gt;contiguousZone&lt;/ogc:Literal&gt;
-              &lt;/se:PropertyIsEqualTo&gt;
-           &lt;/ogc:Filter&gt;
-           &lt;se:PolygonSymbolizer&gt;
-              &lt;se:Geometry&gt;
-                 &lt;ogc:PropertyName&gt;geometry&lt;/ogc:PropertyName&gt;
-              &lt;/se:Geometry&gt;
-              &lt;se:Fill&gt;
-				 	 &lt;se:SvgParameter name="fill"&gt;#F0C6BA&lt;/se:SvgParameter&gt;
-			     &lt;/se:Fill&gt;
-              &lt;se:Stroke&gt;
-              &lt;/se:Stroke&gt;
-           &lt;/se:PolygonSymbolizer&gt;
-        &lt;/se:Rule&gt;
-      &lt;/se:FeatureTypeStyle&gt;
-    &lt;/sld:UserStyle&gt;
+<p>&lt;sld:NamedLayer&gt;<br>
+    &lt;se:Name&gt;AU.ContiguousZone&lt;/se:Name&gt;<br>
+    &lt;sld:UserStyle&gt;<br>
+      &lt;se:Name&gt;AU.ContiguousZone.Default&lt;/se:Name&gt;<br>
+      &lt;sld:IsDefault&gt;1&lt;/sld:IsDefault&gt;<br>
+      &lt;se:FeatureTypeStyle version="1.1.0"&gt;<br>
+        &lt;se:Description&gt;<br>
+          &lt;se:Title&gt;Contiguous Zone Default Style &lt;/se:Title&gt;<br>
+          &lt;se:Abstract&gt;The contiguous zone is rendered using a light red (#F0C6BA) fill&lt;/se:Abstract&gt;<br>
+        &lt;/se:Description&gt;<br>
+        &lt;se:FeatureTypeName&gt;MaritimeZone&lt;/se:FeatureTypeName&gt;<br>
+        &lt;se:Rule&gt;<br>
+           &lt;ogc:Filter&gt;<br>
+              &lt;se:PropertyIsEqualTo&gt;<br>
+                 &lt;ogc:PropertyName&gt;zoneType&lt;/ogc:PropertyName&gt;<br>
+                 &lt;ogc:Literal&gt;contiguousZone&lt;/ogc:Literal&gt;<br>
+              &lt;/se:PropertyIsEqualTo&gt;<br>
+           &lt;/ogc:Filter&gt;<br>
+           &lt;se:PolygonSymbolizer&gt;<br>
+              &lt;se:Geometry&gt;<br>
+                 &lt;ogc:PropertyName&gt;geometry&lt;/ogc:PropertyName&gt;<br>
+              &lt;/se:Geometry&gt;<br>
+              &lt;se:Fill&gt;<br>
+				 	 &lt;se:SvgParameter name="fill"&gt;#F0C6BA&lt;/se:SvgParameter&gt;<br>
+			     &lt;/se:Fill&gt;<br>
+              &lt;se:Stroke&gt;<br>
+              &lt;/se:Stroke&gt;<br>
+           &lt;/se:PolygonSymbolizer&gt;<br>
+        &lt;/se:Rule&gt;<br>
+      &lt;/se:FeatureTypeStyle&gt;<br>
+    &lt;/sld:UserStyle&gt;<br>
   &lt;/sld:NamedLayer&gt;</p>
 </div></div></td>
 </tr>
@@ -10767,7 +10630,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codelistValue="publication"&g
 <p>[INSPIRE IMS] INSPIRE IMS, 2003, Implementation Strategy Issues - Data Requirements by: INSPIRE Implementation Strategy Group, subgroup data requirements, Editor: Arvid Lillethun, 28 April 2003.</p>
 </div>
 <div class="paragraph">
-<p>[INSPIRE RDM] INSPIRE RDM, 2002, INSPIRE position paper: Reference Data. October 2002,
+<p>[INSPIRE RDM] INSPIRE RDM, 2002, INSPIRE position paper: Reference Data. October 2002,<br>
 URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_rdm_pp_v4_3_en.pdf" class="bare">http://www.ec-gis.org/inspire/reports/position_papers/inspire_rdm_pp_v4_3_en.pdf</a></em></p>
 </div>
 <div class="paragraph">
@@ -10852,7 +10715,7 @@ URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_
 <p>When an INSPIRE data specification contains <strong>more than one application schema,</strong> the requirements tested in a conformance class may differ depending on the application schema used as a target for the transformation of the data set. This will always be the case for the application schema conformance class. However, also other conformance classes could have different requirements for different application schemas. In such cases, a separate conformance class is defined for each application schema, and they are distinguished by specific URIs according to the following pattern:</p>
 </div>
 <div class="paragraph">
-<p><a href="http://inspire.ec.europa.eu/conformance-class/ir/au/&lt;conformance" class="bare">http://inspire.ec.europa.eu/conformance-class/ir/au/&lt;conformance</a> class identifier&gt;/
+<p><a href="http://inspire.ec.europa.eu/conformance-class/ir/au/&lt;conformance" class="bare">http://inspire.ec.europa.eu/conformance-class/ir/au/&lt;conformance</a> class identifier&gt;/<br>
 &lt;application schema namespace prefix&gt;</p>
 </div>
 <div class="paragraph">
@@ -11946,9 +11809,9 @@ URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data requirements</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>(Explicitly expressed in the use case)
-* Geometry of administrative units;
-* Codes of administrative units;
+<p>(Explicitly expressed in the use case)<br>
+* Geometry of administrative units;<br>
+* Codes of administrative units;<br>
 * Names of administrative units.</p>
 </div></div></td>
 </tr>
@@ -11987,10 +11850,10 @@ URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Pre-condition</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The use-case can be implemented only in case of:
-* Established system for public administration of administrative units within the MS;
-* Existing map database (interface for selection);
-* Existing gazetteer or web map services that provides administrative data;
+<p>The use-case can be implemented only in case of:<br>
+* Established system for public administration of administrative units within the MS;<br>
+* Existing map database (interface for selection);<br>
+* Existing gazetteer or web map services that provides administrative data;<br>
 * Existing catalogue services.</p>
 </div></div></td>
 </tr>
@@ -12014,9 +11877,9 @@ URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data requirements</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>(Explicitly expressed in the use case)
-* Geometry of administrative units;
-* Codes of administrative units;
+<p>(Explicitly expressed in the use case)<br>
+* Geometry of administrative units;<br>
+* Codes of administrative units;<br>
 * Names of administrative units.</p>
 </div></div></td>
 </tr>
@@ -12069,9 +11932,9 @@ URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data requirements</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>(Explicitly expressed in the use case)
-* Geometry of administrative units;
-* Name;
+<p>(Explicitly expressed in the use case)<br>
+* Geometry of administrative units;<br>
+* Name;<br>
 * Code (for linking).</p>
 </div></div></td>
 </tr>
@@ -12124,7 +11987,7 @@ URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data requirements</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>(Explicitly expressed in the use case)
+<p>(Explicitly expressed in the use case)<br>
 * Geometry of administrative units (for spatial computing the intersection.</p>
 </div></div></td>
 </tr>
@@ -12182,10 +12045,10 @@ URL: <em><a href="http://www.ec-gis.org/inspire/reports/position_papers/inspire_
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data requirements</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>(Explicitly expressed in the use case)
-* Geometry (boundaries) of administrative units;
-* Spatial data of analogous themes coming from different sources;
-* Semantic information (attributes including geographical names) that help selecting identical data;
+<p>(Explicitly expressed in the use case)<br>
+* Geometry (boundaries) of administrative units;<br>
+* Spatial data of analogous themes coming from different sources;<br>
+* Semantic information (attributes including geographical names) that help selecting identical data;<br>
 * Possibility to link rights to the spatial objects of administrative units.</p>
 </div></div></td>
 </tr>
