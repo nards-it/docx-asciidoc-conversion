@@ -5612,7 +5612,7 @@ a|
 
 [cols=",,,,,,",]
 |===
-|*Germany (DE)* | | | | | |
+7+|*Germany (DE)*
 |*Level of administration* |*Unique structure identifier* |*Designation of the hierarchy level given in national characters* |*Designation of the hierarchy level transliterated in ASCII characters* a|
 *English translation or equivalent of the*
 
@@ -5627,16 +5627,16 @@ a|
 |*4^th^ order* |1311 |Landkreis |Landkreis |District |8 |323
 | |1312 |Stadtkreis |Stadtkreis |District |8 |114
 |*5^th^ order* |1313 |Verwaltungs-gemeinschaft |Verwaltungs-gemeinschaft |Municipal association |10 |1471
-|*6^th^ order* |1314 |Gemeinde |Gemeinde |Municipality |13 |1785
-| |1315 |Stadt |Stadt |City |13 |1248
-| |1316 |Verbandsange-hörige Gemeinde |Verbandsange-hoerige Gemeinde |Municipality belonging to an association |13 |8470
-| |1317 |Verbandsange-hörige Stadt |Verbandsange-hoerige Stadt |City belonging to an association |13 |708
-| |1321 |Gemeindefreies Gebiet |Gemeindefreies Gebiet |Non-municipal area |13 |248
+.5+|*6^th^ order* |1314 |Gemeinde |Gemeinde |Municipality |13 |1785
+|1315 |Stadt |Stadt |City |13 |1248
+|1316 |Verbandsange-hörige Gemeinde |Verbandsange-hoerige Gemeinde |Municipality belonging to an association |13 |8470
+|1317 |Verbandsange-hörige Stadt |Verbandsange-hoerige Stadt |City belonging to an association |13 |708
+|1321 |Gemeindefreies Gebiet |Gemeindefreies Gebiet |Non-municipal area |13 |248
 |===
 
 [cols=",,,,,,,,,,,,,",]
 |===
-| |USE1 |USE2 |USE3 |USE4 |USE5 |USE6 | | | | | | |
+| 2+|USE1 2+|USE2 |USE3 3+|USE4 2+|USE5 3+|USE6 
 |SHN |D |E | | | | | | | | | | |
 |===
 
@@ -5648,7 +5648,7 @@ image::./media/image17.png[image,width=608,height=379, align=center]
 
 [cols=",,,,,,",]
 |===
-|*Norway (NO)* | | | | | |
+7+|*Norway (NO)*
 |*Level of administration* |*Unique structure identifier* |*Designation of the hierarchy level given in national characters* |*Designation of the hierarchy level transliterated in ASCII characters* a|
 *English translation or equivalent of the*
 
@@ -5663,16 +5663,11 @@ image::./media/image17.png[image,width=608,height=379, align=center]
 
 [cols=",,,,,,",]
 |===
-| |USE1 |USE2 |USE3 | | |
+| 2+|USE1 2+|USE2 2+|USE3
 |SHN |N |O | | | |
 |===
 
-[cols=",",]
-|===
-|1^st^ order (country) |
-|2^nd^ order |
-|3^rd^ order |
-|===
+image::./media/image17a.png[image]
 
 (Taken from Norwegian lineage file for EBM v2.0)
 
