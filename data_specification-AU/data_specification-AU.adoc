@@ -5678,11 +5678,6 @@ image::./media/image17a.png[image]
 
 image::./media/image18.png[image]
 
-[.text-center]
-*Administrative Units + Land-Water-distinction*
-
-
-*Administrative Units only*
 
 In some countries administrative units have been defined stretching into the sea or including large inland water areas. However, this specification does not distinguish between the land and the water part of an administrative unit. Knowing the area of the land part of administrative units can be important for calculating and/or portraying consistent statistics based on per-area values.
 
