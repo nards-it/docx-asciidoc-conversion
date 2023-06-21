@@ -437,19 +437,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 </div>
 <div id="content">
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media\image2.jpeg" alt="image" width="131" height="90">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/image2.jpeg" alt="image" width="131" height="90"></span></p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media\image3.png" alt="image" width="93" height="93"></span> <strong>INSPIRE</strong> <strong>Infrastructure for Spatial Information in Europe</strong></p>
+<p><span class="image"><img src="./media/image3.png" alt="image" width="93" height="93"></span> <strong>INSPIRE</strong> <strong>Infrastructure for Spatial Information in Europe</strong></p>
 </div>
 <h1 id="_d2_8_ii_3_data_specification_on_orthoimagery_technical_guidelines" class="discrete">D2.8.II.3 Data Specification on <em>Orthoimagery</em> – Technical Guidelines</h1>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 29%;">
+<col style="width: 71%;">
 </colgroup>
 <tbody>
 <tr>
@@ -514,6 +512,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 <h2 id="_foreword" class="discrete">Foreword</h2>
 <h2 id="_how_to_read_the_document" class="discrete">How to read the document?</h2>
 <div class="paragraph">
@@ -707,23 +706,10 @@ Fax: 39-0332-7866325<br>
 </li>
 <li><a href="#_basic_notions">5.2. Basic notions</a>
 <ul class="sectlevel3">
-<li><a href="#_notation">5.2.1. Notation</a>
-<ul class="sectlevel4">
-<li><a href="#_unified_modeling_language_uml">5.2.1.1. Unified Modeling Language (UML)</a></li>
-<li><a href="#_stereotypes">5.2.1.2. Stereotypes</a></li>
-</ul>
-</li>
+<li><a href="#_notation">5.2.1. Notation</a></li>
 <li><a href="#_voidable_characteristics">5.2.2. Voidable characteristics</a></li>
 <li><a href="#_enumerations">5.2.3. Enumerations</a></li>
-<li><a href="#_code_lists">5.2.4. Code lists</a>
-<ul class="sectlevel4">
-<li><a href="#_code_list_types">5.2.4.1. Code list types</a></li>
-<li><a href="#_obligations_on_data_providers">5.2.4.2. Obligations on data providers</a></li>
-<li><a href="#_recommended_code_list_values">5.2.4.3. Recommended code list values</a></li>
-<li><a href="#_governance">5.2.4.4. Governance</a></li>
-<li><a href="#_vocabulary">5.2.4.5. Vocabulary</a></li>
-</ul>
-</li>
+<li><a href="#_code_lists">5.2.4. Code lists</a></li>
 <li><a href="#_identifier_management">5.2.5. Identifier management</a></li>
 <li><a href="#_geometry_representation">5.2.6. Geometry representation</a></li>
 <li><a href="#_temporality_representation">5.2.7. Temporality representation</a></li>
@@ -732,62 +718,8 @@ Fax: 39-0332-7866325<br>
 </li>
 <li><a href="#_application_schema_orthoimagery">5.3. Application schema Orthoimagery</a>
 <ul class="sectlevel3">
-<li><a href="#_coverage_representation_for_orthoimagery">5.3.1. Coverage representation for orthoimagery</a>
-<ul class="sectlevel4">
-<li><a href="#_concept_of_mosaicking">5.3.1.1. Concept of mosaicking</a></li>
-<li><a href="#_concept_of_tiling">5.3.1.2. Concept of tiling</a></li>
-<li><a href="#_data_structure">5.3.1.3. Data structure</a></li>
-<li><a href="#_uml_overview">5.3.1.4. UML Overview</a>
-<ul class="sectlevel5">
-<li><a href="#_feature_type_orthoimagecoverage">5.3.1.4.1. Feature type OrthoimageCoverage</a></li>
-<li><a href="#_attribute_orthoimagecoveragedomainset">5.3.1.4.2. Attribute OrthoimageCoverage::domainSet</a></li>
-<li><a href="#_attribute_orthoimagecoveragerangetype">5.3.1.4.3. Attribute OrthoimageCoverage::rangeType</a></li>
-<li><a href="#_attribute_orthoimagecoveragemetadata">5.3.1.4.4. Attribute OrthoimageCoverage::metadata</a></li>
-<li><a href="#_orthoimagecoverage_aggregation">5.3.1.4.5. OrthoimageCoverage aggregation</a></li>
-<li><a href="#_feature_types_mosaicelement_singlemosaicelement_and_aggregatedmosaicelement">5.3.1.4.6. Feature types MosaicElement, SingleMosaicElement and AggregatedMosaicElement</a></li>
-</ul>
-</li>
-<li><a href="#_consistency_between_spatial_data_sets">5.3.1.5. Consistency between spatial data sets</a></li>
-<li><a href="#_identifier_management_2">5.3.1.6. Identifier management</a></li>
-<li><a href="#_modelling_of_object_references">5.3.1.7. Modelling of object references</a></li>
-<li><a href="#_geometry_representation_2">5.3.1.8. Geometry representation</a></li>
-<li><a href="#_temporality_representation_2">5.3.1.9. Temporality representation</a></li>
-</ul>
-</li>
-<li><a href="#_feature_catalogue">5.3.2. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types">5.3.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_aggregatedmosaicelement">5.3.2.1.1. AggregatedMosaicElement</a></li>
-<li><a href="#_mosaicelement">5.3.2.1.2. MosaicElement</a></li>
-<li><a href="#_orthoimagecoverage">5.3.2.1.3. OrthoimageCoverage</a></li>
-<li><a href="#_singlemosaicelement">5.3.2.1.4. SingleMosaicElement</a></li>
-</ul>
-</li>
-<li><a href="#_data_types">5.3.2.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_orthoimageaggregation">5.3.2.2.1. OrthoimageAggregation</a></li>
-<li><a href="#_orthoimageaggregation_2">5.3.2.2.2. OrthoimageAggregation</a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_2">5.3.2.3. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_interpolationmethodvalue">5.3.2.3.1. InterpolationMethodValue</a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative">5.3.2.4. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_characterstring">5.3.2.4.1. CharacterString</a></li>
-<li><a href="#_ex_extent">5.3.2.4.2. EX_Extent</a></li>
-<li><a href="#_gm_multisurface">5.3.2.4.3. GM_MultiSurface</a></li>
-<li><a href="#_identifier">5.3.2.4.4. Identifier</a></li>
-<li><a href="#_rectifiedgridcoverage">5.3.2.4.5. RectifiedGridCoverage</a></li>
-<li><a href="#_tm_period">5.3.2.4.6. TM_Period</a></li>
-<li><a href="#_tm_position">5.3.2.4.7. TM_Position</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_coverage_representation_for_orthoimagery">5.3.1. Coverage representation for orthoimagery</a></li>
+<li><a href="#_feature_catalogue">5.3.2. Feature catalogue</a></li>
 <li><a href="#_externally_governed_code_lists">5.3.3. Externally governed code lists</a></li>
 </ul>
 </li>
@@ -797,14 +729,7 @@ Fax: 39-0332-7866325<br>
 <ul class="sectlevel2">
 <li><a href="#_default_reference_systems_units_of_measure_and_grid">6.1. Default reference systems, units of measure and grid</a>
 <ul class="sectlevel3">
-<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a>
-<ul class="sectlevel4">
-<li><a href="#_datum">6.1.1.1. Datum</a></li>
-<li><a href="#_coordinate_reference_systems_2">6.1.1.2. Coordinate reference systems</a></li>
-<li><a href="#_display">6.1.1.3. Display</a></li>
-<li><a href="#_identifiers_for_coordinate_reference_systems">6.1.1.4. Identifiers for coordinate reference systems</a></li>
-</ul>
-</li>
+<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a></li>
 <li><a href="#_temporal_reference_system">6.1.2. Temporal reference system</a></li>
 <li><a href="#_units_of_measure">6.1.3. Units of measure</a></li>
 <li><a href="#_grids">6.1.4. Grids</a></li>
@@ -813,12 +738,7 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_theme_specific_requirements_and_recommendations">6.2. Theme-specific requirements and recommendations</a>
 <ul class="sectlevel3">
 <li><a href="#_coordinate_reference_systems_3">6.2.1. Coordinate reference systems</a></li>
-<li><a href="#_grids_2">6.2.2. Grids</a>
-<ul class="sectlevel4">
-<li><a href="#_geo_referencing_of_gridded_data_coverages_into_geographical_grids">6.2.2.1. Geo-referencing of gridded data (coverages) into geographical grids</a></li>
-<li><a href="#_geographical_grids_for_gridded_orthoimagery_data">6.2.2.2. Geographical grids for Gridded Orthoimagery data</a></li>
-</ul>
-</li>
+<li><a href="#_grids_2">6.2.2. Grids</a></li>
 </ul>
 </li>
 </ul>
@@ -857,12 +777,7 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_recommended_theme_specific_metadata_elements">8.3. Recommended theme-specific metadata elements</a>
 <ul class="sectlevel3">
 <li><a href="#_maintenance_information">8.3.1. Maintenance Information</a></li>
-<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a>
-<ul class="sectlevel4">
-<li><a href="#_guidelines_for_reporting_quantitative_results_of_the_data_quality_evaluation">8.3.2.1. Guidelines for reporting quantitative results of the data quality evaluation</a></li>
-<li><a href="#_guidelines_for_reporting_descriptive_results_of_the_data_quality_evaluation">8.3.2.2. Guidelines for reporting descriptive results of the Data Quality evaluation</a></li>
-</ul>
-</li>
+<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a></li>
 <li><a href="#_data_quality_completeness_omission">8.3.3. Data Quality – Completeness – Omission</a></li>
 <li><a href="#_data_quality_positional_accuracy_gridded_data_position_accuracy">8.3.4. Data Quality – Positional Accuracy – Gridded data position accuracy</a></li>
 <li><a href="#_process_step">8.3.5. Process step</a></li>
@@ -880,18 +795,7 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_delivery_medium">9.2. Delivery medium</a></li>
 <li><a href="#_encodings">9.3. Encodings</a>
 <ul class="sectlevel3">
-<li><a href="#_default_encodings">9.3.1. Default Encodings</a>
-<ul class="sectlevel4">
-<li><a href="#_default_encodings_for_application_schema_orthoimagery">9.3.1.1. Default encodings for application schema Orthoimagery</a>
-<ul class="sectlevel5">
-<li><a href="#_encoding_rules_used">9.3.1.1.1. Encoding rules used</a></li>
-<li><a href="#_specific_mappings_from_uml_classes_to_gmlxml_schema_types_and_elements">9.3.1.1.2. Specific mappings from UML classes to GML/XML Schema types and elements</a></li>
-<li><a href="#_external_tiling">9.3.1.1.3. External tiling</a></li>
-<li><a href="#_range_values_geolocalisation">9.3.1.1.4. Range values geolocalisation</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_default_encodings">9.3.1. Default Encodings</a></li>
 </ul>
 </li>
 <li><a href="#_options_for_delivering_coverage_data">9.4. Options for delivering coverage data</a></li>
@@ -1025,16 +929,7 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_tiff_format">F.2. TIFF format</a>
 <ul class="sectlevel3">
 <li><a href="#_format_overview">F.2.1. Format overview</a></li>
-<li><a href="#_inspire_tiff_profile_for_grid_coverage_data">F.2.2. INSPIRE TIFF profile for grid coverage data</a>
-<ul class="sectlevel4">
-<li><a href="#_general_rules">F.2.2.1. General rules</a></li>
-<li><a href="#_data_structure_2">F.2.2.2. Data structure</a></li>
-<li><a href="#_grid_coordinate_system">F.2.2.3. Grid coordinate system</a></li>
-<li><a href="#_range_values">F.2.2.4. Range values</a></li>
-<li><a href="#_compression">F.2.2.5. Compression</a></li>
-<li><a href="#_internal_tiling">F.2.2.6. Internal tiling</a></li>
-</ul>
-</li>
+<li><a href="#_inspire_tiff_profile_for_grid_coverage_data">F.2.2. INSPIRE TIFF profile for grid coverage data</a></li>
 <li><a href="#_mapping_between_tiff_and_gml_data_structures">F.2.3. Mapping between TIFF and GML data structures</a></li>
 <li><a href="#_theme_specific_requirements_and_recommendations_2">F.2.4. Theme-specific requirements and recommendations</a></li>
 </ul>
@@ -1042,22 +937,7 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_jpeg_2000_format">F.3. JPEG 2000 format</a>
 <ul class="sectlevel3">
 <li><a href="#_format_overview_2">F.3.1. Format overview</a></li>
-<li><a href="#_jpeg_2000_profile_for_inspire_orthoimagery_data">F.3.2. JPEG 2000 profile for INSPIRE Orthoimagery data</a>
-<ul class="sectlevel4">
-<li><a href="#_general_rules_2">F.3.2.1. General rules</a></li>
-<li><a href="#_data_structure_3">F.3.2.2. Data structure</a></li>
-<li><a href="#_grid_coordinate_system_2">F.3.2.3. Grid coordinate system</a></li>
-<li><a href="#_range_values_2">F.3.2.4. Range values</a></li>
-<li><a href="#_opacity_channel">F.3.2.5. Opacity channel</a></li>
-<li><a href="#_compression_2">F.3.2.6. Compression</a></li>
-<li><a href="#_internal_tiling_2">F.3.2.7. Internal tiling</a></li>
-<li><a href="#_resolutions">F.3.2.8. Resolutions</a></li>
-<li><a href="#_region_of_interest">F.3.2.9. Region of interest</a></li>
-<li><a href="#_precincts">F.3.2.10. Precincts</a></li>
-<li><a href="#_other_options">F.3.2.11. Other options</a></li>
-<li><a href="#_georeferencing">F.3.2.12. Georeferencing</a></li>
-</ul>
-</li>
+<li><a href="#_jpeg_2000_profile_for_inspire_orthoimagery_data">F.3.2. JPEG 2000 profile for INSPIRE Orthoimagery data</a></li>
 <li><a href="#_mapping_between_jpeg_2000_and_gml_data_structures">F.3.3. Mapping between JPEG 2000 and GML data structures</a></li>
 <li><a href="#_theme_specific_requirements_and_recommendations_3">F.3.4. Theme-specific requirements and recommendations</a></li>
 </ul>
@@ -1076,7 +956,6 @@ Fax: 39-0332-7866325<br>
 <div class="paragraph">
 <p>This data specification provides the basis for the drafting of Implementing Rules according to Article 7 (1) of the INSPIRE Directive [Directive 2007/2/EC]. The entire data specification is published as implementation guidelines accompanying these Implementing Rules.</p>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1202,18 +1081,22 @@ Fax: 39-0332-7866325<br>
 <div class="paragraph">
 <p>This INSPIRE data specification does not place restrictions on the spatial resolution given the heterogeneity of data sources and the wide range of use cases across Europe. All levels of resolution are affected: the European level, the National level, the Regional level and the Local level.</p>
 </div>
-<div class="paragraph">
-<p><strong>Definition:</strong></p>
-</div>
-<div class="paragraph">
-<p>Geo-referenced image data of the earth&#8217;s surface, from either satellite or airborne sensors [Directive 2007/2/EC]</p>
-</div>
-<div class="paragraph">
-<p><strong>Description:</strong></p>
-</div>
-<div class="paragraph">
-<p>The <em>Orthoimagery</em> data theme includes orthorectified image data of the earth&#8217;s surface, from either satellite or airborne sensors. An orthoimage is a raster image that has been geometrically corrected ("orthorectified") to remove distortion caused by differences in elevation, sensor tilt and, optionally, by sensor optics. Data is orthorectified to achieve an accuracy commensurate with a given topographic map equivalent. The data theme includes orthorectified imagery from the radio, through the visible, to the ultraviolet region of the electromagnetic spectrum.</p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Definition:</strong><br>
+<br>
+Geo-referenced image data of the earth&#8217;s surface, from either satellite or airborne sensors [Directive 2007/2/EC]<br>
+<br>
+<strong>Description:</strong><br>
+<br>
+The <em>Orthoimagery</em> data theme includes orthorectified image data of the earth&#8217;s surface, from either satellite or airborne sensors. An orthoimage is a raster image that has been geometrically corrected ("orthorectified") to remove distortion caused by differences in elevation, sensor tilt and, optionally, by sensor optics. Data is orthorectified to achieve an accuracy commensurate with a given topographic map equivalent. The data theme includes orthorectified imagery from the radio, through the visible, to the ultraviolet region of the electromagnetic spectrum.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>Entry in the INSPIRE registry: <em><a href="http://inspire.ec.europa.eu/theme/oi/" class="bare">http://inspire.ec.europa.eu/theme/oi/</a></em></p>
 </div>
@@ -1360,8 +1243,8 @@ Fax: 39-0332-7866325<br>
 <h3 id="_symbols_and_abbreviations">2.5. Symbols and abbreviations</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 14%;">
+<col style="width: 86%;">
 </colgroup>
 <tbody>
 <tr>
@@ -1505,7 +1388,7 @@ Fax: 39-0332-7866325<br>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image4.png" alt="image" width="603" height="375">
+<img src="./media/image4.png" alt="image" width="603" height="375">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2412,7 +2295,7 @@ Recommendations are shown using this style.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image5.png" alt="image" width="222" height="207">
+<img src="./media/image5.png" alt="image" width="222" height="207">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2420,7 +2303,7 @@ Recommendations are shown using this style.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image6.png" alt="image" width="309" height="209">
+<img src="./media/image6.png" alt="image" width="309" height="209">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2431,7 +2314,7 @@ Recommendations are shown using this style.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image53.png" alt="image">
+<img src="./media/image53.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2458,7 +2341,7 @@ Narrative description</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image54.png" alt="image">
+<img src="./media/image54.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2477,7 +2360,7 @@ Narrative description</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image7.jpeg" alt="image" width="332" height="208">
+<img src="./media/image7.jpeg" alt="image" width="332" height="208">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2503,7 +2386,7 @@ Narrative description</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image37.png" alt="image">
+<img src="./media/image37.png" alt="image">
 </div>
 </div>
 <div class="paragraph text/center">
@@ -2539,7 +2422,7 @@ Narrative description</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image38.png" alt="image">
+<img src="./media/image38.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2556,7 +2439,7 @@ Narrative description</p>
 <h5 id="_uml_overview">5.3.1.4. UML Overview</h5>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image8.png" alt="image" width="604" height="703">
+<img src="./media/image8.png" alt="image" width="604" height="703">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2600,7 +2483,7 @@ Narrative description</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image9.jpeg" alt="image" width="240" height="163">
+<img src="./media/image9.jpeg" alt="image" width="240" height="163">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2692,7 +2575,7 @@ Narrative description</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image39.png" alt="image">
+<img src="./media/image39.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2913,7 +2796,7 @@ Narrative description</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image9.jpeg" alt="image" width="237" height="160">
+<img src="./media/image9.jpeg" alt="image" width="237" height="160">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -2979,7 +2862,7 @@ Narrative description</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image41.png" alt="image">
+<img src="./media/image41.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -3028,7 +2911,7 @@ Narrative description</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image42.png" alt="image">
+<img src="./media/image42.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -5216,7 +5099,7 @@ NOTE This type can be used for both discrete and continuous coverages.</p></td>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image17.jpeg" alt="GridCoverage_GeoGrid_Alignment_example" width="623" height="444">
+<img src="./media/image17.jpeg" alt="GridCoverage_GeoGrid_Alignment_example" width="623" height="444">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -5570,7 +5453,7 @@ The data provider is expected to describe the nillvalue reason (e.g. cloud cover
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image18.png" alt="image" width="240" height="51">
+<img src="./media/image18.png" alt="image" width="240" height="51">
 </div>
 </div>
 <div class="paragraph">
@@ -5693,7 +5576,7 @@ The data provider is expected to describe the nillvalue reason (e.g. cloud cover
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image19.png" alt="image" width="152" height="51">
+<img src="./media/image19.png" alt="image" width="152" height="51">
 </div>
 </div>
 <div class="paragraph">
@@ -5701,7 +5584,7 @@ The data provider is expected to describe the nillvalue reason (e.g. cloud cover
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image20.png" alt="image" width="155" height="51">
+<img src="./media/image20.png" alt="image" width="155" height="51">
 </div>
 </div>
 <div class="paragraph">
@@ -8255,7 +8138,7 @@ Character set: UTF-8</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image44.png" alt="image">
+<img src="./media/image44.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -11902,7 +11785,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image45.png" alt="image">
+<img src="./media/image45.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -11950,7 +11833,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image46.png" alt="image">
+<img src="./media/image46.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -11998,7 +11881,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image47.png" alt="image">
+<img src="./media/image47.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -12046,7 +11929,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image48.png" alt="image">
+<img src="./media/image48.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -12094,7 +11977,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image49.png" alt="image">
+<img src="./media/image49.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -12142,7 +12025,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image50.png" alt="image">
+<img src="./media/image50.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -12193,7 +12076,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image51.png" alt="image">
+<img src="./media/image51.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -12422,7 +12305,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="./media\image52.png" alt="image">
+<img src="./media/image52.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -13185,7 +13068,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image35.png" alt="image" width="418" height="604">
+<img src="./media/image35.png" alt="image" width="418" height="604">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -13279,7 +13162,7 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media\image36.png" alt="image" width="623" height="348">
+<img src="./media/image36.png" alt="image" width="623" height="348">
 </div>
 </div>
 <div class="paragraph text-center">
