@@ -17,7 +17,7 @@
 |13|Species distribution|SD||Published in draft|
 |14|Land cover|LC||Published in draft|
 |15|Administrative units|AU||Published in draft|
-|16|Statistical units|SU|Final revision
+|16|Statistical units|SU||Published in draft|
 |17|Orthoimagery|OI|Final revision
 |18|Geology|GE|Final revision
 |**19**|Buildings|BU|
