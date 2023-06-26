@@ -448,8 +448,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1 id="_d2_8_ii_4_data_specification_on_geology_technical_guidelines" class="discrete">D2.8.II.4 Data Specification on <em>Geology</em> – Technical Guidelines</h1>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 29%;">
+<col style="width: 71%;">
 </colgroup>
 <tbody>
 <tr>
@@ -743,230 +743,34 @@ Unit H06: Digital Earth and Reference Data<br>
 </li>
 <li><a href="#_basic_notions">5.2. Basic notions</a>
 <ul class="sectlevel3">
-<li><a href="#_notation">5.2.1. Notation</a>
-<ul class="sectlevel4">
-<li><a href="#_unified_modeling_language_uml">5.2.1.1. Unified Modeling Language (UML)</a></li>
-<li><a href="#_stereotypes">5.2.1.2. Stereotypes</a></li>
-</ul>
-</li>
+<li><a href="#_notation">5.2.1. Notation</a></li>
 <li><a href="#_voidable_characteristics">5.2.2. Voidable characteristics</a></li>
 <li><a href="#_enumerations">5.2.3. Enumerations</a></li>
-<li><a href="#_code_lists">5.2.4. Code lists</a>
-<ul class="sectlevel4">
-<li><a href="#_code_list_types">5.2.4.1. Code list types</a></li>
-<li><a href="#_obligations_on_data_providers">5.2.4.2. Obligations on data providers</a></li>
-<li><a href="#_recommended_code_list_values">5.2.4.3. Recommended code list values</a></li>
-<li><a href="#_governance">5.2.4.4. Governance</a></li>
-<li><a href="#_vocabulary">5.2.4.5. Vocabulary</a></li>
-</ul>
-</li>
+<li><a href="#_code_lists">5.2.4. Code lists</a></li>
 <li><a href="#_identifier_management">5.2.5. Identifier management</a></li>
 <li><a href="#_geometry_representation">5.2.6. Geometry representation</a></li>
-<li><a href="#_temporality_representation">5.2.7. Temporality representation</a>
-<ul class="sectlevel4">
-<li><a href="#_validity_of_the_real_world_phenomena">5.2.7.1. Validity of the real-world phenomena</a></li>
-</ul>
-</li>
+<li><a href="#_temporality_representation">5.2.7. Temporality representation</a></li>
 <li><a href="#_coverages">5.2.8. Coverages</a></li>
 </ul>
 </li>
 <li><a href="#_application_schema_geology">5.3. Application schema Geology</a>
 <ul class="sectlevel3">
-<li><a href="#_description">5.3.1. Description</a>
-<ul class="sectlevel4">
-<li><a href="#_narrative_description_and_uml_overview">5.3.1.1. Narrative description and UML Overview</a></li>
-<li><a href="#_consistency_between_spatial_data_sets">5.3.1.2. Consistency between spatial data sets</a></li>
-<li><a href="#_modelling_of_object_references">5.3.1.3. Modelling of object references</a></li>
-</ul>
-</li>
-<li><a href="#_feature_catalogue">5.3.2. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types">5.3.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_anthropogenicgeomorphologicfeature">5.3.2.1.1. AnthropogenicGeomorphologicFeature</a></li>
-<li><a href="#_borehole">5.3.2.1.2. Borehole</a></li>
-<li><a href="#_fold">5.3.2.1.3. Fold</a></li>
-<li><a href="#_geologiccollection">5.3.2.1.4. GeologicCollection</a></li>
-<li><a href="#_geologicevent">5.3.2.1.5. GeologicEvent</a></li>
-<li><a href="#_geologicfeature">5.3.2.1.6. GeologicFeature</a></li>
-<li><a href="#_geologicstructure">5.3.2.1.7. GeologicStructure</a></li>
-<li><a href="#_geologicunit">5.3.2.1.8. GeologicUnit</a></li>
-<li><a href="#_geomorphologicfeature">5.3.2.1.9. GeomorphologicFeature</a></li>
-<li><a href="#_mappedfeature">5.3.2.1.10. MappedFeature</a></li>
-<li><a href="#_mappedinterval">5.3.2.1.11. MappedInterval</a></li>
-<li><a href="#_naturalgeomorphologicfeature">5.3.2.1.12. NaturalGeomorphologicFeature</a></li>
-<li><a href="#_sheardisplacementstructure">5.3.2.1.13. ShearDisplacementStructure</a></li>
-</ul>
-</li>
-<li><a href="#_data_types">5.3.2.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_compositionpart">5.3.2.2.1. CompositionPart</a></li>
-<li><a href="#_thematicclass">5.3.2.2.2. ThematicClass</a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_2">5.3.2.3. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_anthropogenicgeomorphologicfeaturetypevalue">5.3.2.3.1. AnthropogenicGeomorphologicFeatureTypeValue</a></li>
-<li><a href="#_boreholepurposevalue">5.3.2.3.2. BoreholePurposeValue</a></li>
-<li><a href="#_collectiontypevalue">5.3.2.3.3. CollectionTypeValue</a></li>
-<li><a href="#_compositionpartrolevalue">5.3.2.3.4. CompositionPartRoleValue</a></li>
-<li><a href="#_eventenvironmentvalue">5.3.2.3.5. EventEnvironmentValue</a></li>
-<li><a href="#_eventprocessvalue">5.3.2.3.6. EventProcessValue</a></li>
-<li><a href="#_faulttypevalue">5.3.2.3.7. FaultTypeValue</a></li>
-<li><a href="#_foldprofiletypevalue">5.3.2.3.8. FoldProfileTypeValue</a></li>
-<li><a href="#_geochronologiceravalue">5.3.2.3.9. GeochronologicEraValue</a></li>
-<li><a href="#_geologicunittypevalue">5.3.2.3.10. GeologicUnitTypeValue</a></li>
-<li><a href="#_geomorphologicactivityvalue">5.3.2.3.11. GeomorphologicActivityValue</a></li>
-<li><a href="#_lithologyvalue">5.3.2.3.12. LithologyValue</a></li>
-<li><a href="#_mappingframevalue">5.3.2.3.13. MappingFrameValue</a></li>
-<li><a href="#_naturalgeomorphologicfeaturetypevalue">5.3.2.3.14. NaturalGeomorphologicFeatureTypeValue</a></li>
-<li><a href="#_thematicclassificationvalue">5.3.2.3.15. ThematicClassificationValue</a></li>
-<li><a href="#_thematicclassvalue">5.3.2.3.16. ThematicClassValue</a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative">5.3.2.4. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_characterstring">5.3.2.4.1. CharacterString</a></li>
-<li><a href="#_datetime">5.3.2.4.2. DateTime</a></li>
-<li><a href="#_directposition">5.3.2.4.3. DirectPosition</a></li>
-<li><a href="#_documentcitation">5.3.2.4.4. DocumentCitation</a></li>
-<li><a href="#_gm_curve">5.3.2.4.5. GM_Curve</a></li>
-<li><a href="#_gm_object">5.3.2.4.6. GM_Object</a></li>
-<li><a href="#_gm_point">5.3.2.4.7. GM_Point</a></li>
-<li><a href="#_geophobject">5.3.2.4.8. GeophObject</a></li>
-<li><a href="#_geophobjectset">5.3.2.4.9. GeophObjectSet</a></li>
-<li><a href="#_identifier">5.3.2.4.10. Identifier</a></li>
-<li><a href="#_quantity">5.3.2.4.11. Quantity</a></li>
-<li><a href="#_quantityrange">5.3.2.4.12. QuantityRange</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_externally_governed_code_lists">5.3.3. Externally governed code lists</a>
-<ul class="sectlevel4">
-<li><a href="#_governance_and_authoritative_source">5.3.3.1. Governance and authoritative source</a></li>
-<li><a href="#_availability">5.3.3.2. Availability</a></li>
-</ul>
-</li>
+<li><a href="#_description">5.3.1. Description</a></li>
+<li><a href="#_feature_catalogue">5.3.2. Feature catalogue</a></li>
+<li><a href="#_externally_governed_code_lists">5.3.3. Externally governed code lists</a></li>
 </ul>
 </li>
 <li><a href="#_application_schema_hydrogeology">5.4. Application schema Hydrogeology</a>
 <ul class="sectlevel3">
-<li><a href="#_description_2">5.4.1. Description</a>
-<ul class="sectlevel4">
-<li><a href="#_narrative_description_and_uml_overview_2">5.4.1.1. Narrative description and UML Overview</a></li>
-<li><a href="#_consistency_between_spatial_data_sets_2">5.4.1.2. Consistency between spatial data sets</a></li>
-<li><a href="#_modelling_of_object_references_2">5.4.1.3. Modelling of object references</a></li>
-</ul>
-</li>
-<li><a href="#_feature_catalogue_2">5.4.2. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_2">5.4.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_activewell">5.4.2.1.1. ActiveWell</a></li>
-<li><a href="#_aquiclude">5.4.2.1.2. Aquiclude</a></li>
-<li><a href="#_aquifer">5.4.2.1.3. Aquifer</a></li>
-<li><a href="#_aquifersystem">5.4.2.1.4. AquiferSystem</a></li>
-<li><a href="#_aquitard">5.4.2.1.5. Aquitard</a></li>
-<li><a href="#_groundwaterbody">5.4.2.1.6. GroundWaterBody</a></li>
-<li><a href="#_hydrogeologicalobject">5.4.2.1.7. HydrogeologicalObject</a></li>
-<li><a href="#_hydrogeologicalobjectmanmade">5.4.2.1.8. HydrogeologicalObjectManMade</a></li>
-<li><a href="#_hydrogeologicalobjectnatural">5.4.2.1.9. HydrogeologicalObjectNatural</a></li>
-<li><a href="#_hydrogeologicalunit">5.4.2.1.10. HydrogeologicalUnit</a></li>
-</ul>
-</li>
-<li><a href="#_data_types_2">5.4.2.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_hydrogeologicalsurface">5.4.2.2.1. HydrogeologicalSurface</a></li>
-<li><a href="#_piezometricstate">5.4.2.2.2. PiezometricState</a></li>
-<li><a href="#_quantityvalue">5.4.2.2.3. QuantityValue</a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_3">5.4.2.3. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_activewelltypevalue">5.4.2.3.1. ActiveWellTypeValue</a></li>
-<li><a href="#_aquifermediatypevalue">5.4.2.3.2. AquiferMediaTypeValue</a></li>
-<li><a href="#_aquifertypevalue">5.4.2.3.3. AquiferTypeValue</a></li>
-<li><a href="#_conditionofgroundwatervalue">5.4.2.3.4. ConditionOfGroundwaterValue</a></li>
-<li><a href="#_hydrogeochemicalrocktypevalue">5.4.2.3.5. HydroGeochemicalRockTypeValue</a></li>
-<li><a href="#_naturalobjecttypevalue">5.4.2.3.6. NaturalObjectTypeValue</a></li>
-<li><a href="#_statuscodetypevalue">5.4.2.3.7. StatusCodeTypeValue</a></li>
-<li><a href="#_waterpersistencevalue">5.4.2.3.8. WaterPersistenceValue</a></li>
-<li><a href="#_watersalinityvalue">5.4.2.3.9. WaterSalinityValue</a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_2">5.4.2.4. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_boolean">5.4.2.4.1. Boolean</a></li>
-<li><a href="#_borehole_2">5.4.2.4.2. Borehole</a></li>
-<li><a href="#_datetime_2">5.4.2.4.3. DateTime</a></li>
-<li><a href="#_environmentalmonitoringfacility">5.4.2.4.4. EnvironmentalMonitoringFacility</a></li>
-<li><a href="#_gm_primitive">5.4.2.4.5. GM_Primitive</a></li>
-<li><a href="#_gm_surface">5.4.2.4.6. GM_Surface</a></li>
-<li><a href="#_geologicstructure_2">5.4.2.4.7. GeologicStructure</a></li>
-<li><a href="#_geologicunit_2">5.4.2.4.8. GeologicUnit</a></li>
-<li><a href="#_identifier_2">5.4.2.4.9. Identifier</a></li>
-<li><a href="#_pt_freetext">5.4.2.4.10. PT_FreeText</a></li>
-<li><a href="#_pointobservationcollection">5.4.2.4.11. PointObservationCollection</a></li>
-<li><a href="#_quantity_2">5.4.2.4.12. Quantity</a></li>
-<li><a href="#_quantityrange_2">5.4.2.4.13. QuantityRange</a></li>
-<li><a href="#_rectifiedgridcoverage">5.4.2.4.14. RectifiedGridCoverage</a></li>
-<li><a href="#_referenceablegridcoverage">5.4.2.4.15. ReferenceableGridCoverage</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_description_2">5.4.1. Description</a></li>
+<li><a href="#_feature_catalogue_2">5.4.2. Feature catalogue</a></li>
 <li><a href="#_externally_governed_code_lists_2">5.4.3. Externally governed code lists</a></li>
 </ul>
 </li>
 <li><a href="#_application_schema_geophysics">5.5. Application schema Geophysics</a>
 <ul class="sectlevel3">
-<li><a href="#_description_3">5.5.1. Description</a>
-<ul class="sectlevel4">
-<li><a href="#_narrative_description_and_uml_overview_3">5.5.1.1. Narrative description and UML overview</a></li>
-<li><a href="#_consistency_between_spatial_data_sets_3">5.5.1.2. Consistency between spatial data sets</a></li>
-<li><a href="#_identifier_management_2">5.5.1.3. Identifier management</a></li>
-<li><a href="#_modelling_of_object_references_3">5.5.1.4. Modelling of object references</a></li>
-</ul>
-</li>
-<li><a href="#_feature_catalogue_3">5.5.2. Feature catalogue</a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_3">5.5.2.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_campaign">5.5.2.1.1. Campaign</a></li>
-<li><a href="#_geophmeasurement">5.5.2.1.2. GeophMeasurement</a></li>
-<li><a href="#_geophobject_2">5.5.2.1.3. GeophObject</a></li>
-<li><a href="#_geophobjectset_2">5.5.2.1.4. GeophObjectSet</a></li>
-<li><a href="#_geophprofile">5.5.2.1.5. GeophProfile</a></li>
-<li><a href="#_geophswath">5.5.2.1.6. GeophSwath</a></li>
-<li><a href="#_geophstation">5.5.2.1.7. GeophStation</a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_4">5.5.2.2. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_campaigntypevalue">5.5.2.2.1. CampaignTypeValue</a></li>
-<li><a href="#_networknamevalue">5.5.2.2.2. NetworkNameValue</a></li>
-<li><a href="#_platformtypevalue">5.5.2.2.3. PlatformTypeValue</a></li>
-<li><a href="#_profiletypevalue">5.5.2.2.4. ProfileTypeValue</a></li>
-<li><a href="#_stationrankvalue">5.5.2.2.5. StationRankValue</a></li>
-<li><a href="#_stationtypevalue">5.5.2.2.6. StationTypeValue</a></li>
-<li><a href="#_surveytypevalue">5.5.2.2.7. SurveyTypeValue</a></li>
-<li><a href="#_swathtypevalue">5.5.2.2.8. SwathTypeValue</a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_3">5.5.2.3. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_documentcitation_2">5.5.2.3.1. DocumentCitation</a></li>
-<li><a href="#_ex_verticalextent">5.5.2.3.2. EX_VerticalExtent</a></li>
-<li><a href="#_gm_object_2">5.5.2.3.3. GM_Object</a></li>
-<li><a href="#_identifier_3">5.5.2.3.4. Identifier</a></li>
-<li><a href="#_md_distributor">5.5.2.3.5. MD_Distributor</a></li>
-<li><a href="#_relatedparty">5.5.2.3.6. RelatedParty</a></li>
-<li><a href="#_sf_spatialsamplingfeature">5.5.2.3.7. SF_SpatialSamplingFeature</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_description_3">5.5.1. Description</a></li>
+<li><a href="#_feature_catalogue_3">5.5.2. Feature catalogue</a></li>
 <li><a href="#_externally_governed_code_lists_3">5.5.3. Externally governed code lists</a></li>
 </ul>
 </li>
@@ -976,14 +780,7 @@ Unit H06: Digital Earth and Reference Data<br>
 <ul class="sectlevel2">
 <li><a href="#_default_reference_systems_units_of_measure_and_grid">6.1. Default reference systems, units of measure and grid</a>
 <ul class="sectlevel3">
-<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a>
-<ul class="sectlevel4">
-<li><a href="#_datum">6.1.1.1. Datum</a></li>
-<li><a href="#_coordinate_reference_systems_2">6.1.1.2. Coordinate reference systems</a></li>
-<li><a href="#_display">6.1.1.3. Display</a></li>
-<li><a href="#_identifiers_for_coordinate_reference_systems">6.1.1.4. Identifiers for coordinate reference systems</a></li>
-</ul>
-</li>
+<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a></li>
 <li><a href="#_temporal_reference_system">6.1.2. Temporal reference system</a></li>
 <li><a href="#_units_of_measure">6.1.3. Units of measure</a></li>
 <li><a href="#_grids">6.1.4. Grids</a></li>
@@ -1025,12 +822,7 @@ Unit H06: Digital Earth and Reference Data<br>
 <li><a href="#_recommended_theme_specific_metadata_elements">8.3. Recommended theme-specific metadata elements</a>
 <ul class="sectlevel3">
 <li><a href="#_maintenance_information">8.3.1. Maintenance Information</a></li>
-<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a>
-<ul class="sectlevel4">
-<li><a href="#_guidelines_for_reporting_quantitative_results_of_the_data_quality_evaluation">8.3.2.1. Guidelines for reporting quantitative results of the data quality evaluation</a></li>
-<li><a href="#_guidelines_for_reporting_descriptive_results_of_the_data_quality_evaluation">8.3.2.2. Guidelines for reporting descriptive results of the Data Quality evaluation</a></li>
-</ul>
-</li>
+<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a></li>
 </ul>
 </li>
 </ul>
@@ -1041,19 +833,8 @@ Unit H06: Digital Earth and Reference Data<br>
 <li><a href="#_delivery_medium">9.2. Delivery medium</a></li>
 <li><a href="#_encodings">9.3. Encodings</a>
 <ul class="sectlevel3">
-<li><a href="#_default_encodings">9.3.1. Default Encoding(s)</a>
-<ul class="sectlevel4">
-<li><a href="#_specific_requirements_for_gml_encoding">9.3.1.1. Specific requirements for GML encoding</a></li>
-<li><a href="#_default_encodings_for_application_schema_geology">9.3.1.2. Default encoding(s) for application schema Geology</a></li>
-<li><a href="#_default_encodings_for_application_schema_hydrogeology">9.3.1.3. Default encoding(s) for application schema Hydrogeology</a></li>
-<li><a href="#_default_encodings_for_application_schema_geophysics">9.3.1.4. Default encoding(s) for application schema Geophysics</a></li>
-</ul>
-</li>
-<li><a href="#_recommended_encodings">9.3.2. Recommended Encoding(s)</a>
-<ul class="sectlevel4">
-<li><a href="#_the_use_of_geosciml_encoding">9.3.2.1. The use of GeoSciML encoding</a></li>
-</ul>
-</li>
+<li><a href="#_default_encodings">9.3.1. Default Encoding(s)</a></li>
+<li><a href="#_recommended_encodings">9.3.2. Recommended Encoding(s)</a></li>
 </ul>
 </li>
 <li><a href="#_options_for_delivering_coverage_data">9.4. Options for delivering coverage data</a></li>
@@ -1186,50 +967,7 @@ Unit H06: Digital Earth and Reference Data<br>
 <ul class="sectlevel3">
 <li><a href="#_narrative_description_and_uml_overview_4">D.3.1. <em>Narrative description and UML overview</em></a></li>
 <li><a href="#_the_use_of_om_in_the_geophysicsextension_schema">D.3.2. The use of O&amp;M in the GeophysicsExtension schema</a></li>
-<li><a href="#_feature_catalogue_4">D.3.3. Feature <strong>catalogue</strong></a>
-<ul class="sectlevel4">
-<li><a href="#_spatial_object_types_4">D.3.3.1. Spatial object types</a>
-<ul class="sectlevel5">
-<li><a href="#_curvemodel">D.3.3.1.1. CurveModel</a></li>
-<li><a href="#_geophmodel">D.3.3.1.2. GeophModel</a></li>
-<li><a href="#_othergeophmeasurement">D.3.3.1.3. OtherGeophMeasurement</a></li>
-<li><a href="#_othergeophmodel">D.3.3.1.4. OtherGeophModel</a></li>
-<li><a href="#_project">D.3.3.1.5. Project</a></li>
-<li><a href="#_solidgridmodel">D.3.3.1.6. SolidGridModel</a></li>
-<li><a href="#_surfacegridmodel">D.3.3.1.7. SurfaceGridModel</a></li>
-</ul>
-</li>
-<li><a href="#_data_types_3">D.3.3.2. Data types</a>
-<ul class="sectlevel5">
-<li><a href="#_geophresource">D.3.3.2.1. GeophResource</a></li>
-<li><a href="#_geophresult">D.3.3.2.2. GeophResult</a></li>
-</ul>
-</li>
-<li><a href="#_code_lists_5">D.3.3.3. Code lists</a>
-<ul class="sectlevel5">
-<li><a href="#_curvemodeltypevalue">D.3.3.3.1. CurveModelTypeValue</a></li>
-<li><a href="#_geophprocessnamevalue">D.3.3.3.2. GeophProcessNameValue</a></li>
-<li><a href="#_geophprocessparameternamevalue">D.3.3.3.3. GeophProcessParameterNameValue</a></li>
-<li><a href="#_geophpropertynamevalue">D.3.3.3.4. GeophPropertyNameValue</a></li>
-<li><a href="#_othergeophmodeltypevalue">D.3.3.3.5. OtherGeophModelTypeValue</a></li>
-<li><a href="#_othermeasurementtypevalue">D.3.3.3.6. OtherMeasurementTypeValue</a></li>
-<li><a href="#_resourcetypevalue">D.3.3.3.7. ResourceTypeValue</a></li>
-<li><a href="#_solidgridmodeltypevalue">D.3.3.3.8. SolidGridModelTypeValue</a></li>
-<li><a href="#_surfacegridmodeltypevalue">D.3.3.3.9. SurfaceGridModelTypeValue</a></li>
-</ul>
-</li>
-<li><a href="#_imported_types_informative_4">D.3.3.4. Imported types (informative)</a>
-<ul class="sectlevel5">
-<li><a href="#_ci_onlineresource">D.3.3.4.1. CI_OnlineResource</a></li>
-<li><a href="#_ci_responsibleparty">D.3.3.4.2. CI_ResponsibleParty</a></li>
-<li><a href="#_geophmeasurement_2">D.3.3.4.3. GeophMeasurement</a></li>
-<li><a href="#_geophobject_3">D.3.3.4.4. GeophObject</a></li>
-<li><a href="#_geophobjectset_3">D.3.3.4.5. GeophObjectSet</a></li>
-<li><a href="#_identifier_4">D.3.3.4.6. Identifier</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#_feature_catalogue_4">D.3.3. Feature <strong>catalogue</strong></a></li>
 </ul>
 </li>
 </ul>
