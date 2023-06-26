@@ -13,7 +13,7 @@
 :toc-title:
 
 // TOC level depth
-:toclevels: 5
+:toclevels: 3
 
 // Section numbering level depth
 :sectnumlevels: 8
@@ -30,7 +30,7 @@ image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** *In
 [discrete]
 = D2.8.II.4 Data Specification on _Geology_ – Technical Guidelines
 
-[cols=",",]
+[width="100%",cols="29%,71%",]
 |===
 |*Title* |D2.8.II.4 INSPIRE Data Specification on _Geology_ – Technical Guidelines
 |*Creator* |INSPIRE Thematic Working Group _Geology_
