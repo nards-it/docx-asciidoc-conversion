@@ -862,13 +862,7 @@ In addition, some themes make reference to the types TimeValuePair and Timeserie
 
 Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.
 
-image::./media/image5.png[image,width=222,height=207]
-[.text-center]
-(Source: ISO 19136:2007)
-
-image::./media/image6.png[image,width=309,height=209, align=center]
-[.text-center]
-(Source: GML 3.3.0)
+image::./media/image5.png[image]
 
 [.text-center]
 *Figure 2 – Examples of a rectified grid (left) and a referenceable grid (right)*
@@ -950,6 +944,7 @@ This mechanism is fully recursive so that an orthoimage coverage can itself be a
 
 Note here that although their concepts are close, orthoimage aggregation and mosaicking differ: the former is not an extensive production process already achieved but a dynamic view to structure datasets.
 
+<<<
 ===== UML Overview
 
 image::./media/image8.png[image,width=604,height=703, align=center]
@@ -979,7 +974,7 @@ The attributes _domainExtent_ and _interpolationType_ stemming from ISO 19123 co
 
 Other attributes provide additional information about identification (_inspireId, name_), temporal aspects (_phenomenonTime, beginLifespanVersion,endLifespanVersion)_ and refined extent _(footprint_). The property _footprint_ of type GM_MultiSurface precisely delineates the geographic areas where the coverage range is of interest (e.g. no nil values).
 
-image::./media/image9.jpeg[image,width=240,height=163, align=center]
+image::./media/image9.png[image,width=240,height=163, align=center]
 
 [.text-center]
 *Figure 9 – footprint and bounding box of an orthoimage (respectively in blue and red)*
