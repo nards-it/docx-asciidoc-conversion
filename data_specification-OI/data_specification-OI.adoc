@@ -5190,37 +5190,26 @@ NOTE Table 20 in this document
 
 [cols=",,,,,,,",options="header",]
 |===
-|*Resolution Levels* a|
-*LATITUDE SPACING*
-
+|*Resolution Levels*
+|*LATITUDE SPACING*
 (Arc seconds)
 
-|*LONGITUDE SPACING* (Arc seconds) |*Cell Size* | | | |
-| | a|
-*Zone 1*
-
+5+|*LONGITUDE SPACING* (Arc seconds)
+|*Cell Size*
+|||*Zone 1*
 (Lat. 0°–50°)
 
-a|
-*Zone 2*
-
+|*Zone 2*
 (Lat. 50°–70°)
 
-a|
-*Zone 3*
-
+|*Zone 3*
 (Lat. 70°–75°)
 
-a|
-*Zone 4*
-
+|*Zone 4*
 (Lat. 75°–80°)
 
-a|
-*Zone 5*
-
+|*Zone 5*
 (Lat. 80°–90°)
-
 |
 |*LEVEL 0* |*3600* |*3600* |*7200* |*10800* |*14400* |*21600* |*1D*
 |*LEVEL 1* |*3000* |*3000* |*6000* |*9000* |*12000* |*18000* |*50M*
@@ -5652,7 +5641,7 @@ The columns _Tag name_, _Code_, _Type_, _Card._ and _Description_ remind respect
 [.text-center]
 *Table 10. Baseline TIFF implementation profile and Mapping between TIFF tags and the associated object elements from the Orthoimagery GML Application Schema*
 
-[cols=",,,,,,,",]
+[%autowidth]
 |===
 |*Tag name* |*Code* |*Type* |*Card.* |*Description* |*Obligation* |*Restricted values* |*Mapping to GML elements (including restrictions)*
 |Artist |315 |ASCII |1 |Person who created the image |O |- |N/A
@@ -5903,28 +5892,8 @@ JP2 format allows to describe opacity channel (trough Channel Definition Box or 
 [.text-center]
 *Table 11. Definition of opacity channel with CDEF box*
 
-[cols=",,,,",options="header",]
-|===
-5+|CDEF box
-|Hexadecimal |Numeric conversion (2 bits) |interprétation | |
-a|
-00 04
+image::./media/table11.png[image, align=center]
 
-00 00 00 00 00 01 |
-
-00 01 00 00 00 02
-
-00 02 | 00 00 00 03
-
-00 03 00 01 | 00 00
-
-|4 |4 components | |
-| |0 |0 |1 |component 0 is red R
-| |1 |0 |2 |component 1 is green G
-| |2 |0 |3 |component 2 is blue B
-| |3 |1 |0 |component 3 is an opacity channel related to all other component
-| |Component number |signification |Colour of the component |
-|===
 
 NOTE In this case, bit depth shall be defined for each of the four components trough the bpcc boxes in the JP2 Header Box.
 
@@ -6008,42 +5977,7 @@ The columns _marker/box_, _description_, _Type_, _Card._ and Conditions/_Values_
 [.text-center]
 *Table 12. mapping between markers in JPEG 2000 codestream and GML elements*
 
-[cols=",,,,",options="header",]
-|===
-|*Marker* |*Description* |*Card.* |*Values* |*Mapping GML*
-|SIZ |Marker code (Image and tile size) |1 | |N/A
-|Lsiz |Length of marker segment |1 | |N/A
-|Rsiz |Denotes capabilities that a decoder needs to properly decode the codestream |1 a|
-0000 0000 0000 0010
-
-Codestream restricted as described for Profile 0 from Table A.45
-
-|N/A
-|Xsiz |Width of the reference grid |1 | |= domainSet.limits.high[0]
-|Ysiz |Height of the reference grid |1 | |= domainSet.limits.high[1]
-|X0siz |Horizontal offset from the origin of the reference grid to the left side of the image area |1 | |= domainSet.limits.low[0]
-|YOsiz |Vertical offset from the origin of the reference grid to the top side of the image area. |1 | |= domainSet.limits.low[1]
-|XTsiz |Width of one reference tile with respect to the reference grid. |1 | |N/A
-|YTsiz |Height of one reference tile with respect to the reference grid |1 | |N/A
-|XTOsiz |Horizontal offset from the origin of the reference grid to the left side of the first tile |1 | |N/A
-|YTOsiz |Vertical offset from the origin of the reference grid to the top side of the first tile |1 | |N/A
-|Csiz |Number of components in the image |1 a|
-1 for greyscale imagery
-3 for RGB data
-...
-
-|rangeType.field.size()
-|Ssiz^i^ |Precision (depth) in bits and sign of the ith component samples |1/component a|
-x000 0000 to x010 101 Component sample bit depth = value  1.
-
-x=0 (unsigned values)
-
-x=1 (signed values)
-
-|For each band i, rangeType.field[i].constraint.interval = "0 2^[Ssiz^i^1]-1"
-|XRsiz^i^ |Horizontal separation of a sample of ith component with respect to the reference grid |1/component |In most case XRsiz^i^ =1 for all components |N/A
-|YRsiz^i^ |Vertical separation of a sample of ith component with respect to the reference grid |1/component |In most case YRsiz^i^ =1 for all components |N/A
-|===
+image::./media/table12.png[image, align=center]
 
 For each component i of the image, its size is defined by :
 
@@ -6054,172 +5988,11 @@ Height^i^ = (Ysiz – Y0siz)/YRsiz^i^
 [.text-center]
 *Table 13. Mapping between boxes in JP2 format and GML elements*
 
-[cols=",,,,,,,",options="header",]
-|===
-|*Box name* |*Type* |*Description* |*Card.* |*Conditions/Values* |*Mapping GML* | |
-|JPEG 2000 Signature box |'jP\040\040' |The combination of the particular type and contents for this box enable an application to detect a common set of file transmission errors. |1 |'<CR><LF><0x87><LF>' |N/A | |
-|File Type box |'ftyp' | |1 | |N/A | |
-| |BR | |Brand. This field specifies the Recommendation | International Standard which completely defines this file. | a|
-'jp2\040'
+image::./media/table13a.png[image, align=center]
+image::./media/table13b.png[image, align=center]
+image::./media/table13c.png[image, align=center]
+image::./media/table13d.png[image, align=center]
 
-meaning is 15444-1, Annex I
-
-|N/A |
-| |MinV | |Minor version. This parameter defines the minor version number of this JP2 specification for which the file complies. |1 | |N/A |
-| |CL | a|
-Compatibility list. This field specifies a code representing this Recommendation | International
-
-Standard, another standard, or a profile of another standard, to which the file conforms.
-
-|1..* a|
-At least 'jp2\040'
-
- 'jpx\040' for GMLJP2 images
-
-|N/A |
-|JP2 Header box |'jp2h' | |1 | |N/A | |
-| |ihdr |'ihdr' |Image Header box |1 | |N/A |
-| | |HEIGHT | |Image area height |1 |Ysiz – Y0siz |domainSet.limits.high[1]- domainSet.limits.low[1]
-| | |WIDTH | |Image area width |1 |Xsiz – X0siz |domainSet.limits.high[0]- domainSet.limits.low[0]
-| | |NC | |Number of components |1 |= Csiz a|
-rangeType.field.size() if no use of palette-colour data.
-
-If use of a colour palette NC=1, rangeType.field.size()=3.
-
-| | |BPC | |Bits per component |1 a|
-If the bit depth of all components in the codesteam is the same (sign an precision)
-
-= Ssiz^i^
-
-a|
-For each band i, rangeType.field[i].constraint.interval = "0 2^[Ssiz^i^1]-1" if no use of palette-colour data.
-
-If use of a palette colour, there is no relation.
-
-| | |C | |Compression type | a|
-7 (Other
-
-values are reserved for ISO use)
-
-|N/A
-| | |UnkC | |Colourspace Unknown. |1 a|
-0 (colourspace of the image is known and correctly specified in the Colourspace
-
-Specification boxes within the file)
-
-1 (if the colourspace of the image is not known)
-
-|N/A
-| | |IPR | |Intellectual Property |1 | |N/A
-| |bpc^i^ |'bpcc' |Bits per component a|
-Optional
-
-Required if component have different bit depth
-
-a|
-x000 0000 to x010 101 Component sample bit depth = value  1.
-
-x=0 (unsigned values)
-
-x=1 (signed values)
-
-|For each band i, rangeType.field[i].constraint.interval = "0 2^[Ssiz^i^1]-1" |
-| |colr^i^ |'colr' a|
-Each Colour Specification box defines one method by which an application can interpret the colourspace of the
-
-decompressed image data
-
-|1 | |N/A |
-| | |METH | |Specification method |1 a|
-1 (Enumerated Colourspace)
-
-2 (Restricted ICC profile)
-
-other values (Reserved for other ISO use)
-
-|N/A
-| | |PREC | |Precedence |1 |0 (field reserved for ISO use) |
-| | |APPROX | |Colourspace approximation. |1 |0 |N/A
-| | |EnumCS | |Enumerated colourspace |1 a|
-16 (sRGB as defined by IEC 61966-2-1)
-
-17 (greyscale)
-
-18 (sYCC as defined by IEC 61966-2-1 Amd. 1)
-
-other values (Reserved for other ISO uses)
-
-|N/A
-| |pclr |'pclr' a|
-Palette box.
-
-This box specifies a palette that can be used to create channels from components.
-
-|0..1 | |N/A |
-| |cmap |'cmap' a|
-Component Mapping box.
-
-The Component Mapping box defines how image channels are identified from the actual components decoded from the codestream.
-
-|0..1 | |N/A |
-| |cdef |'cdef' |Channel Definition box |Optional | |The description provided shall be consistent with the rangeType description |
-| | |N | |Number of channel descriptions |1 | |= rangeType.field.size()
-| | |Cni | |Channel index |1/channel | |N/A
-| | |Typi | |Channel type |1/channel a|
-0 This channel is the colour image data for the associated colour.
-
-1 (Opacity)
-
-2 (Premultiplied opacity)
-
-|N/A
-| | |Asoci | |Channel association |1/channel a|
-0 (This channel is associated as the image as a whole)
-
-1 to (216– 2) This channel is associated with a particular colour as indicated by this value)
-
-216– 1 This channel is not associated with any particular colour.
-
-|N/A
-| |res |'resd' | |Optional | |N/A |
-| | |resc | |Capture Resolution box. |Optional | |N/A
-| | |resd | |Default Display Resolution box. |Optional | |N/A
-|Contiguou Codestream box |'jp2c' |This box contains the codestream as defined by Annex A of ISO 15444-1. |1 |Contains the encoded data in JPEG 2000. | | |
-| | | | | | | |
-|Intellectual property box |'jp2i' a|
-This box contains intellectual property
-
-information about the image.
-
-|Optional | |N/A | |
-| | | | | | | |
-|XML Box |'xml\040' a|
-Box for XML formatted information to a
-
-JP2 file.
-
-|Optional | |The place to provide GML within JPEG 2000 (see OGC standard for more details). | |
-| | | | | | | |
-|UUID box |'uuid' a|
-Box for additional information to a file
-
-without risking conflict with other vendors
-
-|Optional | a|
-The place to provide GeoJP2 georeference. Shall be consistent with georeference given by the origin of the grid "domainSet.origin" and the offset vector
-
-"domainSet.offsetVector".
-
-| |
-|UUID info box |'uinf' a|
-Box for providing access to additional
-
-information associated with a UUID.
-
-|Optional | |N/A | |
-| |UUID list box |'ulst' |This box specifies a list of UUIDs. |Optional | |N/A |
-| |URL box |'url\040' |This box specifies a URL. |Optional | |N/A |
-|===
 
 ==== Theme-specific requirements and recommendations
 
