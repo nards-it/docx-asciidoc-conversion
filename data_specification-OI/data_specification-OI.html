@@ -11224,50 +11224,25 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 <tr>
 <th class="tableblock halign-left valign-top"><strong>Resolution Levels</strong></th>
 <th class="tableblock halign-left valign-top"><strong>LATITUDE SPACING</strong><br>
-<br>
 (Arc seconds)</th>
-<th class="tableblock halign-left valign-top"><strong>LONGITUDE SPACING</strong> (Arc seconds)</th>
+<th class="tableblock halign-left valign-top" colspan="5"><strong>LONGITUDE SPACING</strong> (Arc seconds)</th>
 <th class="tableblock halign-left valign-top"><strong>Cell Size</strong></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Zone 1</strong></p>
-</div>
-<div class="paragraph">
-<p>(Lat. 0°–50°)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Zone 2</strong></p>
-</div>
-<div class="paragraph">
-<p>(Lat. 50°–70°)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Zone 3</strong></p>
-</div>
-<div class="paragraph">
-<p>(Lat. 70°–75°)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Zone 4</strong></p>
-</div>
-<div class="paragraph">
-<p>(Lat. 75°–80°)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Zone 5</strong></p>
-</div>
-<div class="paragraph">
-<p>(Lat. 80°–90°)</p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zone 1</strong><br>
+(Lat. 0°–50°)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zone 2</strong><br>
+(Lat. 50°–70°)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zone 3</strong><br>
+(Lat. 70°–75°)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zone 4</strong><br>
+(Lat. 75°–80°)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zone 5</strong><br>
+(Lat. 80°–90°)</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -12459,16 +12434,16 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 <div class="paragraph text-center">
 <p><strong>Table 10. Baseline TIFF implementation profile and Mapping between TIFF tags and the associated object elements from the Orthoimagery GML Application Schema</strong></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table class="tableblock frame-all grid-all fit-content">
 <colgroup>
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <tbody>
 <tr>
@@ -13220,80 +13195,11 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 <div class="paragraph text-center">
 <p><strong>Table 11. Definition of opacity channel with CDEF box</strong></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top" colspan="5">CDEF box</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hexadecimal</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric conversion (2 bits)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">interprétation</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>00 04</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/table11.png" alt="image">
 </div>
-<div class="paragraph">
-<p>00 00 00 00 00 01</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">00 01 00 00 00 02<br>
-<br>
-00 02</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">00 00 00 03<br>
-<br>
-00 03 00 01</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">00 00</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4 components</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">component 0 is red R</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">component 1 is green G</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">component 2 is blue B</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">component 3 is an opacity channel related to all other component</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Component number</p></td>
-</tr>
-</tbody>
-</table>
+</div>
 <div class="paragraph">
 <p>NOTE In this case, bit depth shall be defined for each of the four components trough the bpcc boxes in the JP2 Header Box.</p>
 </div>
@@ -13447,148 +13353,11 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 <div class="paragraph text-center">
 <p><strong>Table 12. mapping between markers in JPEG 2000 codestream and GML elements</strong></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"><strong>Marker</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Card.</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Values</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Mapping GML</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SIZ</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Marker code (Image and tile size)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Length of marker segment</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denotes capabilities that a decoder needs to properly decode the codestream</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>0000 0000 0000 0010</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/table12.png" alt="image">
 </div>
-<div class="paragraph">
-<p>Codestream restricted as described for Profile 0 from Table A.45</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Xsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Width of the reference grid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">= domainSet.limits.high[0]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ysiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Height of the reference grid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">= domainSet.limits.high[1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">X0siz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Horizontal offset from the origin of the reference grid to the left side of the image area</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">= domainSet.limits.low[0]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">YOsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vertical offset from the origin of the reference grid to the top side of the image area.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">= domainSet.limits.low[1]</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">XTsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Width of one reference tile with respect to the reference grid.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">YTsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Height of one reference tile with respect to the reference grid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">XTOsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Horizontal offset from the origin of the reference grid to the left side of the first tile</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">YTOsiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vertical offset from the origin of the reference grid to the top side of the first tile</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Csiz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Number of components in the image</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>1 for greyscale imagery<br>
-3 for RGB data<br>
-&#8230;&#8203;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rangeType.field.size()</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ssiz<sup>i</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Precision (depth) in bits and sign of the ith component samples</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/component</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>x000 0000 to x010 101 Component sample bit depth = value  1.</p>
 </div>
-<div class="paragraph">
-<p>x=0 (unsigned values)</p>
-</div>
-<div class="paragraph">
-<p>x=1 (signed values)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For each band i, rangeType.field[i].constraint.interval = "0 2<sup>[Ssiz</sup>i^1]-1"</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">XRsiz<sup>i</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Horizontal separation of a sample of ith component with respect to the reference grid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/component</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">In most case XRsiz<sup>i</sup> =1 for all components</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">YRsiz<sup>i</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vertical separation of a sample of ith component with respect to the reference grid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/component</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">In most case YRsiz<sup>i</sup> =1 for all components</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
 <p>For each component i of the image, its size is defined by :</p>
 </div>
@@ -13601,563 +13370,26 @@ NOTE 2 Example values: nearestneighbor, bilinear, biquadratic, bicubic, etc&#823
 <div class="paragraph text-center">
 <p><strong>Table 13. Mapping between boxes in JP2 format and GML elements</strong></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"><strong>Box name</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Type</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Description</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Card.</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Conditions/Values</strong></th>
-<th class="tableblock halign-left valign-top"><strong>Mapping GML</strong></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">JPEG 2000 Signature box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'jP\040\040'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The combination of the particular type and contents for this box enable an application to detect a common set of file transmission errors.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'&lt;CR&gt;&lt;LF&gt;&lt;0x87&gt;&lt;LF&gt;'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">File Type box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'ftyp'</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BR</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brand. This field specifies the Recommendation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">International Standard which completely defines this file.</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>'jp2\040'</p>
-</div>
-<div class="paragraph">
-<p>meaning is 15444-1, Annex I</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MinV</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Minor version. This parameter defines the minor version number of this JP2 specification for which the file complies.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CL</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Compatibility list. This field specifies a code representing this Recommendation</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">International<br>
-<br>
-Standard, another standard, or a profile of another standard, to which the file conforms.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..*</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>At least 'jp2\040'</p>
-</div>
-<div class="literalblock">
+<div class="imageblock text-center">
 <div class="content">
-<pre>'jpx\040' for GMLJP2 images</pre>
+<img src="./media/table13a.png" alt="image">
 </div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">JP2 Header box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'jp2h'</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ihdr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'ihdr'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Image Header box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HEIGHT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Image area height</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ysiz – Y0siz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">domainSet.limits.high[1]- domainSet.limits.low[1]</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">WIDTH</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Image area width</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Xsiz – X0siz</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">domainSet.limits.high[0]- domainSet.limits.low[0]</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NC</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Number of components</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">= Csiz</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>rangeType.field.size() if no use of palette-colour data.</p>
 </div>
-<div class="paragraph">
-<p>If use of a colour palette NC=1, rangeType.field.size()=3.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">BPC</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bits per component</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>If the bit depth of all components in the codesteam is the same (sign an precision)</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/table13b.png" alt="image">
 </div>
-<h1 id="_ssizi" class="sect0">Ssiz<sup>i</sup></h1>
-</div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For each band i, rangeType.field[i].constraint.interval = "0 2<sup>[Ssiz</sup>i^1]-1" if no use of palette-colour data.</p>
 </div>
-<div class="paragraph">
-<p>If use of a palette colour, there is no relation.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Compression type</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>7 (Other</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/table13c.png" alt="image">
 </div>
-<div class="paragraph">
-<p>values are reserved for ISO use)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UnkC</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Colourspace Unknown.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>0 (colourspace of the image is known and correctly specified in the Colourspace</p>
 </div>
-<div class="paragraph">
-<p>Specification boxes within the file)</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/table13d.png" alt="image">
 </div>
-<div class="paragraph">
-<p>1 (if the colourspace of the image is not known)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">IPR</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Intellectual Property</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">bpc<sup>i</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'bpcc'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bits per component</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Optional</p>
 </div>
-<div class="paragraph">
-<p>Required if component have different bit depth</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>x000 0000 to x010 101 Component sample bit depth = value  1.</p>
-</div>
-<div class="paragraph">
-<p>x=0 (unsigned values)</p>
-</div>
-<div class="paragraph">
-<p>x=1 (signed values)</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For each band i, rangeType.field[i].constraint.interval = "0 2<sup>[Ssiz</sup>i^1]-1"</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">colr<sup>i</sup></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'colr'</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Each Colour Specification box defines one method by which an application can interpret the colourspace of the</p>
-</div>
-<div class="paragraph">
-<p>decompressed image data</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">METH</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Specification method</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>1 (Enumerated Colourspace)</p>
-</div>
-<div class="paragraph">
-<p>2 (Restricted ICC profile)</p>
-</div>
-<div class="paragraph">
-<p>other values (Reserved for other ISO use)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PREC</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Precedence</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0 (field reserved for ISO use)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">APPROX</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Colourspace approximation.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EnumCS</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enumerated colourspace</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>16 (sRGB as defined by IEC 61966-2-1)</p>
-</div>
-<div class="paragraph">
-<p>17 (greyscale)</p>
-</div>
-<div class="paragraph">
-<p>18 (sYCC as defined by IEC 61966-2-1 Amd. 1)</p>
-</div>
-<div class="paragraph">
-<p>other values (Reserved for other ISO uses)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">pclr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'pclr'</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Palette box.</p>
-</div>
-<div class="paragraph">
-<p>This box specifies a palette that can be used to create channels from components.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cmap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'cmap'</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Component Mapping box.</p>
-</div>
-<div class="paragraph">
-<p>The Component Mapping box defines how image channels are identified from the actual components decoded from the codestream.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cdef</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'cdef'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Channel Definition box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The description provided shall be consistent with the rangeType description</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Number of channel descriptions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">= rangeType.field.size()</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cni</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Channel index</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/channel</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Typi</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Channel type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/channel</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>0 This channel is the colour image data for the associated colour.</p>
-</div>
-<div class="paragraph">
-<p>1 (Opacity)</p>
-</div>
-<div class="paragraph">
-<p>2 (Premultiplied opacity)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Asoci</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Channel association</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1/channel</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>0 (This channel is associated as the image as a whole)</p>
-</div>
-<div class="paragraph">
-<p>1 to (216– 2) This channel is associated with a particular colour as indicated by this value)</p>
-</div>
-<div class="paragraph">
-<p>216– 1 This channel is not associated with any particular colour.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">res</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'resd'</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">resc</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Capture Resolution box.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">resd</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Default Display Resolution box.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Contiguou Codestream box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'jp2c'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This box contains the codestream as defined by Annex A of ISO 15444-1.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Contains the encoded data in JPEG 2000.</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Intellectual property box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'jp2i'</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>This box contains intellectual property</p>
-</div>
-<div class="paragraph">
-<p>information about the image.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">XML Box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'xml\040'</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Box for XML formatted information to a</p>
-</div>
-<div class="paragraph">
-<p>JP2 file.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The place to provide GML within JPEG 2000 (see OGC standard for more details).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UUID box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'uuid'</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Box for additional information to a file</p>
-</div>
-<div class="paragraph">
-<p>without risking conflict with other vendors</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>The place to provide GeoJP2 georeference. Shall be consistent with georeference given by the origin of the grid "domainSet.origin" and the offset vector</p>
-</div>
-<div class="paragraph">
-<p>"domainSet.offsetVector".</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UUID info box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'uinf'</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Box for providing access to additional</p>
-</div>
-<div class="paragraph">
-<p>information associated with a UUID.</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UUID list box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'ulst'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This box specifies a list of UUIDs.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">N/A</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URL box</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">'url\040'</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This box specifies a URL.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect3">
 <h4 id="_theme_specific_requirements_and_recommendations_3">F.3.4. Theme-specific requirements and recommendations</h4>
