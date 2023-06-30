@@ -18,8 +18,8 @@
 |14|Land cover|LC||Published in draft|
 |15|Administrative units|AU||Published in draft|
 |16|Statistical units|SU||Published in draft|
-|17|Orthoimagery|OI|Final revision
-|18|Geology|GE|Final revision
+|17|Orthoimagery|OI||Published in draft|
+|18|Geology|GE||Published in draft|
 |**19**|Buildings|BU|
 |20|Agricultural and aquaculture facilities|AF|
 |21|Area management/restriction/regulation zones and reporting units|AM|
