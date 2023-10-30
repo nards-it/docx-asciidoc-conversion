@@ -466,7 +466,9 @@ This data specification proposes a simple classification of buildings, based on 
 |commerceAndServices – public service |Provided by DS US
 |===
 
+
 ====
+[.red.background]
 *Open issue 1*: The articulation between _Buildings_ and facilities was poorly tested or not tested at all during the consultation phase. So, there is a real risk that data between these themes will not connect as expected. This will be a point to be carefully monitored by the maintenance process of INSPIRE specifications.
 ====
 
@@ -530,7 +532,7 @@ General terms and definitions helpful for understanding the INSPIRE data specifi
 Specifically, for the theme _Buildings_, the following terms are defined:
 
 [discrete]
-=== 1. 2D data
+==== 1. 2D data
 
 Geometry of features is represented in a two-dimensional space
 
@@ -545,7 +547,7 @@ image::./media/image10.png[image,width=354,height=171, align=center]
 *Figure 7: A building represented by 2D data*
 
 [discrete]
-=== 2. 2.5D data
+==== 2. 2.5D data
 
 Geometry of features is represented in a three-dimensional space with the constraint that, for each (X,Y) position, there is only one Z.
 
@@ -556,7 +558,7 @@ image::./media/image11.png[image,width=378,height=178]
 *Figure 8: A building represented by 2,5D data*
 
 [discrete]
-=== 3. 3D data
+==== 3. 3D data
 
 Geometry of features is represented in a three-dimensional space.
 
@@ -569,7 +571,7 @@ EXAMPLE:
 *Figure 9: A building represented by 3D data*
 
 [discrete]
-=== 4. Building component
+==== 4. Building component
 
 Any sub-division or elements of a building.
 
@@ -2765,7 +2767,7 @@ For all LoDs, the level of building that was chosen to represent its bottom, has
 
 Moreover, in case of Lod1 and LoD2, the representation of the building is only a generalised representation. So, as in core 2D profile, the *horizontal geometry reference* (that is the base for extrusion of the 3D geometry) has to be documented
 
-The code list used to document the horizontal geometry reference is the same as in core 2D profile but the point references are not allowed (as a point horizontal geometry would not enable to represent the building as a volume). This is indicated by the constraint *\{NoPointReferencingIn3D }*. In other words, only the values footprint, lowestFloorAboveGround, roofEdge, envelopeAboveGround and envelope may be used.
+The code list used to document the horizontal geometry reference is the same as in core 2D profile but the point references are not allowed (as a point horizontal geometry would not enable to represent the building as a volume). This is indicated by the constraint *{ NoPointReferencingIn3D }*. In other words, only the values footprint, lowestFloorAboveGround, roofEdge, envelopeAboveGround and envelope may be used.
 
 NOTE1: The horizontal geometry reference is not necessary for LoD3 and LoD4 where the 3D geometry shall represent the exact and detailed shape of the building. It is why this attribute is specific to LoD1 and LoD2.
 
@@ -3346,7 +3348,7 @@ Buildings Base Extended is an abstract application schema describing the additio
 
 ====== Additional feature types
 
-image::./media/image82.png[image,width=603,height=625, align=center]
+image::./media/image82.png[image,width=482,height=500, align=center]
 
 [.text-center]
 *Figure 37: Main feature types of Buildings Base Extended*
@@ -3365,25 +3367,25 @@ Other constructions inherit of the attributes of AbstractConstruction (from <Bui
 
 [cols=",,,,"]
 |===
-a|image::./media/image83.png[image,width=126,height=90] a|image::./media/image84.png[image,width=101,height=98] a|image::./media/image85.png[image,width=38,height=109] a|image::./media/image86.jpeg[image,width=128,height=53] a|image::./media/image87.jpeg[image,width=114,height=61, align=center]
+^a|image::./media/image83.png[image,width=126,height=90] ^a|image::./media/image84.png[image,width=101,height=98] ^a|image::./media/image85.png[image,width=38,height=109] ^a|image::./media/image86.jpeg[image,width=128,height=53] ^a|image::./media/image87.jpeg[image,width=114,height=61, align=center]
 ^|acousticFence 
 ^|antenna
 ^|chimney
 ^|bridge
 ^|bridge
-a|image::./media/image88.png[image,width=107,height=62] a|image::./media/image89.png[image,width=92,height=86] a|image::./media/image90.jpeg[image,width=59,height=125] a|image::./media/image91.png[image,width=73,height=108] a|image::./media/image92.png[image,width=77,height=123, align=center]
+^a|image::./media/image88.png[image,width=107,height=62] ^a|image::./media/image89.png[image,width=92,height=86] ^a|image::./media/image90.jpeg[image,width=59,height=125] ^a|image::./media/image91.png[image,width=73,height=108] ^a|image::./media/image92.png[image,width=77,height=123, align=center]
 ^|cityWall
 ^|crane
 ^|monument
 ^|monument
 ^|monument
-a|image::./media/image93.jpeg[image,width=98,height=74] a|image::./media/image94.png[image,width=94,height=80] a|image::./media/image95.jpeg[image,width=90,height=70] a|image::./media/image96.png[image,width=115,height=65] a|image::./media/image97.png[image,width=117,height=44, align=center]
+^a|image::./media/image93.jpeg[image,width=98,height=74] ^a|image::./media/image94.png[image,width=94,height=80] ^a|image::./media/image95.jpeg[image,width=90,height=70] ^a|image::./media/image96.png[image,width=115,height=65] ^a|image::./media/image97.png[image,width=117,height=44, align=center]
 ^|monument
 ^|monument
 ^|openAirPool
 ^|protectiveStructure
 ^|protectiveStructure
-a|image::./media/image98.jpeg[image,width=69,height=98] a|image::./media/image99.png[image,width=70,height=108] a|image::./media/image100.png[image,width=127,height=83] a|image::./media/image101.png[image,width=111,height=80] a|image::./media/image102.jpeg[image,width=110,height=82, align=center]
+^a|image::./media/image98.jpeg[image,width=69,height=98] ^a|image::./media/image99.png[image,width=70,height=108] ^a|image::./media/image100.png[image,width=127,height=83] ^a|image::./media/image101.png[image,width=111,height=80] ^a|image::./media/image102.jpeg[image,width=110,height=82, align=center]
 ^|pylon
 ^|retainingWall
 ^|solarPanel
@@ -3400,37 +3402,37 @@ Installations inherit of the attributes of AbstractConstruction (from <Buildings
 
 [cols=",,,,"]
 |===
-a|image::./media/image103.png[image,width=115,height=76] a|image::./media/image104.png[image,width=79,height=134] a|image::./media/image105.png[image,width=93,height=83] a|image::./media/image106.jpeg[image,width=83,height=110] a|image::./media/image107.png[image,width=130,height=72, align=center]
+^a|image::./media/image103.png[image,width=115,height=76] ^a|image::./media/image104.png[image,width=79,height=134] ^a|image::./media/image105.png[image,width=93,height=83] ^a|image::./media/image106.jpeg[image,width=83,height=110] ^a|image::./media/image107.png[image,width=130,height=72, align=center]
 ^|airConditioningUnit
 ^|airDuct
 ^|antenna
 ^|antenna
 ^|arcade
-a|image::./media/image108.jpeg[image,width=96,height=107] 
-a|image::./media/image109.png[image,width=104,height=81] 
-a|image::./media/image110.png[image,width=77,height=93] 
-a|image::./media/image111.png[image,width=112,height=94] 
-a|image::./media/image112.jpeg[image,width=117,height=81, align=center]
+^a|image::./media/image108.jpeg[image,width=96,height=107] 
+^a|image::./media/image109.png[image,width=104,height=81] 
+^a|image::./media/image110.png[image,width=77,height=93] 
+^a|image::./media/image111.png[image,width=112,height=94] 
+^a|image::./media/image112.jpeg[image,width=117,height=81, align=center]
 ^|balcony
 ^|chimney
 ^|chimney
 ^|cradle
 ^|dormer
-a|image::./media/image113.png[image,width=75,height=110] 
-a|image::./media/image114.jpeg[image,width=108,height=76] 
-a|image::./media/image115.jpeg[image,width=102,height=76] 
-a|image::./media/image116.jpeg[image,width=97,height=73] 
-a|image::./media/image117.png[image,width=102,height=101, align=center]
+^a|image::./media/image113.png[image,width=75,height=110] 
+^a|image::./media/image114.jpeg[image,width=108,height=76] 
+^a|image::./media/image115.jpeg[image,width=102,height=76] 
+^a|image::./media/image116.jpeg[image,width=97,height=73] 
+^a|image::./media/image117.png[image,width=102,height=101, align=center]
 ^|externalLift
 ^|railing
 ^|ramp
 ^|solarPanel
 ^|stairway
-a|image::./media/image118.png[image,width=87,height=172] 
-a|image::./media/image119.png[image,width=94,height=136] 
-a|image::./media/image120.png[image,width=90,height=128] 
-a|image::./media/image121.png[image,width=84,height=115] 
-a|image::./media/image122.png[image,width=104,height=125, align=center]
+^a|image::./media/image118.png[image,width=87,height=172] 
+^a|image::./media/image119.png[image,width=94,height=136] 
+^a|image::./media/image120.png[image,width=90,height=128] 
+^a|image::./media/image121.png[image,width=84,height=115] 
+^a|image::./media/image122.png[image,width=104,height=125, align=center]
 ^|stairway
 ^|stairway
 ^|tower
@@ -3482,32 +3484,32 @@ This attribute may take the following values:
 
 [cols=",,,,"]
 |===
-a|image::./media/image289.png[image align=center]
-a|image::./media/image290.png[image, align=center]
-a|image::./media/image291.png[image,align=center]
-a|image::./media/image292.png[image,align=center]
-a|image::./media/image293.png[image,align=center]
+^a|image::./media/image289.png[image align=center]
+^a|image::./media/image290.png[image, align=center]
+^a|image::./media/image291.png[image,align=center]
+^a|image::./media/image292.png[image,align=center]
+^a|image::./media/image293.png[image,align=center]
 ^|flatRoof ^|monopitchRoof ^|gabledRoof ^|hippedRoof ^|MansardRoof
-a|image::./media/image294.png[image,width=104,height=125, align=center]
-a|image::./media/image126.png[image,width=104,height=125, align=center]
-a|image::./media/image295.png[image,width=104,height=125, align=center]
-a|image::./media/image296.png[image,width=104,height=125, align=center]
-a|image::./media/image297.png[image,width=104,height=125, align=center]
+^a|image::./media/image294.png[image,width=104,height=125, align=center]
+^a|image::./media/image126.png[image,width=104,height=125, align=center]
+^a|image::./media/image295.png[image,width=104,height=125, align=center]
+^a|image::./media/image296.png[image,width=104,height=125, align=center]
+^a|image::./media/image297.png[image,width=104,height=125, align=center]
 
 2+^|
 halfHippedRoof ^|coneRoof ^|pyramidalBroachRoof ^|copulaRoof
 
-a|image::./media/image298.png[image] 
-a|image::./media/image299.png[image]
-a|image::./media/image127.png[image,width=136,height=81]
-a|image::./media/image128.png[image,width=136,height=81]
-a|image::./media/image300.png[image]
+^a|image::./media/image298.png[image] 
+^a|image::./media/image299.png[image]
+^a|image::./media/image127.png[image,width=136,height=81]
+^a|image::./media/image128.png[image,width=136,height=81]
+^a|image::./media/image300.png[image]
 ^|archRoof 
 2+^|dualPentRoof 
 2+^|sawToothRoof 
-a|image::./media/image301.png[image]
-a|image::./media/image129.png[image,width=107,height=71] a|image::./media/image130.png[image,width=132,height=68] | |
-2+^|SpavilionRoof 2+^|hyperbolicParabaloidalRoof |
+^a|image::./media/image301.png[image]
+^a|image::./media/image129.png[image,width=107,height=71] 2+^a|image::./media/image130.png[image,width=132,height=68] |
+2+^|pavilionRoof 2+^|hyperbolicParabaloidalRoof |
 |===
 
 [.text-center]
@@ -3519,35 +3521,35 @@ This attribute may take the following values:
 
 [cols=",,,"]
 |===
-a|image::./media/image131.jpeg[adobe2.jpg,width=118,height=90]
-a|image::./media/image132.jpeg[concrete-block-2.jpg,width=128,height=96]
-a|image::./media/image133.jpeg[rammedearth2.jpg,width=145,height=99]
-a|image::./media/image134.jpeg[URBM-2.jpg,width=156,height=100]
+^a|image::./media/image131.jpeg[adobe2.jpg,width=118,height=90]
+^a|image::./media/image132.jpeg[concrete-block-2.jpg,width=128,height=96]
+^a|image::./media/image133.jpeg[rammedearth2.jpg,width=145,height=99]
+^a|image::./media/image134.jpeg[URBM-2.jpg,width=156,height=100]
 ^|adobeBlockWalls
 ^|concreteBlockMasonry
 ^|earth
 ^|firedBrickMasonry
-a|image::./media/image135.jpeg[slum1.jpg,width=126,height=96]
-a|image::./media/image136.jpeg[massive_cut_stone-1.jpg,width=86,height=108]
-a|image::./media/image137.jpeg[mobilehome1.jpg,width=132,height=88]
-a|image::./media/image138.jpeg[mudwall1.jpg,width=129,height=98]
+^a|image::./media/image135.jpeg[slum1.jpg,width=126,height=96]
+^a|image::./media/image136.jpeg[massive_cut_stone-1.jpg,width=86,height=108]
+^a|image::./media/image137.jpeg[mobilehome1.jpg,width=132,height=88]
+^a|image::./media/image138.jpeg[mudwall1.jpg,width=129,height=98]
 ^|informalConstructions 
 ^|massiveStoneMasonry
 ^|mobileHomes
 ^|mudWalls
-a|image::./media/image139.jpeg[precast-1.jpg,width=138,height=93]
-a|image::./media/image140.jpeg[rcbldg1.jpg,width=107,height=98]
-a|image::./media/image141.jpeg[ReinforcedMasonry2.jpg,width=138,height=104]
-a|image::./media/image142.jpeg[rubble_stone_1.jpg,width=130,height=115]
+^a|image::./media/image139.jpeg[precast-1.jpg,width=138,height=93]
+^a|image::./media/image140.jpeg[rcbldg1.jpg,width=107,height=98]
+^a|image::./media/image141.jpeg[ReinforcedMasonry2.jpg,width=138,height=104]
+^a|image::./media/image142.jpeg[rubble_stone_1.jpg,width=130,height=115]
 ^a|precastConcrete
 Tilt-upWalls
 ^|reinforcedConcrete
 ^|reinforcedMasonry
 ^|rubleStoneMasonry
-a|image::./media/image143.jpeg[image,width=138,height=92]
-a|image::./media/image144.jpeg[cutstone1.jpg,width=135,height=99]
-a|image::./media/image145.jpeg[wooden1.jpg,width=148,height=99]
-a|image::./media/image146.jpeg[Description : Fichier:Fachwerkhäuser - Ochsenfurt.jpg,width=131,height=87]
+^a|image::./media/image143.jpeg[image,width=138,height=92]
+^a|image::./media/image144.jpeg[cutstone1.jpg,width=135,height=99]
+^a|image::./media/image145.jpeg[wooden1.jpg,width=148,height=99]
+^a|image::./media/image146.jpeg[Description : Fichier:Fachwerkhäuser - Ochsenfurt.jpg,width=131,height=87]
 ^|steel
 ^|stoneMasonryBlock
 ^|wood
@@ -3563,26 +3565,26 @@ This attribute may take the following values:
 
 [cols=",,,"]
 |===
-a|image::./media/image147.png[adobe_facade_2.png,width=137,height=92]
-a|image::./media/image148.jpeg[asbestos_facade_2.jpg,width=128,height=97]
-a|image::./media/image149.jpeg[ceramic_tile_facade_2.jpg,width=128,height=106]
-a|image::./media/image150.jpeg[composite_facade_2.jpg,width=116,height=116]
+^a|image::./media/image147.png[adobe_facade_2.png,width=137,height=92]
+^a|image::./media/image148.jpeg[asbestos_facade_2.jpg,width=128,height=97]
+^a|image::./media/image149.jpeg[ceramic_tile_facade_2.jpg,width=128,height=106]
+^a|image::./media/image150.jpeg[composite_facade_2.jpg,width=116,height=116]
 ^|adobe
 ^|asbestos
 ^|ceramicTiles
 ^|composite
-a|image::./media/image151.jpeg[concrete_facade_2.jpg,width=126,height=95]
-a|image::./media/image152.jpeg[glass_facade_1.jpg,width=127,height=92]
-a|image::./media/image153.jpeg[limestone_facade_2.jpg,width=105,height=98]
-a|image::./media/image154.jpeg[masonry_facade_1.jpg,width=106,height=106]
+^a|image::./media/image151.jpeg[concrete_facade_2.jpg,width=126,height=95]
+^a|image::./media/image152.jpeg[glass_facade_1.jpg,width=127,height=92]
+^a|image::./media/image153.jpeg[limestone_facade_2.jpg,width=105,height=98]
+^a|image::./media/image154.jpeg[masonry_facade_1.jpg,width=106,height=106]
 ^|concrete
 ^|glass
 ^|limestone
 ^|masonry
-a|image::./media/image155.jpeg[metal_facade_2.jpg,width=143,height=94]
-a|image::./media/image156.jpeg[natural_stone_facade_2.jpg,width=124,height=102]
-a|image::./media/image157.jpeg[green_facade_2.jpg,width=131,height=100]
-a|image::./media/image158.jpeg[wooden_facade.jpg,width=112,height=112]
+^a|image::./media/image155.jpeg[metal_facade_2.jpg,width=143,height=94]
+^a|image::./media/image156.jpeg[natural_stone_facade_2.jpg,width=124,height=102]
+^a|image::./media/image157.jpeg[green_facade_2.jpg,width=131,height=100]
+^a|image::./media/image158.jpeg[wooden_facade.jpg,width=112,height=112]
 ^|metal
 ^|naturalStone
 ^|vegetated
@@ -3598,31 +3600,31 @@ This attribute may take the following values:
 
 [cols=",,,"]
 |===
-a|image::./media/image159.jpeg[Asbestos_tile_2.jpg,width=155,height=67]
-a|image::./media/image160.jpeg[ceramic_tile_2.jpg,width=122,height=103]
-a|image::./media/image161.jpeg[clay_tile_1.jpg,width=85,height=101]
-a|image::./media/image162.jpeg[asphalt_shingle_2.jpg,width=119,height=90]
+^a|image::./media/image159.jpeg[Asbestos_tile_2.jpg,width=155,height=67]
+^a|image::./media/image160.jpeg[ceramic_tile_2.jpg,width=122,height=103]
+^a|image::./media/image161.jpeg[clay_tile_1.jpg,width=85,height=101]
+^a|image::./media/image162.jpeg[asphalt_shingle_2.jpg,width=119,height=90]
 ^|asbestos
 ^|ceramicTiles
 ^|clayTile
 ^|composition
-a|image::./media/image163.jpeg[concrete_tile_1.jpg,width=150,height=87]
-a|image::./media/image164.jpeg[corrugated_1.jpg,width=111,height=100]
-a|image::./media/image165.jpeg[glass_roof_2.jpg,width=144,height=97]
-a|image::./media/image166.jpeg[hot_asphalt_1.jpg,width=136,height=103]
+^a|image::./media/image163.jpeg[concrete_tile_1.jpg,width=150,height=87]
+^a|image::./media/image164.jpeg[corrugated_1.jpg,width=111,height=100]
+^a|image::./media/image165.jpeg[glass_roof_2.jpg,width=144,height=97]
+^a|image::./media/image166.jpeg[hot_asphalt_1.jpg,width=136,height=103]
 ^|concreteTile
 ^|corrugatedSheet
 ^|glass
 ^|hotMoppedAsphalt
-a|image::./media/image167.jpeg[metal_roof_3.jpg,width=151,height=100]
-a|image::./media/image168.jpeg[rc_roof_1.jpg,width=145,height=106]
-a|image::./media/image169.jpeg[slate_roof_2.jpg,width=143,height=108]
-a|image::./media/image170.jpeg[slate_roof_1.jpg,width=141,height=106]
+^a|image::./media/image167.jpeg[metal_roof_3.jpg,width=151,height=100]
+^a|image::./media/image168.jpeg[rc_roof_1.jpg,width=145,height=106]
+^a|image::./media/image169.jpeg[slate_roof_2.jpg,width=143,height=108]
+^a|image::./media/image170.jpeg[slate_roof_1.jpg,width=141,height=106]
 ^|metal ^|reinforcedConcrete ^|slate ^|slate
-a|image::./media/image171.jpeg[straw_roof_2.jpg,width=154,height=107]
-a|image::./media/image172.jpeg[straw_roof_1.jpg,width=140,height=105]
-a|image::./media/image173.jpeg[vegetated_roof_2.jpg,width=149,height=112]
-a|image::./media/image174.jpeg[wood_shingles_1.jpg,width=136,height=89]
+^a|image::./media/image171.jpeg[straw_roof_2.jpg,width=154,height=107]
+^a|image::./media/image172.jpeg[straw_roof_1.jpg,width=140,height=105]
+^a|image::./media/image173.jpeg[vegetated_roof_2.jpg,width=149,height=112]
+^a|image::./media/image174.jpeg[wood_shingles_1.jpg,width=136,height=89]
 ^|thatch
 ^|thatch
 ^|vegetatedRoof
@@ -9201,7 +9203,7 @@ image::./media/image310.png[image]
 [.text-center]
 *Example 2 : from Eurostat classification to INSPIRE*
 
-image::./media/image310.png[image, align=center]
+image::./media/image31.png[image, align=center]
 
 [.text-center]
 *Figure 73: Matching example from EUROSTAT classification to INSPIRE classification of current use*
@@ -9816,6 +9818,7 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all the spatial object / data types that have corresponding types in the source dataset after the necessary transformations fulfil the requirements set out in the ISDSS Regulation and
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
+[.red.background]
 ====
 *Open issue 2:* Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suit for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
 ====
@@ -10802,9 +10805,9 @@ Hydrographic Organisations have the mission to ensure safety of sea navigation b
 2+^|Marine charts
 |===
 
-_*Part 3:* *Detailed, structured description of the use case *_
+*_Part 3:_* *_Detailed, structured description of the use case_*
 
-[cols=",",options="headers"]
+[cols=",",options="header"]
 |===
 2+|Use Case Description
 |Name |Updating of Electronic Navigation Charts using INSPIRE building data
@@ -11350,7 +11353,7 @@ image::./media/image249.png[image,width=487,height=260, align=center]
 *Use case diagram for noise assessment*
 
 
-NOTE this use case diagram applies to B4.1, B4.2 and B4.3.
+_NOTE this use case diagram applies to B4.1, B4.2 and B4.3._
 
 
 *_Part 2: Narrative explanation of the use case_*
@@ -11500,7 +11503,7 @@ However, currently, only the assessment of energy performance is required by an 
 
 Energy consumption produces emissions of CO~2~ and so contributes to the greenhouse effect and to the increase of temperatures.
 
-Over a decade ago, most countries joined an international treaty -- the _United Nations Framework Convention on Climate Change_ (UNFCCC) -- to begin to consider what can be done to reduce global warming and to cope with whatever temperature increases are inevitable. More recently, a number of nations approved an addition to the treaty: the _Kyoto Protocol_, which has more powerful (and legally binding) measures.
+Over a decade ago, most countries joined an international treaty - the [.underline]#_United Nations Framework Convention on Climate Change_# (UNFCCC) - to begin to consider what can be done to reduce global warming and to cope with whatever temperature increases are inevitable. More recently, a number of nations approved an addition to the treaty: the _Kyoto Protocol_, which has more powerful (and legally binding) measures.
 
 At European level, the Energy Performance of Buildings Directive, (EPBD) requires unique building identification for the buildings certificates.
 
@@ -11795,15 +11798,13 @@ image::./media/image261.png[image,width=515,height=254, align=center]
 
 *_Part 2: Narrative explanation of the use case_*
 
-[.text-center]
-*Example 1: find better location for new antennas*
+[.underline]#*Example 1: find better location for new antennas*#
 
 The purpose is to find, for potential new antennas, the buildings reached by this antenna and then, to estimate the percentage of buildings covered /reached by this antenna.
 
 Several potential locations for the antenna have been identified. For each of this position, a simulation is done, by making "visibility maps" from the antennas (see common use case B1.1 modelling of physical phenomena). The location that is "visible" by the higher percentage of buildings will be considered as the best one.
 
-[.text-center]
-*Example 2: prove the necessity of a new antenna.*
+[.underline]#*Example 2: prove the necessity of a new antenna.*#
 
 A telecommunication company is initiating a project related to implementation of new antennas for mobile phone. The influence area of an antenna depends of the landscape, for two reasons:
 
@@ -11816,15 +11817,13 @@ As there are doubts about influence of phone antennas on health, the telecommuni
 
 So, the telecommunication company need to determine the characteristics of the area around the new antenna. For instance, the need for mobile phone is bigger in large business areas than in residential areas. The density of buildings is also a significant criteria. There is socio-economic data on statistical units but building data is required for more accurate spatial location of this information (see common use case B1.2.2 Computation of population at day).
 
-[.text-center]
-*Example 3: Location of new bus stops*
+[.underline]#*Example 3: Location of new bus stops*#
 
 There is obvious need for organizing and scheduling of public transport. A main goal of the application is to create / change / delete bus stops and bus stations and to connect the different stops and stations so that they reach a maximum number of people (in city centres, near points of interest ...) in the shortest possible time. Another purpose is to provide up-to-date information about the routes and stops to all the employees and citizens.
 
 Several scenarios are envisaged for the location of a new bus stop; the area served by the bus stop is delimited (e.g. less than 300 m or less than 5 or 10 minutes walking). Then, the application computes the population that may beneficiate of this new bus stop (see common use case B1.2 about computation of population at day and at night).
 
-[.text-center]
-*Example 4 : Location of new highway (or high speed train)*
+[.underline]#*Example 4 : Location of new highway (or high speed train)*#
 
 Location of new highway is a complex process in which several steps are required. The purpose is double:
 
@@ -11835,8 +11834,8 @@ The first step is to define the rough areas where the highway should be located.
 
 [cols=","]
 |===
-a|image::./media/image262.png[image,width=198,height=210, align=center]
-a|image::./media/image263.png[image,width=377,height=211, align=center]
+^a|image::./media/image262.png[image,width=198,height=210, align=center]
+^a|image::./media/image263.png[image,width=377,height=211, align=center]
 ^|_Rough area(s) where the highway should be located_
 ^|_Number of buildings and inhabitants 1 km around the highway_
 |===
@@ -11850,7 +11849,7 @@ Noise maps may be simulated to show the impact of the new highway or railway.
 
 [cols=",,"]
 |===
-a|image::./media/image264.png[image,width=183,height=171] a|image::./media/image265.png[image,width=181,height=168] a|image::./media/image266.png[image,width=181,height=166, align=center]
+^a|image::./media/image264.png[image,width=183,height=171] ^a|image::./media/image265.png[image,width=181,height=168] ^a|image::./media/image266.png[image,width=181,height=166, align=center]
 ^|_Current status_ 
 ^|_With anti-noise wall_ 
 ^|_With tunnel_
@@ -11859,8 +11858,7 @@ a|image::./media/image264.png[image,width=183,height=171] a|image::./media/image
 
 3D representation to make 3D model simulating the new project are useful to communicate with the inhabitants impacted by the project.
 
-[.text-center]
-*Example 5: Location of a new wind farm*
+[.underline]#*Example 5: Location of a new wind farm*#
 
 An electricity company is looking for new sites to set up wind turbines. In first phase, geographic data is required to identify potential sites. Then, the study is completed by field survey.
 
@@ -11900,8 +11898,7 @@ But it is necessary to get owner agreement. The *cadastral parcels* located in t
 |Windy areas in Europe
 |===
 
-[.text-center]
-*Example 4 : High voltage power line*
+[.underline]#*Example 4 : High voltage power line*#
 
 An electricity company need to set up a new high voltage power line crossing an inhabited area.
 
@@ -11936,8 +11933,7 @@ Using the attributes *2D geometry* (preferably captured as *envelope*) and *heig
 
 *_Part 2: Narrative explanation of the use case_*
 
-[.text-center]
-*Example 1: computing population reached by television channels*
+[.underline]#*Example 1: computing population reached by television channels*#
 
 The national government wants to assess the percentage of population that receive television channels.
 
@@ -11971,8 +11967,7 @@ NOTE 1: This example shows the interest of multiple representations of buildings
 
 NOTE 2: In a current statistical project of Eurostat, the population has to be related to the cells of a km² grid. The methodology for doing so (transfer of statistical data from existing statistical units to a new kind of statistical units) might be quite similar.
 
-[.text-center]
-*Example 2: managing refuse collection*
+[.underline]#*Example 2: managing refuse collection*#
 
 A public body has to organise the refuse collection in a city. A building in this context will either be a dwelling or premise that requires local authority service delivery in the form of waste collection services.
 
@@ -12003,8 +11998,7 @@ Temporal studies are carried out in order to prepare evolutions of the refuse co
 |Anywhere in Europe
 |===
 
-[.text-center]
-*Example 3 : Landing of stratospheric balloons*
+[.underline]#*Example 3 : Landing of stratospheric balloons*#
 
 French Spatial Agency (CNES) is in charge of launching stratospheric balloons over France and other countries. These stratospheric balloons are not inhabited; they are guided either from CNES in Toulouse or from the launch site.
 
