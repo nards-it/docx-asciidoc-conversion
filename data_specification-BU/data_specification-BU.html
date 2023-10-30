@@ -1979,7 +1979,7 @@ Fax: 39-0332-7866325<br>
 </table>
 <div class="exampleblock">
 <div class="content">
-<div class="paragraph">
+<div class="paragraph red background">
 <p><strong>Open issue 1</strong>: The articulation between <em>Buildings</em> and facilities was poorly tested or not tested at all during the consultation phase. So, there is a real risk that data between these themes will not connect as expected. This will be a point to be carefully monitored by the maintenance process of INSPIRE specifications.</p>
 </div>
 </div>
@@ -2080,7 +2080,7 @@ Fax: 39-0332-7866325<br>
 <div class="paragraph">
 <p>Specifically, for the theme <em>Buildings</em>, the following terms are defined:</p>
 </div>
-<h3 id="_1_2d_data" class="discrete">1. 2D data</h3>
+<h4 id="_1_2d_data" class="discrete">1. 2D data</h4>
 <div class="paragraph">
 <p>Geometry of features is represented in a two-dimensional space</p>
 </div>
@@ -2098,7 +2098,7 @@ Fax: 39-0332-7866325<br>
 <div class="paragraph text-center">
 <p><strong>Figure 7: A building represented by 2D data</strong></p>
 </div>
-<h3 id="_2_2_5d_data" class="discrete">2. 2.5D data</h3>
+<h4 id="_2_2_5d_data" class="discrete">2. 2.5D data</h4>
 <div class="paragraph">
 <p>Geometry of features is represented in a three-dimensional space with the constraint that, for each (X,Y) position, there is only one Z.</p>
 </div>
@@ -2113,7 +2113,7 @@ Fax: 39-0332-7866325<br>
 <div class="paragraph text-center">
 <p><strong>Figure 8: A building represented by 2,5D data</strong></p>
 </div>
-<h3 id="_3_3d_data" class="discrete">3. 3D data</h3>
+<h4 id="_3_3d_data" class="discrete">3. 3D data</h4>
 <div class="paragraph">
 <p>Geometry of features is represented in a three-dimensional space.</p>
 </div>
@@ -2131,7 +2131,7 @@ Fax: 39-0332-7866325<br>
 <div class="paragraph text-center">
 <p><strong>Figure 9: A building represented by 3D data</strong></p>
 </div>
-<h3 id="_4_building_component" class="discrete">4. Building component</h3>
+<h4 id="_4_building_component" class="discrete">4. Building component</h4>
 <div class="paragraph">
 <p>Any sub-division or elements of a building.</p>
 </div>
@@ -7329,7 +7329,7 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <p>Moreover, in case of Lod1 and LoD2, the representation of the building is only a generalised representation. So, as in core 2D profile, the <strong>horizontal geometry reference</strong> (that is the base for extrusion of the 3D geometry) has to be documented</p>
 </div>
 <div class="paragraph">
-<p>The code list used to document the horizontal geometry reference is the same as in core 2D profile but the point references are not allowed (as a point horizontal geometry would not enable to represent the building as a volume). This is indicated by the constraint <strong>\{NoPointReferencingIn3D }</strong>. In other words, only the values footprint, lowestFloorAboveGround, roofEdge, envelopeAboveGround and envelope may be used.</p>
+<p>The code list used to document the horizontal geometry reference is the same as in core 2D profile but the point references are not allowed (as a point horizontal geometry would not enable to represent the building as a volume). This is indicated by the constraint <strong>{ NoPointReferencingIn3D }</strong>. In other words, only the values footprint, lowestFloorAboveGround, roofEdge, envelopeAboveGround and envelope may be used.</p>
 </div>
 <div class="paragraph">
 <p>NOTE1: The horizontal geometry reference is not necessary for LoD3 and LoD4 where the 3D geometry shall represent the exact and detailed shape of the building. It is why this attribute is specific to LoD1 and LoD2.</p>
@@ -8759,7 +8759,7 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <h6 id="_additional_feature_types">5.6.1.1.1. Additional feature types</h6>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image82.png" alt="image" width="603" height="625">
+<img src="./media/image82.png" alt="image" width="482" height="500">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -8800,27 +8800,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image83.png" alt="image" width="126" height="90">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image84.png" alt="image" width="101" height="98">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image85.png" alt="image" width="38" height="109">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image86.jpeg" alt="image" width="128" height="53">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image87.jpeg" alt="image" width="114" height="61">
 </div>
@@ -8834,27 +8834,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">bridge</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image88.png" alt="image" width="107" height="62">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image89.png" alt="image" width="92" height="86">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image90.jpeg" alt="image" width="59" height="125">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image91.png" alt="image" width="73" height="108">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image92.png" alt="image" width="77" height="123">
 </div>
@@ -8868,27 +8868,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">monument</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image93.jpeg" alt="image" width="98" height="74">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image94.png" alt="image" width="94" height="80">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image95.jpeg" alt="image" width="90" height="70">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image96.png" alt="image" width="115" height="65">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image97.png" alt="image" width="117" height="44">
 </div>
@@ -8902,27 +8902,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">protectiveStructure</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image98.jpeg" alt="image" width="69" height="98">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image99.png" alt="image" width="70" height="108">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image100.png" alt="image" width="127" height="83">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image101.png" alt="image" width="111" height="80">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image102.jpeg" alt="image" width="110" height="82">
 </div>
@@ -8956,27 +8956,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image103.png" alt="image" width="115" height="76">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image104.png" alt="image" width="79" height="134">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image105.png" alt="image" width="93" height="83">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image106.jpeg" alt="image" width="83" height="110">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image107.png" alt="image" width="130" height="72">
 </div>
@@ -8990,27 +8990,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">arcade</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image108.jpeg" alt="image" width="96" height="107">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image109.png" alt="image" width="104" height="81">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image110.png" alt="image" width="77" height="93">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image111.png" alt="image" width="112" height="94">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image112.jpeg" alt="image" width="117" height="81">
 </div>
@@ -9024,27 +9024,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">dormer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image113.png" alt="image" width="75" height="110">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image114.jpeg" alt="image" width="108" height="76">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image115.jpeg" alt="image" width="102" height="76">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image116.jpeg" alt="image" width="97" height="73">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image117.png" alt="image" width="102" height="101">
 </div>
@@ -9058,27 +9058,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">stairway</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image118.png" alt="image" width="87" height="172">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image119.png" alt="image" width="94" height="136">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image120.png" alt="image" width="90" height="128">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image121.png" alt="image" width="84" height="115">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image122.png" alt="image" width="104" height="125">
 </div>
@@ -9168,27 +9168,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image289.png" alt="image align=center">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image290.png" alt="image">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image291.png" alt="image">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image292.png" alt="image">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image293.png" alt="image">
 </div>
@@ -9202,27 +9202,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">MansardRoof</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image294.png" alt="image" width="104" height="125">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image126.png" alt="image" width="104" height="125">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image295.png" alt="image" width="104" height="125">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image296.png" alt="image" width="104" height="125">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image297.png" alt="image" width="104" height="125">
 </div>
@@ -9235,27 +9235,27 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">copulaRoof</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image298.png" alt="image">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image299.png" alt="image">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image127.png" alt="image" width="136" height="81">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image128.png" alt="image" width="136" height="81">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image300.png" alt="image">
 </div>
@@ -9267,26 +9267,25 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">sawToothRoof</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image301.png" alt="image">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image129.png" alt="image" width="107" height="71">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top" colspan="2"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image130.png" alt="image" width="132" height="68">
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">SpavilionRoof</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">pavilionRoof</p></td>
 <td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">hyperbolicParabaloidalRoof</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -9310,22 +9309,22 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image131.jpeg" alt="adobe2.jpg" width="118" height="90">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image132.jpeg" alt="concrete-block-2.jpg" width="128" height="96">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image133.jpeg" alt="rammedearth2.jpg" width="145" height="99">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image134.jpeg" alt="URBM-2.jpg" width="156" height="100">
 </div>
@@ -9338,22 +9337,22 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">firedBrickMasonry</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image135.jpeg" alt="slum1.jpg" width="126" height="96">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image136.jpeg" alt="massive_cut_stone-1.jpg" width="86" height="108">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image137.jpeg" alt="mobilehome1.jpg" width="132" height="88">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image138.jpeg" alt="mudwall1.jpg" width="129" height="98">
 </div>
@@ -9366,22 +9365,22 @@ EXAMPLE: A building may be composed of two building parts having different heigh
 <td class="tableblock halign-center valign-top"><p class="tableblock">mudWalls</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image139.jpeg" alt="precast-1.jpg" width="138" height="93">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image140.jpeg" alt="rcbldg1.jpg" width="107" height="98">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image141.jpeg" alt="ReinforcedMasonry2.jpg" width="138" height="104">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image142.jpeg" alt="rubble_stone_1.jpg" width="130" height="115">
 </div>
@@ -9397,22 +9396,22 @@ Tilt-upWalls</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock">rubleStoneMasonry</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image143.jpeg" alt="image" width="138" height="92">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image144.jpeg" alt="cutstone1.jpg" width="135" height="99">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image145.jpeg" alt="wooden1.jpg" width="148" height="99">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image146.jpeg" alt="Description : Fichier:Fachwerkhäuser - Ochsenfurt.jpg" width="131" height="87">
 </div>
@@ -9444,22 +9443,22 @@ Tilt-upWalls</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image147.png" alt="adobe_facade_2.png" width="137" height="92">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image148.jpeg" alt="asbestos_facade_2.jpg" width="128" height="97">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image149.jpeg" alt="ceramic_tile_facade_2.jpg" width="128" height="106">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image150.jpeg" alt="composite_facade_2.jpg" width="116" height="116">
 </div>
@@ -9472,22 +9471,22 @@ Tilt-upWalls</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock">composite</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image151.jpeg" alt="concrete_facade_2.jpg" width="126" height="95">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image152.jpeg" alt="glass_facade_1.jpg" width="127" height="92">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image153.jpeg" alt="limestone_facade_2.jpg" width="105" height="98">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image154.jpeg" alt="masonry_facade_1.jpg" width="106" height="106">
 </div>
@@ -9500,22 +9499,22 @@ Tilt-upWalls</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock">masonry</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image155.jpeg" alt="metal_facade_2.jpg" width="143" height="94">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image156.jpeg" alt="natural_stone_facade_2.jpg" width="124" height="102">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image157.jpeg" alt="green_facade_2.jpg" width="131" height="100">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image158.jpeg" alt="wooden_facade.jpg" width="112" height="112">
 </div>
@@ -9547,22 +9546,22 @@ Tilt-upWalls</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image159.jpeg" alt="Asbestos_tile_2.jpg" width="155" height="67">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image160.jpeg" alt="ceramic_tile_2.jpg" width="122" height="103">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image161.jpeg" alt="clay_tile_1.jpg" width="85" height="101">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image162.jpeg" alt="asphalt_shingle_2.jpg" width="119" height="90">
 </div>
@@ -9575,22 +9574,22 @@ Tilt-upWalls</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock">composition</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image163.jpeg" alt="concrete_tile_1.jpg" width="150" height="87">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image164.jpeg" alt="corrugated_1.jpg" width="111" height="100">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image165.jpeg" alt="glass_roof_2.jpg" width="144" height="97">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image166.jpeg" alt="hot_asphalt_1.jpg" width="136" height="103">
 </div>
@@ -9603,22 +9602,22 @@ Tilt-upWalls</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock">hotMoppedAsphalt</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image167.jpeg" alt="metal_roof_3.jpg" width="151" height="100">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image168.jpeg" alt="rc_roof_1.jpg" width="145" height="106">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image169.jpeg" alt="slate_roof_2.jpg" width="143" height="108">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image170.jpeg" alt="slate_roof_1.jpg" width="141" height="106">
 </div>
@@ -9631,22 +9630,22 @@ Tilt-upWalls</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock">slate</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image171.jpeg" alt="straw_roof_2.jpg" width="154" height="107">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image172.jpeg" alt="straw_roof_1.jpg" width="140" height="105">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image173.jpeg" alt="vegetated_roof_2.jpg" width="149" height="112">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image174.jpeg" alt="wood_shingles_1.jpg" width="136" height="89">
 </div>
@@ -23202,7 +23201,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./media/image310.png" alt="image">
+<img src="./media/image31.png" alt="image">
 </div>
 </div>
 <div class="paragraph text-center">
@@ -24383,7 +24382,7 @@ BuildingPart must be top layer</p>
 </li>
 </ul>
 </div>
-<div class="exampleblock">
+<div class="exampleblock red background">
 <div class="content">
 <div class="paragraph">
 <p><strong>Open issue 2:</strong> Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suit for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.</p>
@@ -26401,17 +26400,19 @@ Typical textures might be guessed from <strong>material of roof</strong> and <st
 </tbody>
 </table>
 <div class="paragraph">
-<p><em>*Part 3:* *Detailed, structured description of the use case *</em></p>
+<p><strong><em>Part 3:</em></strong> <strong><em>Detailed, structured description of the use case</em></strong></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
-<tbody>
+<thead>
 <tr>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Use Case Description</p></td>
+<th class="tableblock halign-left valign-top" colspan="2">Use Case Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Updating of Electronic Navigation Charts using INSPIRE building data</p></td>
@@ -27652,7 +27653,7 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <p><strong>Use case diagram for noise assessment</strong></p>
 </div>
 <div class="paragraph">
-<p>NOTE this use case diagram applies to B4.1, B4.2 and B4.3.</p>
+<p><em>NOTE this use case diagram applies to B4.1, B4.2 and B4.3.</em></p>
 </div>
 <div class="paragraph">
 <p><strong><em>Part 2: Narrative explanation of the use case</em></strong></p>
@@ -27957,7 +27958,7 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <p>Energy consumption produces emissions of CO<sub>2</sub> and so contributes to the greenhouse effect and to the increase of temperatures.</p>
 </div>
 <div class="paragraph">
-<p>Over a decade ago, most countries joined an international treaty&#8201;&#8212;&#8201;the <em>United Nations Framework Convention on Climate Change</em> (UNFCCC)&#8201;&#8212;&#8201;to begin to consider what can be done to reduce global warming and to cope with whatever temperature increases are inevitable. More recently, a number of nations approved an addition to the treaty: the <em>Kyoto Protocol</em>, which has more powerful (and legally binding) measures.</p>
+<p>Over a decade ago, most countries joined an international treaty - the <span class="underline"><em>United Nations Framework Convention on Climate Change</em></span> (UNFCCC) - to begin to consider what can be done to reduce global warming and to cope with whatever temperature increases are inevitable. More recently, a number of nations approved an addition to the treaty: the <em>Kyoto Protocol</em>, which has more powerful (and legally binding) measures.</p>
 </div>
 <div class="paragraph">
 <p>At European level, the Energy Performance of Buildings Directive, (EPBD) requires unique building identification for the buildings certificates.</p>
@@ -28608,8 +28609,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <div class="paragraph">
 <p><strong><em>Part 2: Narrative explanation of the use case</em></strong></p>
 </div>
-<div class="paragraph text-center">
-<p><strong>Example 1: find better location for new antennas</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 1: find better location for new antennas</strong></span></p>
 </div>
 <div class="paragraph">
 <p>The purpose is to find, for potential new antennas, the buildings reached by this antenna and then, to estimate the percentage of buildings covered /reached by this antenna.</p>
@@ -28617,8 +28618,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <div class="paragraph">
 <p>Several potential locations for the antenna have been identified. For each of this position, a simulation is done, by making "visibility maps" from the antennas (see common use case B1.1 modelling of physical phenomena). The location that is "visible" by the higher percentage of buildings will be considered as the best one.</p>
 </div>
-<div class="paragraph text-center">
-<p><strong>Example 2: prove the necessity of a new antenna.</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 2: prove the necessity of a new antenna.</strong></span></p>
 </div>
 <div class="paragraph">
 <p>A telecommunication company is initiating a project related to implementation of new antennas for mobile phone. The influence area of an antenna depends of the landscape, for two reasons:</p>
@@ -28642,8 +28643,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <div class="paragraph">
 <p>So, the telecommunication company need to determine the characteristics of the area around the new antenna. For instance, the need for mobile phone is bigger in large business areas than in residential areas. The density of buildings is also a significant criteria. There is socio-economic data on statistical units but building data is required for more accurate spatial location of this information (see common use case B1.2.2 Computation of population at day).</p>
 </div>
-<div class="paragraph text-center">
-<p><strong>Example 3: Location of new bus stops</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 3: Location of new bus stops</strong></span></p>
 </div>
 <div class="paragraph">
 <p>There is obvious need for organizing and scheduling of public transport. A main goal of the application is to create / change / delete bus stops and bus stations and to connect the different stops and stations so that they reach a maximum number of people (in city centres, near points of interest &#8230;&#8203;) in the shortest possible time. Another purpose is to provide up-to-date information about the routes and stops to all the employees and citizens.</p>
@@ -28651,8 +28652,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <div class="paragraph">
 <p>Several scenarios are envisaged for the location of a new bus stop; the area served by the bus stop is delimited (e.g. less than 300 m or less than 5 or 10 minutes walking). Then, the application computes the population that may beneficiate of this new bus stop (see common use case B1.2 about computation of population at day and at night).</p>
 </div>
-<div class="paragraph text-center">
-<p><strong>Example 4 : Location of new highway (or high speed train)</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 4 : Location of new highway (or high speed train)</strong></span></p>
 </div>
 <div class="paragraph">
 <p>Location of new highway is a complex process in which several steps are required. The purpose is double:</p>
@@ -28677,12 +28678,12 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image262.png" alt="image" width="198" height="210">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image263.png" alt="image" width="377" height="211">
 </div>
@@ -28711,17 +28712,17 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image264.png" alt="image" width="183" height="171">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="./media/image265.png" alt="image" width="181" height="168">
 </div>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
+<td class="tableblock halign-center valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
 <img src="./media/image266.png" alt="image" width="181" height="166">
 </div>
@@ -28740,8 +28741,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <div class="paragraph">
 <p>3D representation to make 3D model simulating the new project are useful to communicate with the inhabitants impacted by the project.</p>
 </div>
-<div class="paragraph text-center">
-<p><strong>Example 5: Location of a new wind farm</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 5: Location of a new wind farm</strong></span></p>
 </div>
 <div class="paragraph">
 <p>An electricity company is looking for new sites to set up wind turbines. In first phase, geographic data is required to identify potential sites. Then, the study is completed by field survey.</p>
@@ -28835,8 +28836,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 </tr>
 </tbody>
 </table>
-<div class="paragraph text-center">
-<p><strong>Example 4 : High voltage power line</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 4 : High voltage power line</strong></span></p>
 </div>
 <div class="paragraph">
 <p>An electricity company need to set up a new high voltage power line crossing an inhabited area.</p>
@@ -28916,8 +28917,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <div class="paragraph">
 <p><strong><em>Part 2: Narrative explanation of the use case</em></strong></p>
 </div>
-<div class="paragraph text-center">
-<p><strong>Example 1: computing population reached by television channels</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 1: computing population reached by television channels</strong></span></p>
 </div>
 <div class="paragraph">
 <p>The national government wants to assess the percentage of population that receive television channels.</p>
@@ -28999,8 +29000,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 <div class="paragraph">
 <p>NOTE 2: In a current statistical project of Eurostat, the population has to be related to the cells of a km² grid. The methodology for doing so (transfer of statistical data from existing statistical units to a new kind of statistical units) might be quite similar.</p>
 </div>
-<div class="paragraph text-center">
-<p><strong>Example 2: managing refuse collection</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 2: managing refuse collection</strong></span></p>
 </div>
 <div class="paragraph">
 <p>A public body has to organise the refuse collection in a city. A building in this context will either be a dwelling or premise that requires local authority service delivery in the form of waste collection services.</p>
@@ -29088,8 +29089,8 @@ Download theme NZ or use delimitation of human risk (e.g. around a SEVESO site)<
 </tr>
 </tbody>
 </table>
-<div class="paragraph text-center">
-<p><strong>Example 3 : Landing of stratospheric balloons</strong></p>
+<div class="paragraph">
+<p><span class="underline"><strong>Example 3 : Landing of stratospheric balloons</strong></span></p>
 </div>
 <div class="paragraph">
 <p>French Spatial Agency (CNES) is in charge of launching stratospheric balloons over France and other countries. These stratospheric balloons are not inhabited; they are guided either from CNES in Toulouse or from the launch site.</p>
