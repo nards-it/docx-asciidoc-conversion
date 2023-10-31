@@ -5116,7 +5116,7 @@ image::./media/image22.png[image,width=513,height=742, align=center]
 
 image::./media/image23.png[image,width=576,height=307, align=center]
 
-*Part 2: Legislative Background*
+*Part 2: Legislative Background*    
 
 The background legislations are numerous, in the different aspects of food production and food safety, animal health, plant protection and the environment.
 The EU regulation for registration of bovine animals
@@ -5564,7 +5564,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -5622,7 +5623,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -5716,7 +5718,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -5768,7 +5771,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -5826,7 +5830,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -5950,7 +5955,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -5999,7 +6005,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -6716,7 +6723,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
@@ -7079,7 +7087,8 @@ a|
 
 |===
 
-The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.
+[.blue]
+[.small]#The table below includes recommended values that may be used by data providers. Before creating new terms, please check if one of them can be used.#
 
 [cols="",]
 |===
