@@ -5063,7 +5063,7 @@ Contamination of water infrastructure due to industrial failure or failure of ne
 Structural:
 Continuous contamination due to emissions into air, surface or groundwater from (previous) production facilities (mining, industry)
 
-(*) It depends on the type of incident.
+_(*) It depends on the type of incident._
 
 image::./media/image14.png[image,width=454,height=654, align=center]
 
