@@ -4653,7 +4653,7 @@ CLC2006: EU27, Albania, Bosnia and Herzegovina, Croatia, Iceland, Liechtenstein,
 [cols=","]
 |===
 ^a|image::./media/image115.png[image]
-^a|image::./media/image16.png[image, width=80%]
+^a|image::./media/image16.png[image, width=70%, heigth=70%]
 ^|_(a)_
 ^|_(b)_
 |===
