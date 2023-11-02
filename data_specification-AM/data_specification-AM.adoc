@@ -500,8 +500,9 @@ The zones are typically established to deliver specific objectives related to an
 The theme also addresses reporting units, which are defined as "spatial objects that provide the spatial reference for any non-spatial data exchanged under environmental reporting obligations." The reported non-spatial data must include a property that contains a reference to the spatial object. This is typically an identifier, code or name and is a join key between the spatial and non-spatial objects enabling the data to be combined. This allows the non-spatial data to be visualised as a map or enable spatial analysis.
 
 Different INSPIRE spatial object types can perform the role of "Reporting Unit". For example, surface waters (rivers, lakes and canals from the Annex I theme Hydrography) are "Reporting Units" for indicators of chemical and ecological status. Thus, Reporting units cannot be modelled as a distinct spatial object type and no specific reporting units data model is defined. Instead, the theme defines obligations on how to make reporting units spatial data available under INSPIRE.
-|===
+
 Entry in the INSPIRE registry: _http://inspire.ec.europa.eu/theme/am/_
+|===
 
 === Normative References
 
@@ -1884,7 +1885,7 @@ image::./media/image15.png[image,width=363,height=509, align=center]
 
 *Types defined in the feature catalogue*
 
-[cols=","]
+[cols=",,"]
 |===
 |*Type* |*Package* |*Stereotypes*
 |_ControlledActivityInformation_ |Controlled Activities |«dataType»
@@ -3302,7 +3303,7 @@ Character set: UTF-8
 
 The xml schema document is available from _http://inspire.ec.europa.eu/schemas/am/3.0/AreaManagementRestrictionRegulationZone.xsd_.
 
-====== Encoding rules used
+====== _Encoding rules used_
 
 The encoding rule used for this encoding is specified in Annex B of [DS-D2.7].
 
@@ -3840,7 +3841,7 @@ The table below includes a template to be used for defining the default style fo
 |*Style Name* |*<UpperCamelCase layer name>.Default*
 |*Default Style* |yes
 |*Style Title* |<Layer title> Default Style
-|*Style Abstract* |The geometry is rendered for points as a square with a size of 6 pixels, with a <name of the colour> (#<hexadecimal colour code>) fill and a black outline; for curves as a solid <name of the colour> (#<hexadecimal colour code>) line with a stroke width of 2 pixels; and for surfaces using a <name of the colour> (#<hexadecimal colour code>) fill with a transparency of 50% and a solid <name of the colour> (#<hexadecimal colour code>) outline with a stroke width of 2 pixels.
+|*Style Abstract* |The geometry is rendered for points as a square with a size of 6 pixels, with a <name of the colour> ({empty}#<hexadecimal colour code>) fill and a black outline; for curves as a solid <name of the colour> ({empty}#<hexadecimal colour code>) line with a stroke width of 2 pixels; and for surfaces using a <name of the colour> ({empty}#<hexadecimal colour code>) fill with a transparency of 50% and a solid <name of the colour> ({empty}#<hexadecimal colour code>) outline with a stroke width of 2 pixels.
 |*Symbology* |See example in section 11.2.1.
 |*Minimum & maximum scales* |None
 |===
@@ -4024,6 +4025,7 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all the spatial object / data types that have corresponding types in the source dataset after the necessary transformations fulfil the requirements set out in the ISDSS Regulation and
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
+[.red.background]
 ====
 *Open issue 1:* Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
 ====
@@ -4650,8 +4652,8 @@ CLC2006: EU27, Albania, Bosnia and Herzegovina, Croatia, Iceland, Liechtenstein,
 
 [cols=","]
 |===
-a|image::./media/image115.png[image]
-a|image::./media/image16.png[image,align=center]
+^a|image::./media/image115.png[image]
+^a|image::./media/image16.png[image, width=80%]
 ^|_(a)_
 ^|_(b)_
 |===
@@ -4659,7 +4661,7 @@ a|image::./media/image16.png[image,align=center]
 [.text-center]
 *Figure B1.1 – (a) Example UML use case diagram; (b) Sample use case data flow diagram*
 
-[cols=""]
+[cols=",,"]
 |===
 a|image::./media/image17.jpeg[resim1a,width=201,height=284]
 a|image::./media/image18.jpeg[resim1b,width=200,height=284]
@@ -6449,6 +6451,7 @@ In the Zones and Agglomerations package, the AQD Zone spatial object extends fro
 
 To meet the reporting data requirements for the AQD, only seven additional properties were added. The AQD data specification also extends the SpecialisedZoneTypeCode code list to define the relevant specialised ZoneType values that are applicable to the airQualityManagementZone zoneType. Finally, a constraint is added to the Zone to state that the zoneType shall be airQualityManagementZone (Figure ).
 
+[.red.background]
 *DISCLAIMER: The version of the AQD e-Reporting Data Specification provided in this Annex was developed as an example only. Although it is based on of the original draft data specification it is not officially endorsed. Please do not use.*
 
 image::./media/image103a.png[image,width=623,height=428, align=center]
@@ -6478,11 +6481,11 @@ The following overview provides some of the examples, identified by the INSPIRE 
 
 The table includes the following information:
 
-* Environmental Legislation or Obligation: means the environmental legislation established at different levels – international, European, national or sub-national (regional, local) or other agreed environmental reporting
-* Reporting Obligation: means the title or description of the specific reporting obligation which is defined within the environmental legislation or agreed environmental reporting;
-* Annex theme for features: means INSPIRE spatial data theme which includes/defines the spatial object types used in the reporting obligations; acronyms of the INSPIRE spatial data themes are used;
-* Reporting Unit (Feature type): means the name of the spatial object type (feature type) in the INSPIRE spatial data theme as it is defined in the related INSPIRE Guidelines (data specification);
-* Related reporting data/information: means more detailed information about the related data that are reported.
+* [.underline]#Environmental Legislation or Obligation#: means the environmental legislation established at different levels – international, European, national or sub-national (regional, local) or other agreed environmental reporting
+* [.underline]#Reporting Obligation#: means the title or description of the specific reporting obligation which is defined within the environmental legislation or agreed environmental reporting;
+* [.underline]#Annex theme for features#: means INSPIRE spatial data theme which includes/defines the spatial object types used in the reporting obligations; acronyms of the INSPIRE spatial data themes are used;
+* [.underline]#Reporting Unit (Feature type)#: means the name of the spatial object type (feature type) in the INSPIRE spatial data theme as it is defined in the related INSPIRE Guidelines (data specification);
+* [.underline]#Related reporting data/information#: means more detailed information about the related data that are reported.
 
 The table is by no means exhaustive and it can be further updated to include more examples of reporting units and to identify close relationships between the INSPIRE spatial data themes, spatial object types and the reporting obligations in the thematic domains.
 
