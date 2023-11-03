@@ -3940,14 +3940,14 @@ http://www.safecoast.org/editor/databank/File/rapport_SAFECOAST_final%2017-07-20
 
 _http://www.safecoast.org/cohesion/risk_assessment.php_)
 
-image::./media/image14.png[image,width=60%,height=60%, align=center]
+image::./media/image14.png[image,width=40%,height=40%, align=center]
 
 Example of portrayal layer of the "sourceOfRisk" landslides (source: Lekkas, E. (2009) Landslide hazard and risk in geologically active areas. The case of the caldera of Santorini (Thera) volcano island complex (Greece). International Association for Engineering Geology (IAEG), 7th Asian Regional Conference for IAEG, pp. 417-423, Chengdu.
 
 _http://www.elekkas.gr/attachments/226_214.pdf_
     
-image::./media/image15.png[image,width=50%,height=50%, align=center]
-image::./media/image16.png[image,width=30%,height=30%, align=center]
+image::./media/image15.png[image,width=40%,height=40%, align=center]
+image::./media/image16.png[image,width=20%,height=20%, align=center]
 
 |*Symbology SLD* a|
 The symbology is specified in the file:
@@ -3967,17 +3967,17 @@ UserStyle_NZ_RiskZone.xml
 |*Symbology* a|
 Example of portrayal of layer for the "typeOfHazard" forest fire (source: European Forest Fire Information System: Forest danger forecast. _http://effis.jrc.ec.europa.eu/current-situation_)
 
-image::./media/image17.png[image,width=60%,height=60%, align=center]
+image::./media/image17.png[image,width=40%,height=40%, align=center]
 
 Example of portrayal of layer for the "typeOfHazard" flood: water depth and velocity (source: LAWA, 2010, Recommendations for the Establishment of Flood Hazard Maps and Flood Risk Maps. German Working Group on Water Issues of the Federal States and the Federal Government, Dresden)
 
-image::./media/image18.png[image,width=60%,height=60%, align=center]
+image::./media/image18.png[image,width=40%,height=40%, align=center]
 
 Example of portrayal of layer for the "typeOfHazard" landslide (source: Guzzetti, F. (2005) Landslide Hazard and Risk Assessment. PhD Thesis, Naturwissenschaftlichen Fakultät der Rheinischen Friedrich-Wilhelms-Universität,
 
 University of Bonn.http://geomorphology.irpi.cnr.it/Members/fausto/ph.d.-dissertation)
 
-image::./media/image19.png[image,width=60%,height=60%, align=center]
+image::./media/image19.png[image,width=40%,height=40%, align=center]
 
 a|
 *Symbology*
