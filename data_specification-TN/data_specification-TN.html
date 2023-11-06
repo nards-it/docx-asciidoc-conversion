@@ -1740,16 +1740,10 @@ Unit H06: Digital Earth and Reference Data<br>
 <p>This approach enables several organisations to contribute and easily combine several views of the transport network. For a road example the combinations and contributors might be:</p>
 </div>
 <div class="paragraph">
-<p><em>Underlying link and node geometry: mapping agency (national or state level)</em></p>
-</div>
-<div class="paragraph">
-<p><em>Highway name: municipality</em></p>
-</div>
-<div class="paragraph">
-<p><em>National highway classification: national highway authority</em></p>
-</div>
-<div class="paragraph">
-<p><em>European highway classification: European highway authority</em></p>
+<p><em>Underlying link and node geometry: mapping agency (national or state level)</em><br>
+<em>Highway name: municipality</em><br>
+<em>National highway classification: national highway authority</em><br>
+<em>European highway classification: European highway authority</em></p>
 </div>
 <div class="paragraph">
 <p>Many of these contributors may also collect and maintain application objects and business data which can be linked to the same infrastructure.</p>
@@ -1772,7 +1766,7 @@ Users can extend the schema and add their own spatial objects to support an appl
 </ul>
 </div>
 <div class="paragraph">
-<p>*In practice these areas may be defined by aggregations of some other area object types using objects from other themes e.g. buildings.</p>
+<p><em>*In practice these areas may be defined by aggregations of some other area object types using objects from other themes e.g. buildings.</em></p>
 </div>
 <div class="paragraph">
 <p><em>Applications and use cases</em></p>
@@ -1912,7 +1906,7 @@ Users can extend the schema and add their own spatial objects to support an appl
 <p>In the meantime this specification applies to all levels of detail. Further proving of the approach is required to support truly seamless integration of the levels of detail*. In the meantime data providers are encouraged to introduce this specification at the local level as a priority.</p>
 </div>
 <div class="paragraph">
-<p>*It is reported that some organisations are currently investigating such an approach but it is not yet formally adopted to such a level to document it in this version of the <em>Transport networks</em> specification (TN specification). This is an area that requires further research to improve both the capability and automation potential.</p>
+<p><span class="small"><em>*It is reported that some organisations are currently investigating such an approach but it is not yet formally adopted to such a level to document it in this version of the</em> Transport networks <em>specification (TN specification). This is an area that requires further research to improve both the capability and automation potential.</em></span></p>
 </div>
 <div class="paragraph">
 <p><strong>Overview Structure of the <em>Transport Networks</em> data product specification and commentary on specific issues within the specification</strong></p>
@@ -3002,19 +2996,12 @@ Users can extend the schema and add their own spatial objects to support an appl
 <ul>
 <li>
 <p><em>Code lists that are governed by INSPIRE (INSPIRE-governed code lists).</em> These code lists will be managed centrally in the INSPIRE code list register. Change requests to these code lists (e.g. to add, deprecate or supersede values) are processed and decided upon using the INSPIRE code list register&#8217;s maintenance workflows.</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>INSPIRE-governed code lists will be made available in the INSPIRE code list register at <em><a href="http://inspire.ec.europa.eu/codeList/&lt;CodeListName" class="bare">http://inspire.ec.europa.eu/codeList/&lt;CodeListName</a></em>&gt;. They will be available in SKOS/RDF, XML and HTML. The maintenance will follow the procedures defined in ISO 19135. This means that the only allowed changes to a code list are the addition, deprecation or supersession of values, i.e. no value will ever be deleted, but only receive different statuses (valid, deprecated, superseded). Identifiers for values of INSPIRE-governed code lists are constructed using the pattern <em><a href="http://inspire.ec.europa.eu/codeList/&lt;CodeListName" class="bare">http://inspire.ec.europa.eu/codeList/&lt;CodeListName</a></em>&gt;/&lt;value&gt;.</p>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p><em>Code lists that are governed by an organisation outside of INSPIRE (externally governed code lists).</em> These code lists are managed by an organisation outside of INSPIRE, e.g. the World Meteorological Organization (WMO) or the World Health Organization (WHO). Change requests to these code lists follow the maintenance workflows defined by the maintaining organisations. Note that in some cases, no such workflows may be formally defined.</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>Since the updates of externally governed code lists is outside the control of INSPIRE, the IRs and these Technical Guidelines reference a specific version for such code lists.</p>
 </div>
@@ -3039,6 +3026,9 @@ Users can extend the schema and add their own spatial objects to support an appl
 </div>
 <div class="paragraph">
 <p>Code list values are encoded using http URIs and labels. Rules for generating these URIs and labels are specified in a separate table.</p>
+</div>
+</li>
+</ul>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3693,7 +3683,7 @@ Users can extend the schema and add their own spatial objects to support an appl
 <div class="paragraph">
 <p>Figure 13 demonstrates the concept of the intermodal connection. In this example, a node in a road transport network is connected to a node in the railway network. These nodes may, but do not have to, share the same location.</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="./media/image16.png" alt="Intermodal" width="604" height="388">
 </div>
@@ -4927,14 +4917,10 @@ Users can extend the schema and add their own spatial objects to support an appl
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OCL:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">inv: link&#8594;forAll(l</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inv: link&#8594;forAll(l | l.link.inNetwork = self.inNetwork)</p></td>
 </tr>
 </tbody>
 </table></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">l.link.inNetwork = self.inNetwork)<br>
-!===</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -5950,8 +5936,8 @@ EXAMPLE All road transport can be considered one mode of transport for some appl
 </div>
 <div class="sect4">
 <h5 id="_imported_types_informative">5.3.2.4. Imported types (informative)</h5>
-<div class="paragraph">
-<p>This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</p>
+<div class="paragraph blue background">
+<p><span class="small">This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</span></p>
 </div>
 <div class="sect5">
 <h6 id="_ci_citation">5.3.2.4.1. CI_Citation</h6>
@@ -9358,8 +9344,8 @@ NOTE The farthest ways in the forest road network. It has no regular maintenance
 </div>
 <div class="sect4">
 <h5 id="_imported_types_informative_2">5.4.2.4. Imported types (informative)</h5>
-<div class="paragraph">
-<p>This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</p>
+<div class="paragraph blue background">
+<p><span class="small">This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</span></p>
 </div>
 <div class="sect5">
 <h6 id="_characterstring">5.4.2.4.1. CharacterString</h6>
@@ -9893,7 +9879,7 @@ A dual carriageway road, as a collection of the two link sequences that represen
 <div class="paragraph text-center">
 <p><strong>Figure 22 – UML class diagram: <em>Railway Transport Networks</em> Spatial object types – Transport Properties</strong></p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="./media/image26.png" alt="RailTransportNetwork" width="604" height="453">
 </div>
@@ -11560,8 +11546,8 @@ A dual carriageway road, as a collection of the two link sequences that represen
 </div>
 <div class="sect4">
 <h5 id="_imported_types_informative_3">5.5.2.4. Imported types (informative)</h5>
-<div class="paragraph">
-<p>This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</p>
+<div class="paragraph blue background">
+<p><span class="small">This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</span></p>
 </div>
 <div class="sect5">
 <h6 id="_boolean">5.5.2.4.1. Boolean</h6>
@@ -12356,8 +12342,8 @@ A dual carriageway road, as a collection of the two link sequences that represen
 </div>
 <div class="sect4">
 <h5 id="_imported_types_informative_4">5.6.2.3. Imported types (informative)</h5>
-<div class="paragraph">
-<p>This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</p>
+<div class="paragraph blue background">
+<p><span class="small">This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</span></p>
 </div>
 <div class="sect5">
 <h6 id="_transportlink_4">5.6.2.3.1. TransportLink</h6>
@@ -14398,8 +14384,8 @@ NOTE 2 TSSs constitute main components of maritime routing measures for hydrogra
 </div>
 <div class="sect4">
 <h5 id="_imported_types_informative_5">5.7.2.5. Imported types (informative)</h5>
-<div class="paragraph">
-<p>This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</p>
+<div class="paragraph blue background">
+<p><span class="small">This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</span></p>
 </div>
 </div>
 <div class="sect4">
@@ -17832,8 +17818,8 @@ EXAMPLES Asphalt, concrete.</p></td>
 </div>
 <div class="sect4">
 <h5 id="_imported_types_informative_6">5.8.2.12. Imported types (informative)</h5>
-<div class="paragraph">
-<p>This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</p>
+<div class="paragraph blue background">
+<p><span class="small">This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.</span></p>
 </div>
 <div class="paragraph">
 <p>Boolean</p>
@@ -19476,23 +19462,16 @@ A dual carriageway road, as a collection of the two link sequences that represen
 <div class="paragraph">
 <p>Connectivity tolerance must be specified by the data provider using the following elements of the DQ_TopologicalConsistency metadata element for the current measure:</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="ulist arabic">
+<ul class="arabic">
 <li>
 <p>102. measureDescription (type: free text):</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>Defined as "<em>Description of the measure</em>".</p>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>107. Result (type DQ_Result):</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
 <p>Defined as "<em>Value (or set of values) obtained from applying a data quality measure or the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level</em>".</p>
 </div>
@@ -19506,6 +19485,9 @@ A dual carriageway road, as a collection of the two link sequences that represen
 </li>
 <li>
 <p>131. explanation</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -20058,10 +20040,28 @@ A dual carriageway road, as a collection of the two link sequences that represen
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>For a number of points (<em>N</em>), the measured positions are given as image::./media/image53.png[image,width=23,height=24], image::./media/image54.png[image,width=24,height=24] and image::./media/image55.png[image,width=23,height=24] coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, image::./media/image56.png[image,width=19,height=24], image::./media/image57.png[image,width=20,height=24] and image::./media/image58.png[image,width=19,height=24]<br>
-, are considered to represent the true positions. The errors are calculated as 1D: image::./media/image59.png[image,width=87,height=27, align=center]<br>
-2D: image::./media/image60.png[image,width=193,height=32, align=center]<br>
-3D: image::./media/image61.png[image,width=273,height=32, align=center]</p>
+<p>For a number of points (<em>N</em>), the measured positions are given as <em>x<sub>mi</sub></em>, <em>y<sub>mi</sub></em> and <em>z<sub>mi</sub></em> coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, <em>x<sub>ti</sub></em>, <em>y<sub>ti</sub></em> and <em>z<sub>ti</sub></em>, are considered to represent the true positions. The errors are calculated as 1D:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/image59a.png" alt="image" width="87" height="27">
+</div>
+</div>
+<div class="paragraph">
+<p>2D:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/image60.png" alt="image" width="193" height="32">
+</div>
+</div>
+<div class="paragraph">
+<p>3D:</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./media/image61.png" alt="image" width="273" height="32">
+</div>
 </div>
 <div class="paragraph">
 <p>The mean positional uncertainties of the horizontal absolute or external positions are then calculated as</p>
@@ -20724,17 +20724,12 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 <li>
 <p>Coordinate Reference System: Description of the coordinate reference system(s) used in the data set.</p>
 </li>
-</ol>
-</div>
+<li>
+<p>Temporal Reference System: ion of the temporal reference system(s) used in the data set.</p>
 <div class="paragraph">
-<p>2. Temporal Reference System: ion of the temporal reference system(s) used in the data set.</p>
+<p>This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.</p>
 </div>
-<div class="paragraph">
-<p>+<br>
-This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Encoding: Description of the computer language construct(s) specifying the representation of data objects in a record, file, message, storage device or transmission channel.</p>
 </li>
@@ -20859,7 +20854,13 @@ This element is mandatory only if the spatial data set contains temporal informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">13. referenceSystemInfo</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="13">
+<li>
+<p>referenceSystemInfo</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -20875,7 +20876,13 @@ This element is mandatory only if the spatial data set contains temporal informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type(and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">186. MD_ReferenceSystem</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="186">
+<li>
+<p>MD_ReferenceSystem</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -20946,7 +20953,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">13. referenceSystemInfo</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="13">
+<li>
+<p>referenceSystemInfo</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -20962,7 +20975,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type(and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">186. MD_ReferenceSystem</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="186">
+<li>
+<p>MD_ReferenceSystem</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -21033,7 +21052,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">271. distributionFormat</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="271">
+<li>
+<p>distributionFormat</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -21049,7 +21074,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type (and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">284. MD_Format</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="284">
+<li>
+<p>MD_Format</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -21179,7 +21210,13 @@ specification: D2.8.I.7 Data Specification on Transport Networks – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">37. spatialRepresentationType</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="37">
+<li>
+<p>spatialRepresentationType</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -21387,7 +21424,13 @@ specification: D2.8.I.7 Data Specification on Transport Networks – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type(and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">142. MD_MaintenanceInformation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="142">
+<li>
+<p>MD_MaintenanceInformation</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -21541,7 +21584,13 @@ specification: D2.8.I.7 Data Specification on Transport Networks – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/DIS 19157 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3. report</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>report</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -21655,7 +21704,13 @@ specification: D2.8.I.7 Data Specification on Transport Networks – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/DIS 19157 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3. report</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>report</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -21904,8 +21959,10 @@ specification: D2.8.I.7 Data Specification on Transport Networks – Technical G
 <p><strong>Name: Common Transport Elements GML Application Schema</strong><br>
 Version: version 3.0<br>
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines<br>
-Character set: UTF-8<br>
-The xml schema document is available from <em><a href="http://inspire.ec.europa.eu/schemas/tn/3.0/CommonTransportElements.xsd" class="bare">http://inspire.ec.europa.eu/schemas/tn/3.0/CommonTransportElements.xsd</a></em></p>
+Character set: UTF-8</p>
+</div>
+<div class="paragraph">
+<p>The xml schema document is available from <em><a href="http://inspire.ec.europa.eu/schemas/tn/3.0/CommonTransportElements.xsd" class="bare">http://inspire.ec.europa.eu/schemas/tn/3.0/CommonTransportElements.xsd</a></em></p>
 </div>
 <div class="sect5">
 <h6 id="_encoding_rules_used">9.3.1.2.1. Encoding rules used</h6>
@@ -21923,8 +21980,10 @@ The xml schema document is available from <em><a href="http://inspire.ec.europa.
 <p><strong>Name: Road Transport Elements GML Application Schema</strong><br>
 Version: version 3.0<br>
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines<br>
-Character set: UTF-8<br>
-The xml schema document is available from<br>
+Character set: UTF-8</p>
+</div>
+<div class="paragraph">
+<p>The xml schema document is available from<br>
 <em><a href="http://inspire.ec.europa.eu/schemas/tn-ro/3.0/RoadTransportNetwork.xsd" class="bare">http://inspire.ec.europa.eu/schemas/tn-ro/3.0/RoadTransportNetwork.xsd</a></em></p>
 </div>
 <div class="sect5">
@@ -21943,8 +22002,10 @@ The xml schema document is available from<br>
 <p><strong>Name: Rail Transport Elements GML Application Schema</strong><br>
 Version: version 3.0<br>
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines<br>
-Character set: UTF-8<br>
-The xml schema document is available from <em><a href="http://inspire.jrc.ec.europa.eu/schemas/tn-ra/3.0/RailwayTransportNetwork.xsd" class="bare">http://inspire.jrc.ec.europa.eu/schemas/tn-ra/3.0/RailwayTransportNetwork.xsd</a></em></p>
+Character set: UTF-8</p>
+</div>
+<div class="paragraph">
+<p>The xml schema document is available from <em><a href="http://inspire.jrc.ec.europa.eu/schemas/tn-ra/3.0/RailwayTransportNetwork.xsd" class="bare">http://inspire.jrc.ec.europa.eu/schemas/tn-ra/3.0/RailwayTransportNetwork.xsd</a></em></p>
 </div>
 <div class="sect5">
 <h6 id="_encoding_rules_used_3">9.3.1.4.1. Encoding rules used</h6>
@@ -21962,8 +22023,10 @@ The xml schema document is available from <em><a href="http://inspire.jrc.ec.eur
 <p><strong>Name: Cable Transport Elements GML Application Schema</strong><br>
 Version: version 3.0<br>
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines<br>
-Character set: UTF-8<br>
-The xml schema document is available from<br>
+Character set: UTF-8</p>
+</div>
+<div class="paragraph">
+<p>The xml schema document is available from<br>
 <em><a href="http://inspire.ec.europa.eu/schemas/tn-c/3.0/CableTransportNetwork.xsd" class="bare">http://inspire.ec.europa.eu/schemas/tn-c/3.0/CableTransportNetwork.xsd</a></em></p>
 </div>
 <div class="sect5">
@@ -21982,8 +22045,10 @@ The xml schema document is available from<br>
 <p><strong>Name: Water Transport Elements GML Application Schema</strong><br>
 Version: version 3.0,<br>
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines<br>
-Character set: UTF-8<br>
-The xml schema document is available from<br>
+Character set: UTF-8</p>
+</div>
+<div class="paragraph">
+<p>The xml schema document is available from<br>
 <em><a href="http://inspire.ec.europa.eu/schemas/tn-w/3.0/WaterTransportNetwork.xsd" class="bare">http://inspire.ec.europa.eu/schemas/tn-w/3.0/WaterTransportNetwork.xsd</a>.</em></p>
 </div>
 <div class="sect5">
@@ -22002,11 +22067,13 @@ The xml schema document is available from<br>
 <p><strong>Name: Air Transport Elements Application Schema</strong><br>
 Version: version 3.0,<br>
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines<br>
-Character set: UTF-8<br>
-The xml schema document is available from<br>
+Character set: UTF-8</p>
+</div>
+<div class="paragraph">
+<p>The xml schema document is available from<br>
 <em><a href="http://inspire.ec.europa.eu/schemas/tn-a/3.0/AirTransportNetwork.xsd" class="bare">http://inspire.ec.europa.eu/schemas/tn-a/3.0/AirTransportNetwork.xsd</a></em>.</p>
 </div>
-<div class="exampleblock">
+<div class="exampleblock red background">
 <div class="content">
 <div class="paragraph">
 <p><strong>Open issue 1:</strong> In the amendment of the Implementing Rules, a number of changes have been introduced to the Annex I data models.</p>
@@ -24998,7 +25065,7 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 </li>
 </ul>
 </div>
-<div class="exampleblock">
+<div class="exampleblock red background">
 <div class="content">
 <div class="paragraph">
 <p><strong>Opens issue 2:</strong> Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.</p>
@@ -25241,9 +25308,6 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 <ol class="loweralpha" type="a">
 <li>
 <p><span class="underline">Purpose</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Verification that if linear referencing is used in Transport Networks data, the position of referenced properties on links and link sequences are expressed as distances measured along the supplied geometry of the underlying link object(s).</p>
 </div>
@@ -25253,16 +25317,12 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 <div class="paragraph">
 <p>Verification that the Water transport networks re-uses, where it exists and is practicable, the water network centreline geometry of the Hydrography theme.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p><span class="underline">Reference</span>: Annex II Section 7.9 of Commission Regulation No 1089/2010</p>
 </li>
 <li>
 <p><span class="underline">Test Method</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Check, if linear referencing is used, that the position of referenced properties on links and link sequences are expressed as distances measured along the supplied geometry of the underlying link object(s).</p>
 </div>
@@ -25271,6 +25331,9 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 </div>
 <div class="paragraph">
 <p>Check that the Water transport networks re-uses, where it exists and is practicable, the water network centreline geometry of the Hydrography theme. Therefore, object referencing shall be used to link the water transport course with the existing water network geometry in the Hydrography theme.</p>
+</div>
+</li>
+</ol>
 </div>
 </div>
 <div class="sect3">
@@ -25295,9 +25358,6 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 <ol class="loweralpha" type="a">
 <li>
 <p><span class="underline">Purpose</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Verification that wherever a connection exists in a transport network, all connected link ends and the optional node that take part in this connection are positioned at a distance of less than the connectivity tolerance from each other.</p>
 </div>
@@ -25307,16 +25367,12 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 <div class="paragraph">
 <p>Verification that in data sets where both transport links and nodes are presented, the relative position of nodes and link ends in relation to the specified connectivity tolerance corresponds to the associations that exist between them in the data set.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p><span class="underline">Reference</span>: Annex II Section 7.9 of Commission Regulation No 1089/2010</p>
 </li>
 <li>
 <p><span class="underline">Test Method</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Check that wherever a connection exists in a transport network, all connected link ends and the optional node that take part in this connection are positioned at a distance of less than the connectivity tolerance from each other.</p>
 </div>
@@ -25325,6 +25381,9 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 </div>
 <div class="paragraph">
 <p>Check if in data sets where both transport links and nodes are presented, the relative position of nodes and link ends in relation to the specified connectivity tolerance corresponds to the associations that exist between them in the data set.</p>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -25660,30 +25719,26 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 <ol class="loweralpha" type="a">
 <li>
 <p><span class="underline">Purpose</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Verification whether the Transport Networks centreline representations and nodes are always located within the extent of the area representation of the same object.</p>
 </div>
 <div class="paragraph">
 <p>Verification whether the connectivity between transport networks across state borders and – where applicable – also across regional borders (and data sets) within Member States is made using the cross-border connectivity mechanisms provided by the NetworkConnection type.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p><span class="underline">Reference</span>: Annex II Section 8.7.1 of Commission Regulation No 1089/2010</p>
 </li>
 <li>
 <p><span class="underline">Test Method</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Check that Transport Networks centreline representations and nodes are always located within the extent of the area representation of the same object.</p>
 </div>
 <div class="paragraph">
 <p>Check that NetworkConnection type is used for connectivity between transport networks within Member States.</p>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
