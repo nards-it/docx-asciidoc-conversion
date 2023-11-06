@@ -336,11 +336,8 @@ This approach enables several organisations to contribute and easily combine sev
 
 
 _Underlying link and node geometry: mapping agency (national or state level)_
-
 _Highway name: municipality_
-
 _National highway classification: national highway authority_
-
 _European highway classification: European highway authority_
 
 
@@ -353,7 +350,7 @@ Users can extend the schema and add their own spatial objects to support an appl
 * Point – kilometer posts on the Roads and Rail
 * Area* - Port area, Railway station area, etc.
 
-*In practice these areas may be defined by aggregations of some other area object types using objects from other themes e.g. buildings.
+_*In practice these areas may be defined by aggregations of some other area object types using objects from other themes e.g. buildings._
 
 _Applications and use cases_
 
@@ -425,7 +422,7 @@ Such a "multiple resolution" approach is discussed in D2.6 Annex A.19 and Annex 
 
 In the meantime this specification applies to all levels of detail. Further proving of the approach is required to support truly seamless integration of the levels of detail*. In the meantime data providers are encouraged to introduce this specification at the local level as a priority.
 
-*It is reported that some organisations are currently investigating such an approach but it is not yet formally adopted to such a level to document it in this version of the _Transport networks_ specification (TN specification). This is an area that requires further research to improve both the capability and automation potential.
+[.small]#_*It is reported that some organisations are currently investigating such an approach but it is not yet formally adopted to such a level to document it in this version of the_ Transport networks _specification (TN specification). This is an area that requires further research to improve both the capability and automation potential._#
 
 *Overview Structure of the _Transport Networks_ data product specification and commentary on specific issues within the specification*
 
@@ -947,27 +944,22 @@ NOTE For some code lists of type (d), no values may be specified in these Techni
 The following two types of code lists are distinguished in INSPIRE:
 
 * _Code lists that are governed by INSPIRE (INSPIRE-governed code lists)._ These code lists will be managed centrally in the INSPIRE code list register. Change requests to these code lists (e.g. to add, deprecate or supersede values) are processed and decided upon using the INSPIRE code list register's maintenance workflows.
-
-
++
 INSPIRE-governed code lists will be made available in the INSPIRE code list register at __http://inspire.ec.europa.eu/codeList/<CodeListName__>. They will be available in SKOS/RDF, XML and HTML. The maintenance will follow the procedures defined in ISO 19135. This means that the only allowed changes to a code list are the addition, deprecation or supersession of values, i.e. no value will ever be deleted, but only receive different statuses (valid, deprecated, superseded). Identifiers for values of INSPIRE-governed code lists are constructed using the pattern __http://inspire.ec.europa.eu/codeList/<CodeListName__>/<value>.
 
 
 * _Code lists that are governed by an organisation outside of INSPIRE (externally governed code lists)._ These code lists are managed by an organisation outside of INSPIRE, e.g. the World Meteorological Organization (WMO) or the World Health Organization (WHO). Change requests to these code lists follow the maintenance workflows defined by the maintaining organisations. Note that in some cases, no such workflows may be formally defined.
-
-
++
 Since the updates of externally governed code lists is outside the control of INSPIRE, the IRs and these Technical Guidelines reference a specific version for such code lists.
-
++
 The tables describing externally governed code lists in this section contain the following columns:
++
+** The _Governance_ column describes the external organisation that is responsible for maintaining the code list.
+** The _Source_ column specifies a citation for the authoritative source for the values of the code list. For code lists, whose values are mandated in the IRs, this citation should include the version of the code list used in INSPIRE. The version can be specified using a version number or the publication date. For code list values recommended in these Technical Guidelines, the citation may refer to the "latest available version".
+** In some cases, for INSPIRE only a subset of an externally governed code list is relevant. The subset is specified using the _Subset_ column.
+** The _Availability_ column specifies from where (e.g. URL) the values of the externally governed code list are available, and in which formats. Formats can include machine-readable (e.g. SKOS/RDF, XML) or human-readable (e.g. HTML, PDF) ones.
 
-
-* The _Governance_ column describes the external organisation that is responsible for maintaining the code list.
-
-* The _Source_ column specifies a citation for the authoritative source for the values of the code list. For code lists, whose values are mandated in the IRs, this citation should include the version of the code list used in INSPIRE. The version can be specified using a version number or the publication date. For code list values recommended in these Technical Guidelines, the citation may refer to the "latest available version".
-
-* In some cases, for INSPIRE only a subset of an externally governed code list is relevant. The subset is specified using the _Subset_ column.
-
-* The _Availability_ column specifies from where (e.g. URL) the values of the externally governed code list are available, and in which formats. Formats can include machine-readable (e.g. SKOS/RDF, XML) or human-readable (e.g. HTML, PDF) ones.
-
++
 Code list values are encoded using http URIs and labels. Rules for generating these URIs and labels are specified in a separate table.
 
 
@@ -1326,7 +1318,7 @@ Several types of transport network elements, including links, link sequences, li
 
 Figure 13 demonstrates the concept of the intermodal connection. In this example, a node in a road transport network is connected to a node in the railway network. These nodes may, but do not have to, share the same location.
 
-image::./media/image16.png[Intermodal,width=604,height=388]
+image::./media/image16.png[Intermodal,width=604,height=388, align=center]
 
 [.text-center]
 *Figure 13 – The intermodal connection linking two different _Transport networks_ themes _Rail_ and _Road_*
@@ -1829,7 +1821,7 @@ a|
 [cols=","]
 !===
 !Natural language: !A transport link sequence must be composed of transport links that all belong to the same transport network.
-!OCL: !inv: link->forAll(l | l.link.inNetwork = self.inNetwork)
+!OCL: !inv: link->forAll(l \| l.link.inNetwork = self.inNetwork)
 !===
 
 a|
@@ -2239,7 +2231,8 @@ a|
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 ====== CI_Citation
 
@@ -3581,7 +3574,8 @@ a|
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 ====== CharacterString
 
@@ -3811,7 +3805,7 @@ image::./media/image25.png[image,width=605,height=529, align=center]
 [.text-center]
 *Figure 22 – UML class diagram: _Railway Transport Networks_ Spatial object types – Transport Properties*
 
-image::./media/image26.png[RailTransportNetwork,width=604,height=453]
+image::./media/image26.png[RailTransportNetwork,width=604,height=453, align=center]
 
 [.text-center]
 *Figure 23 – Overview of the main _Rail Transport Networks_ objects*
@@ -4474,7 +4468,8 @@ a|
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 ====== Boolean
 
@@ -4815,7 +4810,8 @@ a|
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 ====== TransportLink
 
@@ -5643,7 +5639,8 @@ a|
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 ===== Boolean
 
@@ -7027,7 +7024,8 @@ EXAMPLES Asphalt, concrete.
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 Boolean
 
@@ -7664,21 +7662,19 @@ This parameter is specific for each data provider's dataset and must be reported
 Connectivity tolerance must be specified by the data provider using the following elements of the DQ_TopologicalConsistency metadata element for the current measure:
 
 
+[arabic, start=102]
 * {empty}102. measureDescription (type: free text):
-
++
 Defined as "_Description of the measure_".
 
-
 * {empty}107. Result (type DQ_Result):
-
++
 Defined as "_Value (or set of values) obtained from applying a data quality measure or the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level_".
-
++
 Specifically, the tolerance must be defined within the two elements:
-
-
-* {empty}130. specification
-
-* {empty}131. explanation
++
+** {empty}130. specification
+** {empty}131. explanation
 
 from DQ_Result class.
 
@@ -7692,7 +7688,7 @@ Note: Metadata elements defined in ISO 19115.
 image::./media/image47.png[image,width=267,height=168, align=center]
 
 *Key*
-
+    
 . Connectivity tolerance = 3 m
 
 |Measure identifier |23
@@ -7724,7 +7720,6 @@ Connectivity tolerance must be specified by the data provider using the followin
 * {empty}102. measureDescription (type: free text):
 +
 Defined as "_Description of the measure_".
-
 
 * {empty}107. Result (type DQ_Result):
 +
@@ -7887,10 +7882,17 @@ Absolute or external accuracy should be evaluated and documented using _Mean val
 |Data quality basic measure |Not applicable
 |Definition |Mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position.
 |Description a|
-For a number of points (_N_), the measured positions are given as image::./media/image53.png[image,width=23,height=24], image::./media/image54.png[image,width=24,height=24] and image::./media/image55.png[image,width=23,height=24] coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, image::./media/image56.png[image,width=19,height=24], image::./media/image57.png[image,width=20,height=24] and image::./media/image58.png[image,width=19,height=24]
-, are considered to represent the true positions. The errors are calculated as 1D: image::./media/image59.png[image,width=87,height=27, align=center]
-2D: image::./media/image60.png[image,width=193,height=32, align=center]
-3D: image::./media/image61.png[image,width=273,height=32, align=center]
+For a number of points (_N_), the measured positions are given as _x~mi~_, _y~mi~_ and _z~mi~_ coordinates depending on the dimension in which the position of the point is measured. A corresponding set of coordinates, _x~ti~_, _y~ti~_ and _z~ti~_, are considered to represent the true positions. The errors are calculated as 1D:
+
+image::./media/image59a.png[image,width=87,height=27, align=center]
+
+2D: 
+
+image::./media/image60.png[image,width=193,height=32, align=center]
+
+3D: 
+
+image::./media/image61.png[image,width=273,height=32, align=center]
 
 The mean positional uncertainties of the horizontal absolute or external positions are then calculated as
 
@@ -8190,7 +8192,7 @@ The metadata describing a spatial data set shall include the following metadata 
 
 . Coordinate Reference System: Description of the coordinate reference system(s) used in the data set.
 
-{empty}2. Temporal Reference System: ion of the temporal reference system(s) used in the data set.
+. Temporal Reference System: ion of the temporal reference system(s) used in the data set.
 +
 This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.
 
@@ -8254,11 +8256,17 @@ NOTE While this not explicitly required by any of the INSPIRE Implementing Rules
 |===
 |Metadata element name |*Coordinate Reference System*
 |Definition |Description of the coordinate reference system used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name 
+a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.) 
+a|
+[arabic, start=186]
+. MD_ReferenceSystem
 |Domain a|
 To identify the reference system, the referenceSystemIdentifier (RS_Identifier) shall be provided.
 
@@ -8296,11 +8304,17 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Temporal Reference System*
 |Definition |Description of the temporal reference systems used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name 
+a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |Mandatory, if the spatial data set or one of its feature types contains temporal information that does not refer to the Gregorian Calendar or the Coordinated Universal Time.
 |INSPIRE multiplicity |0..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.)
+a|
+[arabic, start=186]
+. MD_ReferenceSystem
 |Domain a|
 No specific type is defined in ISO 19115 for temporal reference systems. Thus, the generic MD_ReferenceSystem element and its reference SystemIdentifier (RS_Identifier) property shall be provided.
 
@@ -8338,11 +8352,17 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Encoding*
 |Definition |Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel
-|ISO 19115 number and name |271. distributionFormat
+|ISO 19115 number and name 
+a|
+[arabic, start=271]
+. distributionFormat
 |ISO/TS 19139 path |distributionInfo/MD_Distribution/distributionFormat
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1..*
-|Data type (and ISO 19115 no.) |284. MD_Format
+|Data type (and ISO 19115 no.) 
+a|
+[arabic, start=284]
+. MD_Format
 |Domain |See B.2.10.4. The property values (name, version, specification) specified in section 5 shall be used to document the default and alternative encodings.
 |Implementing instructions |
 |Example a|
@@ -8396,7 +8416,10 @@ Example XML encoding	<gmd:characterSet>
 |===
 |Metadata element name |*Spatial representation type*
 |Definition |The method used to spatially represent geographic information.
-|ISO 19115 number and name |37. spatialRepresentationType
+|ISO 19115 number and name 
+a|
+[arabic, start=37]
+. spatialRepresentationType
 |ISO/TS 19139 path |
 |INSPIRE obligation / condition |Mandatory
 |INSPIRE multiplicity |1..*
@@ -8468,7 +8491,10 @@ For implementing the metadata elements included in this section using ISO 19115,
 |ISO/TS 19139 path |identificationInfo/MD_Identification/resourceMaintenance
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..1
-|Data type(and ISO 19115 no.) |142. MD_MaintenanceInformation
+|Data type(and ISO 19115 no.) 
+a|
+[arabic, start=142]
+. MD_MaintenanceInformation
 |Domain a|
 This is a complex type (lines 143-148 from ISO 19115).
 
@@ -8541,7 +8567,10 @@ NOTE In the level element of DQ_Scope, the value featureType is used to denote s
 |===
 |Metadata element name |*See chapter 7*
 |Definition |See chapter 7
-|ISO/DIS 19157 number and name |3. report
+|ISO/DIS 19157 number and name 
+a|
+[arabic, start=3]
+. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..*
@@ -8586,7 +8615,10 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 |===
 |Metadata element name |*See chapter 7*
 |Definition |See chapter 7
-|ISO/DIS 19157 number and name |3. report
+|ISO/DIS 19157 number and name 
+a|
+[arabic, start=3]
+. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..*
@@ -8708,6 +8740,7 @@ NOTE 2 The obligation to use only the allowed code list values specified for att
 Version: version 3.0
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
 Character set: UTF-8
+
 The xml schema document is available from _http://inspire.ec.europa.eu/schemas/tn/3.0/CommonTransportElements.xsd_
 
 ====== Encoding rules used
@@ -8722,6 +8755,7 @@ NOTE Annex B of [DS-D2.7], version 3.3rc3, requires that the "encoding rule spec
 Version: version 3.0
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
 Character set: UTF-8
+
 The xml schema document is available from
 _http://inspire.ec.europa.eu/schemas/tn-ro/3.0/RoadTransportNetwork.xsd_
 
@@ -8737,6 +8771,7 @@ NOTE Annex B of [DS-D2.7], version 3.3rc3, requires that the "encoding rule spec
 Version: version 3.0
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
 Character set: UTF-8
+
 The xml schema document is available from _http://inspire.jrc.ec.europa.eu/schemas/tn-ra/3.0/RailwayTransportNetwork.xsd_
 
 ====== Encoding rules used
@@ -8751,6 +8786,7 @@ NOTE Annex B of [DS-D2.7], version 3.3rc3, requires that the "encoding rule spec
 Version: version 3.0
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
 Character set: UTF-8
+
 The xml schema document is available from
 _http://inspire.ec.europa.eu/schemas/tn-c/3.0/CableTransportNetwork.xsd_
 
@@ -8766,6 +8802,7 @@ NOTE Annex B of [DS-D2.7], version 3.3rc3, requires that the "encoding rule spec
 Version: version 3.0,
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
 Character set: UTF-8
+
 The xml schema document is available from
 _http://inspire.ec.europa.eu/schemas/tn-w/3.0/WaterTransportNetwork.xsd._
 
@@ -8781,9 +8818,11 @@ NOTE Annex B of [DS-D2.7], version 3.3rc3, requires that the "encoding rule spec
 Version: version 3.0,
 Specification: D2.8.I.7 Data Specification on Transport Networks – Technical Guidelines
 Character set: UTF-8
+
 The xml schema document is available from
 _http://inspire.ec.europa.eu/schemas/tn-a/3.0/AirTransportNetwork.xsd_.
 
+[.red.background]
 ====
 *Open issue 1:* In the amendment of the Implementing Rules, a number of changes have been introduced to the Annex I data models.
 
@@ -10468,6 +10507,7 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all the spatial object / data types that have corresponding types in the source dataset after the necessary transformations fulfil the requirements set out in the ISDSS Regulation and
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
+[.red.background]
 ====
 *Opens issue 2:* Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
 
@@ -10610,21 +10650,21 @@ NOTE Further technical information is in OGC Simple Feature spatial schema v1.2.
 
 [loweralpha]
 . [.underline]#Purpose#:
-
++
 Verification that if linear referencing is used in Transport Networks data, the position of referenced properties on links and link sequences are expressed as distances measured along the supplied geometry of the underlying link object(s).
-
++
 Verification that an inter-modal connection always referencing two elements which belong to different networks.
-
++
 Verification that the Water transport networks re-uses, where it exists and is practicable, the water network centreline geometry of the Hydrography theme.
 
 . [.underline]#Reference#: Annex II Section 7.9 of Commission Regulation No 1089/2010
 
 . [.underline]#Test Method#:
-
++
 Check, if linear referencing is used, that the position of referenced properties on links and link sequences are expressed as distances measured along the supplied geometry of the underlying link object(s).
-
++
 Check that an inter-modal connection always referencing two elements which belong to different networks.
-
++
 Check that the Water transport networks re-uses, where it exists and is practicable, the water network centreline geometry of the Hydrography theme. Therefore, object referencing shall be used to link the water transport course with the existing water network geometry in the Hydrography theme.
 
 ==== Centrelines test
@@ -10640,21 +10680,21 @@ Check that the Water transport networks re-uses, where it exists and is practica
 
 [loweralpha]
 . [.underline]#Purpose#:
-
++
 Verification that wherever a connection exists in a transport network, all connected link ends and the optional node that take part in this connection are positioned at a distance of less than the connectivity tolerance from each other.
-
++
 Verification that link ends and nodes that are not connected are always separated by a distance that is greater than the connectivity tolerance.
-
++
 Verification that in data sets where both transport links and nodes are presented, the relative position of nodes and link ends in relation to the specified connectivity tolerance corresponds to the associations that exist between them in the data set.
 
 . [.underline]#Reference#: Annex II Section 7.9 of Commission Regulation No 1089/2010
 
 . [.underline]#Test Method#:
-
++
 Check that wherever a connection exists in a transport network, all connected link ends and the optional node that take part in this connection are positioned at a distance of less than the connectivity tolerance from each other.
-
++
 Check that link ends and nodes that are not connected are always separated by a distance that is greater than the connectivity tolerance.
-
++
 Check if in data sets where both transport links and nodes are presented, the relative position of nodes and link ends in relation to the specified connectivity tolerance corresponds to the associations that exist between them in the data set.
 
 === Reference Systems Conformance Class
@@ -10836,17 +10876,17 @@ NOTE 1 This test can be performed exclusively on the basis of the information av
 
 [loweralpha]
 . [.underline]#Purpose#:
-
++
 Verification whether the Transport Networks centreline representations and nodes are always located within the extent of the area representation of the same object.
-
++
 Verification whether the connectivity between transport networks across state borders and – where applicable – also across regional borders (and data sets) within Member States is made using the cross-border connectivity mechanisms provided by the NetworkConnection type.
 
 . [.underline]#Reference#: Annex II Section 8.7.1 of Commission Regulation No 1089/2010
 
 . [.underline]#Test Method#:
-
++
 Check that Transport Networks centreline representations and nodes are always located within the extent of the area representation of the same object.
-
++
 Check that NetworkConnection type is used for connectivity between transport networks within Member States.
 
 === Metadata IR Conformance Class
