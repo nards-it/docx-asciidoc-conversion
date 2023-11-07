@@ -595,10 +595,10 @@ _Article 6_
 
 . Code lists shall be of one of the following types, as specified in the Annexes:
 [loweralpha]
-. code lists whose allowed values comprise only the values specified in this Regulation;
-. code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
-. code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
-. code lists, whose allowed values comprise any values defined by data providers.
+.. code lists whose allowed values comprise only the values specified in this Regulation;
+.. code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
+.. code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
+.. code lists, whose allowed values comprise any values defined by data providers.
 
 For the purposes of points (b), (c) and (d), in addition to the allowed values, data providers may use the values specified in the relevant INSPIRE Technical Guidance document available on the INSPIRE web site of the Joint Research Centre.
 
@@ -2419,7 +2419,8 @@ a|
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 ====== Date
 
@@ -2593,8 +2594,7 @@ The externally governed code lists included in this application schema are speci
 |===
 |*Code list* |*Governance* |*Version* |*Availability* |*Formats* |*Subset*
 |ICDValue |World Health Organization |Latest available version |_http://apps.who.int/classifications/apps/icd/icd10online/_ |HTML | 
-|CODValue |Eurostat |Latest available version |_http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm? 
-TargetUrl=LST_NOM_DTL&StrNom=COD_1998&StrLanguageCode=EN 
+|CODValue |Eurostat |Latest available version |_http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm? TargetUrl=LST_NOM_DTL&StrNom=COD_1998&StrLanguageCode=EN 
 &IntPcKey=&StrLayoutCode=HIERARCHIC&IntCurrentPage=1_ |HTML, CSV, XML |
 |===
 
@@ -3317,7 +3317,8 @@ a|
 
 ===== Imported types (informative)
 
-This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+[.blue.background]
+[.small]#This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.#
 
 ====== AdministrativeUnit
 
@@ -4138,11 +4139,17 @@ NOTE While this not explicitly required by any of the INSPIRE Implementing Rules
 |===
 |Metadata element name |*Coordinate Reference System*
 |Definition |Description of the coordinate reference system used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name 
+a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.)
+a|
+[arabic, start=186]
+.MD_ReferenceSystem
 |Domain a|
 To identify the reference system, the referenceSystemIdentifier (RS_Identifier) shall be provided.
 
@@ -4180,11 +4187,17 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Temporal Reference System*
 |Definition |Description of the temporal reference systems used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name 
+a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |Mandatory, if the spatial data set or one of its feature types contains temporal information that does not refer to the Gregorian Calendar or the Coordinated Universal Time.
 |INSPIRE multiplicity |0..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.)
+a|
+[arabic, start=186]
+. MD_ReferenceSystem
 |Domain a|
 No specific type is defined in ISO 19115 for temporal reference systems. Thus, the generic MD_ReferenceSystem element and its reference SystemIdentifier (RS_Identifier) property shall be provided.
 
@@ -4222,11 +4235,17 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Encoding*
 |Definition |Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel
-|ISO 19115 number and name |271. distributionFormat
+|ISO 19115 number and name 
+a|
+[arabic, start=271]
+. distributionFormat
 |ISO/TS 19139 path |distributionInfo/MD_Distribution/distributionFormat
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1
-|Data type (and ISO 19115 no.) |284. MD_Format
+|Data type (and ISO 19115 no.) 
+a|
+[arabic, start=284]
+. MD_Format
 |Domain |See B.2.10.4. The property values (name, version, specification) specified in section 5 shall be used to document the default and alternative encodings.
 |Implementing instructions |
 |Example a|
@@ -4280,7 +4299,10 @@ specification: D2.8.III.5 Data Specification on _Human Health and Safety_ – Te
 |===
 |Metadata element name |*Spatial representation type*
 |Definition |The method used to spatially represent geographic information.
-|ISO 19115 number and name |37. spatialRepresentationType
+|ISO 19115 number and name 
+a|
+[arabic, start=37]
+. spatialRepresentationType
 |ISO/TS 19139 path |
 |INSPIRE obligation / condition |Mandatory
 |INSPIRE multiplicity |1..*
@@ -4342,11 +4364,17 @@ For implementing the metadata elements included in this section using ISO 19115,
 |===
 |Metadata element name |*Maintenance information*
 |Definition |Information about the scope and frequency of updating
-|ISO 19115 number and name |30. resourceMaintenance
+|ISO 19115 number and name 
+a|
+[arabic, start=30]
+. resourceMaintenance
 |ISO/TS 19139 path |identificationInfo/MD_Identification/resourceMaintenance
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..1
-|Data type(and ISO 19115 no.) |142. MD_MaintenanceInformation
+|Data type(and ISO 19115 no.) 
+a|
+[arabic, start=142]
+. MD_MaintenanceInformation
 |Domain a|
 This is a complex type (lines 143-148 from ISO 19115).
 
@@ -4419,7 +4447,10 @@ NOTE In the level element of DQ_Scope, the value featureType is used to denote s
 |===
 |Metadata element name |*See chapter 7*
 |Definition |See chapter 7
-|ISO/DIS 19157 number and name |3. report
+|ISO/DIS 19157 number and name 
+a|
+[arabic, start=3]
+. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..*
@@ -4464,7 +4495,10 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 |===
 |Metadata element name |*See chapter 7*
 |Definition |See chapter 7
-|ISO/DIS 19157 number and name |3. report
+|ISO/DIS 19157 number and name 
+a|
+[arabic, start=3]
+. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..*
@@ -5029,6 +5063,7 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all the spatial object / data types that have corresponding types in the source dataset after the necessary transformations fulfil the requirements set out in the ISDSS Regulation and
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
+[.red.background]
 ====
 
 *Open issue 1:* Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suit for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
