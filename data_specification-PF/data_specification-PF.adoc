@@ -4323,7 +4323,7 @@ Most users will very likely require Production and Industrial Sites on a regiona
 
 Example 1: Germany
 
-image::./media/image17.png[image, align=center]
+image::./media/image17.png[image,width=425,height=257,align=center]
 
 [.text-center]
 *_Geobasisdata of Municipalities and the State of North-Rhine Westphalia © Geobasis NRW 2011_*
@@ -4332,7 +4332,7 @@ NOTE 2 (about condition c)
 
 Due to accuracy reasons and the interrelation of Production and Industrial Sites to cadastral parcels, Production and Industrial Sites shall be raised and displayed on the basis of cadastral parcels; Display on a regional level from scale 1: 50.000 to a detailed level to scale 1:1.
 
-image::./media/image18.png[image, align=center]
+image::./media/image18.png[image,width=425,height=257,align=center]
 
 [.text-center]
 *_Geobasisdata of Municipalities and the State of North-Rhine Westphalia © Geobasis NRW 2011_*
@@ -4367,7 +4367,7 @@ Most users will very likely require _Production and Industrial Facilities_ on a 
 
 Example 2: Germany
 
-image::./media/image19.png[image, align=center]
+image::./media/image19.png[image,width=425,height=257,align=center]
 
 [.text-center]
 *_Geobasisdata of Municipalities and the State of North-Rhine Westphalia © Geobasis NRW 2011_*
@@ -4376,7 +4376,7 @@ NOTE 2 (about condition c)
 
 Due to accuracy reasons and the interrelation of Production and Industrial Faculties to cadastral parcels, Production and Industrial Faculties shall be raised and displayed on the basis of cadastral parcels; Display on a regional and local level from scale 1: 25.000 to a detailed level to scale 1:1.
 
-image::./media/image20.png[image, align=center]
+image::./media/image20.png[image,width=425,height=257,align=center]
 
 [.text-center]
 *_Geobasisdata of Municipalities and the State of North-Rhine Westphalia © Geobasis NRW 2011_*
@@ -5499,12 +5499,12 @@ This use case is focused on planning and monitoring actions related to applicati
 
 ==== User Diagram
 
-image::./media/image21.png[Operator view 1,width=339,height=460]
+image::./media/image21.png[Operator view 1,width=339,height=460, align=center]
 
 [.text-center]
 *_Figure 1 – UML use case diagram, Operator view_*
 
-image::./media/image22.png[Public Authority view 1,width=452,height=685]
+image::./media/image22.png[Public Authority view 1,width=452,height=685, align=center]
 
 [.text-center]
 *_Figure 2 – UML use case diagram, Public authority view_*
