@@ -4323,7 +4323,7 @@ Most users will very likely require Production and Industrial Sites on a regiona
 
 Example 1: Germany
 
-image::./media/image17.png[image,width=425,height=257,align=center]
+image::./media/image17.png[image,width=319,height=193,align=center]
 
 [.text-center]
 *_Geobasisdata of Municipalities and the State of North-Rhine Westphalia © Geobasis NRW 2011_*
