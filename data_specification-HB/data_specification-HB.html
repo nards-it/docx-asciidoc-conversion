@@ -9865,7 +9865,7 @@ Character set: UTF-8</p>
     &lt;se:Name&gt;HB.Habitat.Default&lt;/se:Name&gt;
     &lt;sld:UserStyle&gt;
       &lt;se:Name&gt;INSPIRE_Default&lt;/se:Name&gt;
-      &lt;sld:IsDefault&gt;1&lt;/sld:IsDefault&gt;
+      &lt;sld:IsDefault&gt;1&lt;/sld :IsDefault&gt;
       &lt;se:FeatureTypeStyle version="1.1.0"&gt;
         &lt;se:Description&gt;
           &lt;se:Title&gt;Habitat Default Style&lt;/se:Title&gt;
@@ -10045,7 +10045,7 @@ Character set: UTF-8</p>
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;sld:WellKnownName&gt;shape://backslash&lt;/sld:WellKnownName&gt;
                                         &lt;sld:Fill/&gt;
-                                        &lt;sld:Stroke&gt;
+                                &lt;sld:Stroke&gt;
                                             &lt;sld:CssParameter name="stroke"&gt;#808080&lt;/sld:CssParameter&gt;
                                         &lt;/sld:Stroke&gt;
                                     &lt;/sld:Mark&gt;
@@ -10189,7 +10189,7 @@ Character set: UTF-8</p>
   &lt;sld:PointSymbolizer&gt;
   &lt;sld:Graphic&gt;
   &lt;sld:Mark&gt;
-  &lt;sld:WellKnownName&gt;circle&lt;/sld:WellKnownName&gt;
+  &lt;sld:WellKnownName    &gt;circle&lt;/sld:WellKnownName&gt;
   &lt;sld:Fill&gt;
   &lt;sld:CssParameter name="fill"&gt;#619669&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="fill-opacity"&gt;1.0&lt;/sld:CssParameter&gt;
@@ -10489,15 +10489,7 @@ Character set: UTF-8</p>
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;sld:PolygonSymbolizer&gt;
   &lt;sld:Fill&gt;
-  &lt;sld:GraphicFill&gt;
-  &lt;sld:Graphic&gt;
-  &lt;sld:Mark&gt;
-  &lt;sld:WellKnownName&gt;x&lt;/sld:WellKnownName&gt;
-  &lt;sld:Fill&gt;
-  &lt;sld:CssParameter name="fill"&gt;#004DA8&lt;/sld:CssParameter&gt;
-  &lt;sld:CssParameter name="fill-opacity"&gt;1.0&lt;/sld:CssParameter&gt;
-  &lt;/sld:Fill&gt;
-  &lt;/sld:Mark&gt;</code></pre>
+  &lt;sld:GraphicFill&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10505,7 +10497,15 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Size&gt;10&lt;/sld:Size&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Graphic&gt;
+  &lt;sld:Mark&gt;
+  &lt;sld:WellKnownName&gt;x&lt;/sld:WellKnownName&gt;
+  &lt;sld:Fill&gt;
+  &lt;sld:CssParameter name="fill"&gt;#004DA8&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="fill-opacity"&gt;1.0&lt;/sld:CssParameter&gt;
+  &lt;/sld:Fill&gt;
+  &lt;/sld:Mark&gt;
+  &lt;sld:Size&gt;10&lt;/sld:Size&gt;
   &lt;/sld:Graphic&gt;
   &lt;/sld:GraphicFill&gt;
   &lt;/sld:Fill&gt;
@@ -10601,11 +10601,7 @@ Character set: UTF-8</p>
   &lt;sld:CssParameter name="fill"&gt;#004DA8&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="fill-opacity"&gt;1.0&lt;/sld:CssParameter&gt;
   &lt;/sld:Fill&gt;
-  &lt;/sld:Mark&gt;
-  &lt;sld:Size&gt;10&lt;/sld:Size&gt;
-  &lt;/sld:Graphic&gt;
-  &lt;/sld:GraphicFill&gt;
-  &lt;/sld:Fill&gt;</code></pre>
+  &lt;/sld:Mark&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10613,7 +10609,11 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Stroke&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Size&gt;10&lt;/sld:Size&gt;
+  &lt;/sld:Graphic&gt;
+  &lt;/sld:GraphicFill&gt;
+  &lt;/sld:Fill&gt;
+  &lt;sld:Stroke&gt;
   &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke-width"&gt;0.4&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke-opacity"&gt;1&lt;/sld:CssParameter&gt;
@@ -10634,11 +10634,7 @@ Character set: UTF-8</p>
   &lt;/sld:Rule&gt;
   &lt;sld:Rule&gt;
   &lt;sld:Name&gt;3160 Moorgewässer&lt;/sld:Name&gt;
-  &lt;sld:Title&gt;3160 Moorgewässer&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
-  &lt;ogc:Literal&gt;3160&lt;/ogc:Literal&gt;</code></pre>
+  &lt;sld:Title&gt;3160 Moorgewässer&lt;/sld:Title&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10646,7 +10642,11 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;/ogc:PropertyIsEqualTo&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;ogc:Filter&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:Literal&gt;3160&lt;/ogc:Literal&gt;
+  &lt;/ogc:PropertyIsEqualTo&gt;
   &lt;/ogc:Filter&gt;
   &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
@@ -10668,50 +10668,7 @@ Character set: UTF-8</p>
   &lt;/ogc:Filter&gt;
   &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;/sld:Rule&gt;
-    &lt;sld:Rule&gt;
-  &lt;sld:Name&gt;3270 Flüsse mit Schlammbänken und einjähriger Vegetation&lt;/sld:Name&gt;
-  &lt;sld:Title&gt;3270 Flüsse mit Schlammbänken und einjähriger Vegetation&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
- --</code></pre>
-</div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
-<div class="content">
-<pre>[source, xml]
---
- &lt;ogc:PropertyIsEqualTo&gt;
- &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
- &lt;ogc:Literal&gt;3270&lt;/ogc:Literal&gt;
- &lt;/ogc:PropertyIsEqualTo&gt;
- &lt;/ogc:Filter&gt;
- &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
- &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
- &lt;/sld:Rule&gt;
- &lt;sld:Rule&gt;
- &lt;sld:Name&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Name&gt;
- &lt;sld:Title&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Title&gt;
- &lt;ogc:Filter&gt;
- &lt;ogc:PropertyIsEqualTo&gt;
- &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
- &lt;ogc:Literal&gt;4010&lt;/ogc:Literal&gt;
- &lt;/ogc:PropertyIsEqualTo&gt;
- &lt;/ogc:Filter&gt;
- &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
- &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
- &lt;sld:PolygonSymbolizer&gt;
- &lt;sld:Fill&gt;
- &lt;sld:CssParameter name="fill"&gt;#E8BEFF&lt;/sld:CssParameter&gt;
- &lt;sld:CssParameter name="fill-opacity"&gt;1&lt;/sld:CssParameter&gt;
- &lt;/sld:Fill&gt;</pre>
-</div>
-</div>
-<div class="openblock">
-<div class="content">
-
+  &lt;/sld:Rule&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10719,7 +10676,42 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Stroke&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
+  &lt;sld:Name&gt;3270 Flüsse mit Schlammbänken und einjähriger Vegetation&lt;/sld:Name&gt;
+  &lt;sld:Title&gt;3270 Flüsse mit Schlammbänken und einjähriger Vegetation&lt;/sld:Title&gt;
+  &lt;ogc:Filter&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:Literal&gt;3270&lt;/ogc:Literal&gt;
+  &lt;/ogc:PropertyIsEqualTo&gt;
+  &lt;/ogc:Filter&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;/sld:Rule&gt;
+  &lt;sld:Rule&gt;
+  &lt;sld:Name&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Name&gt;
+  &lt;sld:Title&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Title&gt;
+  &lt;ogc:Filter&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:Literal&gt;4010&lt;/ogc:Literal&gt;
+  &lt;/ogc:PropertyIsEqualTo&gt;
+  &lt;/ogc:Filter&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;sld:PolygonSymbolizer&gt;
+  &lt;sld:Fill&gt;
+  &lt;sld:CssParameter name="fill"&gt;#E8BEFF&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="fill-opacity"&gt;1&lt;/sld:CssParameter&gt;
+  &lt;/sld:Fill&gt;
+  &lt;sld:Stroke&gt;
   &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
@@ -10741,14 +10733,7 @@ Character set: UTF-8</p>
   &lt;sld:Fill&gt;
   &lt;sld:CssParameter name="fill"&gt;#8400A8&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="fill- opacity"&gt;1&lt;/sld:CssParameter&gt;
-  &lt;/sld:Fill&gt;
-  &lt;sld:Stroke&gt;
-  &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
-  &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;
-  &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
-  &lt;/sld:Stroke&gt;
-  &lt;/sld:PolygonSymbolizer&gt;
-  &lt;/sld:Rule&gt;</code></pre>
+  &lt;/sld:Fill&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10756,7 +10741,14 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Stroke&gt;
+  &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
+  &lt;/sld:Stroke&gt;
+  &lt;/sld:PolygonSymbolizer&gt;
+  &lt;/sld:Rule&gt;
+  &lt;sld:Rule&gt;
   &lt;sld:Name&gt;5130 Wacholderbestände auf Zwergstrauchheiden oder Kalkmagerrasen&lt;/sld:Name&gt;
   &lt;sld:Title&gt;5130 Wacholderbestände auf Zwergstrauchheiden oder Kalkmagerrasen&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
@@ -11044,12 +11036,7 @@ Character set: UTF-8</p>
   &lt;ogc:PropertyIsEqualTo&gt;
   &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;7150&lt;/ogc:Literal&gt;
-  &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;</code></pre>
+  &lt;/ogc:PropertyIsEqualTo&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -11057,7 +11044,12 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Name&gt;7210 Schneiden- Röhricht&lt;/sld:Name&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;/ogc:Filter&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;/sld:Rule&gt;
+  &lt;sld:Rule&gt;
+  &lt;sld:Name&gt;7210 Schneiden- Röhricht&lt;/sld:Name&gt;
   &lt;sld:Title&gt;7210 Schneiden- Röhricht&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
   &lt;ogc:PropertyIsEqualTo&gt;
@@ -11079,12 +11071,7 @@ Character set: UTF-8</p>
   &lt;/ogc:Filter&gt;
   &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
-  &lt;sld:Name&gt;7230 Kalk-  und basenreiche Niedermoore&lt;/sld:Name&gt;
-  &lt;sld:Title&gt;7230 Kalk-  und basenreiche Niedermoore&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;</code></pre>
+  &lt;/sld:Rule&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -11092,7 +11079,12 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
+  &lt;sld:Name&gt;7230 Kalk-  und basenreiche Niedermoore&lt;/sld:Name&gt;
+  &lt;sld:Title&gt;7230 Kalk-  und basenreiche Niedermoore&lt;/sld:Title&gt;
+  &lt;ogc:Filter&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;
+&lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;7230&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
   &lt;/ogc:Filter&gt;
@@ -11115,13 +11107,7 @@ Character set: UTF-8</p>
   &lt;sld:Title&gt;8150 Silikatschutthalden&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
   &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
-  &lt;ogc:Literal&gt;8150&lt;/ogc:Literal&gt;
-  &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;/sld:Rule&gt;</code></pre>
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -11129,7 +11115,13 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;ogc:Literal&gt;8150&lt;/ogc:Literal&gt;
+  &lt;/ogc:PropertyIsEqualTo&gt;
+  &lt;/ogc:Filter&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;/sld:Rule&gt;
+  &lt;sld:Rule&gt;
   &lt;sld:Name&gt;8160 Kalkschutthalden&lt;/sld:Name&gt;
   &lt;sld:Title&gt;8160 Kalkschutthalden&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
@@ -11149,8 +11141,15 @@ Character set: UTF-8</p>
   &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;8210&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;/ogc:Filter&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;sld:PolygonSymbolizer&gt;
   &lt;sld:Fill&gt;
@@ -11159,15 +11158,8 @@ Character set: UTF-8</p>
   &lt;/sld:Fill&gt;
   &lt;sld:Stroke&gt;
   &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
-  &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;</code></pre>
-</div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
   &lt;/sld:Stroke&gt;
   &lt;/sld:PolygonSymbolizer&gt;
   &lt;/sld:Rule&gt;
@@ -11185,13 +11177,7 @@ Character set: UTF-8</p>
   &lt;/sld:Rule&gt;
   &lt;sld:Rule&gt;
   &lt;sld:Name&gt;8230 Silikatfelskuppen mit Pioniervegetation&lt;/sld:Name&gt;
-  &lt;sld:Title&gt;8230 Silikatfelskuppen mit Pioniervegetation&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
-  &lt;ogc:Literal&gt;8230&lt;/ogc:Literal&gt;
-  &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;</code></pre>
+  &lt;sld:Title&gt;8230 Silikatfelskuppen mit Pioniervegetation&lt;/sld:Title&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -11199,7 +11185,13 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;ogc:Filter&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:Literal&gt;8230&lt;/ogc:Literal&gt;
+  &lt;/ogc:PropertyIsEqualTo&gt;
+  &lt;/ogc:Filter&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;sld:PolygonSymbolizer&gt;
   &lt;sld:Fill&gt;
