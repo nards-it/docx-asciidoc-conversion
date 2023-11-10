@@ -9819,8 +9819,7 @@ Character set: UTF-8</p>
               &lt;ogc:PropertyName&gt;HB.habitat.geometry&lt;/ogc:PropertyName&gt;
             &lt;/se:Geometry&gt;
             &lt;se:Graphic/&gt;
-          &lt;/se:PointSymbolizer&gt;
-        &lt;/se:Rule&gt;</code></pre>
+          &lt;/se:PointSymbolizer&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -9828,15 +9827,13 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">      &lt;/se:FeatureTypeStyle&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">        &lt;/se:Rule&gt;
+      &lt;/se:FeatureTypeStyle&gt;
     &lt;/sld:UserStyle&gt;
   &lt;/sld:NamedLayer&gt;</code></pre>
 </div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+</div>
+<div class="paragraph">
 <p><span class="underline"><strong>For curve geometry:</strong></span></p>
 </div>
 <div class="paragraph">
@@ -9847,8 +9844,11 @@ Character set: UTF-8</p>
 </div>
 <div class="paragraph">
 <p>Abstract: The geometry is rendered as a solid black line with a stroke width of 1 pixel..</p>
-</div>
-<div class="paragraph">
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Example:</p>
 </div>
 <div class="imageblock text-center">
@@ -9871,7 +9871,7 @@ Character set: UTF-8</p>
           &lt;se:Title&gt;Habitat Default Style&lt;/se:Title&gt;
           &lt;se:Abstract&gt;The geometry is rendered as a solid black line with a stroke width of 1 pixel.&lt;/se:Abstract&gt;
         &lt;/se:Description&gt;
-        &lt;se:FeatureTypeName&gt;Habitat&lt;/se:FeatureTypeName&gt;
+        &lt;se:FeatureTypeN    ame&gt;Habitat&lt;/se:FeatureTypeName&gt;
         &lt;se:Rule&gt;
           &lt;se:LineSymbolizer&gt;
             &lt;se:Geometry&gt;
@@ -9927,8 +9927,15 @@ Character set: UTF-8</p>
           &lt;se:Abstract&gt;The geometry is rendered using a 50% grey (#808080) fill and a solid black outline with a stroke width of 1 pixel.&lt;/se:Abstract&gt;
         &lt;/se:Description&gt;
         &lt;se:FeatureTypeName&gt;Habitat&lt;/se:FeatureTypeName&gt;
-        &lt;se:Rule&gt;
-          &lt;se:PolygonSymbolizer&gt;
+        &lt;se:Rule&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">          &lt;se:PolygonSymbolizer&gt;
             &lt;se:Geometry&gt;
               &lt;ogc:PropertyName&gt;HB.habitat.geometry&lt;/ogc:PropertyName&gt;
             &lt;/se:Geometry&gt;
@@ -10002,7 +10009,7 @@ Character set: UTF-8</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0"&gt;
+&lt;sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xm  lns:gml="http://www.opengis.net/gml" version="1.0.0"&gt;
     &lt;sld:UserLayer&gt;
         &lt;sld:LayerFeatureConstraints&gt;
             &lt;sld:FeatureTypeConstraint/&gt;
@@ -10015,8 +10022,15 @@ Character set: UTF-8</p>
                 &lt;sld:FeatureTypeName&gt;HabitatDistribution&lt;/sld:FeatureTypeName&gt;
                 &lt;sld:SemanticTypeIdentifier&gt;generic:geometry&lt;/sld:SemanticTypeIdentifier&gt;
                 &lt;sld:SemanticTypeIdentifier&gt;simple&lt;/sld:SemanticTypeIdentifier&gt;
-                &lt;sld:Rule&gt;
-                    &lt;sld:Name&gt;default rule&lt;/sld:Name&gt;
+                &lt;sld:Rule&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">                    &lt;sld:Name&gt;default rule&lt;/sld:Name&gt;
                     &lt;sld:PolygonSymbolizer&gt;
                         &lt;sld:Fill&gt;
                             &lt;sld:GraphicFill&gt;
@@ -10115,8 +10129,15 @@ Character set: UTF-8</p>
   &lt;sld:Name&gt;Style1&lt;/sld:Name&gt;
   &lt;sld:FeatureTypeStyle&gt;
   &lt;sld:FeatureTypeName&gt;HabitatType_point_HabitatTypeHabitatDirective&lt;/sld:FeatureTypeName&gt;
-  &lt;sld:Rule&gt;
-  &lt;sld:Name&gt;6110 Lückige Kalkpionierrasen&lt;/sld:Name&gt;
+  &lt;sld:Rule&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Name&gt;6110 Lückige Kalkpionierrasen&lt;/sld:Name&gt;
   &lt;sld:Title&gt;6110 Lückige Kalkpionierrasen&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
   &lt;ogc:PropertyIsEqualTo&gt;
@@ -10255,10 +10276,7 @@ Character set: UTF-8</p>
   &lt;sld:Size&gt;18&lt;/sld:Size&gt;
   &lt;sld:Rotation&gt;0&lt;/sld:Rotation&gt;
   &lt;/sld:Graphic&gt;
-  &lt;/sld:PointSymbolizer&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
-  &lt;sld:Name&gt;8220 Silikatfelsen mit Felsspaltenvegetation&lt;/sld:Name&gt;</code></pre>
+  --</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10266,7 +10284,12 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;sld:Title&gt;8220 Silikatfelsen mit Felsspaltenvegetation&lt;/sld:Title&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;/sld:PointSymbolizer&gt;
+  &lt;/sld:Rule&gt;
+  &lt;sld:Rule&gt;
+  &lt;sld:Name&gt;8220 Silikatfelsen mit Felsspaltenvegetation&lt;/sld:Name&gt;
+
+&lt;sld:Title&gt;8220 Silikatfelsen mit Felsspaltenvegetation&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
   &lt;ogc:PropertyIsEqualTo&gt;
   &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
@@ -10292,12 +10315,7 @@ Character set: UTF-8</p>
   &lt;sld:PointSymbolizer&gt;
   &lt;sld:Graphic&gt;
   &lt;sld:Mark&gt;
-  &lt;sld:WellKnownName&gt;circle&lt;/sld:WellKnownName&gt;
-  &lt;sld:Fill&gt;
-  &lt;sld:CssParameter name="fill"&gt;#828282&lt;/sld:CssParameter&gt;
-  &lt;sld:CssParameter name="fill-opacity"&gt;1.0&lt;/sld:CssParameter&gt;
-  &lt;/sld:Fill&gt;
-  &lt;/sld:Mark&gt;</code></pre>
+  &lt;sld:WellKnownName&gt;circle&lt;/sld:WellKnownName&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10305,11 +10323,16 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Size&gt;18&lt;/sld:Size&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml"> &lt;sld:Fill&gt;
+  &lt;sld:CssParameter name="fill"&gt;#828282&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="fill-opacity"&gt;1.0&lt;/sld:CssParameter&gt;
+  &lt;/sld:Fill&gt;
+  &lt;/sld:Mark&gt;
+  &lt;sld:Size&gt;18&lt;/sld:Size&gt;
   &lt;sld:Rotation&gt;0&lt;/sld:Rotation&gt;
   &lt;/sld:Graphic&gt;
   &lt;/sld:PointSymbolizer&gt;
-  &lt;/    sld:Rule&gt;
+  &lt;/sld:Rule&gt;
   &lt;sld:Rule&gt;
   &lt;sld:Name&gt;8230 Silikatfelskuppen mit Pioniervegetation&lt;/sld:Name&gt;
   &lt;sld:Title&gt;8230 Silikatfelskuppen mit Pioniervegetation&lt;/sld:Title&gt;
@@ -10331,8 +10354,15 @@ Character set: UTF-8</p>
   &lt;/sld:Fill&gt;
   &lt;/sld:Mark&gt;
   &lt;sld:Size&gt;18&lt;/sld:Size&gt;
-  &lt;sld:Rotation&gt;0&lt;/sld:Rotation&gt;
-  &lt;/sld:Graphic&gt;
+  &lt;sld:Rotation&gt;0&lt;/sld:Rotation&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;/sld:Graphic&gt;
   &lt;/sld:PointSymbolizer&gt;
   &lt;/sld:Rule&gt;
   &lt;sld:Rule&gt;
@@ -10389,12 +10419,7 @@ Character set: UTF-8</p>
   &lt;/sld:Rule&gt;
   &lt;/sld:FeatureTypeStyle&gt;
   &lt;/sld:UserStyle&gt;
-  &lt;/sld:NamedLayer&gt;
-  &lt;sld:NamedLayer&gt;
-  &lt;sld:Name&gt;HabitatType_polygone_HabitatTypeHabitatDirective&lt;/sld:Name&gt;
-  &lt;sld:UserStyle&gt;
-  &lt;sld:Name&gt;Style1&lt;/sld:Name&gt;
-  &lt;sld:FeatureTypeStyle&gt;</code></pre>
+  &lt;/sld:NamedLayer&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10402,7 +10427,12 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:FeatureTypeName&gt;HabitatType_polygone_HabitatTypeHabitatDirective&lt;/sld:FeatureTypeName&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;sld:NamedLayer&gt;
+  &lt;sld:Name&gt;HabitatType_polygone_HabitatTypeHabitatDirective&lt;/s ld:Name&gt;
+  &lt;sld:UserStyle&gt;
+  &lt;sld:Name&gt;Style1&lt;/sld:Name&gt;
+  &lt;sld:FeatureTypeStyle&gt;
+  &lt;sld:FeatureTypeName&gt;HabitatType_polygone_HabitatTypeHabitatDirective&lt;/sld:FeatureTypeName&gt;
   &lt;sld:Rule&gt;
   &lt;sld:Name&gt;1340 Salzwiesen im Binnenland&lt;/sld:Name&gt;
   &lt;sld:Title&gt;1340 Salzwiesen im Binnenland&lt;/sld:Title&gt;
@@ -10423,8 +10453,15 @@ Character set: UTF-8</p>
   &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;2310&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;/ogc:Filter&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml"> &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;/sld:Rule&gt;
   &lt;sld:Rule&gt;
@@ -10435,15 +10472,8 @@ Character set: UTF-8</p>
   &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;2330&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;</code></pre>
-</div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;/ogc:Filter&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;/sld:Rule&gt;
   &lt;sld:Rule&gt;
@@ -10467,8 +10497,15 @@ Character set: UTF-8</p>
   &lt;sld:CssParameter name="fill"&gt;#004DA8&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="fill-opacity"&gt;1.0&lt;/sld:CssParameter&gt;
   &lt;/sld:Fill&gt;
-  &lt;/sld:Mark&gt;
-  &lt;sld:Size&gt;10&lt;/sld:Size&gt;
+  &lt;/sld:Mark&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Size&gt;10&lt;/sld:Size&gt;
   &lt;/sld:Graphic&gt;
   &lt;/sld:GraphicFill&gt;
   &lt;/sld:Fill&gt;
@@ -10522,15 +10559,7 @@ Character set: UTF-8</p>
   &lt;/sld:Rule&gt;
   &lt;sld:Rule&gt;
   &lt;sld:Name&gt;3140 Nährstoffärmere kalkhaltige Stillgewässer&lt;/sld:Name&gt;
-  &lt;sld:Title&gt;3140 Nährstoffärmere kalkhaltige Stillgewässer&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
-  &lt;ogc:Literal&gt;3140&lt;/ogc:Literal&gt;
-  &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;</code></pre>
+  &lt;sld:Title&gt;3140 Nährstoffärmere kalkhaltige Stillgewässer&lt;/sld:Title&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -10538,7 +10567,15 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:PolygonSymbolizer&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;ogc:Filter&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:Literal&gt;3140&lt;/ogc:Literal&gt;
+  &lt;/ogc:PropertyIsEqualTo&gt;
+  &lt;/ogc:Filter&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;sld:PolygonSymbolizer&gt;
   &lt;sld:Fill&gt;
   &lt;sld:GraphicFill&gt;
   &lt;sld:Graphic&gt;
@@ -10568,8 +10605,15 @@ Character set: UTF-8</p>
   &lt;sld:Size&gt;10&lt;/sld:Size&gt;
   &lt;/sld:Graphic&gt;
   &lt;/sld:GraphicFill&gt;
-  &lt;/sld:Fill&gt;
-  &lt;sld:Stroke&gt;
+  &lt;/sld:Fill&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Stroke&gt;
   &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke-width"&gt;0.4&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke-opacity"&gt;1&lt;/sld:CssParameter&gt;
@@ -10625,34 +10669,49 @@ Character set: UTF-8</p>
   &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
+    &lt;sld:Rule&gt;
   &lt;sld:Name&gt;3270 Flüsse mit Schlammbänken und einjähriger Vegetation&lt;/sld:Name&gt;
   &lt;sld:Title&gt;3270 Flüsse mit Schlammbänken und einjähriger Vegetation&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
-  &lt;ogc:Literal&gt;3270&lt;/ogc:Literal&gt;
-  &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
-  &lt;sld:Name&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Name&gt;
-  &lt;sld:Title&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
-  &lt;ogc:Literal&gt;4010&lt;/ogc:Literal&gt;
-  &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;sld:PolygonSymbolizer&gt;
-  &lt;sld:Fill&gt;
-  &lt;sld:CssParameter name="fill"&gt;#E8BEFF&lt;/sld:CssParameter&gt;
-  &lt;sld:CssParameter name="fill-opacity"&gt;1&lt;/sld:CssParameter&gt;
-  &lt;/sld:Fill&gt;</code></pre>
+ --</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>[source, xml]
+--
+ &lt;ogc:PropertyIsEqualTo&gt;
+ &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+ &lt;ogc:Literal&gt;3270&lt;/ogc:Literal&gt;
+ &lt;/ogc:PropertyIsEqualTo&gt;
+ &lt;/ogc:Filter&gt;
+ &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+ &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+ &lt;/sld:Rule&gt;
+ &lt;sld:Rule&gt;
+ &lt;sld:Name&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Name&gt;
+ &lt;sld:Title&gt;4010 Feuchte Heidegebiete mit Glockenheide&lt;/sld:Title&gt;
+ &lt;ogc:Filter&gt;
+ &lt;ogc:PropertyIsEqualTo&gt;
+ &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+ &lt;ogc:Literal&gt;4010&lt;/ogc:Literal&gt;
+ &lt;/ogc:PropertyIsEqualTo&gt;
+ &lt;/ogc:Filter&gt;
+ &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+ &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+ &lt;sld:PolygonSymbolizer&gt;
+ &lt;sld:Fill&gt;
+ &lt;sld:CssParameter name="fill"&gt;#E8BEFF&lt;/sld:CssParameter&gt;
+ &lt;sld:CssParameter name="fill-opacity"&gt;1&lt;/sld:CssParameter&gt;
+ &lt;/sld:Fill&gt;</pre>
+</div>
+</div>
+<div class="openblock">
+<div class="content">
+
 </div>
 </div></div></td>
 </tr>
@@ -10689,8 +10748,15 @@ Character set: UTF-8</p>
   &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
   &lt;/sld:Stroke&gt;
   &lt;/sld:PolygonSymbolizer&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
+  &lt;/sld:Rule&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
   &lt;sld:Name&gt;5130 Wacholderbestände auf Zwergstrauchheiden oder Kalkmagerrasen&lt;/sld:Name&gt;
   &lt;sld:Title&gt;5130 Wacholderbestände auf Zwergstrauchheiden oder Kalkmagerrasen&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
@@ -10742,8 +10808,15 @@ Character set: UTF-8</p>
   &lt;ogc:Literal&gt;6210&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
   &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;sld:PolygonSymbolizer&gt;
   &lt;sld:Fill&gt;
   &lt;sld:CssParameter name="fill"&gt;#619669&lt;/sld:CssParameter&gt;
@@ -10796,8 +10869,15 @@ Character set: UTF-8</p>
   &lt;ogc:Literal&gt;6430&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
   &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;sld:PolygonSymbolizer&gt;
   &lt;sld:Fill&gt;
   &lt;sld:CssParameter name="fill"&gt;#F8EC00&lt;/sld:CssParameter&gt;
@@ -10858,8 +10938,15 @@ Character set: UTF-8</p>
   &lt;sld:Size&gt;8&lt;/sld:Size&gt;
   &lt;/sld:Graphic&gt;
   &lt;/sld:GraphicFill&gt;
-  &lt;/sld:Fill&gt;
-  &lt;sld:Stroke&gt;
+  &lt;/sld:Fill&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Stroke&gt;
   &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
@@ -10919,8 +11006,15 @@ Character set: UTF-8</p>
   &lt;/ogc:Filter&gt;
   &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;sld:PolygonSymbolizer&gt;
-  &lt;sld:Fill&gt;
+  &lt;sld:PolygonSymbolizer&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Fill&gt;
   &lt;sld:CssParameter name="fill"&gt;#E0AA0F&lt;/sld:CssParameter&gt;
   &lt;sld:CssParameter name="fill- opacity"&gt;1&lt;/sld:CssParameter&gt;
   &lt;/sld:Fill&gt;
@@ -10990,8 +11084,15 @@ Character set: UTF-8</p>
   &lt;sld:Name&gt;7230 Kalk-  und basenreiche Niedermoore&lt;/sld:Name&gt;
   &lt;sld:Title&gt;7230 Kalk-  und basenreiche Niedermoore&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;7230&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
   &lt;/ogc:Filter&gt;
@@ -11004,15 +11105,8 @@ Character set: UTF-8</p>
   &lt;/sld:Fill&gt;
   &lt;sld:Stroke&gt;
   &lt;sld:CssParameter name="stroke"&gt;#000000&lt;/sld:CssParameter&gt;
-  &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;</code></pre>
-</div>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="stroke- width"&gt;0.4&lt;/sld:CssParameter&gt;
+  &lt;sld:CssParameter name="stroke- opacity"&gt;1&lt;/sld:CssParameter&gt;
   &lt;/sld:Stroke&gt;
   &lt;/sld:PolygonSymbolizer&gt;
   &lt;/sld:Rule&gt;
@@ -11027,8 +11121,15 @@ Character set: UTF-8</p>
   &lt;/ogc:Filter&gt;
   &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
+  &lt;/sld:Rule&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
   &lt;sld:Name&gt;8160 Kalkschutthalden&lt;/sld:Name&gt;
   &lt;sld:Title&gt;8160 Kalkschutthalden&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
@@ -11090,8 +11191,15 @@ Character set: UTF-8</p>
   &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;8230&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;/ogc:Filter&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
   &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
   &lt;sld:PolygonSymbolizer&gt;
   &lt;sld:Fill&gt;
@@ -11145,9 +11253,16 @@ Character set: UTF-8</p>
   &lt;sld:Rule&gt;
   &lt;sld:Name&gt;9130 Waldmeister- Buchenwald&lt;/sld:Name&gt;
   &lt;sld:Title&gt;9130 Waldmeister- Buchenwald&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:Filter&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;ogc:PropertyIsEqualTo&gt;
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyNa me&gt;
   &lt;ogc:Literal&gt;9130&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
   &lt;/ogc:Filter&gt;
@@ -11204,16 +11319,7 @@ Character set: UTF-8</p>
   &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
   &lt;ogc:Literal&gt;9170&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
-  &lt;/ogc:Filter&gt;
-  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
-  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
-  &lt;sld:Name&gt;9180 Schlucht-  und Hangmischwälder&lt;/sld:Name&gt;
-  &lt;sld:Title&gt;9180 Schlucht-  und Hangmischwälder&lt;/sld:Title&gt;
-  &lt;ogc:Filter&gt;
-  &lt;ogc:PropertyIsEqualTo&gt;
-  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;</code></pre>
+  &lt;/ogc:Filter&gt;</code></pre>
 </div>
 </div></div></td>
 </tr>
@@ -11221,7 +11327,16 @@ Character set: UTF-8</p>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;ogc:Literal&gt;9180&lt;/ogc:Literal&gt;
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
+  &lt;sld:MaxScaleDenominator&gt;3000000&lt;/sld:MaxScaleDenominator&gt;
+  &lt;/sld:Rule&gt;
+  &lt;sld:Rule&gt;
+  &lt;sld:Name&gt;9180 Schlucht-  und Hangmischwälder&lt;/sld:Name&gt;
+  &lt;sld:Title&gt;9180 Schlucht-  und Hangmischwälder&lt;/sld:Title&gt;
+  &lt;ogc:Filter&gt;
+  &lt;ogc:PropertyIsEqualTo&gt;
+  &lt;ogc:PropertyName&gt;HabitatTypeHabitatDirective&lt;/ogc:PropertyName&gt;
+  &lt;ogc:Literal&gt;9180&lt;/ogc:Literal&gt;
   &lt;/ogc:PropertyIsEqualTo&gt;
   &lt;/ogc:Filter&gt;
   &lt;sld:MinScaleDenominator&gt;100&lt;/sld:MinScaleDenominator&gt;
@@ -11232,8 +11347,15 @@ Character set: UTF-8</p>
   &lt;sld:CssParameter name="fill- opacity"&gt;1&lt;/sld:CssParameter&gt;
   &lt;/sld:Fill&gt;
   &lt;/sld:PolygonSymbolizer&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
+  &lt;/sld:Rule&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
   &lt;sld:Name&gt;9190 Alte bodensaure Eichenwälder auf Sandebenen&lt;/sld:Name&gt;
   &lt;sld:Title&gt;9190 Alte bodensaure Eichenwälder auf Sandebenen&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
@@ -11250,8 +11372,15 @@ Character set: UTF-8</p>
   &lt;sld:CssParameter name="fill- opacity"&gt;1&lt;/sld:CssParameter&gt;
   &lt;/sld:Fill&gt;
   &lt;/sld:PolygonSymbolizer&gt;
-  &lt;/sld:Rule&gt;
-  &lt;sld:Rule&gt;
+  &lt;/sld:Rule&gt;</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">  &lt;sld:Rule&gt;
   &lt;sld:Name&gt;91D0 Moorwälder&lt;/sld:Name&gt;
   &lt;sld:Title&gt;91D0 Moorwälder&lt;/sld:Title&gt;
   &lt;ogc:Filter&gt;
