@@ -4081,7 +4081,7 @@ SLD:
     <se:Name>HB.Habitat.Default</se:Name>
     <sld:UserStyle>
       <se:Name>INSPIRE_Default</se:Name>
-      <sld:IsDefault>1</sld:IsDefault>
+      <sld:IsDefault>1</sld :IsDefault>
       <se:FeatureTypeStyle version="1.1.0">
         <se:Description>
           <se:Title>Habitat Default Style</se:Title>
@@ -4203,7 +4203,7 @@ Example of SLD:
 --
 <sld:WellKnownName>shape://backslash</sld:WellKnownName>
                                         <sld:Fill/>
-                                        <sld:Stroke>
+                                <sld:Stroke>
                                             <sld:CssParameter name="stroke">#808080</sld:CssParameter>
                                         </sld:Stroke>
                                     </sld:Mark>
@@ -4309,7 +4309,7 @@ The corresponding SLD:
   <sld:PointSymbolizer>
   <sld:Graphic>
   <sld:Mark>
-  <sld:WellKnownName>circle</sld:WellKnownName> 
+  <sld:WellKnownName    >circle</sld:WellKnownName> 
   <sld:Fill>
   <sld:CssParameter name="fill">#619669</sld:CssParameter> 
   <sld:CssParameter name="fill-opacity">1.0</sld:CssParameter> 
@@ -4585,6 +4585,10 @@ The corresponding SLD:
   <sld:PolygonSymbolizer>
   <sld:Fill>
   <sld:GraphicFill>
+--
+| a|
+[source, xml]
+--
   <sld:Graphic>
   <sld:Mark>
   <sld:WellKnownName>x</sld:WellKnownName> 
@@ -4593,10 +4597,6 @@ The corresponding SLD:
   <sld:CssParameter name="fill-opacity">1.0</sld:CssParameter> 
   </sld:Fill>
   </sld:Mark>
---
-| a|
-[source, xml]
---
   <sld:Size>10</sld:Size> 
   </sld:Graphic>
   </sld:GraphicFill>
@@ -4688,14 +4688,14 @@ The corresponding SLD:
   <sld:CssParameter name="fill-opacity">1.0</sld:CssParameter> 
   </sld:Fill>
   </sld:Mark>
-  <sld:Size>10</sld:Size> 
-  </sld:Graphic>
-  </sld:GraphicFill>
-  </sld:Fill>
 --
 | a|
 [source, xml]
 --
+  <sld:Size>10</sld:Size> 
+  </sld:Graphic>
+  </sld:GraphicFill>
+  </sld:Fill>
   <sld:Stroke>
   <sld:CssParameter name="stroke">#000000</sld:CssParameter> 
   <sld:CssParameter name="stroke-width">0.4</sld:CssParameter> 
@@ -4718,14 +4718,14 @@ The corresponding SLD:
   <sld:Rule>
   <sld:Name>3160 Moorgewässer</sld:Name> 
   <sld:Title>3160 Moorgewässer</sld:Title> 
-  <ogc:Filter>
-  <ogc:PropertyIsEqualTo>
-  <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName> 
-  <ogc:Literal>3160</ogc:Literal> 
 --
 | a|
 [source, xml]
 --
+  <ogc:Filter>
+  <ogc:PropertyIsEqualTo>
+  <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName> 
+  <ogc:Literal>3160</ogc:Literal> 
   </ogc:PropertyIsEqualTo>
   </ogc:Filter>
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
@@ -4749,14 +4749,14 @@ The corresponding SLD:
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
   <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator> 
   </sld:Rule>
-    <sld:Rule>
+-- 
+| a|
+[source, xml]
+--
+  <sld:Rule>
   <sld:Name>3270 Flüsse mit Schlammbänken und einjähriger Vegetation</sld:Name> 
   <sld:Title>3270 Flüsse mit Schlammbänken und einjähriger Vegetation</sld:Title> 
   <ogc:Filter>
- --
- | a|
- [source, xml]
- --
   <ogc:PropertyIsEqualTo>
   <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName> 
   <ogc:Literal>3270</ogc:Literal> 
@@ -4774,6 +4774,10 @@ The corresponding SLD:
   <ogc:Literal>4010</ogc:Literal> 
   </ogc:PropertyIsEqualTo>
   </ogc:Filter>
+--
+| a|
+[source, xml]
+--
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
   <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator> 
   <sld:PolygonSymbolizer>
@@ -4781,10 +4785,6 @@ The corresponding SLD:
   <sld:CssParameter name="fill">#E8BEFF</sld:CssParameter> 
   <sld:CssParameter name="fill-opacity">1</sld:CssParameter> 
   </sld:Fill>
---
-| a|
-[source, xml]
---
   <sld:Stroke>
   <sld:CssParameter name="stroke">#000000</sld:CssParameter> 
   <sld:CssParameter name="stroke- width">0.4</sld:CssParameter> 
@@ -4808,6 +4808,10 @@ The corresponding SLD:
   <sld:CssParameter name="fill">#8400A8</sld:CssParameter> 
   <sld:CssParameter name="fill- opacity">1</sld:CssParameter> 
   </sld:Fill>
+--
+| a|
+[source, xml]
+--
   <sld:Stroke>
   <sld:CssParameter name="stroke">#000000</sld:CssParameter> 
   <sld:CssParameter name="stroke- width">0.4</sld:CssParameter> 
@@ -4815,10 +4819,6 @@ The corresponding SLD:
   </sld:Stroke>
   </sld:PolygonSymbolizer>
   </sld:Rule>
---
-| a|
-[source, xml]
---
   <sld:Rule>
   <sld:Name>5130 Wacholderbestände auf Zwergstrauchheiden oder Kalkmagerrasen</sld:Name> 
   <sld:Title>5130 Wacholderbestände auf Zwergstrauchheiden oder Kalkmagerrasen</sld:Title> 
@@ -5085,15 +5085,15 @@ The corresponding SLD:
   <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName> 
   <ogc:Literal>7150</ogc:Literal> 
   </ogc:PropertyIsEqualTo>
+--
+| a|
+[source, xml]
+--
   </ogc:Filter>
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
   <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator> 
   </sld:Rule>
   <sld:Rule>
---
-| a|
-[source, xml]
---
   <sld:Name>7210 Schneiden- Röhricht</sld:Name> 
   <sld:Title>7210 Schneiden- Röhricht</sld:Title> 
   <ogc:Filter>
@@ -5117,15 +5117,15 @@ The corresponding SLD:
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
   <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator> 
   </sld:Rule>
+--
+| a|
+[source, xml]
+--
   <sld:Rule>
   <sld:Name>7230 Kalk-  und basenreiche Niedermoore</sld:Name> 
   <sld:Title>7230 Kalk-  und basenreiche Niedermoore</sld:Title> 
   <ogc:Filter>
   <ogc:PropertyIsEqualTo>
---
-| a|
-[source, xml]
---
 <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName> 
   <ogc:Literal>7230</ogc:Literal> 
   </ogc:PropertyIsEqualTo>
@@ -5149,17 +5149,17 @@ The corresponding SLD:
   <sld:Title>8150 Silikatschutthalden</sld:Title> 
   <ogc:Filter>
   <ogc:PropertyIsEqualTo>
-  <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName> 
+  <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName>
+--
+| a|
+[source, xml]
+--
   <ogc:Literal>8150</ogc:Literal> 
   </ogc:PropertyIsEqualTo>
   </ogc:Filter>
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
   <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator> 
   </sld:Rule>
---
-| a|
-[source, xml]
---
   <sld:Rule>
   <sld:Name>8160 Kalkschutthalden</sld:Name> 
   <sld:Title>8160 Kalkschutthalden</sld:Title> 
@@ -5181,6 +5181,10 @@ The corresponding SLD:
   <ogc:Literal>8210</ogc:Literal> 
   </ogc:PropertyIsEqualTo>
   </ogc:Filter>
+--
+| a|
+[source, xml]
+--
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
   <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator> 
   <sld:PolygonSymbolizer>
@@ -5190,11 +5194,7 @@ The corresponding SLD:
   </sld:Fill>
   <sld:Stroke>
   <sld:CssParameter name="stroke">#000000</sld:CssParameter> 
-  <sld:CssParameter name="stroke- width">0.4</sld:CssParameter> 
---
-| a|
-[source, xml]
---
+  <sld:CssParameter name="stroke- width">0.4</sld:CssParameter>
   <sld:CssParameter name="stroke- opacity">1</sld:CssParameter> 
   </sld:Stroke>
   </sld:PolygonSymbolizer>
@@ -5214,18 +5214,18 @@ The corresponding SLD:
   <sld:Rule>
   <sld:Name>8230 Silikatfelskuppen mit Pioniervegetation</sld:Name> 
   <sld:Title>8230 Silikatfelskuppen mit Pioniervegetation</sld:Title> 
+--
+| a|
+[source, xml]
+--
   <ogc:Filter>
   <ogc:PropertyIsEqualTo>
   <ogc:PropertyName>HabitatTypeHabitatDirective</ogc:PropertyName> 
   <ogc:Literal>8230</ogc:Literal> 
   </ogc:PropertyIsEqualTo>
   </ogc:Filter>
---
-| a|
-[source, xml]
---
   <sld:MinScaleDenominator>100</sld:MinScaleDenominator> 
-  <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator> 
+  <sld:MaxScaleDenominator>3000000</sld:MaxScaleDenominator>
   <sld:PolygonSymbolizer>
   <sld:Fill>
   <sld:CssParameter name="fill">#686868</sld:CssParameter> 
