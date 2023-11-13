@@ -4398,7 +4398,6 @@ Production and Industrial Installations are considered under the INSPIRE scope:
 . if Member State considers them as helpful for users
 . information on Installations may be founded on cadastral parcels also published for INSPIRE
 
-
 NOTE 1 (about condition a)
 
 Production and Industrial Installations should be considered as helpful for users at least in the following cases:
@@ -4427,7 +4426,6 @@ Production and Industrial Installation Parts are considered under the INSPIRE sc
 . if they are available as GM_Objects (possibly with underlying bitmaps)
 . if Member State considers them as helpful for users
 . information on Installation Parts may founded on cadastral parcels also published for INSPIRE
-
 
 NOTE 1 (about condition a)
 
@@ -4459,7 +4457,6 @@ Production and Industrial Plots are considered under the INSPIRE scope:
 . if they are available as GM_Objects (possibly with underlying bitmaps)
 . if Member State considers them as helpful for users
 . information of Plots may be founded on cadastral parcels also published for INSPIRE
-
 
 NOTE 1 (about condition b)
 
