@@ -855,7 +855,7 @@ Where possible, only these coverage types (or a subtype thereof) are used in INS
 
 [cols=","]
 |===
-a|image::./media/image5.png[image,width=222,height=207] a|image::./media/image6.png[image,width=309,height=209, align=center]
+a|image::./media/image5.png[image,width=222,height=207] a|image::./media/image6.png[image,width=75%,height=75%]
 ^|(Source: ISO 19136:2007) 
 ^|(Source: GML 3.3.0)
 |===
@@ -923,7 +923,7 @@ The OF model and schema itself is therefore minimal (since most of the feature t
 
 The 'Specialised Observations' package in the Generic Conceptual Model contains seven specialisations of OM_Observation, (along with a specialisation of ObservationSet discussed in section 5.3.1.2.2).
 
-image::./media/image8.png[screenshot_002,width=359,height=547]
+image::./media/image8.png[screenshot_002,width=359,height=547, align=center]
 
 [.text-center]
 *Figure 5 - Specialised Observation Types from Generic Conceptual Model (see also document D2.9)*
@@ -962,7 +962,7 @@ The following types from the GCM may be used to describe OF data: ProfileObserva
 
 ====
 
-image::./media/image9.png[screenshot_003,width=604,height=381]
+image::./media/image9.png[screenshot_003,width=604,height=381, align=center]
 
 [.text-center]
 *Figure 6 - Distinction between normative and informative feature types used in OF*
@@ -973,7 +973,7 @@ In actual fact, the specialised Observation types do not specialise OM_Observati
 
 This pattern is consistent with the acquisition of ocean measurements; when taking ocean measurements, we are interested in some property of the ocean, therefore the ultimate feature of interest is the ocean or sea but it is impossible to measure the entire ocean. Therefore measurements are always made against some sampling proxy, such as a set of points, or a grid. O&M refers to this proxy feature as a Spatial Sampling Feature. The result of the measurement is a coverage – a set of values for locations within in the sampling proxy. This is why all OF observations are logically specialisms of _SamplingCoverageObservation_.
 
-image::./media/image10.png[samplingcov -white,width=604,height=425]
+image::./media/image10.png[samplingcov -white,width=604,height=425, align=center]
 
 [.text-center]
 *Figure 7 - Overview of SamplingCoverageObservation*
@@ -984,7 +984,7 @@ The feature catalogue for these feature types can be found in the O&M document, 
 
 ====== PointObservation (From Generic Conceptual Model)
 
-image::./media/image11.png[screenshot_004,width=514,height=620]
+image::./media/image11.png[screenshot_004,width=514,height=620, align=center]
 
 [.text-center]
 *Figure 8 - PointObservation*
@@ -1018,7 +1018,7 @@ Process
 
 ====== PointTimeSeriesObservation (From Generic Conceptual Model)
 
-image::./media/image12.png[screenshot_005,width=580,height=601]
+image::./media/image12.png[screenshot_005,width=580,height=601, align=center]
 
 [.text-center]
 *Figure 9 - PointTimeSeriesObservation*
@@ -1033,7 +1033,7 @@ a|
 
 *Attribute/association*
 
-|*Is constrained to be* |*Example: Repeated measurements of Sea Surface Temperature at the same location.*
+|*Is constrained to be* |*Example: Repeated measurements of Sea  Surface Temperature at the same location.*
 |processUsed |Process |Process instance links to information about the responsible party, documented process etc.
 |featureOfInterest |SF_SamplingPoint a|
 A SF_SamplingPoint at the geographic location of the measurement. It must be the same location for the entire time series.
@@ -1053,7 +1053,7 @@ Note that it may be convenient to have sampling features that are identifiable f
 
 ====== MultiPointObservation (From Generic Conceptual Model)
 
-image::./media/image13.png[screenshot_006,width=479,height=524]
+image::./media/image13.png[screenshot_006,width=479,height=524, align=center]
 
 [.text-center]
 *Figure 10 - MultiPointObservation*
@@ -1081,7 +1081,7 @@ a|
 
 ====== GridObservation (From Generic Conceptual Model)
 
-image::./media/image14.png[screenshot_008,width=531,height=640]
+image::./media/image14.png[screenshot_008,width=531,height=640, align=center]
 
 [.text-center]
 *Figure 11 - GridObservation*
@@ -1116,7 +1116,7 @@ For large grids an out-of-band result (e.g. in binary) may be provided.
 
 ====== GridSeriesObservation (From Generic Conceptual Model)
 
-image::./media/image15.png[screenshot_009,width=585,height=676]
+image::./media/image15.png[screenshot_009,width=585,height=676, align=center]
 
 [.text-center]
 *Figure 12 - GridSeriesObservation*
@@ -1153,7 +1153,7 @@ For large grids an out-of-band result (e.g. in binary) may be provided.
 
 ====== ProfileObservation (Informative in OF, from Generic Conceptual Model)
 
-image::./media/image16.png[screenshot_010,width=577,height=679]
+image::./media/image16.png[screenshot_010,width=577,height=679, align=center]
 
 [.text-center]
 *Figure 13 - ProfileObservation*
@@ -1182,7 +1182,7 @@ a|
 
 ====== TrajectoryObservation(Informative in OF, from Generic Conceptual Model)
 
-image::./media/image17.png[screenshot_011,width=587,height=725]
+image::./media/image17.png[screenshot_011,width=587,height=725, align=center]
 
 [.text-center]
 *Figure 14 - TrajectoryObservation*
@@ -1223,7 +1223,7 @@ The PointObservationCollection shall be used in OF when a set of PointObservatio
 
 ====
 
-image::./media/image18.png[screenshot_012,width=604,height=378]
+image::./media/image18.png[screenshot_012,width=604,height=378, align=center]
 
 [.text-center]
 *Figure 15 - PointObservationCollection*
@@ -1232,7 +1232,7 @@ image::./media/image18.png[screenshot_012,width=604,height=378]
 
 Observations and Measurements provides an abstract class '_OM_Process_' which describes the process used to acquire a measurement value. INSPIRE specialises this into _Process_ which provides a structured way to describe the process, in particular to point to external documentation (online or offline) that describes the process and to refer to parameters used in the process.
 
-image::./media/image19.png[screenshot_013,width=604,height=463]
+image::./media/image19.png[screenshot_013,width=604,height=463, align=center]
 
 [.text-center]
 *Figure 16 - INSPIRE specialisation of OM_Process*
@@ -3215,6 +3215,7 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
 ====
+[.red.background]
 *Open issue 1:* Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
 ====
 
@@ -3325,7 +3326,7 @@ NOTE Further technical information is in the Feature catalogue and UML diagram o
 
 . [.underline]#Reference#: Art.12(1) of Commission Regulation No 1089/2010
 
-c) Test Method: Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.
+. [.underline]#Test Method#: Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.
 
 NOTE Further technical information is in OGC Simple Feature spatial schema v1.2.1 [06-103r4].
 
