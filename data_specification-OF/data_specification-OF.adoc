@@ -210,7 +210,6 @@ From these descriptions we expand the definition as follows:
 
 ** 2D Grids / GridSeries such as data from a numerical model or satellite over a gridded field and (optionally) repeated over time
 
-
 Oceanographic Geographical Features are usually represented as Point and Grid observations. Although other representations are possible, Points and Grids are most commonly used and other representations are primarily for scientific investigation rather than providing a statement on the conditions of the ocean. Implementing other representations would be unduly complex and provide higher burdens on MS with limited benefit at this stage.
 
 * The data can be an observation or simulation. As a simulation, forecasts of OF are allowed.
@@ -241,7 +240,7 @@ Based on the above scope, the following are examples of Ocean Features.
 
 [cols=""]
 |===
-[.underline]#*Definition:*#
+a|[.underline]#*Definition:*#
 
 An Oceanographic Geographical Feature (Ocean Feature) is defined as "Physical conditions of oceans (currents, salinity, wave heights, etc.)." [Directive 2007/2/EC]
 
@@ -855,7 +854,7 @@ Where possible, only these coverage types (or a subtype thereof) are used in INS
 
 [cols=","]
 |===
-a|image::./media/image5.png[image,width=222,height=207] a|image::./media/image6.png[image,width=75%,height=75%]
+a|image::./media/image5.png[image,width=222,height=207, align=center] a|image::./media/image6.png[image, align=center]
 ^|(Source: ISO 19136:2007) 
 ^|(Source: GML 3.3.0)
 |===
@@ -894,9 +893,7 @@ _An observation is an act associated with a discrete time instant or period thro
 
 Furthermore:
 
-
 _The key idea is that the observation result is an estimate of the value of some property of the feature of interest, and the other observation properties provide context or metadata to support evaluation, interpretation and use of the result. [ISO 19156]_
-
 
 By building on the ISO 19156 standard model it is expected that interoperability between domains will be increased. Non-specialist software which understands ISO 19156 will be able to interrogate Ocean Features and at least identify the feature of interest, the observation time, the location etc.
 
@@ -1509,6 +1506,7 @@ The label is:
 |absolute salinity of the water body
 |===
 
+<<<
 == Reference systems, units of measure and grids
 
 === Default reference systems, units of measure and grid
@@ -1757,7 +1755,6 @@ In particular, the data quality elements, sub-elements and measures specified in
 * evaluating and documenting data quality metadata elements of spatial data sets (see section 8); and/or
 
 * specifying requirements or recommendations about the targeted data quality results applicable for data sets related to the spatial data theme _Oceanographic geographical features_ (see sections 7.2 and 7.3).
-
 
 The descriptions of the elements and measures are based on Annex D of ISO/DIS 19157 Geographic information – Data quality.
 
@@ -3086,11 +3083,11 @@ image::./media/image23.png[ofsymbols,width=603,height=789]
 == Abstract Test Suite - (normative)
 
 [cols=""]
-!===
-*Disclaimer*
+|===
+a|*Disclaimer*
 
 While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services, it does not replace the legal act or any part of it.
-!===
+|===
 
 The objective of the Abstract Test Suite (ATS) included in this Annex is to help the conformance testing process. It includes a set of tests to be applied on a data set to evaluate whether it fulfils the requirements included in this data specification and the corresponding parts of Commission Regulation No 1089/2010 (implementing rule as regards interoperability of spatial datasets and services, further referred to as ISDSS Regulation). This is to help data providers in declaring the conformity of a data set to the "degree of conformity, with implementing rules adopted under Article 7(1) of Directive 2007/2/EC", which is required to be provided in the data set metadata according to Commission Regulation (EC) No 2008/1205 (the Metadata Regulation).
 
