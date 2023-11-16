@@ -2894,11 +2894,15 @@ NOTE While this not explicitly required by any of the INSPIRE Implementing Rules
 |===
 |Metadata element name |*Coordinate Reference System*
 |Definition |Description of the coordinate reference system used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.) a|
+[arabic, start=186]
+. MD_ReferenceSystem
 |Domain a|
 To identify the reference system, the referenceSystemIdentifier (RS_Identifier) shall be provided.
 
@@ -2936,11 +2940,15 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Temporal Reference System*
 |Definition |Description of the temporal reference systems used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |Mandatory, if the spatial data set or one of its feature types contains temporal information that does not refer to the Gregorian Calendar or the Coordinated Universal Time.
 |INSPIRE multiplicity |0..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.) a|
+[arabic, start=186]
+. MD_ReferenceSystem
 |Domain a|
 No specific type is defined in ISO 19115 for temporal reference systems. Thus, the generic MD_ReferenceSystem element and its reference SystemIdentifier (RS_Identifier) property shall be provided.
 
@@ -2977,11 +2985,15 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Encoding*
 |Definition |Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel
-|ISO 19115 number and name |271. distributionFormat
+|ISO 19115 number and name a|
+[arabic, start=271]
+. distributionFormat
 |ISO/TS 19139 path |distributionInfo/MD_Distribution/distributionFormat
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1
-|Data type (and ISO 19115 no.) |284. MD_Format
+|Data type (and ISO 19115 no.) a|
+[arabic, start=284]
+. MD_Format
 |Domain |See B.2.10.4. The property values (name, version, specification) specified in section 5 shall be used to document the default and alternative encodings.
 |Implementing instructions |
 |Example a|
@@ -3036,7 +3048,9 @@ Technical Guidelines</gco:CharacterString>
 |===
 |Metadata element name |*Spatial representation type*
 |Definition |The method used to spatially represent geographic information.
-|ISO 19115 number and name |37. spatialRepresentationType
+|ISO 19115 number and name a|
+[arabic, start=37]
+. spatialRepresentationType
 |ISO/TS 19139 path |
 |INSPIRE obligation / condition |Mandatory
 |INSPIRE multiplicity |1..*
@@ -3098,11 +3112,15 @@ For implementing the metadata elements included in this section using ISO 19115,
 |===
 |Metadata element name |*Maintenance information*
 |Definition |Information about the scope and frequency of updating
-|ISO 19115 number and name |30. resourceMaintenance
+|ISO 19115 number and name a|
+[arabic, start=30]
+. resourceMaintenance
 |ISO/TS 19139 path |identificationInfo/MD_Identification/resourceMaintenance
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..1
-|Data type(and ISO 19115 no.) |142. MD_MaintenanceInformation
+|Data type(and ISO 19115 no.) a|
+[arabic, start=142]
+. MD_MaintenanceInformation
 |Domain a|
 This is a complex type (lines 143-148 from ISO 19115).
 
@@ -3175,7 +3193,9 @@ NOTE In the level element of DQ_Scope, the value featureType is used to denote s
 |===
 |Metadata element name |*See chapter 7*
 |Definition |See chapter 7
-|ISO/DIS 19157 number and name |3. report
+|ISO/DIS 19157 number and name a|
+[arabic, start=3]
+. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..*
@@ -3220,7 +3240,9 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 |===
 |Metadata element name |*See chapter 7*
 |Definition |See chapter 7
-|ISO/DIS 19157 number and name |3. report
+|ISO/DIS 19157 number and name a|
+[arabic, start=3]
+. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..*
@@ -3719,6 +3741,7 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all the spatial object / data types that have corresponding types in the source dataset after the necessary transformations fulfil the requirements set out in the ISDSS Regulation and
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
+[.red.background]
 ====
 *Open issue 1:* Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
 
@@ -5163,11 +5186,9 @@ image::./media/image19.jpeg[SEAREGIONS - MarineIsoLine2,width=624,height=882]
 image::./media/image20.png[image,width=568,height=557, align=center]
 
 [.text-center]
-SEAREGION – Shoreline.ShoreTypeClassification
-(Symbology from Corine Coastal Erosion Study)
+*SEAREGION – Shoreline.ShoreTypeClassification (Symbology from Corine Coastal Erosion Study)*
 
 image::./media/image21.png[image,width=553,height=546, align=center]
 
 [.text-center]
-SEAREGION – Shoreline.ShoreStability
-(Symbology from Corine Coastal Erosion Study)
+*SEAREGION – Shoreline.ShoreStability (Symbology from Corine Coastal Erosion Study)*
