@@ -2472,9 +2472,9 @@ The SLD specifying the symbology is distributed in a file separately from the da
   </sld:NamedLayer>
 --
 
-Example: 
+|Example: 
 
-image::./media/image9.png[./media/image9,width=495,height=197]
+a|image::./media/image9.png[./media/image9,width=495,height=197]
 
 |*Minimum & maximum scales* |<min scale> - <max scale>
 |===
@@ -2531,9 +2531,9 @@ Where 'anatolian' is selected in the code list the geometry is rendered using a 
   </sld:NamedLayer>
 
 
-Example:
+|Example:
 
-image::./media/image11.png[./media/image11,width=493,height=197]
+a|image::./media/image11.png[./media/image11,width=493,height=197]
 
 |*Minimum & maximum scales* |<min scale> - <max scale>
 |===
@@ -2816,7 +2816,7 @@ NOTE Further technical information is in the Feature catalogue and UML diagram o
 
 . [.underline]#Reference#: Art.12(1), Annex IV Section 16 of Commission Regulation No 1089/2010
 
-[.underline]#Test Method#: Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.
+. [.underline]#Test Method#: Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.
 
 NOTE Further technical information is in OGC Simple Feature spatial schema v1.2.1 [06-103r4].
 
@@ -3342,7 +3342,7 @@ Delivery
 |
 a|
 Documentation
-|
+|   
 2+h|*Data set: Biogeographical regions*
 |Description |Bio-geographical regions according to Habitat Directive.
 |Type |Output
