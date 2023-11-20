@@ -2561,7 +2561,7 @@ NOTE Further technical information is in the Feature catalogue and UML diagram o
 
 . [.underline]#Reference#: Art.12(1), Annex IV Section 10 of Commission Regulation No 1089/2010
 
-[.underline]#c) Test Method#: Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.
+. [.underline]#Test Method#: Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.
 
 NOTE Further technical information is in OGC Simple Feature spatial schema v1.2.1 [06-103r4].
 
