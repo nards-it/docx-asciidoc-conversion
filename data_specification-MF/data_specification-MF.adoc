@@ -4851,7 +4851,7 @@ The main parameters of interest are:
 
 * Temperature
 * Precipitation
-.^|image::./media/image21.jpeg[risk_framework_v7_web,width=387,height=371]
+a^|image::./media/image21.jpeg[risk_framework_v7_web,width=387,height=371]
 |===
 
 Although, there are a number of other parameters (e.g. wind, humidity, pressure), which may be useful for particular impact assessments, and the Global Climate Observing System (GCOS) has defined a much wider set of Essential Climate Variables (ECVs) [2].
