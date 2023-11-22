@@ -4851,7 +4851,8 @@ The main parameters of interest are:
 
 * Temperature
 * Precipitation
-a^|image::./media/image21.jpeg[risk_framework_v7_web,width=387,height=371]
+
+a|image::./media/image21.jpeg[risk_framework_v7_web,width=387,height=371]
 |===
 
 Although, there are a number of other parameters (e.g. wind, humidity, pressure), which may be useful for particular impact assessments, and the Global Climate Observing System (GCOS) has defined a much wider set of Essential Climate Variables (ECVs) [2].
@@ -5381,7 +5382,7 @@ The different steps required for reporting of primary validated modelled data ar
 
 *Primary up-to-date data*
 
-image::./media/image33.png[AQD_UMLdiagrams_article10_E2,width=836,height=294]
+image::./media/image33.png[AQD_UMLdiagrams_article10_E2]
 
 [.text-center]
 *Figure 18: Primary up-to-date measurement data. The term Near Real Time (NRT) data has previously been used for such data.*
@@ -5422,24 +5423,24 @@ The different steps required for reporting of primary up-to-date measurement dat
 
 *Article 11 Aggregated validated assessment data*
 
-image::./media/image34.png[AQD_UMLdiagrams_article11_F1a,width=836,height=293]
+image::./media/image34.png[AQD_UMLdiagrams_article11_F1a]
 
 [.text-center]
 *Figure 19: Validated aggregated measurement data.*
 
-image::./media/image35.png[AQD_UMLdiagrams_article11_F1b,width=836,height=292]
+image::./media/image35.png[AQD_UMLdiagrams_article11_F1b]
 
 [.text-center]
 *Figure 20: Validated aggregated modelled data. Note that the diagram is still not adapted to the special features of model data.*
 
-image::./media/image36.png[AQD_UMLdiagrams_article11_F2,width=836,height=294]
+image::./media/image36.png[AQD_UMLdiagrams_article11_F2]
 
 [.text-center]
 *Figure 21: Aggregated up-to-date measurement data. The term Near Real Time (NRT) data has previously been used for such data.*
 
 *Article 12 Attainment of environmental objectives*
 
-image::./media/image37.png[AQD_UMLdiagrams_article12,width=836,height=328]
+image::./media/image37.png[AQD_UMLdiagrams_article12]
 
 [.text-center]
 *Figure 12 Attainment of environmental objectives. Examples of the required environmental objectives for selected pollutants are provided in Section 3.1*
@@ -5675,22 +5676,14 @@ OM_Observation
 * phenomenonTime: 2011-05-15T00:00:0000:00 ; 2011-05-21T00:00:0000:00
 * resultTime: 2011-05-15T00:00:0000:00
 * parameter:
-+
-Name: http://inspire.europe.eu/processParameterValue.html#AnalysisTime,
-+
-Value: 2011-05-15T00:00:0000:00
-
--parameter:
-+
-Name: http://inspire.europe.eu/processParameterValue.html#AssimilationWindowBegin,
-+
-Value: 2011-05-14T20:00:0000:00
-
--parameter:
-+
-Name: http:// inspire.europe.eu/processParameterValue.html#AssimilationWindowEnd,
-+
-Value: 2011-05-15T02:00:0000:00
+** Name: http://inspire.europe.eu/processParameterValue.html#AnalysisTime,
+** Value: 2011-05-15T00:00:0000:00
+* parameter:
+** Name: http://inspire.europe.eu/processParameterValue.html#AssimilationWindowBegin,
+** Value: 2011-05-14T20:00:0000:00
+* parameter:
+** Name: http:// inspire.europe.eu/processParameterValue.html#AssimilationWindowEnd,
+** Value: 2011-05-15T02:00:0000:00
 
 *Meteorological observations*
 
