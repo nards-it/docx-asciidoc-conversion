@@ -48,6 +48,7 @@ image:./media/image3.png[ESEC,width=93,height=93] **INSPIRE** *Infrastructure fo
 |*Coverage* |Project duration
 |===
 
+<<<
 [discrete]
 == Foreword
 [discrete]
@@ -2368,7 +2369,6 @@ _Article 14_
 *Portrayal*
 
 . For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
-
 [loweralpha]
 .. the layers specified in Annex II for the theme or themes the data set is related to;
 .. for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
@@ -2496,6 +2496,7 @@ image::./media/image10.png[./media/image10,width=253,height=200]
 |*Style Abstract* |This style is to be used when visualising the Regions covered under the Natura2000 and Emerald biogeographical regions code lists. This style in inherited from the paper maps used by the Council of Europe and Habitats Committee for visualisg and adopting the Biogeographical regions outlined in the Habitats Directive and expanded by the Bern Convention under the Emerald network.
 |*Symbology* a|
 [source, xml]
+--
 <sld:NamedLayer>
     <se:Name>BR.Natura2000andEmeraldBio-geographicalRegions</se:Name>
     <sld:UserStyle>
@@ -2515,8 +2516,12 @@ Where 'pannonian' is selected in the code list the geometry is rendered using a 
 Where 'steppic' is selected in the code list the geometry is rendered using a beige (#FFCB94) fill and a beige (#FFCB94) outline with a stroke width of 1 pixel
 Where 'blackSea' is selected in the code list the geometry is rendered using a pink (#FFAAC6) fill and a pink (#FFAAC6) outline with a stroke width of 1 pixel
 Where 'anatolian' is selected in the code list the geometry is rendered using a purple (#ED52B0) fill and a pipurple (#ED52B0) outline with a stroke width of 1 pixel</se:Abstract>
-        </se:Description>
-        <se:FeatureTypeName>BR.BiogeographicalRegions</se:FeatureTypeName>
+--
+a|
+[source xml]
+--
+</se:Description>
+        <se:FeatureTypeName>BR.BiogeographicalRegions</se:Featu    reTypeName>
         <se:Rule>
           <se:PolygonSymbolizer>
             <se:Geometry>
@@ -2529,7 +2534,7 @@ Where 'anatolian' is selected in the code list the geometry is rendered using a 
       </se:FeatureTypeStyle>
     </sld:UserStyle>
   </sld:NamedLayer>
-
+--    
 
 |Example:
 
