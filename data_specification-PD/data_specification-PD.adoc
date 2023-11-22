@@ -1002,9 +1002,7 @@ In case the value cannot be provided (e.g. privacy, error, confidentiality) the 
 
 Values can be accompanied with *flags* and footnotes (*comment* attribute) as usual in the statistics community, giving any kind of information useful to describe particular situations.
 
-Two additional attributes related to data quality gives hints about the accuracy of the measure:
-
-*conventionallyLocatedProportion* and *approximatelyLocatedProportion*. They are discussed in the quality section.
+Two additional attributes related to data quality gives hints about the accuracy of the measure: *conventionallyLocatedProportion* and *approximatelyLocatedProportion*. They are discussed in the quality section.
 
 The attribute *status* is used for exceptions of a certain value to what was specified in the generalStatus information of the statisticalDistribution.
 
