@@ -25,9 +25,7 @@
 
 image::./media/image2.jpeg[logo_ce-en-rvb-lr,width=131,height=90]
 
-image:./media/image3[ESEC,width=93,height=93]
-
-**INSPIRE** *Infrastructure for Spatial Information in Europe*
+image:./media/image3[ESEC,width=93,height=93] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = D2.8.I.3 Data Specification on Geographical Names – Technical Guidelines
@@ -82,8 +80,7 @@ Neither the European Commission nor any person acting on behalf of the Commissio
 
 <<<
 [discrete]
-== Interoperability of Spatial Data Sets and Services – 
-General Executive Summary
+== Interoperability of Spatial Data Sets and Services – General Executive Summary
 
 The challenges regarding the lack of availability, quality, organisation, accessibility, and sharing of spatial information are common to a large number of policies and activities and are experienced across the various levels of public authority in Europe. In order to solve these problems it is necessary to take measures of coordination between the users and providers of spatial information. The Directive 2007/2/EC of the European Parliament and of the Council adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment.
 
