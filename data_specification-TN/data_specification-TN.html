@@ -25267,9 +25267,6 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 <ol class="loweralpha" type="a">
 <li>
 <p><span class="underline">Purpose</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Verification whether the value domain of spatial properties is restricted as specified in the Commission Regulation No 1089/2010.</p>
 </div>
@@ -25279,16 +25276,16 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 <div class="paragraph">
 <p>Verify that if in a Transport Networks is a data set which contains nodes, these nodes are only presented where Transport Links connect or end.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
+</ol>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a" start="2">
 <li>
 <p><span class="underline">Reference</span>: Art.12(1), Annex II Section 7 of Commission Regulation No 1089/2010</p>
 </li>
 <li>
 <p><span class="underline">Test Method</span>:</p>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Check whether all spatial properties only use 0, 1 and 2-dimensional geometric objects that exist in the right 2-, 3- or 4-dimensional coordinate space, and where all curve interpolations respect the rules specified in the reference documents.</p>
 </div>
@@ -25297,6 +25294,9 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 </div>
 <div class="paragraph">
 <p>Check that nodes presented in Transport Networks are only present where Transport Links connect or end.</p>
+</div>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>NOTE Further technical information is in OGC Simple Feature spatial schema v1.2.1 [06-103r4].</p>
@@ -32182,14 +32182,10 @@ While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 Nov
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OCL:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">inv: element&#8594;forAll( e1, e2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inv: element&#8594;forAll( e1, e2 | e1&lt;&gt;e2 implies e1.inNetwork&#8594;excludesAll(e2.inNetwork) )</p></td>
 </tr>
 </tbody>
 </table></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">e1&lt;&gt;e2 implies e1.inNetwork&#8594;excludesAll(e2.inNetwork) )<br>
-!===</p></td>
 </tr>
 </tbody>
 </table>
