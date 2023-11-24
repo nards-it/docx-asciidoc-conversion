@@ -2666,23 +2666,28 @@ NOTE 4 3D geometries are not really required for Geographical Names, but the mod
 <td class="tableblock halign-left valign-top"><p class="tableblock">MD_Resolution</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definition:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Resolution, expressed as the inverse of an indicative scale or a ground distance, above which the named place and its associated name(s) should no longer be displayed in a basic viewing service.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NOTE 1This information may be used to determine if the names of the named place should be displayed at a given scale of display, only in the context of basic viewing services intending to show the content of the data set containing names. Even if this information is a valuable one for mapping in general, it is only approximate; cartographic services intending to produce high quality maps should certainly rely on other criteria and techniques for selecting names for the map.</p>
+</div>
+<div class="paragraph">
+<p>NOTE 2 Even if this attribute is "voidable" for practical reasons linked to its availability in data sources, this information may be of first importance for viewing services. There are great chances that viewing services will inefficiently manage named places having this attribute void.</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE 1This information may be used to determine if the names of the named place should be displayed at a given scale of display, only in the context of basic viewing services intending to show the content of the data set containing names. Even if this information is a valuable one for mapping in general, it is only approximate; cartographic services intending to produce high quality maps should certainly rely on other criteria and techniques for selecting names for the map.<br>
-<br>
-NOTE 2 Even if this attribute is "voidable" for practical reasons linked to its availability in data sources, this information may be of first importance for viewing services. There are great chances that viewing services will inefficiently manage named places having this attribute void.<br>
-<br>
-EXAMPLES The following examples use the equivalentScale attribute of MD_Resolution to express the attribute value.<br>
-- Names of important cities in Europe may be displayed at all viewing scales greater than 1/5,000,000. In this case, the value of the attribute is 5,000,000<br>
-- Names of small hamlets may only be displayed from all viewing scale greater than 1/25,000. In this case, the value of the attribute is 25,000<br>
-- Names of countries may be displayed at any small scale. In this case, this attribute is not filled.<br>
-<br>
-NOTE 3 If the data set contain multiple representations of the same real world entity represented at different levels of detail, the scale ranges defined by the attributes leastDetailedViewingResolution and mostDetailedViewingResolution should not overlap, in order to avoid displaying the same names several times.<br>
-<br>
-NOTE 4 The geometry of the named place should have a level of detail (i.e. resolution, granularity, precision, etc.) roughly compatible with its associated viewing scales.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>EXAMPLES The following examples use the equivalentScale attribute of MD_Resolution to express the attribute value.<br>
+* Names of important cities in Europe may be displayed at all viewing scales greater than 1/5,000,000. In this case, the value of the attribute is 5,000,000<br>
+* Names of small hamlets may only be displayed from all viewing scale greater than 1/25,000. In this case, the value of the attribute is 25,000<br>
+* Names of countries may be displayed at any small scale. In this case, this attribute is not filled.</p>
+</div>
+<div class="paragraph">
+<p>NOTE 3 If the data set contain multiple representations of the same real world entity represented at different levels of detail, the scale ranges defined by the attributes leastDetailedViewingResolution and mostDetailedViewingResolution should not overlap, in order to avoid displaying the same names several times.</p>
+</div>
+<div class="paragraph">
+<p>NOTE 4 The geometry of the named place should have a level of detail (i.e. resolution, granularity, precision, etc.) roughly compatible with its associated viewing scales.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplicity:</p></td>
@@ -2750,11 +2755,14 @@ NOTE Local types may be defined in additional European languages, either EU offi
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Description:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NOTE See Description of leastDetailedViewingResolution<br>
-<br>
-EXAMPLES The following examples use the equivalentScale attribute of MD_Resolution to express the attribute value.<br>
-- Names of wide areas like mountain ranges may not be displayed at all in viewing scales greater than 1/100,000. In this case, the value of the attribute is 100,000<br>
-- Names of small hamlets may be displayed at any large scale. In this case, this attribute is not filled.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NOTE See Description of leastDetailedViewingResolution</p>
+</div>
+<div class="paragraph">
+<p>EXAMPLES The following examples use the equivalentScale attribute of MD_Resolution to express the attribute value.<br>
+* Names of wide areas like mountain ranges may not be displayed at all in viewing scales greater than 1/100,000. In this case, the value of the attribute is 100,000<br>
+* Names of small hamlets may be displayed at any large scale. In this case, this attribute is not filled.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplicity:</p></td>
@@ -3957,11 +3965,23 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>1.3.2. Two-dimensional Coordinate Reference Systems</strong><br>
-* Two-dimensional geodetic coordinates (latitude and longitude) based on a datum specified in 1.2 and using the parameters of the GRS80 ellipsoid.<br>
-* Plane coordinates using the ETRS89 Lambert Azimuthal Equal Area coordinate reference system.<br>
-* Plane coordinates using the ETRS89 Lambert Conformal Conic coordinate reference system.<br>
-* Plane coordinates using the ETRS89 Transverse Mercator coordinate reference system.</p>
+<p><strong>1.3.2. Two-dimensional Coordinate Reference Systems</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Two-dimensional geodetic coordinates (latitude and longitude) based on a datum specified in 1.2 and using the parameters of the GRS80 ellipsoid.</p>
+</li>
+<li>
+<p>Plane coordinates using the ETRS89 Lambert Azimuthal Equal Area coordinate reference system.</p>
+</li>
+<li>
+<p>Plane coordinates using the ETRS89 Lambert Conformal Conic coordinate reference system.</p>
+</li>
+<li>
+<p>Plane coordinates using the ETRS89 Transverse Mercator coordinate reference system.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>1.3.3. Compound Coordinate Reference Systems</strong></p>
@@ -5386,7 +5406,13 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">13. referenceSystemInfo</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="13">
+<li>
+<p>referenceSystemInfo</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -5402,7 +5428,13 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&g
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type(and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">186. MD_ReferenceSystem</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="186">
+<li>
+<p>MD_ReferenceSystem</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -5473,7 +5505,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">13. referenceSystemInfo</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="13">
+<li>
+<p>referenceSystemInfo</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -5489,7 +5527,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type(and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">186. MD_ReferenceSystem</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="186">
+<li>
+<p>MD_ReferenceSystem</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -5560,7 +5604,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">271. distributionFormat</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="271">
+<li>
+<p>distributionFormat</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -5576,7 +5626,13 @@ codeSpace: INSPIRE RS registry</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type (and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">284. MD_Format</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="284">
+<li>
+<p>MD_Format</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -5706,7 +5762,13 @@ specification: D2.8.I.3 Data Specification on Geographical Names – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">37. spatialRepresentationType</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="37">
+<li>
+<p>spatialRepresentationType</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -5875,7 +5937,13 @@ specification: D2.8.I.3 Data Specification on Geographical Names – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO 19115 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">30. resourceMaintenance</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="30">
+<li>
+<p>resourceMaintenance</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -5891,7 +5959,13 @@ specification: D2.8.I.3 Data Specification on Geographical Names – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data type(and ISO 19115 no.)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">142. MD_MaintenanceInformation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="142">
+<li>
+<p>MD_MaintenanceInformation</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -6045,7 +6119,13 @@ specification: D2.8.I.3 Data Specification on Geographical Names – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/DIS 19157 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3. report</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>report</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -6159,7 +6239,13 @@ specification: D2.8.I.3 Data Specification on Geographical Names – Technical G
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/DIS 19157 number and name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3. report</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>report</p>
+</li>
+</ol>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ISO/TS 19139 path</p></td>
@@ -6810,13 +6896,16 @@ endonym</p>
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
-<thead>
+<tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><strong>Disclaimer</strong><br>
-<br>
-While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services, it does not replace the legal act or any part of it.</th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Disclaimer</strong></p>
+</div>
+<div class="paragraph">
+<p>While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services, it does not replace the legal act or any part of it.</p>
+</div></div></td>
 </tr>
-</thead>
+</tbody>
 </table>
 <div class="paragraph">
 <p>The objective of the Abstract Test Suite (ATS) included in this Annex is to help the conformance testing process. It includes a set of tests to be applied on a data set to evaluate whether it fulfils the requirements included in this data specification and the corresponding parts of Commission Regulation No 1089/2010 (implementing rule as regards interoperability of spatial datasets and services, further referred to as ISDSS Regulation). This is to help data providers in declaring the conformity of a data set to the "degree of conformity, with implementing rules adopted under Article 7(1) of Directive 2007/2/EC", which is required to be provided in the data set metadata according to Commission Regulation (EC) No 2008/1205 (the Metadata Regulation).</p>
