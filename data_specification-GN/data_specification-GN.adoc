@@ -966,6 +966,7 @@ a|
 NOTE 2 Even if this attribute is "voidable" for practical reasons linked to its availability in data sources, this information may be of first importance for viewing services. There are great chances that viewing services will inefficiently manage named places having this attribute void. 
  
 ! a!EXAMPLES The following examples use the equivalentScale attribute of MD_Resolution to express the attribute value. 
+
 * Names of important cities in Europe may be displayed at all viewing scales greater than 1/5,000,000. In this case, the value of the attribute is 5,000,000 
 * Names of small hamlets may only be displayed from all viewing scale greater than 1/25,000. In this case, the value of the attribute is 25,000 
 * Names of countries may be displayed at any small scale. In this case, this attribute is not filled. 
