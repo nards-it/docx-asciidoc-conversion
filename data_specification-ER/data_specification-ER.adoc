@@ -80,8 +80,7 @@ Neither the European Commission nor any person acting on behalf of the Commissio
 
 <<<
 [discrete]
-== Interoperability of Spatial Data Sets and Services – 
-General Executive Summary
+== Interoperability of Spatial Data Sets and Services – General Executive Summary
 
 The challenges regarding the lack of availability, quality, organisation, accessibility, and sharing of spatial information are common to a large number of policies and activities and are experienced across the various levels of public authority in Europe. In order to solve these problems it is necessary to take measures of coordination between the users and providers of spatial information. The Directive 2007/2/EC of the European Parliament and of the Council adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment.
 
@@ -3713,11 +3712,15 @@ NOTE While this not explicitly required by any of the INSPIRE Implementing Rules
 |===
 |Metadata element name |*Coordinate Reference System*
 |Definition |Description of the coordinate reference system used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.) a|
+[arabic, start=186]
+. MD_ReferenceSystem
 |Domain a|
 To identify the reference system, the referenceSystemIdentifier (RS_Identifier) shall be provided.
 
@@ -3755,11 +3758,15 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Temporal Reference System*
 |Definition |Description of the temporal reference systems used in the dataset.
-|ISO 19115 number and name |13. referenceSystemInfo
+|ISO 19115 number and name a|
+[arabic, start=13]
+. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
 |INSPIRE obligation / condition |Mandatory, if the spatial data set or one of its feature types contains temporal information that does not refer to the Gregorian Calendar or the Coordinated Universal Time.
 |INSPIRE multiplicity |0..*
-|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Data type(and ISO 19115 no.) a|
+[arabic, start=186]
+. MD_ReferenceSystem
 |Domain a|
 No specific type is defined in ISO 19115 for temporal reference systems. Thus, the generic MD_ReferenceSystem element and its reference SystemIdentifier (RS_Identifier) property shall be provided.
 
@@ -3797,11 +3804,15 @@ codeSpace: INSPIRE RS registry
 |===
 |Metadata element name |*Encoding*
 |Definition |Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel
-|ISO 19115 number and name |271. distributionFormat
+|ISO 19115 number and name a|
+[arabic, start=271]
+. distributionFormat
 |ISO/TS 19139 path |distributionInfo/MD_Distribution/distributionFormat
 |INSPIRE obligation / condition |mandatory
 |INSPIRE multiplicity |1..*
-|Data type (and ISO 19115 no.) |284. MD_Format
+|Data type (and ISO 19115 no.) a|
+[arabic, start=284]
+. MD_Format
 |Domain |See B.2.10.4. The property values (name, version, specification) specified in section 5 shall be used to document the default and alternative encodings.
 |Implementing instructions |
 |Example a|
@@ -3855,7 +3866,9 @@ specification: D2.8.III.20 Data Specification on _Energy Resources_ – Technica
 |===
 |Metadata element name |*Spatial representation type*
 |Definition |The method used to spatially represent geographic information.
-|ISO 19115 number and name |37. spatialRepresentationType
+|ISO 19115 number and name a|
+[arabic, start=37]
+. spatialRepresentationType
 |ISO/TS 19139 path |
 |INSPIRE obligation / condition |Mandatory
 |INSPIRE multiplicity |1..*
@@ -3916,11 +3929,15 @@ For implementing the metadata elements included in this section using ISO 19115,
 |===
 |Metadata element name |*Maintenance information*
 |Definition |Information about the scope and frequency of updating
-|ISO 19115 number and name |30. resourceMaintenance
+|ISO 19115 number and name a|
+[arabic, start=30]
+. resourceMaintenance
 |ISO/TS 19139 path |identificationInfo/MD_Identification/resourceMaintenance
 |INSPIRE obligation / condition |optional
 |INSPIRE multiplicity |0..1
-|Data type(and ISO 19115 no.) |142. MD_MaintenanceInformation
+|Data type(and ISO 19115 no.) a|
+[arabic, start=142]
+. MD_MaintenanceInformation
 |Domain a|
 This is a complex type (lines 143-148 from ISO 19115).
 
@@ -4923,6 +4940,7 @@ image::./media/image25.png[./media/image25,width=328,height=363]
 <se:Value>#997940</se:Value>
 <se:Threshold>20</se:Threshold>
 <se:Value>#866240</se:Value>
+| a|
 <se:Threshold>40</se:Threshold>
 </se:Categorize>
 </se:ColorMap>
@@ -4930,7 +4948,7 @@ image::./media/image25.png[./media/image25,width=328,height=363]
 </sld:UserStyle>
 </sld:NamedLayer>
 
-| a|image::./media/image26.png[./media/image26,width=472,height=284]
+image::./media/image26.png[./media/image26,width=472,height=284]
 
 [.text-center]
 *Figure 2 - Solar potential analysis of buildings at the municipal levelfootnote:[http://www.bielefeld01.de/geodaten/welcome_solardach.php]*
@@ -4954,7 +4972,7 @@ Fill colour: light yellow, transparency 0.2 (RGBA 228 255 0 51)
 Outline colour: solid, magenta (RGB 255 0 255)
 
 Outline width: 3pt
-
+    
 Example:
 
 image::./media/image27.png[./media/image27,width=100,height=108]
@@ -5041,7 +5059,7 @@ No scale limits
 [appendix]
 == Abstract Test Suite - (normative)
 
-[cols="", options="header"]
+[cols=""]
 |===
 a|Disclaimer
 
@@ -7039,7 +7057,7 @@ The columns _Tag name_, _Code_, _Type_, _Card._ and _Description_ remind respect
 [.text-center]
 *Table 2. Baseline TIFF implementation profile and Mapping between TIFF tags and the associated object elements from the <theme name> GML Application Schema*
 
-[align=center,width="100%",cols="17%,4%,5%,11%,14%,7%,16%,26%",options="header",]
+[align=center,width="100%",cols="17%,8%,8%,11%,13%,9%,12%,22%",options="header",]
 |===
 |*Tag name* |*Code* |*Type* |*Card.* |*Description* |*Obligation* |*Restricted values* |*Mapping to GML elements (including restrictions)*
 |Artist |315 |ASCII |1 |Person who created the image |O |- |N/A
@@ -7203,7 +7221,7 @@ This section lists the requirements and the constraints to be applied to JPEG 20
 
 [TIP]
 ====
-*TG Requirement 19*0
+*TG Requirement 19*
 
 Encoding of INSPIRE <theme name> data sets by using JPEG 2000 shall conform to profile 1 of ISO 15444-1, extended by the use of boxes "association" and "label" (defined by JPX format in ISO 15444-2) necessary for GMLJP2 encoding (see GMLJP2 standard for more details).
 
